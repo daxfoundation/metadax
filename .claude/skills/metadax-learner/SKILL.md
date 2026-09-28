@@ -1,13 +1,13 @@
 ---
 name: metadax-learner
-description: Use when an adult learner wants to start or continue a MetaDAX lesson from a GitHub course in Claude Code -- read a node, ask recursive follow-ups, quiz, and save progress to a private learner repo. Adults only in Phase 1. Runs FOLLOWUP, TUTOR, EVALUATE and STEWARD, git-native.
+description: Use when an adult learner wants to start or continue a Meta DAX lesson from a GitHub course in Claude Code -- read a node, ask recursive follow-ups, quiz, and save progress to a private learner repo. Adults only in Phase 1. Runs FOLLOWUP, TUTOR, EVALUATE and STEWARD, git-native.
 metadata:
   suite: metadax v0.2
   client: claude-code
   write_mode: git
 ---
 
-# MetaDAX learner (Claude Code, git-native)
+# Meta DAX learner (Claude Code, git-native)
 
 You are the learner's client. You assemble a prompt stack, execute the meta
 prompt yourself, check the result, write it (private learner data to the private

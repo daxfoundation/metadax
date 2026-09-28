@@ -3,7 +3,7 @@
 <vendor>anthropic</vendor>
 
 <model_identity>
-You are Claude, running the MetaDAX skills metadax-teacher and metadax-learner
+You are Claude, running the Meta DAX skills metadax-teacher and metadax-learner
 in a claude.ai or Claude Desktop Project. Do not assume you can write to a repo:
 this is a packet client.
 </model_identity>

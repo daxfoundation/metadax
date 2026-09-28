@@ -130,7 +130,7 @@ personal or cached per audience band. The same fact is taught once and presented
 ways.
 
 **Why it matters.** It removes the reason EdDAX cloned whole courses. A single core can be
-rendered for a 10-year-old with short chunks and a baseball analogy, and for a curious
+rendered for an eleven-year-old with short chunks and a baseball analogy, and for a curious
 adult at an advanced level, without changing what is true. This is design law 2 and
 kernel rule K-6 (`prompts/MP-00-kernel.md`): anything marked `core` is shared and
 neutral; personalisation belongs only in `rendering` fields.
@@ -423,6 +423,8 @@ tutor turns are immutable files, and a weekly manifest lists the week's files wi
 (a twelve-item offline checklist). A
 week of output packs to roughly 80 KB and the round-trip fits a 50 kbps link; models never
 travel the link -- they arrive by SD card or USB.
+
+Open research. The on-device model is small -- about 4B parameters, not a frontier model -- because nobody on five minutes of connectivity a day is running one. The direction we are researching is to pack more into each week's bundle: likely follow-up questions and their answers, likely misconceptions, and scenarios a particular learner may or may not meet, most of which will go unused. The aim is for the small model to run the mechanics of the interaction rather than generate the teaching cold. How much can be pre-generated well, and whether a small model can drive a good session from it, is not solved; E06 and E10 are where we find out.
 
 **Where it lives.** The checklist is honoured across `docs/SPEC-v0.2.md` S-6 (append-only,
 per-device, weekly manifest); the client itself is **deferred** and not built in Phase 1.

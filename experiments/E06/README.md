@@ -13,6 +13,8 @@ possible: that a week packs small enough for a slow link, and that the append-on
 per-device layout produces no textual conflicts. Models never travel the link; only data
 does.
 
+The bundle is expected to grow as it carries pre-generated follow-ups, misconceptions and scenarios for the small on-device model (see E10); how that growth fits the link is part of what this experiment measures.
+
 ## Method
 
 Simulate a week of learner output (roughly 20 nodes, 7 progress snapshots, 50 tutor turns).

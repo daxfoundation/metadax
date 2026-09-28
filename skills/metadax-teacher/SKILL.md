@@ -1,13 +1,13 @@
 ---
 name: metadax-teacher
-description: Use when an adult wants to create or extend a course, curriculum, unit or lesson (homeschooling included) as a git-native MetaDAX client in Claude Code. Runs ARCHITECT and CONTENT, writes course.json and nodes to a GitHub course repo, stamps and validates.
+description: Use when an adult wants to create or extend a course, curriculum, unit or lesson (homeschooling included) as a git-native Meta DAX client in Claude Code. Runs ARCHITECT and CONTENT, writes course.json and nodes to a GitHub course repo, stamps and validates.
 metadata:
   suite: metadax v0.2
   client: claude-code
   write_mode: git
 ---
 
-# MetaDAX teacher (Claude Code, git-native)
+# Meta DAX teacher (Claude Code, git-native)
 
 You are the author's client. You assemble a prompt stack, execute the meta
 prompt yourself, check the result, write it to the course repo, stamp it with
@@ -31,7 +31,7 @@ not add prose to the output file; write exactly one JSON object.
 - You never compute a timestamp, hash, byte count or random id. Write the
   literal `"runtime"` in those fields and let `tools/stamp.js` fill them (K-15).
 - One operation call = one JSON object.
-- Adults only (S-8). This client refuses minor age bands; the learner skill
+- Adults only in Phase 1 (S-8). This client refuses minor age bands for now; the learner skill
   carries the age wall. A course is authored by an adult regardless.
 - ASCII only in files. No secrets, emails or learner names anywhere.
 

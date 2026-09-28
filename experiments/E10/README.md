@@ -12,6 +12,8 @@ tiers from the week's nodes, with no cloud. Grammar-constrained decoding (llama.
 what should make even a 2-4B model produce schema-valid JSON. E10 checks whether that holds on
 real hardware; if not, the offline tutor rung needs a different approach.
 
+A 2-4B model answering follow-ups cold is not assumed to work. The intended mitigation is a bundle that pre-packs likely follow-ups, misconceptions and scenarios for this learner, so the small model runs the interaction from prepared material. Whether that is enough is exactly what this experiment has to show; it is open research.
+
 ## Method
 
 Run llama.cpp under Termux on a mid-range Android phone with a 2-4B model and a GBNF grammar

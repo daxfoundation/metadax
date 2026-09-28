@@ -1,6 +1,6 @@
-# MetaDAX Agent Skills
+# Meta DAX Agent Skills
 
-Two Agent Skills that turn a model client into a git-native MetaDAX client with
+Two Agent Skills that turn a model client into a git-native Meta DAX client with
 nothing but `git`, `node` and the user's existing GitHub credential.
 
 - **metadax-teacher** -- an adult creates or extends a course into a GitHub
