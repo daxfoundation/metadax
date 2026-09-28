@@ -233,7 +233,7 @@ const CASES = [
   // ---- MP-02 ARCHITECT : 2 ----
   {
     op: 'MP-02', id: 'suggest',
-    note: 'Suggest follow-on structure against the fixture course. Note: assemble.js does not carry a CONTENT block for MP-02, so suggestions are made from COURSE + INPUT only (tool limitation, see evals/README.md).',
+    note: 'Suggest follow-on structure against the fixture course. Note: assemble.js accepts a CONTENT block for suggest (via --content), but this case does not pass one yet, so suggestions are made from COURSE + INPUT only.',
     args: { course: COURSE, input: 'Suggest a few more objectives that would round out this cell-biology course.', mode: 'suggest' },
     expect: { schema: 'metadax.course/0.2', type: ['suggestions', 'course', 'patch', 'clarify'] },
   },
@@ -247,7 +247,7 @@ const CASES = [
   // ---- MP-04 CONTENT : 2 ----
   {
     op: 'MP-04', id: 'generate',
-    note: 'Generate node content for an objective. Note: assemble.js injects the existing objective node as CONTENT, so a model may treat this closer to a re-render (tool limitation, see evals/README.md).',
+    note: 'Generate node content for an objective. assemble.js does not inject an existing node as CONTENT in generate mode.',
     args: { node: OBJ1, mode: 'generate' },
     expect: { schema: 'metadax.node/0.2', type: ['node', 'rendering', 'core_patch'] },
   },
