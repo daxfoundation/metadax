@@ -28,6 +28,9 @@ jobs:
       - name: Grader selftest (zero-dependency, always runs)
         run: node evals/grade.js --selftest
 
+      - name: Rebuild eval cases from the current prompts and tools
+        run: node evals/build_cases.js
+
       - name: Run promptfoo certification
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

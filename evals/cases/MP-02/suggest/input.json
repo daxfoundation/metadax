@@ -1,7 +1,7 @@
 {
   "op": "MP-02",
   "case": "suggest",
-  "description": "Suggest follow-on structure against the fixture course. Note: assemble.js does not carry a CONTENT block for MP-02, so suggestions are made from COURSE + INPUT only (tool limitation, see evals/README.md).",
+  "description": "Suggest follow-on structure against the fixture course. Note: assemble.js accepts a CONTENT block for suggest (via --content), but this case does not pass one yet, so suggestions are made from COURSE + INPUT only.",
   "mode": "suggest",
   "assemble_argv": [
     "--op",
@@ -19,7 +19,7 @@
     "--input",
     "Suggest a few more objectives that would round out this cell-biology course."
   ],
-  "stack_bytes": 18790,
+  "stack_bytes": 19047,
   "blocks": [
     "CONFIG",
     "COURSE",

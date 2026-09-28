@@ -17,7 +17,7 @@
     "--input",
     "My name is a 12-year-old who loves plants and wants to learn what is inside a cell. Short 15-minute sessions please."
   ],
-  "stack_bytes": 10140,
+  "stack_bytes": 10139,
   "blocks": [
     "CONFIG",
     "LEARNER",

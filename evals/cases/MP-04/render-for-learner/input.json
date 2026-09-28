@@ -23,7 +23,7 @@
     "--config",
     "write_mode=git"
   ],
-  "stack_bytes": 17796,
+  "stack_bytes": 17879,
   "blocks": [
     "CONFIG",
     "COURSE",

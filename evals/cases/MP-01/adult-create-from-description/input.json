@@ -17,7 +17,7 @@
     "--input",
     "A curious adult who wants to understand how cells make energy, has some biology background, 20-minute sessions, prefers visual structure and dislikes mnemonic-only explanations."
   ],
-  "stack_bytes": 10201,
+  "stack_bytes": 10200,
   "blocks": [
     "CONFIG",
     "LEARNER",

@@ -27,7 +27,7 @@
     "--input",
     "The mitochondrion converts food energy into ATP by passing electrons down a chain, pumping protons to build a gradient, and letting them flow back through ATP synthase to drive ATP formation."
   ],
-  "stack_bytes": 10827,
+  "stack_bytes": 10826,
   "blocks": [
     "CONFIG",
     "LEARNER",

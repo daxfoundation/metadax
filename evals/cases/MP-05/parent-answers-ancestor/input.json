@@ -25,7 +25,7 @@
     "--input",
     "Remind me which proteins are actually essential for making ATP in the mitochondrion?"
   ],
-  "stack_bytes": 30042,
+  "stack_bytes": 30041,
   "blocks": [
     "CONFIG",
     "COURSE",

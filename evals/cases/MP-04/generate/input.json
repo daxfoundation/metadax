@@ -1,7 +1,7 @@
 {
   "op": "MP-04",
   "case": "generate",
-  "description": "Generate node content for an objective. Note: assemble.js injects the existing objective node as CONTENT, so a model may treat this closer to a re-render (tool limitation, see evals/README.md).",
+  "description": "Generate node content for an objective. assemble.js does not inject an existing node as CONTENT in generate mode.",
   "mode": "generate",
   "assemble_argv": [
     "--op",
@@ -23,7 +23,7 @@
     "--config",
     "write_mode=git"
   ],
-  "stack_bytes": 17798,
+  "stack_bytes": 14626,
   "blocks": [
     "CONFIG",
     "COURSE",
@@ -31,7 +31,6 @@
     "MODULE",
     "OBJECTIVE",
     "CONCEPTS",
-    "LEARNER",
-    "CONTENT"
+    "LEARNER"
   ]
 }

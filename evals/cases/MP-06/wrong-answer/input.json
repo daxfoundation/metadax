@@ -27,7 +27,7 @@
     "--input",
     "The electron transport chain makes ATP directly by itself."
   ],
-  "stack_bytes": 28576,
+  "stack_bytes": 28575,
   "blocks": [
     "CONFIG",
     "COURSE",

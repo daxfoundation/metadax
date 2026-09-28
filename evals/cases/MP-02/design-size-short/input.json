@@ -19,7 +19,7 @@
     "--input",
     "A short introductory course on photosynthesis for curious adults, keeping energy as the through-line."
   ],
-  "stack_bytes": 12230,
+  "stack_bytes": 12487,
   "blocks": [
     "CONFIG",
     "INPUT"
