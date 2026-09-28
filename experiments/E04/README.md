@@ -8,8 +8,8 @@ Do the v0.2 prompts produce valid, on-spec output on both vendors' models?
 
 This experiment gates everything else. Certification is the trust surface a teacher
 consumes (see "Certification instead of trust" in `docs/CONCEPTS.md`): a prompt is certified
-for a named model set, and until E04 has run there is no certified set to cite. The
-exploration report sequences E04 first for exactly this reason.
+for a named model set, and until E04 has run there is no certified set to cite. E04 is
+sequenced first for exactly this reason.
 
 ## Method
 

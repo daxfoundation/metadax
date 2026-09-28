@@ -27,9 +27,9 @@ tools the user already has: a chat client, `git`, and GitHub.
 
 **Why it matters.** It means a teacher and a learner can get most of the way with a chat
 subscription and their own repositories, with no account, no hosting bill, and no vendor
-lock-in. The exploration report puts it plainly (section 4.1): every job a custom runtime
-would do has a rentable equivalent. Phase 1 needs "prompt files, JSON schemas, two YAML
-workflows, and the vendors' products" -- not a MetaDAX server.
+lock-in. The design rests on one finding from the project's early exploration: every job a
+custom runtime would do has a rentable equivalent. Phase 1 needs prompt files, JSON schemas,
+two YAML workflows and the vendors' products -- not a MetaDAX server.
 
 **Where it lives.** `prompts/` holds the suite. `docs/SPEC-v0.2.md` freezes the contract
 the prompts obey. The three small Python tools in `tools/` (canonicalise, stamp,
@@ -37,7 +37,7 @@ validate) are the only code, and they run on the user's own machine.
 
 **What EdDAX did instead.** EdDAX (the previous system, 2024-2025) was a Blazor Server
 web application with SQL Server, Cosmos DB and an Azure AI Search index around a dozen
-prompt strings. The system report's first finding: EdDAX "was already a prompt machine
+prompt strings. A review of the EdDAX code found that it "was already a prompt machine
 with a database around it" -- the C# code assembled context, stored rows and rendered
 markdown, and the prompts were the part that mattered.
 
@@ -82,7 +82,7 @@ the id alone (design law 4 in `prompts/SCHEMAS.md`).
 
 **What EdDAX did instead.** EdDAX's follow-ups formed an unbounded tree
 (`qnas.parent_qna_id`), but "the model never saw a node's ancestors, so each level
-answered as if it were standalone" (system report, finding 2). At depth 4 in the real
+answered as if it were standalone" (EdDAX code review). At depth 4 in the real
 data, the stored answer was a refusal: "The topic of Donation to Complex IV is not part
 of an introductory mitochondria module." That is context loss saved as course content.
 
@@ -139,8 +139,8 @@ neutral; personalisation belongs only in `rendering` fields.
 `renderings`. MP-04 generates the core and renders per audience; MP-05 STEP 6 renders a
 follow-up for the specific learner.
 
-**What EdDAX did instead.** "Personalization was entirely author-time" (system report,
-finding 4). There was no learner model, so authors cloned courses per learner -- "Math
+**What EdDAX did instead.** "Personalization was entirely author-time" (EdDAX code
+review). There was no learner model, so authors cloned courses per learner -- "Math
 101" existed six times, one per age -- and typed the learner into the prompt ("for a
 student that has an interest in baseball").
 
@@ -167,7 +167,7 @@ waits, so curiosity during a quiz becomes a new branch of the tree.
 **Where it lives.** MP-06 sections 2 (levels and weights) and 8 (the turn envelope);
 `prompts/SCHEMAS.md` section 7 (tutor turn) and section 6 (the competency formula).
 
-**What EdDAX did instead.** "The quiz is broken on master" (system report, finding 3): its
+**What EdDAX did instead.** "The quiz is broken on master" (EdDAX code review): its
 concepts were hardcoded to arithmetic, competency could reach 120 percent (six levels at
 +20 each), the JSON was rendered as markdown and never parsed, and no result was ever
 saved. MP-06 makes concepts and content required inputs, caps competency at 100, and
@@ -327,8 +327,8 @@ wall lives in front of them, in the skills and in `docs/PRIVACY.md`
 **Where it lives.** `docs/PRIVACY.md` (how the skills enforce it); `docs/DECISIONS.md` D1;
 `docs/SPEC-v0.2.md` S-8.
 
-**What EdDAX did instead.** EdDAX had no age handling; the system report notes learners
-"as young as 5" appeared in the data, with no review of learner-created content.
+**What EdDAX did instead.** EdDAX had no age handling and no review of learner-created
+content.
 
 **Open question.** Does the age wall bite in practice -- does a child's typing trigger an
 age-verification prompt, or a name drift into a file? That is E14, observe-only.

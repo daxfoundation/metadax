@@ -9,7 +9,7 @@ age-verification prompt on the adult's account, or a child's name drift into mem
 
 Phase 1 clients are for adults only (decision D1), and the child path is parent-mediated: the
 adult is the user, the child is "the learner", and no child credential is entered. Whether that
-is comfortable in practice is a policy-grey area the exploration report flags. E14 observes it
+is comfortable in practice is a policy-grey area. E14 observes it
 early so a problem is seen before it becomes a pattern. It is observe-only: it never provokes
 the wall, it watches for it.
 

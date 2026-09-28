@@ -50,7 +50,7 @@ never ingested.
 
 ## What is never ingested
 
-Naming only what the exploration report names:
+Two sources are ruled out by their current terms:
 
 - **CK-12 must never be ingested, even for retrieval.** Its licence bans AI/ML training,
   automated content creation and aggregation, and grants CK-12 rights over modifications.

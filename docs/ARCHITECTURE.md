@@ -101,8 +101,7 @@ There is no MetaDAX service. A client is a chat model, plus `git`, plus three sm
 - `tools/validate.js` -- check a record against its schema before it is committed.
 
 Everything else is rented: the model runs in the user's chat client; state lives in the user's
-git repositories; scheduling, when needed, is a GitHub Action with the user's own key. The
-exploration report's audit (section 4) walks through each runtime job and its rented equivalent.
+git repositories; scheduling, when needed, is a GitHub Action with the user's own key.
 The Foundation's own workers (ingest, a reuse-by-meaning index, a routing proxy) are later phases
 and are always matched by a plain-Actions-plus-own-key equivalent so no stranger depends on the
 Foundation's infrastructure (decision D10).
@@ -147,7 +146,7 @@ is one snapshot per device per day (`docs/SPEC-v0.2.md` S-6).
 
 ## Sizes
 
-Token figures are cl100k estimates from the exploration report and the system report, not measured
+Token figures are cl100k estimates made during design, not measured
 billing figures (`docs/ACCURACY.md`):
 
 - the kernel (MP-00) is about **1,200 tokens**

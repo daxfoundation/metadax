@@ -12,7 +12,7 @@
 > - JSON output and the final summary
 > - `<!--LATEX-->` wrapping
 >
-> **Fixes (evidence in the system report):**
+> **Fixes (from a review of the EdDAX quiz code):**
 > 1. Concepts were hardcoded to arithmetic. They are now **required input**.
 > 2. The content slot was pre-filled, so injection failed and every quiz errored on master. Content is now a **required block** with no sample text.
 > 3. Competency summed to 120%. **Level weights now sum to 100.**
