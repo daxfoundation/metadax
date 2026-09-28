@@ -2,6 +2,32 @@
 
 **An open learning system made of prompts, not software.**
 
+> **New here?** Start with **[Meta DAX: An Introduction](https://jeyanandan.com/blog/meta-dax/)** -- why this exists and what it is trying to do, in plain language. Further articles will be linked here as they are published.
+
+## In plain words
+
+Anyone who knows a subject can describe a course in one sentence, and Meta DAX writes it: the lessons, the pages, the ideas each page depends on, and the mistakes learners are likely to make, written down before a single page exists. Every page can be shaped to the person reading it -- the same physics told through baking for a baker, or through cycling for a cyclist -- without cloning the course. The learner can ask "why?" as many times as they like, and each answer knows the questions that led to it. They are quizzed in steps that climb from remembering to applying, walked out of wrong ideas without being handed the answer, and they keep their own private record of what they learned.
+
+It compounds. A course a teacher chooses to publish is open for anyone to teach from, fork and improve. A question a learner chooses to share can, once a teacher reviews it, become part of the course for the next learner. The long-term aim is universal learning -- every human being, any subject, free -- designed for someone with about five minutes of connectivity a day. That offline client does not exist yet. This repository is where the experiments towards it are run, in the open, with every result dated and every gap written down.
+
+## Latest results
+
+*Last updated 2026-09-28, by hand for now.* Every result below comes from a dated file in an experiment's `results/` folder. All runs so far are automated: a model played the client and, in the learner runs, a simulated learner. None of them is a pilot with a person.
+
+| Experiment | The question | Latest result |
+|---|---|---|
+| [E01](experiments/E01/) -- teacher | Can a non-technical adult create a course into a repository with the Claude Code client? | **Done, first cut.** [Run 1](experiments/E01/results/2026-09-27-teacher-run-newtons-laws.md): an empty repository to a 7-objective course, first page at about 8 minutes. [Run 2](experiments/E01/results/2026-09-27-newton-course-run.md): *Newton's Laws of Motion*, 3 lessons, 7 modules, 21 objectives, every page validated. |
+| [E03](experiments/E03/) -- learner | Can a learner session run end to end: read, follow up three levels deep, take a quiz, save? | **Done, first cut.** [Run 1](experiments/E03/results/2026-09-27-learner-run-cell-biology.md): the fixture course, four follow-ups, competency 70. [Run 2](experiments/E03/results/2026-09-27-newton-learner-run.md): the Newton course, six follow-ups to depth 4, competency 83, three bugs found, two fixed in the tools with regression tests. |
+| [E04](experiments/E04/) -- evals | Do the v0.2 prompts produce valid, on-spec output on both vendors' models? | Harness built, [not yet run](experiments/E04/results/2026-09-27-first-run.md). |
+| [E05](experiments/E05/) -- reuse | Does the follow-up engine make the right reuse, extend or new decision against a registry? | Cases built, [not yet run](experiments/E05/results/2026-09-27-first-run.md). |
+| E02, E06-E14 | See [experiments/](experiments/) | Not started. |
+
+**See the Newton run end to end:** the [interactive run report](https://claude.ai/artifact/Nv4j2tpPh9PidXvLiAaP31) shows the course map, every page, the follow-up tree in 3D, the quiz turn by turn, and three interactive labs. The labs were built afterwards for the report, as a proposal; the v0.2 prompts do not produce them. The report is hosted as a shared artifact on claude.ai.
+
+The full account of each run, including what it does not show, is in [What has actually run](#what-has-actually-run).
+
+---
+
 A teacher turns any subject into a course. A learner reads it, asks follow-up questions
 as deep as they like (a follow-up of a follow-up of a follow-up), gets quizzed through
 Bloom's taxonomy, and keeps a private record of what they learned. There is no server,
