@@ -1,0 +1,9 @@
+{
+  "schema": "followup-output.schema.json",
+  "type": "followup",
+  "allowed_warnings": [
+    "low_confidence",
+    "out_of_scope",
+    "source_gap"
+  ]
+}

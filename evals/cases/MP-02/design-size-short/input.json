@@ -1,0 +1,27 @@
+{
+  "op": "MP-02",
+  "case": "design-size-short",
+  "description": "Design a brand-new short course from a description (CONFIG size=short).",
+  "mode": "design",
+  "assemble_argv": [
+    "--op",
+    "MP-02",
+    "--prompts",
+    "prompts",
+    "--mode",
+    "design",
+    "--config",
+    "client=claude-code",
+    "--config",
+    "write_mode=git",
+    "--config",
+    "size=short",
+    "--input",
+    "A short introductory course on photosynthesis for curious adults, keeping energy as the through-line."
+  ],
+  "stack_bytes": 12230,
+  "blocks": [
+    "CONFIG",
+    "INPUT"
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "schema": "metadax.registry/0.2",
+  "course_id": "newtons-laws-motion",
+  "module_id": "L02.M01",
+  "updated_at": "runtime",
+  "nodes": [
+    {
+      "id": "L02.M01.O01",
+      "parent_id": null,
+      "title": "Explain F = ma and the role of mass",
+      "canonical_question": "What does Newton's second law F = ma mean, and what role does mass play in it?",
+      "intent": null,
+      "summary": "Newton's second law says net force equals mass times acceleration: F = ma. Mass measures inertia; for a given force, more mass means less acceleration.",
+      "concepts": [
+        "newtons-second-law",
+        "mass"
+      ],
+      "depth": 1,
+      "visibility": "shared",
+      "created_by": "author-sbx01",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O02",
+      "parent_id": null,
+      "title": "Calculate acceleration from net force",
+      "canonical_question": "How do you calculate the acceleration of a simple one-body system from its net force and mass?",
+      "intent": null,
+      "summary": "Rearrange F = ma to a = F / m to find acceleration from net force and mass. First combine forces into a net force, then divide by mass, keeping units consistent.",
+      "concepts": [
+        "newtons-second-law",
+        "kinematic-quantities"
+      ],
+      "depth": 1,
+      "visibility": "shared",
+      "created_by": "author-sbx01",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/mass-versus-weight",
+      "parent_id": "L02.M01.O01",
+      "title": "Mass versus weight",
+      "canonical_question": "What is the difference between mass and weight?",
+      "intent": "clarify",
+      "summary": "Mass measures how much matter is in a body and how strongly it resists acceleration; it is the same everywhere. Mass is measured in kilograms, a measure of inertia, while weight is a force measured in newtons.",
+      "concepts": [
+        "mass"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/how-mass-and-weight-differ",
+      "parent_id": "L02.M01.O01",
+      "title": "How mass and weight differ",
+      "canonical_question": "How do mass and weight differ, and why does it matter?",
+      "intent": "clarify",
+      "summary": "Ask two questions about any object: how much stuff is in it, and how hard gravity pulls on it. F = ma uses mass, not weight, because inertia is what resists acceleration.",
+      "concepts": [
+        "mass"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/distinguishing-mass-from-weight",
+      "parent_id": "L02.M01.O01",
+      "title": "Distinguishing mass from weight",
+      "canonical_question": "How can you tell mass and weight apart in a problem?",
+      "intent": "clarify",
+      "summary": "If a value is in kilograms it is a mass; if it is in newtons it is a force, usually weight. Ask whether the quantity would change on the Moon: mass would not, weight would.",
+      "concepts": [
+        "mass"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/rearrange-fma-for-acceleration",
+      "parent_id": "L02.M01.O01",
+      "title": "Rearranging F = ma for acceleration",
+      "canonical_question": "How do you rearrange F = ma to find acceleration from force and mass?",
+      "intent": "apply",
+      "summary": "Newton’s second law says net force equals mass times acceleration. A 2 kg cart pushed with a net force of 6 N accelerates at 6 / 2 = 3 metres per second squared.",
+      "concepts": [
+        "newtons-second-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/solving-fma-for-a",
+      "parent_id": "L02.M01.O01",
+      "title": "Solving F = ma for the acceleration",
+      "canonical_question": "How do you solve F = ma when you want the acceleration?",
+      "intent": "apply",
+      "summary": "Start from F = ma and treat acceleration as the unknown. If the net force is fixed, a heavier object gets a smaller acceleration, which is why loaded trucks pick up speed slowly.",
+      "concepts": [
+        "newtons-second-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/do-heavier-objects-fall-faster",
+      "parent_id": "L02.M01.O01",
+      "title": "Do heavier objects fall faster?",
+      "canonical_question": "Do heavier objects fall faster than lighter ones?",
+      "intent": "challenge",
+      "summary": "Ignoring air resistance, all objects fall with the same acceleration regardless of mass. A heavier object feels more gravitational force, but it also has more inertia to move, and the two effects cancel exactly.",
+      "concepts": [
+        "mass",
+        "newtons-second-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/falling-speed-and-weight",
+      "parent_id": "L02.M01.O01",
+      "title": "Falling speed and weight",
+      "canonical_question": "Does an object’s weight decide how fast it falls?",
+      "intent": "challenge",
+      "summary": "It feels obvious that heavier things should drop faster, yet in the absence of air they do not. Doubling the weight doubles the mass too, and acceleration is force divided by mass, so the ratio stays at g.",
+      "concepts": [
+        "mass",
+        "newtons-second-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/why-mass-resists-acceleration",
+      "parent_id": "L02.M01.O01",
+      "title": "Why mass resists acceleration",
+      "canonical_question": "Why does a larger mass need a larger force to reach the same acceleration?",
+      "intent": "deepen",
+      "summary": "Mass is a measure of how strongly a body resists having its motion changed. This is about why the relationship exists, not about plugging numbers into a = F / m.",
+      "concepts": [
+        "mass",
+        "newtons-second-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O02/why-acceleration-follows-net-force",
+      "parent_id": "L02.M01.O02",
+      "title": "Why acceleration follows the net force",
+      "canonical_question": "Why does the acceleration always point in the same direction as the net force?",
+      "intent": "deepen",
+      "summary": "F = ma relates two vectors with mass, a positive number, between them. Whatever way the leftover push points, the change in motion builds up that same way.",
+      "concepts": [
+        "newtons-second-law",
+        "kinematic-quantities"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/history-of-the-kilogram",
+      "parent_id": "L02.M01.O01",
+      "title": "A short history of the kilogram",
+      "canonical_question": "How was the kilogram historically defined as the unit of mass?",
+      "intent": "tangent",
+      "summary": "For over a century the kilogram was defined by a platinum-iridium cylinder kept near Paris. In 2019 the kilogram was redefined using a fixed value of the Planck constant, tying mass to fundamental physics rather than an object.",
+      "concepts": [
+        "mass"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/fma-with-multiple-forces",
+      "parent_id": "L02.M01.O01",
+      "title": "Using F = ma with several forces",
+      "canonical_question": "How do you apply F = ma when several forces act on the same body?",
+      "intent": "apply",
+      "summary": "When many forces act, first add them as vectors to get the single net force. A box pushed with 10 N forward while 4 N of friction acts backward feels a net 6 N.",
+      "concepts": [
+        "newtons-second-law",
+        "net-force"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O02/acceleration-on-a-frictionless-incline",
+      "parent_id": "L02.M01.O02",
+      "title": "Acceleration on a frictionless incline",
+      "canonical_question": "How do you find the acceleration of a block sliding down a frictionless incline?",
+      "intent": "apply",
+      "summary": "On a frictionless incline the only force along the slope is the component of gravity pointing downhill. Because both the driving force and the inertia grow with mass, the mass cancels and the acceleration depends only on the angle.",
+      "concepts": [
+        "newtons-second-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O01/the-newton-as-a-unit",
+      "parent_id": "L02.M01.O01",
+      "title": "The newton as a unit of force",
+      "canonical_question": "What is one newton of force in terms of mass and acceleration?",
+      "intent": "clarify",
+      "summary": "One newton is the force that gives a one-kilogram mass an acceleration of one metre per second squared. Roughly, holding a small apple against gravity takes about one newton.",
+      "concepts": [
+        "newtons-second-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M01.O02/acceleration-of-two-connected-blocks",
+      "parent_id": "L02.M01.O02",
+      "title": "Acceleration of two connected blocks",
+      "canonical_question": "How do you calculate the acceleration of two connected blocks pulled by one force?",
+      "intent": "apply",
+      "summary": "When two blocks are joined by a rope and pulled, the simplest first step is to treat them as a single mass equal to their total. To get the rope tension, apply F = ma to just one block using the shared acceleration.",
+      "concepts": [
+        "newtons-second-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L02.M02.O01/identifying-action-reaction-pairs",
+  "content_hash": "bdf0f8e5dfe28ad55f48c629a26659ed2457416b80a9498e4aa3de6b0eb1ebe9",
+  "created_by": {
+    "id": "author-e05",
+    "key_id": null,
+    "chain_role": "author"
+  },
+  "lineage": [
+    {
+      "node_id": "L02.M02.O01",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-28T00:22:58Z"
+}

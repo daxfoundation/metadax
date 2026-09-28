@@ -1,0 +1,42 @@
+{
+  "op": "MP-05",
+  "case": "over-500-char-input",
+  "description": "INPUT longer than 500 chars; assemble truncates to 500 and resolved.question must not exceed 500.",
+  "mode": "ask",
+  "assemble_argv": [
+    "--op",
+    "MP-05",
+    "--prompts",
+    "prompts",
+    "--course",
+    "fixtures/courses/cell-biology-obsidian",
+    "--learner",
+    "fixtures/learners/lrn-fixture01",
+    "--learner-id",
+    "lrn-fixture01",
+    "--node",
+    "L01.M01.O02",
+    "--mode",
+    "ask",
+    "--config",
+    "client=claude-code",
+    "--config",
+    "write_mode=git",
+    "--input",
+    "I have a really long question and I keep adding more words to it because I want to be thorough about exactly what I am confused about, so here goes: when the electrons finally reach the very end of the chain and oxygen is waiting there to accept them, how exactly does the whole hand-off work at the molecular level, and what stops the electrons from leaking out somewhere earlier, and does the proton gradient we built up earlier have anything to do with keeping that last step running smoothly, and also is any of this different in plants versus animals, and one more thing, why is it oxygen specifically and not some other molecule that ends up doing this final job in the mitochondrion of the cell? Please explain all of it in as much detail as you possibly can for me now today."
+  ],
+  "stack_bytes": 29567,
+  "blocks": [
+    "CONFIG",
+    "COURSE",
+    "LESSON",
+    "MODULE",
+    "OBJECTIVE",
+    "CONCEPTS",
+    "LEARNER",
+    "PATH",
+    "ANCHOR",
+    "REGISTRY",
+    "INPUT"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.event/0.2",
+  "session_id": "ses-20260927-fx01",
+  "seq": 5,
+  "ts": "2026-09-27T09:05:00Z",
+  "type": "summary",
+  "course_id": "cell-biology-obsidian",
+  "node_id": null,
+  "concept": null,
+  "bloom_level": null,
+  "result": null,
+  "data": {
+    "concepts": [
+      "atp-synthesis"
+    ],
+    "competency": {
+      "atp-synthesis": 58
+    },
+    "mastered": false
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schema": "metadax.registry/0.2",
+  "course_id": "newtons-laws-motion",
+  "module_id": "L01.M02",
+  "updated_at": "runtime",
+  "nodes": [
+    {
+      "id": "L01.M02.O01",
+      "parent_id": null,
+      "title": "Apply Newton's first law to bodies in equilibrium",
+      "canonical_question": "How does Newton's first law describe a body at rest or moving at constant velocity when the net force is zero?",
+      "intent": null,
+      "summary": "Newton's first law: with zero net force a body stays at rest or moves at constant velocity. To apply it, list the forces, check they balance, and conclude the motion is unchanging.",
+      "concepts": [
+        "newtons-first-law",
+        "net-force"
+      ],
+      "depth": 1,
+      "visibility": "shared",
+      "created_by": "author-sbx01",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M02.O02",
+      "parent_id": null,
+      "title": "Identify inertial reference frames",
+      "canonical_question": "What is an inertial reference frame, and how can you tell whether Newton's first law holds in a given frame?",
+      "intent": null,
+      "summary": "An inertial frame is one in which a body with no net force keeps constant velocity. Accelerating or rotating frames are non-inertial; in them objects seem to move with no real force.",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "depth": 1,
+      "visibility": "shared",
+      "created_by": "author-sbx01",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M02.O01/book-on-table-balanced-forces",
+      "parent_id": "L01.M02.O01",
+      "title": "The book on the table: balanced forces",
+      "canonical_question": "Why does a book resting on a table not fall through even though gravity pulls it down?",
+      "intent": "example",
+      "summary": "Gravity pulls the book down, but the table pushes up with a normal force of exactly equal size. The table’s surface compresses very slightly under the book, like a stiff spring, and pushes back just hard enough to balance the weight.",
+      "concepts": [
+        "net-force",
+        "newtons-first-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M02.O01/why-resting-objects-stay-put",
+      "parent_id": "L01.M02.O01",
+      "title": "Why resting objects stay put",
+      "canonical_question": "Why does an object sitting on a surface stay still if gravity acts on it?",
+      "intent": "example",
+      "summary": "A resting object is not free of forces; it has gravity and the surface’s support pulling and pushing in opposite directions. The surface supplies exactly the upward force needed to cancel gravity, no more and no less.",
+      "concepts": [
+        "net-force",
+        "newtons-first-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M02.O02/what-makes-a-frame-inertial",
+      "parent_id": "L01.M02.O02",
+      "title": "What makes a frame inertial",
+      "canonical_question": "What actually makes a reference frame inertial?",
+      "intent": "clarify",
+      "summary": "A reference frame is inertial if an object with no net force on it moves in a straight line at constant velocity when viewed from that frame. A lab bench at rest on the ground is very nearly inertial for everyday purposes.",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M02.O02/recognizing-inertial-frames",
+      "parent_id": "L01.M02.O02",
+      "title": "Recognizing inertial frames",
+      "canonical_question": "How can you recognize whether a given reference frame is inertial?",
+      "intent": "clarify",
+      "summary": "To check a frame, imagine a body with zero net force and watch how it moves in that frame. The ground is a good enough inertial frame for a game of billiards.",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M02.O01/why-equilibrium-means-zero-net-force",
+      "parent_id": "L01.M02.O01",
+      "title": "Why equilibrium means zero net force",
+      "canonical_question": "Why does mechanical equilibrium require the net force to be exactly zero?",
+      "intent": "deepen",
+      "summary": "The first law says motion changes only when a net force acts, so a body whose motion is not changing must feel zero net force. Zero net force means the forces cancel in every direction at once, not just up and down.",
+      "concepts": [
+        "net-force",
+        "newtons-first-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M02.O02/why-earth-is-nearly-inertial",
+      "parent_id": "L01.M02.O02",
+      "title": "Why Earth is nearly inertial",
+      "canonical_question": "Why can Earth’s surface be treated as an approximately inertial frame despite its rotation?",
+      "intent": "deepen",
+      "summary": "Earth rotates and orbits, so strictly its surface is a non-inertial frame. Over large scales or long times the rotation shows up, for instance in the swing of a Foucault pendulum or the curving of winds.",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M02.O01/first-law-constant-velocity",
+      "parent_id": "L01.M02.O01",
+      "title": "The first law at constant velocity",
+      "canonical_question": "How does Newton’s first law apply to a car cruising at constant velocity?",
+      "intent": "apply",
+      "summary": "A car holding a steady speed in a straight line has zero net force, even though its engine is working. Press the accelerator and the drive force exceeds resistance, so a net force appears and the car speeds up.",
+      "concepts": [
+        "newtons-first-law",
+        "net-force"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M02.O02/fictitious-forces-in-accelerating-frames",
+      "parent_id": "L01.M02.O02",
+      "title": "Fictitious forces in accelerating frames",
+      "canonical_question": "What fictitious forces appear in a non-inertial (accelerating) reference frame?",
+      "intent": "deepen",
+      "summary": "In an accelerating frame, objects seem to be pushed by forces that have no physical source. Pressed back into your seat as a car accelerates, or flung outward on a roundabout, you feel such apparent forces.",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M02.O01/tension-in-a-rope-at-rest",
+      "parent_id": "L01.M02.O01",
+      "title": "Tension in a rope at rest",
+      "canonical_question": "How do you find the tension in a rope holding a hanging weight at rest?",
+      "intent": "apply",
+      "summary": "A weight hanging still from a rope is in equilibrium, so the upward tension exactly balances the downward weight. If a 2 kg mass hangs at rest, its weight is about 20 N, so the rope tension is about 20 N.",
+      "concepts": [
+        "net-force",
+        "newtons-first-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/course.schema.json",
+  "title": "metadax.course/0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "id", "title", "summary", "language", "audience", "steer", "concepts", "lessons", "sources", "policy"],
+  "properties": {
+    "schema": { "const": "metadax.course/0.2" },
+    "id": { "$ref": "#/$defs/slug" },
+    "title": { "type": "string", "maxLength": 80 },
+    "summary": { "type": "string" },
+    "language": { "$ref": "#/$defs/bcp47" },
+    "audience": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intended_bands"],
+      "properties": {
+        "intended_bands": { "type": "array", "items": { "$ref": "#/$defs/ageBand" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "steer": { "$ref": "#/$defs/courseSteer" },
+    "concepts": { "type": "array", "items": { "$ref": "#/$defs/concept" } },
+    "lessons": { "type": "array", "items": { "$ref": "#/$defs/lesson" } },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["learner_nodes", "minor_nodes"],
+      "properties": {
+        "learner_nodes": { "enum": ["pending_review", "shared"] },
+        "minor_nodes": { "enum": ["pending_review"] }
+      }
+    },
+    "license": { "type": "string" },
+    "generated_segments_license": { "type": "string" },
+    "constraint_decl": { "anyOf": [ { "type": "null" }, { "type": "object" } ] },
+    "created_at": { "$ref": "#/$defs/rfc3339" },
+    "updated_at": { "$ref": "#/$defs/rfc3339" }
+  },
+  "$defs": {
+    "rfc3339": {
+      "anyOf": [
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$" },
+        { "const": "runtime" }
+      ]
+    },
+    "slug": { "type": "string", "maxLength": 200, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "conceptId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "bcp47": { "type": "string", "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]+)*$" },
+    "bloom": { "enum": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"] },
+    "ageBand": { "enum": ["4-6", "7-9", "10-12", "13-15", "16-18", "adult", "unknown"] },
+    "courseSteer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["focus"],
+      "properties": {
+        "focus": { "type": "string" },
+        "include": { "type": "array", "items": { "type": "string" } },
+        "exclude": { "type": "array", "items": { "type": "string" } },
+        "tone": { "type": "string" },
+        "depth": { "enum": ["introductory", "intermediate", "advanced", "expert"] },
+        "source_policy": { "enum": ["source_only", "source_first", "open"] },
+        "scope_policy": { "enum": ["strict", "tangents_allowed"] },
+        "max_depth": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "subSteer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["focus"],
+      "properties": {
+        "focus": { "type": "string" },
+        "include": { "type": "array", "items": { "type": "string" } },
+        "exclude": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "concept": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "description", "bloom_target"],
+      "properties": {
+        "id": { "$ref": "#/$defs/conceptId" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "bloom_target": { "$ref": "#/$defs/bloom" },
+        "prerequisites": { "type": "array", "items": { "$ref": "#/$defs/conceptId" } },
+        "misconceptions": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "lesson": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "modules"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^L\\d\\d$" },
+        "title": { "type": "string", "maxLength": 80 },
+        "summary": { "type": "string" },
+        "steer": { "$ref": "#/$defs/subSteer" },
+        "modules": { "type": "array", "items": { "$ref": "#/$defs/module" } }
+      }
+    },
+    "module": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "objectives"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^L\\d\\d\\.M\\d\\d$" },
+        "title": { "type": "string", "maxLength": 80 },
+        "summary": { "type": "string" },
+        "steer": { "$ref": "#/$defs/subSteer" },
+        "objectives": { "type": "array", "items": { "$ref": "#/$defs/objective" } }
+      }
+    },
+    "objective": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "statement", "concepts", "bloom_target"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d$" },
+        "title": { "type": "string", "maxLength": 80 },
+        "statement": { "type": "string" },
+        "concepts": { "type": "array", "items": { "$ref": "#/$defs/conceptId" } },
+        "bloom_target": { "$ref": "#/$defs/bloom" },
+        "source_refs": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "path"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^src:.+$" },
+        "title": { "type": "string" },
+        "path": { "type": "string" }
+      }
+    }
+  }
+}

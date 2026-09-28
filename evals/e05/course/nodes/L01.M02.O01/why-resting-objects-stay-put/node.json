@@ -1,0 +1,68 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O01/why-resting-objects-stay-put",
+  "parent_id": "L01.M02.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Why resting objects stay put",
+  "question": "",
+  "canonical_question": "Why does an object sitting on a surface stay still if gravity acts on it?",
+  "intent": "example",
+  "summary": [
+    "A resting object is not free of forces; it has gravity and the surface’s support pulling and pushing in opposite directions.",
+    "The surface supplies exactly the upward force needed to cancel gravity, no more and no less."
+  ],
+  "concepts": [
+    "net-force",
+    "newtons-first-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Balance, not absence",
+        "body_md": "A resting object is not free of forces; it has gravity and the surface’s support pulling and pushing in opposite directions. Because they are equal, they cancel, leaving no net force. The first law then guarantees it keeps its state of rest."
+      },
+      {
+        "id": "s2",
+        "heading": "The support adjusts itself",
+        "body_md": "The surface supplies exactly the upward force needed to cancel gravity, no more and no less. Press down harder and it pushes back harder, up to its breaking point. This self-adjusting support is why most everyday objects simply sit still."
+      }
+    ],
+    "key_points": [
+      "Resting objects have balanced, not zero, forces.",
+      "Equal and opposite forces give zero net force.",
+      "Support forces self-adjust to the load."
+    ],
+    "bridge_to_parent": "It repeats the equilibrium idea with a general resting object.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "When does the surface stop being able to support?",
+    "Is the normal force always vertical?"
+  ],
+  "path": [
+    {
+      "id": "L01.M02.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "243adbb7cecc27d2195d76e4271f1fd67c8bbd7e4745c4843f0b56774a8de04e"
+}

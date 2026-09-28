@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L02.M01.O01/how-mass-and-weight-differ",
+  "content_hash": "3209b4dc57711c751344a32edf575facba50c441786cf30c95d022137308a823",
+  "created_by": {
+    "id": "author-e05",
+    "key_id": null,
+    "chain_role": "author"
+  },
+  "lineage": [
+    {
+      "node_id": "L02.M01.O01",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-28T00:22:58Z"
+}

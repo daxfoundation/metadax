@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/learner-profile.schema.json",
+  "title": "metadax.learner/0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "learner_id", "age_band", "reading_level", "languages", "consent"],
+  "properties": {
+    "schema": { "const": "metadax.learner/0.2" },
+    "learner_id": { "type": "string", "pattern": "^lrn-[a-z0-9]{6,}$" },
+    "display_name": { "type": "string" },
+    "age_band": { "enum": ["4-6", "7-9", "10-12", "13-15", "16-18", "adult", "unknown"] },
+    "reading_level": { "enum": ["plain-language", "grade-1", "grade-2", "grade-3", "grade-4", "grade-5", "grade-6", "grade-7", "grade-8", "grade-9", "grade-10", "grade-11", "grade-12", "adult"] },
+    "languages": { "type": "array", "items": { "$ref": "#/$defs/bcp47" } },
+    "goals": { "type": "array", "items": { "type": "string" } },
+    "interests": { "type": "array", "items": { "type": "string" } },
+    "prior_knowledge": {
+      "type": "object",
+      "additionalProperties": { "enum": ["none", "some", "solid"] }
+    },
+    "supports": { "type": "array", "items": { "type": "string" } },
+    "avoid": { "type": "array", "items": { "type": "string" } },
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minutes": { "type": "integer", "minimum": 0 },
+        "output_mode": { "enum": ["json", "markdown"] }
+      }
+    },
+    "tone": { "type": "string" },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["share_my_questions", "guardian_managed", "share_progress_with_mentor"],
+      "properties": {
+        "share_my_questions": { "type": "boolean" },
+        "guardian_managed": { "type": "boolean" },
+        "share_progress_with_mentor": { "type": "boolean" }
+      }
+    },
+    "created_at": { "$ref": "#/$defs/rfc3339" },
+    "updated_at": { "$ref": "#/$defs/rfc3339" }
+  },
+  "$defs": {
+    "rfc3339": {
+      "anyOf": [
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$" },
+        { "const": "runtime" }
+      ]
+    },
+    "bcp47": { "type": "string", "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]+)*$" }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L02.M01.O01",
+  "parent_id": null,
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "Explain F = ma and the role of mass",
+  "question": "",
+  "canonical_question": "What does Newton's second law F = ma mean, and what role does mass play in it?",
+  "intent": null,
+  "summary": [
+    "Newton's second law says net force equals mass times acceleration: F = ma.",
+    "Mass measures inertia; for a given force, more mass means less acceleration."
+  ],
+  "concepts": [
+    "newtons-second-law",
+    "mass"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "From 'what changes motion' to 'how much'",
+        "body_md": "The first law says a net force is what changes motion. The second law makes that quantitative: it tells you exactly how much a given net force changes the motion. Written as F = ma, it links three things you now understand, net force F, mass m and acceleration a, into one equation. This is the workhorse of Newtonian mechanics, so it is worth reading slowly."
+      },
+      {
+        "id": "s2",
+        "heading": "What F = ma actually says",
+        "body_md": "Newton's second law states that the net force on a body equals its mass multiplied by its acceleration: F = m times a. Read left to right, a net force produces an acceleration. Read as a = F / m, the same acceleration is the net force shared out over the mass. Crucially, force sets acceleration, not velocity: while the net force acts, the velocity keeps changing. Force and acceleration point the same way, so a sideways net force turns the motion sideways.",
+        "check": {
+          "question": "In F = ma, does a steady net force produce a steady velocity or a steady acceleration?",
+          "answer": "A steady acceleration; the velocity keeps changing for as long as the force acts."
+        }
+      },
+      {
+        "id": "s3",
+        "heading": "The role of mass",
+        "body_md": "Mass is the m in the equation, and it measures inertia, the reluctance to be accelerated. For the same net force, a larger mass gets a smaller acceleration, because a = F / m. This is why a loaded lorry responds sluggishly to the same engine force that would fling a motorbike forward. Mass is a property of the object itself and does not change when you move it to the Moon, unlike weight, which is the gravitational force on that mass."
+      },
+      {
+        "id": "s4",
+        "heading": "Units, and a small worked example",
+        "body_md": "In SI units, mass is in kilograms (kg), acceleration in metres per second per second (m/s^2), and force in newtons (N). One newton is defined so that 1 N = 1 kg times 1 m/s^2. Worked example: push a 2 kg block with a net force of 6 N. Then a = F / m = 6 / 2 = 3 m/s^2. The block speeds up by 3 metres per second every second while the push lasts. Halve the force and the acceleration halves; double the mass and it halves again."
+      },
+      {
+        "id": "s5",
+        "heading": "A common mistake",
+        "body_md": "A common mistake is to treat mass and weight as the same thing. Mass (kg) is how much inertia a body has; weight (N) is the force of gravity on it, equal to mass times the gravitational field strength. On the Moon your mass is unchanged but your weight is about a sixth of its Earth value. In F = ma the m is always mass, never weight."
+      }
+    ],
+    "key_points": [
+      "Newton's second law: net force equals mass times acceleration, F = ma.",
+      "Force sets acceleration, not velocity.",
+      "For a fixed force, larger mass gives smaller acceleration (a = F / m).",
+      "SI units: force in newtons, where 1 N = 1 kg m/s^2.",
+      "Mass measures inertia and differs from weight, the force of gravity."
+    ],
+    "bridge_to_parent": "This states the second law and the meaning of mass, the equation the rest of the module puts to work.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How do I find the net force before using F = ma?",
+    "Why is weight equal to mass times gravitational field strength?",
+    "What happens to acceleration if the force keeps changing?"
+  ],
+  "path": [],
+  "created_by": "author-sbx01",
+  "visibility": "shared",
+  "created_at": "2026-09-27T20:15:09Z",
+  "updated_at": "2026-09-27T20:15:09Z",
+  "content_sha256": "e66298c2b873f5d1e99e32fa3a5a97ceb1962906389834b9b40b8facd9f6b1c3",
+  "superseded_by": null
+}

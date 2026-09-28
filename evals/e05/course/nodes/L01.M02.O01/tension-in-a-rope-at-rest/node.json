@@ -1,0 +1,68 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O01/tension-in-a-rope-at-rest",
+  "parent_id": "L01.M02.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Tension in a rope at rest",
+  "question": "",
+  "canonical_question": "How do you find the tension in a rope holding a hanging weight at rest?",
+  "intent": "apply",
+  "summary": [
+    "A weight hanging still from a rope is in equilibrium, so the upward tension exactly balances the downward weight.",
+    "If a 2 kg mass hangs at rest, its weight is about 20 N, so the rope tension is about 20 N."
+  ],
+  "concepts": [
+    "net-force",
+    "newtons-first-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Balance the hanging weight",
+        "body_md": "A weight hanging still from a rope is in equilibrium, so the upward tension exactly balances the downward weight. That makes the tension equal to the weight, which is mass times g. Nothing accelerates, so the forces must cancel."
+      },
+      {
+        "id": "s2",
+        "heading": "Reading the setup",
+        "body_md": "If a 2 kg mass hangs at rest, its weight is about 20 N, so the rope tension is about 20 N. A rope can only pull, never push, so the tension always points along the rope away from the object. At rest, that pull matches the load."
+      }
+    ],
+    "key_points": [
+      "A hanging weight at rest is in equilibrium.",
+      "Tension equals the weight, mg.",
+      "Ropes pull only, along their length."
+    ],
+    "bridge_to_parent": "It applies the objective’s equilibrium idea to a rope.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "What if the weight is accelerating?",
+    "How do two ropes share a load?"
+  ],
+  "path": [
+    {
+      "id": "L01.M02.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "f9b2d2ef3587a044aa7eb15516817b22dbfab6bc46e46c84fb6ca60edd90fc14"
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/error.schema.json",
+  "title": "metadax K-3 error object",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "missing", "message"],
+  "properties": {
+    "type": { "const": "error" },
+    "missing": { "type": "array", "items": { "type": "string" } },
+    "message": { "type": "string" },
+    "state": { "type": "object" }
+  }
+}

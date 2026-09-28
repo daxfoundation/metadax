@@ -1,0 +1,8 @@
+{
+  "schema": "metadax.learner/0.2",
+  "type": [
+    "patch",
+    "profile",
+    "profile_patch"
+  ]
+}

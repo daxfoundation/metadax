@@ -1,0 +1,13 @@
+{
+  "schema": "followup-output.schema.json",
+  "type": "followup",
+  "max_lengths": {
+    "resolved_question": 500
+  },
+  "allowed_warnings": [
+    "low_confidence",
+    "out_of_scope",
+    "source_gap",
+    "depth_limit"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O01/why-equilibrium-means-zero-net-force",
+  "parent_id": "L01.M02.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Why equilibrium means zero net force",
+  "question": "",
+  "canonical_question": "Why does mechanical equilibrium require the net force to be exactly zero?",
+  "intent": "deepen",
+  "summary": [
+    "The first law says motion changes only when a net force acts, so a body whose motion is not changing must feel zero net force.",
+    "Zero net force means the forces cancel in every direction at once, not just up and down."
+  ],
+  "concepts": [
+    "net-force",
+    "newtons-first-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "From the first law",
+        "body_md": "The first law says motion changes only when a net force acts, so a body whose motion is not changing must feel zero net force. Equilibrium is precisely the state of unchanging motion, at rest or at constant velocity. Hence the net force must vanish."
+      },
+      {
+        "id": "s2",
+        "heading": "Balance of every direction",
+        "body_md": "Zero net force means the forces cancel in every direction at once, not just up and down. If any direction had a leftover force, the body would start to accelerate that way. Equilibrium is therefore a statement about the whole vector sum being zero."
+      }
+    ],
+    "key_points": [
+      "Unchanging motion implies zero net force.",
+      "Equilibrium follows from the first law.",
+      "Forces must cancel in every direction."
+    ],
+    "bridge_to_parent": "It explains the reason behind the objective’s equilibrium rule.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How do I show a specific object is in equilibrium?",
+    "Does constant velocity count as equilibrium?"
+  ],
+  "path": [
+    {
+      "id": "L01.M02.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "0eb037d41c0c7208a0e625f7891735c499c42aaed84dae5feaa8fbb8a58f7e99"
+}

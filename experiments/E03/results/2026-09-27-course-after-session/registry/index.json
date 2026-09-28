@@ -1,0 +1,19 @@
+{
+  "schema": "metadax.registry-index/0.2",
+  "course_id": "cell-biology-obsidian",
+  "updated_at": "2026-09-27T20:08:18Z",
+  "modules": [
+    {
+      "id": "L01.M01",
+      "file": "registry/L01.M01.json",
+      "node_count": 9,
+      "updated_at": "2026-09-27T20:08:18Z"
+    },
+    {
+      "id": "L01.M02",
+      "file": "registry/L01.M02.json",
+      "node_count": 1,
+      "updated_at": "2026-09-27T19:03:28Z"
+    }
+  ]
+}

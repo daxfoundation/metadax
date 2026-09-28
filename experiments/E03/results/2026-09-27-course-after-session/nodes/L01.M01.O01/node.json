@@ -1,0 +1,77 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O01",
+  "parent_id": null,
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "Introduction to energy production in the mitochondria",
+  "question": "",
+  "canonical_question": "How do mitochondria produce energy for the cell?",
+  "intent": null,
+  "summary": [
+    "Cellular respiration converts nutrients into ATP.",
+    "Most ATP is made in the mitochondrion."
+  ],
+  "concepts": [
+    "cellular-respiration",
+    "atp-synthesis",
+    "mitochondrion-structure"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "What the mitochondrion does",
+        "body_md": "The mitochondrion is the part of a cell where most of its usable energy is made. It takes the energy stored in food molecules, mostly sugars and fats, and repackages it into a small molecule called ATP. Cells spend ATP to move, build, and signal, so a steady supply matters."
+      },
+      {
+        "id": "s2",
+        "heading": "From food to ATP",
+        "body_md": "Breaking down food happens in stages. Sugars are first split in the fluid of the cell, and the fragments are then fed into the mitochondrion. Inside, a cycle of reactions strips high-energy electrons from these fragments and hands them to carrier molecules."
+      },
+      {
+        "id": "s3",
+        "heading": "Why the mitochondrion is built the way it is",
+        "body_md": "A mitochondrion has two membranes. The inner one is folded into ridges that pack a large surface into a small space. Those folds hold the machinery that turns the electron supply into ATP, so more surface means more output."
+      },
+      {
+        "id": "s4",
+        "heading": "The payoff: ATP",
+        "body_md": "ATP acts like a rechargeable battery. When a cell needs energy it breaks one bond in ATP and releases a usable burst; the spent molecule is then recharged in the mitochondrion. Because the pool is recycled constantly, a cell keeps only a small amount on hand at any moment."
+      }
+    ],
+    "key_points": [
+      "Most of a cell usable ATP is produced in the mitochondrion.",
+      "Food energy is transferred to electron carriers, then to ATP.",
+      "The folded inner membrane holds the energy-converting machinery."
+    ],
+    "bridge_to_parent": "",
+    "bridge_to_objective": "",
+    "source_refs": [
+      "src:notes-mitochondria"
+    ]
+  },
+  "seeds": [
+    "What proteins are needed to make ATP?",
+    "How is the folded inner membrane different from the outer one?",
+    "How does exercise change ATP demand?"
+  ],
+  "path": [],
+  "created_by": "author-fixture",
+  "visibility": "shared",
+  "created_at": "2026-09-27T19:03:28Z",
+  "updated_at": "2026-09-27T19:03:28Z",
+  "content_sha256": "f4ffe9d811818927962699e17233f0aabc8ba87185298949330c82f51ef8eb3b",
+  "superseded_by": null,
+  "model": "author-fixture",
+  "stats": {
+    "views": 0,
+    "reuse_count": 0
+  }
+}

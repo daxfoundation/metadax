@@ -1,0 +1,18 @@
+{
+  "schema": "metadax.learner/0.2",
+  "learner_id": "lrn-00000000",
+  "display_name": "",
+  "age_band": "adult",
+  "reading_level": "adult",
+  "languages": ["en"],
+  "goals": [],
+  "interests": [],
+  "prior_knowledge": {},
+  "supports": [],
+  "avoid": [],
+  "session": { "minutes": 20, "output_mode": "markdown" },
+  "tone": "encouraging",
+  "consent": { "share_my_questions": false, "guardian_managed": false, "share_progress_with_mentor": false },
+  "created_at": "runtime",
+  "updated_at": "runtime"
+}

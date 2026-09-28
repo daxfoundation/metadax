@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L02.M01.O02/acceleration-on-a-frictionless-incline",
+  "parent_id": "L02.M01.O02",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Acceleration on a frictionless incline",
+  "question": "",
+  "canonical_question": "How do you find the acceleration of a block sliding down a frictionless incline?",
+  "intent": "apply",
+  "summary": [
+    "On a frictionless incline the only force along the slope is the component of gravity pointing downhill.",
+    "Because both the driving force and the inertia grow with mass, the mass cancels and the acceleration depends only on the angle."
+  ],
+  "concepts": [
+    "newtons-second-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Only gravity acts along the slope",
+        "body_md": "On a frictionless incline the only force along the slope is the component of gravity pointing downhill. That component is the weight times the sine of the slope angle. Dividing by mass leaves an acceleration of g times sine of the angle."
+      },
+      {
+        "id": "s2",
+        "heading": "Why mass drops out",
+        "body_md": "Because both the driving force and the inertia grow with mass, the mass cancels and the acceleration depends only on the angle. A steeper slope gives a larger acceleration, up to g for a vertical drop. This makes inclines a neat way to study gravity gently."
+      }
+    ],
+    "key_points": [
+      "Downhill force is mg sin(theta).",
+      "Acceleration is g sin(theta).",
+      "Mass cancels, so only the angle matters."
+    ],
+    "bridge_to_parent": "It applies the objective’s acceleration method to an incline.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "What changes when friction is present?",
+    "How steep to get half of g?"
+  ],
+  "path": [
+    {
+      "id": "L02.M01.O02",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "c30a0be6b3cd6782e8d71c4d27e8a4d3ccd6f65ce3b4a0398f5b969fcda0bfe5"
+}

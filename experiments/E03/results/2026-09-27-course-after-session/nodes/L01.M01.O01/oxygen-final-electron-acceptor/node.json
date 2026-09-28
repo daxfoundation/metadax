@@ -1,0 +1,72 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O01/oxygen-final-electron-acceptor",
+  "parent_id": "L01.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": {
+    "section_id": "s4",
+    "quote": "the spent molecule is then recharged in the mitochondrion"
+  },
+  "title": "Why oxygen is the final electron acceptor",
+  "question": "why is oxygen the final acceptor?",
+  "canonical_question": "Why is oxygen the final electron acceptor in the electron transport chain?",
+  "intent": "deepen",
+  "summary": [
+    "Oxygen strongly attracts electrons, so it pulls them through the chain.",
+    "Accepting the spent electrons, it forms water as a stable end point."
+  ],
+  "concepts": [
+    "cellular-respiration"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "adjacent",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0.4,
+    "rationale": "The electron transport chain objective states oxygen is the final acceptor but does not explain why; no node answers the why at this angle."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Oxygen pulls the electrons through",
+        "body_md": "Oxygen is strongly electron-attracting: it pulls electrons toward itself more forcefully than the carriers before it. Sitting at the very end of the chain, that pull draws electrons down through the complexes, which is what keeps the whole chain flowing. With nothing to accept them at the end, electrons would pile up and the chain would stall."
+      },
+      {
+        "id": "s2",
+        "heading": "Forming water closes the path",
+        "body_md": "When oxygen takes the spent electrons it also picks up protons and turns into water. Because water is stable and does not hand the electrons back, the acceptance is a one-way exit. That one-way step is why oxygen, and not some easier-to-reverse molecule, sits at the end."
+      }
+    ],
+    "key_points": [
+      "Oxygen strongly attracts electrons and pulls them through the chain.",
+      "Taking the electrons, oxygen forms water, a stable end point.",
+      "Without a final acceptor the chain backs up and stops."
+    ],
+    "bridge_to_parent": "It explains the last step of the electron journey that ultimately recharges ATP (see: Introduction to energy production in the mitochondria).",
+    "bridge_to_objective": "It closes the electron path that lets the mitochondrion keep making ATP.",
+    "source_refs": []
+  },
+  "seeds": [
+    "What exactly happens to the water that oxygen forms?",
+    "What is one poison that blocks oxygen from accepting electrons?",
+    "How does this link back to why we breathe in oxygen?"
+  ],
+  "path": [
+    {
+      "id": "L01.M01.O01",
+      "title": "Introduction to energy production in the mitochondria",
+      "summary": "Cellular respiration converts nutrients into ATP. Most ATP is made in the mitochondrion."
+    }
+  ],
+  "created_by": "lrn-sbx0adlt",
+  "visibility": "pending_review",
+  "created_at": "2026-09-27T20:08:18Z",
+  "updated_at": "2026-09-27T20:08:18Z",
+  "content_sha256": "9ad5754e16391b791f72462c350f169f5d1bd730a518125147012eea3ba0f385",
+  "superseded_by": null
+}

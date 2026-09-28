@@ -1,0 +1,43 @@
+# MetaDAX certification eval (promptfoo).
+#
+# The SAME cases as evals/cases/, run as promptfoo tests against two vendors.
+# CONFIGURED ONLY. Not installed and not run in this repo. It runs from
+# .github/workflows/certify.yml, which is workflow_dispatch only (D8).
+#
+# Requires (as repository secrets, names only -- never commit a key):
+#   ANTHROPIC_API_KEY, OPENAI_API_KEY
+# and two model ids passed through the environment:
+#   ANTHROPIC_MODEL, OPENAI_MODEL   (a third FLOOR_MODEL is added when running the floor tier)
+#
+# Run (once promptfoo is installed, e.g. `npx promptfoo@latest eval`):
+#   npx promptfoo eval -c evals/promptfoo/promptfooconfig.yaml
+
+description: MetaDAX v0.2 prompt certification -- two primary models, one per vendor (D3)
+
+# The prompt IS the assembled stack, passed straight through as the user turn.
+prompts:
+  - '{{stack}}'
+
+# Two primary models, one per vendor (decision D3). The floor model is added by
+# the workflow when it runs the floor tier (provider id openai/anthropic with
+# FLOOR_MODEL). Model ids come from the environment; no id is hard-coded here,
+# so this file never implies a model was tested (docs/ACCURACY.md item 8).
+providers:
+  - id: anthropic:messages:${ANTHROPIC_MODEL}
+    config:
+      max_tokens: 4096
+      temperature: 0
+  - id: openai:responses:${OPENAI_MODEL}
+    config:
+      temperature: 0
+
+# The cases are generated from evals/cases/ so promptfoo runs exactly the same
+# inputs as the local runner. Each generated test carries the stack, the case
+# dir and expect.json, and asserts by calling evals/grade.js.
+tests: file://tests.js
+
+defaultTest:
+  options:
+    # grade.js is the single source of truth for pass/fail (parse, schema,
+    # gates, expect). The assertion just forwards the model output to it.
+    transformVars: '{ ...vars }'

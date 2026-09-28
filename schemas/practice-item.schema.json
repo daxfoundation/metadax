@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/practice-item.schema.json",
+  "title": "metadax practice item (MP-06 practice_set)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "concept", "bloom_level", "question_type", "grading", "question", "answer", "explanation"],
+  "properties": {
+    "id": { "type": "string", "maxLength": 200, "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*#p\\d\\d$" },
+    "concept": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "bloom_level": { "enum": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"] },
+    "question_type": { "$ref": "#/$defs/questionType" },
+    "grading": { "enum": ["exact", "rubric"] },
+    "question": { "type": "string" },
+    "options": { "type": "array", "items": { "type": "string" } },
+    "answer": { "type": "string" },
+    "accept": { "type": "array", "items": { "type": "string" } },
+    "rubric": { "type": "array", "items": { "type": "string" } },
+    "hints": { "type": "array", "items": { "type": "string" } },
+    "bonus": { "type": "array", "items": { "type": "string" } },
+    "explanation": { "type": "string" }
+  },
+  "$defs": {
+    "questionType": { "enum": ["True/False", "Multiple Choice", "Matching", "Fill-in-the-Blanks", "Binary Choice", "Short Answer (explain in own words)", "Categorization", "Cloze", "Numeric/Calculation", "Short Answer (practical use)", "Completion", "Short Problem-Solving", "Ordering/Sequencing", "Assertion-Reason", "Ranking", "Short Answer (analytical)", "Short Answer (critical judgement)", "Short Essay (1 paragraph)", "Ranking with justification", "Essay or Design", "Open-Ended Completion"] }
+  }
+}

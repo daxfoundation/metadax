@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
+  "content_hash": "734ff93095aa61bd7df8b95682c9837328415ae402f1f8dcc00ca7910360fe26",
+  "created_by": {
+    "id": "lrn-fixture01",
+    "key_id": null,
+    "chain_role": "learner"
+  },
+  "lineage": [
+    {
+      "node_id": "L01.M01.O01/proteins-essential-atp-synthesis",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-27T19:03:28Z"
+}

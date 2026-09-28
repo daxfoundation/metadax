@@ -1,0 +1,9 @@
+{
+  "schema": "metadax.course/0.2",
+  "type": [
+    "suggestions",
+    "course",
+    "patch",
+    "clarify"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L02.M01.O02/why-acceleration-follows-net-force",
+  "parent_id": "L02.M01.O02",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Why acceleration follows the net force",
+  "question": "",
+  "canonical_question": "Why does the acceleration always point in the same direction as the net force?",
+  "intent": "deepen",
+  "summary": [
+    "F = ma relates two vectors with mass, a positive number, between them.",
+    "Whatever way the leftover push points, the change in motion builds up that same way."
+  ],
+  "concepts": [
+    "newtons-second-law",
+    "kinematic-quantities"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "The law is a vector equation",
+        "body_md": "F = ma relates two vectors with mass, a positive number, between them. Multiplying a vector by a positive number cannot change its direction, only its length. So acceleration must point exactly where the net force points."
+      },
+      {
+        "id": "s2",
+        "heading": "What that means physically",
+        "body_md": "Whatever way the leftover push points, the change in motion builds up that same way. Push forward and the body speeds up forward; push sideways and its path bends toward the push. Direction of cause equals direction of effect."
+      }
+    ],
+    "key_points": [
+      "F = ma is a vector equation.",
+      "Positive mass preserves direction.",
+      "Acceleration lines up with net force."
+    ],
+    "bridge_to_parent": "It deepens why direction is shared, not how to compute it.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How would I calculate that acceleration’s size?",
+    "What if the force direction changes over time?"
+  ],
+  "path": [
+    {
+      "id": "L02.M01.O02",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "fb357e25b20a57f496001ee38af66bedde1f6e396d0664700acb6976d7203b72"
+}

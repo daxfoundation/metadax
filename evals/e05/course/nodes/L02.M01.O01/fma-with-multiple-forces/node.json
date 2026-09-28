@@ -1,0 +1,68 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L02.M01.O01/fma-with-multiple-forces",
+  "parent_id": "L02.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Using F = ma with several forces",
+  "question": "",
+  "canonical_question": "How do you apply F = ma when several forces act on the same body?",
+  "intent": "apply",
+  "summary": [
+    "When many forces act, first add them as vectors to get the single net force.",
+    "A box pushed with 10 N forward while 4 N of friction acts backward feels a net 6 N."
+  ],
+  "concepts": [
+    "newtons-second-law",
+    "net-force"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Sum first, then divide",
+        "body_md": "When many forces act, first add them as vectors to get the single net force. Only that net force goes into F = ma. Then the acceleration is the net force divided by the mass."
+      },
+      {
+        "id": "s2",
+        "heading": "A quick case",
+        "body_md": "A box pushed with 10 N forward while 4 N of friction acts backward feels a net 6 N. If its mass is 2 kg, its acceleration is 3 m/s^2 forward. The trick is always to combine forces before dividing."
+      }
+    ],
+    "key_points": [
+      "Combine all forces into one net force.",
+      "Only the net force enters F = ma.",
+      "Then divide by the mass for acceleration."
+    ],
+    "bridge_to_parent": "It applies the objective’s law when forces compete.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How do I handle forces at an angle?",
+    "What if friction is unknown?"
+  ],
+  "path": [
+    {
+      "id": "L02.M01.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "05ceafca34baeacc3c958e32c1e3d894b12d117138273c6411e87bdbebf886a1"
+}

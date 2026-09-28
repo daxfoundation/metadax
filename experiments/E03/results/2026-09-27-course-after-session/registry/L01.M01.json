@@ -1,0 +1,162 @@
+{
+  "schema": "metadax.registry/0.2",
+  "course_id": "cell-biology-obsidian",
+  "module_id": "L01.M01",
+  "updated_at": "2026-09-27T20:08:18Z",
+  "nodes": [
+    {
+      "id": "L01.M01.O01",
+      "parent_id": null,
+      "title": "Introduction to energy production in the mitochondria",
+      "canonical_question": "How do mitochondria produce energy for the cell?",
+      "intent": null,
+      "summary": "Cellular respiration converts nutrients into ATP. Most ATP is made in the mitochondrion.",
+      "concepts": [
+        "cellular-respiration",
+        "atp-synthesis",
+        "mitochondrion-structure"
+      ],
+      "visibility": "shared",
+      "created_by": "author-fixture",
+      "reuse_count": 0,
+      "depth": 1,
+      "superseded_by": null
+    },
+    {
+      "id": "L01.M01.O02",
+      "parent_id": null,
+      "title": "The electron transport chain",
+      "canonical_question": "How does the electron transport chain move electrons and build a gradient?",
+      "intent": null,
+      "summary": "Membrane complexes pass electrons and pump protons. Oxygen is the final electron acceptor.",
+      "concepts": [
+        "electron-transport-chain",
+        "proton-gradient",
+        "cytochrome-c"
+      ],
+      "visibility": "shared",
+      "created_by": "author-fixture",
+      "reuse_count": 0,
+      "depth": 1,
+      "superseded_by": null
+    },
+    {
+      "id": "L01.M01.O01/proteins-essential-atp-synthesis",
+      "parent_id": "L01.M01.O01",
+      "title": "Proteins essential for ATP synthesis",
+      "canonical_question": "Which proteins are essential for ATP synthesis in the mitochondrion?",
+      "intent": "deepen",
+      "summary": "ATP synthase has a proton-driven rotor and a catalytic head. Complexes I to IV build the proton gradient that drives it.",
+      "concepts": [
+        "atp-synthesis",
+        "electron-transport-chain"
+      ],
+      "visibility": "shared",
+      "created_by": "lrn-fixture01",
+      "reuse_count": 4,
+      "depth": 2,
+      "superseded_by": null
+    },
+    {
+      "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
+      "parent_id": "L01.M01.O01/proteins-essential-atp-synthesis",
+      "title": "Cytochrome c: structure and role",
+      "canonical_question": "What does cytochrome c do in the electron transport chain?",
+      "intent": "deepen",
+      "summary": "Cytochrome c is a small mobile electron carrier. It shuttles electrons from Complex III to Complex IV.",
+      "concepts": [
+        "cytochrome-c",
+        "electron-transport-chain"
+      ],
+      "visibility": "shared",
+      "created_by": "lrn-fixture01",
+      "reuse_count": 1,
+      "depth": 3,
+      "superseded_by": null
+    },
+    {
+      "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
+      "parent_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
+      "title": "Electron donation to Complex IV",
+      "canonical_question": "How does cytochrome c donate electrons to Complex IV?",
+      "intent": "deepen",
+      "summary": "Cytochrome c docks on Complex IV and releases its electron. The electron moves through copper and heme sites to oxygen.",
+      "concepts": [
+        "cytochrome-c",
+        "electron-transport-chain"
+      ],
+      "visibility": "shared",
+      "created_by": "lrn-fixture01",
+      "reuse_count": 0,
+      "depth": 4,
+      "superseded_by": null
+    },
+    {
+      "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv/plant-mitochondria-different",
+      "parent_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
+      "title": "Plant mitochondria different from animal",
+      "canonical_question": "Are plant mitochondria different from animal mitochondria?",
+      "intent": "contrast",
+      "summary": "Plant and animal mitochondria share the same central chain. Plants add alternative electron routes that trade ATP for flexibility.",
+      "concepts": [
+        "plant-animal-cells",
+        "mitochondrion-structure"
+      ],
+      "visibility": "shared",
+      "created_by": "lrn-fixture01",
+      "reuse_count": 0,
+      "depth": 5,
+      "superseded_by": null
+    },
+    {
+      "id": "L01.M01.O02/building-proton-gradient",
+      "parent_id": "L01.M01.O02",
+      "title": "Building the proton gradient",
+      "canonical_question": "How is the proton gradient across the inner membrane built?",
+      "intent": "deepen",
+      "summary": "Complexes pump protons as electrons move along the chain. The build-up stores energy across the inner membrane.",
+      "concepts": [
+        "proton-gradient",
+        "electron-transport-chain"
+      ],
+      "visibility": "pending_review",
+      "created_by": "lrn-fixture01",
+      "reuse_count": 0,
+      "depth": 2,
+      "superseded_by": null
+    },
+    {
+      "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/cytochrome-c-bacteria",
+      "parent_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
+      "title": "Cytochrome c in bacteria",
+      "canonical_question": "Is bacterial cytochrome c the same as the mitochondrial cytochrome c?",
+      "intent": "contrast",
+      "summary": "Bacteria carry cytochrome c-type proteins, but versions and locations vary. Their electron chains sit in the cell membrane, not in a mitochondrion.",
+      "concepts": [
+        "cytochrome-c",
+        "electron-transport-chain"
+      ],
+      "visibility": "pending_review",
+      "created_by": "lrn-sbx0adlt",
+      "reuse_count": 0,
+      "depth": 4,
+      "superseded_by": null
+    },
+    {
+      "id": "L01.M01.O01/oxygen-final-electron-acceptor",
+      "parent_id": "L01.M01.O01",
+      "title": "Why oxygen is the final electron acceptor",
+      "canonical_question": "Why is oxygen the final electron acceptor in the electron transport chain?",
+      "intent": "deepen",
+      "summary": "Oxygen strongly attracts electrons, so it pulls them through the chain. Accepting the spent electrons, it forms water as a stable end point.",
+      "concepts": [
+        "cellular-respiration"
+      ],
+      "visibility": "pending_review",
+      "created_by": "lrn-sbx0adlt",
+      "reuse_count": 0,
+      "depth": 2,
+      "superseded_by": null
+    }
+  ]
+}

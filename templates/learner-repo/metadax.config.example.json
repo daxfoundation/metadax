@@ -1,0 +1,9 @@
+{
+  "course_repo": "../my-course",
+  "learner_repo": ".",
+  "learner_id": "lrn-00000000",
+  "device_id": "dev-000000",
+  "client": "claude-code",
+  "write_mode": "git",
+  "model_hint": "<optional: the model id your client uses>"
+}

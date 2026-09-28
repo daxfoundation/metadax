@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O01/seatbelt-and-inertia",
+  "parent_id": "L01.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Seatbelts and inertia",
+  "question": "",
+  "canonical_question": "Why does a seatbelt protect you when a car stops suddenly?",
+  "intent": "example",
+  "summary": [
+    "When a car brakes hard, the car slows but your body, by inertia, tends to keep moving forward at the old speed.",
+    "The seatbelt supplies the backward force that decelerates you along with the car."
+  ],
+  "concepts": [
+    "inertia"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Your body keeps going",
+        "body_md": "When a car brakes hard, the car slows but your body, by inertia, tends to keep moving forward at the old speed. Without a restraint you would continue until something stops you, often the windscreen. Inertia, not a mysterious forward force, is what throws you."
+      },
+      {
+        "id": "s2",
+        "heading": "What the belt does",
+        "body_md": "The seatbelt supplies the backward force that decelerates you along with the car. By spreading that force over your chest and hips and over a longer time, it reduces the peak force on your body. That is why belts prevent the sudden, concentrated impact."
+      }
+    ],
+    "key_points": [
+      "Inertia keeps you moving when the car stops.",
+      "The belt provides the force that slows you.",
+      "Spreading the force over time lowers injury."
+    ],
+    "bridge_to_parent": "It is a concrete case of the inertia the objective introduces.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How do airbags add to this?",
+    "Why does stopping over a longer time help?"
+  ],
+  "path": [
+    {
+      "id": "L01.M01.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "0bd05fed9d863e58297575093775da247779c017e43c5337ffb5590ec4aad640"
+}

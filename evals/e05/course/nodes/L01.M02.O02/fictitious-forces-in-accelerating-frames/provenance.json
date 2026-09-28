@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L01.M02.O02/fictitious-forces-in-accelerating-frames",
+  "content_hash": "7184c4c1c842abddba0bac440970e7a851ed9692b90017f5c8651f215f84316c",
+  "created_by": {
+    "id": "author-e05",
+    "key_id": null,
+    "chain_role": "author"
+  },
+  "lineage": [
+    {
+      "node_id": "L01.M02.O02",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-28T00:22:59Z"
+}

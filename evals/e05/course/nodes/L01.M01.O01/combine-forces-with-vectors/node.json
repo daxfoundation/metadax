@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O01/combine-forces-with-vectors",
+  "parent_id": "L01.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Combining forces using vectors",
+  "question": "",
+  "canonical_question": "How do you combine several forces into one using vector methods?",
+  "intent": "deepen",
+  "summary": [
+    "When many pushes and pulls act at once, physics replaces them with a single equivalent force: their vector sum.",
+    "Because each force carries a direction, opposite forces subtract and perpendicular ones build a right-angled triangle."
+  ],
+  "concepts": [
+    "net-force"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "One arrow instead of many",
+        "body_md": "When many pushes and pulls act at once, physics replaces them with a single equivalent force: their vector sum. You chain the force arrows head to tail in any order and the closing arrow is the combined force. Only that combined force decides how the motion changes."
+      },
+      {
+        "id": "s2",
+        "heading": "Keeping track of direction",
+        "body_md": "Because each force carries a direction, opposite forces subtract and perpendicular ones build a right-angled triangle. Working in x and y components lets you add long lists of forces without drawing. The final x and y totals rebuild the one net force."
+      }
+    ],
+    "key_points": [
+      "Many forces reduce to one vector sum.",
+      "Order of head-to-tail addition does not matter.",
+      "Components handle any number of forces."
+    ],
+    "bridge_to_parent": "It generalises the objective’s net force to many forces at once.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "Can the combined force be zero?",
+    "How does this connect to equilibrium?"
+  ],
+  "path": [
+    {
+      "id": "L01.M01.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "3025dc33ae7a868fc6fa3eb0b52a45c1507087c61b840e9146e5dc26cf94d64e"
+}

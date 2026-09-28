@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/progress.schema.json",
+  "title": "metadax.progress/0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "learner_id", "course_id", "device_id", "snapshot_date", "updated_at", "concepts", "objectives", "followups_asked", "next_steps"],
+  "properties": {
+    "schema": { "const": "metadax.progress/0.2" },
+    "learner_id": { "type": "string", "pattern": "^lrn-[a-z0-9]{6,}$" },
+    "course_id": { "type": "string", "maxLength": 200, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "device_id": { "type": "string", "pattern": "^dev-[a-z0-9]{6}$" },
+    "snapshot_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "updated_at": { "$ref": "#/$defs/rfc3339" },
+    "concepts": { "type": "object", "additionalProperties": { "$ref": "#/$defs/conceptProgress" } },
+    "objectives": { "type": "object", "additionalProperties": { "enum": ["not_started", "in_progress", "mastered"] } },
+    "followups_asked": { "type": "array", "items": { "$ref": "#/$defs/nodeId" } },
+    "next_steps": { "type": "array", "items": { "$ref": "#/$defs/nextStep" } }
+  },
+  "$defs": {
+    "rfc3339": {
+      "anyOf": [
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$" },
+        { "const": "runtime" }
+      ]
+    },
+    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*$" },
+    "sectionId": { "type": "string", "pattern": "^s\\d+$" },
+    "conceptId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "bloom": { "enum": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"] },
+    "levelStatus": { "enum": ["not_started", "passed_first_try", "passed_after_help", "failed", "skipped"] },
+    "conceptProgress": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["competency", "levels"],
+      "properties": {
+        "competency": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "levels": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "Remember": { "$ref": "#/$defs/levelStatus" },
+            "Understand": { "$ref": "#/$defs/levelStatus" },
+            "Apply": { "$ref": "#/$defs/levelStatus" },
+            "Analyze": { "$ref": "#/$defs/levelStatus" },
+            "Evaluate": { "$ref": "#/$defs/levelStatus" },
+            "Create": { "$ref": "#/$defs/levelStatus" }
+          }
+        },
+        "misconceptions_seen": { "type": "array", "items": { "type": "string" } },
+        "last_seen": { "$ref": "#/$defs/rfc3339" }
+      }
+    },
+    "nextStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "id", "why"],
+      "properties": {
+        "type": { "enum": ["review", "continue", "advance", "consolidate", "explore"] },
+        "id": { "type": "string" },
+        "level": { "$ref": "#/$defs/bloom" },
+        "node_id": { "$ref": "#/$defs/nodeId" },
+        "section_ids": { "type": "array", "items": { "$ref": "#/$defs/sectionId" } },
+        "why": { "type": "string" }
+      }
+    }
+  }
+}

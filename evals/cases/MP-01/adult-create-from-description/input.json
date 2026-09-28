@@ -1,0 +1,26 @@
+{
+  "op": "MP-01",
+  "case": "adult-create-from-description",
+  "description": "Adult create from a free-text description. The prompt produces an adult profile.",
+  "mode": "from_description",
+  "assemble_argv": [
+    "--op",
+    "MP-01",
+    "--prompts",
+    "prompts",
+    "--mode",
+    "from_description",
+    "--config",
+    "client=claude-code",
+    "--config",
+    "write_mode=git",
+    "--input",
+    "A curious adult who wants to understand how cells make energy, has some biology background, 20-minute sessions, prefers visual structure and dislikes mnemonic-only explanations."
+  ],
+  "stack_bytes": 10201,
+  "blocks": [
+    "CONFIG",
+    "LEARNER",
+    "INPUT"
+  ]
+}

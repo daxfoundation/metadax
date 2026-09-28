@@ -1,0 +1,281 @@
+{
+  "schema": "metadax.registry/0.2",
+  "course_id": "newtons-laws-motion",
+  "module_id": "L01.M01",
+  "updated_at": "runtime",
+  "nodes": [
+    {
+      "id": "L01.M01.O01",
+      "parent_id": null,
+      "title": "Explain net force and inertia",
+      "canonical_question": "What are net force and inertia, and why do they together decide how an object's motion changes?",
+      "intent": null,
+      "summary": "The net force on a body is the single vector left after adding up every push and pull on it. Inertia is a body's resistance to any change in motion; only a net force overcomes it.",
+      "concepts": [
+        "net-force",
+        "inertia"
+      ],
+      "depth": 1,
+      "visibility": "shared",
+      "created_by": "author-sbx01",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O02",
+      "parent_id": null,
+      "title": "Distinguish speed, velocity and acceleration",
+      "canonical_question": "What is the difference between speed, velocity and acceleration, and how does each describe a body's motion?",
+      "intent": null,
+      "summary": "Speed is how fast you go; velocity is speed together with direction. Acceleration is the rate at which velocity changes, so it can appear even at constant speed.",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "depth": 1,
+      "visibility": "shared",
+      "created_by": "author-sbx01",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O01/adding-forces-different-directions",
+      "parent_id": "L01.M01.O01",
+      "title": "Adding forces that point in different directions",
+      "canonical_question": "How do you add two forces that point in different directions to get the net force?",
+      "intent": "deepen",
+      "summary": "Every force has a size and a direction, so two forces pointing different ways cannot simply be added as plain numbers. For two forces from the same point you can draw a parallelogram with the forces as sides; the diagonal is the net force.",
+      "concepts": [
+        "net-force"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O01/vector-sum-of-two-forces",
+      "parent_id": "L01.M01.O01",
+      "title": "Finding the vector sum of two forces",
+      "canonical_question": "How do you find the vector sum of two forces acting at an angle?",
+      "intent": "deepen",
+      "summary": "Two forces pulling in different directions do not combine to their arithmetic total, because direction matters as much as size. A reliable method is to break each force into horizontal and vertical parts, add the horizontal parts and the vertical parts separately, then recombine.",
+      "concepts": [
+        "net-force"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O01/combine-forces-with-vectors",
+      "parent_id": "L01.M01.O01",
+      "title": "Combining forces using vectors",
+      "canonical_question": "How do you combine several forces into one using vector methods?",
+      "intent": "deepen",
+      "summary": "When many pushes and pulls act at once, physics replaces them with a single equivalent force: their vector sum. Because each force carries a direction, opposite forces subtract and perpendicular ones build a right-angled triangle.",
+      "concepts": [
+        "net-force"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O01/seatbelt-and-inertia",
+      "parent_id": "L01.M01.O01",
+      "title": "Seatbelts and inertia",
+      "canonical_question": "Why does a seatbelt protect you when a car stops suddenly?",
+      "intent": "example",
+      "summary": "When a car brakes hard, the car slows but your body, by inertia, tends to keep moving forward at the old speed. The seatbelt supplies the backward force that decelerates you along with the car.",
+      "concepts": [
+        "inertia"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O01/why-seatbelts-work",
+      "parent_id": "L01.M01.O01",
+      "title": "Why seatbelts work",
+      "canonical_question": "How does inertia explain why seatbelts keep passengers safe?",
+      "intent": "example",
+      "summary": "A passenger moving with the car shares its velocity. A seatbelt couples the passenger to the car so both decelerate together.",
+      "concepts": [
+        "inertia"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O02/acceleration-vs-velocity",
+      "parent_id": "L01.M01.O02",
+      "title": "Acceleration versus velocity",
+      "canonical_question": "How is acceleration different from velocity?",
+      "intent": "contrast",
+      "summary": "Velocity tells you how fast and in what direction you are moving right now. Acceleration need not point the same way as velocity: when you brake, velocity is forward but acceleration points backward.",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O02/how-acceleration-differs-from-velocity",
+      "parent_id": "L01.M01.O02",
+      "title": "How acceleration differs from velocity",
+      "canonical_question": "What makes acceleration a different quantity from velocity?",
+      "intent": "contrast",
+      "summary": "Velocity answers \"how is it moving?\" while acceleration answers \"how is that motion changing?\". A plane cruising at 900 km/h in a straight line has huge velocity but zero acceleration.",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O02/why-velocity-is-a-vector",
+      "parent_id": "L01.M01.O02",
+      "title": "Why velocity is a vector",
+      "canonical_question": "Why is velocity treated as a vector while speed is only a number?",
+      "intent": "deepen",
+      "summary": "Two cars at 50 km/h heading opposite ways have the same speed but different velocities, and the difference matters for what happens next. Whenever direction changes, velocity changes even if speed does not, and that is what lets acceleration exist in a turn.",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O01/why-inertia-is-not-a-force",
+      "parent_id": "L01.M01.O01",
+      "title": "Why inertia is not a force",
+      "canonical_question": "Why is inertia not itself a force?",
+      "intent": "deepen",
+      "summary": "Inertia is the tendency of a body to keep its state of motion, but it does not push or pull anything. When a bus stops and you feel thrown forward, no \"inertia force\" pushed you; you simply kept moving while the bus slowed.",
+      "concepts": [
+        "inertia"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O01/measuring-force-in-newtons",
+      "parent_id": "L01.M01.O01",
+      "title": "Measuring a force in newtons",
+      "canonical_question": "How do you measure the size of a force in newtons using a spring scale?",
+      "intent": "apply",
+      "summary": "A spring stretches in proportion to the pull on it, so its extension can be read as a force. Let the reading settle so the spring is in equilibrium, then the scale force balances the applied force.",
+      "concepts": [
+        "net-force"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O02/reading-velocity-time-graphs",
+      "parent_id": "L01.M01.O02",
+      "title": "Reading a velocity-time graph",
+      "canonical_question": "How do you read acceleration and distance off a velocity-time graph?",
+      "intent": "apply",
+      "summary": "On a velocity-time graph the vertical axis is velocity and the horizontal axis is time. The area between the line and the time axis gives the distance travelled.",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O01/everyday-zero-net-force",
+      "parent_id": "L01.M01.O01",
+      "title": "Everyday examples of zero net force",
+      "canonical_question": "What are some everyday examples where the net force on an object is zero?",
+      "intent": "example",
+      "summary": "A lamp on a desk, a picture on a wall and a parked car all have zero net force. Zero net force also covers steady motion, like a car cruising at constant speed on a flat road.",
+      "concepts": [
+        "net-force"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O02/units-of-acceleration",
+      "parent_id": "L01.M01.O02",
+      "title": "The units of acceleration",
+      "canonical_question": "What units is acceleration measured in and why?",
+      "intent": "clarify",
+      "summary": "Acceleration is how fast velocity changes each second, so its unit is metres per second, per second, written m/s^2. The seconds appear twice because we track a change in a per-second quantity over more seconds.",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O01/friction-as-a-force",
+      "parent_id": "L01.M01.O01",
+      "title": "Friction as one of the forces",
+      "canonical_question": "How does friction fit into the net force on a sliding object?",
+      "intent": "deepen",
+      "summary": "Friction is a contact force that acts along a surface, always opposing the relative sliding. If your push exceeds friction, the net force is forward and the crate accelerates; if friction wins, it slows or stays put.",
+      "concepts": [
+        "net-force"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L01.M01.O02/instantaneous-vs-average-velocity",
+      "parent_id": "L01.M01.O02",
+      "title": "Instantaneous versus average velocity",
+      "canonical_question": "What is the difference between instantaneous and average velocity?",
+      "intent": "contrast",
+      "summary": "Average velocity is the total displacement divided by the total time for a trip. The two are equal only when the velocity is constant throughout.",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "op": "MP-01",
+  "case": "minor-create-from-description",
+  "description": "Minor create. The prompt serves it and produces a profile with a minor band; the client-side age wall is not exercised here (it lives in the client/skill, not the prompt).",
+  "mode": "from_description",
+  "assemble_argv": [
+    "--op",
+    "MP-01",
+    "--prompts",
+    "prompts",
+    "--mode",
+    "from_description",
+    "--config",
+    "client=claude-code",
+    "--config",
+    "write_mode=git",
+    "--input",
+    "My name is a 12-year-old who loves plants and wants to learn what is inside a cell. Short 15-minute sessions please."
+  ],
+  "stack_bytes": 10140,
+  "blocks": [
+    "CONFIG",
+    "LEARNER",
+    "INPUT"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "metadax-tools",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node tools/tests/run.js"
+  }
+}

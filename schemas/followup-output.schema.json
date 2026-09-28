@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/followup-output.schema.json",
+  "title": "metadax MP-05 FOLLOWUP ask output envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "decision", "target_id", "confidence", "resolved", "node", "seeds", "rendering_md", "options", "warnings"],
+  "properties": {
+    "type": { "enum": ["followup", "zoom_out", "error"] },
+    "decision": { "anyOf": [ { "enum": ["new", "extend", "reuse", "ancestor", "redirect"] }, { "type": "null" } ] },
+    "target_id": { "anyOf": [ { "$ref": "#/$defs/nodeId" }, { "type": "null" } ] },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "resolved": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["question"],
+      "properties": {
+        "question": { "type": "string", "maxLength": 500 },
+        "canonical_question": { "type": "string" },
+        "intent": { "type": "string" },
+        "scope": { "type": "string" }
+      }
+    },
+    "node": {
+      "anyOf": [
+        { "type": "object" },
+        { "type": "null" }
+      ]
+    },
+    "seeds": { "type": "array", "items": { "type": "string" } },
+    "rendering_md": { "type": "string" },
+    "options": { "type": "array", "items": { "$ref": "#/$defs/option" } },
+    "warnings": { "type": "array", "items": { "$ref": "#/$defs/warning" } },
+    "missing": { "type": "array", "items": { "type": "string" } },
+    "message": { "type": "string" }
+  },
+  "$defs": {
+    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*$" },
+    "warning": { "enum": ["steer_conflict", "audience_conflict", "out_of_scope", "depth_limit", "low_confidence", "source_gap", "wellbeing_flag", "missing_input", "orphans_followups", "budget_unmet", "unstamped"] },
+    "option": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "action", "target_id", "question"],
+      "properties": {
+        "label": { "type": "string" },
+        "action": { "enum": ["open", "ask", "quiz_branch"] },
+        "target_id": { "anyOf": [ { "$ref": "#/$defs/nodeId" }, { "type": "null" } ] },
+        "question": { "type": "string" }
+      }
+    }
+  }
+}

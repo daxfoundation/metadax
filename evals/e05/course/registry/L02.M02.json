@@ -1,0 +1,104 @@
+{
+  "schema": "metadax.registry/0.2",
+  "course_id": "newtons-laws-motion",
+  "module_id": "L02.M02",
+  "updated_at": "runtime",
+  "nodes": [
+    {
+      "id": "L02.M02.O01",
+      "parent_id": null,
+      "title": "Apply Newton's third law to action-reaction pairs",
+      "canonical_question": "How do you use Newton's third law to identify the equal and opposite force pairs in an interaction?",
+      "intent": null,
+      "summary": "Newton's third law: if A pushes B, then B pushes A with an equal and opposite force. The two forces act on different bodies, so they never cancel each other.",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "depth": 1,
+      "visibility": "shared",
+      "created_by": "author-sbx01",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M02.O01/identifying-action-reaction-pairs",
+      "parent_id": "L02.M02.O01",
+      "title": "Identifying action-reaction pairs",
+      "canonical_question": "How do you identify the action-reaction force pair in an interaction?",
+      "intent": "apply",
+      "summary": "Every third-law pair involves two different bodies acting on each other. When you push a wall, you (A) push the wall (B); the wall pushes back on you with an equal force.",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M02.O01/spotting-third-law-pairs",
+      "parent_id": "L02.M02.O01",
+      "title": "Spotting third-law pairs",
+      "canonical_question": "How can you spot which two forces form a Newton third-law pair?",
+      "intent": "apply",
+      "summary": "To spot a third-law pair, find the two objects that touch or interact and describe the force each exerts on the other. In a collision between a bat and a ball, the bat exerts a force on the ball and the ball exerts an equal and opposite force on the bat.",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M02.O01/why-action-reaction-dont-cancel",
+      "parent_id": "L02.M02.O01",
+      "title": "Why action-reaction forces don’t cancel",
+      "canonical_question": "Why don’t the equal and opposite forces of a third-law pair cancel each other out?",
+      "intent": "deepen",
+      "summary": "Forces cancel only when they act on the same object, but a third-law pair acts on two different bodies. Because the pair is split across two bodies, each body can accelerate under the single force it feels.",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M02.O01/third-law-and-rocket-propulsion",
+      "parent_id": "L02.M02.O01",
+      "title": "The third law and rocket propulsion",
+      "canonical_question": "How does Newton’s third law explain how a rocket accelerates?",
+      "intent": "example",
+      "summary": "A rocket burns fuel and hurls hot gas out of its nozzle at high speed. Because the interaction is between the rocket and its own exhaust, it works in the vacuum of space.",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    },
+    {
+      "id": "L02.M02.O01/third-law-and-walking",
+      "parent_id": "L02.M02.O01",
+      "title": "The third law and walking",
+      "canonical_question": "How does Newton’s third law explain how we walk forward?",
+      "intent": "example",
+      "summary": "When you walk, your foot pushes backward against the ground. The ground can only push forward if friction lets your foot grip it, which is why ice makes walking hard.",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-e05",
+      "superseded_by": null,
+      "reuse_count": 0
+    }
+  ]
+}

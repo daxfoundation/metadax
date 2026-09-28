@@ -1,0 +1,17 @@
+{
+  "schema": "metadax.event/0.2",
+  "session_id": "ses-20260927-fx01",
+  "seq": 2,
+  "ts": "2026-09-27T09:02:30Z",
+  "type": "answer",
+  "course_id": "cell-biology-obsidian",
+  "node_id": "L01.M01.O01",
+  "concept": "atp-synthesis",
+  "bloom_level": "Understand",
+  "result": "correct",
+  "data": {
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1,
+    "hints_used": 0
+  }
+}

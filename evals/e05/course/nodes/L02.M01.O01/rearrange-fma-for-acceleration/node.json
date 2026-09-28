@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L02.M01.O01/rearrange-fma-for-acceleration",
+  "parent_id": "L02.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Rearranging F = ma for acceleration",
+  "question": "",
+  "canonical_question": "How do you rearrange F = ma to find acceleration from force and mass?",
+  "intent": "apply",
+  "summary": [
+    "Newton’s second law says net force equals mass times acceleration.",
+    "A 2 kg cart pushed with a net force of 6 N accelerates at 6 / 2 = 3 metres per second squared."
+  ],
+  "concepts": [
+    "newtons-second-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Isolating a",
+        "body_md": "Newton’s second law says net force equals mass times acceleration. To find acceleration you divide both sides by the mass, giving a = F / m. So the acceleration is just the net force shared out over the mass."
+      },
+      {
+        "id": "s2",
+        "heading": "A quick example",
+        "body_md": "A 2 kg cart pushed with a net force of 6 N accelerates at 6 / 2 = 3 metres per second squared. Double the force and the acceleration doubles; double the mass and it halves. The formula makes both trends obvious."
+      }
+    ],
+    "key_points": [
+      "a = F / m follows from F = ma.",
+      "Acceleration scales with force and inversely with mass.",
+      "Always use the net force, not a single force."
+    ],
+    "bridge_to_parent": "It applies the objective’s F = ma to solve for acceleration.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "What if several forces act at once?",
+    "How do units work out to m/s^2?"
+  ],
+  "path": [
+    {
+      "id": "L02.M01.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "3795f6edbb61c29e8e87c8079101381155d40f1ccb3f14e1d5677cdf66fece95"
+}

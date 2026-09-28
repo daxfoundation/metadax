@@ -1,0 +1,7 @@
+{
+  "schema": "metadax.node/0.2",
+  "type": [
+    "rendering",
+    "node"
+  ]
+}

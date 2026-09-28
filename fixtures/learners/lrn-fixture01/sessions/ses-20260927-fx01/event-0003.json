@@ -1,0 +1,16 @@
+{
+  "schema": "metadax.event/0.2",
+  "session_id": "ses-20260927-fx01",
+  "seq": 3,
+  "ts": "2026-09-27T09:03:10Z",
+  "type": "hint",
+  "course_id": "cell-biology-obsidian",
+  "node_id": "L01.M01.O01",
+  "concept": "atp-synthesis",
+  "bloom_level": "Analyze",
+  "result": null,
+  "data": {
+    "hint_number": 1,
+    "hints_used": 1
+  }
+}

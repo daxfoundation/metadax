@@ -1,0 +1,70 @@
+{
+  "schema": "metadax.manifest/0.2",
+  "learner_id": "lrn-fixture01",
+  "week": "2026-W39",
+  "device_id": "dev-fixt01",
+  "files": [
+    {
+      "path": "nodes/L01.M01.O02/why-is-oxygen-needed/node.json",
+      "sha256": "f084a2eef9bb993111ddd493c68a77a28cc2b1da4fd618b82c350faa6dbfcbbd",
+      "bytes": 2658
+    },
+    {
+      "path": "nodes/L01.M01.O02/why-is-oxygen-needed/provenance.json",
+      "sha256": "ebc57069be1de3fc61caf9bd5e4d59172fca6359e9d67e7779a1821cd9e8c0f8",
+      "bytes": 478
+    },
+    {
+      "path": "profile.json",
+      "sha256": "1ceedce8b8224c0dec03284b865be56fc91895af04743457574b8bf7f940126d",
+      "bytes": 835
+    },
+    {
+      "path": "progress/cell-biology-obsidian/dev-fixt01/2026-09-27.json",
+      "sha256": "ff1d38bda821287f6c698f70661528c6b241971a4fe11f64b918d9b25ddcd6ea",
+      "bytes": 2109
+    },
+    {
+      "path": "sessions/ses-20260927-fx01/event-0001.json",
+      "sha256": "95bc07932e0d468b9124209b44cad07b5c478db0fb8881e8fe73acebd902ef91",
+      "bytes": 703
+    },
+    {
+      "path": "sessions/ses-20260927-fx01/event-0002.json",
+      "sha256": "c15241c5f098c232f397e945a0145dc8c64518ffcaa0b64789e38ea73ce0dcf9",
+      "bytes": 404
+    },
+    {
+      "path": "sessions/ses-20260927-fx01/event-0003.json",
+      "sha256": "406937a6d96804d2cae3648215bc172916f512aca5a965ab6de7f10b61633f39",
+      "bytes": 338
+    },
+    {
+      "path": "sessions/ses-20260927-fx01/event-0004.json",
+      "sha256": "5bbf83441702283933fad5c87e53e31109f52f9ba02ba8c5242f052f4538b530",
+      "bytes": 391
+    },
+    {
+      "path": "sessions/ses-20260927-fx01/event-0005.json",
+      "sha256": "2d0d3bf0d84264ba2ee010064448073fe3f3fd92a202ae7b62508e4b90aee8b0",
+      "bytes": 396
+    },
+    {
+      "path": "sessions/ses-20260927-fx01/turn-0001.json",
+      "sha256": "f52a671a0bd480be5c81d8b56d76c1880fe92c448c7fc31dd41c6549ebaa24e9",
+      "bytes": 1386
+    },
+    {
+      "path": "sessions/ses-20260927-fx01/turn-0002.json",
+      "sha256": "fa26bcd5011b5440a3464bc609bacebbc859b7b86770c49e736c669a7dbdc062",
+      "bytes": 1332
+    },
+    {
+      "path": "sessions/ses-20260927-fx01/turn-0003.json",
+      "sha256": "d1796283d80bc0c205a4f9e876011c940379c276157a617c6d34fd3c4bcddf88",
+      "bytes": 2379
+    }
+  ],
+  "bytes_total": 13409,
+  "ts": "2026-09-27T19:03:28Z"
+}

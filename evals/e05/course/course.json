@@ -1,0 +1,326 @@
+{
+  "schema": "metadax.course/0.2",
+  "id": "newtons-laws-motion",
+  "created_at": "2026-09-27T20:04:09Z",
+  "updated_at": "2026-09-27T21:50:29Z",
+  "license": "CC-BY-4.0",
+  "generated_segments_license": "CC0-1.0",
+  "constraint_decl": null,
+  "title": "Newton's Laws of Motion: A Return to Physics",
+  "summary": "A short, practical reintroduction to Newton's three laws of motion for an adult coming back to physics. You will rebuild the ideas of force, inertia and acceleration from everyday examples and use them on simple problems.",
+  "language": "en",
+  "audience": {
+    "intended_bands": [
+      "adult"
+    ],
+    "notes": "Adults returning to physics after time away; comfortable with school algebra, no calculus assumed."
+  },
+  "steer": {
+    "focus": "Build a working conceptual and quantitative grasp of Newton's three laws for an adult returning to physics, connecting everyday experience to the formal statements.",
+    "include": [
+      "everyday worked examples such as cars, sport and walking",
+      "a clear distinction between mass and weight",
+      "simple vector reasoning about net force",
+      "common misconceptions named and corrected"
+    ],
+    "exclude": [
+      "calculus-based derivations",
+      "rotational dynamics and torque",
+      "relativistic or quantum corrections",
+      "rote mnemonics used in place of understanding"
+    ],
+    "tone": "warm, precise, never condescending",
+    "depth": "introductory",
+    "source_policy": "open",
+    "scope_policy": "tangents_allowed",
+    "max_depth": 8
+  },
+  "concepts": [
+    {
+      "id": "net-force",
+      "name": "Net force",
+      "description": "The net force on a body is the vector sum of all forces acting on it.",
+      "bloom_target": "Apply",
+      "prerequisites": [],
+      "misconceptions": [
+        "A force is needed to keep an object moving at constant velocity.",
+        "The largest single force, rather than the vector sum, decides how motion changes."
+      ]
+    },
+    {
+      "id": "inertia",
+      "name": "Inertia",
+      "description": "Inertia is a body's resistance to any change in its state of motion.",
+      "bloom_target": "Understand",
+      "prerequisites": [],
+      "misconceptions": [
+        "Heavier objects fall faster in the absence of air resistance.",
+        "Inertia is itself a force that pushes objects."
+      ]
+    },
+    {
+      "id": "kinematic-quantities",
+      "name": "Speed, velocity and acceleration",
+      "description": "Speed, velocity and acceleration describe how a body's position and motion change over time.",
+      "bloom_target": "Apply",
+      "prerequisites": [],
+      "misconceptions": [
+        "Velocity and acceleration always point in the same direction.",
+        "An object with zero velocity must have zero acceleration."
+      ]
+    },
+    {
+      "id": "newtons-first-law",
+      "name": "Newton's first law",
+      "description": "A body remains at rest or in uniform straight-line motion unless acted on by a net force.",
+      "bloom_target": "Apply",
+      "prerequisites": [
+        "net-force",
+        "inertia"
+      ],
+      "misconceptions": [
+        "A moving object needs a continuous forward force to keep moving.",
+        "The first law only matters for objects that are standing still."
+      ]
+    },
+    {
+      "id": "inertial-frame",
+      "name": "Inertial reference frame",
+      "description": "An inertial frame is a reference frame in which Newton's first law holds.",
+      "bloom_target": "Understand",
+      "prerequisites": [
+        "newtons-first-law"
+      ],
+      "misconceptions": [
+        "Every reference frame is equally valid for applying Newton's laws.",
+        "The surface of the Earth is a perfectly inertial frame."
+      ]
+    },
+    {
+      "id": "newtons-second-law",
+      "name": "Newton's second law",
+      "description": "The net force on a body equals its mass times its acceleration (F = ma).",
+      "bloom_target": "Apply",
+      "prerequisites": [
+        "net-force",
+        "kinematic-quantities"
+      ],
+      "misconceptions": [
+        "F = ma means a force sets an object's velocity rather than its acceleration.",
+        "Mass and weight are the same quantity."
+      ]
+    },
+    {
+      "id": "mass",
+      "name": "Mass",
+      "description": "Mass is the quantitative measure of a body's inertia and the m in F = ma.",
+      "bloom_target": "Understand",
+      "prerequisites": [
+        "inertia"
+      ],
+      "misconceptions": [
+        "An object's mass changes when it is moved to the Moon.",
+        "Mass is just another word for weight."
+      ]
+    },
+    {
+      "id": "newtons-third-law",
+      "name": "Newton's third law",
+      "description": "When one body exerts a force on a second, the second exerts an equal and opposite force on the first.",
+      "bloom_target": "Apply",
+      "prerequisites": [
+        "net-force"
+      ],
+      "misconceptions": [
+        "Action and reaction act on the same object and therefore cancel out.",
+        "The larger or heavier object exerts the larger force."
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "L01",
+      "title": "The language of motion and the first law",
+      "summary": "What force and inertia really mean, and why a moving object does not need a push to keep going.",
+      "steer": {
+        "focus": "Establish the vocabulary of motion and force and show why the first law reframes the everyday intuition that motion needs a cause.",
+        "include": [
+          "definitions grounded in observation",
+          "the difference between velocity and acceleration"
+        ],
+        "exclude": [
+          "the equation F = ma",
+          "energy and momentum"
+        ]
+      },
+      "modules": [
+        {
+          "id": "L01.M01",
+          "title": "Force, inertia and the quantities of motion",
+          "summary": "Net force, inertia, and the difference between speed, velocity and acceleration.",
+          "steer": {
+            "focus": "Give precise meanings to net force, inertia and the kinematic quantities before any law is stated.",
+            "include": [
+              "the vector nature of force and velocity",
+              "everyday examples of inertia"
+            ],
+            "exclude": [
+              "numerical calculation of acceleration"
+            ]
+          },
+          "objectives": [
+            {
+              "id": "L01.M01.O01",
+              "title": "Explain net force and inertia",
+              "statement": "The learner can explain net force and inertia and why together they govern how motion changes.",
+              "concepts": [
+                "net-force",
+                "inertia"
+              ],
+              "bloom_target": "Understand",
+              "source_refs": []
+            },
+            {
+              "id": "L01.M01.O02",
+              "title": "Distinguish speed, velocity and acceleration",
+              "statement": "The learner can distinguish speed, velocity and acceleration and relate them to a body's changing motion.",
+              "concepts": [
+                "kinematic-quantities"
+              ],
+              "bloom_target": "Understand",
+              "source_refs": []
+            }
+          ]
+        },
+        {
+          "id": "L01.M02",
+          "title": "Newton's first law and inertial frames",
+          "summary": "Newton's first law and the reference frames in which it holds.",
+          "steer": {
+            "focus": "State Newton's first law and the idea of an inertial frame, correcting the intuition that a steady force is needed for steady motion.",
+            "include": [
+              "equilibrium examples",
+              "why a passenger lurches when a bus brakes"
+            ],
+            "exclude": [
+              "quantitative force balance requiring F = ma"
+            ]
+          },
+          "objectives": [
+            {
+              "id": "L01.M02.O01",
+              "title": "Apply Newton's first law to bodies in equilibrium",
+              "statement": "The learner can apply Newton's first law to describe bodies at rest or in uniform straight-line motion.",
+              "concepts": [
+                "newtons-first-law",
+                "net-force"
+              ],
+              "bloom_target": "Apply",
+              "source_refs": []
+            },
+            {
+              "id": "L01.M02.O02",
+              "title": "Identify inertial reference frames",
+              "statement": "The learner can identify reference frames in which Newton's first law holds and where it appears to fail.",
+              "concepts": [
+                "inertial-frame"
+              ],
+              "bloom_target": "Understand",
+              "source_refs": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L02",
+      "title": "The second and third laws in use",
+      "summary": "How net force sets acceleration, and how every force comes in a pair.",
+      "steer": {
+        "focus": "Introduce the quantitative second law and the reciprocal third law, and use them together on simple systems.",
+        "include": [
+          "F = ma applied to one-body problems",
+          "action-reaction pairs on different bodies"
+        ],
+        "exclude": [
+          "multi-body free-body diagrams with friction and tension networks",
+          "calculus"
+        ]
+      },
+      "modules": [
+        {
+          "id": "L02.M01",
+          "title": "Newton's second law: F = ma",
+          "summary": "Newton's second law, F = ma, and the role of mass.",
+          "steer": {
+            "focus": "Make F = ma concrete: net force sets acceleration, mass resists it, and the units tie together.",
+            "include": [
+              "the SI units of force, mass and acceleration",
+              "one simple worked calculation"
+            ],
+            "exclude": [
+              "systems of equations",
+              "friction coefficients"
+            ]
+          },
+          "objectives": [
+            {
+              "id": "L02.M01.O01",
+              "title": "Explain F = ma and the role of mass",
+              "statement": "The learner can explain Newton's second law, F = ma, and the role of mass as a measure of inertia.",
+              "concepts": [
+                "newtons-second-law",
+                "mass"
+              ],
+              "bloom_target": "Understand",
+              "source_refs": []
+            },
+            {
+              "id": "L02.M01.O02",
+              "title": "Calculate acceleration from net force",
+              "statement": "The learner can calculate the acceleration of a simple one-body system from the net force and the mass.",
+              "concepts": [
+                "newtons-second-law",
+                "kinematic-quantities"
+              ],
+              "bloom_target": "Apply",
+              "source_refs": []
+            }
+          ]
+        },
+        {
+          "id": "L02.M02",
+          "title": "Newton's third law: action and reaction",
+          "summary": "Newton's third law and the action-reaction pairs it describes.",
+          "steer": {
+            "focus": "Explain the third law and the frequent error of thinking action-reaction pairs cancel.",
+            "include": [
+              "pairs acting on different bodies",
+              "walking, rockets and recoil"
+            ],
+            "exclude": [
+              "momentum conservation as a formal topic"
+            ]
+          },
+          "objectives": [
+            {
+              "id": "L02.M02.O01",
+              "title": "Apply Newton's third law to action-reaction pairs",
+              "statement": "The learner can apply Newton's third law to identify the equal and opposite pairs in an interaction.",
+              "concepts": [
+                "newtons-third-law"
+              ],
+              "bloom_target": "Apply",
+              "source_refs": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "policy": {
+    "learner_nodes": "pending_review",
+    "minor_nodes": "pending_review"
+  }
+}

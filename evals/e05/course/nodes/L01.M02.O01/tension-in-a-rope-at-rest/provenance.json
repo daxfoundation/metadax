@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L01.M02.O01/tension-in-a-rope-at-rest",
+  "content_hash": "f9b2d2ef3587a044aa7eb15516817b22dbfab6bc46e46c84fb6ca60edd90fc14",
+  "created_by": {
+    "id": "author-e05",
+    "key_id": null,
+    "chain_role": "author"
+  },
+  "lineage": [
+    {
+      "node_id": "L01.M02.O01",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-28T00:22:58Z"
+}

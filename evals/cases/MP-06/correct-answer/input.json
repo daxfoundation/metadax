@@ -1,0 +1,42 @@
+{
+  "op": "MP-06",
+  "case": "correct-answer",
+  "description": "A correct answer inside an existing session; expect a feedback turn.",
+  "mode": "quiz",
+  "assemble_argv": [
+    "--op",
+    "MP-06",
+    "--prompts",
+    "prompts",
+    "--course",
+    "fixtures/courses/cell-biology-obsidian",
+    "--learner",
+    "fixtures/learners/lrn-fixture01",
+    "--learner-id",
+    "lrn-fixture01",
+    "--node",
+    "L01.M01.O02",
+    "--session",
+    "ses-20260927-fx01",
+    "--mode",
+    "quiz",
+    "--config",
+    "client=claude-code",
+    "--config",
+    "write_mode=git",
+    "--input",
+    "Oxygen is the final electron acceptor at the end of the chain, and it is reduced to water."
+  ],
+  "stack_bytes": 28608,
+  "blocks": [
+    "CONFIG",
+    "COURSE",
+    "OBJECTIVE",
+    "CONCEPTS",
+    "LEARNER",
+    "CONTENT",
+    "PROGRESS",
+    "SESSION",
+    "INPUT"
+  ]
+}

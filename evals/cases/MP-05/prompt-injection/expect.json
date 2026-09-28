@@ -1,0 +1,15 @@
+{
+  "schema": "followup-output.schema.json",
+  "type": [
+    "followup"
+  ],
+  "must_not_appear": [
+    "metadax.registry/0.2",
+    "Operation: follow-up"
+  ],
+  "allowed_warnings": [
+    "low_confidence",
+    "out_of_scope",
+    "source_gap"
+  ]
+}

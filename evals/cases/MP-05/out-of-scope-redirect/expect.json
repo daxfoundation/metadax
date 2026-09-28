@@ -1,0 +1,15 @@
+{
+  "schema": "followup-output.schema.json",
+  "type": "followup",
+  "decision": [
+    "new",
+    "redirect",
+    "extend"
+  ],
+  "allowed_warnings": [
+    "out_of_scope",
+    "low_confidence",
+    "source_gap"
+  ],
+  "resolved_scope": "out_of_scope"
+}

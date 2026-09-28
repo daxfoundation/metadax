@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O02/how-acceleration-differs-from-velocity",
+  "parent_id": "L01.M01.O02",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "How acceleration differs from velocity",
+  "question": "",
+  "canonical_question": "What makes acceleration a different quantity from velocity?",
+  "intent": "contrast",
+  "summary": [
+    "Velocity answers \"how is it moving?\" while acceleration answers \"how is that motion changing?\".",
+    "A plane cruising at 900 km/h in a straight line has huge velocity but zero acceleration."
+  ],
+  "concepts": [
+    "kinematic-quantities"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Different questions",
+        "body_md": "Velocity answers \"how is it moving?\" while acceleration answers \"how is that motion changing?\". One is a snapshot, the other is about the change between snapshots. Because of that, their sizes and directions need not agree."
+      },
+      {
+        "id": "s2",
+        "heading": "Everyday illustration",
+        "body_md": "A plane cruising at 900 km/h in a straight line has huge velocity but zero acceleration. A sprinter exploding off the blocks has small velocity at first but large acceleration. Comparing the two examples separates the ideas cleanly."
+      }
+    ],
+    "key_points": [
+      "Velocity is a snapshot; acceleration is a change.",
+      "Cruising means velocity high, acceleration zero.",
+      "Launching means velocity low, acceleration high."
+    ],
+    "bridge_to_parent": "It draws the same contrast with different examples.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "Is deceleration just negative acceleration?",
+    "How is each one measured?"
+  ],
+  "path": [
+    {
+      "id": "L01.M01.O02",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "bb5ff2c61525d6162ad0dabe60c7a5a97188fdd61a0bb297b7c076646e6661b2"
+}

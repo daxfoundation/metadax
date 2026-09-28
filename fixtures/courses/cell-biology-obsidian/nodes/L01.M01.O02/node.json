@@ -1,0 +1,72 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O02",
+  "parent_id": null,
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "The electron transport chain",
+  "question": "",
+  "canonical_question": "How does the electron transport chain move electrons and build a gradient?",
+  "intent": null,
+  "summary": [
+    "Membrane complexes pass electrons and pump protons.",
+    "Oxygen is the final electron acceptor."
+  ],
+  "concepts": [
+    "electron-transport-chain",
+    "proton-gradient",
+    "cytochrome-c"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "A chain of hand-offs",
+        "body_md": "The electron transport chain is a series of protein complexes set in the inner membrane of the mitochondrion. High-energy electrons enter at one end and are passed from one complex to the next. Each hand-off releases a little energy."
+      },
+      {
+        "id": "s2",
+        "heading": "Pumping protons",
+        "body_md": "The energy released at each step is used to push protons from one side of the inner membrane to the other. This builds up a difference in proton concentration, a kind of stored pressure, across the membrane."
+      },
+      {
+        "id": "s3",
+        "heading": "Oxygen at the finish",
+        "body_md": "At the last complex the electrons are handed to oxygen, which combines with protons to form water. Without oxygen to accept the electrons, the whole chain backs up and stops."
+      }
+    ],
+    "key_points": [
+      "Electrons pass along membrane-bound complexes.",
+      "Each hand-off pumps protons to build a gradient.",
+      "Oxygen accepts the electrons at the end and forms water."
+    ],
+    "bridge_to_parent": "",
+    "bridge_to_objective": "",
+    "source_refs": [
+      "src:notes-mitochondria"
+    ]
+  },
+  "seeds": [
+    "What builds the proton gradient?",
+    "Why is oxygen needed at the end?",
+    "What is the role of cytochrome c in the chain?"
+  ],
+  "path": [],
+  "created_by": "author-fixture",
+  "visibility": "shared",
+  "created_at": "2026-09-27T19:03:28Z",
+  "updated_at": "2026-09-27T19:03:28Z",
+  "content_sha256": "6510b99f3362ae52420ad011110022cc502db1eb3e5d6498f97e1a415defe342",
+  "superseded_by": null,
+  "model": "author-fixture",
+  "stats": {
+    "views": 0,
+    "reuse_count": 0
+  }
+}

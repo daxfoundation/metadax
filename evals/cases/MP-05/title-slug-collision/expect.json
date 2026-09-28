@@ -1,0 +1,12 @@
+{
+  "schema": "followup-output.schema.json",
+  "type": "followup",
+  "decision": [
+    "new",
+    "extend",
+    "reuse"
+  ],
+  "must_not_be_node_id": [
+    "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role"
+  ]
+}

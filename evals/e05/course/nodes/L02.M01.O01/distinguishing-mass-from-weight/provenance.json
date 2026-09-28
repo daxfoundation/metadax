@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L02.M01.O01/distinguishing-mass-from-weight",
+  "content_hash": "80869355cceb5ee74a4807f49fb2ae83972d34fb9de600c7cc8a2763f787f39d",
+  "created_by": {
+    "id": "author-e05",
+    "key_id": null,
+    "chain_role": "author"
+  },
+  "lineage": [
+    {
+      "node_id": "L02.M01.O01",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-28T00:22:58Z"
+}

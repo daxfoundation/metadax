@@ -1,0 +1,7 @@
+{
+  "schema": "metadax.course/0.2",
+  "type": [
+    "course",
+    "clarify"
+  ]
+}

@@ -1,0 +1,51 @@
+# Certification is not yet run. D8: no certify/steward Actions in Milestone 1;
+# this workflow is dispatch-only. It never runs on push or pull_request. It
+# exists so a maintainer can start a certification run by hand once the model set
+# and API keys are decided; until then it does nothing automatically.
+name: certify
+
+on:
+  workflow_dispatch:
+    inputs:
+      model_set:
+        description: 'Model set to certify (free text, e.g. the two primary model ids and the floor model id)'
+        required: true
+        default: ''
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Grader selftest (zero-dependency, always runs)
+        run: node evals/grade.js --selftest
+
+      - name: Run promptfoo certification
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MODEL_SET: ${{ github.event.inputs.model_set }}
+        run: |
+          echo "Certifying model set: ${MODEL_SET}"
+          # Model ids are parsed from the dispatch input by the maintainer and
+          # exported as ANTHROPIC_MODEL / OPENAI_MODEL / FLOOR_MODEL before this
+          # step in a real run. promptfoo is installed on demand here; it is
+          # never installed or run outside this dispatch-only workflow.
+          npx --yes promptfoo@latest eval -c evals/promptfoo/promptfooconfig.yaml --no-cache
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: certify-results
+          path: |
+            evals/promptfoo/output
+          if-no-files-found: ignore

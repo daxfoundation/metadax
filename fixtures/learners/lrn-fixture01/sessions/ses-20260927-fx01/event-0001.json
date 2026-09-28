@@ -1,0 +1,23 @@
+{
+  "schema": "metadax.event/0.2",
+  "session_id": "ses-20260927-fx01",
+  "seq": 1,
+  "ts": "2026-09-27T09:00:05Z",
+  "type": "follow_up",
+  "course_id": "cell-biology-obsidian",
+  "node_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv/plant-mitochondria-different",
+  "concept": "plant-animal-cells",
+  "bloom_level": null,
+  "result": null,
+  "data": {
+    "question": "are plant ones different??",
+    "canonical_question": "Are plant mitochondria different from animal mitochondria?",
+    "intent": "contrast",
+    "depth": 5,
+    "decision": "new",
+    "concepts": [
+      "plant-animal-cells",
+      "mitochondrion-structure"
+    ]
+  }
+}

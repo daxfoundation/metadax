@@ -1,0 +1,80 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O01",
+  "parent_id": null,
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "Apply Newton's first law to bodies in equilibrium",
+  "question": "",
+  "canonical_question": "How does Newton's first law describe a body at rest or moving at constant velocity when the net force is zero?",
+  "intent": null,
+  "summary": [
+    "Newton's first law: with zero net force a body stays at rest or moves at constant velocity.",
+    "To apply it, list the forces, check they balance, and conclude the motion is unchanging."
+  ],
+  "concepts": [
+    "newtons-first-law",
+    "net-force"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Apply",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "The law and why it reframes intuition",
+        "body_md": "Newton's first law states that a body continues at rest, or in motion at constant velocity in a straight line, unless a net force acts on it. The surprising half is the second: constant motion needs no cause. This overturns the everyday feeling that you must keep pushing to keep something moving. Applying the law is a habit of two steps: find the net force, and if it is zero, declare the motion unchanging."
+      },
+      {
+        "id": "s2",
+        "heading": "How to apply it: balance the forces",
+        "body_md": "To use the first law on a real body, list every force acting on it, add them as vectors, and see whether they cancel. If the net force is zero the body is in equilibrium: at rest it stays at rest, and moving it keeps the same velocity. This works in each direction separately, so vertical forces can balance while you reason about horizontal ones. Equilibrium does not mean 'nothing is happening'; it means 'nothing is changing'.",
+        "check": {
+          "question": "A lamp hangs still from a ceiling cord. What can you say about the net force on it?",
+          "answer": "It is zero: the upward tension exactly balances the downward weight, so the lamp stays at rest."
+        }
+      },
+      {
+        "id": "s3",
+        "heading": "Worked example: a car at motorway speed",
+        "body_md": "A car cruises at a steady 30 metres per second on a level road. Its velocity is constant, so by the first law the net force on it must be zero. Yet the engine is clearly working. Applying the law tells you what that work is for: the forward driving force from the tyres exactly balances the backward forces of air resistance and rolling friction. The engine is not needed to keep the car moving; it is needed to cancel the resisting forces so the net force stays zero."
+      },
+      {
+        "id": "s4",
+        "heading": "A common mistake",
+        "body_md": "A common mistake is to assume that a moving object must have a net forward force on it, because it is moving forward. The first law says the opposite: steady motion means the forces already balance. If the driving force exceeded the resistance, the car would speed up, not hold its speed. So seeing constant velocity is itself the evidence that the net force is zero."
+      },
+      {
+        "id": "s5",
+        "heading": "Putting it together",
+        "body_md": "Applying the first law is a diagnosis: constant velocity (including rest) tells you the forces balance, and balanced forces tell you the velocity will not change. Whenever you see a body neither speeding up, slowing down nor turning, you can immediately conclude its net force is zero, and use that to find an unknown force. This diagnostic step is the foundation for the quantitative second law next."
+      }
+    ],
+    "key_points": [
+      "Newton's first law: zero net force means constant velocity, which includes staying at rest.",
+      "Apply it by listing forces and checking they cancel as vectors.",
+      "Constant velocity is evidence that the net force is zero.",
+      "An engine or push at steady speed only cancels resistance; it is not a leftover net force.",
+      "Equilibrium means unchanging motion, not the absence of forces."
+    ],
+    "bridge_to_parent": "This makes the module's headline law usable: it turns 'no net force' into a tool for reasoning about bodies in equilibrium.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How do I apply the first law separately to horizontal and vertical forces?",
+    "What happens the instant the forces stop balancing?",
+    "How is the first law different from the second law?"
+  ],
+  "path": [],
+  "created_by": "author-sbx01",
+  "visibility": "shared",
+  "created_at": "2026-09-27T20:12:01Z",
+  "updated_at": "2026-09-27T20:12:01Z",
+  "content_sha256": "e7ba057b9e26af6fff6ab58de65b35adacd213366c600449aa6cf4ae5f71f05c",
+  "superseded_by": null
+}

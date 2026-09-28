@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O02/recognizing-inertial-frames",
+  "parent_id": "L01.M02.O02",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Recognizing inertial frames",
+  "question": "",
+  "canonical_question": "How can you recognize whether a given reference frame is inertial?",
+  "intent": "clarify",
+  "summary": [
+    "To check a frame, imagine a body with zero net force and watch how it moves in that frame.",
+    "The ground is a good enough inertial frame for a game of billiards."
+  ],
+  "concepts": [
+    "inertial-frame"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Watch a free body",
+        "body_md": "To check a frame, imagine a body with zero net force and watch how it moves in that frame. If it drifts at constant velocity in a straight line, the frame is inertial. If it curves or speeds up with nothing pushing it, the frame is not."
+      },
+      {
+        "id": "s2",
+        "heading": "Typical cases",
+        "body_md": "The ground is a good enough inertial frame for a game of billiards. A merry-go-round or a braking bus is non-inertial, since objects appear to be flung about by no real force. The clue is always the unexplained motion of a force-free object."
+      }
+    ],
+    "key_points": [
+      "Test with a force-free body.",
+      "Constant-velocity drift means inertial.",
+      "Unexplained curving or speeding means non-inertial."
+    ],
+    "bridge_to_parent": "It gives a recognition procedure for the objective’s concept.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "Why does the ground count as inertial?",
+    "What are fictitious forces?"
+  ],
+  "path": [
+    {
+      "id": "L01.M02.O02",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "aed18b1d5afa9bd8462bf5fe68236f54202604c247518f047a9a7019aada9b19"
+}

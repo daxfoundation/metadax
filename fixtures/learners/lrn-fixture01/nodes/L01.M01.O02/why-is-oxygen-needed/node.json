@@ -1,0 +1,77 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O02/why-is-oxygen-needed",
+  "parent_id": "L01.M01.O02",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": {
+    "section_id": "s3",
+    "quote": "the electrons are handed to oxygen, which combines with protons to form water"
+  },
+  "title": "Why oxygen is needed",
+  "question": "why do we even need oxygen??",
+  "canonical_question": "Why is oxygen needed at the end of the electron transport chain?",
+  "intent": "deepen",
+  "summary": [
+    "Oxygen accepts the electrons at the end of the chain.",
+    "Without it the chain stalls and ATP output falls."
+  ],
+  "concepts": [
+    "electron-transport-chain",
+    "proton-gradient"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Kept private at the learner request; not compared against the shared registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "The end of the line",
+        "body_md": "Every electron that enters the chain has to go somewhere at the end. Oxygen is the molecule that accepts it. Oxygen pulls electrons strongly, which is what keeps them moving through all the earlier steps."
+      },
+      {
+        "id": "s2",
+        "heading": "What happens without it",
+        "body_md": "If no oxygen is present, the electrons have nowhere to go and the chain stops. The proton pumps fall idle, the gradient fades, and the mitochondrion can no longer make ATP this way. Cells then fall back on slower, less productive backup routes."
+      }
+    ],
+    "key_points": [
+      "Oxygen is the final acceptor that keeps electrons flowing.",
+      "Without oxygen the chain stalls and ATP output drops."
+    ],
+    "bridge_to_parent": "It answers why the final acceptor in the chain has to be there at all.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "What are the backup routes without oxygen?",
+    "How much less ATP do those routes make?",
+    "Does every cell need oxygen?"
+  ],
+  "path": [
+    {
+      "id": "L01.M01.O02",
+      "title": "The electron transport chain",
+      "summary": "Membrane complexes pass electrons and pump protons. Oxygen is the final electron acceptor."
+    }
+  ],
+  "created_by": "lrn-fixture01",
+  "visibility": "private",
+  "created_at": "2026-09-27T19:03:28Z",
+  "updated_at": "2026-09-27T19:03:28Z",
+  "content_sha256": "2baf39527326a69c2ee8d47509bbd56ac35cd57762b0c36221df5196bb99ce6b",
+  "superseded_by": null,
+  "model": "author-fixture",
+  "stats": {
+    "views": 0,
+    "reuse_count": 0
+  }
+}

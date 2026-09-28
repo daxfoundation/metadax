@@ -1,0 +1,25 @@
+{
+  "schema": "metadax.registry/0.2",
+  "course_id": "cell-biology-obsidian",
+  "module_id": "L01.M02",
+  "updated_at": "2026-09-27T19:03:28Z",
+  "nodes": [
+    {
+      "id": "L01.M02.O01",
+      "parent_id": null,
+      "title": "Plant and animal cells compared",
+      "canonical_question": "How do plant and animal cells differ?",
+      "intent": null,
+      "summary": "Plant and animal cells share core parts including mitochondria. Plant cells add a wall, a vacuole, and chloroplasts.",
+      "concepts": [
+        "plant-animal-cells",
+        "mitochondrion-structure"
+      ],
+      "visibility": "shared",
+      "created_by": "author-fixture",
+      "reuse_count": 0,
+      "depth": 1,
+      "superseded_by": null
+    }
+  ]
+}

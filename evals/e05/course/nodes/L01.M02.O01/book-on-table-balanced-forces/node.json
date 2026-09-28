@@ -1,0 +1,68 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O01/book-on-table-balanced-forces",
+  "parent_id": "L01.M02.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "The book on the table: balanced forces",
+  "question": "",
+  "canonical_question": "Why does a book resting on a table not fall through even though gravity pulls it down?",
+  "intent": "example",
+  "summary": [
+    "Gravity pulls the book down, but the table pushes up with a normal force of exactly equal size.",
+    "The table’s surface compresses very slightly under the book, like a stiff spring, and pushes back just hard enough to balance the weight."
+  ],
+  "concepts": [
+    "net-force",
+    "newtons-first-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Two forces, not one",
+        "body_md": "Gravity pulls the book down, but the table pushes up with a normal force of exactly equal size. These two forces add to zero, so the net force is zero. With no net force the book stays at rest, in line with the first law."
+      },
+      {
+        "id": "s2",
+        "heading": "How the table \"knows\"",
+        "body_md": "The table’s surface compresses very slightly under the book, like a stiff spring, and pushes back just hard enough to balance the weight. If you piled on more books, the support force would grow to match until the table failed. Support forces are responses, adjusting to whatever load sits on them."
+      }
+    ],
+    "key_points": [
+      "Weight down is balanced by the normal force up.",
+      "Zero net force means the book stays at rest.",
+      "The normal force adjusts to match the load."
+    ],
+    "bridge_to_parent": "It illustrates the objective’s equilibrium condition concretely.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "What happens the instant the table breaks?",
+    "How big can the normal force get?"
+  ],
+  "path": [
+    {
+      "id": "L01.M02.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "27993869c77bab698b1321861373eb47f9346d6ddcd17aa4df081b26934e37c2"
+}

@@ -1,0 +1,205 @@
+{
+  "note": "E05 planted registry. duplicate_groups: ids in the same group answer the same canonical question with different wording (any is a correct reuse target for the others). traps: different-intent nodes that share words/concepts with a target but answer a different question.",
+  "duplicate_groups": {
+    "D1": [
+      "L01.M01.O01/adding-forces-different-directions",
+      "L01.M01.O01/vector-sum-of-two-forces",
+      "L01.M01.O01/combine-forces-with-vectors"
+    ],
+    "D2": [
+      "L02.M01.O01/mass-versus-weight",
+      "L02.M01.O01/how-mass-and-weight-differ",
+      "L02.M01.O01/distinguishing-mass-from-weight"
+    ],
+    "D3": [
+      "L01.M01.O01/seatbelt-and-inertia",
+      "L01.M01.O01/why-seatbelts-work"
+    ],
+    "D4": [
+      "L02.M01.O01/rearrange-fma-for-acceleration",
+      "L02.M01.O01/solving-fma-for-a"
+    ],
+    "D5": [
+      "L02.M02.O01/identifying-action-reaction-pairs",
+      "L02.M02.O01/spotting-third-law-pairs"
+    ],
+    "D6": [
+      "L01.M02.O01/book-on-table-balanced-forces",
+      "L01.M02.O01/why-resting-objects-stay-put"
+    ],
+    "D7": [
+      "L01.M01.O02/acceleration-vs-velocity",
+      "L01.M01.O02/how-acceleration-differs-from-velocity"
+    ],
+    "D8": [
+      "L02.M01.O01/do-heavier-objects-fall-faster",
+      "L02.M01.O01/falling-speed-and-weight"
+    ],
+    "D9": [
+      "L01.M02.O02/what-makes-a-frame-inertial",
+      "L01.M02.O02/recognizing-inertial-frames"
+    ]
+  },
+  "duplicate_of": {
+    "L01.M01.O01/adding-forces-different-directions": [
+      "L01.M01.O01/vector-sum-of-two-forces",
+      "L01.M01.O01/combine-forces-with-vectors"
+    ],
+    "L01.M01.O01/vector-sum-of-two-forces": [
+      "L01.M01.O01/adding-forces-different-directions",
+      "L01.M01.O01/combine-forces-with-vectors"
+    ],
+    "L01.M01.O01/combine-forces-with-vectors": [
+      "L01.M01.O01/adding-forces-different-directions",
+      "L01.M01.O01/vector-sum-of-two-forces"
+    ],
+    "L02.M01.O01/mass-versus-weight": [
+      "L02.M01.O01/how-mass-and-weight-differ",
+      "L02.M01.O01/distinguishing-mass-from-weight"
+    ],
+    "L02.M01.O01/how-mass-and-weight-differ": [
+      "L02.M01.O01/mass-versus-weight",
+      "L02.M01.O01/distinguishing-mass-from-weight"
+    ],
+    "L02.M01.O01/distinguishing-mass-from-weight": [
+      "L02.M01.O01/mass-versus-weight",
+      "L02.M01.O01/how-mass-and-weight-differ"
+    ],
+    "L01.M01.O01/seatbelt-and-inertia": [
+      "L01.M01.O01/why-seatbelts-work"
+    ],
+    "L01.M01.O01/why-seatbelts-work": [
+      "L01.M01.O01/seatbelt-and-inertia"
+    ],
+    "L02.M01.O01/rearrange-fma-for-acceleration": [
+      "L02.M01.O01/solving-fma-for-a"
+    ],
+    "L02.M01.O01/solving-fma-for-a": [
+      "L02.M01.O01/rearrange-fma-for-acceleration"
+    ],
+    "L02.M02.O01/identifying-action-reaction-pairs": [
+      "L02.M02.O01/spotting-third-law-pairs"
+    ],
+    "L02.M02.O01/spotting-third-law-pairs": [
+      "L02.M02.O01/identifying-action-reaction-pairs"
+    ],
+    "L01.M02.O01/book-on-table-balanced-forces": [
+      "L01.M02.O01/why-resting-objects-stay-put"
+    ],
+    "L01.M02.O01/why-resting-objects-stay-put": [
+      "L01.M02.O01/book-on-table-balanced-forces"
+    ],
+    "L01.M01.O02/acceleration-vs-velocity": [
+      "L01.M01.O02/how-acceleration-differs-from-velocity"
+    ],
+    "L01.M01.O02/how-acceleration-differs-from-velocity": [
+      "L01.M01.O02/acceleration-vs-velocity"
+    ],
+    "L02.M01.O01/do-heavier-objects-fall-faster": [
+      "L02.M01.O01/falling-speed-and-weight"
+    ],
+    "L02.M01.O01/falling-speed-and-weight": [
+      "L02.M01.O01/do-heavier-objects-fall-faster"
+    ],
+    "L01.M02.O02/what-makes-a-frame-inertial": [
+      "L01.M02.O02/recognizing-inertial-frames"
+    ],
+    "L01.M02.O02/recognizing-inertial-frames": [
+      "L01.M02.O02/what-makes-a-frame-inertial"
+    ]
+  },
+  "traps": [
+    {
+      "id": "L02.M01.O01/why-mass-resists-acceleration",
+      "overlaps": "L02.M01.O01/rearrange-fma-for-acceleration",
+      "shared_concepts": [
+        "mass",
+        "newtons-second-law"
+      ],
+      "trap_intent": "why (deepen)",
+      "target_intent": "how-to-calculate (apply)"
+    },
+    {
+      "id": "L01.M01.O02/why-velocity-is-a-vector",
+      "overlaps": "L01.M01.O02/acceleration-vs-velocity",
+      "shared_concepts": [
+        "kinematic-quantities"
+      ],
+      "trap_intent": "why (deepen)",
+      "target_intent": "how-differs (contrast)"
+    },
+    {
+      "id": "L02.M02.O01/why-action-reaction-dont-cancel",
+      "overlaps": "L02.M02.O01/identifying-action-reaction-pairs",
+      "shared_concepts": [
+        "newtons-third-law"
+      ],
+      "trap_intent": "why (deepen)",
+      "target_intent": "how-to-identify (apply)"
+    },
+    {
+      "id": "L01.M01.O01/why-inertia-is-not-a-force",
+      "overlaps": "L01.M01.O01/seatbelt-and-inertia",
+      "shared_concepts": [
+        "inertia"
+      ],
+      "trap_intent": "why (deepen)",
+      "target_intent": "example (apply)"
+    },
+    {
+      "id": "L01.M02.O01/why-equilibrium-means-zero-net-force",
+      "overlaps": "L01.M02.O01/book-on-table-balanced-forces",
+      "shared_concepts": [
+        "net-force",
+        "newtons-first-law"
+      ],
+      "trap_intent": "why (deepen)",
+      "target_intent": "example (apply)"
+    },
+    {
+      "id": "L02.M01.O02/why-acceleration-follows-net-force",
+      "overlaps": "L02.M01.O02/acceleration-on-a-frictionless-incline",
+      "shared_concepts": [
+        "newtons-second-law"
+      ],
+      "trap_intent": "why (deepen)",
+      "target_intent": "how-to-calculate (apply)"
+    },
+    {
+      "id": "L01.M01.O01/measuring-force-in-newtons",
+      "overlaps": "L01.M01.O01/adding-forces-different-directions",
+      "shared_concepts": [
+        "net-force"
+      ],
+      "trap_intent": "how-to-measure (apply)",
+      "target_intent": "how-to-add (deepen)"
+    },
+    {
+      "id": "L02.M01.O01/history-of-the-kilogram",
+      "overlaps": "L02.M01.O01/mass-versus-weight",
+      "shared_concepts": [
+        "mass"
+      ],
+      "trap_intent": "history (tangent)",
+      "target_intent": "concept-contrast (clarify)"
+    },
+    {
+      "id": "L01.M02.O02/why-earth-is-nearly-inertial",
+      "overlaps": "L01.M02.O02/what-makes-a-frame-inertial",
+      "shared_concepts": [
+        "inertial-frame"
+      ],
+      "trap_intent": "why-approximation (deepen)",
+      "target_intent": "definition-test (clarify)"
+    },
+    {
+      "id": "L01.M01.O02/reading-velocity-time-graphs",
+      "overlaps": "L01.M01.O02/acceleration-vs-velocity",
+      "shared_concepts": [
+        "kinematic-quantities"
+      ],
+      "trap_intent": "graph-how-to (apply)",
+      "target_intent": "concept-contrast (contrast)"
+    }
+  ]
+}

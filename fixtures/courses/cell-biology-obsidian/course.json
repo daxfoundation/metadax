@@ -1,0 +1,208 @@
+{
+  "schema": "metadax.course/0.2",
+  "id": "cell-biology-obsidian",
+  "title": "Cell Biology (Obsidian fixture)",
+  "summary": "A short intro-level cell biology course used as a test fixture. It follows how the mitochondrion makes energy and how plant and animal cells compare.",
+  "language": "en",
+  "audience": {
+    "intended_bands": [
+      "adult"
+    ],
+    "notes": "Written for a curious adult; no prior chemistry assumed."
+  },
+  "steer": {
+    "focus": "How cells produce and use energy, and how cell types compare.",
+    "include": [
+      "Everyday analogies",
+      "One worked example per section"
+    ],
+    "exclude": [
+      "Mnemonics as the primary method"
+    ],
+    "tone": "warm, precise, never condescending",
+    "depth": "introductory",
+    "source_policy": "source_first",
+    "scope_policy": "tangents_allowed",
+    "max_depth": 8
+  },
+  "license": "CC-BY-4.0",
+  "generated_segments_license": "CC0-1.0",
+  "constraint_decl": null,
+  "created_at": "2026-09-27T19:03:28Z",
+  "updated_at": "2026-09-27T19:03:28Z",
+  "concepts": [
+    {
+      "id": "cellular-respiration",
+      "name": "Cellular respiration",
+      "description": "How cells release energy from food and capture it as ATP.",
+      "bloom_target": "Understand",
+      "prerequisites": [],
+      "misconceptions": [
+        "Respiration is the same thing as breathing"
+      ]
+    },
+    {
+      "id": "atp-synthesis",
+      "name": "ATP synthesis",
+      "description": "How the mitochondrion assembles ATP using a proton gradient.",
+      "bloom_target": "Analyze",
+      "prerequisites": [
+        "cellular-respiration"
+      ],
+      "misconceptions": [
+        "ATP is stored in large amounts for later"
+      ]
+    },
+    {
+      "id": "electron-transport-chain",
+      "name": "Electron transport chain",
+      "description": "The membrane complexes that pass electrons and pump protons.",
+      "bloom_target": "Analyze",
+      "prerequisites": [
+        "cellular-respiration"
+      ],
+      "misconceptions": [
+        "The chain makes ATP directly"
+      ]
+    },
+    {
+      "id": "mitochondrion-structure",
+      "name": "Mitochondrion structure",
+      "description": "The two-membrane layout of the mitochondrion and its folded inner membrane.",
+      "bloom_target": "Understand",
+      "prerequisites": [],
+      "misconceptions": [
+        "The mitochondrion has only a single membrane"
+      ]
+    },
+    {
+      "id": "proton-gradient",
+      "name": "Proton gradient",
+      "description": "The stored energy held as a proton difference across the inner membrane.",
+      "bloom_target": "Understand",
+      "prerequisites": [
+        "electron-transport-chain"
+      ],
+      "misconceptions": [
+        "Protons cross the inner membrane freely"
+      ]
+    },
+    {
+      "id": "cytochrome-c",
+      "name": "Cytochrome c",
+      "description": "The small mobile carrier that moves electrons between complexes.",
+      "bloom_target": "Understand",
+      "prerequisites": [
+        "electron-transport-chain"
+      ],
+      "misconceptions": [
+        "Cytochrome c is a fixed part of one complex"
+      ]
+    },
+    {
+      "id": "plant-animal-cells",
+      "name": "Plant and animal cells",
+      "description": "What plant and animal cells share and how they differ.",
+      "bloom_target": "Understand",
+      "prerequisites": [],
+      "misconceptions": [
+        "Plant cells have no mitochondria because they have chloroplasts"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "L01",
+      "title": "Energy in the cell",
+      "summary": "How cells capture and spend energy, and how plant and animal cells compare.",
+      "steer": {
+        "focus": "Keep energy the through-line across both modules.",
+        "include": [],
+        "exclude": []
+      },
+      "modules": [
+        {
+          "id": "L01.M01",
+          "title": "Mitochondria and ATP",
+          "summary": "Where a cell makes most of its ATP and the machinery that does it.",
+          "steer": {
+            "focus": "Tie every part back to making ATP.",
+            "include": [],
+            "exclude": []
+          },
+          "objectives": [
+            {
+              "id": "L01.M01.O01",
+              "title": "Introduction to energy production in the mitochondria",
+              "statement": "The learner can explain how the mitochondrion converts food energy into ATP and analyse how its parts work together.",
+              "concepts": [
+                "cellular-respiration",
+                "atp-synthesis",
+                "mitochondrion-structure"
+              ],
+              "bloom_target": "Analyze",
+              "source_refs": [
+                "src:notes-mitochondria"
+              ]
+            },
+            {
+              "id": "L01.M01.O02",
+              "title": "The electron transport chain",
+              "statement": "The learner can describe how the electron transport chain moves electrons, pumps protons, and uses oxygen.",
+              "concepts": [
+                "electron-transport-chain",
+                "proton-gradient",
+                "cytochrome-c"
+              ],
+              "bloom_target": "Understand",
+              "source_refs": [
+                "src:notes-mitochondria"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "L01.M02",
+          "title": "Comparing cells",
+          "summary": "What plant and animal cells share and how they differ.",
+          "steer": {
+            "focus": "Compare structures by what each cell needs to live.",
+            "include": [],
+            "exclude": []
+          },
+          "objectives": [
+            {
+              "id": "L01.M02.O01",
+              "title": "Plant and animal cells compared",
+              "statement": "The learner can describe the shared parts of plant and animal cells and the features unique to plant cells.",
+              "concepts": [
+                "plant-animal-cells",
+                "mitochondrion-structure"
+              ],
+              "bloom_target": "Understand",
+              "source_refs": [
+                "src:notes-cells"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src:notes-mitochondria",
+      "title": "Course notes: mitochondria and energy",
+      "path": "sources/mitochondria.md"
+    },
+    {
+      "id": "src:notes-cells",
+      "title": "Course notes: comparing cells",
+      "path": "sources/cells.md"
+    }
+  ],
+  "policy": {
+    "learner_nodes": "pending_review",
+    "minor_nodes": "pending_review"
+  }
+}

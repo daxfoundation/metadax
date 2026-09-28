@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/config.schema.json",
+  "title": "metadax.config.json (SPEC S-10 client config)",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "course_repo": { "type": "string" },
+    "learner_repo": { "type": "string" },
+    "learner_id": { "type": "string", "pattern": "^lrn-[a-z0-9]{6,}$" },
+    "device_id": { "type": "string", "pattern": "^dev-[a-z0-9]{6}$" },
+    "client": { "enum": ["claude-code", "claude-desktop", "api", "chatgpt", "companion", "manual"] },
+    "write_mode": { "enum": ["git", "packet", "none"] },
+    "model_hint": { "type": "string" }
+  }
+}

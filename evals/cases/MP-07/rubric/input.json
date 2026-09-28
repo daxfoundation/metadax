@@ -1,0 +1,37 @@
+{
+  "op": "MP-07",
+  "case": "rubric",
+  "description": "Evaluate a longer answer with rubric grading. Output type evaluation (no schema in schemas/index.json; structural checks only).",
+  "mode": "rubric",
+  "assemble_argv": [
+    "--op",
+    "MP-07",
+    "--prompts",
+    "prompts",
+    "--course",
+    "fixtures/courses/cell-biology-obsidian",
+    "--learner",
+    "fixtures/learners/lrn-fixture01",
+    "--learner-id",
+    "lrn-fixture01",
+    "--node",
+    "L01.M01.O01",
+    "--mode",
+    "rubric",
+    "--config",
+    "client=claude-code",
+    "--config",
+    "write_mode=git",
+    "--config",
+    "grading=rubric",
+    "--input",
+    "The mitochondrion converts food energy into ATP by passing electrons down a chain, pumping protons to build a gradient, and letting them flow back through ATP synthase to drive ATP formation."
+  ],
+  "stack_bytes": 10827,
+  "blocks": [
+    "CONFIG",
+    "LEARNER",
+    "CONTENT",
+    "INPUT"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L02.M01.O01/falling-speed-and-weight",
+  "parent_id": "L02.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Falling speed and weight",
+  "question": "",
+  "canonical_question": "Does an object’s weight decide how fast it falls?",
+  "intent": "challenge",
+  "summary": [
+    "It feels obvious that heavier things should drop faster, yet in the absence of air they do not.",
+    "Doubling the weight doubles the mass too, and acceleration is force divided by mass, so the ratio stays at g."
+  ],
+  "concepts": [
+    "mass",
+    "newtons-second-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Weight does not set the pace",
+        "body_md": "It feels obvious that heavier things should drop faster, yet in the absence of air they do not. Drop a coin and a bowling ball in a vacuum tube and they land together. Weight sets the pulling force but not the acceleration."
+      },
+      {
+        "id": "s2",
+        "heading": "The cancelling explained",
+        "body_md": "Doubling the weight doubles the mass too, and acceleration is force divided by mass, so the ratio stays at g. Only when air resistance depends on shape and speed do real falls differ. That is why a parachute, not extra weight, changes a fall."
+      }
+    ],
+    "key_points": [
+      "Weight does not determine fall acceleration.",
+      "Force and mass both double, so a stays g.",
+      "Shape-dependent air drag causes real differences."
+    ],
+    "bridge_to_parent": "It restates the same misconception check about weight.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How does a parachute change the balance?",
+    "What is terminal velocity?"
+  ],
+  "path": [
+    {
+      "id": "L02.M01.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "b08fe8ae8c0ba4016e77123736e4f894f9b12c190ab6f93ec30a332665cdfa4e"
+}

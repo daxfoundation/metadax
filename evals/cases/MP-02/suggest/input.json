@@ -1,0 +1,28 @@
+{
+  "op": "MP-02",
+  "case": "suggest",
+  "description": "Suggest follow-on structure against the fixture course. Note: assemble.js does not carry a CONTENT block for MP-02, so suggestions are made from COURSE + INPUT only (tool limitation, see evals/README.md).",
+  "mode": "suggest",
+  "assemble_argv": [
+    "--op",
+    "MP-02",
+    "--prompts",
+    "prompts",
+    "--course",
+    "fixtures/courses/cell-biology-obsidian",
+    "--mode",
+    "suggest",
+    "--config",
+    "client=claude-code",
+    "--config",
+    "write_mode=git",
+    "--input",
+    "Suggest a few more objectives that would round out this cell-biology course."
+  ],
+  "stack_bytes": 18790,
+  "blocks": [
+    "CONFIG",
+    "COURSE",
+    "INPUT"
+  ]
+}

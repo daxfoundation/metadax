@@ -1,0 +1,43 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "intro",
+  "display": {
+    "message": "Hi Fixture Learner. We will work through two ideas: how the cell makes ATP, and the electron transport chain that supports it. Questions start easy and climb toward each idea target level, one at a time. Commands: next, skip, hint, why, more, ask: <your question>, summary, stop. Hints and second chances are part of learning, so use them.",
+    "instructions": "Choose the single best answer.",
+    "example": "Example (format only): Which organelle stores genetic material? A) mitochondrion B) nucleus C) ribosome D) vacuole.",
+    "question": "Where in the cell is most ATP produced?",
+    "options": [
+      "A) the nucleus",
+      "B) the mitochondrion",
+      "C) the cell wall",
+      "D) the ribosome"
+    ]
+  },
+  "meta": {
+    "concept": "atp-synthesis",
+    "bloom_level": "Remember",
+    "question_type": "Multiple Choice",
+    "attempt": 1
+  },
+  "state": {
+    "concept_order": [
+      "atp-synthesis",
+      "electron-transport-chain"
+    ],
+    "concept": "atp-synthesis",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "atp-synthesis": {}
+    },
+    "competency": {
+      "atp-synthesis": 0,
+      "electron-transport-chain": 0
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

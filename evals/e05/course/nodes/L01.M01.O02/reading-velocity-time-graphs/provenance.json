@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L01.M01.O02/reading-velocity-time-graphs",
+  "content_hash": "c08235c12d7750ea03393ef204a7be09e1b4ad3cd9e9b3b43827ab7245861b66",
+  "created_by": {
+    "id": "author-e05",
+    "key_id": null,
+    "chain_role": "author"
+  },
+  "lineage": [
+    {
+      "node_id": "L01.M01.O02",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-28T00:22:59Z"
+}

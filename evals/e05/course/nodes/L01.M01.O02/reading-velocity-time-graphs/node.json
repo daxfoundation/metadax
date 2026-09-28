@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O02/reading-velocity-time-graphs",
+  "parent_id": "L01.M01.O02",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Reading a velocity-time graph",
+  "question": "",
+  "canonical_question": "How do you read acceleration and distance off a velocity-time graph?",
+  "intent": "apply",
+  "summary": [
+    "On a velocity-time graph the vertical axis is velocity and the horizontal axis is time.",
+    "The area between the line and the time axis gives the distance travelled."
+  ],
+  "concepts": [
+    "kinematic-quantities"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Slope is acceleration",
+        "body_md": "On a velocity-time graph the vertical axis is velocity and the horizontal axis is time. The steepness of the line, its slope, tells you the acceleration. A rising line means speeding up, a falling line means slowing down."
+      },
+      {
+        "id": "s2",
+        "heading": "Area is distance",
+        "body_md": "The area between the line and the time axis gives the distance travelled. For straight-line segments this is just triangles and rectangles you can add up. So one graph yields both acceleration and distance."
+      }
+    ],
+    "key_points": [
+      "Slope of the line is acceleration.",
+      "Area under the line is distance.",
+      "Rising means speeding up, falling means slowing."
+    ],
+    "bridge_to_parent": "It is a graph-reading how-to, not a concept contrast.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How does this differ from a position-time graph?",
+    "What does a curved line mean?"
+  ],
+  "path": [
+    {
+      "id": "L01.M01.O02",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "c08235c12d7750ea03393ef204a7be09e1b4ad3cd9e9b3b43827ab7245861b66"
+}

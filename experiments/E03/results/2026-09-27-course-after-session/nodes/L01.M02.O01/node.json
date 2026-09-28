@@ -1,0 +1,71 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O01",
+  "parent_id": null,
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "Plant and animal cells compared",
+  "question": "",
+  "canonical_question": "How do plant and animal cells differ?",
+  "intent": null,
+  "summary": [
+    "Plant and animal cells share core parts including mitochondria.",
+    "Plant cells add a wall, a vacuole, and chloroplasts."
+  ],
+  "concepts": [
+    "plant-animal-cells",
+    "mitochondrion-structure"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Shared machinery",
+        "body_md": "Plant and animal cells are built from the same basic parts. Both keep their DNA in a nucleus, both make proteins on ribosomes, and both run their energy supply through mitochondria."
+      },
+      {
+        "id": "s2",
+        "heading": "What plant cells add",
+        "body_md": "Plant cells carry three features animal cells lack: a stiff cell wall around the outside, a large central vacuole that stores water and holds shape, and chloroplasts that capture light to make sugar."
+      },
+      {
+        "id": "s3",
+        "heading": "Why the differences fit their lives",
+        "body_md": "An animal cell can move and change shape, which suits a body that hunts or travels. A plant cell stays put and builds its own food from light, so a rigid wall and light-capturing parts are worth the loss of flexibility."
+      }
+    ],
+    "key_points": [
+      "Plant and animal cells share a nucleus, ribosomes, and mitochondria.",
+      "Plant cells add a cell wall, a central vacuole, and chloroplasts.",
+      "The differences match how each organism lives."
+    ],
+    "bridge_to_parent": "",
+    "bridge_to_objective": "",
+    "source_refs": [
+      "src:notes-cells"
+    ]
+  },
+  "seeds": [
+    "Do plant and animal mitochondria work the same way?",
+    "What does the central vacuole do?",
+    "How do chloroplasts and mitochondria differ?"
+  ],
+  "path": [],
+  "created_by": "author-fixture",
+  "visibility": "shared",
+  "created_at": "2026-09-27T19:03:28Z",
+  "updated_at": "2026-09-27T19:03:28Z",
+  "content_sha256": "568443d4a6469b4e6ef3b53e5959ce8c2a9b971815020abf2eb4badda303d73a",
+  "superseded_by": null,
+  "model": "author-fixture",
+  "stats": {
+    "views": 0,
+    "reuse_count": 0
+  }
+}

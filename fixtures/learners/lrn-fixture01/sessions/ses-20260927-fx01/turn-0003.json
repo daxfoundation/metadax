@@ -1,0 +1,87 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "summary",
+  "display": {
+    "message": "Good session. Here is where things stand and what to try next."
+  },
+  "summary": {
+    "concepts": [
+      {
+        "id": "atp-synthesis",
+        "name": "ATP synthesis",
+        "competency": 58,
+        "levels": {
+          "Remember": "passed_first_try",
+          "Understand": "passed_after_help",
+          "Apply": "passed_first_try",
+          "Analyze": "not_started",
+          "Evaluate": "not_started",
+          "Create": "not_started"
+        }
+      },
+      {
+        "id": "electron-transport-chain",
+        "name": "Electron transport chain",
+        "competency": 38,
+        "levels": {
+          "Remember": "passed_first_try",
+          "Understand": "passed_first_try",
+          "Apply": "not_started",
+          "Analyze": "not_started",
+          "Evaluate": "not_started",
+          "Create": "not_started"
+        }
+      }
+    ],
+    "strengths": [
+      "cellular-respiration"
+    ],
+    "areas_for_improvement": [
+      "electron-transport-chain"
+    ],
+    "misconceptions": [
+      "ATP is stored in large amounts for later"
+    ],
+    "recommendations": [
+      "Revisit the payoff section of the objective and try an Analyze question on atp-synthesis",
+      "Work the electron transport chain up to Apply next"
+    ],
+    "encouragement": "You followed your curiosity five levels deep and still kept the thread back to ATP."
+  },
+  "state": {
+    "concept_order": [
+      "atp-synthesis",
+      "electron-transport-chain"
+    ],
+    "concept": "atp-synthesis",
+    "level": "Analyze",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "atp-synthesis": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help",
+        "Apply": "passed_first_try",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "not_started",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      }
+    },
+    "competency": {
+      "atp-synthesis": 58,
+      "electron-transport-chain": 38
+    }
+  },
+  "next_action": "done",
+  "warnings": []
+}

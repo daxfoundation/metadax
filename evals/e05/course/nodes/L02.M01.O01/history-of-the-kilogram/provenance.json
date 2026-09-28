@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L02.M01.O01/history-of-the-kilogram",
+  "content_hash": "b35b3f5a68fa888131d9dda666a46259b6311cb7b41fe2ea3532d0e84f12372f",
+  "created_by": {
+    "id": "author-e05",
+    "key_id": null,
+    "chain_role": "author"
+  },
+  "lineage": [
+    {
+      "node_id": "L02.M01.O01",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-28T00:22:59Z"
+}

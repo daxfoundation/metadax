@@ -1,0 +1,80 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L02.M01.O02",
+  "parent_id": null,
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "Calculate acceleration from net force",
+  "question": "",
+  "canonical_question": "How do you calculate the acceleration of a simple one-body system from its net force and mass?",
+  "intent": null,
+  "summary": [
+    "Rearrange F = ma to a = F / m to find acceleration from net force and mass.",
+    "First combine forces into a net force, then divide by mass, keeping units consistent."
+  ],
+  "concepts": [
+    "newtons-second-law",
+    "kinematic-quantities"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Apply",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Turning the law into a calculation",
+        "body_md": "Knowing F = ma is one thing; using it to get a number is the skill this objective builds. Almost every simple mechanics problem comes down to the same recipe: find the net force on the body, then divide by the mass to get the acceleration. This section walks through that recipe on one-body examples so it becomes automatic."
+      },
+      {
+        "id": "s2",
+        "heading": "The recipe",
+        "body_md": "Step one: identify every force on the body and add them as vectors to get the net force F. Step two: identify the mass m in kilograms. Step three: compute a = F / m. Step four: read off the direction, the acceleration points the same way as the net force. Keeping units in newtons, kilograms and metres per second squared means the answer comes out in m/s^2 automatically.",
+        "check": {
+          "question": "What is the first step before you can divide by mass?",
+          "answer": "Combine all the forces on the body into a single net force, keeping track of direction."
+        }
+      },
+      {
+        "id": "s3",
+        "heading": "Worked example one: a single push",
+        "body_md": "A 4 kg toolbox sits on a low-friction floor. You push it with a net force of 20 N. Then a = F / m = 20 / 4 = 5 m/s^2, directed the way you push. Starting from rest, after 3 seconds its speed is a times t = 5 times 3 = 15 m/s. Notice the two-step flow: the second law gives the acceleration, then simple kinematics turns that acceleration into a speed."
+      },
+      {
+        "id": "s4",
+        "heading": "Worked example two: forces that partly cancel",
+        "body_md": "Now the same 4 kg toolbox is pushed forward with 20 N while friction resists with 8 N. First find the net force: 20 minus 8 = 12 N forward. Then a = F / m = 12 / 4 = 3 m/s^2. The lesson is that you must resolve to the net force first; using the 20 N push alone would overstate the acceleration. Only the leftover force accelerates the body."
+      },
+      {
+        "id": "s5",
+        "heading": "A common mistake",
+        "body_md": "A common mistake is to plug the largest single force into F = ma instead of the net force. If two forces oppose, the body accelerates according to their difference, not either one alone. Always combine forces first. A second slip is mixing units, such as grams with newtons; convert everything to kilograms, newtons and metres before dividing."
+      }
+    ],
+    "key_points": [
+      "Rearrange F = ma to a = F / m to solve for acceleration.",
+      "Always compute the net force before dividing by mass.",
+      "Acceleration points in the direction of the net force.",
+      "Use consistent SI units so the answer is in m/s^2.",
+      "The second law gives acceleration; kinematics then gives speed and distance."
+    ],
+    "bridge_to_parent": "This puts the module's equation to work, turning a net force and a mass into a numerical acceleration.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How do I combine forces that act at an angle to each other?",
+    "How do I get distance travelled from the acceleration?",
+    "What changes when the mass itself changes during the motion?"
+  ],
+  "path": [],
+  "created_by": "author-sbx01",
+  "visibility": "shared",
+  "created_at": "2026-09-27T20:15:10Z",
+  "updated_at": "2026-09-27T20:15:10Z",
+  "content_sha256": "932653ca03abb4a02d44b2ab966a4b774b83e68bbc7e6924c632d16fca856988",
+  "superseded_by": null
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L01.M01.O01/proteins-essential-atp-synthesis",
+  "content_hash": "eb547649818eb5571297a0af29e7727d96f70021758bf0361bf9cd79c491d3ac",
+  "created_by": {
+    "id": "lrn-fixture01",
+    "key_id": null,
+    "chain_role": "client"
+  },
+  "lineage": [
+    {
+      "node_id": "L01.M01.O01",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-27T19:03:28Z"
+}

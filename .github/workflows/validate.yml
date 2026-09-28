@@ -1,0 +1,23 @@
+name: validate
+
+# Runs the MetaDAX Node.js tools test suite, which builds a tiny course, stamps
+# and validates it, exercises assemble.js and apply_packet.js, and validates the
+# bundled course and learner fixtures. Zero dependencies: no install step.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run the tools test suite
+        run: node tools/tests/run.js

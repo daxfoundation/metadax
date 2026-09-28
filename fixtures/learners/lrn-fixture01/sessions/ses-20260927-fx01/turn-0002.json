@@ -1,0 +1,47 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "Correct. Most ATP is made in the mitochondrion, on its folded inner membrane. Next, explain the idea in your own words.",
+    "instructions": "Answer in one or two sentences in your own words.",
+    "example": "Example (format only): In your own words, what does a cell membrane do?",
+    "question": "In your own words, what is the job of ATP synthase?",
+    "options": []
+  },
+  "meta": {
+    "concept": "atp-synthesis",
+    "bloom_level": "Understand",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "feedback": {
+    "result": "correct",
+    "hint": "",
+    "correct_answer": "",
+    "explanation": "The mitochondrion holds the machinery that converts the proton supply into ATP.",
+    "misconception": ""
+  },
+  "state": {
+    "concept_order": [
+      "atp-synthesis",
+      "electron-transport-chain"
+    ],
+    "concept": "atp-synthesis",
+    "level": "Understand",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "atp-synthesis": {
+        "Remember": "passed_first_try"
+      }
+    },
+    "competency": {
+      "atp-synthesis": 15,
+      "electron-transport-chain": 0
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

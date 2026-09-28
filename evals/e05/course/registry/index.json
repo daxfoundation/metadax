@@ -1,0 +1,31 @@
+{
+  "schema": "metadax.registry-index/0.2",
+  "course_id": "newtons-laws-motion",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "modules": [
+    {
+      "id": "L01.M01",
+      "file": "registry/L01.M01.json",
+      "node_count": 17,
+      "updated_at": "runtime"
+    },
+    {
+      "id": "L01.M02",
+      "file": "registry/L01.M02.json",
+      "node_count": 11,
+      "updated_at": "runtime"
+    },
+    {
+      "id": "L02.M01",
+      "file": "registry/L02.M01.json",
+      "node_count": 16,
+      "updated_at": "runtime"
+    },
+    {
+      "id": "L02.M02",
+      "file": "registry/L02.M02.json",
+      "node_count": 6,
+      "updated_at": "runtime"
+    }
+  ]
+}

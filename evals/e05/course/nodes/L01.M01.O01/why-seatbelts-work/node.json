@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O01/why-seatbelts-work",
+  "parent_id": "L01.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Why seatbelts work",
+  "question": "",
+  "canonical_question": "How does inertia explain why seatbelts keep passengers safe?",
+  "intent": "example",
+  "summary": [
+    "A passenger moving with the car shares its velocity.",
+    "A seatbelt couples the passenger to the car so both decelerate together."
+  ],
+  "concepts": [
+    "inertia"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "The passenger’s point of view",
+        "body_md": "A passenger moving with the car shares its velocity. When the car decelerates rapidly, nothing has yet acted on the passenger, so inertia carries them forward relative to the slowing car. The apparent lurch forward is simply continued motion."
+      },
+      {
+        "id": "s2",
+        "heading": "Turning a fast stop into a gentle one",
+        "body_md": "A seatbelt couples the passenger to the car so both decelerate together. Because force equals the rate of change of momentum, extending the stopping time reduces the force felt. The belt thus converts a violent stop into a survivable one."
+      }
+    ],
+    "key_points": [
+      "Passengers share the car’s velocity until a force acts.",
+      "Inertia, not a push, causes the forward lurch.",
+      "Longer stopping time means smaller force."
+    ],
+    "bridge_to_parent": "It reinforces inertia with the same everyday safety example.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "What is momentum, exactly?",
+    "Why do crumple zones help?"
+  ],
+  "path": [
+    {
+      "id": "L01.M01.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:57Z",
+  "updated_at": "2026-09-28T00:22:57Z",
+  "content_sha256": "abd9ba3a40c84c1c68d15fada5ebc1a62be8bcce05ca89d4a8c58dbdb7172897"
+}

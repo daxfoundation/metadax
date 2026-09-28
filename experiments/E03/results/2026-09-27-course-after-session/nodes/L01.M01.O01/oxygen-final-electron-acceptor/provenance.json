@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L01.M01.O01/oxygen-final-electron-acceptor",
+  "content_hash": "9ad5754e16391b791f72462c350f169f5d1bd730a518125147012eea3ba0f385",
+  "created_by": {
+    "id": "lrn-sbx0adlt",
+    "key_id": null,
+    "chain_role": "client"
+  },
+  "lineage": [
+    {
+      "node_id": "L01.M01.O01",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-27T20:08:18Z"
+}

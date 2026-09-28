@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/manifest.schema.json",
+  "title": "metadax.manifest/0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "learner_id", "week", "device_id", "files", "bytes_total", "ts"],
+  "properties": {
+    "schema": { "const": "metadax.manifest/0.2" },
+    "learner_id": { "type": "string", "pattern": "^lrn-[a-z0-9]{6,}$" },
+    "week": { "type": "string", "pattern": "^\\d{4}-W\\d{2}$" },
+    "device_id": { "type": "string", "pattern": "^dev-[a-z0-9]{6}$" },
+    "files": { "type": "array", "items": { "$ref": "#/$defs/fileEntry" } },
+    "bytes_total": { "type": "integer", "minimum": 0 },
+    "ts": { "$ref": "#/$defs/rfc3339" }
+  },
+  "$defs": {
+    "rfc3339": {
+      "anyOf": [
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$" },
+        { "const": "runtime" }
+      ]
+    },
+    "hash": {
+      "anyOf": [
+        { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        { "const": "runtime" }
+      ]
+    },
+    "fileEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "bytes"],
+      "properties": {
+        "path": { "type": "string" },
+        "sha256": { "$ref": "#/$defs/hash" },
+        "bytes": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

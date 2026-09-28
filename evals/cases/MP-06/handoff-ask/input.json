@@ -1,0 +1,42 @@
+{
+  "op": "MP-06",
+  "case": "handoff-ask",
+  "description": "The ask: command hands off to MP-05 without consuming an attempt.",
+  "mode": "quiz",
+  "assemble_argv": [
+    "--op",
+    "MP-06",
+    "--prompts",
+    "prompts",
+    "--course",
+    "fixtures/courses/cell-biology-obsidian",
+    "--learner",
+    "fixtures/learners/lrn-fixture01",
+    "--learner-id",
+    "lrn-fixture01",
+    "--node",
+    "L01.M01.O02",
+    "--session",
+    "ses-20260927-fx01",
+    "--mode",
+    "quiz",
+    "--config",
+    "client=claude-code",
+    "--config",
+    "write_mode=git",
+    "--input",
+    "ask: why is it oxygen specifically and not another molecule at the end?"
+  ],
+  "stack_bytes": 28589,
+  "blocks": [
+    "CONFIG",
+    "COURSE",
+    "OBJECTIVE",
+    "CONCEPTS",
+    "LEARNER",
+    "CONTENT",
+    "PROGRESS",
+    "SESSION",
+    "INPUT"
+  ]
+}

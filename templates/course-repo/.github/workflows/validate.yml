@@ -1,0 +1,32 @@
+name: validate course
+
+# Structural validation of this course repo against the MetaDAX Node.js tools.
+# Runs on every push and pull request. Zero dependencies: no install step.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out this course repo
+        uses: actions/checkout@v4
+
+      - name: Check out daxfoundation/metadax (the tools)
+        uses: actions/checkout@v4
+        with:
+          repository: daxfoundation/metadax
+          path: metadax
+          # token is optional: only needed while metadax is a private repo.
+          # Add a repo secret (e.g. METADAX_TOKEN) with read access and set:
+          #   token: ${{ secrets.METADAX_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate the course
+        run: node metadax/tools/validate.js course .

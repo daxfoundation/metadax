@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O02/why-earth-is-nearly-inertial",
+  "parent_id": "L01.M02.O02",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Why Earth is nearly inertial",
+  "question": "",
+  "canonical_question": "Why can Earth’s surface be treated as an approximately inertial frame despite its rotation?",
+  "intent": "deepen",
+  "summary": [
+    "Earth rotates and orbits, so strictly its surface is a non-inertial frame.",
+    "Over large scales or long times the rotation shows up, for instance in the swing of a Foucault pendulum or the curving of winds."
+  ],
+  "concepts": [
+    "inertial-frame"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Small accelerations",
+        "body_md": "Earth rotates and orbits, so strictly its surface is a non-inertial frame. But the accelerations these motions produce are tiny compared with everyday forces, so their effects usually go unnoticed. For most experiments the ground behaves as if inertial."
+      },
+      {
+        "id": "s2",
+        "heading": "When the approximation breaks",
+        "body_md": "Over large scales or long times the rotation shows up, for instance in the swing of a Foucault pendulum or the curving of winds. There the small effects accumulate and the frame’s non-inertial nature becomes visible. Scale decides whether the approximation holds."
+      }
+    ],
+    "key_points": [
+      "Earth is strictly non-inertial but nearly inertial.",
+      "Its accelerations are small day to day.",
+      "Large scales reveal the rotation."
+    ],
+    "bridge_to_parent": "It explains an approximation, not the definition test.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How do I decide if a frame is inertial at all?",
+    "What is a Foucault pendulum?"
+  ],
+  "path": [
+    {
+      "id": "L01.M02.O02",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "1b0c3d931ded04fca12625f9997a1e0637f0ff867b7342f7c536efe3d1786d82"
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O02",
+  "parent_id": null,
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "Distinguish speed, velocity and acceleration",
+  "question": "",
+  "canonical_question": "What is the difference between speed, velocity and acceleration, and how does each describe a body's motion?",
+  "intent": null,
+  "summary": [
+    "Speed is how fast you go; velocity is speed together with direction.",
+    "Acceleration is the rate at which velocity changes, so it can appear even at constant speed."
+  ],
+  "concepts": [
+    "kinematic-quantities"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Why these three words are not interchangeable",
+        "body_md": "In everyday talk 'speed', 'velocity' and 'acceleration' blur together, but Newton's laws are about how motion changes, and that requires keeping them apart. The laws connect force to acceleration, not to speed. So before you can use them you need to be able to say precisely how fast something goes, which way it goes, and how those are changing. This section sets up the language the second law will later make quantitative."
+      },
+      {
+        "id": "s2",
+        "heading": "Speed and velocity",
+        "body_md": "Speed is a single number: how much distance is covered per unit time, for example 30 metres per second. It has no direction. Velocity carries the same number but adds the direction: 30 metres per second due north. Because velocity has a direction it is a vector, and two objects with the same speed can have different velocities if they head different ways. This matters because a change in direction is a change in velocity, even when the speed on the dial never moves.",
+        "check": {
+          "question": "A car drives around a roundabout at a steady 20 mph. Is its speed changing? Is its velocity changing?",
+          "answer": "Speed is constant, but velocity changes continuously because its direction keeps changing."
+        }
+      },
+      {
+        "id": "s3",
+        "heading": "Acceleration as the rate of change of velocity",
+        "body_md": "Acceleration is how quickly velocity changes, in size or in direction, per unit time. Speeding up, slowing down and turning are all accelerations, because each changes the velocity vector. A car that goes from 0 to 10 metres per second in 5 seconds has an acceleration of 2 metres per second, each second. Slowing down is just acceleration pointing opposite to the motion. Turning at constant speed is acceleration pointing toward the centre of the turn."
+      },
+      {
+        "id": "s4",
+        "heading": "A concrete case: the same speed, different acceleration",
+        "body_md": "Picture two cars each holding 25 metres per second. One drives straight down a motorway; the other is rounding a bend. The straight car has zero acceleration: its velocity is unchanging. The turning car is accelerating the whole time, even though its speedometer is rock steady, because the direction of its velocity is swinging round. If you were a passenger you would feel the difference: the turn presses you against the door, the straight run presses you nowhere."
+      },
+      {
+        "id": "s5",
+        "heading": "A common mistake",
+        "body_md": "A common mistake is to assume that if velocity is zero, acceleration must be zero too. Think of a ball thrown straight up. At the very top of its flight its velocity is momentarily zero, yet gravity is still pulling it, so its acceleration is not zero at all; that is exactly why it does not hover but starts to fall. Zero velocity is a snapshot; acceleration is about what happens next."
+      },
+      {
+        "id": "s6",
+        "heading": "Putting it together",
+        "body_md": "Speed answers 'how fast', velocity answers 'how fast and which way', and acceleration answers 'how is the velocity changing'. Because Newton's laws link force to acceleration, this last quantity is the one that will matter most. Whenever motion speeds up, slows down or turns, there is an acceleration, and therefore, as you will see, a net force behind it."
+      }
+    ],
+    "key_points": [
+      "Speed is a magnitude only; velocity is speed plus direction and is a vector.",
+      "Acceleration is the rate of change of velocity in size or direction.",
+      "An object can accelerate at constant speed if it is changing direction.",
+      "Zero velocity does not mean zero acceleration.",
+      "Newton's laws connect force to acceleration, not to speed."
+    ],
+    "bridge_to_parent": "These distinctions complete the vocabulary of motion this module needs before Newton's laws are stated.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How do you add or subtract velocities that point in different directions?",
+    "Why does turning at constant speed still count as acceleration?",
+    "How will acceleration connect to force in Newton's second law?"
+  ],
+  "path": [],
+  "created_by": "author-sbx01",
+  "visibility": "shared",
+  "created_at": "2026-09-27T20:12:01Z",
+  "updated_at": "2026-09-27T20:12:01Z",
+  "content_sha256": "be86286f7ba95417eb1d91a278c8923a6dc91eb9b81350700bf3dbee6f123605",
+  "superseded_by": null
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L01.M01.O02",
+  "content_hash": "6510b99f3362ae52420ad011110022cc502db1eb3e5d6498f97e1a415defe342",
+  "created_by": {
+    "id": "author-fixture",
+    "key_id": null,
+    "chain_role": "author"
+  },
+  "lineage": [],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-27T19:03:28Z"
+}

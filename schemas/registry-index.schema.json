@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/registry-index.schema.json",
+  "title": "metadax.registry-index/0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "course_id", "updated_at", "modules"],
+  "properties": {
+    "schema": { "const": "metadax.registry-index/0.2" },
+    "course_id": { "type": "string", "maxLength": 200, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "updated_at": { "$ref": "#/$defs/rfc3339" },
+    "modules": { "type": "array", "items": { "$ref": "#/$defs/module" } }
+  },
+  "$defs": {
+    "rfc3339": {
+      "anyOf": [
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$" },
+        { "const": "runtime" }
+      ]
+    },
+    "module": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "file", "node_count", "updated_at"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^L\\d\\d\\.M\\d\\d$" },
+        "file": { "type": "string" },
+        "node_count": { "type": "integer", "minimum": 0 },
+        "updated_at": { "$ref": "#/$defs/rfc3339" }
+      }
+    }
+  }
+}

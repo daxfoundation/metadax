@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
+  "content_hash": "e4c3768813102ae3b6040989b907621cfd317289d8e67fca47cf4dc4126a8fc2",
+  "created_by": {
+    "id": "lrn-fixture01",
+    "key_id": null,
+    "chain_role": "learner"
+  },
+  "lineage": [
+    {
+      "node_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-27T19:03:28Z"
+}

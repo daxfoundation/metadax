@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/packet.schema.json",
+  "title": "metadax.packet/0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "repo", "message", "files"],
+  "properties": {
+    "schema": { "const": "metadax.packet/0.2" },
+    "repo": { "enum": ["course", "learner"] },
+    "message": { "type": "string" },
+    "files": { "type": "array", "items": { "$ref": "#/$defs/fileEntry" } }
+  },
+  "$defs": {
+    "fileEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "op", "content"],
+      "properties": {
+        "path": { "type": "string" },
+        "op": { "enum": ["create", "update", "append"] },
+        "content": { "type": "object" }
+      }
+    }
+  }
+}

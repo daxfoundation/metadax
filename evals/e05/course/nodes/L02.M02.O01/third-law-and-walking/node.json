@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L02.M02.O01/third-law-and-walking",
+  "parent_id": "L02.M02.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "The third law and walking",
+  "question": "",
+  "canonical_question": "How does Newton’s third law explain how we walk forward?",
+  "intent": "example",
+  "summary": [
+    "When you walk, your foot pushes backward against the ground.",
+    "The ground can only push forward if friction lets your foot grip it, which is why ice makes walking hard."
+  ],
+  "concepts": [
+    "newtons-third-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Push the ground backward",
+        "body_md": "When you walk, your foot pushes backward against the ground. By the third law the ground pushes forward on your foot with an equal force. That forward push from the ground is what drives you ahead."
+      },
+      {
+        "id": "s2",
+        "heading": "Why grip matters",
+        "body_md": "The ground can only push forward if friction lets your foot grip it, which is why ice makes walking hard. With little friction the paired push is weak and you slip. Traction is really the third law made useful."
+      }
+    ],
+    "key_points": [
+      "Foot pushes ground back; ground pushes you forward.",
+      "The ground’s push moves you.",
+      "Friction enables the paired forces."
+    ],
+    "bridge_to_parent": "It gives a second everyday third-law example.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "Why is walking on ice hard?",
+    "How is running different?"
+  ],
+  "path": [
+    {
+      "id": "L02.M02.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "dfa2db1f159acafe815f78803db4b8143bac442cebcdaf119afae0626af3426a"
+}

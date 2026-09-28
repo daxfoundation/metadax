@@ -1,0 +1,79 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O02",
+  "parent_id": null,
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "Identify inertial reference frames",
+  "question": "",
+  "canonical_question": "What is an inertial reference frame, and how can you tell whether Newton's first law holds in a given frame?",
+  "intent": null,
+  "summary": [
+    "An inertial frame is one in which a body with no net force keeps constant velocity.",
+    "Accelerating or rotating frames are non-inertial; in them objects seem to move with no real force."
+  ],
+  "concepts": [
+    "inertial-frame"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Why the first law needs a frame",
+        "body_md": "Newton's first law says a body with no net force keeps constant velocity, but 'velocity' is measured relative to some point of view, a reference frame. The law does not hold in every frame. A frame in which it does hold, where a force-free body really does move at constant velocity, is called an inertial frame. Recognising which frames are inertial is what stops you inventing forces that are not there."
+      },
+      {
+        "id": "s2",
+        "heading": "Inertial versus non-inertial frames",
+        "body_md": "An inertial frame is one moving at constant velocity, not speeding up, slowing down or rotating. A frame that is itself accelerating is non-inertial. In a non-inertial frame, objects appear to accelerate with no force acting, or need a made-up 'fictitious' force to explain their motion. The test is simple: release an object with no real force on it; if it drifts at constant velocity, your frame is inertial, and if it seems to accelerate on its own, your frame is not.",
+        "check": {
+          "question": "A ball on the floor of a train slides backward the moment the train speeds up. Is the train's frame inertial?",
+          "answer": "No. The ball had no real horizontal force, yet it accelerated, so the accelerating train is a non-inertial frame."
+        }
+      },
+      {
+        "id": "s3",
+        "heading": "A concrete case: the braking bus",
+        "body_md": "Standing in a bus that brakes hard, you feel thrown forward. Inside the bus's frame it looks as if a force shoved you toward the front. But no real force pushed you; the bus decelerated while your body, obeying the first law, kept its forward velocity. Seen from the road, an inertial frame, nothing mysterious happens: you simply continued while the bus slowed. The 'forward force' is an artefact of using the accelerating bus as your frame."
+      },
+      {
+        "id": "s4",
+        "heading": "A common mistake",
+        "body_md": "A common mistake is to treat the surface of the Earth as a perfectly inertial frame. It is very nearly one for everyday problems, which is why we use it freely. Strictly, though, the Earth spins and orbits, so it accelerates slightly, and effects like the slow swing of a Foucault pendulum reveal it. For this course, treat the ground as inertial, but know that this is a good approximation, not an exact truth."
+      },
+      {
+        "id": "s5",
+        "heading": "Putting it together",
+        "body_md": "An inertial frame is one where Newton's first law holds without fudging: force-free bodies keep constant velocity. Frames that accelerate or rotate are non-inertial and tempt you to invent forces. Before applying the laws, pick an inertial frame, usually the ground, and describe the motion from there. Choosing the frame well is half of setting a problem up correctly."
+      }
+    ],
+    "key_points": [
+      "An inertial frame is one where a force-free body moves at constant velocity.",
+      "Accelerating or rotating frames are non-inertial.",
+      "In non-inertial frames objects appear to move without any real force.",
+      "The Earth's surface is only approximately inertial.",
+      "Choose an inertial frame before applying Newton's laws."
+    ],
+    "bridge_to_parent": "This completes the first-law module by fixing the frames in which the law can be trusted.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "What exactly is a fictitious force, and why do we sometimes use one?",
+    "How large is the error in treating the Earth as inertial?",
+    "Does the second law also require an inertial frame?"
+  ],
+  "path": [],
+  "created_by": "author-sbx01",
+  "visibility": "shared",
+  "created_at": "2026-09-27T20:12:02Z",
+  "updated_at": "2026-09-27T20:12:02Z",
+  "content_sha256": "5cb64781bfbaef41143543073b47405f3c2ebbb29027581dbd86d02ec3af537e",
+  "superseded_by": null
+}

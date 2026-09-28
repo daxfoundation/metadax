@@ -1,0 +1,69 @@
+{
+  "schema": "metadax.progress/0.2",
+  "learner_id": "lrn-fixture01",
+  "course_id": "cell-biology-obsidian",
+  "device_id": "dev-fixt01",
+  "snapshot_date": "2026-09-27",
+  "updated_at": "2026-09-27T19:03:28Z",
+  "concepts": {
+    "atp-synthesis": {
+      "competency": 58,
+      "levels": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help",
+        "Apply": "passed_first_try",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "misconceptions_seen": [
+        "ATP is stored in large amounts for later"
+      ],
+      "last_seen": "2026-09-27T09:05:00Z"
+    },
+    "electron-transport-chain": {
+      "competency": 38,
+      "levels": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "not_started",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "misconceptions_seen": [],
+      "last_seen": "2026-09-27T09:05:00Z"
+    },
+    "cellular-respiration": {
+      "competency": 100,
+      "levels": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "not_started",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "misconceptions_seen": [],
+      "last_seen": "2026-09-27T09:05:00Z"
+    }
+  },
+  "objectives": {
+    "L01.M01.O01": "in_progress"
+  },
+  "followups_asked": [
+    "L01.M01.O01/proteins-essential-atp-synthesis",
+    "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
+    "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
+    "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv/plant-mitochondria-different"
+  ],
+  "next_steps": [
+    {
+      "type": "continue",
+      "id": "atp-synthesis",
+      "level": "Analyze",
+      "node_id": "L01.M01.O01",
+      "why": "Apply passed; Analyze (the bloom_target) not started."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "metadax.learner/0.2",
+  "learner_id": "lrn-fixture01",
+  "display_name": "Fixture Learner",
+  "age_band": "adult",
+  "reading_level": "adult",
+  "languages": [
+    "en"
+  ],
+  "goals": [
+    "Understand how the mitochondrion makes energy",
+    "Follow a topic wherever curiosity leads"
+  ],
+  "interests": [
+    "gardening"
+  ],
+  "prior_knowledge": {
+    "cellular-respiration": "some",
+    "atp-synthesis": "none"
+  },
+  "supports": [
+    "visual_structure"
+  ],
+  "avoid": [
+    "mnemonic-only explanations"
+  ],
+  "session": {
+    "minutes": 20,
+    "output_mode": "markdown"
+  },
+  "tone": "warm, plainspoken",
+  "consent": {
+    "share_my_questions": true,
+    "guardian_managed": false,
+    "share_progress_with_mentor": false
+  },
+  "created_at": "2026-09-27T19:03:28Z",
+  "updated_at": "2026-09-27T19:03:28Z"
+}

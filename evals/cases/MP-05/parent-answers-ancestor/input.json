@@ -1,0 +1,42 @@
+{
+  "op": "MP-05",
+  "case": "parent-answers-ancestor",
+  "description": "A question an ancestor (not the parent) in PATH already answers; expected ancestor loop-back.",
+  "mode": "ask",
+  "assemble_argv": [
+    "--op",
+    "MP-05",
+    "--prompts",
+    "prompts",
+    "--course",
+    "fixtures/courses/cell-biology-obsidian",
+    "--learner",
+    "fixtures/learners/lrn-fixture01",
+    "--learner-id",
+    "lrn-fixture01",
+    "--node",
+    "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
+    "--mode",
+    "ask",
+    "--config",
+    "client=claude-code",
+    "--config",
+    "write_mode=git",
+    "--input",
+    "Remind me which proteins are actually essential for making ATP in the mitochondrion?"
+  ],
+  "stack_bytes": 30042,
+  "blocks": [
+    "CONFIG",
+    "COURSE",
+    "LESSON",
+    "MODULE",
+    "OBJECTIVE",
+    "CONCEPTS",
+    "LEARNER",
+    "PATH",
+    "ANCHOR",
+    "REGISTRY",
+    "INPUT"
+  ]
+}

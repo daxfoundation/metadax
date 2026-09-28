@@ -1,0 +1,27 @@
+{
+  "schema": "metadax.course/0.2",
+  "id": "my-course",
+  "title": "My Course",
+  "summary": "One or two sentences a learner would read on the catalog card.",
+  "language": "en",
+  "audience": { "intended_bands": ["adult"], "notes": "Describe the intended audience." },
+  "steer": {
+    "focus": "What every generation in this course must serve.",
+    "include": [],
+    "exclude": [],
+    "tone": "warm, precise, never condescending",
+    "depth": "introductory",
+    "source_policy": "open",
+    "scope_policy": "tangents_allowed",
+    "max_depth": 8
+  },
+  "concepts": [],
+  "lessons": [],
+  "sources": [],
+  "policy": { "learner_nodes": "pending_review", "minor_nodes": "pending_review" },
+  "license": "CC-BY-4.0",
+  "generated_segments_license": "CC0-1.0",
+  "constraint_decl": null,
+  "created_at": "runtime",
+  "updated_at": "runtime"
+}

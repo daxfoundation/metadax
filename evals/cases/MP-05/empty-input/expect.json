@@ -1,0 +1,11 @@
+{
+  "schema": "followup-output.schema.json",
+  "type": [
+    "followup",
+    "error"
+  ],
+  "allowed_warnings": [
+    "missing_input",
+    "low_confidence"
+  ]
+}

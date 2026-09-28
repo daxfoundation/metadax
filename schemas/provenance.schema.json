@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/provenance.schema.json",
+  "title": "metadax.provenance/0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "node_id", "content_hash", "created_by", "lineage", "constraints", "spec_version", "ts"],
+  "properties": {
+    "schema": { "const": "metadax.provenance/0.2" },
+    "node_id": { "$ref": "#/$defs/nodeId" },
+    "content_hash": { "$ref": "#/$defs/hash" },
+    "created_by": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "key_id", "chain_role"],
+      "properties": {
+        "id": { "type": "string", "maxLength": 200, "pattern": "^[A-Za-z0-9._-]+$" },
+        "key_id": { "type": "null" },
+        "chain_role": { "enum": ["author", "learner", "curator", "client"] }
+      }
+    },
+    "lineage": { "type": "array", "items": { "$ref": "#/$defs/lineageEntry" } },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["constraint_decl_ref"],
+      "properties": {
+        "constraint_decl_ref": { "type": "null" }
+      }
+    },
+    "spec_version": { "const": "0.2" },
+    "ts": { "$ref": "#/$defs/rfc3339" }
+  },
+  "$defs": {
+    "rfc3339": {
+      "anyOf": [
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$" },
+        { "const": "runtime" }
+      ]
+    },
+    "hash": {
+      "anyOf": [
+        { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        { "const": "runtime" }
+      ]
+    },
+    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*$" },
+    "lineageEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "relation"],
+      "properties": {
+        "node_id": { "$ref": "#/$defs/nodeId" },
+        "relation": { "enum": ["parent", "reuse", "extend", "redirect"] }
+      }
+    }
+  }
+}

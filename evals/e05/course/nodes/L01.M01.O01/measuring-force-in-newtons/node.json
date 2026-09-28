@@ -1,0 +1,67 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O01/measuring-force-in-newtons",
+  "parent_id": "L01.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Measuring a force in newtons",
+  "question": "",
+  "canonical_question": "How do you measure the size of a force in newtons using a spring scale?",
+  "intent": "apply",
+  "summary": [
+    "A spring stretches in proportion to the pull on it, so its extension can be read as a force.",
+    "Let the reading settle so the spring is in equilibrium, then the scale force balances the applied force."
+  ],
+  "concepts": [
+    "net-force"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "A spring as a ruler for force",
+        "body_md": "A spring stretches in proportion to the pull on it, so its extension can be read as a force. A spring scale is calibrated so that a known weight gives a known reading in newtons. Hang or pull an object and read the marked value."
+      },
+      {
+        "id": "s2",
+        "heading": "Getting a good reading",
+        "body_md": "Let the reading settle so the spring is in equilibrium, then the scale force balances the applied force. Keep the pull along the spring’s axis, or the reading understates the force. The result is the magnitude of that one force, in newtons."
+      }
+    ],
+    "key_points": [
+      "A spring scale reads force from extension.",
+      "Calibration ties extension to newtons.",
+      "Read it at equilibrium, along the axis."
+    ],
+    "bridge_to_parent": "It is a measurement how-to, distinct from adding forces.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How would I combine two such forces?",
+    "What is one newton?"
+  ],
+  "path": [
+    {
+      "id": "L01.M01.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "7b5b0cce05e094ca22c9b8449a02b1645a15714b182136da7603f6de3cf3880c"
+}

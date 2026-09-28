@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/tutor-turn.schema.json",
+  "title": "metadax.tutor-turn/0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "type", "state", "next_action"],
+  "properties": {
+    "schema": { "const": "metadax.tutor-turn/0.2" },
+    "type": { "enum": ["intro", "question", "feedback", "handoff", "summary", "error"] },
+    "display": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["message"],
+      "properties": {
+        "message": { "type": "string" },
+        "instructions": { "type": "string" },
+        "example": { "type": "string" },
+        "question": { "type": "string" },
+        "options": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "concept": { "$ref": "#/$defs/conceptId" },
+        "bloom_level": { "$ref": "#/$defs/bloom" },
+        "question_type": { "$ref": "#/$defs/questionType" },
+        "attempt": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "feedback": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "result": { "anyOf": [ { "enum": ["correct", "partial", "incorrect"] }, { "type": "null" } ] },
+        "hint": { "type": "string" },
+        "correct_answer": { "type": "string" },
+        "explanation": { "type": "string" },
+        "misconception": { "type": "string" }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "to": { "type": "string" },
+        "node_id": { "$ref": "#/$defs/nodeId" },
+        "section_id": { "$ref": "#/$defs/sectionId" },
+        "anchor_quote": { "type": "string", "maxLength": 200 },
+        "learner_question": { "type": "string" }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "concepts": { "type": "array", "items": { "$ref": "#/$defs/summaryConcept" } },
+        "strengths": { "type": "array", "items": { "type": "string" } },
+        "areas_for_improvement": { "type": "array", "items": { "type": "string" } },
+        "misconceptions": { "type": "array", "items": { "type": "string" } },
+        "recommendations": { "type": "array", "items": { "type": "string" } },
+        "encouragement": { "type": "string" }
+      }
+    },
+    "state": { "$ref": "#/$defs/state" },
+    "next_action": { "enum": ["awaiting_answer", "awaiting_command", "done"] },
+    "warnings": { "type": "array", "items": { "$ref": "#/$defs/warning" } },
+    "missing": { "type": "array", "items": { "type": "string" } },
+    "message": { "type": "string" }
+  },
+  "$defs": {
+    "conceptId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*$" },
+    "sectionId": { "type": "string", "pattern": "^s\\d+$" },
+    "bloom": { "enum": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"] },
+    "levelStatus": { "enum": ["not_started", "passed_first_try", "passed_after_help", "failed", "skipped"] },
+    "questionType": { "enum": ["True/False", "Multiple Choice", "Matching", "Fill-in-the-Blanks", "Binary Choice", "Short Answer (explain in own words)", "Categorization", "Cloze", "Numeric/Calculation", "Short Answer (practical use)", "Completion", "Short Problem-Solving", "Ordering/Sequencing", "Assertion-Reason", "Ranking", "Short Answer (analytical)", "Short Answer (critical judgement)", "Short Essay (1 paragraph)", "Ranking with justification", "Essay or Design", "Open-Ended Completion"] },
+    "warning": { "enum": ["steer_conflict", "audience_conflict", "out_of_scope", "depth_limit", "low_confidence", "source_gap", "wellbeing_flag", "missing_input", "orphans_followups", "budget_unmet", "unstamped"] },
+    "summaryConcept": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/conceptId" },
+        "name": { "type": "string" },
+        "competency": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "levels": { "type": "object", "additionalProperties": { "$ref": "#/$defs/levelStatus" } }
+      }
+    },
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["concept_order", "concept", "level", "attempt", "help_used", "hints_given", "phase", "levels", "competency"],
+      "properties": {
+        "concept_order": { "type": "array", "items": { "$ref": "#/$defs/conceptId" } },
+        "concept": { "$ref": "#/$defs/conceptId" },
+        "level": { "$ref": "#/$defs/bloom" },
+        "attempt": { "type": "integer", "minimum": 1 },
+        "help_used": { "type": "boolean" },
+        "hints_given": { "enum": [0, 1, 2] },
+        "phase": { "enum": ["main", "remedial"] },
+        "levels": {
+          "type": "object",
+          "additionalProperties": { "type": "object", "additionalProperties": { "$ref": "#/$defs/levelStatus" } }
+        },
+        "competency": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 100 }
+        }
+      }
+    }
+  }
+}

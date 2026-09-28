@@ -1,0 +1,79 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L02.M02.O01",
+  "parent_id": null,
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "Apply Newton's third law to action-reaction pairs",
+  "question": "",
+  "canonical_question": "How do you use Newton's third law to identify the equal and opposite force pairs in an interaction?",
+  "intent": null,
+  "summary": [
+    "Newton's third law: if A pushes B, then B pushes A with an equal and opposite force.",
+    "The two forces act on different bodies, so they never cancel each other."
+  ],
+  "concepts": [
+    "newtons-third-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Apply",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Forces come in pairs",
+        "body_md": "The first two laws treat the forces on one body. The third law is about interactions between two bodies: it says a single body can never push without being pushed back. Whenever object A exerts a force on object B, object B exerts a force on A that is equal in size and opposite in direction. Applying the law well is mostly about naming the two bodies and the two forces correctly."
+      },
+      {
+        "id": "s2",
+        "heading": "How to name a pair",
+        "body_md": "To apply the third law, write each force as 'A on B'. Its partner is then 'B on A': same size, opposite direction, same type of force. The two members of a pair always act on different bodies, never on the same one. So a genuine pair can be spotted by a simple test: if two forces act on the very same object, they are not a third-law pair, whatever their sizes.",
+        "check": {
+          "question": "A hammer hits a nail with force 'hammer on nail'. What is the paired force?",
+          "answer": "'Nail on hammer', equal in size and opposite in direction, acting on the hammer."
+        }
+      },
+      {
+        "id": "s3",
+        "heading": "Worked cases: walking, rockets, recoil",
+        "body_md": "Walking: your foot pushes back on the ground (foot on ground), and the ground pushes you forward (ground on foot); that forward push is what moves you. A rocket: the engine pushes gas downward (rocket on gas), and the gas pushes the rocket upward (gas on rocket); no air is needed, which is why rockets work in space. Recoil: a gun pushes the bullet forward, and the bullet pushes the gun backward, felt as the kick. In each case the pair acts on two different bodies."
+      },
+      {
+        "id": "s4",
+        "heading": "A common mistake",
+        "body_md": "A common mistake is to think action and reaction cancel, so nothing could ever move. They do not cancel because they act on different bodies: the ground's push acts on you, your push acts on the ground. Only forces on the same body can cancel. A related trap is pairing a book's weight with the table's upward push on it. Those act on the same book and merely balance; the true partner of 'Earth pulls book down' is 'book pulls Earth up'."
+      },
+      {
+        "id": "s5",
+        "heading": "Putting it together",
+        "body_md": "To apply the third law: name the interaction as 'A on B', state the partner 'B on A' as equal and opposite, and remember the two act on different bodies. This explains motion that otherwise looks impossible, from walking to spaceflight, and it guards you against the cancelling error. With all three laws in hand you can now trace the forces in a simple interaction from cause to motion."
+      }
+    ],
+    "key_points": [
+      "Newton's third law: forces always occur in equal and opposite pairs.",
+      "The two forces in a pair act on different bodies.",
+      "Action-reaction pairs never cancel, because they act on different bodies.",
+      "Name a pair as 'A on B' and 'B on A' of the same type.",
+      "Weight and the table's support on one object are not a third-law pair; they merely balance."
+    ],
+    "bridge_to_parent": "This completes the module on the third law by making its pairs identifiable in real interactions.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "If the forces are equal, why does the bullet fly but the gun barely move?",
+    "How does the third law relate to conservation of momentum?",
+    "Why are weight and the normal force not an action-reaction pair?"
+  ],
+  "path": [],
+  "created_by": "author-sbx01",
+  "visibility": "shared",
+  "created_at": "2026-09-27T20:15:10Z",
+  "updated_at": "2026-09-27T20:15:10Z",
+  "content_sha256": "a1223433b80c03435beacf1ebdf351a987fb9489b2bbf721dff7f3b4a41771fb",
+  "superseded_by": null
+}

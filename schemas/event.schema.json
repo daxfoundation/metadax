@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/event.schema.json",
+  "title": "metadax.event/0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "session_id", "seq", "ts", "type", "course_id", "node_id", "concept", "bloom_level", "result", "data"],
+  "properties": {
+    "schema": { "const": "metadax.event/0.2" },
+    "session_id": { "type": "string", "pattern": "^ses-\\d{8}-[a-z0-9]{4}$" },
+    "seq": { "type": "integer", "minimum": 0 },
+    "ts": { "$ref": "#/$defs/rfc3339" },
+    "type": { "enum": ["follow_up", "answer", "hint", "skip", "summary", "handoff", "return", "note", "view", "practice"] },
+    "course_id": { "type": "string", "maxLength": 200, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "node_id": { "anyOf": [ { "$ref": "#/$defs/nodeId" }, { "type": "null" } ] },
+    "concept": { "anyOf": [ { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }, { "type": "null" } ] },
+    "bloom_level": { "anyOf": [ { "enum": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"] }, { "type": "null" } ] },
+    "result": { "anyOf": [ { "enum": ["correct", "partial", "incorrect"] }, { "type": "null" } ] },
+    "data": { "type": "object" }
+  },
+  "$defs": {
+    "rfc3339": {
+      "anyOf": [
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$" },
+        { "const": "runtime" }
+      ]
+    },
+    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*$" }
+  }
+}
