@@ -1,4 +1,4 @@
-# MetaDAX licensing
+# Meta DAX licensing
 
 This document expands decision D2 (`docs/DECISIONS.md`) and mirrors `LICENSES.md` at the repo
 root. If the two ever disagree, `LICENSES.md` is authoritative for the file-path mapping.
@@ -37,7 +37,7 @@ so a stronger licence might attach to nothing. Declaring CC0 is the honest posit
 
 ## The ingest whitelist for grounding sources
 
-When MetaDAX grounds content on outside sources, only these licences may be ingested:
+When Meta DAX grounds content on outside sources, only these licences may be ingested:
 
 - CC0
 - CC BY

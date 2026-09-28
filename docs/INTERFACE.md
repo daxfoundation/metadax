@@ -1,6 +1,6 @@
 # The operation contract (docs/INTERFACE.md)
 
-This is the generic interface every MetaDAX client implements. A client is
+This is the generic interface every Meta DAX client implements. A client is
 anything that assembles a prompt stack, runs it against a model, checks the
 reply and persists the result to git: Claude Code, Claude Desktop, an API
 runner, the companion, or ChatGPT. The prompts (`prompts/MP-00` .. `MP-10`) and

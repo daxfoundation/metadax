@@ -1,4 +1,4 @@
-# MetaDAX v0.2 change spec (frozen for the Phase 1 build, 2026-09-27)
+# Meta DAX v0.2 change spec (frozen for the Phase 1 build, 2026-09-27)
 
 This file is the single contract for the Phase 1 build. It is frozen: nothing edits it. Where the build found a contradiction, v0.1.1 behaviour was kept for that point and the conflict was reported. Everything not listed here is unchanged from Prompt Suite v0.1.1 (the reasoning is summarised in `docs/CONCEPTS.md`).
 

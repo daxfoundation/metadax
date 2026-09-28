@@ -1,4 +1,4 @@
-# MetaDAX decisions
+# Meta DAX decisions
 
 These are the decisions the maintainers took on 2026-09-27. They are the source of truth for
 the Phase 1 build. Each is recorded as decided, followed by its consequence in this
@@ -83,7 +83,7 @@ the Phase 1 prompt suite.
 
 ## D10 -- No hosted service
 
-The maintainers' own model access is used to build and test MetaDAX; it is never offered to
+The maintainers' own model access is used to build and test Meta DAX; it is never offered to
 third parties as a service.
 
 **Consequence in this repo.** Anything the maintainers run must have a plain

@@ -1,4 +1,4 @@
-# MetaDAX v0.2 JSON Schemas
+# Meta DAX v0.2 JSON Schemas
 
 JSON Schema (draft 2020-12) files for every persisted v0.2 object and for the
 main operation-output objects. The prose in `prompts/SCHEMAS.md` (v0.2) is the

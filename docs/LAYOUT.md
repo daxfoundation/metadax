@@ -1,9 +1,9 @@
-# MetaDAX Repository Layout
+# Meta DAX Repository Layout
 
 | Path | What it holds |
 |------|---------------|
-| `prompts/` | MetaDAX Prompt Suite v0.2 -- MP-00 kernel and MP-01 to MP-10, `SCHEMAS.md` (the normative data model), `00-README.md`, the changelogs |
-| `schemas/` | JSON Schema 2020-12 for every MetaDAX record, plus a zero-dependency fixture check |
+| `prompts/` | Meta DAX Prompt Suite v0.2 -- MP-00 kernel and MP-01 to MP-10, `SCHEMAS.md` (the normative data model), `00-README.md`, the changelogs |
+| `schemas/` | JSON Schema 2020-12 for every Meta DAX record, plus a zero-dependency fixture check |
 | `tools/` | Node.js tools, zero dependencies: canonical hashing, stamping, id and slug rules, context-stack assembly, packet application, validation, tests |
 | `templates/course-repo/` | Starter layout for a new course repo |
 | `templates/learner-repo/` | Starter layout for a new learner repo |

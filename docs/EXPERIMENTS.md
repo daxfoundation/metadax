@@ -1,6 +1,6 @@
-# MetaDAX experiments
+# Meta DAX experiments
 
-MetaDAX is a set of experiments before it is a product. Each experiment asks one
+Meta DAX is a set of experiments before it is a product. Each experiment asks one
 question, measures one thing, and has a line at which it is killed. None of them produces
 product; they exist to elucidate which features matter and where the zero-code approach
 breaks.

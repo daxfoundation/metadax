@@ -1,4 +1,4 @@
-# Walkthrough: MetaDAX on Claude Code (git-native)
+# Walkthrough: Meta DAX on Claude Code (git-native)
 
 A step-by-step for a person, teacher then learner, on the Claude Code client.
 Every command is exact. Where a `tools/` command is shown, it is the tool this
@@ -50,7 +50,7 @@ cd /path/to/your-course-repo && git init && git add . && \
 ```
 
 If the repo already exists (you created it with a README, or you are adding
-MetaDAX to a repo you already have), do not `git init`; copy the template in and
+Meta DAX to a repo you already have), do not `git init`; copy the template in and
 commit on the existing history:
 
 ```

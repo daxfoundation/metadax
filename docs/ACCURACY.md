@@ -1,6 +1,6 @@
-# MetaDAX accuracy commitments
+# Meta DAX accuracy commitments
 
-MetaDAX is a set of experiments, and this repository is public. These are the commitments
+Meta DAX is a set of experiments, and this repository is public. These are the commitments
 every public document here keeps. They are not style preferences: they are statements the
 project does not make because they would be untrue or unverified. A reviewer checks every
 public document against this list before it ships.
@@ -9,10 +9,10 @@ public document against this list before it ships.
 
 1. **Reserved fields are described as reserved.** Provenance carries fields reserved for a
    future constraint and signing layer (`key_id`, `constraint_decl_ref`, `constraint_decl`).
-   They are null placeholders. Nothing in MetaDAX verifies them yet, and no document says
+   They are null placeholders. Nothing in Meta DAX verifies them yet, and no document says
    otherwise.
 
-2. **No affiliation is implied.** MetaDAX is an independent project. It is not affiliated
+2. **No affiliation is implied.** Meta DAX is an independent project. It is not affiliated
    with or endorsed by Anthropic, OpenAI, GitHub or Oak National Academy; their names
    describe clients, platforms or sources the project uses or plans to use.
 

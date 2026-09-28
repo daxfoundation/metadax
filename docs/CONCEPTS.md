@@ -1,11 +1,11 @@
-# MetaDAX concepts
+# Meta DAX concepts
 
-This is the document to read first if you have never seen MetaDAX. It explains what
+This is the document to read first if you have never seen Meta DAX. It explains what
 the project is exploring and why, one idea at a time. Nothing here is a product
-announcement: MetaDAX is a set of experiments (see `docs/EXPERIMENTS.md`), and where a
+announcement: Meta DAX is a set of experiments (see `docs/EXPERIMENTS.md`), and where a
 claim has not been demonstrated yet, this document says so.
 
-MetaDAX is an open, prompt-defined learning system. A teacher turns any subject into a
+Meta DAX is an open, prompt-defined learning system. A teacher turns any subject into a
 course; a learner reads it, asks follow-up questions as deep as they want, is quizzed,
 and keeps a record of their progress. The unusual part is what is *not* there: no
 server, no database, no application to install. The reasoning behind that choice comes
@@ -20,7 +20,7 @@ still have to answer.
 
 ## 1. Meta prompts are the product -- the runtime is rented
 
-**The idea.** MetaDAX has no software of its own that a user runs. The intelligence
+**The idea.** Meta DAX has no software of its own that a user runs. The intelligence
 lives in a suite of meta prompt files (`prompts/MP-00` through `MP-10`), and everything
 those prompts cannot do -- hold state, write files, run on a schedule -- is rented from
 tools the user already has: a chat client, `git`, and GitHub.
@@ -29,7 +29,7 @@ tools the user already has: a chat client, `git`, and GitHub.
 subscription and their own repositories, with no account, no hosting bill, and no vendor
 lock-in. The design rests on one finding from the project's early exploration: every job a
 custom runtime would do has a rentable equivalent. Phase 1 needs prompt files, JSON schemas,
-two YAML workflows and the vendors' products -- not a MetaDAX server.
+two YAML workflows and the vendors' products -- not a Meta DAX server.
 
 **Where it lives.** `prompts/` holds the suite. `docs/SPEC-v0.2.md` freezes the contract
 the prompts obey. The three small Python tools in `tools/` (canonicalise, stamp,
@@ -60,7 +60,7 @@ ancestors' `{id, title, canonical_question, summary}` on itself (the `path` fiel
 `docs/SPEC-v0.2.md` S-4), so reaching depth k costs one read, not k reads.
 
 Node ids encode ancestry. Here is the real depth-5 chain from the EdDAX "Cell Biology
-Obsidian" course, converted to MetaDAX ids (see MP-05, "The PATH is the memory"):
+Obsidian" course, converted to Meta DAX ids (see MP-05, "The PATH is the memory"):
 
 ```
 L01.M01.O01
@@ -113,7 +113,7 @@ confidence bands. The registry the engine consults is `registry/<module-id>.json
 
 **What EdDAX did instead.** Reuse existed only "by browsing": the follow-up dialog listed
 every learner's children of the current node, and nothing matched by meaning (system
-report, finding 2). MetaDAX keeps that browse-level parity and adds the meaning-level
+report, finding 2). Meta DAX keeps that browse-level parity and adds the meaning-level
 decision EdDAX never had.
 
 **Open question.** Precision and recall of the reuse/extend/new decision against planted
@@ -206,7 +206,7 @@ percent schema-valid per operation on a primary model)?
 
 ## 7. The operation contract -- any model, any client, one JSON object out
 
-**The idea.** Every MetaDAX call is one operation: paste the kernel (MP-00) plus one
+**The idea.** Every Meta DAX call is one operation: paste the kernel (MP-00) plus one
 operation prompt plus tagged input blocks, and get back exactly one JSON object that
 matches that operation's schema. The client, not the model, then checks the object and
 stamps the fields the model is forbidden to compute.
@@ -396,7 +396,7 @@ phases a layering exercise instead of a migration. Today `provenance.json` recor
 `content_hash`, `created_by` (a pseudonym, a `chain_role`, and a null `key_id`),
 `lineage`, and a null `constraint_decl_ref` (`docs/SPEC-v0.2.md` S-7). The `key_id` and
 `constraint_decl_ref` fields are **reserved**: they are placeholders for the Constraint
-Protocol and are never described as live. MetaDAX does not run the Constraint Protocol,
+Protocol and are never described as live. Meta DAX does not run the Constraint Protocol,
 and public copy must never say it does (`docs/ACCURACY.md`).
 
 **Where it lives.** `docs/SPEC-v0.2.md` S-7 (the provenance shape); `docs/GLOSSARY.md`

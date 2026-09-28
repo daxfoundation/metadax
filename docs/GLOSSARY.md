@@ -1,11 +1,11 @@
-# MetaDAX glossary
+# Meta DAX glossary
 
-Every term a reader meets in the MetaDAX docs, in alphabetical order. For the ideas behind
+Every term a reader meets in the Meta DAX docs, in alphabetical order. For the ideas behind
 them, see `docs/CONCEPTS.md`; for the data shapes, `prompts/SCHEMAS.md` and
 `docs/SPEC-v0.2.md`.
 
 **Accommodations.** What helps a learner (short chunks, frequent checks, read-aloud-friendly
-text, step-by-step procedures), stored in a profile's `supports`. MetaDAX stores
+text, step-by-step procedures), stored in a profile's `supports`. Meta DAX stores
 accommodations, never diagnoses (design law 6).
 
 **Anchor.** The section of a parent node, plus the short highlighted quote (at most 200
@@ -35,8 +35,8 @@ passed up to the concept's `bloom_target` (weights Remember 10, Understand 15, A
 Analyze 20, Evaluate 15, Create 20).
 
 **Constraint Protocol.** A future protocol under which interactions between entities would be
-recorded and re-judged. In MetaDAX only *reserved fields* exist for it (`key_id`,
-`constraint_decl_ref`, and related); MetaDAX does not run the Constraint Protocol and it is
+recorded and re-judged. In Meta DAX only *reserved fields* exist for it (`key_id`,
+`constraint_decl_ref`, and related); Meta DAX does not run the Constraint Protocol and it is
 never described as live.
 
 **Core.** The shared, audience-neutral answer stored on a node: no learner names or interests.
@@ -50,7 +50,7 @@ registries, sources and provenance. Private by default (D4); holds only `shared`
 a hint, a handoff, and so on), stored one file per event, never edited.
 
 **EdDAX.** The previous system (2024-2025), a Blazor web application with SQL Server and Cosmos
-DB, which the maintainers analysed before building MetaDAX. MetaDAX rebuilds its behaviour
+DB, which the maintainers analysed before building Meta DAX. Meta DAX rebuilds its behaviour
 prompt-first. The EdDAX code is not published.
 
 **Extend.** One of the five follow-up decisions: an existing node covers the topic but not this
@@ -60,7 +60,7 @@ back to it.
 **Follow-up.** A learner's question asked from within a node, handled by the follow-up engine
 (MP-05), which may create a new node or point to an existing one.
 
-**The Foundation (the DAX Foundation).** The steward of the shared MetaDAX system: the prompts,
+**The Foundation (the DAX Foundation).** The steward of the shared Meta DAX system: the prompts,
 schemas, skills and certification.
 
 **Kernel.** MP-00, the shared contract (about 1,200 tokens) pasted before every operation
@@ -79,7 +79,7 @@ metadata.
 **Objective node.** A depth-1 node representing a learning objective, with an id like
 `L03.M02.O01`. The root of any follow-up chain beneath it.
 
-**Operation.** One MetaDAX call: kernel plus one operation prompt plus tagged input blocks,
+**Operation.** One Meta DAX call: kernel plus one operation prompt plus tagged input blocks,
 producing exactly one JSON object. The operations are PROFILE, ARCHITECT, COMPILE, CONTENT,
 FOLLOWUP, TUTOR, EVALUATE, STEWARD, CURATE and RUN.
 

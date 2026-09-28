@@ -1,4 +1,4 @@
-# MetaDAX evals
+# Meta DAX evals
 
 The eval suite executes the v0.2 prompts (`prompts/MP-00` .. `MP-10`) against a
 model and checks the reply the way a client's CHECK step does (docs/INTERFACE.md):

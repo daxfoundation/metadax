@@ -1,4 +1,4 @@
-# MetaDAX
+# Meta DAX
 
 **An open learning system made of prompts, not software.**
 
@@ -9,7 +9,7 @@ no database and no app to install: the system is a suite of meta prompts, a set 
 schemas, a few small tools, and the things you already have -- a chat model, `git`, and
 GitHub.
 
-MetaDAX is a research project of the DAX Foundation. It is a set of experiments before it
+Meta DAX is a research project of the DAX Foundation. It is a set of experiments before it
 is a product, and this README says plainly what has run and what has not.
 
 > Status (2026-09-28): Phase 1 foundation built. Prompt Suite v0.2, the operation
@@ -25,7 +25,7 @@ is a product, and this README says plainly what has run and what has not.
 
 In the previous prototype (EdDAX, 2024-2025) the project's author, reading an introductory
 cell-biology lesson, asked a chain of questions five levels deep. The real chain, with the
-questions in their canonical form and converted to MetaDAX ids:
+questions in their canonical form and converted to Meta DAX ids:
 
 ```
 L01.M01.O01
@@ -44,7 +44,7 @@ EdDAX stored that chain but never showed a node its ancestors, so at depth four 
 answer was a refusal: the model thought "donation to Complex IV" was off-topic for an
 introductory module. Context loss, saved as course content.
 
-MetaDAX makes three changes:
+Meta DAX makes three changes:
 
 1. **The recursion lives in the data.** One follow-up engine handles every depth. What
    grows is the PATH block it receives (the ancestors' ids, titles and summaries), and the
@@ -71,7 +71,7 @@ actually happened.
 | `prompts/` | Prompt Suite v0.2: a kernel (MP-00) and ten operations (profile, architect, compiler, content, follow-up engine, Bloom tutor, evaluator, steward, curator, session runner) plus `SCHEMAS.md`, the normative data model. CC0. |
 | `schemas/` | JSON Schema 2020-12 for every record (course, node, provenance, registries, profile, progress snapshot, event, tutor turn, manifest, commit packet, config). |
 | `tools/` | Eight Node.js tools, zero dependencies: canonical hashing, stamping, id/slug rules, context-stack assembly, packet application, validation, tests. |
-| `skills/` | The first client: two Agent Skills that make Claude Code a git-native MetaDAX client (teacher and learner). Mirrored in `.claude/skills/` and `.agents/skills/`. |
+| `skills/` | The first client: two Agent Skills that make Claude Code a git-native Meta DAX client (teacher and learner). Mirrored in `.claude/skills/` and `.agents/skills/`. |
 | `adapters/` | Headers for clients that cannot write files (Claude Desktop, ChatGPT): they emit a commit packet instead. |
 | `docs/` | `INTERFACE.md` (the operation contract every client implements), `CONCEPTS.md` (sixteen concepts, one at a time), `ARCHITECTURE.md`, `WALKTHROUGH-CLAUDE-CODE.md`, `EXPERIMENTS.md`, `DECISIONS.md`, `GLOSSARY.md`, `PRIVACY.md`, `LICENSING.md`, `ACCURACY.md`, and the frozen `SPEC-v0.2.md`. |
 | `fixtures/` | The reference course (the mitochondria chain) and a fixture learner, fully stamped. |
@@ -269,7 +269,7 @@ with the evidence left as recorded.
 
 EdDAX (2024-2025) was a Blazor web application with SQL Server, Cosmos DB and an Azure
 AI Search index wrapped around about a dozen prompt strings. Before writing a line of
-MetaDAX, the maintainers analysed the old prototype's code and saved data. The findings
+Meta DAX, the maintainers analysed the old prototype's code and saved data. The findings
 shaped every design law above:
 
 - Follow-ups formed an unbounded tree (`qnas.parent_qna_id`, real data five levels deep),
@@ -287,7 +287,7 @@ shaped every design law above:
 
 ## How this was built
 
-MetaDAX was designed by its maintainers and built with Claude (Anthropic), using Claude
+Meta DAX was designed by its maintainers and built with Claude (Anthropic), using Claude
 Code and the Claude desktop app. The prompts, tools, schemas, skills and docs were written
 against a frozen change spec (`docs/SPEC-v0.2.md`), and every change was checked against
 the repository (hashes, tests, validation) before it was accepted. The pattern is itself
@@ -311,7 +311,7 @@ versioned (`prompts/CHANGELOG-v0.2.md`): a change to a prompt is a decision, not
 
 ## Trademarks and affiliation
 
-MetaDAX is an independent project. It is not affiliated with or endorsed by Anthropic,
+Meta DAX is an independent project. It is not affiliated with or endorsed by Anthropic,
 OpenAI, GitHub or Oak National Academy. Claude, Claude Code, ChatGPT and GitHub are
 trademarks of their respective owners and are named only to describe the clients and
-platforms MetaDAX works with.
+platforms Meta DAX works with.

@@ -1,4 +1,4 @@
-# MetaDAX experiments
+# Meta DAX experiments
 
 This folder holds one card per Phase 0 experiment, E01 through E14. The purpose of the
 experiments is described in `docs/EXPERIMENTS.md`.

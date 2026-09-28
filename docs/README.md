@@ -1,12 +1,12 @@
-# MetaDAX docs
+# Meta DAX docs
 
-The public documentation for MetaDAX, an open, prompt-defined learning system. Start with
+The public documentation for Meta DAX, an open, prompt-defined learning system. Start with
 `CONCEPTS.md` if you are new. These docs are CC BY 4.0 (see `LICENSING.md`); nothing here claims
 a result that has not been produced by a recorded run (see `ACCURACY.md`).
 
 ## The documents
 
-- **[CONCEPTS.md](CONCEPTS.md)** -- the heart: the sixteen ideas MetaDAX is exploring and why,
+- **[CONCEPTS.md](CONCEPTS.md)** -- the heart: the sixteen ideas Meta DAX is exploring and why,
   one concept at a time. Read this first.
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** -- the three repositories, the context stack, the
   PREPARE..PUSH pipeline, and what runs where (almost nothing).
@@ -33,4 +33,4 @@ a result that has not been produced by a recorded run (see `ACCURACY.md`).
 ## Related folders
 
 - `../experiments/` -- one card per experiment (E01-E14); see `../experiments/README.md`.
-- `../prompts/` -- the MetaDAX Prompt Suite (MP-00 through MP-10, SCHEMAS.md).
+- `../prompts/` -- the Meta DAX Prompt Suite (MP-00 through MP-10, SCHEMAS.md).

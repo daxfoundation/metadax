@@ -1,4 +1,4 @@
-# MetaDAX learner repo
+# Meta DAX learner repo
 
 A learner repo is **private by default**. It holds one learner's pseudonymous
 profile, their progress snapshots, session records, weekly manifests, and any

@@ -1,7 +1,7 @@
-# MetaDAX privacy
+# Meta DAX privacy
 
-MetaDAX is built so that a learner's data stays with the learner. There is no server, no
-telemetry and no MetaDAX account; the data lives in the user's own repositories. This document
+Meta DAX is built so that a learner's data stays with the learner. There is no server, no
+telemetry and no Meta DAX account; the data lives in the user's own repositories. This document
 describes what is stored, what is never stored, and what to check before publishing.
 
 ## What a learner repo holds
@@ -64,7 +64,7 @@ to private, so the consent text says that public is irreversible.
 
 ## No telemetry, no server
 
-There is no telemetry and no server. MetaDAX does not phone home, count usage, or hold any data
+There is no telemetry and no server. Meta DAX does not phone home, count usage, or hold any data
 outside the user's repositories. The maintainers' own model access is never offered as a service
 (decision D10).
 

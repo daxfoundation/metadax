@@ -1,13 +1,13 @@
-# MetaDAX architecture
+# Meta DAX architecture
 
-This document describes how MetaDAX is put together: the repositories, the stack of context a
+This document describes how Meta DAX is put together: the repositories, the stack of context a
 model receives, the pipeline a client runs, and what actually runs where (almost nothing). It
 assumes you have read `docs/CONCEPTS.md`. The frozen contract is `docs/SPEC-v0.2.md`; the file
 layout of this repository is `docs/LAYOUT.md`.
 
 ## The three repositories
 
-MetaDAX has no central store. State lives in files, in three kinds of git repository.
+Meta DAX has no central store. State lives in files, in three kinds of git repository.
 
 | Repository | Visibility | Holds | Source of truth for |
 |---|---|---|---|
@@ -92,7 +92,7 @@ A client runs the same loop for every operation. The authoritative description o
 
 ## What runs where: nothing runs anywhere
 
-There is no MetaDAX service. A client is a chat model, plus `git`, plus three small Python tools:
+There is no Meta DAX service. A client is a chat model, plus `git`, plus three small Python tools:
 
 - `tools/canon.js` -- canonicalise a JSON object (JSON Canonicalization Scheme, RFC 8785) so a
   content hash is stable across machines.

@@ -1,6 +1,6 @@
-# MetaDAX tools
+# Meta DAX tools
 
-The deterministic half of a MetaDAX client. The model never computes hashes,
+The deterministic half of a Meta DAX client. The model never computes hashes,
 timestamps, byte counts or random ids (SPEC S-2); these tools do. Every value an
 LLM writes that must be stamped is emitted as the literal string `"runtime"` and
 filled in here.
@@ -62,11 +62,11 @@ node tools/stamp.js reuse ./course L01.M01.O01/proteins-essential-atp-synthesis
 ## Canonicalisation (JCS) note
 
 `canon.js` implements the JSON Canonicalization Scheme (RFC 8785) for the
-MetaDAX subset: object keys are sorted by their UTF-16 code units (JavaScript's
+Meta DAX subset: object keys are sorted by their UTF-16 code units (JavaScript's
 default string comparison), there is no insignificant whitespace, strings use
 the RFC 8785 minimal-escape rule, and integers are their base-10 digits. Floats
 follow the ES6 Number-to-string rule (`String(n)`), so an integral value renders
-without a fractional part. MetaDAX records avoid floats: competency is an
+without a fractional part. Meta DAX records avoid floats: competency is an
 integer, and the one float in a schema (`reuse.confidence`) is written only by
 the model and is never hashed. `content_sha256` is the sha256 of the canonical
 serialisation of a node's `core` object; `stamp.js` computes it and `validate.js`

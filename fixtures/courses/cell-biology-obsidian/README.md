@@ -1,6 +1,6 @@
 # Cell Biology (Obsidian fixture)
 
-A small, complete, valid MetaDAX course repo in the v0.2 layout (`docs/SPEC-v0.2.md`). It exists so that later tests, evals and walkthroughs have one real recursion to build on.
+A small, complete, valid Meta DAX course repo in the v0.2 layout (`docs/SPEC-v0.2.md`). It exists so that later tests, evals and walkthroughs have one real recursion to build on.
 
 ## The course
 
@@ -23,7 +23,7 @@ L01.M01.O01                                            Introduction to energy pr
         plant-mitochondria-different                   "are plant ones different??"                 (depth 5)
 ```
 
-Only the questions and titles come from the prototype. The ids were converted to the MetaDAX scheme and every `core` section was written fresh for a curious adult. No learner names or personal data appear.
+Only the questions and titles come from the prototype. The ids were converted to the Meta DAX scheme and every `core` section was written fresh for a curious adult. No learner names or personal data appear.
 
 The depth-5 node `plant-mitochondria-different` is the cross-branch reuse case: it is a new node under its parent, but it carries a `links[]` entry with relation `extend` to `L01.M02.O01` ("Plant and animal cells compared"), and its provenance records the same `extend` edge in its lineage.
 

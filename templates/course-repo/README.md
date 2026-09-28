@@ -1,6 +1,6 @@
-# MetaDAX course repo
+# Meta DAX course repo
 
-A course repo is the public, shareable half of MetaDAX: the curriculum
+A course repo is the public, shareable half of Meta DAX: the curriculum
 (`course.json`), the shared knowledge tree (`nodes/`), and the reuse registry
 (`registry/`). It contains no learner identities and no private questions.
 

@@ -10,7 +10,7 @@ repository alone?
 
 Provenance is what makes each node self-describing and later-phase-ready ("Provenance and
 constraints" in `docs/CONCEPTS.md`). The reserved fields are placeholders for a future
-Constraint Protocol, which MetaDAX does not run. E12 checks the load-bearing property: that
+Constraint Protocol, which Meta DAX does not run. E12 checks the load-bearing property: that
 everything needed to verify a node can be rebuilt from the repo, so nothing has to be trusted
 out of band.
 

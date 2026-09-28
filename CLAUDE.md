@@ -1,9 +1,9 @@
-# MetaDAX
+# Meta DAX
 
-MetaDAX is a set of meta prompts and JSON schemas that let a model, git and a
+Meta DAX is a set of meta prompts and JSON schemas that let a model, git and a
 GitHub account run a whole course: a teacher builds a curriculum, a learner
 reads it, asks recursive follow-ups, quizzes and saves progress. There is no
-server, database or MetaDAX account; the repos are the system.
+server, database or Meta DAX account; the repos are the system.
 
 ## Layout
 

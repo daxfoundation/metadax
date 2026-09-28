@@ -1,10 +1,10 @@
-# MetaDAX Prompt Suite v0.2
+# Meta DAX Prompt Suite v0.2
 
 > Status: v0.2 (2026-09-27): not yet executed by a model end to end; evals pending (evals/).
 
 ## What it is
 
-MetaDAX rebuilds the old EdDAX course app as a suite of meta prompts and JSON
+Meta DAX rebuilds the old EdDAX course app as a suite of meta prompts and JSON
 schemas, with no application server. A model plus these prompts can design a
 course, profile a learner, generate objective content, answer follow-up
 questions recursively, run a Bloom-level quiz, grade answers, track progress and

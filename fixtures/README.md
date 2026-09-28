@@ -1,4 +1,4 @@
-# MetaDAX fixtures
+# Meta DAX fixtures
 
 This folder holds the reference fixtures every later test, eval and walkthrough builds on. Everything here is synthetic and safe to publish. There is no real person's data.
 
@@ -10,7 +10,7 @@ This folder holds the reference fixtures every later test, eval and walkthrough 
 
 ## Provenance of the chain
 
-The chain (objective -> `proteins-essential-atp-synthesis` -> `cytochrome-c-structure-role` -> `electron-donation-complex-iv` -> `plant-mitochondria-different`) is the real depth-5 follow-up chain from the EdDAX prototype course "Cell Biology Obsidian", asked by the project's author (see `prompts/MP-05-followup-engine.md`, "The PATH is the memory"). Only the questions and titles come from the prototype; the ids were converted to the MetaDAX scheme and all prose was rewritten fresh for a curious adult. No learner names or personal data are reproduced.
+The chain (objective -> `proteins-essential-atp-synthesis` -> `cytochrome-c-structure-role` -> `electron-donation-complex-iv` -> `plant-mitochondria-different`) is the real depth-5 follow-up chain from the EdDAX prototype course "Cell Biology Obsidian", asked by the project's author (see `prompts/MP-05-followup-engine.md`, "The PATH is the memory"). Only the questions and titles come from the prototype; the ids were converted to the Meta DAX scheme and all prose was rewritten fresh for a curious adult. No learner names or personal data are reproduced.
 
 ## How evals use it
 
