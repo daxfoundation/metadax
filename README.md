@@ -1,6 +1,6 @@
 # Meta DAX
 
-**An open learning system made of prompts, not software.**
+**Open infrastructure for universal learning. Any subject, any domain, any learner, any bandwidth.**
 
 > **New here?** Start with **[Meta DAX: An Introduction](https://jeyanandan.com/blog/meta-dax/)** -- why this exists and what it is trying to do, in plain language. Further articles will be linked here as they are published.
 
@@ -8,7 +8,43 @@
 
 Anyone who knows a subject can describe a course in one sentence, and Meta DAX writes it: the lessons, the pages, the ideas each page depends on, and the mistakes learners are likely to make, written down before a single page exists. Every page can be shaped to the person reading it -- the same physics told through baking for a baker, or through cycling for a cyclist -- without cloning the course. The learner can ask "why?" as many times as they like, and each answer knows the questions that led to it. They are quizzed in steps that climb from remembering to applying, walked out of wrong ideas without being handed the answer, and they keep their own private record of what they learned.
 
-It compounds. A course a teacher chooses to publish is open for anyone to teach from, fork and improve. A question a learner chooses to share can, once a teacher reviews it, become part of the course for the next learner. The long-term aim is universal learning -- every human being, any subject, free -- designed for someone with about five minutes of connectivity a day. That offline client does not exist yet. This repository is where the experiments towards it are run, in the open, with every result dated and every gap written down.
+It compounds. A course a teacher chooses to publish is open for anyone to teach from, fork and improve. A question a learner chooses to share can, once a teacher reviews it, become part of the course for the next learner. The long-term aim is universal learning -- every human being, any subject, any domain, free -- designed first for someone with about five minutes of connectivity a day, and for every bandwidth above that. That offline client does not exist yet. This repository is where the experiments towards it are run, in the open, with every result dated and every gap written down.
+
+## The benchmark
+
+Every decision in Meta DAX is measured against one internal benchmark:
+
+> **Take a person who can communicate, and get them to the equivalent of a master's degree from an Ivy League university -- on five minutes of connectivity a day.**
+
+It is audacious on purpose. It is not a roadmap, and nobody is claiming it is achievable. It only has to work in theory -- a chance of working that is greater than zero -- and that is the point: holding it throws out every design that quietly assumes bandwidth, money, or a teacher in the room.
+
+**We are developing this for all bandwidths!** Five minutes a day is simply where we have chosen to start.
+
+Any domain means any domain: a child meeting fractions, a nurse training the next nurse, a company teaching ten thousand of its own people. Meta DAX is being designed from the start to be enterprise grade.
+
+## A way, never the way
+
+There is never *the* way. There is always *a* way. With respect to the Mandalorian creed, nothing in this repository will ever say "This is the way."
+
+Knowing an answer is not a reason to hand it over as *the* answer, so the system is built not to lead. If you ever feel it steering you, say so -- to us, or to the system while you are using it.
+
+Picture learning as the tree of life drawn upside down: every branch anyone has ever taken, from the first question outward, all of them related to one another. Every path is worth keeping. So are the dead ends, recorded as carefully as the arrivals, because finding where people fail matters as much as finding how they got from A to B. And so is the negative space: the parts of a subject nobody has explored yet.
+
+## Coming next
+
+Planned, not run. There are no specs for these yet; they are questions we intend to put to the system in the open, alongside the fourteen experiments below.
+
+- **One thread, two worlds.** A tutoring exchange in one language and one culture becomes a set of assets that fits a learner on the other side of the world, in another language and another culture, joined only by something they happen to share -- a hobby, say -- with the likely misconceptions already mapped.
+- **Many teachers, many learners.** Courses that grow from many teachers and many learners at once, and what compounds when they do.
+- **The teacher's walkthrough.** Guidance and templates that adapt to what a particular teacher brings -- their [human delta value](https://daxfoundation.org/#human-delta-value) -- instead of assuming it.
+- **Failure, mapped.** Where learners get lost, recorded as carefully as where they arrive.
+- **Not leading.** Does the system steer learners toward its own answer? Measured, and flagged by learners themselves.
+- **Compounding.** Do knowledge and intelligence, [as the Foundation defines them](https://daxfoundation.org/#definitions), compound across teachers, learners and organisations when every contribution sits on a [Constraint Protocol](https://github.com/daxfoundation/constraint-protocol) record nobody can quietly edit? That is what the protocol is intended to make possible; it has not been shown.
+- **Every bandwidth.** The same course, from five minutes a day to always on.
+- **Inside organisations.** The same infrastructure, private, behind a company's own walls.
+- **The model on the device.** Enough of the teaching packed into each bundle that a small model on a phone only has to hold the conversation.
+
+Nothing here is production. The clients, the limits they run under, and the architecture itself are experiments, and no element of any of them is set in stone.
 
 ## Latest results
 
@@ -36,7 +72,8 @@ schemas, a few small tools, and the things you already have -- a chat model, `gi
 GitHub.
 
 Meta DAX is a research project of the DAX Foundation. It is a set of experiments before it
-is a product, and this README says plainly what has run and what has not.
+is a product, and this README says plainly what has run and what has not. Nothing in it
+is production, and no element of the architecture is set in stone.
 
 > Status (2026-09-28): Phase 1 foundation built. Prompt Suite v0.2, the operation
 > contract, the Claude Code client, the tools, the schemas and the fixture course are in
@@ -182,7 +219,7 @@ what EdDAX did instead, and the open question an experiment must answer.
 
 ## The experiments
 
-Fourteen questions, each with a method, metrics and a kill line (`docs/EXPERIMENTS.md`;
+Fourteen questions, the first of countless more to come, each with a method, metrics and a kill line (`docs/EXPERIMENTS.md`;
 cards in `experiments/`). A result appears in a card's `results/` folder only when an
 actual run produced it.
 
