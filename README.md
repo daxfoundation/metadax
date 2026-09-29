@@ -3,6 +3,8 @@
 **Open infrastructure for universal learning. Any subject, any domain, any learner, any bandwidth.**
 
 > **New here?** Start with **[Meta DAX: An Introduction](https://jeyanandan.com/blog/meta-dax/)** -- why this exists and what it is trying to do, in plain language. Further articles will be linked here as they are published.
+>
+> **What has run, and what runs next:** [Latest results](#latest-results) -- [Coming next](#coming-next) -- [All fourteen experiments](#the-experiments). This repository is where everything about Meta DAX is read; [daxfoundation.org](https://daxfoundation.org/#learning) points here.
 
 ## In plain words
 
@@ -20,9 +22,15 @@ It is audacious on purpose. It is not a roadmap, and nobody is claiming it is ac
 
 **We are developing this for all bandwidths!** Five minutes a day is simply where we have chosen to start.
 
+Five minutes a day means the learning cannot live on the network, so it does not. A bundle is generated, customised to the particular learner and to what they have already done, and it comes down whole. They work through it interactively, offline, for as long as they like. What they did goes back up on their next five minutes, and the next bundle comes down shaped by it.
+
+It will be open source and it will be free. Not freemium, not free-for-some, not free-until-funded.
+
 Any domain means any domain: a child meeting fractions, a nurse training the next nurse, a company teaching ten thousand of its own people. Meta DAX is being designed from the start to be enterprise grade.
 
 ## A way, never the way
+
+Education does an enormous amount of good, and at scale it has no choice but to standardise: one pace, one sequence, one way of demonstrating that you have understood. Learning is the thing underneath it, and learning does not standardise -- it happens at the pace of the person doing it. Meta DAX is about the second one.
 
 There is never *the* way. There is always *a* way. With respect to the Mandalorian creed, nothing in this repository will ever say "This is the way."
 
@@ -30,21 +38,7 @@ Knowing an answer is not a reason to hand it over as *the* answer, so the system
 
 Picture learning as the tree of life drawn upside down: every branch anyone has ever taken, from the first question outward, all of them related to one another. Every path is worth keeping. So are the dead ends, recorded as carefully as the arrivals, because finding where people fail matters as much as finding how they got from A to B. And so is the negative space: the parts of a subject nobody has explored yet.
 
-## Coming next
-
-Planned, not run. There are no specs for these yet; they are questions we intend to put to the system in the open, alongside the fourteen experiments below.
-
-- **One thread, two worlds.** A tutoring exchange in one language and one culture becomes a set of assets that fits a learner on the other side of the world, in another language and another culture, joined only by something they happen to share -- a hobby, say -- with the likely misconceptions already mapped.
-- **Many teachers, many learners.** Courses that grow from many teachers and many learners at once, and what compounds when they do.
-- **The teacher's walkthrough.** Guidance and templates that adapt to what a particular teacher brings -- their [human delta value](https://daxfoundation.org/#human-delta-value) -- instead of assuming it.
-- **Failure, mapped.** Where learners get lost, recorded as carefully as where they arrive.
-- **Not leading.** Does the system steer learners toward its own answer? Measured, and flagged by learners themselves.
-- **Compounding.** Do knowledge and intelligence, [as the Foundation defines them](https://daxfoundation.org/#definitions), compound across teachers, learners and organisations when every contribution sits on a [Constraint Protocol](https://github.com/daxfoundation/constraint-protocol) record nobody can quietly edit? That is what the protocol is intended to make possible; it has not been shown.
-- **Every bandwidth.** The same course, from five minutes a day to always on.
-- **Inside organisations.** The same infrastructure, private, behind a company's own walls.
-- **The model on the device.** Enough of the teaching packed into each bundle that a small model on a phone only has to hold the conversation.
-
-Nothing here is production. The clients, the limits they run under, and the architecture itself are experiments, and no element of any of them is set in stone.
+![Learning, drawn as the tree of life upside down: every path from the first question is kept, the dead ends are kept and marked, one learner's question answers another's, and the negative space nobody has explored yet is marked. There is never the way. There is always a way.](docs/figures/tree-of-learning.svg)
 
 ## Latest results
 
@@ -61,6 +55,22 @@ Nothing here is production. The clients, the limits they run under, and the arch
 **See the Newton run end to end:** the [interactive run report](https://claude.ai/artifact/Nv4j2tpPh9PidXvLiAaP31) shows the course map, every page, the follow-up tree in 3D, the quiz turn by turn, and three interactive labs. The labs were built afterwards for the report, as a proposal; the v0.2 prompts do not produce them. The report is hosted as a shared artifact on claude.ai.
 
 The full account of each run, including what it does not show, is in [What has actually run](#what-has-actually-run).
+
+## Coming next
+
+Planned, not run. There are no specs for these yet; they are questions we intend to put to the system in the open, beyond [the fourteen experiments](#the-experiments). The fourteen are the first of countless more to come.
+
+- **One thread, two worlds.** A tutoring exchange in one language and one culture becomes a set of assets that fits a learner on the other side of the world, in another language and another culture, joined only by something they happen to share -- a hobby, say -- with the likely misconceptions already mapped.
+- **Many teachers, many learners.** Courses that grow from many teachers and many learners at once, and what compounds when they do.
+- **The teacher's walkthrough.** Guidance and templates that adapt to what a particular teacher brings -- their [human delta value](https://daxfoundation.org/definitions/#human-delta-value), alone or working with their cognitive companion -- instead of assuming it.
+- **Failure, mapped.** Where learners get lost, recorded as carefully as where they arrive.
+- **Not leading.** Does the system steer learners toward its own answer? Measured, and flagged by learners themselves.
+- **Compounding.** Do knowledge and intelligence, [as the Foundation defines them](https://daxfoundation.org/definitions/), compound across teachers, learners and organisations when every contribution sits on a [Constraint Protocol](https://github.com/daxfoundation/constraint-protocol) record nobody can quietly edit? That is what the protocol is intended to make possible; it has not been shown.
+- **Every bandwidth.** The same course, from five minutes a day to always on.
+- **Inside organisations.** The same infrastructure, private, behind a company's own walls.
+- **The model on the device.** Enough of the teaching packed into each bundle that a small model on a phone only has to hold the conversation.
+
+Nothing here is production. The clients, the limits they run under, and the architecture itself are experiments, and no element of any of them is set in stone.
 
 ---
 
@@ -240,6 +250,8 @@ actual run produced it.
 | E13 | Prompt Forge: a teaching-method variant, generated and certified | not started |
 | E14 | Does the age wall bite in practice? (observe only) | not started |
 
+Beyond these fourteen: one thread in two worlds, many teachers and many learners, the teacher's walkthrough, failure mapped, not leading, compounding under the Constraint Protocol, every bandwidth, inside organisations, and the model on the device. See [Coming next](#coming-next).
+
 ---
 
 ## What has actually run
@@ -329,6 +341,8 @@ with the evidence left as recorded.
 ---
 
 ## Where this came from
+
+There has been a working prototype since 2024: [a rough early version, building a fractions course for an eleven-year-old and running every example through baseball](https://youtu.be/pMVwtGqUSh4), which is the idea in one frame -- the fractions are the same for everybody and the baseball is not. It broke a subject into chapters, lessons and parts, wrote each one against instructions aimed at that particular student, generated interactive tests from the material it had just produced, and scored them against Bloom's taxonomy rather than against recall. Why it took until now to open it up is in [a message from the founder](https://daxfoundation.org/#founder).
 
 EdDAX (2024-2025) was a Blazor web application with SQL Server, Cosmos DB and an Azure
 AI Search index wrapped around about a dozen prompt strings. Before writing a line of
