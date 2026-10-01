@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" role="img" aria-labelledby="t d">
+<title id="t">From one run to twelve scenes: the small ones earn the big ones</title>
+<desc id="d">On the left, what has run: one teacher run and one learner run, with a model in both chairs, and two evals built but not run. Across the span, the legwork: identifiers and schemas at scale, a registry at scale, reuse across languages, the five-minute bundle, certification, the constraint fields made live, privacy at scale. On the right, the twelve experiments we can already picture, ending at five minutes to master's.</desc>
+<rect width="1200" height="660" fill="#FAF4E8"/>
+<text x="40" y="44" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="22" fill="#141410" font-weight="600" text-anchor="start" >Meta DAX: from one run to twelve scenes</text>
+<text x="40" y="70" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#6E6859" font-weight="400" text-anchor="start" >what has run, the legwork in between, and where we want to get to</text>
+<rect x="40" y="220" width="290" height="320" rx="12" fill="#F5EBD7" stroke="#D4CCB7"/>
+<text x="60" y="254" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6E6859" font-weight="600" text-anchor="start" letter-spacing="2">WHAT HAS RUN</text>
+<text x="60" y="278" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#6E6859" font-weight="400" text-anchor="start" >27 September 2026, first cut</text>
+<circle cx="70" cy="315" r="6" fill="#C97224"/>
+<text x="88" y="320" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#2D3A2E" font-weight="600" text-anchor="start" >E01  the teacher run</text>
+<text x="88" y="339" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12.5" fill="#6E6859" font-weight="400" text-anchor="start" >a model played the teacher</text>
+<circle cx="70" cy="367" r="6" fill="#C97224"/>
+<text x="88" y="372" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#2D3A2E" font-weight="600" text-anchor="start" >E03  the learner run</text>
+<text x="88" y="391" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12.5" fill="#6E6859" font-weight="400" text-anchor="start" >a simulated adult, model self-play</text>
+<circle cx="70" cy="419" r="6" fill="none" stroke="#2D3A2E" stroke-width="1.8"/>
+<text x="88" y="424" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#2D3A2E" font-weight="400" text-anchor="start" >E04  evals on two vendors</text>
+<text x="88" y="443" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12.5" fill="#6E6859" font-weight="400" text-anchor="start" >built, not run</text>
+<circle cx="70" cy="471" r="6" fill="none" stroke="#2D3A2E" stroke-width="1.8"/>
+<text x="88" y="476" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#2D3A2E" font-weight="400" text-anchor="start" >E05  reuse engine vs registry</text>
+<text x="88" y="495" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12.5" fill="#6E6859" font-weight="400" text-anchor="start" >built, not run</text>
+<text x="60" y="524" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12.5" fill="#B9B09A" font-weight="400" text-anchor="start" >E02, E06–E14: not started</text>
+<rect x="790" y="160" width="372" height="416" rx="12" fill="none" stroke="#D4CCB7" stroke-dasharray="5 6"/>
+<text x="810" y="194" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6E6859" font-weight="600" text-anchor="start" letter-spacing="2">WHERE WE WANT TO GET TO</text>
+<text x="810" y="216" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="13.5" fill="#6E6859" font-weight="400" text-anchor="start" >twelve scenes, planned, none run</text>
+<rect x="810" y="236" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="820" y="254" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X01</text>
+<text x="820" y="271" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >One thread, two worlds</text>
+<rect x="981" y="236" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="991" y="254" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X02</text>
+<text x="991" y="271" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >Many hands, one course</text>
+<rect x="810" y="292" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="820" y="310" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X03</text>
+<text x="820" y="327" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >The nurse's walkthrough</text>
+<rect x="981" y="292" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="991" y="310" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X04</text>
+<text x="991" y="327" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >The dead-end atlas</text>
+<rect x="810" y="348" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="820" y="366" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X05</text>
+<text x="820" y="383" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >Flagged by the learner</text>
+<rect x="981" y="348" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="991" y="366" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X06</text>
+<text x="991" y="383" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >Same course, every bandwidth</text>
+<rect x="810" y="404" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="820" y="422" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X07</text>
+<text x="820" y="439" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >The pocket model</text>
+<rect x="981" y="404" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="991" y="422" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X08</text>
+<text x="991" y="439" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >Behind the company wall</text>
+<rect x="810" y="460" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="820" y="478" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X09</text>
+<text x="820" y="495" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >Nothing quietly edited</text>
+<rect x="981" y="460" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="991" y="478" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X10</text>
+<text x="991" y="495" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >One record, many years</text>
+<rect x="810" y="516" width="161" height="46" rx="7" fill="none" stroke="#B9B09A" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="820" y="534" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#6E6859" font-weight="600" text-anchor="start" >X11</text>
+<text x="820" y="551" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="start" >The negative space</text>
+<rect x="981" y="516" width="161" height="46" rx="7" fill="#C97224" stroke="#2D3A2E" stroke-width="1.6" stroke-dasharray="none"/>
+<text x="991" y="534" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#FAF4E8" font-weight="600" text-anchor="start" >X12</text>
+<text x="991" y="551" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#FAF4E8" font-weight="600" text-anchor="start" >Five minutes to master’s</text>
+<path d="M330 380 C 440 290, 680 290, 790 380" fill="none" stroke="#2D3A2E" stroke-width="3" stroke-linecap="round"/>
+<path d="M330 402 C 440 312, 680 312, 790 402" fill="none" stroke="#D4CCB7" stroke-width="2"/>
+<text x="560" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6E6859" font-weight="600" text-anchor="middle" letter-spacing="2">THE LEGWORK</text>
+<text x="560" y="248" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12.5" fill="#B9B09A" font-weight="400" text-anchor="middle" >what has to exist before the big ones can run</text>
+<line x1="377" y1="350" x2="377" y2="372" stroke="#2D3A2E" stroke-width="2"/>
+<circle cx="377" cy="350" r="4.5" fill="#FAF4E8" stroke="#2D3A2E" stroke-width="2"/>
+<line x1="377" y1="343" x2="377" y2="326" stroke="#B9B09A" stroke-width="1"/>
+<text x="389" y="286" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >ids and schemas</text>
+<text x="389" y="301" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >at a million</text>
+<text x="389" y="316" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >nodes</text>
+<line x1="433" y1="329" x2="433" y2="351" stroke="#2D3A2E" stroke-width="2"/>
+<circle cx="433" cy="329" r="4.5" fill="#FAF4E8" stroke="#2D3A2E" stroke-width="2"/>
+<line x1="433" y1="353" x2="433" y2="369" stroke="#B9B09A" stroke-width="1"/>
+<text x="433" y="385" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >a registry at</text>
+<text x="433" y="400" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >scale</text>
+<line x1="495" y1="317" x2="495" y2="339" stroke="#2D3A2E" stroke-width="2"/>
+<circle cx="495" cy="317" r="4.5" fill="#FAF4E8" stroke="#2D3A2E" stroke-width="2"/>
+<line x1="495" y1="310" x2="495" y2="293" stroke="#B9B09A" stroke-width="1"/>
+<text x="495" y="268" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >reuse across</text>
+<text x="495" y="283" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >languages</text>
+<line x1="560" y1="312" x2="560" y2="334" stroke="#2D3A2E" stroke-width="2"/>
+<circle cx="560" cy="312" r="4.5" fill="#FAF4E8" stroke="#2D3A2E" stroke-width="2"/>
+<line x1="560" y1="336" x2="560" y2="352" stroke="#B9B09A" stroke-width="1"/>
+<text x="560" y="368" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >the five-minute</text>
+<text x="560" y="384" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >bundle</text>
+<line x1="625" y1="317" x2="625" y2="339" stroke="#2D3A2E" stroke-width="2"/>
+<circle cx="625" cy="317" r="4.5" fill="#FAF4E8" stroke="#2D3A2E" stroke-width="2"/>
+<line x1="625" y1="310" x2="625" y2="293" stroke="#B9B09A" stroke-width="1"/>
+<text x="625" y="268" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >certification by</text>
+<text x="625" y="283" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >evals</text>
+<line x1="687" y1="329" x2="687" y2="351" stroke="#2D3A2E" stroke-width="2"/>
+<circle cx="687" cy="329" r="4.5" fill="#FAF4E8" stroke="#2D3A2E" stroke-width="2"/>
+<line x1="687" y1="353" x2="687" y2="369" stroke="#B9B09A" stroke-width="1"/>
+<text x="687" y="385" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >constraint</text>
+<text x="687" y="400" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >fields made live</text>
+<line x1="743" y1="350" x2="743" y2="372" stroke="#2D3A2E" stroke-width="2"/>
+<circle cx="743" cy="350" r="4.5" fill="#FAF4E8" stroke="#2D3A2E" stroke-width="2"/>
+<line x1="743" y1="343" x2="743" y2="326" stroke="#B9B09A" stroke-width="1"/>
+<text x="743" y="301" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >privacy, at</text>
+<text x="743" y="316" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#2D3A2E" font-weight="400" text-anchor="middle" >scale</text>
+<text x="40" y="620" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="16" fill="#2D3A2E" font-weight="600" text-anchor="start" >The small ones earn the big ones.</text>
+<text x="40" y="642" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="12.5" fill="#6E6859" font-weight="400" text-anchor="start" >A result appears only when a run produced it. Dead ends are kept.</text>
+</svg>

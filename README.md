@@ -1,16 +1,10 @@
 # Meta DAX
 
-**Open infrastructure for universal learning. Any subject, any domain, any learner, any bandwidth.**
+**Open infrastructure for universal learning. Every human being. Any subject. Any domain. Any bandwidth. Free, forever.**
 
-> **New here?** Start with **[Meta DAX: An Introduction](https://jeyanandan.com/blog/meta-dax/)** -- why this exists and what it is trying to do, in plain language. Further articles will be linked here as they are published.
+> **New here?** Start with **[Meta DAX: An Introduction](https://jeyanandan.com/blog/meta-dax/)** -- why this exists and what it is trying to do, in plain language. Then **[Human delta value](https://daxfoundation.org/writing/human-delta-value/)** -- the measure under every experiment here, and close to the point of all of them.
 >
-> **What has run, and what runs next:** [Latest results](#latest-results) -- [Coming next](#coming-next) -- [All fourteen experiments](#the-experiments). This repository is where everything about Meta DAX is read; [daxfoundation.org](https://daxfoundation.org/#learning) points here.
-
-## In plain words
-
-Anyone who knows a subject can describe a course in one sentence, and Meta DAX writes it: the lessons, the pages, the ideas each page depends on, and the mistakes learners are likely to make, written down before a single page exists. Every page can be shaped to the person reading it -- the same physics told through baking for a baker, or through cycling for a cyclist -- without cloning the course. The learner can ask "why?" as many times as they like, and each answer knows the questions that led to it. They are quizzed in steps that climb from remembering to applying, walked out of wrong ideas without being handed the answer, and they keep their own private record of what they learned.
-
-It compounds. A course a teacher chooses to publish is open for anyone to teach from, fork and improve. A question a learner chooses to share can, once a teacher reviews it, become part of the course for the next learner. The long-term aim is universal learning -- every human being, any subject, any domain, free -- designed first for someone with about five minutes of connectivity a day, and for every bandwidth above that. That offline client does not exist yet. This repository is where the experiments towards it are run, in the open, with every result dated and every gap written down.
+> **Where we are:** [What has run](#where-we-are-starting) -- [The legwork](#the-legwork) -- [Where we want to get to](#where-we-want-to-get-to) -- [The map](#the-challenge-map). This repository is where everything about Meta DAX is read; [daxfoundation.org](https://daxfoundation.org/#learning) points here.
 
 ## The benchmark
 
@@ -28,6 +22,22 @@ It will be open source and it will be free. Not freemium, not free-for-some, not
 
 Any domain means any domain: a child meeting fractions, a nurse training the next nurse, a company teaching ten thousand of its own people. Meta DAX is being designed from the start to be enterprise grade.
 
+## In plain words
+
+Anyone who knows a subject can describe a course in one sentence, and Meta DAX writes it: the lessons, the pages, the ideas each page depends on, and the mistakes learners are likely to make, written down before a single page exists. Every page can be shaped to the person reading it -- the same physics told through baking for a baker, or through cycling for a cyclist -- without cloning the course. The learner can ask "why?" as many times as they like, and each answer knows the questions that led to it. They are quizzed in steps that climb from remembering to applying, walked out of wrong ideas without being handed the answer, and they keep their own private record of what they learned.
+
+It compounds. A course a teacher chooses to publish is open for anyone to teach from, fork and improve. A question a learner chooses to share can, once a teacher reviews it, become part of the course for the next learner. And a move a tutor makes once, for one learner in one language, can be captured as a technique and offered to a stranger on the other side of the world who shares nothing with the first learner but a hobby -- that is the first of the experiments we want to reach, [X01](#where-we-want-to-get-to), and it is what compounding looks like when it is a person's move that compounds. The long-term aim is universal learning -- every human being, any subject, any domain, free -- designed first for someone with about five minutes of connectivity a day, and for every bandwidth above that. That offline client does not exist yet. This repository is where the experiments towards it are run, in the open, with every result dated and every gap written down.
+
+## The measure: human delta value
+
+Under every experiment here sits one measure, and it is close to being the point.
+
+[Human delta value](https://daxfoundation.org/definitions/#human-delta-value) is what a human being brings: what only a human can currently do, and what a person and their cognitive companion reach together that neither would alone. The first Meta DAX run showed it uninvited: the teacher's plan arrived defaulted, the outcomes rubric came from a catalogue that grows with every teacher who publishes one, and every decision became a micro-adjustment to something already there. A great deal of manual cognitive labour had been taken off the teacher. The question that matters is what the teacher does with the cognition they got back.
+
+That is deliberate. Meta DAX is built to **invert the ratio of students to teachers**: behind each learner, every tutor's move ever captured, every misconception ever mapped, every dead end anyone found first, offered as one way among many. A learner gets more teaching than any teacher could give. And the teacher is handed their cognition back, on purpose, for the problems they could previously only dream about -- the learner who was going to be lost, the subject nobody has taught yet, the move that works once and then, through the record, for everyone after. We call that **reclaimed cognition**, and it is reported by the person in their own words and recorded as expressed, never inferred and never measured in minutes.
+
+It is not a one-off. It is the thread through every experiment below, and it comes with a demand: a person and their companion are one unit, and the unit is only as strong as the human's best in the moment. The better the companion, the more that best is worth. Everybody needs to step up. The reasoning, the failure modes and the kill line are in [Human delta value: the measure](https://daxfoundation.org/writing/human-delta-value/); where it came from is [on Jason's site](https://jeyanandan.com/blog/human-delta-value/).
+
 ## A way, never the way
 
 Education does an enormous amount of good, and at scale it has no choice but to standardise: one pace, one sequence, one way of demonstrating that you have understood. Learning is the thing underneath it, and learning does not standardise -- it happens at the pace of the person doing it. Meta DAX is about the second one.
@@ -40,39 +50,76 @@ Picture learning as the tree of life drawn upside down: every branch anyone has 
 
 ![Learning, drawn as the tree of life upside down: every path from the first question is kept, the dead ends are kept and marked, one learner's question answers another's, and the negative space nobody has explored yet is marked. There is never the way. There is always a way.](docs/figures/tree-of-learning.svg)
 
-## Latest results
+## Where we are, and where we are going
 
-*Last updated 2026-09-28, by hand for now.* Every result below comes from a dated file in an experiment's `results/` folder. All runs so far are automated: a model played the client and, in the learner runs, a simulated learner. None of them is a pilot with a person.
+Three tiers. The first fourteen experiments are where we are starting, and they are deliberately small. Between them and the big ones sits the legwork nobody writes a post about. And then the twelve we can already picture. The small ones earn the big ones: nothing in the third tier can run honestly until the first two have.
 
-| Experiment | The question | Latest result |
+![From one run to twelve scenes: on the left, what has run, one teacher run and one learner run with a model in both chairs; across the span, the legwork, identifiers and schemas at scale, a registry at scale, reuse across languages, the five-minute bundle, certification, the constraint fields made live, privacy at scale; on the right, the twelve experiments we can already picture, ending at five minutes to master's.](docs/figures/bridge.svg)
+
+### Where we are starting
+
+Fourteen questions, each with a method, metrics and a kill line (`docs/EXPERIMENTS.md`; cards in `experiments/`). A result appears in a card's `results/` folder only when an actual run produced it. *Last updated 2026-10-01, by hand for now.* All runs so far are automated: a model played the client and, in the learner runs, a simulated learner. None of them is a pilot with a person.
+
+| Id | Question | Status |
 |---|---|---|
-| [E01](experiments/E01/) -- teacher | Can a non-technical adult create a course into a repository with the Claude Code client? | **Done, first cut.** [Run 1](experiments/E01/results/2026-09-27-teacher-run-newtons-laws.md): an empty repository to a 7-objective course, first page at about 8 minutes. [Run 2](experiments/E01/results/2026-09-27-newton-course-run.md): *Newton's Laws of Motion*, 3 lessons, 7 modules, 21 objectives, every page validated. |
-| [E03](experiments/E03/) -- learner | Can a learner session run end to end: read, follow up three levels deep, take a quiz, save? | **Done, first cut.** [Run 1](experiments/E03/results/2026-09-27-learner-run-cell-biology.md): the fixture course, four follow-ups, competency 70. [Run 2](experiments/E03/results/2026-09-27-newton-learner-run.md): the Newton course, six follow-ups to depth 4, competency 83, three bugs found, two fixed in the tools with regression tests. |
-| [E04](experiments/E04/) -- evals | Do the v0.2 prompts produce valid, on-spec output on both vendors' models? | Harness built, [not yet run](experiments/E04/results/2026-09-27-first-run.md). |
-| [E05](experiments/E05/) -- reuse | Does the follow-up engine make the right reuse, extend or new decision against a registry? | Cases built, [not yet run](experiments/E05/results/2026-09-27-first-run.md). |
-| E02, E06-E14 | See [experiments/](experiments/) | Not started. |
+| [E01](experiments/E01/) | Can an adult create a course into a repo with the Claude Code client? (E01b: Claude Desktop) | **done, first cut.** [Run 1](experiments/E01/results/2026-09-27-teacher-run-newtons-laws.md): an empty repository to a 7-objective course, first page at about 8 minutes. [Run 2](experiments/E01/results/2026-09-27-newton-course-run.md): *Newton's Laws of Motion*, 3 lessons, 7 modules, 21 objectives, every page validated. |
+| E02 | The same on ChatGPT, with the commit packet | not started |
+| [E03](experiments/E03/) | A learner session: read, three follow-up levels, quiz, save | **done, first cut.** [Run 1](experiments/E03/results/2026-09-27-learner-run-cell-biology.md): the fixture course, four follow-ups, competency 70. [Run 2](experiments/E03/results/2026-09-27-newton-learner-run.md): the Newton course, six follow-ups to depth 4, competency 83, three bugs found, two fixed with regression tests. |
+| [E04](experiments/E04/) | Do the v0.2 prompts pass on both vendors? (schema-valid rate, rubric) | harness built; [not yet run](experiments/E04/results/2026-09-27-first-run.md) |
+| [E05](experiments/E05/) | Does the follow-up engine reuse correctly from a registry? | cases and a 50-node planted registry built; [not yet run](experiments/E05/results/2026-09-27-first-run.md) |
+| E06 | Does the weekly git-bundle loop close at 50 kbps? | not started |
+| E07 | Can the architect ground a unit on Oak via MCP with real citations? | not started |
+| E08 | Generated interactive assets: pass rate against oracle tests | not started |
+| E09 | Records a homeschooling parent would file | not started |
+| E10 | A 2-4B on-device model running the quiz with a grammar | not started |
+| E11 | Learner repo ingested by a companion's memory (isolated copy) | not started |
+| E12 | Provenance plus signed commits verified later as a chain | not started |
+| E13 | Prompt Forge: a teaching-method variant, generated and certified | not started |
+| E14 | Does the age wall bite in practice? (observe only) | not started |
 
-**See the Newton run end to end:** the [interactive run report](https://claude.ai/artifact/Nv4j2tpPh9PidXvLiAaP31) shows the course map, every page, the follow-up tree in 3D, the quiz turn by turn, and three interactive labs. The labs were built afterwards for the report, as a proposal; the v0.2 prompts do not produce them. The report is hosted as a shared artifact on claude.ai.
+**See the Newton run end to end:** the [interactive run report](https://claude.ai/artifact/Nv4j2tpPh9PidXvLiAaP31) shows the course map, every page, the follow-up tree in 3D, the quiz turn by turn, and three interactive labs. The labs were built afterwards for the report, as a proposal; the v0.2 prompts do not produce them. The report is hosted as a shared artifact on claude.ai. The full account of each run, including what it does not show, is in [What has actually run](#what-has-actually-run).
 
-The full account of each run, including what it does not show, is in [What has actually run](#what-has-actually-run).
+### The legwork
 
-## Coming next
+What has to exist before any of the big ones can run honestly. None of it is glamorous, and all of it is where the scalability lives.
 
-Planned, not run. There are no specs for these yet; they are questions we intend to put to the system in the open, beyond [the fourteen experiments](#the-experiments). The fourteen are the first of countless more to come.
+- **Identifiers and schemas that hold at a million nodes.** Today's ids encode ancestry and are capped at 200 characters; the registries are per module. Both have to be shown to hold, or be redesigned, at a scale no fixture reaches.
+- **A registry at scale.** Reuse decisions against fifty planted nodes (E05) are one thing; against every course in a language, with duplicates arriving from many teachers at once, is another.
+- **Reuse across languages, without copying.** A core rendered into a second language is a shared asset; a hobby rendering stays personal. The rule exists; the machinery does not.
+- **The five-minute bundle.** The weekly loop at 50 kbps (E06), then the bundle that carries enough teaching for a week offline, with nothing in it the learner did not need.
+- **Certification.** A prompt is certified for a named model set by evals, not by reputation (E04). No certification exists yet; the harness does.
+- **The constraint fields, null today, made live.** Every node has a provenance file with fields reserved for a constraint and signing layer. They are null. E12 is the first step; a live [Constraint Protocol](https://github.com/daxfoundation/constraint-protocol) record under every contribution is the destination.
+- **The learner's privacy, at scale and across years.** Pseudonyms and a private repo work for one learner and one course; eleven courses and six years is a different problem.
+- **Reclaimed cognition, recorded.** A place in the session record for the person's own account of what was taken off them and what they spent it on, written as they gave it. No experiment with a person runs without it.
 
-- **One thread, two worlds.** A tutoring exchange in one language and one culture becomes a set of assets that fits a learner on the other side of the world, in another language and another culture, joined only by something they happen to share -- a hobby, say -- with the likely misconceptions already mapped.
-- **Many teachers, many learners.** Courses that grow from many teachers and many learners at once, and what compounds when they do.
-- **The teacher's walkthrough.** Guidance and templates that adapt to what a particular teacher brings -- their [human delta value](https://daxfoundation.org/definitions/#human-delta-value), alone or working with their cognitive companion -- instead of assuming it.
-- **Failure, mapped.** Where learners get lost, recorded as carefully as where they arrive.
-- **Not leading.** Does the system steer learners toward its own answer? Measured, and flagged by learners themselves.
-- **Compounding.** Do knowledge and intelligence, [as the Foundation defines them](https://daxfoundation.org/definitions/), compound across teachers, learners and organisations when every contribution sits on a [Constraint Protocol](https://github.com/daxfoundation/constraint-protocol) record nobody can quietly edit? That is what the protocol is intended to make possible; it has not been shown.
-- **Every bandwidth.** The same course, from five minutes a day to always on.
-- **Inside organisations.** The same infrastructure, private, behind a company's own walls.
-- **The model on the device.** Enough of the teaching packed into each bundle that a small model on a phone only has to hold the conversation.
+### Where we want to get to
 
-Nothing here is production. The clients, the limits they run under, and the architecture itself are experiments, and no element of any of them is set in stone.
+Twelve experiments we can already picture, each written as a scene first, because an experiment that cannot be pictured as one person on one day cannot be designed. The people are fictional; the places, languages and subjects are real. Planned, not run. The full scenes, with the machinery each needs, the question, the measure, the kill line and what compounds, are in **[docs/NEXT-EXPERIMENTS.md](docs/NEXT-EXPERIMENTS.md)**.
+
+- **X01 One thread, two worlds.** A tutor's move, made once in Indonesian for a kite flyer stuck on the third law, captured as a technique and offered in Spanish to a kite flyer in Guatemala who shares nothing else with him. The floor rises for everyone after.
+- **X02 Many hands, one course.** A beekeeping course forked across four languages, learners asking at once, until its curriculum is mostly promoted follow-ups.
+- **X03 The nurse's walkthrough.** A walkthrough that first asks what a teacher brings, and gives a charge nurse only the stages she cannot do herself.
+- **X04 The dead-end atlas.** Where learners get lost, shared as shapes and never as records, mapped per module and re-taught at the spot.
+- **X05 Flagged by the learner.** Steering measured two ways: by learners who flag it, and by an evaluator blind to them.
+- **X06 Same course, every bandwidth.** One Newton course for a five-minute-a-day learner, a patchy commuter and an always-on companion, and what the bundle must carry.
+- **X07 The pocket model.** A small model on a phone holding the conversation while the bundle holds the teaching.
+- **X08 Behind the company wall.** The same infrastructure on a company's own git, learner records still the learner's, one technique sent back out through a gate.
+- **X09 Nothing quietly edited.** Every contribution on a live Constraint Protocol record, and whether knowledge and intelligence compound when nothing can be erased.
+- **X10 One record, many years.** One learner's private repo across eleven courses and six years, carried into her cognitive companion, with every carry-over hers to refuse.
+- **X11 The negative space.** The unexplored parts of a subject shaded on the tree and offered, not pushed, with the regions nobody takes recorded too.
+- **X12 Five minutes to master's.** The long one. A phone, five minutes a day, a blind-graded external yardstick agreed in advance, and the result published either way.
+
+Every one of them records human delta value, both halves, and reclaimed cognition in the person's own words. None of this is production. The clients, the limits they run under, and the architecture itself are experiments, and no element of any of them is set in stone; several of these will change it, and some will kill parts of it, which is what they are for.
+
+### The challenge map
+
+Every problem on the table, by where it stands.
+
+![The challenge map: five columns. Run, first cut: a teacher makes a course; a learner reads, follows up, is quizzed and saves. Built, not run: the prompts certified on two vendors; reuse against a registry. Not started: the other ten of the first fourteen. The legwork: identifiers and schemas at scale, a registry at scale, reuse across languages, the five-minute bundle, certification, the constraint fields made live, privacy at scale, reclaimed cognition recorded. Where we want to get to: the twelve scenes, ending at five minutes to master's.](docs/figures/challenge-map.svg)
 
 ---
+
+## The machinery
 
 A teacher turns any subject into a course. A learner reads it, asks follow-up questions
 as deep as they like (a follow-up of a follow-up of a follow-up), gets quizzed through
@@ -90,11 +137,10 @@ is production, and no element of the architecture is set in stone.
 > this repository and validate. The first end-to-end runs (E01, the teacher, and E03, the
 > learner) are recorded; the numbers are in [What has actually run](#what-has-actually-run).
 > The eval harnesses for E04 and E05 are built but not yet run. Everything else in
-> `experiments/` is not started.
+> `experiments/` is not started. 2026-10-01: the twelve scenes and the legwork are
+> written down above; none has run.
 
----
-
-## The idea in one example
+### The idea in one example
 
 In the previous prototype (EdDAX, 2024-2025) the project's author, reading an introductory
 cell-biology lesson, asked a chain of questions five levels deep. The real chain, with the
@@ -137,7 +183,7 @@ actually happened.
 
 ---
 
-## What is in this repository
+### What is in this repository
 
 | Path | What it holds |
 |---|---|
@@ -146,7 +192,7 @@ actually happened.
 | `tools/` | Eight Node.js tools, zero dependencies: canonical hashing, stamping, id/slug rules, context-stack assembly, packet application, validation, tests. |
 | `skills/` | The first client: two Agent Skills that make Claude Code a git-native Meta DAX client (teacher and learner). Mirrored in `.claude/skills/` and `.agents/skills/`. |
 | `adapters/` | Headers for clients that cannot write files (Claude Desktop, ChatGPT): they emit a commit packet instead. |
-| `docs/` | `INTERFACE.md` (the operation contract every client implements), `CONCEPTS.md` (sixteen concepts, one at a time), `ARCHITECTURE.md`, `WALKTHROUGH-CLAUDE-CODE.md`, `EXPERIMENTS.md`, `DECISIONS.md`, `GLOSSARY.md`, `PRIVACY.md`, `LICENSING.md`, `ACCURACY.md`, and the frozen `SPEC-v0.2.md`. |
+| `docs/` | `INTERFACE.md` (the operation contract every client implements), `CONCEPTS.md` (sixteen concepts, one at a time), `ARCHITECTURE.md`, `WALKTHROUGH-CLAUDE-CODE.md`, `EXPERIMENTS.md`, `NEXT-EXPERIMENTS.md` (the twelve scenes), `DECISIONS.md`, `GLOSSARY.md`, `PRIVACY.md`, `LICENSING.md`, `ACCURACY.md`, and the frozen `SPEC-v0.2.md`. |
 | `fixtures/` | The reference course (the mitochondria chain) and a fixture learner, fully stamped. |
 | `templates/` | Skeletons for a course repo and a learner repo. |
 | `evals/` | Eval cases built from the fixture, a 50-node planted registry for E05, a grader and two runners. |
@@ -154,7 +200,7 @@ actually happened.
 
 ---
 
-## How it works
+### How it works
 
 Every call to the system is one **operation**: the kernel prompt, one operation prompt,
 and a stack of tagged input blocks go in; exactly one JSON object comes out.
@@ -203,7 +249,7 @@ claude            # in the metadax clone
 
 ---
 
-## The concepts we are exploring
+### The concepts we are exploring
 
 Each is a section of `docs/CONCEPTS.md`, with the idea, why it matters, where it lives,
 what EdDAX did instead, and the open question an experiment must answer.
@@ -224,33 +270,6 @@ what EdDAX did instead, and the open question an experiment must answer.
 14. **Provenance and constraints** -- every node has a client-written provenance file; fields reserved for a future constraint and signing layer are null and not live.
 15. **The offline five-minutes-a-day client** -- deferred, but every schema already honours its checklist.
 16. **Open source and forkable** -- CC0 prompts, CC BY docs and content, Apache-2.0 code; publish, fork, and the Foundation may steward a copy with attribution.
-
----
-
-## The experiments
-
-Fourteen questions, the first of countless more to come, each with a method, metrics and a kill line (`docs/EXPERIMENTS.md`;
-cards in `experiments/`). A result appears in a card's `results/` folder only when an
-actual run produced it.
-
-| Id | Question | Status |
-|---|---|---|
-| E01 | Can an adult create a course into a repo with the Claude Code client? (E01b: Claude Desktop) | done, first cut (automated runs with Claude, 2026-09-27) |
-| E02 | The same on ChatGPT, with the commit packet | not started |
-| E03 | A learner session: read, three follow-up levels, quiz, save | done, first cut (adult path, automated runs with Claude, 2026-09-27) |
-| E04 | Do the v0.2 prompts pass on both vendors? (schema-valid rate, rubric) | harness built; not yet run |
-| E05 | Does the follow-up engine reuse correctly from a registry? | cases and a 50-node planted registry built; not yet run |
-| E06 | Does the weekly git-bundle loop close at 50 kbps? | not started |
-| E07 | Can the architect ground a unit on Oak via MCP with real citations? | not started |
-| E08 | Generated interactive assets: pass rate against oracle tests | not started |
-| E09 | Records a homeschooling parent would file | not started |
-| E10 | A 2-4B on-device model running the quiz with a grammar | not started |
-| E11 | Learner repo ingested by a companion's memory (isolated copy) | not started |
-| E12 | Provenance plus signed commits verified later as a chain | not started |
-| E13 | Prompt Forge: a teaching-method variant, generated and certified | not started |
-| E14 | Does the age wall bite in practice? (observe only) | not started |
-
-Beyond these fourteen: one thread in two worlds, many teachers and many learners, the teacher's walkthrough, failure mapped, not leading, compounding under the Constraint Protocol, every bandwidth, inside organisations, and the model on the device. See [Coming next](#coming-next).
 
 ---
 
@@ -342,7 +361,7 @@ with the evidence left as recorded.
 
 ## Where this came from
 
-There has been a working prototype since 2024: [a rough early version, building a fractions course for an eleven-year-old and running every example through baseball](https://youtu.be/pMVwtGqUSh4), which is the idea in one frame -- the fractions are the same for everybody and the baseball is not. It broke a subject into chapters, lessons and parts, wrote each one against instructions aimed at that particular student, generated interactive tests from the material it had just produced, and scored them against Bloom's taxonomy rather than against recall. Why it took until now to open it up is in [a message from the founder](https://daxfoundation.org/#founder).
+There has been a working prototype since 2024: [a rough early version, building a fractions course for an eleven-year-old and running every example through baseball](https://youtu.be/pMVwtGqUSh4), which is the idea in one frame -- the fractions are the same for everybody and the baseball is not. It broke a subject into chapters, lessons and parts, wrote each one against instructions aimed at that particular student, generated interactive tests from the material it had just produced, and scored them against Bloom's taxonomy rather than against recall. Why it took until now to open it up is in [a note from the founder](#a-note-from-the-founder), below.
 
 EdDAX (2024-2025) was a Blazor web application with SQL Server, Cosmos DB and an Azure
 AI Search index wrapped around about a dozen prompt strings. Before writing a line of
@@ -373,6 +392,24 @@ built with prompt-driven agents, with people deciding and verifying.
 
 ---
 
+## A note from the founder
+
+I have been at this since I was 23. I am now 49.
+
+"This" has only ever been one thing: [the right information, to the right person, at the right time](https://jeyanandan.com/blog/meta-dax/#what-i-am-fighting-for). I found it the day I left university for the last time, and everything I have built since has been a draft of it. Meta DAX is the current one: the latest expansion of the same purpose, and the first where the information is the kind that lets a person go and get all the rest.
+
+It has taken a tremendous amount of personal sacrifice, on every level, and it still does. All of it has come out of my own pocket.
+
+If you want to know why it means this much to me, [it is here](https://jeyanandan.com/blog/meta-dax/#what-meta-dax-means-to-me). I was [the kid it did not exist for](https://jeyanandan.com/blog/meta-dax/#the-kid-it-did-not-exist-for).
+
+On the way to getting Meta DAX out, while working out how knowledge and intelligence could be made to compound, it became clear that I needed something else first: an accountability framework. A flight recorder, the black box the aviation industry keeps, for the thing I could see coming. I set that out in [The Constraint](https://jeyanandan.com/blog/the-constraint/). They are not two separate fights. The rubbish on the beach is a real problem, and so is the thousand-foot wave coming towards it, and you do not get to pick one. But while that work was in front of me I did not have the cognitive capacity to give Meta DAX what it needed, and I put it off from the beginning of this year. It is my purpose, and as of 28 September [it is in the open](https://jeyanandan.com/blog/meta-dax/): the experiments, every result, and what comes next.
+
+So, being completely transparent: if you would like to [buy me a coffee](https://ko-fi.com/jeyanandan), it would mean a great deal to me, from the bottom of my heart. Thank you. It goes to me personally, not the Foundation and not the company.
+
+-- [Jason Jeyanandan](https://jeyanandan.com)
+
+---
+
 ## Decisions, licences, privacy, accuracy
 
 - `docs/DECISIONS.md` -- the twelve decisions of 2026-09-27, verbatim, and what is pending.
@@ -392,3 +429,7 @@ Meta DAX is an independent project. It is not affiliated with or endorsed by Ant
 OpenAI, GitHub or Oak National Academy. Claude, Claude Code, ChatGPT and GitHub are
 trademarks of their respective owners and are named only to describe the clients and
 platforms Meta DAX works with.
+
+---
+
+*Like everything on these surfaces, this README is a versioned thought record, published by Jason Jeyanandan through his cognitive companion, one unit: [how it is published](https://jeyanandan.com/blog/how-i-publish/). Its history is this repository's.*
