@@ -2,9 +2,9 @@
 
 **Open infrastructure for universal learning. Every human being. Any subject. Any domain. Any bandwidth. Free, forever.**
 
-> **New here?** Start with **[Meta DAX: An Introduction](https://jeyanandan.com/blog/meta-dax/)** -- why this exists and what it is trying to do, in plain language. Then **[Human delta value](https://daxfoundation.org/writing/human-delta-value/)** -- the measure under every experiment here, and close to the point of all of them.
+> **New here?** **[See it](https://daxfoundation.org/metadax/showcase/)**: six sample pages of what Meta DAX hands a guide and a learner, three steps in (a mom and her eleven-year-old on fractions, a teacher and a newcomer, a grandson and his grandmother, a new manager, a first on-call shift, a teacher of teachers). **Homeschooling?** [Start here](https://daxfoundation.org/metadax/homeschool/). Then **[Meta DAX: An Introduction](https://jeyanandan.com/blog/meta-dax/)** -- why this exists and what it is trying to do, in plain language -- and **[Human delta value](https://daxfoundation.org/writing/human-delta-value/)** -- the measure under every experiment here, and close to the point of all of them.
 >
-> **Where we are:** [What has run](#where-we-are-starting) -- [The legwork](#the-legwork) -- [Where we want to get to](#where-we-want-to-get-to) -- [The map](#the-challenge-map). This repository is where everything about Meta DAX is read; [daxfoundation.org](https://daxfoundation.org/#learning) points here.
+> **Where we are:** [What has run](#where-we-are-starting) -- [The legwork](#the-legwork) -- [Where we want to get to](#where-we-want-to-get-to) -- [The map](#the-challenge-map). This repository is where the work is read; [daxfoundation.org/metadax/](https://daxfoundation.org/metadax/) is where it is told.
 
 ## The benchmark
 
@@ -22,6 +22,10 @@ It will be open source and it will be free. Not freemium, not free-for-some, not
 
 Any domain means any domain: a child meeting fractions, a nurse training the next nurse, a company teaching ten thousand of its own people. Meta DAX is being designed from the start to be enterprise grade.
 
+## Guides and learners
+
+Everyone is a learner. Whoever is a step ahead, right now, on this, is the **guide**: a parent, a teacher, a mentor, a manager, a grandson with a phone, a nurse training the next nurse. The gap is small, it is temporary, and it moves; in every sample on the site there is a moment where the learner is a step ahead of the guide on something and leads (we call that swinging leads, after climbing partners who swap the lead). Learning happens within reach, just past what a person can do alone, and Meta DAX exists to put the next step within reach for both of them and then get out of the way. "Teacher" and "tutor" below name a person's job or an operation in the prompt suite; the person in that chair is a guide.
+
 ## In plain words
 
 Anyone who knows a subject can describe a course in one sentence, and Meta DAX writes it: the lessons, the pages, the ideas each page depends on, and the mistakes learners are likely to make, written down before a single page exists. Every page can be shaped to the person reading it -- the same physics told through baking for a baker, or through cycling for a cyclist -- without cloning the course. The learner can ask "why?" as many times as they like, and each answer knows the questions that led to it. They are quizzed in steps that climb from remembering to applying, walked out of wrong ideas without being handed the answer, and they keep their own private record of what they learned.
@@ -32,7 +36,7 @@ It compounds. A course a teacher chooses to publish is open for anyone to teach 
 
 Under every experiment here sits one measure, and it is close to being the point.
 
-[Human delta value](https://daxfoundation.org/definitions/#human-delta-value) is what a human being brings: what only a human can currently do, and what a person and their cognitive companion reach together that neither would alone. The first Meta DAX run showed it uninvited: the teacher's plan arrived defaulted, the outcomes rubric came from a catalogue that grows with every teacher who publishes one, and every decision became a micro-adjustment to something already there. A great deal of cognitive labour had been taken off the teacher. The question that matters is what the teacher does with the cognition they got back.
+[Human delta value](https://daxfoundation.org/definitions/#human-delta-value) is what a human being brings: what only a human can currently do, and what a person and their cognitive companion reach together that neither would alone. The first Meta DAX run showed it uninvited: the teacher's plan arrived defaulted, the outcomes rubric came from a catalogue that grows with every teacher who publishes one, and every decision became a micro-adjustment to something already there. A great deal of cognitive labour had been taken off the teacher. The question that matters is what the teacher does with the cognition they got back. Every time the system takes cognitive labour off a guide, one question is left, and it is the whole point: **what is it that only you can do here, and how do we help you do it as well as you can?** Look at the guide's side of any [sample](https://daxfoundation.org/metadax/showcase/): the preparing is off them; the noticing is theirs. Now that the guide has it back, they have the chance to learn the part no system can do: how to bring out the best in the learner.
 
 That is deliberate. Meta DAX is built to **invert the ratio of students to teachers**: behind each learner, every tutor's move ever captured, every misconception ever mapped, every dead end anyone found first, offered as one way among many. A learner gets more teaching than any teacher could give. And the teacher is handed their cognition back, on purpose, for the problems they could previously only dream about -- the learner who was going to be lost, the subject nobody has taught yet, the move that works once and then, through the record, for everyone after. We call that **reclaimed cognition**, and it is reported by the person in their own words and recorded as expressed, never inferred and never measured in minutes.
 
