@@ -421,6 +421,19 @@ So, being completely transparent: if you would like to [buy me a coffee](https:/
 - `docs/PRIVACY.md` -- pseudonyms only; no email, name, school or diagnosis anywhere; private nodes never leave the learner repo; adults only in Phase 1 clients; no telemetry, no server.
 - `docs/ACCURACY.md` -- the accuracy commitments: no result without a recorded run, reserved fields described as reserved, no affiliation implied, models named by vendor outside eval results.
 
+## Support this work
+
+Meta DAX is built by directing a fleet of AI agents, and the agents run on paid compute. When the credits run out, the work stops. If you want it to keep going:
+
+- **[Sponsor on GitHub](https://github.com/sponsors/ObsidianDelta)**: $5, $25 or $100 a month, or a one-time amount. Sponsors are listed here.
+- **[Ko-fi](https://ko-fi.com/jeyanandan)**: a one-off coffee or a monthly one, no GitHub account needed.
+
+Everything built with it is published in this repository. Nothing is paywalled, and nothing will be.
+
+### Sponsors
+
+No sponsors yet. Be the first.
+
 ## Contributing
 
 Phase 1 is a build in progress. Course repos are private by default; publish when ready.
