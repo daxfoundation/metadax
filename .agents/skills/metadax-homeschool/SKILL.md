@@ -44,8 +44,12 @@ Ask these, a few at a time, in the parent's own words. Keep it to about a dozen
 short questions. Do not ask for anything identifying. The questions mirror
 `templates/intake-questions.md`:
 
-1. What should the child's page call them? (a nickname or made-up name, or "you")
-2. How old are they? (and, if more than one child learns together, each rough age)
+0. How many children learn this together? (usually one — if several do the same
+   lesson together, ask the learner questions **once for the group**, giving each a
+   nickname and a rough age; do not re-run the intake per child)
+1. What should the page call them? (a nickname or made-up name, or "you" — one
+   nickname per child if there are several, e.g. "the big kid", "the little ones")
+2. How old are they? (each child's rough age if more than one learns together)
 3. Which subject?
 4. Where exactly do they get stuck? — ask for the **behaviour**, the more exact
    the better.
@@ -77,6 +81,11 @@ Model it on `templates/EXAMPLE-package.json`. Non-negotiables from the format:
   two-level `faq` on each side.
 - The game is adaptive: it starts easy, steps up after a streak, steps down after
   a miss, and every wrong choice names the specific slip.
+- **If more than one child learns together**, declare `learners[]` (each nickname
+  and `age_band`) and put the who-does-what split in the **typed** `who`/`for_age`
+  fields on `lead`/`step` blocks and quiz levels/items — not in prose. One child
+  reads, the little ones do the hands-on level, the oldest gets the explaining
+  level. For a single child, omit `learners[]` entirely; the package is unchanged.
 - On the guide side, in plain words: how a session goes, what to say, which slips
   are normal, one line of *why* under each step, and — when the parent's
   description warrants — a calm sentence on **when to seek an evaluation**, naming

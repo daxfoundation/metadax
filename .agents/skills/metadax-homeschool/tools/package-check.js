@@ -43,6 +43,24 @@
   // ── Block / section helpers ───────────────────────────────────────────────
   var GAME_TYPES = { quiz: 1, sort: 1, sequence: 1, build: 1 };
   var GUIDE_ORDER = ["upnext", "learned", "steps", "tricky", "tellus"];
+  // Canonical age bands (shared with the sample index). Mixed-age families use
+  // these on learners[] and on per-item for_age tags.
+  var AGE_BANDS = { "4-6": 1, "4-9": 1, "7-9": 1, "10-12": 1, "13-15": 1, "16-18": 1 };
+
+  // Visit every object that carries a who/for_age "job" tag (a lead, a step, a
+  // quiz level, or a game item). Used only for the optional multi-learner split;
+  // a package with no such tags is never touched.
+  function walkJobs(obj, cb, path) {
+    if (Array.isArray(obj)) {
+      for (var i = 0; i < obj.length; i++) walkJobs(obj[i], cb, (path || "") + "[" + i + "]");
+    } else if (obj && typeof obj === "object") {
+      if (obj.who !== undefined || obj.for_age !== undefined) cb(obj, path || "");
+      var keys = Object.keys(obj);
+      for (var k = 0; k < keys.length; k++) {
+        walkJobs(obj[keys[k]], cb, (path ? path + "." : "") + keys[k]);
+      }
+    }
+  }
 
   function allBlocks(sections) {
     var out = [];
@@ -146,7 +164,7 @@
   var RE_INCL_DOT = /\w[·‧]\w/;
 
   // Structural fields whose string values should not be text-checked
-  var SKIP_PATH_SUFFIX = /\.(format|type|id|tone|bin|mistake|lang|tab|format|word|v)$|\.v$/;
+  var SKIP_PATH_SUFFIX = /\.(format|type|id|tone|bin|mistake|lang|tab|format|word|v|who|for_age|age_band)$|\.v$/;
 
   function hasLink(s) {
     return RE_HTTP.test(s) || RE_SHORTENER.test(s) || RE_BARE_DOMAIN.test(s);
@@ -295,6 +313,49 @@
         }
       }
     }
+
+    // ── multi-learner split (all optional, fully backward compatible) ───────
+    // A package with no learners[] and no who/for_age tags is not touched by any
+    // check below, so single-learner packages validate exactly as before.
+    var learnerNames = { all: 1 };
+    var haveLearners = false;
+    if (pkg.learners !== undefined) {
+      if (!Array.isArray(pkg.learners) || pkg.learners.length === 0) {
+        errors.push({ path: "learners", msg: "learners, when present, must be a non-empty array" });
+      } else {
+        haveLearners = true;
+        for (var pli = 0; pli < pkg.learners.length; pli++) {
+          var lr = pkg.learners[pli] || {};
+          var lrp = "learners[" + pli + "]";
+          if (typeof lr.nickname !== "string" || !lr.nickname.trim()) {
+            errors.push({ path: lrp + ".nickname", msg: "each learner needs a non-empty nickname" });
+          } else {
+            learnerNames[lr.nickname] = 1;
+          }
+          if (lr.age_band === undefined) {
+            errors.push({ path: lrp + ".age_band", msg: "each learner needs an age_band" });
+          } else if (!AGE_BANDS[lr.age_band]) {
+            errors.push({ path: lrp + ".age_band", msg: "age_band not a canonical band: " + lr.age_band });
+          }
+        }
+      }
+    }
+
+    // who / for_age job tags, wherever they appear (lead, step, quiz level, item)
+    walkJobs(pkg, function (o, p) {
+      if (o.who !== undefined) {
+        if (typeof o.who !== "string" || !o.who.trim()) {
+          errors.push({ path: p + ".who", msg: 'who must be a non-empty string (a learner nickname or "all")' });
+        } else if (haveLearners && !learnerNames[o.who]) {
+          errors.push({ path: p + ".who", msg: 'who matches no learner nickname or "all": ' + o.who });
+        } else if (!haveLearners && o.who !== "all") {
+          warnings.push({ path: p + ".who", msg: "who set but no learners[] declared; add learners[] so the split can render" });
+        }
+      }
+      if (o.for_age !== undefined && !AGE_BANDS[o.for_age]) {
+        warnings.push({ path: p + ".for_age", msg: "for_age not a canonical band: " + o.for_age });
+      }
+    });
 
     return { errors: errors, warnings: warnings };
   }

@@ -18,6 +18,7 @@ not go out. Reuse this format — do not invent a new one.
   "word": "session",
   "title": "A short, warm title",
   "lang": "en",
+  "learners": [ { "nickname": "the big kid", "age_band": "7-9" }, { "nickname": "the little ones", "age_band": "4-6" } ],
   "guide":   { "tab": "For you",      "theme": { "light": PALETTE, "dark": PALETTE }, "sections": [ SECTION, ... ] },
   "learner": { "tab": "For <nickname>","theme": { "light": PALETTE, "dark": PALETTE }, "sections": [ SECTION, ... ] },
   "next":    { "ticks": [ "...", "...", "..." ], "ask": [ "...", "..." ] },
@@ -31,6 +32,10 @@ not go out. Reuse this format — do not invent a new one.
   never a date or a duration.
 - `lang`: `en`, `fr`, or `en+fr`. For `en+fr` any text field may be
   `{ "en": "...", "fr": "..." }` and the player shows a toggle.
+- `learners` (**optional**): for a mixed-age household taught together. An array of
+  `{ "nickname", "age_band" }`. `age_band` is one of `4-6`, `4-9`, `7-9`, `10-12`,
+  `13-15`, `16-18`. **Omit it entirely for one child** — a single-learner package
+  is unchanged and still valid. See "Mixed-age households" below.
 - PALETTE: `{ "bg","surface","surface2","text","muted","accent","accent2","good","bad" }`,
   all `#rrggbb`. `text` on `bg` and on `surface` must reach **4.5:1** contrast in
   both light and dark. If unsure, copy the example's palette.
@@ -84,6 +89,30 @@ The player starts at `start`, goes up a level after `up_after` correct in a row,
 down after `down_after` misses in a row (never below level 1), and does not repeat
 an item until a level runs out. Aim for 3+ levels and 4+ items per level.
 
+## Mixed-age households (optional)
+
+When several children learn together, declare `learners[]` (above) and tag the
+who-does-what split in **typed fields** instead of burying it in prose:
+
+- On any `lead` or `step` block, and on any `quiz` **level** or **item** (and
+  likewise `sort`/`sequence`/`build` items), add:
+  - `who`: a learner nickname from `learners[]`, or `"all"`.
+  - `for_age` (optional): an age band, when the step suits a band rather than a
+    named learner.
+- The player renders these as a small chip ("the big kid · ages 7-9"), so a guide
+  sees at a glance that *the 8-year-old reads this part and the 5-year-olds do that
+  part* — the split is read-only and never hidden in a paragraph.
+
+```json
+{ "type": "lead", "who": "the big kid", "title": "The oldest leads first", "body": "...", "prompt": "..." }
+{ "type": "quiz", "id": "...", "levels": [
+  { "level": 1, "label": "Point and do", "who": "the little ones", "for_age": "4-6", "items": [ ... ] },
+  { "level": 3, "label": "Explain it",   "who": "the big kid",     "for_age": "7-9", "items": [ ... ] } ] }
+```
+
+This is fully optional and backward compatible: a package with no `learners[]` and
+no `who`/`for_age` is validated and rendered exactly as before.
+
 ## The next-time form
 
 `next.ticks` are short things the guide might tick (e.g. "Got it with the
@@ -98,8 +127,12 @@ side; a game choice that is neither correct nor tied to a defined mistake; no
 `human` on the guide side; no `lead` on either side; no two-level `faq` on either
 side; emoji anywhere; links or bare domains anywhere; a title before a name; the
 word "role"/"rôle"; an AI word on the learner side; any AI-vendor word anywhere; a
-`copy` block on the learner side; text contrast under 4.5:1 in either theme.
+`copy` block on the learner side; text contrast under 4.5:1 in either theme; and,
+when present, a malformed `learners[]` (not a non-empty array, a learner missing a
+nickname, or an `age_band` outside the band set), or a `who` that matches no
+declared learner nickname or `"all"`.
 
 Warnings (you decide): size over 60 KB; something that looks like a date; a
 duration in minutes/hours; a brand word; an email or phone pattern; a quiz thinner
-than 3 levels or 4 items per level.
+than 3 levels or 4 items per level; a `for_age` outside the band set; a `who` set
+without any `learners[]` declared.
