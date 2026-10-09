@@ -39,5 +39,8 @@
     "Tim Hortons", "Starbucks", "McDonald", "McDonalds",
     "Apple", "Google", "Microsoft", "Samsung", "Netflix",
     "Facebook", "Twitter", "TikTok", "YouTube", "Spotify"
+  ],
+  "exclude": [
+    "Apple", "Target", "Signal", "Line", "Metro", "Command"
   ]
 }
