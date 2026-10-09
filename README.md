@@ -33,6 +33,7 @@ Everything a homeschooling guide needs is in this repository, each piece small a
 | The package format | [`skills/metadax-homeschool/templates/PACKAGE-FORMAT.md`](skills/metadax-homeschool/templates/PACKAGE-FORMAT.md) | The shared contract both pages are built to -- reused, not a new format. |
 | The checker | [`skills/metadax-homeschool/tools/check-package.mjs`](skills/metadax-homeschool/tools/check-package.mjs) | The same validation the player runs, in Node, with zero dependencies. |
 | The sample library | [`samples/`](samples/) ([live](https://daxfoundation.org/metadax/samples/)) | Three generic samples, each reviewed by a person before it appears. |
+| The printable learner page | https://daxfoundation.org/metadax/play/print | Any package on paper, with a guide key on the last page. |
 | The learning record | [`skills/metadax-homeschool/templates/RECORD-FORMAT.md`](skills/metadax-homeschool/templates/RECORD-FORMAT.md) | One dated, append-only entry per session, kept locally and readable by a person or a program. |
 | The companion sidecar | [`companion/companion.schema.json`](companion/companion.schema.json) | An always-on sidecar schema (experimental). |
 
