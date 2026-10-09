@@ -264,7 +264,13 @@
     var titleRe    = buildTitleRe(L.titles);
     var vendorRe   = buildWordRe(L.vendor_words);
     var aiRe       = buildWordRe(L.ai_words);
-    var brandRe    = buildWordRe(L.brands);
+    // Ordinary English words that collide with a brand name (apple, target, signal…)
+    // are dropped from the brand check so they stop warning. Additive: with no
+    // `exclude` list the brand check is exactly as before.
+    var excl = {};
+    (L.exclude || []).forEach(function (w) { excl[String(w).toLowerCase()] = 1; });
+    var brandList = (L.brands || []).filter(function (b) { return !excl[String(b).toLowerCase()]; });
+    var brandRe    = buildWordRe(brandList);
 
     // walk all text strings
     walkStrings(pkg, function (str, path, side) {

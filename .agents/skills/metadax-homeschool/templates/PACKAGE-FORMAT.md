@@ -64,7 +64,7 @@ Inline in any string: `**bold**`, `*italic*`. No HTML, no links, no emoji.
 | `human` | title?, items[] | **guide only, required once** — things only a person can do |
 | `lead` | title, body, prompt | **required once on each side** — the learner, a step ahead, teaches the guide |
 | `faq` | q, a, more?: [ {q, a, more?: [ {q, a} ]} ] | **a two-level one required on each side** |
-| `copy` | title, text | copyable text, **guide only** |
+| `copy` | title, text | copyable text, **guide only**. When a section has two `copy` blocks, give them distinct titles that say what each is for — e.g. one "Send this note after the session" and one "For your own AI chat". Never leave both titled "Copy": the guide can't tell which to send back. |
 | `check` | id, title, items[] | guide tick list; ticks feed the next-time note |
 | `quiz` | see below | adaptive game |
 | `sort` | id, title, intro?, bins:[{id,label}], items:[{text,bin,why}] | game: put each item in a bin |
