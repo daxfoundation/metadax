@@ -292,7 +292,9 @@
     var brandRe    = buildWordRe(brandList);
 
     // walk all text strings
+    var hasWayLine = false;
     walkStrings(pkg, function (str, path, side) {
+      if (/a way, never the way/i.test(str)) hasWayLine = true;
       if (SKIP_PATH_SUFFIX.test(path)) return;
 
       if (RE_EMOJI.test(str))                              errors.push({ path: path, msg: "emoji or pictograph" });
@@ -309,6 +311,8 @@
       if (RE_EMAIL.test(str))                              warnings.push({ path: path, msg: "looks like an email address" });
       if (RE_PHONE.test(str))                              warnings.push({ path: path, msg: "looks like a phone number" });
     });
+
+    if (!hasWayLine) warnings.push({ path: "", msg: 'missing "a way, never the way" line' });
 
     // size warning
     try {
