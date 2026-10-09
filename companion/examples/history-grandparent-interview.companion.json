@@ -1,0 +1,131 @@
+{
+  "format": "metadax-companion",
+  "v": 1,
+  "ref": "HS-H52T",
+  "session": 1,
+  "pairs_with": {
+    "package_format": "metadax-package",
+    "sample_id": "history-grandparent-interview"
+  },
+  "next_step": {
+    "guide": "Before the interview, help the learner write three open questions and agree a quiet signal for moving on, then sit in and stay out of it unless the thread drops.",
+    "learner": "Ask one open question about the small town, listen without reaching for the next question, and write down the one line you most want to keep in the speaker's own words."
+  },
+  "reach": {
+    "alone": "Can memorise and return dates and names, and can tell whether a question has one right answer.",
+    "with_help": "Turns a spoken memory into a short written passage that keeps the speaker's voice, when a guide helps separate what was seen from what was heard.",
+    "not_yet": "Placing several remembered changes onto a timeline and reasoning about cause across them without support; keep the timeline as a place to play, not a place to test today."
+  },
+  "signals": [
+    {
+      "id": "working-the-list",
+      "watch": "racing to the next prepared question",
+      "looks_like": "asks question two the instant the answer to question one stops, without following anything the speaker just opened",
+      "not": "not a sign of poor attention or a processing difficulty; it is a first interviewer gripping the script because the open silence feels unsafe",
+      "then": { "action": "surface_to_guide", "detail": "The guide gives the agreed signal to wait, letting the learner sit in the silence rather than filling it." }
+    },
+    {
+      "id": "flattening-the-voice",
+      "watch": "rewriting a vivid spoken line into textbook phrasing",
+      "looks_like": "turns a plain remembered sentence into a flat fact and drops the words that made it the person's own",
+      "not": "not a writing weakness; it is a learner reaching for how school says history should sound",
+      "then": { "action": "offer", "detail": "Offer to read the original spoken line back once and ask which words are worth keeping exactly as said." }
+    },
+    {
+      "id": "source-confusion",
+      "watch": "treating something the speaker was told as something they saw",
+      "looks_like": "writes a secondhand story as a firsthand memory without noticing the difference",
+      "not": "not a comprehension problem; it is the historian's distinction between seeing and hearing, which is learned, not known",
+      "then": { "action": "offer", "detail": "Offer the seen-or-heard question for that one answer, then hand the judgement back to the learner." }
+    }
+  ],
+  "interventions": {
+    "companion_may": [
+      {
+        "offer": "Suggest turning a closed question the learner drafted into an open one that draws a story rather than a number.",
+        "when": "the learner is preparing questions before the interview",
+        "ceiling": "Suggest the rewording once; the learner chooses the final question, and the companion never writes the questions for them."
+      },
+      {
+        "offer": "Classify a single answer as a firsthand memory, a guess, or something heard from someone else, as a prompt for the learner to decide.",
+        "when": "the learner is sorting answers after the interview",
+        "ceiling": "Prompt the distinction; never label the source for the learner, and never keep or transcribe the interview itself."
+      }
+    ],
+    "guide_only": [
+      {
+        "reserved": "Reading the room during the interview and letting a silence run when a question has opened something the speaker wants to say more about.",
+        "why": "The moment lives in the faces and tone in the room, which the companion does not see and must not rush."
+      },
+      {
+        "reserved": "Deciding which of a relative's memories are the family's to share and which to leave unrecorded.",
+        "why": "It is a judgement about this family and this person, never a rule a program should apply."
+      },
+      {
+        "reserved": "Hearing which plain spoken line is the one worth keeping word for word and building the written passage around it.",
+        "why": "Knowing which sentence carries the person depends on having heard it said, which is the guide's to catch."
+      }
+    ]
+  },
+  "techniques": [
+    {
+      "id": "open-question-for-a-story",
+      "move": "Trade a counting question for a describing one — ask what a place looked, sounded, or smelled like rather than how many of something there were, so a memory arrives as a story instead of a number.",
+      "concept": "drawing a firsthand account out of a primary source",
+      "stuck_signature": "the learner asks closed questions and gets short factual answers, then concludes the person has nothing to tell",
+      "provenance": "guide",
+      "status": "pending_review",
+      "one_way": true
+    }
+  ],
+  "services": [
+    {
+      "capability": "speech-to-text transcription",
+      "for": "letting the learner keep their eyes on the speaker during the interview instead of scrambling to write every word",
+      "boundary": "Produce text the family reviews and then owns; never retain the recording and never summarise or judge what was said.",
+      "offline_fallback": "The learner takes rough handwritten notes and the guide helps fill the gaps from memory straight after."
+    },
+    {
+      "capability": "timeline layout",
+      "for": "arranging the one change the speaker described onto a simple before-and-after line the learner can read at a glance",
+      "boundary": "Lay out only what the learner places; never infer dates or add events the speaker did not mention."
+    }
+  ],
+  "cadence": {
+    "authored_for": "bundle",
+    "bundle": {
+      "does": "Carries the three-question interview plan, the source-sorting game, and the next-step pair; the guide runs it across one real conversation and the game records which source distinctions tripped up for next time.",
+      "cannot": "Cannot sit in the room to feel when a silence should run, cannot judge which memories are the family's to share, and cannot hear which spoken line carries the person — all of that stays with the guide."
+    },
+    "continuous": {
+      "unlocks": "Offering the open-question reword the moment a drafted question comes out closed, prompting the seen-or-heard check as each answer is written, and holding the source work at the edge of the learner's reach across the session rather than one burst.",
+      "still_guide_only": "Reading the room, deciding what is the family's to share, and catching the line worth keeping stay with the guide however connected the companion is."
+    }
+  },
+  "record_hooks": [
+    {
+      "id": "source-sorting-outcomes",
+      "on": "each game answer",
+      "writes": "whether an answer was sorted as seen, heard, or guessed, and whether the learner kept the speaker's own voice",
+      "event": "answer",
+      "consent": "standing",
+      "visibility": "shared"
+    },
+    {
+      "id": "line-worth-keeping",
+      "on": "the learner chooses a spoken line to keep word for word",
+      "writes": "that the learner identified a vivid firsthand line and built a passage around it, in the guide's words",
+      "event": "note",
+      "consent": "guide",
+      "visibility": "shared"
+    },
+    {
+      "id": "interview-content",
+      "on": "the interview itself",
+      "writes": "nothing; the conversation is the family's and is never written to the record without an explicit, separate choice",
+      "event": "note",
+      "consent": "both",
+      "visibility": "guide"
+    }
+  ]
+}

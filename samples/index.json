@@ -68,6 +68,28 @@
       "date": "2026-10-09",
       "licence": "CC BY 4.0",
       "path": "samples/math-telling-time-bus-timetable.md"
+    },
+    {
+      "id": "science-water-cycle-jar",
+      "subject": "Science",
+      "age_band": "10-12",
+      "stuck": "can recite the words evaporation and condensation but cannot say what is actually happening to the water or why",
+      "loves": "watching things change — melting, freezing, anything that transforms in front of him",
+      "approach": "builds the whole cycle in a sealed jar on a sunny sill so the learner watches evaporation and condensation happen, then names each step from what he saw",
+      "date": "2026-10-09",
+      "licence": "CC BY 4.0",
+      "path": "samples/science-water-cycle-jar.md"
+    },
+    {
+      "id": "history-grandparent-interview",
+      "subject": "History",
+      "age_band": "10-12",
+      "stuck": "treats history as dates and names to memorise and cannot see it as something that happened to actual people",
+      "loves": "the family's own stories, and talking with older relatives who remember things",
+      "approach": "turns one session into a real interview with a grandparent about a small town — what it looked like, one job they held, one change they lived through — then shapes the answers into the start of a local history",
+      "date": "2026-10-09",
+      "licence": "CC BY 4.0",
+      "path": "samples/history-grandparent-interview.md"
     }
   ]
 }
