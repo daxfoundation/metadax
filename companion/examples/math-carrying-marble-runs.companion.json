@@ -1,0 +1,131 @@
+{
+  "format": "metadax-companion",
+  "v": 1,
+  "ref": "HS-MTH8",
+  "session": 1,
+  "pairs_with": {
+    "package_format": "metadax-package",
+    "sample_id": "math-carrying-marble-runs"
+  },
+  "next_step": {
+    "guide": "Start with one two-digit sum where the ones overflow, and let the learner move a marble from the ones track to the tens track before writing anything.",
+    "learner": "When the ones track holds ten, roll one marble over into the tens track, then write the small one above the tens column."
+  },
+  "reach": {
+    "alone": "Adds single-column sums confidently and builds long marble runs with careful planning.",
+    "with_help": "Carries across one place when the overflow is shown as a marble moving tracks, before it is written as a digit.",
+    "not_yet": "Carrying across two or three places in a written sum with no model; keep multi-carry sums for later so the freeze does not return."
+  },
+  "signals": [
+    {
+      "id": "freeze-before-start",
+      "watch": "stalling before the first mark",
+      "looks_like": "pencil held over the page, no digit written, a long pause before any attempt",
+      "not": "not a gap in ability or a number sense disorder; it is the start of a hard task feeling too big",
+      "then": { "action": "offer", "detail": "Offer to set up the marble run for the first sum so the first move is physical, not written." }
+    },
+    {
+      "id": "digits-side-by-side",
+      "watch": "writing both column totals next to each other",
+      "looks_like": "writes the full ones total and the tens total side by side instead of carrying the overflow",
+      "not": "not carelessness; it is a learner treating each column as its own separate sum",
+      "then": { "action": "offer", "detail": "Offer one marble-run run of that exact sum so the overflow between tracks is seen before it is written." }
+    },
+    {
+      "id": "builds-to-avoid",
+      "watch": "drifting into building instead of the sum",
+      "looks_like": "starts elaborating the marble run itself rather than doing the next sum",
+      "not": "not off-task behaviour to correct; it may be the learner regulating when the sum got heavy",
+      "then": { "action": "surface_to_guide", "detail": "The guide decides whether to ride the build as a reset or gently bring the sum back." }
+    }
+  ],
+  "interventions": {
+    "companion_may": [
+      {
+        "offer": "Show the overflow as a marble rolling from the ones track into the tens track for the sum in front of the learner.",
+        "when": "the learner writes columns side by side or freezes on a carry",
+        "ceiling": "Show the overflow; never write the carried digit for the learner or finish the sum."
+      },
+      {
+        "offer": "Keep the sums low-pressure: one at a time, no timer, no streak shown.",
+        "when": "throughout the session",
+        "ceiling": "Never introduce speed or a score; pacing pressure is the guide's call."
+      }
+    ],
+    "guide_only": [
+      {
+        "reserved": "Judging when a build is a needed reset versus avoidance, and what to do about it.",
+        "why": "It depends on the learner's state in the moment, which only a person in the room can read."
+      },
+      {
+        "reserved": "Showing the learner, by their own manner, that a wrong carry is nothing to fear.",
+        "why": "Low-pressure is felt from a person's tone and face, not stated by a companion."
+      },
+      {
+        "reserved": "Deciding when the learner has had enough carrying for one day.",
+        "why": "Protecting the learner from the freeze returning is a human judgement, not a quota."
+      }
+    ]
+  },
+  "techniques": [
+    {
+      "id": "overflow-as-marble",
+      "move": "Model carrying as a physical overflow: ten marbles fill the ones track, one rolls over into the tens track, and only then is the carried digit written.",
+      "concept": "carrying tens in column addition",
+      "stuck_signature": "freezes before starting, or writes each column's full total side by side instead of carrying the overflow",
+      "provenance": "guide",
+      "status": "pending_review",
+      "one_way": true
+    }
+  ],
+  "services": [
+    {
+      "capability": "handwriting capture",
+      "for": "seeing how the learner laid out the columns, since where a digit is written tells you whether the overflow was understood",
+      "boundary": "Report the layout as a behaviour; never keep images and never grade the handwriting.",
+      "offline_fallback": "The guide looks at the page and reads the layout; the game records only the chosen answer."
+    },
+    {
+      "capability": "spaced-practice scheduling",
+      "for": "bringing one small carry back a day or two later so it settles without a long worksheet",
+      "boundary": "Suggest a moment to the guide; never drill the learner on a fixed schedule or count streaks."
+    }
+  ],
+  "cadence": {
+    "authored_for": "bundle",
+    "bundle": {
+      "does": "Carries one session of marble-run sums and the next-step pair; the guide runs a short burst and the game records which carries broke down.",
+      "cannot": "Cannot catch the freeze at the first mark as it happens, cannot tell a reset-build from avoidance, and cannot set the moment to bring a carry back — the guide does all three."
+    },
+    "continuous": {
+      "unlocks": "Offering the overflow model the instant columns go side by side, and spacing one small carry back across days instead of one burst, keeping it near the edge of what the learner can do.",
+      "still_guide_only": "Reading whether a build is a reset or avoidance, and showing by manner that a wrong carry is safe, stay with the guide."
+    }
+  },
+  "record_hooks": [
+    {
+      "id": "carry-outcomes",
+      "on": "each game answer",
+      "writes": "whether the overflow was carried or the columns were written side by side",
+      "event": "answer",
+      "consent": "standing",
+      "visibility": "shared"
+    },
+    {
+      "id": "froze-at-start",
+      "on": "a long stall before the first mark",
+      "writes": "that the learner stalled before starting, as an observed pause, not a label",
+      "event": "note",
+      "consent": "guide",
+      "visibility": "guide"
+    },
+    {
+      "id": "session-summary",
+      "on": "the session ends",
+      "writes": "a short behaviour summary: which carries landed and where the pressure rose, in the guide's words",
+      "event": "summary",
+      "consent": "guide",
+      "visibility": "shared"
+    }
+  ]
+}

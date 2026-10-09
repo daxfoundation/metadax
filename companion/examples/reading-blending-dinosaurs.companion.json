@@ -1,0 +1,131 @@
+{
+  "format": "metadax-companion",
+  "v": 1,
+  "ref": "HS-RDG7",
+  "session": 1,
+  "pairs_with": {
+    "package_format": "metadax-package",
+    "sample_id": "reading-blending-dinosaurs"
+  },
+  "next_step": {
+    "guide": "Before the blending game, let the learner teach you one thing about a dinosaur, then model one blend slowly-then-fast and hand it straight back.",
+    "learner": "Push the three sounds in a short dinosaur name together until the whole name pops out, then say it once more at speed."
+  },
+  "reach": {
+    "alone": "Says each single letter sound correctly and names many dinosaurs on sight.",
+    "with_help": "Blends three sounds into a short word when the sounds are modelled slowly first and the word is one they want to say.",
+    "not_yet": "Holding five sound-chunks together in a long name without a model; keep the long names as a place to play, not a place to test."
+  },
+  "signals": [
+    {
+      "id": "covers-page",
+      "watch": "covering the page or turning away",
+      "looks_like": "a hand over the screen or a turned shoulder, usually after about two misses in a row",
+      "not": "not evidence of a reading disorder; it is this learner telling you the pressure just crossed their line",
+      "then": { "action": "surface_to_guide", "detail": "The guide moves in to do the sounds together, not to ask why or wait it out." }
+    },
+    {
+      "id": "first-sound-guess",
+      "watch": "answering from the first sound only",
+      "looks_like": "picks a word that merely starts with the first sound instead of blending the whole chain",
+      "not": "not a sign of guessing or laziness; it is a learner anchoring on the one sound they are sure of",
+      "then": { "action": "offer", "detail": "Offer the slow-then-fast model for that exact chain once, then step back." }
+    },
+    {
+      "id": "led-well",
+      "watch": "teaching the guide confidently",
+      "looks_like": "explains a dinosaur difference unprompted and at length before the work begins",
+      "not": "not a measure of ability or reading level; it is a confidence door that is open right now",
+      "then": { "action": "log_only", "detail": "Note that the session started from confidence, so the guide can protect that opening next time." }
+    }
+  ],
+  "interventions": {
+    "companion_may": [
+      {
+        "offer": "Model a single blend: say the sounds slowly, then faster, until the word emerges, using a name the learner chose.",
+        "when": "the learner stalls on one chain and has not covered the page",
+        "ceiling": "Model once and hand back; never read the word for them more than once, and never run a streak of blends without the guide present."
+      },
+      {
+        "offer": "Pick the next name from the learner's own dinosaurs so the chunks feel earned, not drilled.",
+        "when": "choosing the next item at the learner's current level",
+        "ceiling": "Suggest, never insist; the guide or learner picks the final name."
+      }
+    ],
+    "guide_only": [
+      {
+        "reserved": "Reading the learner's face a moment before the page gets covered and deciding to move in.",
+        "why": "The pre-frustration tell is in the body, not in the answer stream the companion sees."
+      },
+      {
+        "reserved": "Deciding to stop the session on a small success even with questions left.",
+        "why": "Ending well is a judgement about this child today; a completion target would override it."
+      },
+      {
+        "reserved": "Tying a specific name the learner mentioned in conversation to the sounds of this session.",
+        "why": "It depends on what was said in the room, which is the guide's to hear and use."
+      }
+    ]
+  },
+  "techniques": [
+    {
+      "id": "slow-then-fast-chosen-name",
+      "move": "Blend with a name the learner wants to say: sound it slowly, compress to speed, let the wanted word pull the sounds together.",
+      "concept": "blending single sounds into a whole word",
+      "stuck_signature": "produces each sound cleanly in isolation but the sounds stay separate and the learner says a different word starting with the first sound",
+      "provenance": "guide",
+      "status": "pending_review",
+      "one_way": true
+    }
+  ],
+  "services": [
+    {
+      "capability": "spoken-sound alignment",
+      "for": "hearing whether the learner actually joined the sounds aloud, since blending lives in sound and the written quiz cannot carry it",
+      "boundary": "Report what was heard as a blend-or-not behaviour; never keep the audio and never score the child.",
+      "offline_fallback": "The guide listens and judges the blend; the game records only the chosen answer."
+    },
+    {
+      "capability": "read-aloud of short text",
+      "for": "letting the learner hear a modelled name when the guide is not beside them",
+      "boundary": "Model only; never replace the learner's own attempt to blend."
+    }
+  ],
+  "cadence": {
+    "authored_for": "bundle",
+    "bundle": {
+      "does": "Carries one session's game and the next-step pair; the guide runs it in a short burst and the game records which chains broke down for next time.",
+      "cannot": "Cannot hear whether a sound was blended aloud, cannot notice the page being covered, and cannot catch the good moment to stop — all of that waits on the guide."
+    },
+    "continuous": {
+      "unlocks": "Listening for the blend aloud across the day's tries, offering the slow-then-fast model the instant a chain stalls, and keeping difficulty at the edge in the moment rather than one burst a day.",
+      "still_guide_only": "Reading the face before the page is covered and choosing to end on a win stay with the guide however connected the companion is."
+    }
+  },
+  "record_hooks": [
+    {
+      "id": "blend-outcomes",
+      "on": "each game answer",
+      "writes": "which sound-chain was attempted and whether it blended or stayed separate",
+      "event": "answer",
+      "consent": "standing",
+      "visibility": "shared"
+    },
+    {
+      "id": "stopped-on-win",
+      "on": "the guide ends the session early",
+      "writes": "that the session was stopped on a successful moment, in the guide's words",
+      "event": "note",
+      "consent": "guide",
+      "visibility": "guide"
+    },
+    {
+      "id": "led-moment",
+      "on": "the learner teaches the guide at the start",
+      "writes": "that the learner opened by teaching, as a confidence signal, not a score",
+      "event": "note",
+      "consent": "guide",
+      "visibility": "shared"
+    }
+  ]
+}
