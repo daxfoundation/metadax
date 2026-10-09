@@ -139,7 +139,46 @@ account, no automatic publishing.
 Tell the parent, in five lines or fewer: the package is built and validated; open
 it in the player (link above); read the "For you" tab before sitting down; it
 works offline once open; and the one thing only they can do that the page can't.
-Offer the sample-sharing step if they said yes.
+Offer the sample-sharing step if they said yes. Tell them that after they run the
+session you can write a **learning record entry** for it (Step 5).
+
+## Step 5 — Write the learning record entry (after the session, the guide's choice)
+
+A learning record is the thing you write to every session, for years: one dated
+entry per session, append-only, readable by a person and by a program. Offer it
+when the guide comes back having actually run the session — not before. It is the
+guide's choice; skip it if they'd rather not.
+
+Read `templates/RECORD-FORMAT.md`; model the entry on
+`templates/EXAMPLE-record.json`. Ask the guide, in plain words:
+
+- Which game(s) did they play? For each: roughly how many questions were answered,
+  how many right, and what level they reached out of the total. Numbers are rough;
+  "we didn't count" is fine — leave the field out.
+- What slips kept coming up? Write them as **behaviour** the way it looked ("said
+  the sounds but they stayed apart"), never as a label.
+- The learner's own words — something they said or taught you. Nickname only.
+- Your own note: the hardest moment, what didn't work, what you'd like next time,
+  and the one thing only you could do.
+
+Write it to `record-entry.json` as a `metadax-record` v1 object. Use the same
+nickname as the package, `ref` and `session` from the package, and today's date as
+the guide gives it. Set `generated_by` to `"metadax-homeschool skill"`. Then
+validate — this is the privacy gate, and it runs every time, not only at publish:
+
+```
+node tools/check-record.mjs record-entry.json
+```
+
+Fix every **error** before handing the file back (the same rules as always: no
+real name, no location, no named condition, no email/handle/link in free text).
+
+Hand it back in two lines: this file is the session's record; rename it to
+`<ref-lowercased>-s<session>.json` (e.g. `hs-rdg7-s1.json`) and drop it into the
+`record/` folder of a record repo made from the template at
+**https://github.com/daxfoundation/metadax-learner-record** ("Use this template").
+It stays **private** until they choose to publish it — one explicit step (turn on
+GitHub Pages in that repo). Nothing is uploaded by this skill; the entry is a file.
 
 ## The equivalent plain prompt
 

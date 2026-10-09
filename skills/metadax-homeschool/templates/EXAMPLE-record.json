@@ -1,0 +1,31 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s1",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 1,
+    "title": "Sounds That Stick",
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-09",
+  "attempted": [
+    { "game": "Dino Sound Game", "answered": 11, "right": 8 }
+  ],
+  "reached": [
+    { "game": "Dino Sound Game", "level": 2, "of": 3 }
+  ],
+  "mistakes": [
+    { "name": "said the sounds but they stayed apart", "count": 2 },
+    { "name": "guessed from the first sound", "count": 1 }
+  ],
+  "learner_words": "Pip wanted to teach me first: how you tell a Stegosaurus from an Ankylosaurus by the tail, one has spikes and one has a club. Then Pip blended rex and tops all the way through and said the word popped out.",
+  "guide_note": "The hardest moment was the second longer name, where Pip said each sound fine but they would not join and the page got covered. Going straight back to saying the sounds together, slowly then faster, worked better than waiting. Dinosaur names gave a real reason to push the sounds together. Next time I would like shorter bursts and to stop while it is still going well. What only I could do: I saw Pip's face change and stopped a question early, and we ended on a name Pip got right.",
+  "links": {
+    "sample": "https://daxfoundation.org/metadax/samples/#reading-blending-dinosaurs",
+    "package": "",
+    "play": "https://daxfoundation.org/metadax/play/"
+  },
+  "generated_by": "metadax-homeschool skill"
+}
