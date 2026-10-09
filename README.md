@@ -439,6 +439,14 @@ share. Shared samples live in the **[homeschool sample library](https://daxfound
 appears. See [`skills/metadax-homeschool/SKILL.md`](skills/metadax-homeschool/SKILL.md)
 to install it, and [`samples/README.md`](samples/README.md) for the index schema.
 
+**What you can do today:** run the skill on the AI subscription you already have,
+and in one sitting you get a two-page package -- a guide page and a learner page.
+Work through session one, then run session two straight from the next-time note it
+leaves. Save a learning record on your own machine; nothing leaves it unless you
+choose to share. A family with several learners gets one package per learner. Start
+at the [homeschool start page](https://daxfoundation.org/metadax/homeschool/start/),
+and browse the [sample library](https://daxfoundation.org/metadax/samples/).
+
 ## Support this work
 
 Meta DAX is built by directing a fleet of AI agents, and the agents run on paid compute. When the credits run out, the work stops. If you want it to keep going:
