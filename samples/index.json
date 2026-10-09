@@ -35,6 +35,39 @@
       "date": "2026-10-09",
       "licence": "CC BY 4.0",
       "path": "samples/science-mixed-ages-backyard.md"
+    },
+    {
+      "id": "math-fractions-baking-two-levels",
+      "subject": "Math",
+      "age_band": "4-9",
+      "stuck": "the younger thinks a bigger bottom number means a bigger piece; the older can name fractions but not add halves and quarters",
+      "loves": "baking at the kitchen table together",
+      "approach": "one baking activity, two levels: the little one halves and quarters real dough; the older adds the fractions that make up the recipe",
+      "date": "2026-10-09",
+      "licence": "CC BY 4.0",
+      "path": "samples/math-fractions-baking-two-levels.md"
+    },
+    {
+      "id": "writing-argument-hockey-session-two",
+      "subject": "Writing",
+      "age_band": "13-15",
+      "stuck": "can argue a point out loud for ten minutes but freezes when asked to put the same case in a written paragraph",
+      "loves": "hockey — playing it, watching it, arguing about it",
+      "approach": "picks up from session one's next-time note: turn a spoken hockey argument into a paragraph with a claim, two reasons, and a line that answers the other side",
+      "date": "2026-10-09",
+      "licence": "CC BY 4.0",
+      "path": "samples/writing-argument-hockey-session-two.md"
+    },
+    {
+      "id": "math-telling-time-bus-timetable",
+      "subject": "Math",
+      "age_band": "7-9",
+      "stuck": "reads the hour hand but not the minutes; cannot yet work out how long until something happens",
+      "loves": "buses, and the real timetable at the stop near home",
+      "approach": "a real bus timetable on one folded printed page, one question at a time, with the guide's answer key kept separate",
+      "date": "2026-10-09",
+      "licence": "CC BY 4.0",
+      "path": "samples/math-telling-time-bus-timetable.md"
     }
   ]
 }
