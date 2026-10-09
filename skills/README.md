@@ -1,13 +1,20 @@
 # Meta DAX Agent Skills
 
-Two Agent Skills that turn a model client into a git-native Meta DAX client with
-nothing but `git`, `node` and the user's existing GitHub credential.
+Three Agent Skills. Two turn a model client into a git-native Meta DAX client
+with nothing but `git`, `node` and the user's existing GitHub credential; the
+third is a parent-run homeschool client that needs no repo at all.
 
 - **metadax-teacher** -- an adult creates or extends a course into a GitHub
   course repo (ARCHITECT + CONTENT). See `metadax-teacher/SKILL.md`.
 - **metadax-learner** -- an adult learner reads a node, asks recursive
   follow-ups, quizzes, and saves progress to a private learner repo (FOLLOWUP,
   TUTOR, EVALUATE, STEWARD). See `metadax-learner/SKILL.md`.
+- **metadax-homeschool** -- a parent builds a homeschool lesson package for a
+  child on their own AI subscription: it interviews them, builds the package (a
+  guide page and a learner page) from the shared homeschool format, validates it
+  with a bundled zero-dependency checker, and offers a generic shareable sample.
+  Carries its own templates, validator and an equivalent plain prompt. See
+  `metadax-homeschool/SKILL.md`.
 
 Each skill is one `SKILL.md` in the Agent Skills format: YAML frontmatter
 (`name`, `description`) then a Markdown body. The `description` says when to use

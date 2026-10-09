@@ -1,0 +1,508 @@
+{
+  "format": "metadax-package",
+  "v": 1,
+  "ref": "HS-DEMO",
+  "session": 1,
+  "word": "session",
+  "title": "Equal Parts",
+  "lang": "en",
+  "guide": {
+    "tab": "For you",
+    "theme": {
+      "light": {
+        "bg": "#f5f0eb",
+        "surface": "#ffffff",
+        "surface2": "#ede6dc",
+        "text": "#2e2416",
+        "muted": "#6b5a44",
+        "accent": "#7a5230",
+        "accent2": "#3a7a5a",
+        "good": "#2a6a46",
+        "bad": "#8a2020"
+      },
+      "dark": {
+        "bg": "#1e1710",
+        "surface": "#2a2016",
+        "surface2": "#241c12",
+        "text": "#e8dcc8",
+        "muted": "#a08c6e",
+        "accent": "#c08050",
+        "accent2": "#60b888",
+        "good": "#50b870",
+        "bad": "#d05050"
+      }
+    },
+    "sections": [
+      {
+        "id": "upnext",
+        "label": "Up next",
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "Pip leads first",
+            "body": "Pip knows more about building machines in a block game than you do. Start there. Ask Pip to show you how a machine in the game needs equal parts to work. You listen. You ask what happens if the parts aren't equal. That question connects the game to fractions without you saying the word fraction yet.",
+            "prompt": "Ask: Can you show me a machine in your game that needs equal parts? What goes wrong if the parts aren't equal?"
+          },
+          {
+            "type": "h",
+            "text": "Session 1: Equal Parts"
+          },
+          {
+            "type": "p",
+            "text": "This session finds out what Pip already knows and where the gap is. The quiz at the end tells you which kind of mistake Pip makes. You'll get a note after this session that names it."
+          },
+          {
+            "type": "step",
+            "n": 1,
+            "do": "Pip teaches you a machine (10 minutes)",
+            "say": "Show me how that machine works. What does each part do? What happens if one part is bigger or smaller than the others?",
+            "why": "Pip already thinks in equal parts — the game rewards it. Starting there builds confidence before the hard part."
+          },
+          {
+            "type": "step",
+            "n": 2,
+            "do": "Connect to fractions — use the same picture",
+            "say": "In your game, one part out of two equal parts is half. We write that 1/2. The bottom number says how many equal parts there are. The top says how many you have.",
+            "why": "The bottom number name (how many equal parts) lands better when Pip already has a picture of it."
+          },
+          {
+            "type": "step",
+            "n": 3,
+            "do": "Try the warm-up question together",
+            "say": "What is 1/2 + 1/2? Count the parts out loud with me.",
+            "why": "Same bottom numbers first — this should be easy and builds a streak before the hard one."
+          },
+          {
+            "type": "step",
+            "n": 4,
+            "do": "Let Pip try the quiz",
+            "say": "Here are some questions. Give it your best try. Wrong answers are fine — they help us know what to work on next.",
+            "why": "The quiz records which mistake Pip makes so session 2 can target exactly that."
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Don't say denominator — just bottom number.",
+              "If Pip goes quiet after a wrong answer, wait a moment then move on. Don't ask why.",
+              "Don't push past 25 minutes. If the quiz isn't done, stop and pick up next time."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "learned",
+        "label": "What we're finding out",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "This is session 1. We're finding out what Pip already knows and where the gap is. The quiz tells us which mistake comes up most."
+          },
+          {
+            "type": "p",
+            "text": "What we know from the intake:"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Pip is 9 and stuck on adding fractions with different bottom numbers.",
+              "The real wrong answer was 1/2 + 1/3 = 2/5 — that's the add-the-tops-and-bottoms mistake.",
+              "Pip loves block-building games and knows more than you about building machines in them.",
+              "Pip likes games and challenges, hates worksheets, goes quiet when wrong.",
+              "Sessions run about 20 to 30 minutes. Tablet and printed paper."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "After this session we'll know which mistake Pip makes under pressure and whether the game connection lands."
+          },
+          {
+            "type": "faq",
+            "q": "What if the quiz is too easy?",
+            "a": "That's useful information — it means the gap is smaller than the wrong answer suggested. Send the note anyway so we can move faster in session 2.",
+            "more": [
+              {
+                "q": "What if it's too hard?",
+                "a": "Stop after the warm-up level. Note what happened — went quiet, gave up, guessed randomly. That shapes session 2.",
+                "more": [
+                  {
+                    "q": "Should I explain the answers?",
+                    "a": "Not during the quiz. After, you can say what the right answer was and count the parts together. Keep it short."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "steps",
+        "label": "The steps",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "Session 1 — Equal parts (today): find the gap, try the first game, get the next-time note.",
+              "Session 2 — Target the mistake: built from your note. Works on exactly what showed up.",
+              "Where this could go: mixed numbers, comparing fractions, using them in a building plan."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tricky",
+        "label": "When it's tricky",
+        "blocks": [
+          {
+            "type": "ifthen",
+            "if": "Pip adds the bottom numbers (1/2 + 1/3 = 2/5)",
+            "then": "Ask: If you have 2 parts out of 5, can you draw what that looks like? Then draw 2 parts out of 5 and 1 part out of 2. Do those look the same? The picture is the argument."
+          },
+          {
+            "type": "ifthen",
+            "if": "Pip goes quiet after a wrong answer",
+            "then": "Don't wait. Say: Let's look at that one together. Move straight to drawing the parts or counting on fingers. Give something to do."
+          },
+          {
+            "type": "ifthen",
+            "if": "Pip doesn't understand the question",
+            "then": "Read it again more slowly. If still stuck, say: Let's skip this one and come back. Keep going."
+          },
+          {
+            "type": "ifthen",
+            "if": "You don't remember how to find the right bottom number yourself",
+            "then": "Say: I need to think about this one too. Count out loud: how many pieces would fit both halves and thirds? Work it out together."
+          },
+          {
+            "type": "ifthen",
+            "if": "The session runs long",
+            "then": "Stop the quiz before Pip gets tired. A partial quiz that records a few real answers is more useful than a rushed one."
+          },
+          {
+            "type": "human",
+            "title": "What only you can do",
+            "items": [
+              "Notice the moment Pip goes quiet and decide whether to push through or move on.",
+              "Connect the machine example to something specific Pip said — not a generic one.",
+              "Tell when Pip is guessing versus actually thinking.",
+              "Decide when the session is done, even if the quiz isn't."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tellus",
+        "label": "Tell us and ask",
+        "blocks": [
+          {
+            "type": "copy",
+            "title": "Send this note after the session",
+            "text": "Session 1 done. The machine example [landed / didn't connect]. The quiz: Pip [got through the warm-up / stopped at ___]. Most common wrong answer: [2/5 — added tops and bottoms / kept the same bottom number / something else: ___]. Went quiet [once / a few times / not at all]. One thing I noticed: ___."
+          },
+          {
+            "type": "copy",
+            "title": "For your own AI chat",
+            "text": "I'm helping my 9-year-old learn to add fractions with different bottom numbers. Their wrong answer was 1/2 + 1/3 = 2/5 — they added the tops and the bottoms. We used block-building games as the anchor. Today was the first session. Can you help me understand [what I want to know]? Plain words please — we say bottom number, not denominator."
+          },
+          {
+            "type": "check",
+            "id": "s1-guide-check",
+            "title": "How did it go?",
+            "items": [
+              "Pip taught me about the machine",
+              "The equal-parts connection landed",
+              "Pip tried the quiz",
+              "Pip went quiet after a wrong answer",
+              "We finished within 25 minutes"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "learner": {
+    "tab": "For Pip",
+    "theme": {
+      "light": {
+        "bg": "#edf7f0",
+        "surface": "#ffffff",
+        "surface2": "#d4eddc",
+        "text": "#0f2a1a",
+        "muted": "#3a6a50",
+        "accent": "#1e7a46",
+        "accent2": "#c07000",
+        "good": "#1a6a3c",
+        "bad": "#a02020"
+      },
+      "dark": {
+        "bg": "#0d1f14",
+        "surface": "#142a1c",
+        "surface2": "#102218",
+        "text": "#c8e8d4",
+        "muted": "#60a878",
+        "accent": "#40c870",
+        "accent2": "#f0a020",
+        "good": "#40c060",
+        "bad": "#e04040"
+      }
+    },
+    "sections": [
+      {
+        "id": "pip-lead",
+        "label": "You lead first",
+        "blocks": [
+          {
+            "type": "lead",
+            "title": "You're the guide for this part",
+            "body": "You know how machines work in your block game better than the person with you does. Start there. Show them one machine and explain what equal parts means in your game.",
+            "prompt": "Pick a machine you've built. Tell them: this machine needs equal parts to work. Here's what happens when the parts aren't equal."
+          },
+          {
+            "type": "p",
+            "text": "A fraction is just a way to write equal parts. The bottom number is how many equal parts the whole thing is split into. The top number is how many of those parts you have."
+          },
+          {
+            "type": "p",
+            "text": "In your game: if a machine needs 2 equal parts to work, one part is 1 out of 2. We write that 1/2. The bottom number is always the total equal parts."
+          },
+          {
+            "type": "faq",
+            "q": "Why does the bottom number matter so much?",
+            "a": "Because it tells you what the whole thing is split into. You can't add two fractions until both of them use the same-sized parts. That's the whole game.",
+            "more": [
+              {
+                "q": "What if the parts are different sizes?",
+                "a": "Then you have to find a size that fits both. It's like finding a part that works in two different machines — it has to fit both slots.",
+                "more": [
+                  {
+                    "q": "How do you find that size?",
+                    "a": "Count up from both bottom numbers until you hit one they share. For 2 and 3: count 2, 4, 6 and count 3, 6. Six is the first one they share. That's your new bottom number."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pip-quiz",
+        "label": "Fraction Builder",
+        "blocks": [
+          {
+            "type": "quiz",
+            "id": "frac-build-s1",
+            "title": "Fraction Builder",
+            "intro": "Add the fractions. Pick the right answer.",
+            "start": 1,
+            "up_after": 3,
+            "down_after": 1,
+            "mistakes": {
+              "tops-and-bottoms": {
+                "name": "added the tops and the bottoms separately",
+                "guide": "Pip added tops together and bottoms together: 1/2 + 1/3 = 2/5. The bottom numbers need to match before you can add."
+              },
+              "kept-bottom": {
+                "name": "kept one of the bottom numbers unchanged",
+                "guide": "Pip used one of the original bottom numbers instead of finding the one that fits both: for 1/2 + 1/3, wrote 5/2 or 5/3."
+              },
+              "added-bottoms-only": {
+                "name": "added only the bottom numbers and left the tops alone",
+                "guide": "Pip added the bottom numbers but kept the original tops: 1/2 + 1/3 = 1/5."
+              }
+            },
+            "levels": [
+              {
+                "level": 1,
+                "label": "Warm-up",
+                "items": [
+                  {
+                    "q": "What is 1/2 + 1/2?",
+                    "visual": "[ 1 part ] [ 1 part ]\n[  half  ] [  half  ]",
+                    "choices": [
+                      { "text": "2/2 (one whole)", "correct": true, "msg": "One part plus one part, out of two parts total. That's the whole thing." },
+                      { "text": "2/4", "mistake": "tops-and-bottoms", "msg": "You added the top numbers (1+1=2) and the bottom numbers (2+2=4). The bottom number says the size of each part — it doesn't change when you add." },
+                      { "text": "1/4", "mistake": "added-bottoms-only", "msg": "The bottom numbers got added (2+2=4) but the tops stayed at 1. The bottom number is the part size — it doesn't change when you add." }
+                    ],
+                    "hint": "Same bottom number: just add the tops.",
+                    "explain": "1 + 1 = 2 parts out of 2. That's 2/2, which equals 1 whole."
+                  },
+                  {
+                    "q": "What is 1/4 + 1/4?",
+                    "visual": "[ 1 ] [ 1 ]\n[ 4 ] [ 4 ]",
+                    "choices": [
+                      { "text": "2/4 (two out of four parts)", "correct": true, "msg": "Two quarters. That's the same as one half. Good." },
+                      { "text": "2/8", "mistake": "tops-and-bottoms", "msg": "Top: 1+1=2, bottom: 4+4=8. But the bottom number is the part size — quarters don't change size when you add them." },
+                      { "text": "1/8", "mistake": "added-bottoms-only", "msg": "The bottoms got added but the top didn't. Both tops are 1, so they add: 1+1=2. Answer is 2/4." }
+                    ],
+                    "hint": "Same bottom number: 4. Just add the tops.",
+                    "explain": "1 + 1 = 2 tops. Bottom stays 4. Answer: 2/4."
+                  },
+                  {
+                    "q": "What is 2/5 + 1/5?",
+                    "visual": "[ 2 parts ] + [ 1 part ]\n[   5ths  ]   [  5ths  ]",
+                    "choices": [
+                      { "text": "3/5", "correct": true, "msg": "2 + 1 = 3 parts, all fifths. Answer: 3/5." },
+                      { "text": "3/10", "mistake": "tops-and-bottoms", "msg": "The bottom number is the part size. Fifths don't become tenths when you add them." },
+                      { "text": "2/10", "mistake": "added-bottoms-only", "msg": "Top: 2+1=3. Bottom stays 5. Answer: 3/5, not 2/10." }
+                    ],
+                    "hint": "Same bottom: 5. Add the tops: 2+1.",
+                    "explain": "2 + 1 = 3. Bottom stays 5. Answer: 3/5."
+                  },
+                  {
+                    "q": "What is 3/8 + 3/8?",
+                    "visual": "[ 3 ] + [ 3 ]\n[ 8 ]   [ 8 ]",
+                    "choices": [
+                      { "text": "6/8 (six out of eight parts)", "correct": true, "msg": "3 + 3 = 6. Bottom stays 8. That's 6/8, same as 3/4." },
+                      { "text": "6/16", "mistake": "tops-and-bottoms", "msg": "The part size is eighths. Adding them doesn't double the size. Bottom stays 8." },
+                      { "text": "3/16", "mistake": "added-bottoms-only", "msg": "Top: 3+3=6. Bottom stays 8. Answer: 6/8." }
+                    ],
+                    "hint": "Same bottom number: 8. Add the tops.",
+                    "explain": "3 + 3 = 6 tops. Bottom stays 8. Answer: 6/8."
+                  }
+                ]
+              },
+              {
+                "level": 2,
+                "label": "Different parts",
+                "items": [
+                  {
+                    "q": "What is 1/2 + 1/4?",
+                    "visual": "[  half  ] + [ quarter ]\n bottom: 2     bottom: 4",
+                    "choices": [
+                      { "text": "3/4 (three quarters)", "correct": true, "msg": "1/2 = 2/4. Then 2/4 + 1/4 = 3/4." },
+                      { "text": "2/6", "mistake": "tops-and-bottoms", "msg": "Tops: 1+1=2, bottoms: 2+4=6. But the part size can't change. You need to make both use the same-sized parts first." },
+                      { "text": "1/6", "mistake": "added-bottoms-only", "msg": "The bottoms got added (2+4=6) but the tops didn't. You need to convert first: 1/2 = 2/4. Then add." }
+                    ],
+                    "hint": "How many quarters fit in a half? 2. So 1/2 = 2/4.",
+                    "explain": "1/2 = 2/4. Then 2/4 + 1/4 = 3/4."
+                  },
+                  {
+                    "q": "What is 1/3 + 1/6?",
+                    "visual": "[ third ] + [ sixth ]\nbottom: 3    bottom: 6",
+                    "choices": [
+                      { "text": "3/6 (one half)", "correct": true, "msg": "1/3 = 2/6. Then 2/6 + 1/6 = 3/6." },
+                      { "text": "2/9", "mistake": "tops-and-bottoms", "msg": "Tops: 1+1=2, bottoms: 3+6=9. The part size can't change. Convert 1/3 to sixths first." },
+                      { "text": "1/9", "mistake": "added-bottoms-only", "msg": "You need to convert 1/3 to sixths: 1/3 = 2/6. Then 2/6 + 1/6 = 3/6." }
+                    ],
+                    "hint": "How many sixths fit in a third? 2. So 1/3 = 2/6.",
+                    "explain": "1/3 = 2/6. 2/6 + 1/6 = 3/6 = 1/2."
+                  },
+                  {
+                    "q": "What is 1/2 + 1/3?",
+                    "visual": "[  half  ] + [ third ]\nbottom: 2    bottom: 3",
+                    "choices": [
+                      { "text": "5/6 (five sixths)", "correct": true, "msg": "1/2 = 3/6. 1/3 = 2/6. 3/6 + 2/6 = 5/6." },
+                      { "text": "2/5", "mistake": "tops-and-bottoms", "msg": "Tops: 1+1=2, bottoms: 2+3=5. This is the most common mistake. The part size can't change. Find the right bottom number first." },
+                      { "text": "1/5", "mistake": "kept-bottom", "msg": "You added the bottoms (2+3=5) but kept the top at 1. You need to convert both to the same part size first. Count up: 2,4,6 and 3,6. Six is the first shared number." }
+                    ],
+                    "hint": "Find the first number that works for both halves and thirds: 6. Convert and add.",
+                    "explain": "1/2 = 3/6. 1/3 = 2/6. 3 + 2 = 5. Answer: 5/6."
+                  },
+                  {
+                    "q": "What is 1/4 + 1/3?",
+                    "visual": "[ quarter ] + [ third ]\nbottom: 4     bottom: 3",
+                    "choices": [
+                      { "text": "7/12 (seven twelfths)", "correct": true, "msg": "1/4 = 3/12. 1/3 = 4/12. 3 + 4 = 7. Answer: 7/12." },
+                      { "text": "2/7", "mistake": "tops-and-bottoms", "msg": "Tops added (1+1=2), bottoms added (4+3=7). The part size can't change. Find a bottom number both 4 and 3 divide into: 12." },
+                      { "text": "1/7", "mistake": "added-bottoms-only", "msg": "Bottoms: 4+3=7. But the tops need to change too when you convert. 1/4 = 3/12, 1/3 = 4/12. Answer: 7/12." }
+                    ],
+                    "hint": "Count up from 4 and 3 until you find a match: 4,8,12 and 3,6,9,12.",
+                    "explain": "Shared: 12. 1/4 = 3/12. 1/3 = 4/12. 3+4=7. Answer: 7/12."
+                  }
+                ]
+              },
+              {
+                "level": 3,
+                "label": "Builder level",
+                "items": [
+                  {
+                    "q": "What is 2/3 + 1/4?",
+                    "visual": "[ 2 thirds ] + [ 1 quarter ]\nbottom: 3       bottom: 4",
+                    "choices": [
+                      { "text": "11/12", "correct": true, "msg": "2/3 = 8/12. 1/4 = 3/12. 8 + 3 = 11. Answer: 11/12." },
+                      { "text": "3/7", "mistake": "tops-and-bottoms", "msg": "Tops: 2+1=3, bottoms: 3+4=7. The part size has to match before you add. Find 12 first." },
+                      { "text": "2/7", "mistake": "added-bottoms-only", "msg": "You need to convert both. 2/3 = 8/12. 1/4 = 3/12. Then add the tops." }
+                    ],
+                    "hint": "Both 3 and 4 go into 12. Convert both fractions to twelfths.",
+                    "explain": "2/3 = 8/12. 1/4 = 3/12. 8+3=11. Answer: 11/12."
+                  },
+                  {
+                    "q": "What is 3/4 + 1/3?",
+                    "visual": "[ 3 quarters ] + [ 1 third ]\nbottom: 4          bottom: 3",
+                    "choices": [
+                      { "text": "13/12 (more than one whole)", "correct": true, "msg": "3/4 = 9/12. 1/3 = 4/12. 9 + 4 = 13. Answer: 13/12, which is 1 and 1/12." },
+                      { "text": "4/7", "mistake": "tops-and-bottoms", "msg": "Tops: 3+1=4, bottoms: 4+3=7. Convert to twelfths first. The answer here is actually bigger than 1 whole." },
+                      { "text": "3/7", "mistake": "added-bottoms-only", "msg": "3/4 = 9/12. 1/3 = 4/12. 9+4=13. The answer is 13/12, which is more than a whole." }
+                    ],
+                    "hint": "Both 4 and 3 go into 12. The answer might be bigger than 1.",
+                    "explain": "3/4 = 9/12. 1/3 = 4/12. 9+4=13. Answer: 13/12 = 1 and 1/12."
+                  },
+                  {
+                    "q": "What is 1/2 + 2/5?",
+                    "visual": "[  half  ] + [ 2 fifths ]\nbottom: 2    bottom: 5",
+                    "choices": [
+                      { "text": "9/10 (nine tenths)", "correct": true, "msg": "1/2 = 5/10. 2/5 = 4/10. 5+4=9. Answer: 9/10." },
+                      { "text": "3/7", "mistake": "tops-and-bottoms", "msg": "Tops: 1+2=3, bottoms: 2+5=7. Find a number both 2 and 5 go into: 10." },
+                      { "text": "1/7", "mistake": "kept-bottom", "msg": "You need to convert both. 1/2 = 5/10. 2/5 = 4/10. Then add: 5+4=9/10." }
+                    ],
+                    "hint": "Both 2 and 5 go into 10. Convert both fractions.",
+                    "explain": "1/2 = 5/10. 2/5 = 4/10. 5+4=9. Answer: 9/10."
+                  },
+                  {
+                    "q": "What is 5/6 + 1/4?",
+                    "visual": "[ 5 sixths ] + [ 1 quarter ]\nbottom: 6       bottom: 4",
+                    "choices": [
+                      { "text": "13/12 (more than one whole)", "correct": true, "msg": "5/6 = 10/12. 1/4 = 3/12. 10+3=13. Answer: 13/12 = 1 and 1/12." },
+                      { "text": "6/10", "mistake": "tops-and-bottoms", "msg": "Tops: 5+1=6, bottoms: 6+4=10. Find 12 first — both 6 and 4 go into 12." },
+                      { "text": "5/10", "mistake": "kept-bottom", "msg": "You need to convert both to twelfths. 5/6=10/12, 1/4=3/12. 10+3=13/12." }
+                    ],
+                    "hint": "Both 6 and 4 go into 12. The answer is bigger than 1.",
+                    "explain": "5/6 = 10/12. 1/4 = 3/12. 10+3=13. Answer: 13/12."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "faq",
+            "q": "Why can't you just add the bottom numbers?",
+            "a": "Because the bottom number is the part size. If you have halves and thirds and you add the bottoms, you get fifths — but fifths are bigger than either halves or thirds, which doesn't make sense.",
+            "more": [
+              {
+                "q": "What does the bottom number actually mean?",
+                "a": "It's how many equal parts the whole thing is split into. Halves means 2 equal parts. Thirds means 3. You can only add parts that are the same size.",
+                "more": [
+                  {
+                    "q": "What if the whole is something different, like a machine with 8 slots?",
+                    "a": "Same idea. The bottom number is whatever you split the whole into. If your machine has 8 slots and you fill 3, that's 3/8. The math works the same way."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "next": {
+    "ticks": [
+      "Pip taught me about the machine",
+      "The equal-parts connection landed",
+      "Pip tried the quiz",
+      "Pip went quiet after a wrong answer",
+      "We finished within 25 minutes"
+    ],
+    "ask": [
+      "Hardest moment",
+      "Where Pip led",
+      "What didn't work",
+      "What you'd like next time"
+    ]
+  },
+  "build": {
+    "from": ["intake"],
+    "notes": "HS-DEMO session 1. Built from intake only. Diagnostic session: quiz tracks which of 3 mistakes appears most (tops-and-bottoms, kept-bottom, added-bottoms-only). Guide learned section labelled What we're finding out per FORMAT section 2. Human card in tricky section. Lead block on both sides (Pip teaches machine / guide side asks about machine). Two-level FAQ on both sides. Parent voice: plain, step by step, one why per step. Arithmetic checked: 1/2+1/3=5/6 (3/6+2/6=5/6). 1/4+1/3=7/12 (3/12+4/12=7/12). 2/3+1/4=11/12 (8/12+3/12=11/12). 3/4+1/3=13/12 (9/12+4/12=13/12). 1/2+2/5=9/10 (5/10+4/10=9/10). 5/6+1/4=13/12 (10/12+3/12=13/12). All correct."
+  }
+}

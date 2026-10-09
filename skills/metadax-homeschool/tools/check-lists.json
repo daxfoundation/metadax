@@ -1,0 +1,43 @@
+{
+  "titles": [
+    "Mr", "Mrs", "Ms", "Miss", "Dr", "Prof", "Professor",
+    "Sir", "Madam", "Mme", "Mlle", "Monsieur", "Madame"
+  ],
+  "ai_words": [
+    "AI", "chatbot", "chat bot", "assistant app",
+    "ask the computer", "prompt"
+  ],
+  "vendor_words": [
+    "OpenAI", "ChatGPT", "GPT-4", "GPT-3", "GPT",
+    "Claude", "Anthropic",
+    "Gemini", "Bard", "Google AI",
+    "Copilot", "Bing Chat",
+    "Meta AI", "Llama",
+    "Mistral", "Perplexity",
+    "Grok", "xAI",
+    "Cohere", "Command",
+    "Stability AI", "Midjourney", "DALL-E", "Sora",
+    "Alexa", "Siri", "Cortana"
+  ],
+  "brands": [
+    "Shoppers Drug Mart", "Shoppers", "Rexall", "London Drugs",
+    "Jean Coutu", "Pharmaprix", "Pharmasave",
+    "CVS", "Walgreens", "Duane Reade", "Rite Aid",
+    "Loblaws", "Loblaw", "Sobeys", "Metro", "IGA",
+    "No Frills", "Food Basics", "Superstore", "FreshCo",
+    "Provigo", "Maxi", "Walmart", "Costco",
+    "Kroger", "Safeway", "Whole Foods", "Trader Joe", "Target",
+    "Canada Post", "Purolator", "FedEx", "UPS", "DHL",
+    "Canpar", "Intelcom", "Postes Canada", "USPS",
+    "WhatsApp", "Messenger", "Telegram", "Signal",
+    "Snapchat", "Instagram", "WeChat", "Line", "Viber",
+    "iMessage", "Discord",
+    "App Store", "Google Play", "Play Store",
+    "Microsoft Store", "Steam",
+    "Vanilla Visa", "Vanilla Mastercard",
+    "iTunes", "Amazon", "eBay",
+    "Tim Hortons", "Starbucks", "McDonald", "McDonalds",
+    "Apple", "Google", "Microsoft", "Samsung", "Netflix",
+    "Facebook", "Twitter", "TikTok", "YouTube", "Spotify"
+  ]
+}

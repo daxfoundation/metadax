@@ -1,0 +1,39 @@
+{
+  "format": "metadax-samples",
+  "v": 1,
+  "samples": [
+    {
+      "id": "math-carrying-marble-runs",
+      "subject": "Math",
+      "age_band": "7-9",
+      "stuck": "freezes before trying; writes column totals side by side instead of carrying",
+      "loves": "building marble runs and LEGO",
+      "approach": "models carrying as marbles overflowing from the ones track into the tens track",
+      "date": "2026-10-09",
+      "licence": "CC BY 4.0",
+      "path": "samples/math-carrying-marble-runs.md"
+    },
+    {
+      "id": "reading-blending-dinosaurs",
+      "subject": "Reading",
+      "age_band": "7-9",
+      "stuck": "says each letter sound correctly but cannot push the sounds together into a word",
+      "loves": "dinosaurs",
+      "approach": "every blending exercise uses chunks from dinosaur names, starting with short names and building to five-chunk names like Velociraptor",
+      "date": "2026-10-09",
+      "licence": "CC BY 4.0",
+      "path": "samples/reading-blending-dinosaurs.md"
+    },
+    {
+      "id": "science-mixed-ages-backyard",
+      "subject": "Science",
+      "age_band": "4-9",
+      "stuck": "keeping mixed ages engaged together without the oldest waiting and the youngest drifting",
+      "loves": "bugs, the backyard, splashing water",
+      "approach": "the oldest reads and teaches; the youngest two do and touch; short bursts with a hands-on reset between each part",
+      "date": "2026-10-09",
+      "licence": "CC BY 4.0",
+      "path": "samples/science-mixed-ages-backyard.md"
+    }
+  ]
+}

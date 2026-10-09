@@ -421,6 +421,24 @@ So, being completely transparent: if you would like to [buy me a coffee](https:/
 - `docs/PRIVACY.md` -- pseudonyms only; no email, name, school or diagnosis anywhere; private nodes never leave the learner repo; adults only in Phase 1 clients; no telemetry, no server.
 - `docs/ACCURACY.md` -- the accuracy commitments: no result without a recorded run, reserved fields described as reserved, no affiliation implied, models named by vendor outside eval results.
 
+## Homeschooling? Start here
+
+If you teach your own child, you can build a lesson package yourself, on the AI
+subscription you already pay for, at no cost to this project. The
+**[`metadax-homeschool` skill](skills/metadax-homeschool/)** (and the equivalent
+[plain prompt](skills/metadax-homeschool/prompt.md) for any capable model)
+interviews you in plain language -- your child's age, the subject, where they get
+stuck described as behaviour, what they love, what you've tried, the minutes you
+have -- then builds a package from the shared homeschool format: a private page
+for you as the guide and a page for your child, with an adaptive game built
+through whatever they love. It describes behaviour and never names a diagnosis,
+says plainly when to consider seeking an evaluation, and carries "a way, never the
+way" on every page. It also offers a generic, nothing-identifying version you can
+share. Shared samples live in the **[homeschool sample library](https://daxfoundation.org/metadax/samples/)**
+(source in [`samples/`](samples/)); each one is reviewed by a person before it
+appears. See [`skills/metadax-homeschool/SKILL.md`](skills/metadax-homeschool/SKILL.md)
+to install it, and [`samples/README.md`](samples/README.md) for the index schema.
+
 ## Support this work
 
 Meta DAX is built by directing a fleet of AI agents, and the agents run on paid compute. When the credits run out, the work stops. If you want it to keep going:

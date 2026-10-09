@@ -1,0 +1,43 @@
+name: Share a sample
+description: Offer a generic homeschool sample (made-up names, nothing identifying) for the public library. A human reviews before anything is published.
+title: "[sample] <subject> — <short topic>"
+labels: ["sample", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing. The `metadax-homeschool` skill pre-fills this for you:
+        paste the `sample.md` and `entry.json` it produced into the two boxes below.
+
+        **Before you post, please check:** made-up names only, no real name, school,
+        town, birth date, email, phone or photo; no diagnosis or condition named
+        anywhere (behaviour only); and the "a way, never the way" line is present.
+        A reviewer publishes it into `samples/` and adds the index entry; there is no
+        upload and no account.
+  - type: textarea
+    id: sample_md
+    attributes:
+      label: sample.md
+      description: The full generic sample markdown, including its frontmatter.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: entry_json
+    attributes:
+      label: entry.json
+      description: The one index entry (the nine fields) as JSON.
+      render: json
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm
+      options:
+        - label: Made-up names only; nothing identifying anywhere.
+          required: true
+        - label: No diagnosis or condition is named; the stuck point is described as behaviour.
+          required: true
+        - label: I am happy for this to be published under the licence in the frontmatter (default CC BY 4.0).
+          required: true
