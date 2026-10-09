@@ -61,4 +61,24 @@ publishes. No upload, no account.
 
 Step 4 — Hand back in five lines or fewer: the package is built and checked; open
 it in the player (link above); read the "For you" tab first; it works offline once
-open; and the one thing only they can do that the page can't.
+open; and the one thing only they can do that the page can't. Mention that after
+they run the session you can write a learning record entry for it (Step 5).
+
+Step 5 — After the guide has actually run the session (not before; their choice),
+write one learning record entry following RECORD-FORMAT.md, modelled on
+EXAMPLE-record.json. Ask in plain words: which game(s) they played and, roughly,
+how many questions were answered, how many right, and the level reached out of the
+total (rough is fine; leave a field out if they didn't count); which slips kept
+coming up, written as behaviour not a label; the learner's own words (nickname
+only); and the guide's note — the hardest moment, what didn't work, what they'd
+like next time, and the one thing only they could do. Output a `metadax-record` v1
+object as `record-entry.json`: same nickname, `ref` and `session` from the
+package, today's date as the guide gives it, `generated_by` "metadax-homeschool
+skill". It must carry no real name, no location, no named condition, and no
+email/handle/link in free text (links go only in the optional `links` block). If
+the parent has Node they can run `node tools/check-record.mjs record-entry.json`.
+Hand it back in two lines: rename it `<ref-lowercased>-s<session>.json` and drop it
+into the `record/` folder of a repo made from the template at
+https://github.com/daxfoundation/metadax-learner-record ("Use this template"). It
+stays private until they choose to publish it — one explicit step (turn on GitHub
+Pages). Nothing is uploaded; the entry is a file.

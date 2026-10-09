@@ -22,7 +22,8 @@
       "approach": "every blending exercise uses chunks from dinosaur names, starting with short names and building to five-chunk names like Velociraptor",
       "date": "2026-10-09",
       "licence": "CC BY 4.0",
-      "path": "samples/reading-blending-dinosaurs.md"
+      "path": "samples/reading-blending-dinosaurs.md",
+      "record": "https://daxfoundation.github.io/metadax-learner-record/"
     },
     {
       "id": "science-mixed-ages-backyard",

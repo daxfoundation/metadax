@@ -78,6 +78,15 @@ for (let i = 0; i < samples.length; i++) {
     if (m) err(at + ": field " + f + ' names a diagnosis/condition ("' + m[1] + '")');
     if (/https?:\/\/|www\.|@/.test(v)) err(at + ": field " + f + " looks like a link or handle");
   }
+  // Optional: a learner may link a published learning record for this sample.
+  // Must be an https URL on daxfoundation.org or GitHub (the only places the
+  // project publishes a record). Empty/absent is the norm — most samples carry none.
+  if (s.record !== undefined && String(s.record).trim() !== "") {
+    const r = String(s.record);
+    if (!/^https:\/\//.test(r)) err(at + ": record must be an https URL");
+    else if (!/^https:\/\/([a-z0-9-]+\.)*(daxfoundation\.org|github\.io|github\.com)\//i.test(r))
+      err(at + ": record must be on daxfoundation.org or GitHub Pages");
+  }
 }
 
 // Every samples/*.md must have an index entry.
