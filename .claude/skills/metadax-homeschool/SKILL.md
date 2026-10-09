@@ -67,6 +67,22 @@ short questions. Do not ask for anything identifying. The questions mirror
 If the parent pastes an email, phone number, link or an `@handle`, tell them what
 it looks like and leave it out of everything you build.
 
+### A returning family — skip what you already asked
+
+If this family already has a `family-progress.json` from a past session, read it
+first (`templates/FAMILY-PROGRESS.md`) and do **not** re-interview. The two quick
+paths reuse the answers already given:
+
+- **A second learner in the same family (the sibling quick path).** Reuse the
+  household answers — language, region, how the guide likes things explained — and
+  ask only the learner-specific questions: the nickname, the age, what they love,
+  something they can teach you, and where they get stuck. Add the new learner to
+  the file and build their session 1.
+- **The same learner on a new subject.** Reuse the whole learner block too; only
+  the subject block is new (subject, where they get stuck, a real wrong answer).
+
+The file lives on the guide's machine and is never uploaded.
+
 ## Step 2 — Build the family package
 
 Build one `metadax-package` v1 JSON exactly to `templates/PACKAGE-FORMAT.md`.
@@ -139,7 +155,72 @@ account, no automatic publishing.
 Tell the parent, in five lines or fewer: the package is built and validated; open
 it in the player (link above); read the "For you" tab before sitting down; it
 works offline once open; and the one thing only they can do that the page can't.
-Offer the sample-sharing step if they said yes.
+Offer the sample-sharing step if they said yes. Tell them that after they run the
+session you can write a **learning record entry** for it (Step 5).
+
+## Step 5 — Write the learning record entry (after the session, the guide's choice)
+
+A learning record is the thing you write to every session, for years: one dated
+entry per session, append-only, readable by a person and by a program. Offer it
+when the guide comes back having actually run the session — not before. It is the
+guide's choice; skip it if they'd rather not.
+
+Read `templates/RECORD-FORMAT.md`; model the entry on
+`templates/EXAMPLE-record.json`. Ask the guide, in plain words:
+
+- Which game(s) did they play? For each: roughly how many questions were answered,
+  how many right, and what level they reached out of the total. Numbers are rough;
+  "we didn't count" is fine — leave the field out.
+- What slips kept coming up? Write them as **behaviour** the way it looked ("said
+  the sounds but they stayed apart"), never as a label.
+- The learner's own words — something they said or taught you. Nickname only.
+- Your own note: the hardest moment, what didn't work, what you'd like next time,
+  and the one thing only you could do.
+
+Write it to `record-entry.json` as a `metadax-record` v1 object. Use the same
+nickname as the package, `ref` and `session` from the package, and today's date as
+the guide gives it. Set `generated_by` to `"metadax-homeschool skill"`. Then
+validate — this is the privacy gate, and it runs every time, not only at publish:
+
+```
+node tools/check-record.mjs record-entry.json
+```
+
+Fix every **error** before handing the file back (the same rules as always: no
+real name, no location, no named condition, no email/handle/link in free text).
+
+Hand it back in two lines: this file is the session's record; rename it to
+`<ref-lowercased>-s<session>.json` (e.g. `hs-demo-s1.json`) and drop it into the
+`record/` folder of a record repo made from the template at
+**https://github.com/daxfoundation/metadax-learner-record** ("Use this template").
+It stays **private** until they choose to publish it — one explicit step (turn on
+GitHub Pages in that repo). Nothing is uploaded by this skill; the entry is a file.
+
+## Step 6 — The next session (from the next-time note)
+
+When the guide comes back with the next-time note the learner page left — pasted
+in, or saved as a file they point you at — build the **next** session for the
+same learner and the same subject. Read `templates/NEXT-TIME-NOTE.md` for the
+note's shape and how to read it, and `templates/FAMILY-PROGRESS.md` for where the
+session is recorded.
+
+- **Keep what worked.** Open the next session with a callback to what landed in
+  the note; do not reset.
+- **Move one step on the stuck spot.** Change what the note says didn't land —
+  one step on, never a leap — and never repeat a thing it says already failed.
+- **Swap the game theme only if they tired of it.** If the note says the learner
+  got bored of the thing the games were built through, pick a fresh anchor and
+  rebuild the examples through it; otherwise keep the one that was landing.
+- **Pace it to how it ended.** Let "what only you could do" and any "we stopped
+  early" cue set the length and tone.
+
+Then record the session in `family-progress.json` (`templates/FAMILY-PROGRESS.md`):
+append the session record — the note kept **verbatim**, plus what was done, what
+worked, what didn't, the slips the game surfaced, how it stopped, and any open
+questions — and bump the track's `next_session`. Build session N+1 to
+`templates/PACKAGE-FORMAT.md` exactly as in Step 2, and validate it the same way.
+The progress file is private and is never uploaded; a single-session package is
+still valid.
 
 ## The equivalent plain prompt
 
