@@ -41,7 +41,7 @@
   }
 
   // ── Block / section helpers ───────────────────────────────────────────────
-  var GAME_TYPES = { quiz: 1, sort: 1, sequence: 1, build: 1 };
+  var GAME_TYPES = { quiz: 1, sort: 1, sequence: 1, build: 1, "spoken-sound": 1 };
   var GUIDE_ORDER = ["upnext", "learned", "steps", "tricky", "tellus"];
   // Canonical age bands (shared with the sample index). Mixed-age families use
   // these on learners[] and on per-item for_age tags.
@@ -136,6 +136,25 @@
                 errors.push({ path: sp2, msg: "choice has neither correct:true nor a mistake id" });
               }
             }
+          }
+        } else if (b.type === "spoken-sound") {
+          // Guide says the prompt aloud; the learner taps the matching option.
+          // The page speaks nothing; the prompt is printed for the guide only.
+          var ssp = sp + ".spoken-sound[" + (b.id != null ? b.id : "?") + "]";
+          if (typeof b.prompt_for_guide !== "string" || !b.prompt_for_guide.trim()) {
+            errors.push({ path: ssp, msg: "spoken-sound needs a prompt_for_guide string" });
+          }
+          var opts = b.options || [];
+          if (!Array.isArray(opts) || opts.length < 2) {
+            errors.push({ path: ssp, msg: "spoken-sound needs an options array of at least two choices" });
+          }
+          if (b.answer === undefined || b.answer === null || b.answer === "") {
+            errors.push({ path: ssp, msg: "spoken-sound needs an answer" });
+          } else if (Array.isArray(opts) && opts.indexOf(b.answer) === -1) {
+            errors.push({ path: ssp, msg: "spoken-sound answer is not one of the options" });
+          }
+          if (typeof b.why !== "string" || !b.why.trim()) {
+            errors.push({ path: ssp, msg: "spoken-sound needs a why line for the guide key" });
           }
         }
       }
@@ -315,6 +334,11 @@
             if ((lvls[lvi].items || []).length < 4) {
               warnings.push({ path: asLabel + ".quiz[" + ab.id + "].level[" + lvls[lvi].level + "]", msg: "fewer than 4 items" });
             }
+          }
+        } else if (ab.type === "spoken-sound") {
+          var ssn = (ab.options || []).length;
+          if (ssn < 3 || ssn > 4) {
+            warnings.push({ path: asLabel + ".spoken-sound[" + (ab.id != null ? ab.id : "?") + "]", msg: "options should number 3-4" });
           }
         }
       }

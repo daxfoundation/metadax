@@ -70,6 +70,7 @@ Inline in any string: `**bold**`, `*italic*`. No HTML, no links, no emoji.
 | `sort` | id, title, intro?, bins:[{id,label}], items:[{text,bin,why}] | game: put each item in a bin |
 | `sequence` | id, title, intro?, steps:[{prompt, choices:[CHOICE]}] | game: decisions in order |
 | `build` | id, title, intro?, parts:[{label, options[], best, why}] | game: pick a part per slot, see the why |
+| `spoken-sound` | id, title?, prompt_for_guide, options[], answer, why | game (phonics / early reading): the guide reads `prompt_for_guide` aloud — the page speaks nothing — and the learner taps the matching option among 3-4 (letters, digraphs, or picture-words). `answer` is the matching option; `why` is one line for the guide key. Same streak/miss adaptivity as the other games, and additive: a package without it stays valid. |
 
 CHOICE: `{ "text", "correct": true, "msg" }` **or** `{ "text", "mistake": "m-id", "msg" }`.
 Every wrong choice names a defined mistake.
@@ -88,6 +89,19 @@ Every wrong choice names a defined mistake.
 The player starts at `start`, goes up a level after `up_after` correct in a row,
 down after `down_after` misses in a row (never below level 1), and does not repeat
 an item until a level runs out. Aim for 3+ levels and 4+ items per level.
+
+`spoken-sound` (phonics / early reading):
+
+```json
+{ "type": "spoken-sound", "id": "digraph-sh", "title": "Say and find",
+  "prompt_for_guide": "Say the sound at the start of *ship* — /sh/.",
+  "options": ["sh", "ch", "th", "wh"], "answer": "sh",
+  "why": "/sh/ is one sound written with two letters (a digraph)." }
+```
+
+The guide reads `prompt_for_guide` aloud; nothing is spoken by the device. The
+learner taps (or, on paper, circles) the matching option. The printed learner page
+shows the options with no answer; the answer and `why` go to the guide key.
 
 ## Mixed-age households (optional)
 
@@ -123,8 +137,9 @@ copy; nothing leaves the device unless they copy it.
 ## What the checker enforces (errors — package does not go out)
 
 Wrong `format`/`v`; guide sections missing or out of order; no game on the learner
-side; a game choice that is neither correct nor tied to a defined mistake; no
-`human` on the guide side; no `lead` on either side; no two-level `faq` on either
+side; a game choice that is neither correct nor tied to a defined mistake; a
+`spoken-sound` missing its `prompt_for_guide`, `options`, `answer` (which must be
+one of the options) or `why`; no `human` on the guide side; no `lead` on either side; no two-level `faq` on either
 side; emoji anywhere; links or bare domains anywhere; a title before a name; the
 word "role"/"rôle"; an AI word on the learner side; any AI-vendor word anywhere; a
 `copy` block on the learner side; text contrast under 4.5:1 in either theme; and,
