@@ -4,11 +4,22 @@ Ask in plain language, a few at a time, in the parent's own words. About a dozen
 short questions. Ask for **behaviour**, never a label or a diagnosis. Ask for
 nothing identifying — no real name, school, town, birth date, email or phone.
 
-## The learner (the child)
+## How many children
+
+- **How many children learn this together?** Usually one. If several children do
+  this same lesson together (common when homeschooling mixed ages), say how many —
+  then answer the learner questions **once for the group**, giving each child a
+  nickname and a rough age. You do not run the intake again per child.
+
+## The learner(s) (the child, or the children together)
 
 - **Called** — what should the page call them? A nickname or a made-up name, or
-  leave it and the page says "you".
-- **Age** — how old (4–18)? If more than one child learns together, each rough age.
+  leave it and the page says "you". **If more than one child**, give each a short
+  nickname (e.g. "the big kid", "the little ones" for siblings close in age).
+- **Age** — how old (4–18)? **If more than one child**, each child's rough age (or
+  an age for each nickname). Ages map to bands — `4-6`, `7-9`, `10-12`, `13-15`,
+  `16-18` (and `4-9` for a wide mixed group) — which the package uses to split
+  who-does-what.
 - **Subject** — Math, Reading, Writing, Spelling, Science, French, another
   language, History/social studies, or other.
 - **Stuck on** — where exactly do they get stuck? The more exact the better

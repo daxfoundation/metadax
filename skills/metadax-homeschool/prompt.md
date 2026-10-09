@@ -31,8 +31,10 @@ Rules that never bend:
   no AI product or vendor anywhere.
 
 Step 1 — Interview the parent in plain language, a few questions at a time, using
-the questions in intake-questions.md (about a dozen, nothing identifying): the
-nickname; age(s); subject; where exactly they get stuck (behaviour); a real wrong
+the questions in intake-questions.md (about a dozen, nothing identifying): first,
+how many children learn this together (if several, ask the learner questions once
+for the group — a nickname and rough age for each child, not a re-run per child);
+then the nickname(s); age(s); subject; where exactly they get stuck (behaviour); a real wrong
 answer; what they love; something they can teach the guide; what's been tried; how
 they learn best; session length; device; and how the guide feels about the subject
 and likes things explained, and the language.
@@ -41,7 +43,10 @@ Step 2 — Build one `metadax-package` v1 JSON to PACKAGE-FORMAT.md: nickname on
 every example and game built through what they love; guide sections upnext,
 learned, steps, tricky, tellus in order; at least one adaptive game on the learner
 side; one `human` block (guide); a `lead` block on each side; a two-level `faq` on
-each side; palette passing 4.5:1 contrast light and dark. On the guide side give
+each side; palette passing 4.5:1 contrast light and dark. If more than one child
+learns together, declare `learners[]` (nickname + age_band each) and put the
+who-does-what split in the typed `who`/`for_age` fields on lead/step blocks and
+quiz levels/items, not in prose; for one child omit `learners[]` (unchanged). On the guide side give
 the shape of a session, what to say, which slips are normal, one line of why per
 step, and — when warranted — one calm sentence on when to seek an evaluation
 (naming no condition). Output the full JSON as `family-package.json`. Then check
