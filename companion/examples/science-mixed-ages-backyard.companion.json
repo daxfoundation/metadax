@@ -1,0 +1,131 @@
+{
+  "format": "metadax-companion",
+  "v": 1,
+  "ref": "HS-SCM5",
+  "session": 1,
+  "pairs_with": {
+    "package_format": "metadax-package",
+    "sample_id": "science-mixed-ages-backyard"
+  },
+  "next_step": {
+    "guide": "Give the oldest the reading-and-teaching part and the youngest two the touch-and-do part at the same time, with a hands-on reset between each short burst.",
+    "learner": "The oldest reads one fact aloud and shows the youngest; the youngest two find or touch the thing outside and say what they notice."
+  },
+  "reach": {
+    "alone": "The oldest reads a short passage and explains it; the youngest two observe and describe what they see and feel outside.",
+    "with_help": "The oldest teaches a fact to the youngest and the youngest act it out, with the guide setting the turns so no one waits or drifts.",
+    "not_yet": "The youngest holding a multi-step written task alone, or the oldest sustaining the group without the guide's turn-setting; keep both for later."
+  },
+  "signals": [
+    {
+      "id": "youngest-drifting",
+      "watch": "the youngest losing the thread",
+      "looks_like": "wandering off, poking at something unrelated, going quiet during the reading part",
+      "not": "not an attention problem; it is a sign the reading part ran longer than a young learner's burst",
+      "then": { "action": "surface_to_guide", "detail": "The guide triggers the hands-on reset so the youngest has something to touch again." }
+    },
+    {
+      "id": "oldest-waiting",
+      "watch": "the oldest stalling while the youngest catch up",
+      "looks_like": "finished and idle, drifting or taking over the youngest's task",
+      "not": "not boredom to scold; it is the oldest having outrun the shared pace",
+      "then": { "action": "offer", "detail": "Offer the oldest a teach-it-forward step so the wait becomes teaching, never a label about patience." }
+    },
+    {
+      "id": "led-well-across-ages",
+      "watch": "the oldest teaching a fact that lands",
+      "looks_like": "the youngest repeat or act out what the oldest just showed them",
+      "not": "not a ranking of the children; it is the swinging-lead working for this group right now",
+      "then": { "action": "log_only", "detail": "Note the teach-forward that worked so the guide can reuse that shape next burst." }
+    }
+  ],
+  "interventions": {
+    "companion_may": [
+      {
+        "offer": "Suggest the next short burst and the hands-on reset that fits it, split into a read-and-teach part and a touch-and-do part.",
+        "when": "a burst ends or the youngest start to drift",
+        "ceiling": "Suggest the shape; never assign a child to a task or decide who is ready for what."
+      },
+      {
+        "offer": "Give the oldest a teach-it-forward prompt when they finish ahead.",
+        "when": "the oldest is waiting with nothing to do",
+        "ceiling": "Offer the prompt; whether the oldest teaches or rests is the guide's and the child's call."
+      }
+    ],
+    "guide_only": [
+      {
+        "reserved": "Reading the group's dynamic — who needs the next turn, who is about to drift — and setting the turns.",
+        "why": "The pace of a mixed-age group lives in faces and bodies in the yard, which only the guide sees."
+      },
+      {
+        "reserved": "Matching each part to the child in front of them rather than to an age.",
+        "why": "Which child can do what today is a judgement the guide makes, not a split a companion can assume."
+      },
+      {
+        "reserved": "Deciding when the whole group has had enough and ending the lesson.",
+        "why": "One lesson for three children ends when the guide sees it should, not on a shared clock."
+      }
+    ]
+  },
+  "techniques": [
+    {
+      "id": "teach-forward-reset",
+      "move": "Split each burst into a read-and-teach part for the oldest and a touch-and-do part for the youngest, with a short hands-on reset between, so the oldest's waiting becomes teaching and the youngest always have something to touch.",
+      "concept": "keeping mixed ages engaged in one science lesson together",
+      "stuck_signature": "the oldest finishes and waits while the youngest drift during the reading part",
+      "provenance": "guide",
+      "status": "pending_review",
+      "one_way": true
+    }
+  ],
+  "services": [
+    {
+      "capability": "read-aloud of short text",
+      "for": "letting the youngest hear a fact when the oldest is busy with their own part",
+      "boundary": "Read only short passages the guide chose; never lead the children or invite them to talk to it.",
+      "offline_fallback": "The oldest reads aloud to the youngest, which is the point of the lesson anyway."
+    },
+    {
+      "capability": "local-example lookup",
+      "for": "suggesting a backyard creature or plant that is actually local, so examples are real where the family is",
+      "boundary": "Return a capability-level suggestion to the guide; never geolocate the family or store where they are."
+    }
+  ],
+  "cadence": {
+    "authored_for": "bundle",
+    "bundle": {
+      "does": "Carries one shared lesson split into bursts with resets, and the next-step pair; the guide runs it in the yard and the game records what the group did.",
+      "cannot": "Cannot see the youngest drift or the oldest wait in real time, cannot match a part to the child in front of the guide, and cannot read when the whole group is done — all of that is the guide's."
+    },
+    "continuous": {
+      "unlocks": "Noticing drift or waiting as it starts and offering the next burst or a teach-forward step in the moment; across days, following each child's own reach instead of one shared level.",
+      "still_guide_only": "Reading the group dynamic and setting the turns stay with the guide, however connected the companion is — this is the sharpest thing only a person can do here."
+    }
+  },
+  "record_hooks": [
+    {
+      "id": "burst-outcomes",
+      "on": "each burst ends",
+      "writes": "what the group did in the burst and whether the youngest stayed with it, as behaviour",
+      "event": "practice",
+      "consent": "standing",
+      "visibility": "shared"
+    },
+    {
+      "id": "teach-forward-worked",
+      "on": "the oldest teaches a fact the youngest act out",
+      "writes": "that a teach-forward landed, as a confidence signal for the group, not a ranking",
+      "event": "note",
+      "consent": "guide",
+      "visibility": "shared"
+    },
+    {
+      "id": "lesson-summary",
+      "on": "the lesson ends",
+      "writes": "a short summary of which parts held the group and where it frayed, in the guide's words",
+      "event": "summary",
+      "consent": "guide",
+      "visibility": "shared"
+    }
+  ]
+}

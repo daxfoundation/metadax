@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.1/companion.schema.json",
+  "title": "metadax.companion/0.1",
+  "description": "companion.json — the machine-readable sidecar a package carries for a cognitive companion that is connected continuously, not downloaded once a day. It never carries the learner's content (that is the package); it carries what a companion needs to be the hands and ears of the system around that content: the single next step, the reach, the behaviours to watch for (never diagnoses), the line between what a companion may offer and what only the human guide may do, the guide's reusable moves, the external capabilities that could bolster this learning, how behaviour changes by connectivity, and what gets written to the learning record and when. Readers ignore unknown fields; writers never reuse a field for a new meaning.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "v", "ref", "pairs_with", "next_step", "reach", "signals", "interventions", "cadence", "record_hooks"],
+  "properties": {
+    "format": { "const": "metadax-companion" },
+    "v": { "const": 1 },
+    "ref": {
+      "type": "string",
+      "pattern": "^HS-[ABCDEFGHJKMNPQRSTUVWXYZ23456789]{4}$",
+      "description": "The family ref from the intake note. The only link between a sidecar and a family; carries no identity."
+    },
+    "session": { "type": "integer", "minimum": 1 },
+    "pairs_with": {
+      "type": "object",
+      "description": "Which package this sidecar rides beside. A sidecar is never read alone; it points at the package it annotates.",
+      "additionalProperties": false,
+      "required": ["package_format", "sample_id"],
+      "properties": {
+        "package_format": { "const": "metadax-package" },
+        "sample_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "description": "The public sample id this example mirrors, or the private package's working id." }
+      }
+    },
+    "next_step": {
+      "type": "object",
+      "description": "The single next thing — one for the guide, one for the learner. Deliberately singular: a companion that is on all day must still point at one thing, or it becomes noise.",
+      "additionalProperties": false,
+      "required": ["guide", "learner"],
+      "properties": {
+        "guide": { "type": "string", "minLength": 1, "maxLength": 300, "description": "The one next move for the human guide, in their own words, behaviour not label." },
+        "learner": { "type": "string", "minLength": 1, "maxLength": 300, "description": "The one next thing for the learner, framed as a doing, never a diagnosis of what they lack." }
+      }
+    },
+    "reach": {
+      "type": "object",
+      "description": "The edge of the learner's independence — behaviourally, never as a level or a label. What they do unaided, what sits just past it (the place a companion or guide should keep them), and what is out of reach today so nothing pushes there.",
+      "additionalProperties": false,
+      "required": ["alone", "with_help"],
+      "properties": {
+        "alone": { "type": "string", "minLength": 1, "maxLength": 300, "description": "What the learner can already do without help, stated as an observed behaviour." },
+        "with_help": { "type": "string", "minLength": 1, "maxLength": 300, "description": "What is just past that — reachable today with a guide or companion alongside. The target band." },
+        "not_yet": { "type": "string", "maxLength": 300, "description": "What is out of reach today, so the companion does not steer the learner into it. Optional; behaviour, not a ceiling on the person." }
+      }
+    },
+    "signals": {
+      "type": "array",
+      "description": "What the companion watches for during the day. Every signal is a behaviour, and every signal states, as a required field, the diagnosis it is NOT — so the ban on diagnosing is a shape in the data, not a comment. Seeing a signal routes to an offer or to the guide; it never produces a label.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["watch", "looks_like", "not", "then"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "watch": { "type": "string", "minLength": 1, "maxLength": 200, "description": "The behaviour to notice, named plainly." },
+          "looks_like": { "type": "string", "minLength": 1, "maxLength": 300, "description": "What it looks like in the room, observable, so two people would agree it happened." },
+          "not": { "type": "string", "minLength": 1, "maxLength": 300, "description": "The inference this signal must NOT become. Required. E.g. 'not evidence of a reading disorder; it is one tired afternoon.'" },
+          "then": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["action"],
+            "properties": {
+              "action": { "enum": ["offer", "surface_to_guide", "pause", "log_only"], "description": "What the companion does. It may offer, raise it to the guide, pause, or only record — never conclude." },
+              "detail": { "type": "string", "maxLength": 300 }
+            }
+          }
+        }
+      }
+    },
+    "interventions": {
+      "type": "object",
+      "description": "The human delta value boundary, made explicit and enforced. companion_may lists what the companion is allowed to offer; guide_only lists what is reserved for the human and must never be automated. guide_only is required and non-empty: the schema will not accept a sidecar that leaves the human guide nothing.",
+      "additionalProperties": false,
+      "required": ["companion_may", "guide_only"],
+      "properties": {
+        "companion_may": {
+          "type": "array",
+          "description": "What the companion may offer, each with when it applies and the ceiling it must not cross.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["offer", "when", "ceiling"],
+            "properties": {
+              "offer": { "type": "string", "minLength": 1, "maxLength": 300 },
+              "when": { "type": "string", "minLength": 1, "maxLength": 300 },
+              "ceiling": { "type": "string", "minLength": 1, "maxLength": 300, "description": "What this offer must stop short of — the top of the companion's authority for this move." }
+            }
+          }
+        },
+        "guide_only": {
+          "type": "array",
+          "description": "Reserved for the human guide. Non-empty by construction. These are the things a companion must leave to a person however capable it becomes.",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["reserved", "why"],
+            "properties": {
+              "reserved": { "type": "string", "minLength": 1, "maxLength": 300, "description": "What only the human guide decides or does." },
+              "why": { "type": "string", "minLength": 1, "maxLength": 300, "description": "Why this cannot pass to the companion — the human-delta reason." }
+            }
+          }
+        }
+      }
+    },
+    "techniques": {
+      "type": "array",
+      "description": "The X01 hook: moves the guide made that could be captured and reused. Attached to a concept and a stuck signature, never to a quiz answer. Each is offered as one way among those on record and is never imposed; each starts pending a human review before it can be shared.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["move", "concept", "stuck_signature", "provenance", "status", "one_way"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "move": { "type": "string", "minLength": 1, "maxLength": 400, "description": "The move in audience-neutral form — what the guide did, stripped of this one learner's specifics." },
+          "concept": { "type": "string", "minLength": 1, "maxLength": 200, "description": "The concept it unlocks." },
+          "stuck_signature": { "type": "string", "minLength": 1, "maxLength": 300, "description": "What the failed attempts looked like — the behaviour that should trigger offering this, not a label." },
+          "provenance": { "const": "guide", "description": "A technique is a human's move. A companion does not author techniques; it proposes capture of a guide's." },
+          "status": { "enum": ["pending_review"], "description": "Starts pending a human review (MP-09). A companion may propose; only a person accepts." },
+          "one_way": { "const": true, "description": "A way, never the way. Enforced true." }
+        }
+      }
+    },
+    "services": {
+      "type": "array",
+      "description": "Supplementary external capabilities that could bolster this learning when the companion is connected — named as capabilities, never vendors. Each says what it is for and the boundary it must respect.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["capability", "for", "boundary"],
+        "properties": {
+          "capability": { "type": "string", "minLength": 1, "maxLength": 120, "description": "A capability name, e.g. 'spoken-sound alignment', 'handwriting capture', 'spaced-practice scheduling'. No product or company names." },
+          "for": { "type": "string", "minLength": 1, "maxLength": 300, "description": "What it bolsters here." },
+          "boundary": { "type": "string", "minLength": 1, "maxLength": 300, "description": "What it must not do — data it must not keep, decisions it must not make." },
+          "offline_fallback": { "type": "string", "maxLength": 300, "description": "What happens for this learning when the service is unreachable — so the bundle still works." }
+        }
+      }
+    },
+    "cadence": {
+      "type": "object",
+      "description": "The field that carries the shift. A sidecar declares the connectivity it was authored for and says, explicitly, what the companion does on a 5-minute bundle versus connected all day. Every sidecar must degrade to the bundle; continuous is additive, never required.",
+      "additionalProperties": false,
+      "required": ["authored_for", "bundle", "continuous"],
+      "properties": {
+        "authored_for": { "enum": ["bundle", "intermittent", "continuous"], "description": "The modality this sidecar was written against. Today: bundle. Written so a continuous reader loses nothing." },
+        "bundle": {
+          "type": "object",
+          "description": "What the companion does with one 5-minute exchange a day — the floor everything must reach.",
+          "additionalProperties": false,
+          "required": ["does", "cannot"],
+          "properties": {
+            "does": { "type": "string", "minLength": 1, "maxLength": 400 },
+            "cannot": { "type": "string", "minLength": 1, "maxLength": 400, "description": "What the once-a-day modality cannot do for this learning, stated plainly." }
+          }
+        },
+        "continuous": {
+          "type": "object",
+          "description": "What unlocks when the companion is on all day. Additive to the bundle, never a replacement for the guide.",
+          "additionalProperties": false,
+          "required": ["unlocks"],
+          "properties": {
+            "unlocks": { "type": "string", "minLength": 1, "maxLength": 400 },
+            "still_guide_only": { "type": "string", "maxLength": 400, "description": "What stays with the human even when the companion is always on — a reminder that connectivity does not move the boundary." }
+          }
+        }
+      }
+    },
+    "record_hooks": {
+      "type": "array",
+      "description": "What gets written to the learning record and when. Coordinates with the learner-record experiment (X3): every hook maps its write onto a learner-record event type, behaviour only, gated by consent, with a stated visibility. A companion that is always on must write deliberately, not continuously.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["on", "writes", "event", "consent", "visibility"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "on": { "type": "string", "minLength": 1, "maxLength": 300, "description": "The trigger — what causes the write." },
+          "writes": { "type": "string", "minLength": 1, "maxLength": 300, "description": "What is written, as behaviour, never as a diagnosis or a count of minutes." },
+          "event": { "enum": ["answer", "hint", "follow_up", "skip", "note", "summary", "handoff", "return", "view", "practice"], "description": "The learner-record event type this write lands as. Shares the vocabulary of metadax.event/0.2; coordinate with X3." },
+          "consent": { "enum": ["learner", "guide", "both", "standing"], "description": "Whose consent gates this write. 'standing' means granted once for the session; no write is consentless." },
+          "visibility": { "enum": ["learner", "guide", "shared"], "description": "Who can see what was written." }
+        }
+      }
+    }
+  }
+}
