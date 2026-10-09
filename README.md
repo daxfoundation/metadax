@@ -1,8 +1,8 @@
-# Meta DAX
+# MetaDAX
 
 **Open infrastructure for universal learning. Every human being. Any subject. Any domain. Any bandwidth. Free, forever.**
 
-> **New here?** **[See it](https://daxfoundation.org/metadax/showcase/)**: six sample pages of what Meta DAX hands a guide and a learner, three steps in (a mom and her eleven-year-old on fractions, a teacher and a newcomer, a grandson and his grandmother, a new manager, a first on-call shift, a teacher of teachers). **Homeschooling?** [Start here](#homeschooling-start-here) -- below, in three steps. Then **[Meta DAX: An Introduction](https://jeyanandan.com/blog/meta-dax/)** -- why this exists and what it is trying to do, in plain language -- and **[Human delta value](https://daxfoundation.org/writing/human-delta-value/)** -- the measure under every experiment here, and close to the point of all of them.
+> **New here?** **[See it](https://daxfoundation.org/metadax/showcase/)**: six sample pages of what MetaDAX hands a guide and a learner, three steps in (a mom and her eleven-year-old on fractions, a teacher and a newcomer, a grandson and his grandmother, a new manager, a first on-call shift, a teacher of teachers). **Homeschooling?** [Start here](#homeschooling-start-here) -- below, in three steps. Then **[MetaDAX: An Introduction](https://jeyanandan.com/blog/meta-dax/)** -- why this exists and what it is trying to do, in plain language -- and **[Human delta value](https://daxfoundation.org/writing/human-delta-value/)** -- the measure under every experiment here, and close to the point of all of them.
 >
 > **Where we are:** [What has run](#where-we-are-starting) -- [The legwork](#the-legwork) -- [Where we want to get to](#where-we-want-to-get-to) -- [The map](#the-challenge-map). This repository is where the work is read; [daxfoundation.org/metadax/](https://daxfoundation.org/metadax/) is where it is told. The full account -- how it works, the sixteen concepts, every run with its numbers, where it came from -- is in [docs/HISTORY.md](docs/HISTORY.md).
 
@@ -32,14 +32,14 @@ Everything a homeschooling guide needs is in this repository, each piece small a
 | The plain prompt | [`skills/metadax-homeschool/prompt.md`](skills/metadax-homeschool/prompt.md) | The same job as one prompt for any capable model, with no skill support. |
 | The package format | [`skills/metadax-homeschool/templates/PACKAGE-FORMAT.md`](skills/metadax-homeschool/templates/PACKAGE-FORMAT.md) | The shared contract both pages are built to -- reused, not a new format. |
 | The checker | [`skills/metadax-homeschool/tools/check-package.mjs`](skills/metadax-homeschool/tools/check-package.mjs) | The same validation the player runs, in Node, with zero dependencies. |
-| The sample library | [`samples/`](samples/) ([live](https://daxfoundation.org/metadax/samples/)) | Three generic samples, each reviewed by a person before it appears. |
+| The sample library | [`samples/`](samples/) ([live](https://daxfoundation.org/metadax/samples/)) | Eight generic samples, each reviewed by a person before it appears. |
 | The printable learner page | https://daxfoundation.org/metadax/play/print | Any package on paper, with a guide key on the last page. |
 | The learning record | [`skills/metadax-homeschool/templates/RECORD-FORMAT.md`](skills/metadax-homeschool/templates/RECORD-FORMAT.md) | One dated, append-only entry per session, kept locally and readable by a person or a program. |
 | The companion sidecar | [`companion/companion.schema.json`](companion/companion.schema.json) | An always-on sidecar schema (experimental). |
 
 ## The benchmark
 
-Every decision in Meta DAX is measured against one internal benchmark:
+Every decision in MetaDAX is measured against one internal benchmark:
 
 > **Take a person who can communicate, and get them to the equivalent of a master's degree from an Ivy League university -- on five minutes of connectivity a day.**
 
@@ -51,15 +51,15 @@ Five minutes a day means the learning cannot live on the network, so it does not
 
 It will be open source and it will be free. Not freemium, not free-for-some, not free-until-funded.
 
-Any domain means any domain: a child meeting fractions, a nurse training the next nurse, a company teaching ten thousand of its own people. Meta DAX is being designed from the start to be enterprise grade.
+Any domain means any domain: a child meeting fractions, a nurse training the next nurse, a company teaching ten thousand of its own people. MetaDAX is being designed from the start to be enterprise grade.
 
 ## Guides and learners
 
-Everyone is a learner. Whoever is a step ahead, right now, on this, is the **guide**: a parent, a teacher, a mentor, a manager, a grandson with a phone, a nurse training the next nurse. The gap is small, it is temporary, and it moves; in every sample on the site there is a moment where the learner is a step ahead of the guide on something and leads (we call that swinging leads, after climbing partners who swap the lead). Learning happens within reach, just past what a person can do alone, and Meta DAX exists to put the next step within reach for both of them and then get out of the way. "Teacher" and "tutor" below name a person's job or an operation in the prompt suite; the person in that chair is a guide.
+Everyone is a learner. Whoever is a step ahead, right now, on this, is the **guide**: a parent, a teacher, a mentor, a manager, a grandson with a phone, a nurse training the next nurse. The gap is small, it is temporary, and it moves; in every sample on the site there is a moment where the learner is a step ahead of the guide on something and leads (we call that swinging leads, after climbing partners who swap the lead). Learning happens within reach, just past what a person can do alone, and MetaDAX exists to put the next step within reach for both of them and then get out of the way. "Teacher" and "tutor" below name a person's job or an operation in the prompt suite; the person in that chair is a guide.
 
 ## A way, never the way
 
-Education does an enormous amount of good, and at scale it has no choice but to standardise: one pace, one sequence, one way of demonstrating that you have understood. Learning is the thing underneath it, and learning does not standardise -- it happens at the pace of the person doing it. Meta DAX is about the second one.
+Education does an enormous amount of good, and at scale it has no choice but to standardise: one pace, one sequence, one way of demonstrating that you have understood. Learning is the thing underneath it, and learning does not standardise -- it happens at the pace of the person doing it. MetaDAX is about the second one.
 
 There is never *the* way. There is always *a* way. With respect to the Mandalorian creed, nothing in this repository will ever say "This is the way."
 
@@ -73,9 +73,9 @@ Picture learning as the tree of life drawn upside down: every branch anyone has 
 
 Under every experiment here sits one measure, and it is close to being the point.
 
-[Human delta value](https://daxfoundation.org/definitions/#human-delta-value) is what a human being brings: what only a human can currently do, and what a person and their cognitive companion reach together that neither would alone. The first Meta DAX run showed it uninvited: the teacher's plan arrived defaulted, the outcomes rubric came from a catalogue that grows with every teacher who publishes one, and every decision became a micro-adjustment to something already there. A great deal of cognitive labour had been taken off the teacher. The question that matters is what the teacher does with the cognition they got back. Every time the system takes cognitive labour off a guide, one question is left, and it is the whole point: **what is it that only you can do here, and how do we help you do it as well as you can?**
+[Human delta value](https://daxfoundation.org/definitions/#human-delta-value) is what a human being brings: what only a human can currently do, and what a person and their cognitive companion reach together that neither would alone. The first MetaDAX run showed it uninvited: the teacher's plan arrived defaulted, the outcomes rubric came from a catalogue that grows with every teacher who publishes one, and every decision became a micro-adjustment to something already there. A great deal of cognitive labour had been taken off the teacher. The question that matters is what the teacher does with the cognition they got back. Every time the system takes cognitive labour off a guide, one question is left, and it is the whole point: **what is it that only you can do here, and how do we help you do it as well as you can?**
 
-Meta DAX is built to **invert the ratio of students to teachers**: behind each learner, every tutor's move ever captured, every misconception ever mapped, every dead end anyone found first, offered as one way among many. A learner gets more teaching than any teacher could give. And the teacher is handed their cognition back, on purpose, for the problems they could previously only dream about. We call that **reclaimed cognition**, and it is reported by the person in their own words and recorded as expressed, never inferred and never measured in minutes. A person and their companion are one unit, and the unit is only as strong as the human's best in the moment. The reasoning, the failure modes and the kill line are in [Human delta value: the measure](https://daxfoundation.org/writing/human-delta-value/); where it came from is [on Jason's site](https://jeyanandan.com/blog/human-delta-value/).
+MetaDAX is built to **invert the ratio of students to teachers**: behind each learner, every tutor's move ever captured, every misconception ever mapped, every dead end anyone found first, offered as one way among many. A learner gets more teaching than any teacher could give. And the teacher is handed their cognition back, on purpose, for the problems they could previously only dream about. We call that **reclaimed cognition**, and it is reported by the person in their own words and recorded as expressed, never inferred and never measured in minutes. A person and their companion are one unit, and the unit is only as strong as the human's best in the moment. The reasoning, the failure modes and the kill line are in [Human delta value: the measure](https://daxfoundation.org/writing/human-delta-value/); where it came from is [on Jason's site](https://jeyanandan.com/blog/human-delta-value/).
 
 ## Where we are, and where we are going
 
@@ -144,7 +144,7 @@ Every problem on the table, by where it stands.
 
 ![The challenge map: five columns. Run, first cut: a teacher makes a course; a learner reads, follows up, is quizzed and saves. Built, not run: the prompts certified on two vendors; reuse against a registry. Not started: the other ten of the first fourteen. The legwork: identifiers and schemas at scale, a registry at scale, reuse across languages, the five-minute bundle, certification, the constraint fields made live, privacy at scale, reclaimed cognition recorded. Where we want to get to: the twelve scenes, ending at five minutes to master's.](docs/figures/challenge-map.svg)
 
-**The long form.** How the machinery works, the sixteen concepts it explores, every run with its numbers, where it came from (EdDAX, 2024-2025) and how it was built, are kept in full in **[docs/HISTORY.md](docs/HISTORY.md)**. Meta DAX is a research project of the DAX Foundation: a set of experiments before it is a product. Nothing in it is production, and no element of the architecture is set in stone.
+**The long form.** How the machinery works, the sixteen concepts it explores, every run with its numbers, where it came from (EdDAX, 2024-2025) and how it was built, are kept in full in **[docs/HISTORY.md](docs/HISTORY.md)**. MetaDAX is a research project of the DAX Foundation: a set of experiments before it is a product. Nothing in it is production, and no element of the architecture is set in stone.
 
 ---
 
@@ -152,13 +152,13 @@ Every problem on the table, by where it stands.
 
 I have been at this since I was 23. I am now 49.
 
-"This" has only ever been one thing: [the right information, to the right person, at the right time](https://jeyanandan.com/blog/meta-dax/#what-i-am-fighting-for). I found it the day I left university for the last time, and everything I have built since has been a draft of it. Meta DAX is the current one: the latest expansion of the same purpose, and the first where the information is the kind that lets a person go and get all the rest.
+"This" has only ever been one thing: [the right information, to the right person, at the right time](https://jeyanandan.com/blog/meta-dax/#what-i-am-fighting-for). I found it the day I left university for the last time, and everything I have built since has been a draft of it. MetaDAX is the current one: the latest expansion of the same purpose, and the first where the information is the kind that lets a person go and get all the rest.
 
 It has taken a tremendous amount of personal sacrifice, on every level, and it still does. All of it has come out of my own pocket.
 
 If you want to know why it means this much to me, [it is here](https://jeyanandan.com/blog/meta-dax/#what-meta-dax-means-to-me). I was [the kid it did not exist for](https://jeyanandan.com/blog/meta-dax/#the-kid-it-did-not-exist-for).
 
-On the way to getting Meta DAX out, while working out how knowledge and intelligence could be made to compound, it became clear that I needed something else first: an accountability framework. A flight recorder, the black box the aviation industry keeps, for the thing I could see coming. I set that out in [The Constraint](https://jeyanandan.com/blog/the-constraint/). They are not two separate fights. The rubbish on the beach is a real problem, and so is the thousand-foot wave coming towards it, and you do not get to pick one. But while that work was in front of me I did not have the cognitive capacity to give Meta DAX what it needed, and I put it off from the beginning of this year. It is my purpose, and as of 28 September [it is in the open](https://jeyanandan.com/blog/meta-dax/): the experiments, every result, and what comes next.
+On the way to getting MetaDAX out, while working out how knowledge and intelligence could be made to compound, it became clear that I needed something else first: an accountability framework. A flight recorder, the black box the aviation industry keeps, for the thing I could see coming. I set that out in [The Constraint](https://jeyanandan.com/blog/the-constraint/). They are not two separate fights. The rubbish on the beach is a real problem, and so is the thousand-foot wave coming towards it, and you do not get to pick one. But while that work was in front of me I did not have the cognitive capacity to give MetaDAX what it needed, and I put it off from the beginning of this year. It is my purpose, and as of 28 September [it is in the open](https://jeyanandan.com/blog/meta-dax/): the experiments, every result, and what comes next.
 
 So, being completely transparent: if you would like to [buy me a coffee](https://ko-fi.com/jeyanandan), it would mean a great deal to me, from the bottom of my heart. Thank you. It goes to me personally, not the Foundation and not the company.
 
@@ -169,13 +169,13 @@ So, being completely transparent: if you would like to [buy me a coffee](https:/
 ## Decisions, licences, privacy, accuracy
 
 - `docs/DECISIONS.md` -- the twelve decisions of 2026-09-27, verbatim, and what is pending.
-- `docs/LICENSING.md` and `LICENSES.md` -- prompts and schemas CC0 1.0; docs CC BY 4.0; code Apache-2.0; generated course content at the author's choice (default CC BY 4.0); DCO for contributions.
+- `docs/LICENSING.md` and `LICENSES.md` -- prompts/, schemas/, evals/fixtures CC0 1.0; tools/, templates/, .github/, skills/, adapters/ Apache-2.0; docs/, README.md and other prose CC BY 4.0; generated course content the licence the course author chooses (default CC BY 4.0), with raw generated segments marked generated: true and declared CC0; DCO for contributions.
 - `docs/PRIVACY.md` -- pseudonyms only; no email, name, school or diagnosis anywhere; private nodes never leave the learner repo; adults only in Phase 1 clients; no telemetry, no server.
 - `docs/ACCURACY.md` -- the accuracy commitments: no result without a recorded run, reserved fields described as reserved, no affiliation implied, models named by vendor outside eval results.
 
 ## Support this work
 
-Meta DAX is built by directing a fleet of AI agents, and the agents run on paid compute. When the credits run out, the work stops. If you want it to keep going:
+MetaDAX is built with AI agents on paid compute. When the credits run out, the work stops. If you want it to keep going:
 
 - **[Sponsor on GitHub](https://github.com/sponsors/ObsidianDelta)**: $5, $25 or $100 a month, or a one-time amount. Sponsors are listed here.
 - **[Ko-fi](https://ko-fi.com/jeyanandan)**: a one-off coffee or a monthly one, no GitHub account needed.
@@ -188,16 +188,16 @@ No sponsors yet. Be the first.
 
 ## Contributing
 
-Phase 1 is a build in progress. Course repos are private by default; publish when ready.
-Contributions to this repository need a DCO sign-off (`git commit -s`). Prompt changes are
-versioned (`prompts/CHANGELOG-v0.2.md`): a change to a prompt is a decision, not a patch.
+Ways to contribute, with exact steps, are in **[CONTRIBUTING.md](CONTRIBUTING.md)**. In short:
+contributions need a DCO sign-off (`git commit -s`), a human must have read and tried anything
+AI helped write, and no real learner's name, photo or identifying detail ever appears.
 
 ## Trademarks and affiliation
 
-Meta DAX is an independent project. It is not affiliated with or endorsed by Anthropic,
+MetaDAX is an independent project. It is not affiliated with or endorsed by Anthropic,
 OpenAI, GitHub or Oak National Academy. Claude, Claude Code, ChatGPT and GitHub are
 trademarks of their respective owners and are named only to describe the clients and
-platforms Meta DAX works with.
+platforms MetaDAX works with.
 
 ---
 
