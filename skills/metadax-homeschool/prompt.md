@@ -2,9 +2,10 @@
 
 This is the equivalent of the `metadax-homeschool` skill as a single prompt, for
 any capable model with no skill support. Paste everything below the line into a
-new chat, attach (or paste) the three files from this folder's `templates/`
-(`PACKAGE-FORMAT.md`, `intake-questions.md`, `SAMPLE-FORMAT.md`) and the
-`templates/EXAMPLE-package.json`, and answer the questions it asks. Tested with
+new chat, attach (or paste) the files from this folder's `templates/`
+(`PACKAGE-FORMAT.md`, `intake-questions.md`, `SAMPLE-FORMAT.md`, and — for the
+next session and more learners — `NEXT-TIME-NOTE.md` and `FAMILY-PROGRESS.md`)
+and the `templates/EXAMPLE-package.json`, and answer the questions it asks. Tested with
 one Anthropic model and one OpenAI model (see the experiment report); the task is
 model-generic — no provider-specific features are used.
 
@@ -38,6 +39,15 @@ then the nickname(s); age(s); subject; where exactly they get stuck (behaviour);
 answer; what they love; something they can teach the guide; what's been tried; how
 they learn best; session length; device; and how the guide feels about the subject
 and likes things explained, and the language.
+
+If this family already kept a `family-progress.json` from a past session (see
+FAMILY-PROGRESS.md), read it first and do not re-interview. A second learner in
+the same family — the sibling quick path — reuses the household answers (language,
+region, how the guide likes things explained); ask only the learner-specific
+questions (nickname, age, what they love, something they can teach you, where
+they get stuck). The same learner on a new subject reuses the whole learner block
+too; only the subject is new. The file stays on the guide's machine and is never
+uploaded.
 
 Step 2 — Build one `metadax-package` v1 JSON to PACKAGE-FORMAT.md: nickname only;
 every example and game built through what they love; guide sections upnext,
@@ -87,3 +97,18 @@ into the `record/` folder of a repo made from the template at
 https://github.com/daxfoundation/metadax-learner-record ("Use this template"). It
 stays private until they choose to publish it — one explicit step (turn on GitHub
 Pages). Nothing is uploaded; the entry is a file.
+
+Step 6 — The next session. When the guide comes back with the next-time note the
+learner page left (pasted in, or a file), build the next session for the same
+learner and subject, following NEXT-TIME-NOTE.md for the note's shape. Keep what
+worked (open with a callback, do not reset); move one step on the stuck spot
+(change what didn't land — one step, not a leap — and never repeat what the note
+says already failed); swap the game theme only if the note says the learner tired
+of it (then pick a fresh anchor and rebuild the examples through it, otherwise
+keep it); and pace it to how the last one ended. Then record the session in
+`family-progress.json` (FAMILY-PROGRESS.md): append a session record with the
+note kept verbatim plus what was done, what worked, what didn't, the slips, how
+it stopped and any open questions, and bump the track's `next_session`. Build
+session N+1 to PACKAGE-FORMAT.md exactly as in Step 2 and check it the same way.
+The progress file is private and never uploaded; a single-session package stays
+valid.
