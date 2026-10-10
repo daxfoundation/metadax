@@ -1,13 +1,16 @@
 {
   "metadax.course/0.2": "course.schema.json",
-  "metadax.node/0.2": "node.schema.json",
+  "metadax.node/0.3": "node.schema.json",
   "metadax.provenance/0.2": "provenance.schema.json",
-  "metadax.registry-index/0.2": "registry-index.schema.json",
-  "metadax.registry/0.2": "registry.schema.json",
+  "metadax.registry-index/0.3": "registry-index.schema.json",
+  "metadax.registry/0.3": "registry.schema.json",
   "metadax.learner/0.2": "learner-profile.schema.json",
   "metadax.progress/0.2": "progress.schema.json",
   "metadax.event/0.2": "event.schema.json",
   "metadax.tutor-turn/0.2": "tutor-turn.schema.json",
   "metadax.manifest/0.2": "manifest.schema.json",
-  "metadax.packet/0.2": "packet.schema.json"
+  "metadax.packet/0.2": "packet.schema.json",
+  "metadax.curriculum/0.3": "curriculum.schema.json",
+  "metadax.context-profile/0.3": "context-profile.schema.json",
+  "metadax.guide-coach/0.3": "guide-coach.schema.json"
 }

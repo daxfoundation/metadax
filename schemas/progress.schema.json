@@ -24,7 +24,7 @@
         { "const": "runtime" }
       ]
     },
-    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*$" },
+    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^(L\\d\\d\\.M\\d\\d\\.O\\d\\d|n_[0-9a-hjkmnp-tv-z]{26})$" },
     "sectionId": { "type": "string", "pattern": "^s\\d+$" },
     "conceptId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
     "bloom": { "enum": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"] },

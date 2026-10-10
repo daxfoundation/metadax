@@ -1,12 +1,12 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://metadax.daxfoundation.org/schemas/0.2/registry.schema.json",
-  "title": "metadax.registry/0.2",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.3/registry.schema.json",
+  "title": "metadax.registry/0.3",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema", "course_id", "module_id", "updated_at", "nodes"],
   "properties": {
-    "schema": { "const": "metadax.registry/0.2" },
+    "schema": { "const": "metadax.registry/0.3" },
     "course_id": { "$ref": "#/$defs/slug" },
     "module_id": { "type": "string", "pattern": "^L\\d\\d\\.M\\d\\d$" },
     "updated_at": { "$ref": "#/$defs/rfc3339" },
@@ -21,7 +21,7 @@
     },
     "slug": { "type": "string", "maxLength": 200, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
     "conceptId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
-    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*$" },
+    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^(L\\d\\d\\.M\\d\\d\\.O\\d\\d|n_[0-9a-hjkmnp-tv-z]{26})$" },
     "createdBy": { "type": "string", "maxLength": 200, "pattern": "^[A-Za-z0-9._-]+$" },
     "entry": {
       "type": "object",
@@ -29,6 +29,7 @@
       "required": ["id", "parent_id", "title", "canonical_question", "intent", "summary", "concepts", "depth", "visibility", "created_by", "superseded_by", "reuse_count"],
       "properties": {
         "id": { "$ref": "#/$defs/nodeId" },
+        "legacy_id": { "type": "string", "maxLength": 200 },
         "parent_id": { "anyOf": [ { "$ref": "#/$defs/nodeId" }, { "type": "null" } ] },
         "title": { "type": "string", "maxLength": 80 },
         "canonical_question": { "type": "string" },
