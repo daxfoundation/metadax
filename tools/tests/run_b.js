@@ -62,6 +62,17 @@ const m01Ids = JSON.parse(fs.readFileSync(path.join(FCOURSE, 'registry', 'L01.M0
   .nodes.map(function (e) { return e.id; });
 ok(JSON.stringify(regIdsN.slice(0, m01Ids.length)) === JSON.stringify(m01Ids),
   'MP-05 for an opaque n_* node puts its parent-module registry (L01.M01) first');
+// v0.3: that depth-3 n_* node must carry the OBJECTIVE/LESSON/MODULE/CONCEPTS of
+// its root objective L01.M01.O01, exactly as the legacy breadcrumb ANCHOR does.
+function blockBody(stack, name) {
+  const parts = stack.text.split('<<START ' + name + '>>');
+  return parts.length > 1 ? parts[1].split('<<END ' + name + '>>')[0] : null;
+}
+ok(['OBJECTIVE', 'LESSON', 'MODULE', 'CONCEPTS'].every(function (b) {
+  const got = blockBody(mp05n, b);
+  return got !== null && got === blockBody(mp05, b);
+}) && /"id":\s*"L01\.M01\.O01"/.test(blockBody(mp05n, 'OBJECTIVE') || ''),
+  'MP-05 for an opaque n_* node carries its root objective OBJECTIVE/LESSON/MODULE/CONCEPTS');
 
 // ---- 2. MP-06 stack assembles ----
 const mp06 = assembleMod.assemble({

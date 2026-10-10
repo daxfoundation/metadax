@@ -86,6 +86,29 @@ function registryFileFor(courseDir, nodeId) {
   return registryFile(courseDir, registryModuleFor(courseDir, nodeId));
 }
 
+// The objective a node belongs to. A v0.2 breadcrumb id starts with it; a v0.3
+// opaque id ("n_...") does not, so walk the parent_id chain (nodes/<id>/node.json)
+// to the first objective id or depth-1 node. v0.3 has no global max depth, so
+// the walk is capped at the node's stored depth (a parent_id cycle cannot loop
+// forever). Falls back to the id's first segment, as before.
+const MAX_PARENT_WALK = 1000;
+function objectiveOf(courseDir, nodeId) {
+  const id = String(nodeId);
+  const head = id.split('/')[0];
+  if (!courseDir || head !== id || isObjectiveId(id)) return head;
+  let cur = id;
+  let cap = MAX_PARENT_WALK;
+  for (let step = 0; typeof cur === 'string' && cur && step < cap; step++) {
+    const np = path.join(nodeDir(courseDir, cur), 'node.json');
+    if (!fs.existsSync(np)) break;
+    const n = readJson(np);
+    if (step === 0 && Number.isInteger(n.depth) && n.depth > 0) cap = n.depth;
+    if (isObjectiveId(cur) || n.depth === 1) return cur;
+    cur = n.parent_id;
+  }
+  return head;
+}
+
 function readRegistry(courseDir, moduleId) {
   const p = registryFile(courseDir, moduleId);
   if (!fs.existsSync(p)) return null;
@@ -138,6 +161,7 @@ module.exports = {
   registryFile,
   registryModuleFor,
   registryFileFor,
+  objectiveOf,
   readRegistry,
   nowIso,
   isoWeek,

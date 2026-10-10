@@ -361,7 +361,7 @@ function assemble(opts) {
     if (fs.existsSync(pf)) learner = lib.readJson(pf);
   }
 
-  const objectiveId = opts.node ? opts.node.split('/')[0] : null;
+  const objectiveId = opts.node ? lib.objectiveOf(opts.course, opts.node) : null; // v0.3 ids too
   let ctx = { lesson: null, module: null, objective: null };
   if (course && objectiveId) ctx = findContext(course, objectiveId);
 
