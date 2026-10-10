@@ -1,5 +1,5 @@
 {
-  "schema": "metadax.registry/0.2",
+  "schema": "metadax.registry/0.3",
   "course_id": "newtons-laws-motion",
   "module_id": "L02.M02",
   "updated_at": "runtime",
@@ -21,7 +21,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M02.O01/identifying-action-reaction-pairs",
+      "id": "n_w98hvb97a11wpaz9gatg6b05v8",
+      "legacy_id": "L02.M02.O01/identifying-action-reaction-pairs",
       "parent_id": "L02.M02.O01",
       "title": "Identifying action-reaction pairs",
       "canonical_question": "How do you identify the action-reaction force pair in an interaction?",
@@ -37,7 +38,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M02.O01/spotting-third-law-pairs",
+      "id": "n_8s505b6xenvmdvb1jr63gg5vsr",
+      "legacy_id": "L02.M02.O01/spotting-third-law-pairs",
       "parent_id": "L02.M02.O01",
       "title": "Spotting third-law pairs",
       "canonical_question": "How can you spot which two forces form a Newton third-law pair?",
@@ -53,7 +55,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M02.O01/why-action-reaction-dont-cancel",
+      "id": "n_3a7kdxjefxy9eavxc9h5rvf0ew",
+      "legacy_id": "L02.M02.O01/why-action-reaction-dont-cancel",
       "parent_id": "L02.M02.O01",
       "title": "Why action-reaction forces don’t cancel",
       "canonical_question": "Why don’t the equal and opposite forces of a third-law pair cancel each other out?",
@@ -69,7 +72,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M02.O01/third-law-and-rocket-propulsion",
+      "id": "n_f6fr6d8nxshy6akex1gen2e2g8",
+      "legacy_id": "L02.M02.O01/third-law-and-rocket-propulsion",
       "parent_id": "L02.M02.O01",
       "title": "The third law and rocket propulsion",
       "canonical_question": "How does Newton’s third law explain how a rocket accelerates?",
@@ -85,7 +89,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M02.O01/third-law-and-walking",
+      "id": "n_sj5pqsedw2bsfrr3c4wqsaxkhg",
+      "legacy_id": "L02.M02.O01/third-law-and-walking",
       "parent_id": "L02.M02.O01",
       "title": "The third law and walking",
       "canonical_question": "How does Newton’s third law explain how we walk forward?",
