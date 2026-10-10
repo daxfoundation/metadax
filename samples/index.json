@@ -90,6 +90,18 @@
       "date": "2026-10-09",
       "licence": "CC BY 4.0",
       "path": "samples/history-grandparent-interview.md"
+    },
+    {
+      "id": "math-fractions-stade-3d",
+      "subject": "Math",
+      "age_band": "10-12",
+      "stuck": "no prior fractions; curious about the why but cannot yet say what a fraction means or how a shape can be divided into equal parts",
+      "loves": "football and running",
+      "approach": "seven steps in a 3D stadium in French — the pitch halved into equal parts, runners on the 400 m track compared, laps added and subtracted, balls shared into hoops, the whole found back, and a ten-penalty final",
+      "date": "2026-10-09",
+      "licence": "CC BY 4.0",
+      "path": "samples/stade-des-fractions.md",
+      "link": "https://daxfoundation.org/metadax/samples/stade-des-fractions/"
     }
   ]
 }
