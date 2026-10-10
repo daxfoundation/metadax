@@ -1,0 +1,77 @@
+{
+  "schema": "metadax.node/0.3",
+  "id": "L06.M02.O01",
+  "parent_id": null,
+  "slug": "explain-mitochondrion-makes-atp",
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "Explain how the mitochondrion makes ATP",
+  "question": "",
+  "canonical_question": "How does the mitochondrion make most of a cell’s ATP?",
+  "intent": null,
+  "summary": [
+    "The electron transport chain pumps protons to build a gradient across the inner membrane.",
+    "ATP synthase lets protons flow back through it and uses that flow to make ATP."
+  ],
+  "concepts": [
+    "atp-synthesis",
+    "electron-transport-chain"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "The setup: two teams of proteins",
+        "body_md": "Inside a mitochondrion, the inner membrane holds two kinds of machinery. One is the **electron transport chain** (ETC), a line of protein complexes. The other is **ATP synthase**, a tiny rotary motor. The ETC’s job is to move protons; ATP synthase’s job is to make ATP when those protons move back.",
+        "check": {
+          "question": "What are the two kinds of machinery on the inner membrane?",
+          "answer": "The electron transport chain and ATP synthase."
+        }
+      },
+      {
+        "id": "s2",
+        "heading": "Building the gradient",
+        "body_md": "Electrons from NADH and FADH2 pass down the ETC. As they do, the complexes pump protons from the matrix into the space between the membranes. This builds a **proton gradient**: more protons on one side than the other, like water held behind a dam."
+      },
+      {
+        "id": "s3",
+        "heading": "Spending the gradient",
+        "body_md": "Protons can only flow back into the matrix through **ATP synthase**. As they rush through, they turn its rotor, and that turning snaps ADP and phosphate together into ATP. Oxygen’s role is to accept the spent electrons at the end, keeping the line moving.",
+        "check": {
+          "question": "What does ATP synthase use to make ATP?",
+          "answer": "The flow of protons back down the gradient."
+        }
+      }
+    ],
+    "key_points": [
+      "The ETC pumps protons to store energy as a gradient.",
+      "ATP synthase releases that energy to make ATP.",
+      "Oxygen is the final electron acceptor, not a direct ingredient of ATP."
+    ],
+    "bridge_to_parent": "This is the part of cellular respiration that makes most of the ATP.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "What happens to ATP production if the inner membrane leaks protons?",
+    "Why is oxygen needed only at the very end?",
+    "How many ATP does one glucose yield overall?"
+  ],
+  "created_by": "author",
+  "visibility": "shared",
+  "created_at": "runtime",
+  "updated_at": "runtime",
+  "content_sha256": "runtime",
+  "superseded_by": null,
+  "model": "runtime",
+  "stats": {
+    "views": 0,
+    "reuse_count": 0
+  }
+}

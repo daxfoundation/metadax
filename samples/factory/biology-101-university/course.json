@@ -1,0 +1,155 @@
+{
+  "schema": "metadax.course/0.2",
+  "id": "biology-101",
+  "title": "Biology 101",
+  "summary": "Introductory university biology: cells, energy, genetics and evolution over 13 weeks.",
+  "language": "en",
+  "audience": {
+    "intended_bands": [
+      "16-18",
+      "adult"
+    ],
+    "notes": "First-year university; no prior college chemistry."
+  },
+  "steer": {
+    "focus": "Build an accurate mental model of the cell and how it stores, releases and passes on information and energy.",
+    "include": [
+      "One worked example per module",
+      "A real-world observation per lesson"
+    ],
+    "exclude": [
+      "Organic reaction mechanisms",
+      "Biochemistry detail beyond an overview of glycolysis, Krebs and electron transport"
+    ],
+    "tone": "precise, academic but not stuffy",
+    "depth": "introductory",
+    "source_policy": "open",
+    "scope_policy": "tangents_allowed",
+    "max_depth": 8
+  },
+  "concepts": [
+    {
+      "id": "atp-synthesis",
+      "name": "ATP synthesis",
+      "description": "How cells make ATP from ADP using a proton gradient.",
+      "bloom_target": "Understand",
+      "prerequisites": [
+        "electron-transport-chain"
+      ],
+      "misconceptions": [
+        "ATP is stored long-term in large amounts"
+      ]
+    },
+    {
+      "id": "electron-transport-chain",
+      "name": "Electron transport chain",
+      "description": "Protein complexes that pump protons to build the gradient.",
+      "bloom_target": "Understand",
+      "prerequisites": [],
+      "misconceptions": [
+        "Oxygen is used directly to make ATP"
+      ]
+    },
+    {
+      "id": "glycolysis",
+      "name": "Glycolysis",
+      "description": "The splitting of glucose into two pyruvate with a small ATP gain.",
+      "bloom_target": "Understand",
+      "prerequisites": [],
+      "misconceptions": [
+        "Glycolysis needs oxygen"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "L06",
+      "title": "Cellular respiration",
+      "summary": "How cells release energy from food.",
+      "steer": {
+        "focus": "Trace energy from glucose to ATP, stage by stage.",
+        "include": [
+          "A single running example: one glucose molecule"
+        ],
+        "exclude": [
+          "Every intermediate metabolite"
+        ]
+      },
+      "modules": [
+        {
+          "id": "L06.M01",
+          "title": "Glycolysis overview",
+          "summary": "Splitting glucose for a small, fast energy return.",
+          "steer": {
+            "focus": "Inputs and outputs of glycolysis, not every step.",
+            "include": [
+              "The net 2 ATP / 2 NADH tally"
+            ],
+            "exclude": [
+              "Named intermediate compounds"
+            ]
+          },
+          "objectives": [
+            {
+              "id": "L06.M01.O01",
+              "title": "Summarise the inputs and outputs of glycolysis",
+              "statement": "The learner can summarise glycolysis as glucose to two pyruvate with a net gain of two ATP and two NADH.",
+              "concepts": [
+                "glycolysis"
+              ],
+              "bloom_target": "Understand",
+              "source_refs": []
+            }
+          ]
+        },
+        {
+          "id": "L06.M02",
+          "title": "The mitochondrion and ATP",
+          "summary": "Where most ATP is made and how.",
+          "steer": {
+            "focus": "The electron transport chain builds a gradient; ATP synthase spends it.",
+            "include": [
+              "The analogy of a dam and a turbine"
+            ],
+            "exclude": [
+              "Complex I-IV subunit detail"
+            ]
+          },
+          "objectives": [
+            {
+              "id": "L06.M02.O01",
+              "title": "Explain how the mitochondrion makes ATP",
+              "statement": "The learner can explain how the electron transport chain builds a proton gradient that ATP synthase uses to make ATP.",
+              "concepts": [
+                "atp-synthesis",
+                "electron-transport-chain"
+              ],
+              "bloom_target": "Understand",
+              "source_refs": []
+            },
+            {
+              "id": "L06.M02.O02",
+              "title": "Compare aerobic and anaerobic ATP yield",
+              "statement": "The learner can compare the ATP yield of aerobic respiration with anaerobic fermentation and say why they differ.",
+              "concepts": [
+                "atp-synthesis"
+              ],
+              "bloom_target": "Analyze",
+              "source_refs": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [],
+  "policy": {
+    "learner_nodes": "pending_review",
+    "minor_nodes": "pending_review"
+  },
+  "license": "CC-BY-4.0",
+  "generated_segments_license": "CC0-1.0",
+  "constraint_decl": null,
+  "created_at": "runtime",
+  "updated_at": "runtime"
+}

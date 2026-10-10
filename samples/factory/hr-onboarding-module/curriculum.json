@@ -1,0 +1,177 @@
+{
+  "schema": "metadax.curriculum/0.3",
+  "_note": "model-generated, unreviewed, for illustration",
+  "id": "onboarding-program",
+  "title": "New-Hire Onboarding",
+  "summary": "A short onboarding path for new employees at a small organisation.",
+  "language": "en",
+  "brief": {
+    "institution": "Small organisation (~20 people)",
+    "audience": {
+      "intended_bands": [
+        "adult"
+      ],
+      "notes": "New hires."
+    },
+    "duration": {
+      "value": 6,
+      "unit": "hours"
+    },
+    "outcomes": [
+      "The new hire can describe the organisation’s purpose and how teams work together.",
+      "The new hire can find key resources and knows who to ask for help.",
+      "The new hire can apply the day-one policies to everyday situations.",
+      "The new hire can set up their accounts and core tools."
+    ],
+    "constraints": [
+      "Fits a busy first week",
+      "Each lesson stands alone and is resumable",
+      "No role-specific training"
+    ],
+    "source_policy": "source_first"
+  },
+  "context_profile": "workplace-hr-training",
+  "modifiers": [
+    "low-bandwidth"
+  ],
+  "nodes": [
+    {
+      "id": "onboarding-program",
+      "parent_id": null,
+      "level": "program",
+      "depth": 0,
+      "slug": "newhire-onboarding",
+      "title": "New-Hire Onboarding",
+      "summary": "A short onboarding path for new employees at a small organisation.",
+      "sequence": 1,
+      "prerequisites": [],
+      "time_budget": {
+        "value": 3,
+        "unit": "weeks"
+      },
+      "outcomes": [
+        "The new hire can describe the organisation’s purpose and how teams work together.",
+        "The new hire can find key resources and knows who to ask for help.",
+        "The new hire can apply the day-one policies to everyday situations.",
+        "The new hire can set up their accounts and core tools."
+      ]
+    },
+    {
+      "id": "onboarding",
+      "parent_id": "onboarding-program",
+      "level": "course",
+      "depth": 1,
+      "slug": "onboarding",
+      "title": "Onboarding",
+      "summary": "Everything a new hire needs in week one.",
+      "sequence": 1,
+      "prerequisites": [],
+      "time_budget": {
+        "value": 3,
+        "unit": "weeks"
+      },
+      "outcomes": [
+        "The new hire can describe the organisation’s purpose and how teams work together.",
+        "The new hire can find key resources and knows who to ask for help.",
+        "The new hire can apply the day-one policies to everyday situations.",
+        "The new hire can set up their accounts and core tools."
+      ],
+      "handoff": {
+        "to": "MP-02",
+        "op": "ARCHITECT",
+        "mode": "design",
+        "size": "short",
+        "language": "en",
+        "input": "Design a workplace onboarding module for a new employee joining a small organisation (about 20 people). Cover: who we are and how we work; where to find things and who to ask; the few policies everyone must know on day one (code of conduct, data handling, health and safety); and how to set up accounts and tools. Keep it short, practical and respectful of a busy first week; each lesson should stand alone and be resumable. Exclude role-specific job training and anything requiring systems not yet provisioned.",
+        "audience": {
+          "intended_bands": [
+            "adult"
+          ],
+          "notes": "New hires at a ~20-person organisation."
+        },
+        "source_policy": "source_first",
+        "context_profile": "workplace-hr-training",
+        "modifiers": [
+          "low-bandwidth"
+        ],
+        "outcomes": [
+          "The new hire can describe the organisation’s purpose and how teams work together.",
+          "The new hire can find key resources and knows who to ask for help.",
+          "The new hire can apply the day-one policies to everyday situations.",
+          "The new hire can set up their accounts and core tools."
+        ],
+        "module_plan": [
+          {
+            "lesson": "Day-one policies",
+            "modules": [
+              "Code of conduct",
+              "Handling data safely",
+              "Health and safety basics"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "onboarding/L01",
+      "parent_id": "onboarding",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "welcome-who-we-are",
+      "title": "Welcome: who we are and how we work",
+      "summary": "Our purpose, values and how teams collaborate.",
+      "sequence": 1,
+      "prerequisites": [],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": [
+        "The new hire can describe the organisation’s purpose and ways of working."
+      ]
+    },
+    {
+      "id": "onboarding/L02",
+      "parent_id": "onboarding",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "finding-things-and-finding",
+      "title": "Finding things and finding people",
+      "summary": "Where resources live and who to ask.",
+      "sequence": 2,
+      "prerequisites": [
+        "onboarding/L01"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": [
+        "The new hire can locate key resources and identify who to ask for help."
+      ]
+    },
+    {
+      "id": "onboarding/L03",
+      "parent_id": "onboarding",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "dayone-policies",
+      "title": "Day-one policies",
+      "summary": "The few policies everyone must know on day one.",
+      "sequence": 3,
+      "prerequisites": [
+        "onboarding/L01"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": [
+        "The new hire can apply the code of conduct, data handling and safety basics."
+      ]
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "created_at": "runtime",
+  "updated_at": "runtime"
+}

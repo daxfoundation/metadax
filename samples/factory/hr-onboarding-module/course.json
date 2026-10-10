@@ -1,0 +1,171 @@
+{
+  "schema": "metadax.course/0.2",
+  "id": "onboarding",
+  "title": "Onboarding",
+  "summary": "Everything a new hire needs in week one at a small organisation.",
+  "language": "en",
+  "audience": {
+    "intended_bands": [
+      "adult"
+    ],
+    "notes": "New hires at a ~20-person organisation."
+  },
+  "steer": {
+    "focus": "Give a new hire the few things they must know and be able to do in week one, and where to find the rest.",
+    "include": [
+      "A concrete everyday situation per policy",
+      "A \"who to ask\" pointer"
+    ],
+    "exclude": [
+      "Role-specific job training",
+      "Legal detail beyond the day-one rules"
+    ],
+    "tone": "professional, concise, respectful of a busy first week",
+    "depth": "introductory",
+    "source_policy": "source_first",
+    "scope_policy": "strict",
+    "max_depth": 4
+  },
+  "concepts": [
+    {
+      "id": "data-handling",
+      "name": "Data handling",
+      "description": "The day-one rules for storing, sharing and disposing of company and customer data.",
+      "bloom_target": "Apply",
+      "prerequisites": [],
+      "misconceptions": [
+        "Anything on my work laptop is fine to email anywhere"
+      ]
+    },
+    {
+      "id": "incident-reporting",
+      "name": "Incident reporting",
+      "description": "Recognising a likely data incident and reporting it promptly.",
+      "bloom_target": "Understand",
+      "prerequisites": [
+        "data-handling"
+      ],
+      "misconceptions": [
+        "Wait until you are sure before telling anyone"
+      ]
+    },
+    {
+      "id": "code-of-conduct",
+      "name": "Code of conduct",
+      "description": "How we treat each other and the route for raising a concern.",
+      "bloom_target": "Understand",
+      "prerequisites": [],
+      "misconceptions": [
+        "Concerns can only be raised by managers"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "L03",
+      "title": "Day-one policies",
+      "summary": "The few policies everyone must know on day one.",
+      "steer": {
+        "focus": "The minimum every new hire must apply from day one.",
+        "include": [
+          "A realistic everyday example per policy"
+        ],
+        "exclude": [
+          "Edge cases and legal exceptions"
+        ]
+      },
+      "modules": [
+        {
+          "id": "L03.M01",
+          "title": "Code of conduct",
+          "summary": "How we treat each other and what to do about concerns.",
+          "steer": {
+            "focus": "Recognise a concern and know the route.",
+            "include": [
+              "One worked situation"
+            ],
+            "exclude": [
+              "Disciplinary procedure detail"
+            ]
+          },
+          "objectives": [
+            {
+              "id": "L03.M01.O01",
+              "title": "Recognise a code-of-conduct concern",
+              "statement": "The new hire can recognise a code-of-conduct concern and name the reporting route.",
+              "concepts": [
+                "code-of-conduct"
+              ],
+              "bloom_target": "Understand",
+              "source_refs": [
+                "src:conduct-policy"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "L03.M02",
+          "title": "Handling data safely",
+          "summary": "The basics of keeping company and customer data safe.",
+          "steer": {
+            "focus": "Apply the day-one data rules to common situations.",
+            "include": [
+              "Store / share / dispose examples"
+            ],
+            "exclude": [
+              "Full data-protection law"
+            ]
+          },
+          "objectives": [
+            {
+              "id": "L03.M02.O01",
+              "title": "Apply the day-one data-handling rules",
+              "statement": "The new hire can decide, for common situations, how to store, share and dispose of company and customer data.",
+              "concepts": [
+                "data-handling"
+              ],
+              "bloom_target": "Apply",
+              "source_refs": [
+                "src:data-policy"
+              ]
+            },
+            {
+              "id": "L03.M02.O02",
+              "title": "Recognise a data incident and report it",
+              "statement": "The new hire can recognise a likely data incident and knows how to report it promptly.",
+              "concepts": [
+                "data-handling",
+                "incident-reporting"
+              ],
+              "bloom_target": "Understand",
+              "source_refs": [
+                "src:data-policy"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "src:data-policy",
+      "title": "Company data-handling policy",
+      "path": "sources/data-policy.md"
+    },
+    {
+      "id": "src:conduct-policy",
+      "title": "Code of conduct",
+      "path": "sources/conduct-policy.md"
+    }
+  ],
+  "policy": {
+    "learner_nodes": "pending_review",
+    "minor_nodes": "pending_review"
+  },
+  "license": "CC-BY-4.0",
+  "generated_segments_license": "CC0-1.0",
+  "constraint_decl": null,
+  "created_at": "runtime",
+  "updated_at": "runtime"
+}
