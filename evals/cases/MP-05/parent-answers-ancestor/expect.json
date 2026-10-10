@@ -7,7 +7,7 @@
   ],
   "node_present": false,
   "must_appear": [
-    "L01.M01.O01/proteins-essential-atp-synthesis"
+    "n_qkx5r9e0psvqpbd631wz7s98vm"
   ],
   "allowed_warnings": [
     "low_confidence"
