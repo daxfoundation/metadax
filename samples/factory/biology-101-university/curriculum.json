@@ -1,0 +1,357 @@
+{
+  "schema": "metadax.curriculum/0.3",
+  "_note": "model-generated, unreviewed, for illustration",
+  "id": "intro-biology-program",
+  "title": "Introduction to Biology — University Program",
+  "summary": "A one-term foundation in cell and molecular biology.",
+  "language": "en",
+  "brief": {
+    "institution": "University (first year)",
+    "audience": {
+      "intended_bands": [
+        "16-18",
+        "adult"
+      ],
+      "notes": "No prior college chemistry."
+    },
+    "duration": {
+      "value": 13,
+      "unit": "weeks"
+    },
+    "outcomes": [
+      "The learner can explain the cell theory and the scientific method.",
+      "The learner can trace energy flow through respiration and photosynthesis.",
+      "The learner can predict simple Mendelian inheritance outcomes.",
+      "The learner can describe how DNA is copied and expressed.",
+      "The learner can explain evolution by natural selection."
+    ],
+    "constraints": [
+      "Two 50-minute lectures per week",
+      "No organic reaction mechanisms"
+    ],
+    "source_policy": "open"
+  },
+  "context_profile": "higher-education",
+  "modifiers": [],
+  "nodes": [
+    {
+      "id": "intro-biology-program",
+      "parent_id": null,
+      "level": "program",
+      "depth": 0,
+      "slug": "introduction-to-biology-universi",
+      "title": "Introduction to Biology — University Program",
+      "summary": "A one-term foundation in cell and molecular biology for first-year students.",
+      "sequence": 1,
+      "prerequisites": [],
+      "time_budget": {
+        "value": 13,
+        "unit": "weeks"
+      },
+      "outcomes": [
+        "The learner can explain the cell theory and the scientific method.",
+        "The learner can trace energy flow through respiration and photosynthesis.",
+        "The learner can predict simple Mendelian inheritance outcomes.",
+        "The learner can describe how DNA is copied and expressed.",
+        "The learner can explain evolution by natural selection."
+      ]
+    },
+    {
+      "id": "biology-101",
+      "parent_id": "intro-biology-program",
+      "level": "course",
+      "depth": 1,
+      "slug": "biology-101",
+      "title": "Biology 101",
+      "summary": "Introductory university biology over 13 weeks.",
+      "sequence": 1,
+      "prerequisites": [],
+      "time_budget": {
+        "value": 13,
+        "unit": "weeks"
+      },
+      "outcomes": [
+        "The learner can explain the cell theory and the scientific method.",
+        "The learner can trace energy flow through respiration and photosynthesis.",
+        "The learner can predict simple Mendelian inheritance outcomes.",
+        "The learner can describe how DNA is copied and expressed.",
+        "The learner can explain evolution by natural selection."
+      ],
+      "handoff": {
+        "to": "MP-02",
+        "op": "ARCHITECT",
+        "mode": "design",
+        "size": "full",
+        "language": "en",
+        "input": "Design an introductory university Biology 101 course for first-year students with no college chemistry. Cover the scientific method, the chemistry of life, cell structure, membranes and transport, energy and enzymes, cellular respiration, photosynthesis, mitosis, meiosis, Mendelian genetics, DNA structure and replication, gene expression, and evolution by natural selection. Depth: introductory but rigorous; connect every topic to a worked example and a real-world observation. Exclude organic-chemistry reaction mechanisms and detailed biochemistry pathways beyond glycolysis/Krebs/electron transport at an overview level. 13 weeks, two 50-minute lectures per week.",
+        "audience": {
+          "intended_bands": [
+            "16-18",
+            "adult"
+          ],
+          "notes": "First-year university; no prior college chemistry assumed."
+        },
+        "source_policy": "open",
+        "context_profile": "higher-education",
+        "modifiers": [],
+        "outcomes": [
+          "The learner can explain the cell theory and the scientific method.",
+          "The learner can trace energy flow through respiration and photosynthesis.",
+          "The learner can predict simple Mendelian inheritance outcomes.",
+          "The learner can describe how DNA is copied and expressed.",
+          "The learner can explain evolution by natural selection."
+        ],
+        "module_plan": [
+          {
+            "lesson": "Cellular respiration",
+            "modules": [
+              "Glycolysis overview",
+              "The mitochondrion and ATP"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "biology-101/L01",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "life-cells-and-the",
+      "title": "Life, cells and the scientific method",
+      "summary": "What biology studies and how biologists know it.",
+      "sequence": 1,
+      "prerequisites": [],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": [
+        "The learner can define biology and apply the scientific method."
+      ]
+    },
+    {
+      "id": "biology-101/L02",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "chemistry-of-life-water",
+      "title": "Chemistry of life: water, carbon and macromolecules",
+      "summary": "The molecules every cell is built from.",
+      "sequence": 2,
+      "prerequisites": [
+        "biology-101/L01"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": [
+        "The learner can identify the major macromolecules."
+      ]
+    },
+    {
+      "id": "biology-101/L03",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "cell-structure-prokaryotes-and",
+      "title": "Cell structure: prokaryotes and eukaryotes",
+      "summary": "The parts of a cell and what they do.",
+      "sequence": 3,
+      "prerequisites": [
+        "biology-101/L02"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": [
+        "The learner can name the main organelles and their roles."
+      ]
+    },
+    {
+      "id": "biology-101/L04",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "membranes-and-transport",
+      "title": "Membranes and transport",
+      "summary": "How things cross the cell boundary.",
+      "sequence": 4,
+      "prerequisites": [
+        "biology-101/L03"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": []
+    },
+    {
+      "id": "biology-101/L05",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "energy-and-enzymes",
+      "title": "Energy and enzymes",
+      "summary": "How cells speed up and pay for reactions.",
+      "sequence": 5,
+      "prerequisites": [
+        "biology-101/L04"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": []
+    },
+    {
+      "id": "biology-101/L06",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "cellular-respiration",
+      "title": "Cellular respiration",
+      "summary": "How cells release energy from food.",
+      "sequence": 6,
+      "prerequisites": [
+        "biology-101/L05"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": []
+    },
+    {
+      "id": "biology-101/L07",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "photosynthesis",
+      "title": "Photosynthesis",
+      "summary": "How light becomes chemical energy.",
+      "sequence": 7,
+      "prerequisites": [
+        "biology-101/L06"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": []
+    },
+    {
+      "id": "biology-101/L08",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "cell-division-mitosis",
+      "title": "Cell division: mitosis",
+      "summary": "How one cell becomes two.",
+      "sequence": 8,
+      "prerequisites": [
+        "biology-101/L07"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": []
+    },
+    {
+      "id": "biology-101/L09",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "meiosis-and-sexual-reproduction",
+      "title": "Meiosis and sexual reproduction",
+      "summary": "How gametes and variation arise.",
+      "sequence": 9,
+      "prerequisites": [
+        "biology-101/L08"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": []
+    },
+    {
+      "id": "biology-101/L10",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "mendelian-genetics",
+      "title": "Mendelian genetics",
+      "summary": "How traits pass to offspring.",
+      "sequence": 10,
+      "prerequisites": [
+        "biology-101/L09"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": []
+    },
+    {
+      "id": "biology-101/L11",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "dna-structure-and-replication",
+      "title": "DNA structure and replication",
+      "summary": "The molecule of inheritance and its copying.",
+      "sequence": 11,
+      "prerequisites": [
+        "biology-101/L10"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": []
+    },
+    {
+      "id": "biology-101/L12",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "gene-expression-transcription-an",
+      "title": "Gene expression: transcription and translation",
+      "summary": "How a gene becomes a protein.",
+      "sequence": 12,
+      "prerequisites": [
+        "biology-101/L11"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": []
+    },
+    {
+      "id": "biology-101/L13",
+      "parent_id": "biology-101",
+      "level": "lesson",
+      "depth": 2,
+      "slug": "evolution-and-natural-selection",
+      "title": "Evolution and natural selection",
+      "summary": "Why life changes over time.",
+      "sequence": 13,
+      "prerequisites": [
+        "biology-101/L12"
+      ],
+      "time_budget": {
+        "value": 1,
+        "unit": "weeks"
+      },
+      "outcomes": []
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "created_at": "runtime",
+  "updated_at": "runtime"
+}

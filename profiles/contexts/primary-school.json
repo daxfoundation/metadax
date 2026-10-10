@@ -1,0 +1,57 @@
+{
+  "name": "Primary school (classroom or homeschool)",
+  "description": "Ages roughly 7-11 in a classroom or homeschool, with a teacher or parent present. Lessons fit a class period and lean on worked examples and practice.",
+  "reading_level": "grade-4",
+  "tone": "encouraging, concrete, lots of examples; never sarcastic",
+  "session": {
+    "minutes": 40,
+    "notes": "One class period; a short check at the end."
+  },
+  "guide_role": "teacher",
+  "age_bands": [
+    "7-9",
+    "10-12"
+  ],
+  "assessment_style": "Formative: frequent low-stakes checks and practice sets; occasional graded quiz the teacher runs.",
+  "delivery_media": [
+    "screen",
+    "print"
+  ],
+  "privacy": {
+    "minors": true,
+    "visibility_default": "pending_review",
+    "consent_notes": "Minor-authored content is pending_review; a teacher or parent reviews before sharing."
+  },
+  "language_note": "School language of instruction; define new terms in plain words.",
+  "supports": [
+    "short_chunks",
+    "frequent_checks",
+    "visual_structure",
+    "step_by_step"
+  ],
+  "defaults_for": {
+    "MP-11": {
+      "size": "term",
+      "unit": "weeks"
+    },
+    "MP-02": {
+      "size": "standard",
+      "depth": "introductory"
+    },
+    "MP-04": {
+      "sections_max": 5
+    }
+  },
+  "what_if_wrong": {
+    "reading_level": "Too high: a learner cannot decode the text and disengages; too low: an adult feels patronised. A LEARNER profile's reading_level always overrides this default.",
+    "tone": "A mismatched tone (jokey for a compliance course, stern for a child) breaks trust. INPUT/SOURCE tone wins over this default.",
+    "session": "Sessions longer than the real attention window lose the learner near the end; too short and a topic never resolves. MP-11 uses this as the lesson time unit; an explicit duration in the brief overrides it.",
+    "guide_role": "Assuming an adult is present when none is (or the reverse) makes instructions unusable. If LEARNER says otherwise, LEARNER wins.",
+    "assessment_style": "A high-stakes graded style on a low-stakes context (or vice versa) distorts pace and anxiety. Named exams in the brief override this.",
+    "delivery_media": "Assuming a screen where there is none (or bandwidth that is not there) makes content undeliverable. A modifier (offline-first, low-bandwidth) narrows this further.",
+    "privacy": "Treating a minor context as adult can publish a child's data; the floor is pending_review for minors and visibility is never relaxed below the profile's default.",
+    "language_note": "Ignoring the dominant language or a second-language audience produces text no one here can read. LEARNER.languages[0] wins."
+  },
+  "schema": "metadax.context-profile/0.3",
+  "id": "primary-school"
+}

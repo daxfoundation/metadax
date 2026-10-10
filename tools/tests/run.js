@@ -248,4 +248,5 @@ try { fs.rmSync(tmp, { recursive: true, force: true }); } catch (e) { /* ignore 
 process.stdout.write('\n' + (failures === 0 ? 'ALL PASS' : failures + ' FAILURE(S)') + '\n');
 require('./run_b.js'); // Part B tests (assemble.js, apply_packet.js)
 require('./run_c.js'); // Part C tests (B13 fix wave: stamp/apply/assemble/validate)
+if (failures === 0) require('./run_factory.js'); // Factory tests (MP-11/12 schemas, context profiles, samples/factory dry runs)
 process.exit(failures === 0 ? 0 : 1);

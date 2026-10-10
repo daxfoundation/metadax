@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.3/guide-coach.schema.json",
+  "title": "metadax MP-13 COACH output record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type", "mode", "restated", "strategies", "next_session_plan", "watch_for", "note_for_next_time", "warnings"],
+  "properties": {
+    "type": { "enum": ["coach", "review", "prepare", "error"] },
+    "mode": { "enum": ["coach", "review", "prepare"] },
+    "guide_type": { "anyOf": [ { "$ref": "#/$defs/slug" }, { "type": "null" } ] },
+    "context_profile": { "anyOf": [ { "$ref": "#/$defs/slug" }, { "type": "null" } ] },
+    "modifiers": { "type": "array", "items": { "$ref": "#/$defs/slug" } },
+    "restated": { "type": "string", "maxLength": 600 },
+    "hypotheses": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["situation", "check"],
+        "properties": {
+          "situation": { "type": "string", "maxLength": 400 },
+          "check": { "type": "string", "maxLength": 400 }
+        }
+      }
+    },
+    "patterns": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["pattern", "evidence", "check"],
+        "properties": {
+          "pattern": { "type": "string", "maxLength": 400 },
+          "evidence": { "type": "array", "items": { "type": "string", "maxLength": 200 } },
+          "check": { "type": "string", "maxLength": 400 }
+        }
+      }
+    },
+    "strategies": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["strategy", "why"],
+        "properties": {
+          "strategy": { "type": "string", "maxLength": 300 },
+          "why": { "type": "string", "maxLength": 300 },
+          "addresses": { "anyOf": [ { "type": "string", "maxLength": 200 }, { "type": "null" } ] }
+        }
+      }
+    },
+    "next_session_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["minutes", "steps"],
+      "properties": {
+        "minutes": { "type": "integer", "minimum": 1 },
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["minutes", "do"],
+            "properties": {
+              "minutes": { "type": "integer", "minimum": 1 },
+              "do": { "type": "string", "maxLength": 400 }
+            }
+          }
+        }
+      }
+    },
+    "watch_for": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["signal", "record_as"],
+        "properties": {
+          "signal": { "type": "string", "maxLength": 300 },
+          "record_as": { "type": "string", "maxLength": 200 }
+        }
+      }
+    },
+    "involve_others": { "anyOf": [ { "type": "string", "maxLength": 800 }, { "type": "null" } ] },
+    "note_for_next_time": { "$ref": "#/$defs/nextTimeNote" },
+    "safeguarding": { "anyOf": [ { "type": "string" }, { "type": "null" } ] },
+    "assumptions": { "type": "array", "items": { "type": "string" } },
+    "warnings": { "type": "array", "items": { "$ref": "#/$defs/warning" } },
+    "missing": { "type": "array", "items": { "type": "string" } },
+    "message": { "type": "string" }
+  },
+  "$defs": {
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "nextTimeNote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["what_happened", "what_worked", "watch_items", "next_step"],
+      "properties": {
+        "what_happened": { "type": "string", "maxLength": 600 },
+        "what_worked": { "type": "string", "maxLength": 600 },
+        "watch_items": { "type": "array", "items": { "type": "string", "maxLength": 200 } },
+        "next_step": { "type": "string", "maxLength": 400 }
+      }
+    },
+    "warning": { "enum": ["steer_conflict", "audience_conflict", "out_of_scope", "depth_limit", "low_confidence", "source_gap", "wellbeing_flag", "missing_input", "orphans_followups", "budget_unmet", "unstamped"] }
+  }
+}

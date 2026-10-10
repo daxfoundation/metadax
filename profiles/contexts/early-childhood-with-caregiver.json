@@ -1,0 +1,56 @@
+{
+  "name": "Early childhood, with a caregiver",
+  "description": "Ages roughly 4-6 learning alongside a parent or caregiver who reads and guides. Content is spoken or read aloud by the adult, in short playful bursts.",
+  "reading_level": "plain-language",
+  "tone": "warm, playful, concrete; speak to the caregiver and the child together",
+  "session": {
+    "minutes": 10,
+    "notes": "One idea per sitting; the caregiver drives pace. Expect frequent stops."
+  },
+  "guide_role": "caregiver",
+  "age_bands": [
+    "4-6"
+  ],
+  "assessment_style": "No grades. A caregiver asks one playful check question; success is the child doing or naming the thing.",
+  "delivery_media": [
+    "audio",
+    "print",
+    "screen"
+  ],
+  "privacy": {
+    "minors": true,
+    "visibility_default": "private",
+    "consent_notes": "The caregiver manages all consent; nothing a child says is shared. guardian_managed is true."
+  },
+  "language_note": "Written for the caregiver to read aloud in the home language; keep every word decodable by ear.",
+  "supports": [
+    "read_aloud_friendly",
+    "short_chunks",
+    "extra_examples"
+  ],
+  "defaults_for": {
+    "MP-11": {
+      "size": "strand",
+      "unit": "sessions"
+    },
+    "MP-02": {
+      "size": "micro",
+      "depth": "introductory"
+    },
+    "MP-04": {
+      "sections_max": 3
+    }
+  },
+  "what_if_wrong": {
+    "reading_level": "Too high: a learner cannot decode the text and disengages; too low: an adult feels patronised. A LEARNER profile's reading_level always overrides this default.",
+    "tone": "A mismatched tone (jokey for a compliance course, stern for a child) breaks trust. INPUT/SOURCE tone wins over this default.",
+    "session": "Sessions longer than the real attention window lose the learner near the end; too short and a topic never resolves. MP-11 uses this as the lesson time unit; an explicit duration in the brief overrides it.",
+    "guide_role": "Assuming an adult is present when none is (or the reverse) makes instructions unusable. If LEARNER says otherwise, LEARNER wins.",
+    "assessment_style": "A high-stakes graded style on a low-stakes context (or vice versa) distorts pace and anxiety. Named exams in the brief override this.",
+    "delivery_media": "Assuming a screen where there is none (or bandwidth that is not there) makes content undeliverable. A modifier (offline-first, low-bandwidth) narrows this further.",
+    "privacy": "Treating a minor context as adult can publish a child's data; the floor is pending_review for minors and visibility is never relaxed below the profile's default.",
+    "language_note": "Ignoring the dominant language or a second-language audience produces text no one here can read. LEARNER.languages[0] wins."
+  },
+  "schema": "metadax.context-profile/0.3",
+  "id": "early-childhood-with-caregiver"
+}
