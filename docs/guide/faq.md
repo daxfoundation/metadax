@@ -1,6 +1,6 @@
-# MetaDAX for parents — questions and answers
+# Meta DAX for parents — questions and answers
 
-MetaDAX › [Help](index.md) › Questions
+Meta DAX › [Help](index.md) › Questions
 
 Plain answers to the things parents ask first.
 
@@ -32,7 +32,7 @@ alongside whatever you already do, for the parts where something keeps going wro
 ### What if my child is really struggling?
 
 Describe what your child does — "covers the page after two tries," "says the sounds
-but they stay apart" — and the lesson is built around that behaviour. MetaDAX
+but they stay apart" — and the lesson is built around that behaviour. Meta DAX
 never labels a child and never names a condition, anywhere. If you are worried, the
 right next step is to talk to a professional who can do an evaluation; the lesson
 will say so plainly when the signs warrant it, and it names nothing.
@@ -75,7 +75,7 @@ appears in the public library.
 
 ### Who makes it?
 
-The DAX Foundation, in the open. MetaDAX is a research project, built in public on
+The DAX Foundation, in the open. Meta DAX is a research project, built in public on
 GitHub; what runs and what has not is all published there.
 
-[Back to the guide →](index.md) · [What MetaDAX is, for parents](https://daxfoundation.org/metadax/homeschool/) · [The open repository](https://github.com/daxfoundation/metadax)
+[Back to the guide →](index.md) · [What Meta DAX is, for parents](https://daxfoundation.org/metadax/homeschool/) · [The open repository](https://github.com/daxfoundation/metadax)
