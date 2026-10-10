@@ -26,7 +26,7 @@ If you tutor privately, you can debrief a session in about five minutes after yo
 
 **1. Get it, by whichever route suits you -- pick one:**
 
-- **The skill folder**, for any assistant that reads a `SKILL.md` (Claude Code, Codex and the like): copy [`skills/metadax-tutor`](skills/metadax-tutor/) into your assistant's skills folder.
+- **The skill folder**, for any assistant that reads a `SKILL.md`: copy [`skills/metadax-tutor`](skills/metadax-tutor/) into your assistant's skills folder.
 - **The plain prompt**: paste [`skills/metadax-tutor/prompt.md`](skills/metadax-tutor/prompt.md) into whatever capable assistant you already pay for.
 
 **2. Run it.** It asks you a handful of plain questions after the session -- no names, nothing identifying -- then gives you two things: a set of concrete moves to try next session and a parent report ready to copy and send.
@@ -39,7 +39,7 @@ If you are teaching a class, you can design a term plan for any subject in about
 
 **1. Get it, by whichever route suits you -- pick one:**
 
-- **The skill folder**, for any assistant that reads a `SKILL.md` (Claude Code, Codex and the like): copy [`skills/metadax-teacher`](skills/metadax-teacher/) into your assistant's skills folder.
+- **The skill folder**, for any assistant that reads a `SKILL.md`: copy [`skills/metadax-teacher`](skills/metadax-teacher/) into your assistant's skills folder.
 - **The plain prompt**: paste [`skills/metadax-teacher/prompt.md`](skills/metadax-teacher/prompt.md) into whatever capable assistant you already pay for.
 
 **2. Run it.** It asks you about your class, your subject and your term, then builds a lesson-by-lesson plan -- each lesson with its objective, the common wrong step (misconception), and a check for whether it landed. Misconceptions first; the plan is designed around what actually goes wrong.
@@ -69,6 +69,15 @@ If you are teaching a class, you can design a term plan for any subject in about
 ## Support this work
 
 MetaDAX is free. It is built on paid compute. If it helped, a coffee on Ko-fi or a GitHub sponsorship keeps it going. [Ko-fi](https://ko-fi.com/jeyanandan) — [GitHub Sponsors](https://github.com/sponsors/ObsidianDelta)
+
+- **[Sponsor on GitHub](https://github.com/sponsors/ObsidianDelta)**: $5, $25 or $100 a month, or a one-time amount. Sponsors are listed here.
+- **[Ko-fi](https://ko-fi.com/jeyanandan)**: a one-off coffee or a monthly one, no GitHub account needed.
+
+Everything built with it is published in this repository. Nothing is paywalled, and nothing will be.
+
+### Sponsors
+
+No sponsors yet. Be the first.
 
 ---
 
@@ -144,19 +153,6 @@ So, being completely transparent: if you would like to [buy me a coffee](https:/
 - `docs/LICENSING.md` and `LICENSES.md` — prompts/, schemas/, evals/fixtures CC0 1.0; tools/, templates/, .github/, skills/, adapters/ Apache-2.0; docs/, README.md and other prose CC BY 4.0; generated course content the licence the course author chooses (default CC BY 4.0), with raw generated segments marked generated: true and declared CC0; DCO for contributions.
 - `docs/PRIVACY.md` — pseudonyms only; no email, name, school or diagnosis anywhere; private nodes never leave the learner repo; adults only in Phase 1 clients; no telemetry, no server.
 - `docs/ACCURACY.md` — the accuracy commitments: no result without a recorded run, reserved fields described as reserved, no affiliation implied, models named by vendor outside eval results.
-
-## Support this work
-
-MetaDAX is built with AI agents on paid compute. When the credits run out, the work stops. If you want it to keep going:
-
-- **[Sponsor on GitHub](https://github.com/sponsors/ObsidianDelta)**: $5, $25 or $100 a month, or a one-time amount. Sponsors are listed here.
-- **[Ko-fi](https://ko-fi.com/jeyanandan)**: a one-off coffee or a monthly one, no GitHub account needed.
-
-Everything built with it is published in this repository. Nothing is paywalled, and nothing will be.
-
-### Sponsors
-
-No sponsors yet. Be the first.
 
 ## Contributing
 
