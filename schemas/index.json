@@ -9,5 +9,8 @@
   "metadax.event/0.2": "event.schema.json",
   "metadax.tutor-turn/0.2": "tutor-turn.schema.json",
   "metadax.manifest/0.2": "manifest.schema.json",
-  "metadax.packet/0.2": "packet.schema.json"
+  "metadax.packet/0.2": "packet.schema.json",
+  "metadax.curriculum/0.3": "curriculum.schema.json",
+  "metadax.context-profile/0.3": "context-profile.schema.json",
+  "metadax.guide-coach/0.3": "guide-coach.schema.json"
 }
