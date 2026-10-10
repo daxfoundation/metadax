@@ -49,6 +49,19 @@ ok(/L01\.M01\.O01\/proteins-essential-atp-synthesis\/cytochrome-c-structure-role
   'MP-05 REGISTRY contains the depth-3 sibling cytochrome-c-structure-role');
 ok(mp05.text.indexOf('<<START INPUT>>') > mp05.text.indexOf('<<START REGISTRY>>'),
   'MP-05 INPUT comes after REGISTRY');
+// v0.3: an opaque n_* node has no module prefix; assemble must still resolve its
+// parent-module registry (L01.M01), which REGISTRY lists first, in file order.
+const mp05n = assembleMod.assemble({
+  op: 'MP-05', prompts: PROMPTS, course: FCOURSE, learner: FLEARNER,
+  learnerId: 'lrn-fixture01', node: 'n_ka7589qwn4z1n2tghxxcv2vzbm',
+  input: 'how does it hand electrons to complex 4?',
+});
+const regIdsN = (mp05n.text.split('<<START REGISTRY>>')[1].split('<<END REGISTRY>>')[0]
+  .match(/"id":\s*"[^"]+"/g) || []).map(function (s) { return s.replace(/^"id":\s*"|"$/g, ''); });
+const m01Ids = JSON.parse(fs.readFileSync(path.join(FCOURSE, 'registry', 'L01.M01.json'), 'utf-8'))
+  .nodes.map(function (e) { return e.id; });
+ok(JSON.stringify(regIdsN.slice(0, m01Ids.length)) === JSON.stringify(m01Ids),
+  'MP-05 for an opaque n_* node puts its parent-module registry (L01.M01) first');
 
 // ---- 2. MP-06 stack assembles ----
 const mp06 = assembleMod.assemble({
@@ -67,8 +80,9 @@ const course = path.join(tmp, 'course');
 fs.cpSync(FCOURSE, course, { recursive: true });
 
 // Base the new node on an existing depth-2 node so every schema field is present.
+// v0.3: L01.M01.O02/building-proton-gradient now lives at its migrated opaque id.
 const srcNode = JSON.parse(fs.readFileSync(
-  path.join(FCOURSE, 'nodes', 'L01.M01.O02', 'building-proton-gradient', 'node.json'), 'utf-8'));
+  path.join(FCOURSE, 'nodes', 'n_zybxq9436j8wxpeh0sxgqyycjr', 'node.json'), 'utf-8'));
 const newId = 'L01.M02.O01/apply-packet-test-node';
 const newNode = Object.assign({}, srcNode, {
   id: newId,

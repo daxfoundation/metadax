@@ -46,26 +46,54 @@ ok(pathTool.slug('Cytochrome c: structure and role') === 'cytochrome-c-structure
 ok(pathTool.slug('Plant and animal mitochondria compared') === 'plant-animal-mitochondria',
   'slug: Plant and animal mitochondria compared (34 -> 25 char cap)');
 
-// ---- 3. childId collision suffix + 200-char cap ----
+// ---- 3. childId (v0.3): opaque id, re-mint on collision, no id growth ----
+// v0.3 childId mints "n_" + 26 Crockford base32 from 128 random bits. For
+// stable expected values the RNG is seeded with the deterministic v0.3 mapping
+// (first 128 bits of sha256(legacy id), as tools/migrate-ids-0.2-to-0.3.js
+// opaqueFromLegacy): each expected id below is the v0.3 id of the v0.2 id this
+// test expected before the migration.
+const crypto = require('crypto');
+function seeded(legacyIds, fn) { // mint() returns the v0.3 ids of legacyIds, in order
+  const queue = legacyIds.slice();
+  const real = crypto.randomBytes;
+  crypto.randomBytes = function (n) {
+    return crypto.createHash('sha256').update(String(queue.shift())).digest().subarray(0, n);
+  };
+  try { return fn(); } finally { crypto.randomBytes = real; }
+}
+
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'metadax-test-'));
 const courseDir = path.join(tmp, 'course');
 const nodesDir = path.join(courseDir, 'nodes');
-fs.mkdirSync(path.join(nodesDir, 'L01.M01.O01', 'foo-bar'), { recursive: true });
-ok(pathTool.childId('L01.M01.O01', 'Foo bar', courseDir) === 'L01.M01.O01/foo-bar-2',
-  'childId suffixes -2 on collision');
-fs.mkdirSync(path.join(nodesDir, 'L01.M01.O01', 'foo-bar-2'), { recursive: true });
-ok(pathTool.childId('L01.M01.O01', 'Foo bar', courseDir) === 'L01.M01.O01/foo-bar-3',
-  'childId suffixes -3 on second collision');
+// Flat v0.3 layout: nodes/<v0.3 id of L01.M01.O01/foo-bar>
+fs.mkdirSync(path.join(nodesDir, 'n_3zq7sqqv4qj68c7k6wdqvyzr4c'), { recursive: true });
+ok(seeded(['L01.M01.O01/foo-bar', 'L01.M01.O01/foo-bar-2'], function () {
+  return pathTool.childId('L01.M01.O01', 'Foo bar', courseDir);
+}) === 'n_052jj3pnsv8ct040eekk7m7xm0',
+  'childId re-mints on collision (v0.3 id of L01.M01.O01/foo-bar-2)');
+fs.mkdirSync(path.join(nodesDir, 'n_052jj3pnsv8ct040eekk7m7xm0'), { recursive: true });
+ok(seeded(['L01.M01.O01/foo-bar', 'L01.M01.O01/foo-bar-2', 'L01.M01.O01/foo-bar-3'], function () {
+  return pathTool.childId('L01.M01.O01', 'Foo bar', courseDir);
+}) === 'n_cfqvtp33nxz7e3pgy7f30zrny4',
+  'childId re-mints on second collision (v0.3 id of L01.M01.O01/foo-bar-3)');
 
 const longParent = 'L01.M01.O01/' + 'x'.repeat(180); // 192 chars
-const capped = pathTool.childId(longParent, 'alpha beta gamma delta', courseDir);
+const capped = seeded([longParent + '/alpha'], function () {
+  return pathTool.childId(longParent, 'alpha beta gamma delta', courseDir);
+});
 ok(capped.length <= 200, 'childId respects the 200-char cap (len ' + capped.length + ')');
-ok(capped === longParent + '/alpha', 'childId drops trailing words to fit the cap');
+ok(capped === 'n_5jxc5d3gvkqxgs9d330ge090xg',
+  'childId stays a fixed-length opaque id under a long parent (v0.3 id of the capped breadcrumb)');
 
 let refused = false;
-try { pathTool.childId('a'.repeat(200), 'word', courseDir); }
-catch (e) { refused = true; }
-ok(refused, 'childId refuses when no word fits under the cap');
+let unbounded = null;
+try {
+  unbounded = seeded(['a'.repeat(200) + '/word'], function () {
+    return pathTool.childId('a'.repeat(200), 'word', courseDir);
+  });
+} catch (e) { refused = true; }
+ok(!refused && unbounded === 'n_1mjkdsc55zcb32tbp12ky8nxkc',
+  'childId never exceeds the cap in v0.3: a 200-char parent still yields a 28-char opaque id');
 
 // ---- 4. build a tiny course (2 objectives, 3 follow-ups incl. depth 3) ----
 function writeNode(id, parentId, depth, pathArr) {
