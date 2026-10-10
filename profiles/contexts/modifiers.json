@@ -1,0 +1,84 @@
+{
+  "schema": "metadax.context-modifiers/0.3",
+  "note": "Cross-cutting accommodations and delivery adjustments. These apply ON TOP OF any population profile; they are NOT populations and NEVER label a learner by a condition (SCHEMAS design law 6). Each modifier names what to DO, and maps to the existing learner-profile `supports` vocabulary (SCHEMAS section 5) and/or a delivery constraint. MP-11/MP-02/MP-04 read them from CONFIG.modifiers and apply them to rendering and delivery, not to shared `core` identity.",
+  "modifiers": [
+    {
+      "id": "screen-reader",
+      "name": "Screen-reader friendly",
+      "description": "Rendered so a screen reader conveys everything a sighted reader gets.",
+      "applies_to": ["rendering", "delivery"],
+      "supports": ["read_aloud_friendly"],
+      "rendering_rules": [
+        "No symbol without its spoken form (write 'one quarter' or give the words beside the glyph).",
+        "No information carried by a table's visual layout alone; linearise it.",
+        "Every image needs a text alternative; never put meaning only in a figure."
+      ],
+      "what_if_wrong": "A bare symbol or a layout-only table is silently dropped by a screen reader, so the learner loses the point without knowing it. Pair every glyph with words and linearise tables."
+    },
+    {
+      "id": "dyslexia-friendly",
+      "name": "Dyslexia-friendly text",
+      "description": "Text shaped to reduce decoding load, without changing the content or singling anyone out.",
+      "applies_to": ["rendering"],
+      "supports": ["short_chunks", "plain_language", "low_distraction"],
+      "rendering_rules": [
+        "Short paragraphs, one idea each; generous spacing.",
+        "Plain words; define or avoid long low-frequency terms.",
+        "No large blocks of italics or all-caps; at most one emphasis per paragraph."
+      ],
+      "what_if_wrong": "Dense justified text with heavy emphasis raises decoding effort and the learner stops. Keep chunks short and emphasis sparse. Never record this as a diagnosis about the learner."
+    },
+    {
+      "id": "captions",
+      "name": "Captions and transcripts",
+      "description": "Every audio or video segment carries synchronised captions and a full text transcript.",
+      "applies_to": ["delivery"],
+      "supports": [],
+      "rendering_rules": [
+        "Any audio/video delivery MUST ship a transcript the learner can read instead.",
+        "Captions carry speaker turns and meaningful non-speech sound.",
+        "The transcript is the source of truth when bandwidth drops the media."
+      ],
+      "what_if_wrong": "Uncaptioned media excludes anyone who cannot hear it or cannot play it; the lesson becomes undeliverable. Always provide the transcript as a text fallback."
+    },
+    {
+      "id": "low-vision",
+      "name": "Low-vision friendly",
+      "description": "Presentation that stays usable at large text sizes and high contrast.",
+      "applies_to": ["rendering", "delivery"],
+      "supports": ["visual_structure", "low_distraction"],
+      "rendering_rules": [
+        "No meaning carried by colour alone; pair colour with a label or shape.",
+        "Clear heading structure so a magnifier user keeps their place.",
+        "Reflowable text; never fix content to a width that breaks when enlarged."
+      ],
+      "what_if_wrong": "Colour-only cues and fixed-width layouts vanish or break under magnification. Label cues and keep text reflowable."
+    },
+    {
+      "id": "low-bandwidth",
+      "name": "Low-bandwidth delivery",
+      "description": "Content that loads and teaches with almost no network.",
+      "applies_to": ["delivery"],
+      "supports": ["minimal_text"],
+      "rendering_rules": [
+        "Text-first; heavy media is optional and never required to meet an objective.",
+        "Every media element has a text equivalent that stands alone.",
+        "Keep each lesson small enough to fetch once on a weak connection."
+      ],
+      "what_if_wrong": "A lesson that needs a video to make sense is unreachable on a weak link. Make text carry the objective and treat media as a bonus."
+    },
+    {
+      "id": "offline-first",
+      "name": "Offline and printable first",
+      "description": "Each lesson works with no connectivity and prints to paper without loss.",
+      "applies_to": ["delivery"],
+      "supports": ["minimal_text", "step_by_step"],
+      "rendering_rules": [
+        "No step depends on a live service, link or lookup.",
+        "A printable one-page form carries the whole objective.",
+        "Interactivity has a paper fallback (write the answer, a volunteer checks)."
+      ],
+      "what_if_wrong": "A lesson that assumes connectivity or a screen cannot run in a crisis or under-resourced setting. Give every lesson a self-contained printable form."
+    }
+  ]
+}

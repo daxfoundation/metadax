@@ -1,0 +1,58 @@
+{
+  "name": "Vocational trades and apprenticeship",
+  "description": "Hands-on trade training (electrical, culinary, automotive, care work) blending a trainer, practical tasks and safety-critical procedure.",
+  "reading_level": "adult",
+  "tone": "direct, practical, safety-first; show the step, then the why",
+  "session": {
+    "minutes": 90,
+    "notes": "A workshop or shift block; much of it is doing, not reading."
+  },
+  "guide_role": "trainer",
+  "age_bands": [
+    "16-18",
+    "adult"
+  ],
+  "assessment_style": "Competency-based: can the learner perform the task to standard, observed by a trainer; a checklist, not a mark.",
+  "delivery_media": [
+    "hands-on",
+    "print",
+    "screen",
+    "offline"
+  ],
+  "privacy": {
+    "minors": false,
+    "visibility_default": "pending_review",
+    "consent_notes": "Mixed adult/teen apprentices; default pending_review so a trainer checks safety claims."
+  },
+  "language_note": "Workplace language; keep procedure steps short and unambiguous, define tool and part names.",
+  "supports": [
+    "step_by_step",
+    "visual_structure",
+    "read_aloud_friendly"
+  ],
+  "defaults_for": {
+    "MP-11": {
+      "size": "program",
+      "unit": "hours"
+    },
+    "MP-02": {
+      "size": "standard",
+      "depth": "intermediate"
+    },
+    "MP-04": {
+      "sections_max": 6
+    }
+  },
+  "what_if_wrong": {
+    "reading_level": "Too high: a learner cannot decode the text and disengages; too low: an adult feels patronised. A LEARNER profile's reading_level always overrides this default.",
+    "tone": "A mismatched tone (jokey for a compliance course, stern for a child) breaks trust. INPUT/SOURCE tone wins over this default.",
+    "session": "Sessions longer than the real attention window lose the learner near the end; too short and a topic never resolves. MP-11 uses this as the lesson time unit; an explicit duration in the brief overrides it.",
+    "guide_role": "Assuming an adult is present when none is (or the reverse) makes instructions unusable. If LEARNER says otherwise, LEARNER wins.",
+    "assessment_style": "A high-stakes graded style on a low-stakes context (or vice versa) distorts pace and anxiety. Named exams in the brief override this.",
+    "delivery_media": "Assuming a screen where there is none (or bandwidth that is not there) makes content undeliverable. A modifier (offline-first, low-bandwidth) narrows this further.",
+    "privacy": "Treating a minor context as adult can publish a child's data; the floor is pending_review for minors and visibility is never relaxed below the profile's default.",
+    "language_note": "Ignoring the dominant language or a second-language audience produces text no one here can read. LEARNER.languages[0] wins."
+  },
+  "schema": "metadax.context-profile/0.3",
+  "id": "vocational-trades-apprenticeship"
+}

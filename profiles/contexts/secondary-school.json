@@ -1,0 +1,56 @@
+{
+  "name": "Secondary school",
+  "description": "Ages roughly 12-18 in secondary school, teacher-led, often working toward a syllabus or exam. Longer lessons, more abstraction, graded assessment.",
+  "reading_level": "grade-8",
+  "tone": "clear, respectful, a little more formal; assume growing independence",
+  "session": {
+    "minutes": 50,
+    "notes": "A class period; homework may extend it."
+  },
+  "guide_role": "teacher",
+  "age_bands": [
+    "13-15",
+    "16-18"
+  ],
+  "assessment_style": "Mix of formative checks and graded, syllabus-aligned assessment; exam practice where relevant.",
+  "delivery_media": [
+    "screen",
+    "print"
+  ],
+  "privacy": {
+    "minors": true,
+    "visibility_default": "pending_review",
+    "consent_notes": "Minors: pending_review by default; older teens may share questions only with guardian-set consent."
+  },
+  "language_note": "School language of instruction; subject vocabulary introduced explicitly.",
+  "supports": [
+    "visual_structure",
+    "frequent_checks",
+    "extra_examples"
+  ],
+  "defaults_for": {
+    "MP-11": {
+      "size": "term",
+      "unit": "weeks"
+    },
+    "MP-02": {
+      "size": "standard",
+      "depth": "intermediate"
+    },
+    "MP-04": {
+      "sections_max": 6
+    }
+  },
+  "what_if_wrong": {
+    "reading_level": "Too high: a learner cannot decode the text and disengages; too low: an adult feels patronised. A LEARNER profile's reading_level always overrides this default.",
+    "tone": "A mismatched tone (jokey for a compliance course, stern for a child) breaks trust. INPUT/SOURCE tone wins over this default.",
+    "session": "Sessions longer than the real attention window lose the learner near the end; too short and a topic never resolves. MP-11 uses this as the lesson time unit; an explicit duration in the brief overrides it.",
+    "guide_role": "Assuming an adult is present when none is (or the reverse) makes instructions unusable. If LEARNER says otherwise, LEARNER wins.",
+    "assessment_style": "A high-stakes graded style on a low-stakes context (or vice versa) distorts pace and anxiety. Named exams in the brief override this.",
+    "delivery_media": "Assuming a screen where there is none (or bandwidth that is not there) makes content undeliverable. A modifier (offline-first, low-bandwidth) narrows this further.",
+    "privacy": "Treating a minor context as adult can publish a child's data; the floor is pending_review for minors and visibility is never relaxed below the profile's default.",
+    "language_note": "Ignoring the dominant language or a second-language audience produces text no one here can read. LEARNER.languages[0] wins."
+  },
+  "schema": "metadax.context-profile/0.3",
+  "id": "secondary-school"
+}

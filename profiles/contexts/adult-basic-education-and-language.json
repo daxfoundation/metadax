@@ -1,0 +1,58 @@
+{
+  "name": "Adult basic education and language",
+  "description": "Adult literacy, numeracy and second-language learning. Learners are capable adults who may read at an early level or in a new language; dignity matters.",
+  "reading_level": "plain-language",
+  "tone": "respectful, patient, adult-to-adult; never childish despite the simple words",
+  "session": {
+    "minutes": 30,
+    "notes": "A tutoring or self-study block; lots of repetition and real-life tasks."
+  },
+  "guide_role": "peer",
+  "age_bands": [
+    "adult"
+  ],
+  "assessment_style": "Low-stakes, can-do statements ('I can fill in this form'); self-check and tutor observation, no competitive grading.",
+  "delivery_media": [
+    "print",
+    "audio",
+    "screen",
+    "offline"
+  ],
+  "privacy": {
+    "minors": false,
+    "visibility_default": "pending_review",
+    "consent_notes": "Adults who may be vulnerable; keep questions private unless clearly opted in."
+  },
+  "language_note": "Target language with first-language glosses allowed; keep sentences short, spell out numbers and symbols.",
+  "supports": [
+    "plain_language",
+    "read_aloud_friendly",
+    "short_chunks",
+    "extra_examples"
+  ],
+  "defaults_for": {
+    "MP-11": {
+      "size": "term",
+      "unit": "sessions"
+    },
+    "MP-02": {
+      "size": "standard",
+      "depth": "introductory"
+    },
+    "MP-04": {
+      "sections_max": 4
+    }
+  },
+  "what_if_wrong": {
+    "reading_level": "Too high: a learner cannot decode the text and disengages; too low: an adult feels patronised. A LEARNER profile's reading_level always overrides this default.",
+    "tone": "A mismatched tone (jokey for a compliance course, stern for a child) breaks trust. INPUT/SOURCE tone wins over this default.",
+    "session": "Sessions longer than the real attention window lose the learner near the end; too short and a topic never resolves. MP-11 uses this as the lesson time unit; an explicit duration in the brief overrides it.",
+    "guide_role": "Assuming an adult is present when none is (or the reverse) makes instructions unusable. If LEARNER says otherwise, LEARNER wins.",
+    "assessment_style": "A high-stakes graded style on a low-stakes context (or vice versa) distorts pace and anxiety. Named exams in the brief override this.",
+    "delivery_media": "Assuming a screen where there is none (or bandwidth that is not there) makes content undeliverable. A modifier (offline-first, low-bandwidth) narrows this further.",
+    "privacy": "Treating a minor context as adult can publish a child's data; the floor is pending_review for minors and visibility is never relaxed below the profile's default.",
+    "language_note": "Ignoring the dominant language or a second-language audience produces text no one here can read. LEARNER.languages[0] wins."
+  },
+  "schema": "metadax.context-profile/0.3",
+  "id": "adult-basic-education-and-language"
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Workplace HR training",
+  "description": "Employee onboarding, compliance and upskilling inside an organisation. Short, role-relevant, often mandatory and tracked for completion.",
+  "reading_level": "adult",
+  "tone": "professional, concise, respectful of busy adults; no filler",
+  "session": {
+    "minutes": 20,
+    "notes": "A short module an employee fits into a workday; resumable."
+  },
+  "guide_role": "none",
+  "age_bands": [
+    "adult"
+  ],
+  "assessment_style": "Completion plus a short knowledge check; compliance topics may need a recorded pass. Rubric for open-ended.",
+  "delivery_media": [
+    "screen",
+    "low-bandwidth"
+  ],
+  "privacy": {
+    "minors": false,
+    "visibility_default": "pending_review",
+    "consent_notes": "Adults; keep content free of personal performance data. Completion records belong to HR systems, not the course repo."
+  },
+  "language_note": "Organisation's working language; plain business English, define policy terms once.",
+  "supports": [
+    "short_chunks",
+    "visual_structure"
+  ],
+  "defaults_for": {
+    "MP-11": {
+      "size": "strand",
+      "unit": "minutes"
+    },
+    "MP-02": {
+      "size": "short",
+      "depth": "introductory"
+    },
+    "MP-04": {
+      "sections_max": 4
+    }
+  },
+  "what_if_wrong": {
+    "reading_level": "Too high: a learner cannot decode the text and disengages; too low: an adult feels patronised. A LEARNER profile's reading_level always overrides this default.",
+    "tone": "A mismatched tone (jokey for a compliance course, stern for a child) breaks trust. INPUT/SOURCE tone wins over this default.",
+    "session": "Sessions longer than the real attention window lose the learner near the end; too short and a topic never resolves. MP-11 uses this as the lesson time unit; an explicit duration in the brief overrides it.",
+    "guide_role": "Assuming an adult is present when none is (or the reverse) makes instructions unusable. If LEARNER says otherwise, LEARNER wins.",
+    "assessment_style": "A high-stakes graded style on a low-stakes context (or vice versa) distorts pace and anxiety. Named exams in the brief override this.",
+    "delivery_media": "Assuming a screen where there is none (or bandwidth that is not there) makes content undeliverable. A modifier (offline-first, low-bandwidth) narrows this further.",
+    "privacy": "Treating a minor context as adult can publish a child's data; the floor is pending_review for minors and visibility is never relaxed below the profile's default.",
+    "language_note": "Ignoring the dominant language or a second-language audience produces text no one here can read. LEARNER.languages[0] wins."
+  },
+  "schema": "metadax.context-profile/0.3",
+  "id": "workplace-hr-training"
+}

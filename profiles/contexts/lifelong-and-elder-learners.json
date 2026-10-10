@@ -1,0 +1,55 @@
+{
+  "name": "Lifelong and elder learners",
+  "description": "Self-directed adults and older learners pursuing interest or re-skilling. Independent, motivated, value clarity and relevance over gamification.",
+  "reading_level": "adult",
+  "tone": "respectful, unhurried, assumes life experience; connect to real use",
+  "session": {
+    "minutes": 30,
+    "notes": "Self-paced; learner chooses depth and stops freely."
+  },
+  "guide_role": "none",
+  "age_bands": [
+    "adult"
+  ],
+  "assessment_style": "Optional self-assessment and reflection; no external grading unless the learner asks for a check.",
+  "delivery_media": [
+    "screen",
+    "print",
+    "audio"
+  ],
+  "privacy": {
+    "minors": false,
+    "visibility_default": "shared",
+    "consent_notes": "Adults; sharing is opt-in. Larger text and clear structure help without being labelled an accommodation."
+  },
+  "language_note": "Learner's chosen language; avoid jargon and unexplained abbreviations.",
+  "supports": [
+    "visual_structure",
+    "larger_steps_ok"
+  ],
+  "defaults_for": {
+    "MP-11": {
+      "size": "strand",
+      "unit": "sessions"
+    },
+    "MP-02": {
+      "size": "standard",
+      "depth": "intermediate"
+    },
+    "MP-04": {
+      "sections_max": 6
+    }
+  },
+  "what_if_wrong": {
+    "reading_level": "Too high: a learner cannot decode the text and disengages; too low: an adult feels patronised. A LEARNER profile's reading_level always overrides this default.",
+    "tone": "A mismatched tone (jokey for a compliance course, stern for a child) breaks trust. INPUT/SOURCE tone wins over this default.",
+    "session": "Sessions longer than the real attention window lose the learner near the end; too short and a topic never resolves. MP-11 uses this as the lesson time unit; an explicit duration in the brief overrides it.",
+    "guide_role": "Assuming an adult is present when none is (or the reverse) makes instructions unusable. If LEARNER says otherwise, LEARNER wins.",
+    "assessment_style": "A high-stakes graded style on a low-stakes context (or vice versa) distorts pace and anxiety. Named exams in the brief override this.",
+    "delivery_media": "Assuming a screen where there is none (or bandwidth that is not there) makes content undeliverable. A modifier (offline-first, low-bandwidth) narrows this further.",
+    "privacy": "Treating a minor context as adult can publish a child's data; the floor is pending_review for minors and visibility is never relaxed below the profile's default.",
+    "language_note": "Ignoring the dominant language or a second-language audience produces text no one here can read. LEARNER.languages[0] wins."
+  },
+  "schema": "metadax.context-profile/0.3",
+  "id": "lifelong-and-elder-learners"
+}
