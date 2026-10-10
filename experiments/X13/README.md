@@ -2,7 +2,7 @@
 
 *A small model answers by default; a governor escalates to a large model only when it should. Does quality hold while cost falls?*
 
-**Status: RUN 2026-10-10 — see FINDINGS-20261010.md (and experiments-runs/X13/RESULTS.md)**
+**Status: RUN 2026-10-10 — see [FINDINGS-20261010.md](../FINDINGS-20261010.md)**
 
 ## Question
 
@@ -80,5 +80,4 @@ If it holds, every later component (retrieval, bandit) can assume most turns are
 
 ## Status
 
-PLANNED. Depends on the MP-05/MP-07 eval suite being green (blocked by B05/B06 grader
-and content fixes). Feeds `docs/ARCHITECTURE-COMMONS.md` §d.
+Run on 2026-10-10. 32 cases: 11 from evals/cases/MP-05/, the rest written for the run (MP-07 does not exist yet). X13b: a harder 40-case follow-up. Result: a negative; see FINDINGS-20261010.md.
