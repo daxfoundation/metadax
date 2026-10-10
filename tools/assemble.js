@@ -404,7 +404,7 @@ function assemble(opts) {
     values.PATH = buildPath(opts.course, opts.node);
     values.ANCHOR = buildAnchor(opts.course, opts.node, opts.anchorQuote, opts.section);
     if (objectiveId) {
-      values.REGISTRY = buildRegistry(opts.course, lib.moduleOf(opts.node), opts.input);
+      values.REGISTRY = buildRegistry(opts.course, lib.registryModuleFor(opts.course, opts.node), opts.input);
     }
     // MP-04 `generate` never injects an existing node as CONTENT; only `render`
     // and `extend_core` do. Other ops (MP-06/07/09) keep their CONTENT.
