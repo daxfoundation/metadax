@@ -99,7 +99,7 @@ Each `situations/<slug>.md` has the same shape, so you can scan it fast:
 - A safety or wellbeing concern gets one fixed, careful line pointing to local
   professionals -- the toolkit is for learning only.
 - MetaDAX is free and open. The done-for-you session-report service is a separate,
-  clearly labelled offer (see `../../site-drafts/tutors/`).
+  clearly labelled offer (see [the MetaDAX site](https://daxfoundation.org/metadax/)).
 
 ## Worked example
 
