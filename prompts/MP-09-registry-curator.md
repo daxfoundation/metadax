@@ -31,7 +31,7 @@ Checks for every node:
 (a) accuracy against SOURCE (source_only / source_first) or well-established knowledge
 (b) safety and age-appropriateness for the course's intended bands
 (c) personal data in core, in question, or in created_by
-(d) the id obeys the path rule, the slug rule and the 200-character limit (SCHEMAS section 1), and the parent exists; new_concepts ids are kebab slugs not already in COURSE.concepts
+(d) the id is a valid opaque id (SCHEMAS section 1), `parent_id` names an existing node, `depth` equals `parent.depth + 1`, and the display `slug` follows the slug rule; new_concepts ids are kebab slugs not already in COURSE.concepts
 (e) bounded fields
 (f) scope versus COURSE.steer.scope_policy
 Minor-authored nodes (visibility pending_review) may become "shared" only if (a) to (f) all pass.

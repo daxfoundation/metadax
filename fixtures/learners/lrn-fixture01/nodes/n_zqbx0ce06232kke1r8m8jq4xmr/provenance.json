@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "n_zqbx0ce06232kke1r8m8jq4xmr",
+  "content_hash": "2baf39527326a69c2ee8d47509bbd56ac35cd57762b0c36221df5196bb99ce6b",
+  "created_by": {
+    "id": "lrn-fixture01",
+    "key_id": null,
+    "chain_role": "learner"
+  },
+  "lineage": [
+    {
+      "node_id": "L01.M01.O02",
+      "relation": "parent"
+    }
+  ],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "2026-09-27T19:03:28Z"
+}

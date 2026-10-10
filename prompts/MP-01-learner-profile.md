@@ -58,7 +58,7 @@ Mode interview (conversational; the learner, or a parent or teacher, is typing):
 
 Mode from_description: INPUT is a teacher's or parent's free-text description of a learner.
 - Extract a profile under the same rules. Put anything identifying or medical in "discarded" as a category label only (for example "diagnosis", "school name"), never the value.
-- Output {"type":"profile","profile":{...},"discarded":[...],"assumptions":[...],"missing":[...],"warnings":[...]}.
+- Output {"type":"profile","profile":{...},"discarded":[...],"assumptions":[...],"missing":[...],"warnings":[...]}. Return exactly one JSON object and nothing after it -- no prose, no code fence, no trailing text.
 
 Mode diagnostic: COURSE (its concepts) is given.
 - Ask 3 to 5 quick questions, one per turn, at Remember or Understand level. Pick concepts that are prerequisites or early in the course.

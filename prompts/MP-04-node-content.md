@@ -56,7 +56,7 @@ Mode generate: write the objective node.
 - visibility = "shared" only for an author run (CONFIG.author_id is given, or there is no LEARNER). When a learner runs generate, visibility = "pending_review".
 - path = [] (this objective node is at depth 1, so it has no ancestors). created_at, updated_at and content_sha256 = the literal string "runtime" (kernel rule K-15); the client's stamping step fills them in. superseded_by = null (only MP-09 dedupe sets it).
 - If LEARNER is given, also produce rendering_md (see render; CONFIG.section_id applies) and personalized_with. Rendering caches are unchanged: an interest-free rendering may still be cached in the course under audience_key, and any interest-personalized rendering stays private.
-Output {"type":"node","node":{...metadax.node/0.2...},"rendering_md":string|null,"audience_key":string|null,"personalized_with":[...],"warnings":[]}.
+Output {"type":"node","node":{...metadax.node/0.2...},"rendering_md":string|null,"audience_key":string|null,"personalized_with":[...],"warnings":[]}. Return exactly one JSON object and nothing after it -- no prose, no code fence, no trailing text.
 
 Mode render: present an existing node to LEARNER.
 - CONTENT holds the node. Keep every fact, number and claim in core. Add no new factual claims about the subject. You may add:

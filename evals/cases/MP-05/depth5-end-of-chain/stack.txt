@@ -59,9 +59,10 @@ target_id: the matched id for reuse and ancestor; null for new, extend and redir
 
 STEP 4 - Build the node (decisions new and extend only)
 - title: a plain noun phrase of 80 characters or fewer, naming what this node teaches. Not a sentence, not markdown, and never the answer itself.
-- slug, computed from the title: lowercase it; keep only ASCII letters, digits and spaces (remove every other character); drop the stop-words a, an, the, of, in, on, for, to, and, or, with, how, what, why, which, does, do, is, are, by, from, its, their; keep the first 5 remaining words in order; join them with "-". If the result is longer than 32 characters, cut it back to the last whole word within 32. (If no word remains, use "node"; cut a single word longer than 32 characters at 32.) If a sibling in REGISTRY already has that id, append "-2" (or "-3" and so on).
-- id = parent id + "/" + slug. The parent is the last entry in PATH. If the id would be longer than 200 characters, drop trailing words of the slug until it fits.
-- depth = 1 + the number of "/" characters in the new id. Never count PATH entries; PATH may be compressed.
+- slug, a display-only field computed from the title: lowercase it; keep only ASCII letters, digits and spaces (remove every other character); drop the stop-words a, an, the, of, in, on, for, to, and, or, with, how, what, why, which, does, do, is, are, by, from, its, their; keep the first 5 remaining words in order; join them with "-". If the result is longer than 32 characters, cut it back to the last whole word within 32. (If no word remains, use "node"; cut a single word longer than 32 characters at 32.) The slug is no longer part of the id (0.3); a runtime MAY append "-2" to a display collision, but it is not required.
+- id: the client's stamping step mints a short opaque id "n_" + 26 Crockford-base32 characters (128 random bits); write the literal "runtime" if your client stamps ids, or emit the minted id if you have one. The id does not encode the parent, depth or slug, and there is no length cap (SCHEMAS section 1, ID-FORMAT v0.3).
+- parent_id = the id of the last entry in PATH (the node the learner was reading). null only for a depth-1 objective node.
+- depth = parent.depth + 1 (the parent is parent_id; an objective node is depth 1). Never count "/" in the id, and never count PATH entries; PATH may be compressed.
 - kind = "followup". anchor = {section_id, quote} copied from ANCHOR, or null if ANCHOR is "none".
 - core: the shared, audience-neutral answer.
   - 2 to 4 sections for a new node, 1 to 3 for an extend. Give them ids s1, s2 and so on, a heading, and a body of 180 words or fewer each.
@@ -83,13 +84,14 @@ STEP 4 - Build the node (decisions new and extend only)
   - otherwise "pending_review" if LEARNER is "none", or LEARNER.age_band is 4-6, 7-9, 10-12, 13-15, 16-18 or "unknown", or COURSE.policy.learner_nodes is "pending_review";
   - otherwise "shared".
 - created_by = LEARNER.learner_id, or "anonymous" if LEARNER is "none".
-- path: copy the PATH block you received into path, as is, including any "trail" entry. It is empty for a depth-1 node, and it lets a client rebuild the breadcrumb from the node alone.
+- path: copy the PATH block you received into path, as is, including any "trail" entry (a trail entry is bounded: id "trail", summary, covers_count, first_covered, last_covered -- no per-id list). It is empty for a depth-1 node, and it lets a client show the breadcrumb from the node alone; the authoritative full ancestry is the registry parent_id chain.
 - created_at, updated_at and content_sha256: write the literal "runtime" (K-15); the client's stamping step fills them in. superseded_by: null.
 - When the node is saved, its registry entry is appended to the module's registry file (the registry file of the module its id starts with; Schemas section 4), not to a single course-wide index.
 
 STEP 5 - Depth governor
-- If the new depth is greater than COURSE.steer.max_depth (default 8), still answer. Add the warning "depth_limit", and make the third seed exactly "Zoom out: how does this branch serve the objective?".
-- If the new depth is 6 or more, add one line offering a zoom-out (placed as in STEP 6).
+- COURSE.steer.max_depth is optional and has no default: if it is absent there is no depth limit, and the engine keeps answering at any depth.
+- If max_depth is set and the new depth is greater than it, still answer (there is no hard stop). Add the warning "depth_limit", and make the third seed exactly "Zoom out: how does this branch serve the objective?".
+- If the new depth is 6 or more, add one line offering a zoom-out (placed as in STEP 6). This stays a suggestion, not a wall.
 
 STEP 6 - Render for this learner (every decision except a wellbeing redirect)
 rendering_md is what the learner sees now. It is personal and is never stored in the shared core.
@@ -126,7 +128,7 @@ Using PATH (and INPUT if given), write the learner a short map of where they are
   (3) action "quiz_branch", target_id = the last PATH id (the runtime quizzes that node and its ancestors)
 Honour LEARNER.supports and reading level as in STEP 6. Return type "zoom_out", decision null, target_id null, confidence 0, node null, with rendering_md and options.
 
-Output (json mode): exactly one object:
+Output (json mode): return exactly one JSON object and nothing after it -- no prose, no code fence, no trailing text:
 {
   "type": "followup" | "zoom_out" | "error",
   "decision": "new" | "extend" | "reuse" | "ancestor" | "redirect" | null,
@@ -134,8 +136,8 @@ Output (json mode): exactly one object:
   "confidence": number,
   "resolved": { "question", "canonical_question", "intent", "scope" },
   "node": {
-    "schema": "metadax.node/0.2",
-    "id", "parent_id", "kind", "depth", "anchor",
+    "schema": "metadax.node/0.3",
+    "id", "parent_id", "kind", "depth", "slug", "anchor",
     "path": [ { "id", "title", "summary" } ],
     "title", "question", "canonical_question", "intent",
     "summary": [ ... ],
@@ -208,81 +210,6 @@ Output (json mode): exactly one object:
 }
 <<END COURSE>>
 
-<<START LESSON>>
-{
-  "id": "L01",
-  "title": "Energy in the cell",
-  "steer": {
-    "focus": "Keep energy the through-line across both modules.",
-    "include": [],
-    "exclude": []
-  }
-}
-<<END LESSON>>
-
-<<START MODULE>>
-{
-  "id": "L01.M01",
-  "title": "Mitochondria and ATP",
-  "steer": {
-    "focus": "Tie every part back to making ATP.",
-    "include": [],
-    "exclude": []
-  }
-}
-<<END MODULE>>
-
-<<START OBJECTIVE>>
-{
-  "id": "L01.M01.O01",
-  "title": "Introduction to energy production in the mitochondria",
-  "statement": "The learner can explain how the mitochondrion converts food energy into ATP and analyse how its parts work together.",
-  "concepts": [
-    "cellular-respiration",
-    "atp-synthesis",
-    "mitochondrion-structure"
-  ],
-  "bloom_target": "Analyze"
-}
-<<END OBJECTIVE>>
-
-<<START CONCEPTS>>
-[
-  {
-    "id": "cellular-respiration",
-    "name": "Cellular respiration",
-    "description": "How cells release energy from food and capture it as ATP.",
-    "bloom_target": "Understand",
-    "prerequisites": [],
-    "misconceptions": [
-      "Respiration is the same thing as breathing"
-    ]
-  },
-  {
-    "id": "atp-synthesis",
-    "name": "ATP synthesis",
-    "description": "How the mitochondrion assembles ATP using a proton gradient.",
-    "bloom_target": "Analyze",
-    "prerequisites": [
-      "cellular-respiration"
-    ],
-    "misconceptions": [
-      "ATP is stored in large amounts for later"
-    ]
-  },
-  {
-    "id": "mitochondrion-structure",
-    "name": "Mitochondrion structure",
-    "description": "The two-membrane layout of the mitochondrion and its folded inner membrane.",
-    "bloom_target": "Understand",
-    "prerequisites": [],
-    "misconceptions": [
-      "The mitochondrion has only a single membrane"
-    ]
-  }
-]
-<<END CONCEPTS>>
-
 <<START LEARNER>>
 {
   "schema": "metadax.learner/0.2",
@@ -334,19 +261,19 @@ Output (json mode): exactly one object:
     "summary": "Cellular respiration converts nutrients into ATP. Most ATP is made in the mitochondrion."
   },
   {
-    "id": "L01.M01.O01/proteins-essential-atp-synthesis",
+    "id": "n_qkx5r9e0psvqpbd631wz7s98vm",
     "title": "Proteins essential for ATP synthesis",
     "canonical_question": "Which proteins are essential for ATP synthesis in the mitochondrion?",
     "summary": "ATP synthase has a proton-driven rotor and a catalytic head. Complexes I to IV build the proton gradient that drives it."
   },
   {
-    "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
+    "id": "n_ka7589qwn4z1n2tghxxcv2vzbm",
     "title": "Cytochrome c: structure and role",
     "canonical_question": "What does cytochrome c do in the electron transport chain?",
     "summary": "Cytochrome c is a small mobile electron carrier. It shuttles electrons from Complex III to Complex IV."
   },
   {
-    "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
+    "id": "n_hh1ash4knccqm98y2n9hfn1h5c",
     "title": "Electron donation to Complex IV",
     "canonical_question": "How does cytochrome c donate electrons to Complex IV?",
     "summary": "Cytochrome c docks on Complex IV and releases its electron. The electron moves through copper and heme sites to oxygen."
@@ -356,7 +283,7 @@ Output (json mode): exactly one object:
 
 <<START ANCHOR>>
 {
-  "node_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
+  "node_id": "n_hh1ash4knccqm98y2n9hfn1h5c",
   "section_id": "s1",
   "sections": [
     {
@@ -389,8 +316,41 @@ Output (json mode): exactly one object:
     ],
     "visibility": "shared",
     "created_by": "author-fixture",
-    "reuse_count": 0,
     "depth": 1,
+    "superseded_by": null
+  },
+  {
+    "id": "n_hh1ash4knccqm98y2n9hfn1h5c",
+    "legacy_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
+    "parent_id": "n_ka7589qwn4z1n2tghxxcv2vzbm",
+    "title": "Electron donation to Complex IV",
+    "canonical_question": "How does cytochrome c donate electrons to Complex IV?",
+    "intent": "deepen",
+    "summary": "Cytochrome c docks on Complex IV and releases its electron. The electron moves through copper and heme sites to oxygen.",
+    "concepts": [
+      "cytochrome-c",
+      "electron-transport-chain"
+    ],
+    "visibility": "shared",
+    "created_by": "lrn-fixture01",
+    "depth": 4,
+    "superseded_by": null
+  },
+  {
+    "id": "n_ka7589qwn4z1n2tghxxcv2vzbm",
+    "legacy_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
+    "parent_id": "n_qkx5r9e0psvqpbd631wz7s98vm",
+    "title": "Cytochrome c: structure and role",
+    "canonical_question": "What does cytochrome c do in the electron transport chain?",
+    "intent": "deepen",
+    "summary": "Cytochrome c is a small mobile electron carrier. It shuttles electrons from Complex III to Complex IV.",
+    "concepts": [
+      "cytochrome-c",
+      "electron-transport-chain"
+    ],
+    "visibility": "shared",
+    "created_by": "lrn-fixture01",
+    "depth": 3,
     "superseded_by": null
   },
   {
@@ -407,12 +367,12 @@ Output (json mode): exactly one object:
     ],
     "visibility": "shared",
     "created_by": "author-fixture",
-    "reuse_count": 0,
     "depth": 1,
     "superseded_by": null
   },
   {
-    "id": "L01.M01.O01/proteins-essential-atp-synthesis",
+    "id": "n_qkx5r9e0psvqpbd631wz7s98vm",
+    "legacy_id": "L01.M01.O01/proteins-essential-atp-synthesis",
     "parent_id": "L01.M01.O01",
     "title": "Proteins essential for ATP synthesis",
     "canonical_question": "Which proteins are essential for ATP synthesis in the mitochondrion?",
@@ -424,63 +384,12 @@ Output (json mode): exactly one object:
     ],
     "visibility": "shared",
     "created_by": "lrn-fixture01",
-    "reuse_count": 3,
     "depth": 2,
     "superseded_by": null
   },
   {
-    "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
-    "parent_id": "L01.M01.O01/proteins-essential-atp-synthesis",
-    "title": "Cytochrome c: structure and role",
-    "canonical_question": "What does cytochrome c do in the electron transport chain?",
-    "intent": "deepen",
-    "summary": "Cytochrome c is a small mobile electron carrier. It shuttles electrons from Complex III to Complex IV.",
-    "concepts": [
-      "cytochrome-c",
-      "electron-transport-chain"
-    ],
-    "visibility": "shared",
-    "created_by": "lrn-fixture01",
-    "reuse_count": 0,
-    "depth": 3,
-    "superseded_by": null
-  },
-  {
-    "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
-    "parent_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
-    "title": "Electron donation to Complex IV",
-    "canonical_question": "How does cytochrome c donate electrons to Complex IV?",
-    "intent": "deepen",
-    "summary": "Cytochrome c docks on Complex IV and releases its electron. The electron moves through copper and heme sites to oxygen.",
-    "concepts": [
-      "cytochrome-c",
-      "electron-transport-chain"
-    ],
-    "visibility": "shared",
-    "created_by": "lrn-fixture01",
-    "reuse_count": 0,
-    "depth": 4,
-    "superseded_by": null
-  },
-  {
-    "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv/plant-mitochondria-different",
-    "parent_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
-    "title": "Plant mitochondria different from animal",
-    "canonical_question": "Are plant mitochondria different from animal mitochondria?",
-    "intent": "contrast",
-    "summary": "Plant and animal mitochondria share the same central chain. Plants add alternative electron routes that trade ATP for flexibility.",
-    "concepts": [
-      "plant-animal-cells",
-      "mitochondrion-structure"
-    ],
-    "visibility": "shared",
-    "created_by": "lrn-fixture01",
-    "reuse_count": 0,
-    "depth": 5,
-    "superseded_by": null
-  },
-  {
-    "id": "L01.M01.O02/building-proton-gradient",
+    "id": "n_zybxq9436j8wxpeh0sxgqyycjr",
+    "legacy_id": "L01.M01.O02/building-proton-gradient",
     "parent_id": "L01.M01.O02",
     "title": "Building the proton gradient",
     "canonical_question": "How is the proton gradient across the inner membrane built?",
@@ -492,7 +401,6 @@ Output (json mode): exactly one object:
     ],
     "visibility": "pending_review",
     "created_by": "lrn-fixture01",
-    "reuse_count": 0,
     "depth": 2,
     "superseded_by": null
   },
@@ -510,6 +418,23 @@ Output (json mode): exactly one object:
     "visibility": "shared",
     "created_by": "author-fixture",
     "depth": 1,
+    "superseded_by": null
+  },
+  {
+    "id": "n_rdgjy7hc9tb7w9s9zske303gn4",
+    "legacy_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv/plant-mitochondria-different",
+    "parent_id": "n_hh1ash4knccqm98y2n9hfn1h5c",
+    "title": "Plant mitochondria different from animal",
+    "canonical_question": "Are plant mitochondria different from animal mitochondria?",
+    "intent": "contrast",
+    "summary": "Plant and animal mitochondria share the same central chain. Plants add alternative electron routes that trade ATP for flexibility.",
+    "concepts": [
+      "plant-animal-cells",
+      "mitochondrion-structure"
+    ],
+    "visibility": "shared",
+    "created_by": "lrn-fixture01",
+    "depth": 5,
     "superseded_by": null
   }
 ]

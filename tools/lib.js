@@ -66,6 +66,26 @@ function registryFile(courseDir, moduleId) {
   return path.join(courseDir, 'registry', moduleId + '.json');
 }
 
+// The registry module holding nodeId. v0.3 opaque ids ("n_...") carry no
+// module prefix, so moduleOf() cannot name it: fall back to the module file
+// whose nodes[] lists the id.
+function registryModuleFor(courseDir, nodeId) {
+  const direct = moduleOf(nodeId);
+  if (fs.existsSync(registryFile(courseDir, direct))) return direct;
+  const regDir = path.join(courseDir, 'registry');
+  if (!fs.existsSync(regDir)) return direct;
+  for (const f of fs.readdirSync(regDir).sort()) {
+    if (f === 'index.json' || !f.endsWith('.json')) continue;
+    const nodes = readJson(path.join(regDir, f)).nodes || [];
+    if (nodes.some(function (e) { return e.id === nodeId; })) return f.slice(0, -'.json'.length);
+  }
+  return direct;
+}
+
+function registryFileFor(courseDir, nodeId) {
+  return registryFile(courseDir, registryModuleFor(courseDir, nodeId));
+}
+
 function readRegistry(courseDir, moduleId) {
   const p = registryFile(courseDir, moduleId);
   if (!fs.existsSync(p)) return null;
@@ -116,6 +136,8 @@ module.exports = {
   isObjectiveId,
   depthOf,
   registryFile,
+  registryModuleFor,
+  registryFileFor,
   readRegistry,
   nowIso,
   isoWeek,

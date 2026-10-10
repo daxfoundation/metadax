@@ -1,0 +1,70 @@
+{
+  "schema": "metadax.node/0.3",
+  "id": "n_jkb5ga65w27v650k2y2qs8cq3m",
+  "slug": "do-heavier-objects-fall-faster",
+  "legacy_id": "L02.M01.O01/do-heavier-objects-fall-faster",
+  "parent_id": "L02.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Do heavier objects fall faster?",
+  "question": "",
+  "canonical_question": "Do heavier objects fall faster than lighter ones?",
+  "intent": "challenge",
+  "summary": [
+    "Ignoring air resistance, all objects fall with the same acceleration regardless of mass.",
+    "A heavier object feels more gravitational force, but it also has more inertia to move, and the two effects cancel exactly."
+  ],
+  "concepts": [
+    "mass",
+    "newtons-second-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "The surprising answer",
+        "body_md": "Ignoring air resistance, all objects fall with the same acceleration regardless of mass. A heavy stone and a light one dropped together hit the ground at the same time. The famous intuition that heavier means faster is simply wrong in a vacuum."
+      },
+      {
+        "id": "s2",
+        "heading": "Why mass cancels",
+        "body_md": "A heavier object feels more gravitational force, but it also has more inertia to move, and the two effects cancel exactly. In F = ma the larger force is divided by the larger mass, leaving the same acceleration g. Air resistance, not weight, is what makes a feather lag behind."
+      }
+    ],
+    "key_points": [
+      "Without air, all masses fall at the same rate.",
+      "More weight is offset by more inertia.",
+      "Air resistance, not mass, causes real differences."
+    ],
+    "bridge_to_parent": "It challenges a misconception tied to the objective’s use of mass.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "What changes once air resistance matters?",
+    "Why did this fool people for centuries?"
+  ],
+  "path": [
+    {
+      "id": "L02.M01.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "7eacf817ecf2cb54410a3494229e3bce29f90d6da5d981db2de93ab9f3ce5b0b"
+}

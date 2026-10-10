@@ -1,6 +1,6 @@
-# Install the MetaDAX skill in Claude
+# Install the Meta DAX skill in Claude
 
-MetaDAX › [Help](index.md) › Claude skill
+Meta DAX › [Help](index.md) › Claude skill
 
 A skill is a small folder Claude reads so it knows one job well. This one,
 `metadax-homeschool`, interviews you and builds your child's lesson. Add it once;

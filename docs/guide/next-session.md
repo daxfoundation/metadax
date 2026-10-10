@@ -1,6 +1,6 @@
 # Session two, the learning record, and several kids
 
-MetaDAX › [Help](index.md) › Next session
+Meta DAX › [Help](index.md) › Next session
 
 One lesson is a start. The point is the next one, and the one after. Here is how to
 keep going — from the note the page leaves, the record you keep, and teaching more

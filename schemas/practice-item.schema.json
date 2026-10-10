@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["id", "concept", "bloom_level", "question_type", "grading", "question", "answer", "explanation"],
   "properties": {
-    "id": { "type": "string", "maxLength": 200, "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*#p\\d\\d$" },
+    "id": { "type": "string", "maxLength": 200, "pattern": "^(L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*|n_[0-9a-hjkmnp-tv-z]{26})#p\\d\\d$" },
     "concept": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
     "bloom_level": { "enum": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"] },
     "question_type": { "$ref": "#/$defs/questionType" },

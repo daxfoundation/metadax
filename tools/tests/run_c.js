@@ -41,7 +41,8 @@ const readJson = function (p) { return JSON.parse(fs.readFileSync(p, 'utf-8')); 
 // ---- 1a. stamp.js course/node accept a DIRECTORY, not just the file ----
 const sc = run([path.join(TOOLS, 'stamp.js'), 'course', course]);
 ok(sc.status === 0, 'stamp.js course accepts a course directory');
-const REUSE_ID = 'L01.M01.O01/proteins-essential-atp-synthesis';
+// v0.3 id of L01.M01.O01/proteins-essential-atp-synthesis (flat nodes/<id>/ layout).
+const REUSE_ID = 'n_qkx5r9e0psvqpbd631wz7s98vm';
 const nodeDir = path.join(course, 'nodes', REUSE_ID.split('/').join(path.sep));
 const sn = run([path.join(TOOLS, 'stamp.js'), 'node', nodeDir, '--by', 'author-test', '--role', 'author']);
 ok(sn.status === 0, 'stamp.js node accepts a node directory');

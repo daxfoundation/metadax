@@ -51,7 +51,7 @@ You compress context for another MetaDAX engine that has a small context window.
 INPUT holds blocks to compress, and CONFIG.budget_tokens gives the target size.
 
 Preserve exactly:
-- every id
+- every id outside a PATH `trail` (a `trail` keeps only its endpoints and a count; see below)
 - every item in include and exclude lists
 - every audience or accessibility constraint
 - source_policy and scope_policy
@@ -64,9 +64,9 @@ You may shorten:
 - repeated wording
 - examples
 
-For a PATH middle segment, produce one entry:
-{"id":"trail","covers":[ids...],"summary":"one or two sentences tracing the line of questions from the first to the last covered id"}.
-The trail entry is a summary, not a node. Keep every covered id in "covers".
+For a PATH middle segment, produce one bounded entry:
+{"id":"trail","summary":"one or two sentences tracing the line of questions from the first to the last covered node","covers_count":<how many ancestors this replaces>,"first_covered":"<id of the first covered ancestor>","last_covered":"<id of the last covered ancestor>"}.
+The trail entry is a summary, not a node, and it is bounded: it does NOT list every covered id. Keep only `first_covered`, `last_covered` and `covers_count`. The full ancestor chain is always recoverable from the registry `parent_id` chain, so the trail never grows with depth.
 
 Output {"type":"compiled","blocks":{"<BLOCK>":"<compressed text or JSON>"},"dropped":[ what you removed, in a few words each ],"warnings":[]}.
 
@@ -77,4 +77,4 @@ If the budget cannot be met without dropping a protected item, say so in warning
 
 1. Assembly **MUST** be deterministic and **MUST NOT** call a model unless the budget ladder reaches step 4.
 2. `compress` output **MUST** list `dropped`. A runtime **SHOULD** log it next to the generation, so a bad answer can be traced to lost context. EdDAX had no such trace.
-3. A runtime **MUST** verify that every id in the uncompressed block survives compression, and fall back to the uncompressed block if one does not.
+3. A runtime **MUST** verify that every id outside a PATH `trail` (include/exclude lists, REGISTRY, links) survives compression, and fall back to the uncompressed block if one does not. A PATH `trail` is the one allowed exception: it replaces its middle ancestors with `covers_count` + `first_covered` + `last_covered`, because the full chain is rebuildable from the registry `parent_id` chain.

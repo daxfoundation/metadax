@@ -22,7 +22,6 @@ const lib = require('./lib.js');
 const jsl = require('./jsonschema-lite.js');
 
 const SECTION_ID_RE = /^s[0-9]+$/;
-const MAX_ID = 200;
 const MAX_TITLE = 80;
 const FORBIDDEN_PROFILE_KEYS = new Set(['email', 'name', 'school', 'diagnosis']);
 
@@ -159,6 +158,7 @@ function walkNodeDirs(nodesDir) {
 
 function validateNodes(nodesDir, rep, schemaIndex) {
   const seen = {};
+  const paths = {};
   if (!fs.existsSync(nodesDir)) return seen;
   for (const pair of walkNodeDirs(nodesDir)) {
     const nodeId = pair[0], npath = pair[1];
@@ -169,19 +169,9 @@ function validateNodes(nodesDir, rep, schemaIndex) {
     if (node.id !== nodeId) {
       rep.error(npath, 'id ' + JSON.stringify(node.id) + ' != directory path ' + JSON.stringify(nodeId));
     }
-    const nid = node.id != null ? node.id : nodeId;
-    if (nid.length > MAX_ID) rep.error(npath, 'id over ' + MAX_ID + ' chars');
-
-    const expectedDepth = 1 + (nid.split('/').length - 1);
-    if (node.depth !== expectedDepth) {
-      rep.error(npath, 'depth ' + JSON.stringify(node.depth) + ' != 1 + count("/") = ' + expectedDepth);
-    }
-    if (nid.indexOf('/') >= 0) {
-      const parent = node.parent_id;
-      if (!parent || nid.indexOf(parent + '/') !== 0) {
-        rep.error(npath, 'id not prefixed by parent_id + "/" (parent_id=' + JSON.stringify(parent) + ')');
-      }
-    }
+    // v0.3: ids are opaque. depth is a stored field (= parent.depth + 1) and the
+    // parent_id chain -- not a breadcrumb -- is the source of ancestry. Both are
+    // checked in a second pass below, once every node has been loaded into `seen`.
     const title = node.title || '';
     if (title.length > MAX_TITLE) rep.error(npath, 'title over ' + MAX_TITLE + ' chars');
     if (!isPlainText(title)) rep.error(npath, 'title is not plain text');
@@ -199,8 +189,7 @@ function validateNodes(nodesDir, rep, schemaIndex) {
       rep.error(npath, 'core.sections ids not unique');
     }
     if (!summaryString(node.summary).trim()) rep.error(npath, 'summary is empty');
-
-    validatePath(node, nid, npath, rep);
+    paths[nodeId] = npath;
 
     const csha = node.content_sha256;
     if (csha === 'runtime') {
@@ -213,26 +202,63 @@ function validateNodes(nodesDir, rep, schemaIndex) {
     }
     checkSchema(node, npath, schemaIndex, rep);
   }
+  // Second pass (v0.3): depth and path[] are checked against the parent_id chain,
+  // now that every node is in `seen`.
+  for (const id of Object.keys(seen)) {
+    const node = seen[id];
+    const npath = paths[id];
+    const chain = ancestorChain(node, seen); // root -> parent ids
+    const expectedDepth = chain.length + 1;
+    if (node.depth !== expectedDepth) {
+      rep.error(npath, 'depth ' + JSON.stringify(node.depth) + ' != parent-chain depth ' + expectedDepth);
+    }
+    validatePath(node, chain, npath, rep);
+  }
   return seen;
 }
 
-function validatePath(node, nid, npath, rep) {
+// Walk parent_id up through `seen`, returning ancestor ids root -> parent.
+function ancestorChain(node, seen) {
+  const chain = [];
+  let pid = node.parent_id;
+  const guard = new Set();
+  while (pid != null && !guard.has(pid)) {
+    guard.add(pid);
+    chain.unshift(pid);
+    const parent = seen[pid];
+    pid = parent ? parent.parent_id : null;
+  }
+  return chain;
+}
+
+function validatePath(node, chain, npath, rep) {
   const p = node.path;
   if (p == null) return;
-  const parts = nid.split('/');
-  const expected = [];
-  for (let i = 1; i < parts.length; i++) expected.push(parts.slice(0, i).join('/'));
   const hasTrail = p.some(function (e) { return e && e.id === 'trail'; });
   if (hasTrail) return; // compressed PATH (MP-03): skip strict comparison
   const got = p.filter(function (e) { return e && e.id !== 'trail'; })
     .map(function (e) { return e.id; });
-  if (JSON.stringify(got) !== JSON.stringify(expected)) {
-    rep.error(npath, 'path[] ids ' + JSON.stringify(got) + ' != ancestor chain ' + JSON.stringify(expected));
+  if (JSON.stringify(got) !== JSON.stringify(chain)) {
+    rep.error(npath, 'path[] ids ' + JSON.stringify(got) + ' != ancestor chain ' + JSON.stringify(chain));
   }
 }
 
-function moduleOf(nodeId) {
-  const head = nodeId.split('/')[0];
+var OBJECTIVE_ID_RE = /^L\d\d\.M\d\d\.O\d\d$/;
+
+// v0.3: an opaque id encodes no module. Resolve the module by walking the entry's
+// parent_id chain (within the registry) up to its root objective id (L..M..O..),
+// then take its L..M.. prefix. A legacy breadcrumb id still works via its head.
+function moduleOf(nodeId, regMap) {
+  let id = nodeId;
+  const guard = new Set();
+  while (id != null && !guard.has(id)) {
+    guard.add(id);
+    if (OBJECTIVE_ID_RE.test(id)) return id.split('.').slice(0, 2).join('.');
+    const entry = regMap ? regMap[id] : null;
+    if (entry && entry.parent_id != null) { id = entry.parent_id; continue; }
+    break;
+  }
+  const head = String(nodeId).split('/')[0];
   const bits = head.split('.');
   if (bits.length >= 2) return bits[0] + '.' + bits[1];
   return head;
@@ -267,12 +293,16 @@ function validateRegistry(courseDir, seenNodes, rep, schemaIndex) {
     }
   }
 
+  const regMap = {};
+  for (const mid of Object.keys(moduleFiles)) {
+    for (const entry of moduleFiles[mid].nodes || []) regMap[entry.id] = entry;
+  }
   const registered = {};
   for (const mid of Object.keys(moduleFiles)) {
     for (const entry of moduleFiles[mid].nodes || []) {
       const eid = entry.id;
       registered[eid] = (registered[eid] || 0) + 1;
-      const expectedMid = moduleOf(eid);
+      const expectedMid = moduleOf(eid, regMap);
       if (expectedMid !== mid) {
         rep.error(indexPath, 'node ' + eid + ' registered in module ' + mid + ' (belongs in ' + expectedMid + ')');
       }

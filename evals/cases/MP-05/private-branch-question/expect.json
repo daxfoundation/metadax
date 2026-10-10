@@ -6,7 +6,6 @@
     "private",
     "shared"
   ],
-  "node_id_prefix": "L01.M01.O02/building-proton-gradient/",
   "allowed_warnings": [
     "low_confidence",
     "out_of_scope",

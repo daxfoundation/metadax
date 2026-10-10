@@ -1,6 +1,6 @@
-# Share a MetaDAX sample
+# Share a Meta DAX sample
 
-MetaDAX › [Help](index.md) › Share a sample
+Meta DAX › [Help](index.md) › Share a sample
 
 If a lesson helped you, a generic version of it can help the next family with the
 same stuck spot. Sharing is your choice, it is never automatic, and a person
