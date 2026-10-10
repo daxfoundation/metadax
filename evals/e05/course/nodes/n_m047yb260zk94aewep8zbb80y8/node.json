@@ -1,0 +1,69 @@
+{
+  "schema": "metadax.node/0.3",
+  "id": "n_m047yb260zk94aewep8zbb80y8",
+  "slug": "acceleration-vs-velocity",
+  "legacy_id": "L01.M01.O02/acceleration-vs-velocity",
+  "parent_id": "L01.M01.O02",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Acceleration versus velocity",
+  "question": "",
+  "canonical_question": "How is acceleration different from velocity?",
+  "intent": "contrast",
+  "summary": [
+    "Velocity tells you how fast and in what direction you are moving right now.",
+    "Acceleration need not point the same way as velocity: when you brake, velocity is forward but acceleration points backward."
+  ],
+  "concepts": [
+    "kinematic-quantities"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Rate versus rate-of-change",
+        "body_md": "Velocity tells you how fast and in what direction you are moving right now. Acceleration tells you how quickly that velocity is changing. You can move very fast with zero acceleration, or be momentarily at rest yet accelerating hard."
+      },
+      {
+        "id": "s2",
+        "heading": "Direction can differ",
+        "body_md": "Acceleration need not point the same way as velocity: when you brake, velocity is forward but acceleration points backward. A car rounding a bend at steady speed still accelerates because its direction changes. So the two vectors are genuinely independent."
+      }
+    ],
+    "key_points": [
+      "Velocity is motion now; acceleration is its rate of change.",
+      "High speed can mean zero acceleration.",
+      "Acceleration and velocity can point different ways."
+    ],
+    "bridge_to_parent": "It contrasts the two quantities the objective defines.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "Can something at rest be accelerating?",
+    "How does turning count as acceleration?"
+  ],
+  "path": [
+    {
+      "id": "L01.M01.O02",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "0856e61296a41f46458574fbe3c16f10a93bfedf50f4d0d074b2dd2b6c94429f"
+}
