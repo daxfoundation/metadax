@@ -4,43 +4,38 @@
     "Sir", "Madam", "Mme", "Mlle", "Monsieur", "Madame"
   ],
   "ai_words": [
-    "AI", "chatbot", "chat bot", "assistant app",
-    "ask the computer", "prompt"
+    "AI", "A.I.", "chatbot", "chat bot", "Chatbot",
+    "assistant app", "ask the computer", "IA"
   ],
   "vendor_words": [
     "OpenAI", "ChatGPT", "GPT-4", "GPT-3", "GPT",
     "Claude", "Anthropic",
-    "Gemini", "Bard", "Google AI",
+    "Gemini", "Google AI",
     "Copilot", "Bing Chat",
-    "Meta AI", "Llama",
-    "Mistral", "Perplexity",
+    "Meta AI",
+    "Mistral AI", "Perplexity",
     "Grok", "xAI",
-    "Cohere", "Command",
-    "Stability AI", "Midjourney", "DALL-E", "Sora",
-    "Alexa", "Siri", "Cortana"
+    "Cohere", "Stability AI", "Midjourney", "DALL-E"
   ],
   "brands": [
-    "Shoppers Drug Mart", "Shoppers", "Rexall", "London Drugs",
+    "Shoppers Drug Mart", "Rexall", "London Drugs",
     "Jean Coutu", "Pharmaprix", "Pharmasave",
     "CVS", "Walgreens", "Duane Reade", "Rite Aid",
-    "Loblaws", "Loblaw", "Sobeys", "Metro", "IGA",
-    "No Frills", "Food Basics", "Superstore", "FreshCo",
-    "Provigo", "Maxi", "Walmart", "Costco",
-    "Kroger", "Safeway", "Whole Foods", "Trader Joe", "Target",
+    "Loblaws", "Loblaw", "Sobeys", "IGA",
+    "No Frills", "Food Basics", "FreshCo",
+    "Provigo", "Walmart", "Costco",
+    "Kroger", "Safeway", "Whole Foods", "Trader Joe",
     "Canada Post", "Purolator", "FedEx", "UPS", "DHL",
     "Canpar", "Intelcom", "Postes Canada", "USPS",
-    "WhatsApp", "Messenger", "Telegram", "Signal",
-    "Snapchat", "Instagram", "WeChat", "Line", "Viber",
-    "iMessage", "Discord",
+    "WhatsApp", "Telegram", "Snapchat", "Instagram",
+    "WeChat", "Viber", "iMessage", "Discord",
     "App Store", "Google Play", "Play Store",
-    "Microsoft Store", "Steam",
+    "Microsoft Store",
     "Vanilla Visa", "Vanilla Mastercard",
-    "iTunes", "Amazon", "eBay",
+    "iTunes", "eBay",
     "Tim Hortons", "Starbucks", "McDonald", "McDonalds",
-    "Apple", "Google", "Microsoft", "Samsung", "Netflix",
+    "Apple Store", "Google Store", "Amazon gift card",
+    "Microsoft", "Samsung", "Netflix",
     "Facebook", "Twitter", "TikTok", "YouTube", "Spotify"
-  ],
-  "exclude": [
-    "Apple", "Target", "Signal", "Line", "Metro", "Command"
   ]
 }
