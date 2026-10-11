@@ -75,6 +75,18 @@ MetaDAX is free. It is built on paid compute. If it helped, a coffee on Ko-fi or
 
 Everything built with it is published in this repository. Nothing is paywalled, and nothing will be.
 
+### Sponsor a cultural package
+
+The next family of packages is **One dish, its story**: a small learning package built around one dish from one community — where it comes from, how to make it, what it means — read by a person from that community before it goes out, published free here, with *built with support from* and your name on the page. Any amount counts toward a package, one-time on [GitHub Sponsors](https://github.com/sponsors/ObsidianDelta) or [Ko-fi](https://ko-fi.com/jeyanandan); say which community in your note. Monthly keeps all of them coming.
+
+| Package | Status |
+|---|---|
+| Sri Lankan Tamil chicken curry, Jaffna style | the showcase, in build |
+| Filipino | open for sponsorship |
+| Serbian in Canada | open for sponsorship |
+| Sikh / Punjabi | open for sponsorship |
+| Uruguayan | open for sponsorship |
+
 ### Sponsors
 
 No sponsors yet. Be the first.
