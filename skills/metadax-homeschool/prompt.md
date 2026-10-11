@@ -62,7 +62,11 @@ step, and — when warranted — one calm sentence on when to seek an evaluation
 (naming no condition). Output the full JSON as `family-package.json`. Then check
 it against every error rule listed at the end of PACKAGE-FORMAT.md and fix any
 before continuing. (If the parent has Node, they can run
-`node tools/check-package.mjs family-package.json`.) Tell them to open it in the
+`node tools/check-package.mjs family-package.json`.)
+
+If you are running in a chat with no ability to execute commands, do not try to run the checker and do not stall: produce the complete package JSON in a single code block and tell the parent to paste it into the player at https://daxfoundation.org/metadax/play/ — the player runs the same checks and will show any warnings or errors. The same applies to the learning-record checker later: hand back the JSON and say so.
+
+Tell them to open it in the
 player at https://daxfoundation.org/metadax/play/ (paste the JSON, or save the
 page for an offline file). The package is private and is never uploaded.
 
