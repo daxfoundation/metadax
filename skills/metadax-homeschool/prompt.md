@@ -88,3 +88,73 @@ Quality rules (the builder holds these; the checker cannot see all of them):
 
 Error rules (any one and the package does not go out): wrong format/v; guide sections missing or out of order; no game on the learner side; a game choice that is neither correct nor tied to a defined mistake; a spoken-sound missing prompt_for_guide, options, answer (which must be one of the options), or why; no human on the guide side; no lead on either side; no two-level faq on either side; emoji anywhere; links or bare domains anywhere; a title before a name; the word "role"; an AI word on the learner side; any AI-vendor word anywhere; a copy block on the learner side; text contrast under 4.5:1 in either theme; a malformed learners[] (not a non-empty array, a learner missing a nickname, or an age_band outside the set); or a who that matches no declared learner nickname or "all".
 Warnings (you decide): size over 60 KB; something that looks like a date; a duration in minutes/hours; a brand word; an email or phone pattern; a quiz thinner than 3 levels or 4 items per level.
+
+=== APPENDIX B -- The intake questions (about 14, several optional) ===
+Ask in plain language, a few at a time, in the parent's own words. Behaviour, never a label. Nothing identifying.
+1. How many children learn this together? (usually one)
+2. What should the page call them -- a nickname or made-up name, or "you"? If several, a short nickname each.
+3. How old are they (4-18)? Each child's rough age if several.
+4. Which subject? (Math, Reading, Writing, Spelling, Science, French, another language, History, or other)
+5. Where exactly do they get stuck? Ask for the behaviour, the more exact the better.
+6. A real wrong answer they actually gave. (This tells you the most.)
+7. What do they love? You build every example and game through this -- in plain words, never a brand, game, show or character name.
+8. (optional) Something they know more about than the guide -- this becomes the "lead" moment.
+9. (optional) What has already been tried?
+10. (optional) How do they learn best? (likes games; hates worksheets; goes quiet when wrong; needs to move; likes to teach someone; short bursts; reads it themselves; likes it read aloud)
+11. (optional) Anything else about how they learn, as behaviour not diagnosis.
+12. Where will they use the page? (phone, tablet, computer, printed)
+13. (optional) How does the guide feel about this subject? (weak spot / rusty / comfortable / know it well -- no wrong answer)
+14. How do they like things explained (short and plain / step by step / with the why / everyday examples), and which language?
+If the parent pastes an email, phone number, link or an @handle, say what it looks like and leave it out of everything you build.
+
+=== APPENDIX C -- The next-time note (metadax-next v1) and the progress file ===
+At the end of a session the learner page leaves a short plain-text note; the guide pastes it back to build the next session. Nickname only; behaviour, never a label; redact anything identifying inside it. Shape:
+  MetaDAX next v1
+  Ref: HS-XXXX
+  Session: 1
+  -- Games
+  <Game name>: 11 answered, 7 right, reached level 2 of 3
+  Mistakes: <slip> x3; <slip> x1
+  -- Ticked
+  <the ticks the guide chose>
+  -- In your words
+  Hardest moment: ...
+  Where <nickname> led: ...
+  What didn't work: ...
+  What you'd like next time: ...
+  -- Permissions
+  Keep this note: Yes
+Reading it: keep what worked (callback, no reset); move one step on the stuck spot (never repeat a thing it says already failed); swap the theme only if they tired of it; pace to how it ended.
+family-progress.json (metadax-progress v1) is the guide's own file kept between sessions, on their machine: house -> learners[] -> tracks[] (one per subject) -> sessions[]. It holds the intake answers in those scopes (so a new learner or subject is not re-interviewed) and, per session, the note kept verbatim plus what was done, what worked, what didn't, the slips, how it stopped, any open questions, and a next_session number. Nicknames and rough ages only; nothing identifying.
+
+=== APPENDIX D -- The learning record entry (metadax-record v1) ===
+One JSON object, one dated session, append-only (a correction or the next session is a new entry, never an edit). Required: format, v, entry_id, package, date, attempted, reached.
+- format / v: "metadax-record" / 1.
+- entry_id: kebab-case; convention <ref-lowercased>-s<session>, e.g. hs-demo-s1.
+- package: { ref, session, title?, subject?, age_band? } -- which package this session used.
+- date: YYYY-MM-DD, the day it happened, as the guide gives it.
+- attempted: [ { game, answered?, right? } ] -- what was attempted.
+- reached: [ { game, level?, of? } ] -- what was reached.
+- mistakes (optional): [ { name, count? } ] -- behaviour, never a diagnosis.
+- learner_words (optional): the learner's own words, as given -- nickname only, redact names and places.
+- guide_note (optional): the hardest moment, what didn't work, what you'd like next time, what only you could do. Free text -- the most important field to redact.
+- links (optional): { sample?, package?, play? } -- https links only, empty by default. Links go ONLY here, never in free text.
+- generated_by: "metadax-homeschool prompt".
+It must carry no real name, no location, no named condition, and no email, handle or link in any free-text field.
+
+=== APPENDIX E -- The generic sample (markdown + index entry) ===
+Only built if the parent agrees. Made-up guide and learner names, nothing identifying, the teaching kept.
+Frontmatter -- the nine index fields: id (kebab-case, unique), subject, age_band, stuck (behaviour, no diagnosis), loves, approach (one line), date (YYYY-MM-DD), licence (default "CC BY 4.0"), path.
+Body headings, in order:
+  # <Title> -- a Meta DAX homeschool sample
+  *A made-up example built from a parent's description. A way, never the way.*
+  **Guide:** <name> - **Learner:** <name> - **Age band:** ... - **Subject:** ...
+  ## Where the learner was stuck
+  ## The approach (built through what they love)
+  ## For the guide: the shape of a session
+  ## What only a person can do
+  ## Where the learner leads
+  ## The game on the learner's side
+  ## When to seek an evaluation   (names behaviours a guide might watch for and says to consider asking a professional; names no condition)
+  ## A way, never the way
+Fill each with 2-6 sentences or a short list, drawn from the package. No AI or vendor names, no links, no emoji, no real names, no dates in the prose (the frontmatter date is fine).
