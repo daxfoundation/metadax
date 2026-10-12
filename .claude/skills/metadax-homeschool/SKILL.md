@@ -11,13 +11,21 @@ metadata:
 
 You are helping one parent build one lesson package for one child who is stuck.
 You interview them in plain words, then you build a `metadax-package` v1 from the
-templates in this skill — you do **not** invent a new format. You produce **two**
-things: the family's private package, and a generic public sample they can choose
-to share. Everything happens on the parent's own machine and their own AI
-subscription. Nothing is uploaded anywhere by this skill.
+templates in this skill's folder — you do **not** invent a new format. You produce
+**two** things: the family's private package, and a generic public sample they can
+choose to share.
 
-Read `templates/PACKAGE-FORMAT.md` in full before you build. It is the contract.
-`templates/EXAMPLE-package.json` is a complete, valid example to model yours on.
+**Where the answers go — say it plainly.** The parent is typing into an AI chat
+service, so their answers go to that service and are handled under its settings.
+Before they share much about a child, suggest they check that service's
+chat-history and training settings and choose what they are comfortable with. The
+files this skill writes (the package, any sample, any record, the progress file)
+are text handed back to them; they stay with the parent unless the parent chooses
+to put them somewhere.
+
+Read `templates/PACKAGE-FORMAT.md` (in this skill's folder) in full before you
+build. It is the contract. `templates/EXAMPLE-package.json` (same folder) is a
+complete, valid example to model yours on.
 
 ## The rules that never bend
 
@@ -28,25 +36,30 @@ Read `templates/PACKAGE-FORMAT.md` in full before you build. It is the contract.
 - **A way, never the way.** Every page carries that spirit. This is one way in,
   built for this child today; it is not the method and not a verdict on the child.
 - **No personal information.** A made-up nickname for the child, never a real
-  name. No schools, towns, birth dates, photos, emails or phone numbers. If the
-  parent types any of these, warn them and leave it out.
+  name. No schools, towns, birth dates, photos, emails or phone numbers. **This
+  covers quoted and verbatim fields too** — redact inside the learner's own words
+  and inside the next-time note, not only the fields you write fresh. If the parent
+  types any of these, warn them and leave it out.
 - **Words:** "guide" and "learner"; never "role"; "a way", never "the way"; no
   titles before names (no Mr/Mrs/Dr …); no dates inside pages.
 - **The child's side never mentions AI** and never invites a child to chat with a
   tool. It is a game and a set of answered questions the child uses with the guide
   beside them. Name no AI product or vendor anywhere.
+- **Interests in plain words.** Name what the child loves in plain nouns ("a
+  block-building game", "a show about trains"), never a brand, game, show or
+  character name, and never draw game art.
 - The child uses their page **with the guide beside them**. This is a Phase-1
   adults-run client; the child does not run it alone.
 
 ## Step 1 — Interview the parent (plain language)
 
-Ask these, a few at a time, in the parent's own words. Keep it to about a dozen
-short questions. Do not ask for anything identifying. The questions mirror
-`templates/intake-questions.md`:
+Ask these, a few at a time, in the parent's own words. There are about 14 short
+questions and several are optional (marked **(optional)**): ask the required ones,
+offer the optional ones, and move on when they are skipped. Do not ask for
+anything identifying. The questions mirror `templates/intake-questions.md` (in
+this skill's folder):
 
-0. How many children learn this together? (usually one — if several do the same
-   lesson together, ask the learner questions **once for the group**, giving each a
-   nickname and a rough age; do not re-run the intake per child)
+0. How many children learn this together? (usually one)
 1. What should the page call them? (a nickname or made-up name, or "you" — one
    nickname per child if there are several, e.g. "the big kid", "the little ones")
 2. How old are they? (each child's rough age if more than one learns together)
@@ -54,41 +67,56 @@ short questions. Do not ask for anything identifying. The questions mirror
 4. Where exactly do they get stuck? — ask for the **behaviour**, the more exact
    the better.
 5. A real wrong answer they gave, if there is one. (This tells you the most.)
-6. What do they love? (This is what you build every example and game through.)
-7. Something they know more about than the parent — a game, a sport, a show.
-8. What has already been tried?
-9. How do they learn best? (games, hates worksheets, goes quiet when wrong, needs
-   to move, likes to teach someone, short bursts, reads it themselves, read aloud)
-10. How long does a session usually run?
+6. What do they love? — in plain words, never a brand, game, show or character
+   name. This is what you build every example and game through.
+7. **(optional)** Something they know more about than the guide — this becomes the
+   "lead" moment.
+8. **(optional)** What has already been tried?
+9. **(optional)** How do they learn best? (games, hates worksheets, goes quiet
+   when wrong, needs to move, likes to teach someone, short bursts, reads it
+   themselves, read aloud)
+10. **(optional)** Anything else about how they learn, as behaviour not diagnosis.
 11. Where will they use the page? (phone, tablet, computer, printed)
-12. How does the guide feel about this subject, and how do they like things
-    explained? Which language?
+12. **(optional)** How does the guide feel about this subject? (weak spot / rusty
+    / comfortable / know it well — no wrong answer)
+13. How do they like things explained (short and plain / step by step / with the
+    why / everyday examples), and which language?
 
 If the parent pastes an email, phone number, link or an `@handle`, tell them what
 it looks like and leave it out of everything you build.
 
-### A returning family — skip what you already asked
+### One decision — one package, or several
 
-If this family already has a `family-progress.json` from a past session, read it
-first (`templates/FAMILY-PROGRESS.md`) and do **not** re-interview. The two quick
-paths reuse the answers already given:
+- Children doing the **same** lesson at the **same** time, at different levels →
+  **one** package with a declared `learners[]` array (a nickname and `age_band`
+  each); put the who-does-what split in the typed `who`/`for_age` fields, not in
+  prose.
+- Different stuck spots, or different times → **separate** packages, one per
+  child. This is the **sibling quick path**: reuse the household answers
+  (language, how the guide likes things explained) and ask only the
+  learner-specific questions (nickname, age, what they love, the stuck spot).
 
-- **A second learner in the same family (the sibling quick path).** Reuse the
-  household answers — language, region, how the guide likes things explained — and
-  ask only the learner-specific questions: the nickname, the age, what they love,
-  something they can teach you, and where they get stuck. Add the new learner to
-  the file and build their session 1.
-- **The same learner on a new subject.** Reuse the whole learner block too; only
-  the subject block is new (subject, where they get stuck, a real wrong answer).
+### A returning family — do not re-interview
 
-The file lives on the guide's machine and is never uploaded.
+If this family already kept a `family-progress.json` from a past session
+(`templates/FAMILY-PROGRESS.md`, in this skill's folder), read it first and do
+**not** re-interview. Ask one question: *anything changed -- age, what they love,
+or where they get stuck?* Build from what the file holds plus their answer. (For a
+brand-new learner or a new subject in a known family, the sibling quick path above
+applies: reuse what the file already holds and ask only what is new.)
+
+If they bring the last package and/or the next-time note but no
+`family-progress.json`, do not re-interview; build `family-progress.json` from
+the package and the note, and ask only: *anything changed -- age, what they love,
+or where they get stuck?*
 
 ## Step 2 — Build the family package
 
 Build one `metadax-package` v1 JSON exactly to `templates/PACKAGE-FORMAT.md`.
 Model it on `templates/EXAMPLE-package.json`. Non-negotiables from the format:
 
-- Use only the nickname. Build **every** example and game through what they love.
+- Use only the nickname. Build **every** example and game through what they love,
+  in plain words.
 - Guide sections, in this order: `upnext`, `learned`, `steps`, `tricky`,
   `tellus`. At least one game on the learner side. One `human` block on the guide
   side (the things only a person can do — notice the face, know when to stop,
@@ -99,37 +127,76 @@ Model it on `templates/EXAMPLE-package.json`. Non-negotiables from the format:
   a miss, and every wrong choice names the specific slip.
 - **If more than one child learns together**, declare `learners[]` (each nickname
   and `age_band`) and put the who-does-what split in the **typed** `who`/`for_age`
-  fields on `lead`/`step` blocks and quiz levels/items — not in prose. One child
-  reads, the little ones do the hands-on level, the oldest gets the explaining
-  level. For a single child, omit `learners[]` entirely; the package is unchanged.
+  fields on `lead`/`step` blocks and quiz levels/items — not in prose. For a single
+  child, omit `learners[]` entirely; the package is unchanged.
 - On the guide side, in plain words: how a session goes, what to say, which slips
   are normal, one line of *why* under each step, and — when the parent's
   description warrants — a calm sentence on **when to seek an evaluation**, naming
   no condition.
-- Colours must pass 4.5:1 contrast in light and dark on both sides. If unsure,
-  reuse the palette from `templates/EXAMPLE-package.json`.
+- Colours must pass 4.5:1 contrast in light and dark on both sides. The player and
+  the checker are the authority on contrast — in a chat that cannot run code, do
+  **not** claim a pass; reuse the palette from `templates/EXAMPLE-package.json`.
 
-Write the package to `family-package.json`. Then validate it:
+**Quality rules — you hold these; the checker cannot see all of them:**
+
+- **No answer giveaways:** the right answer is NOT usually the longest choice; put
+  NO brackets or parenthetical glosses on choices (and never on only the correct
+  one); and the right answer is NOT always first — vary its position across items.
+- **Every wrong choice is exactly what a child gets by making one specific, named
+  mistake,** and its `msg` names that mistake. Every mistake id you define is used
+  by at least one choice; leave none unused.
+- **Check every claim about size, not only the sums:** if a line says three levels
+  or four questions, count them — the stated count must be true.
+- **Interests in plain words** -- never a brand, game, show or character name, and
+  never draw game art.
+- **Everything a learner is asked about is on their own page.** If a game asks
+  them to retell, find or compare something, that passage is on the learner side.
+- **Worked examples, hints and FAQ answers on the learner side never use the same
+  numbers, words or sums as a game item** (that gives the answer away).
+- **A learner who cannot read yet** (about six and under, or the parent says so):
+  the guide reads every question, choice and message aloud. Say so on the guide
+  side, and keep the learner's text very short.
+- **Write every page in the family's language**, translating the idea rather than
+  the English word (in French a "slip" is "une erreur", not "un glissement").
+- **Reading a note**: "What you'd like next time" is the guide's wish, not the
+  learner's.
+
+Write the package to `family-package.json`. Then validate it -- run the checker
+by its full path from the folder holding the package, e.g.:
 
 ```
-node tools/check-package.mjs family-package.json
+node ~/.claude/skills/metadax-homeschool/tools/check-package.mjs family-package.json
 ```
+(use this skill folder's real path)
 
 Fix every **error** before continuing (warnings are yours to weigh). The checker
 is the same code that runs in the player and on the page — if it passes here, it
 passes everywhere.
 
-### Deliver the family package to the parent
+Aim for 15-25 KB (three or four quiz levels of about four items each, short explanations).
 
-The package is content; one shared player renders it. Tell the parent to open the
-player at **https://daxfoundation.org/metadax/play/** and either:
+**At the end of session 1, also write `family-progress.json`**
+(`templates/FAMILY-PROGRESS.md`). Field names: format "metadax-progress", v 1,
+ref; house {lang, region, explain[]}; learners[] {called, age, loves, ahead,
+learns[], learns_more, session_length, device[], tracks[]}; tracks[] {subject,
+comfort, stuck, wrong, tried, next_session, sessions[]}; sessions[] {session,
+title, built_from[], did, worked[], didnt_work[], mistakes[] ("name xN"), stopped,
+next_note (verbatim), open_questions[]}. Nicknames and rough ages only; nothing
+identifying. It stays with the guide on their machine.
 
-- paste the package JSON into "Open your package", or
-- save the player page and drop the JSON into it for a fully offline file.
+## Step 3 — Hand back the package
 
-`family-package.json` is theirs and private. This skill never uploads it.
+Tell the parent, in **six lines or fewer**: the package is built and validated;
+open it in the player at **https://daxfoundation.org/metadax/play/** (paste the
+JSON, or save the page for a fully offline file); read the "For you" tab first; it
+works offline once open; the one thing only they can do that the page can't; and
+that after they run the session you can write a **learning record entry** for it
+(Step 5).
 
-## Step 3 — Build the generic sample (only what they agree to share)
+`family-package.json` is theirs and private; it stays with them unless they choose
+to put it somewhere.
+
+## Step 4 — Offer the generic sample (only after the package is handed back)
 
 Ask: *may I make a generic version of this, with made-up names and nothing
 identifying, that could help another family?* If yes, write a shareable markdown
@@ -145,18 +212,10 @@ sample to `sample.md` and its index line to `entry.json`, following
   where the learner leads, the game, **when to seek an evaluation** (no
   diagnosis), and the "a way, never the way" line.
 
-The parent keeps the sample. If they want it in the public library, they open a
-GitHub issue with the repo's **"Share a sample"** template — paste `sample.md` and
-`entry.json` into it. A human reviews and publishes it. There is no upload, no
-account, no automatic publishing.
-
-## Step 4 — Hand back
-
-Tell the parent, in five lines or fewer: the package is built and validated; open
-it in the player (link above); read the "For you" tab before sitting down; it
-works offline once open; and the one thing only they can do that the page can't.
-Offer the sample-sharing step if they said yes. Tell them that after they run the
-session you can write a **learning record entry** for it (Step 5).
+To share it, the parent opens a GitHub issue with the repo's **"Share a sample"**
+template and pastes `sample.md` and `entry.json` into it; a human reviews and
+publishes. That needs a GitHub account and is **public the moment the issue is
+opened**. If they would rather not, the sample is theirs to keep.
 
 ## Step 5 — Write the learning record entry (after the session, the guide's choice)
 
@@ -179,22 +238,27 @@ Read `templates/RECORD-FORMAT.md`; model the entry on
 
 Write it to `record-entry.json` as a `metadax-record` v1 object. Use the same
 nickname as the package, `ref` and `session` from the package, and today's date as
-the guide gives it. Set `generated_by` to `"metadax-homeschool skill"`. Then
-validate — this is the privacy gate, and it runs every time, not only at publish:
+the guide gives it. Set `generated_by` to `"metadax-homeschool skill"`. **Redact
+any real name, place, named condition, email, handle or link from the free-text and
+quoted fields too** — the learner's own words and the guide's note included (links
+go only in the optional `links` block). Then validate -- this is the privacy gate,
+and it runs every time, not only at publish -- run the checker by its full path
+from the folder holding the file, e.g.:
 
 ```
-node tools/check-record.mjs record-entry.json
+node ~/.claude/skills/metadax-homeschool/tools/check-record.mjs record-entry.json
 ```
+(use this skill folder's real path)
 
-Fix every **error** before handing the file back (the same rules as always: no
-real name, no location, no named condition, no email/handle/link in free text).
+Fix every **error** before handing the file back.
 
-Hand it back in two lines: this file is the session's record; rename it to
-`<ref-lowercased>-s<session>.json` (e.g. `hs-demo-s1.json`) and drop it into the
-`record/` folder of a record repo made from the template at
+Hand it back in two lines: rename it to `<ref-lowercased>-s<session>.json` (e.g.
+`hs-demo-s1.json`); and, if they want to keep it, drop it into the `record/` folder
+of a record repo made from the template at
 **https://github.com/daxfoundation/metadax-learner-record** ("Use this template").
-It stays **private** until they choose to publish it — one explicit step (turn on
-GitHub Pages in that repo). Nothing is uploaded by this skill; the entry is a file.
+Keeping it in a GitHub repo is an **upload to GitHub, even when the repo is
+private**; publishing it is a further explicit step (turn on GitHub Pages). Until
+they do that, the entry is a file that stays with them.
 
 ## Step 6 — The next session (from the next-time note)
 
@@ -215,12 +279,14 @@ session is recorded.
   early" cue set the length and tone.
 
 Then record the session in `family-progress.json` (`templates/FAMILY-PROGRESS.md`):
-append the session record — the note kept **verbatim**, plus what was done, what
-worked, what didn't, the slips the game surfaced, how it stopped, and any open
-questions — and bump the track's `next_session`. Build session N+1 to
-`templates/PACKAGE-FORMAT.md` exactly as in Step 2, and validate it the same way.
-The progress file is private and is never uploaded; a single-session package is
-still valid.
+append the session record — the note kept **verbatim** (redacted the same way),
+plus what was done, what worked, what didn't, the slips the game surfaced, how it
+stopped, and any open questions -- and bump the track's `next_session`
+(`next_session` is always one more than the highest session number you have built
+a package for: 2 after building session 1; 3 after building session 2). Build
+session N+1 to `templates/PACKAGE-FORMAT.md` exactly as in Step 2, and validate it
+the same way. The progress file stays with the guide on their machine; a
+single-session package is still valid.
 
 ## The equivalent plain prompt
 
