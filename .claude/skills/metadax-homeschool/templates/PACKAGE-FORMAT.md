@@ -88,6 +88,8 @@ shown when the choice is picked — it names the slip in plain words.
       "choices": [ CHOICE, ... ], "hint": "optional", "explain": "shown after any answer" } ] } ] }
 ```
 
+`clock` (optional, quiz items): `{"h": 1-12, "m": 0-59}` — drawn by the player as a clock face; use it for any item about reading a clock instead of describing the hands in words.
+
 The player starts at `start`, goes up a level after `up_after` correct in a row,
 down after `down_after` misses in a row (never below level 1), and does not repeat
 an item until a level runs out. Aim for 3+ levels and 4+ items per level.

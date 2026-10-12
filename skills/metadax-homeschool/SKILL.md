@@ -7,6 +7,8 @@ metadata:
   write_mode: local files
 ---
 
+Read this skill's files with your file-reading tool and write the parent's files with your file-writing tool. Do not use shell commands or heredocs for reading or writing; the only shell command this skill runs is the checker.
+
 # Meta DAX homeschool (parent-run)
 
 You are helping one parent build one lesson package for one child who is stuck.
@@ -187,11 +189,15 @@ identifying. It stays with the guide on their machine.
 ## Step 3 — Hand back the package
 
 Tell the parent, in **six lines or fewer**: the package is built and validated;
-open it in the player at **https://daxfoundation.org/metadax/play/** (paste the
-JSON, or save the page for a fully offline file); read the "For you" tab first; it
-works offline once open; the one thing only they can do that the page can't; and
-that after they run the session you can write a **learning record entry** for it
-(Step 5).
+give the **full path** to `family-package.json`; open it in the player at
+**https://daxfoundation.org/metadax/play/** — press **"Open a file"** and pick
+`family-package.json` (pasting the JSON still works too); read the "For you" tab
+first; it works offline once open; the one thing only they can do that the page
+can't; and that after they run the session you can write a **learning record
+entry** for it (Step 5).
+
+If you can run commands on their computer, offer to open the player page in their
+browser; do it only if they say yes.
 
 `family-package.json` is theirs and private; it stays with them unless they choose
 to put it somewhere.

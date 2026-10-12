@@ -208,6 +208,20 @@
                   errors.push({ path: p, msg: "choice refers to undefined mistake id: " + c.mistake });
                 }
               }
+              var ck = items[ii].clock;
+              if (ck !== undefined) {
+                var cp = sp + ".quiz[" + b.id + "].l" + li + ".i" + ii + ".clock";
+                if (typeof ck !== "object" || ck === null || Array.isArray(ck)) {
+                  errors.push({ path: cp, msg: "clock must be an object {h, m}" });
+                } else {
+                  if (typeof ck.h !== "number" || Math.round(ck.h) !== ck.h || ck.h < 1 || ck.h > 12) {
+                    errors.push({ path: cp + ".h", msg: "h must be an integer 1..12: " + ck.h });
+                  }
+                  if (typeof ck.m !== "number" || Math.round(ck.m) !== ck.m || ck.m < 0 || ck.m > 59) {
+                    errors.push({ path: cp + ".m", msg: "m must be an integer 0..59: " + ck.m });
+                  }
+                }
+              }
             }
           }
         } else if (b.type === "sequence") {
@@ -282,7 +296,7 @@
     "|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\\b",
     "i"
   );
-  var RE_DURATION = /\b\d+\s*(?:minutes?|heures?|hours?|mins?\b|hrs?\b)/i;
+  var RE_DURATION = /\b\d+\s*(?:minutes?|heures?|hours?|mins?|hrs?)\b(?!\s+(?:past|to)\s+\d|\s+(?:apr[eè]s|avant))/i;
   var RE_EMAIL = /\b[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}\b/;
   var RE_PHONE = /(?:\+?1[\s\-.])?\(?\d{3}\)?[\s\-.]\d{3}[\s\-.]\d{4}\b|\b\d{3}[\s\-]\d{4}\b/;
   var RE_INCL_DOT = /\w[·‧]\w/;
