@@ -156,6 +156,8 @@ Fix every **error** before continuing (warnings are yours to weigh). The checker
 is the same code that runs in the player and on the page — if it passes here, it
 passes everywhere.
 
+Aim for 15-25 KB (three or four quiz levels of about four items each, short explanations).
+
 **At the end of session 1, also write `family-progress.json`**
 (`templates/FAMILY-PROGRESS.md`): the intake answers in their scopes (house →
 learners[] → tracks[]) plus this first session's record, so the next session is
