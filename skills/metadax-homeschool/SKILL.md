@@ -100,10 +100,15 @@ it looks like and leave it out of everything you build.
 
 If this family already kept a `family-progress.json` from a past session
 (`templates/FAMILY-PROGRESS.md`, in this skill's folder), read it first and do
-**not** re-interview. Ask one question: *anything changed — age, what they love,
+**not** re-interview. Ask one question: *anything changed -- age, what they love,
 or where they get stuck?* Build from what the file holds plus their answer. (For a
 brand-new learner or a new subject in a known family, the sibling quick path above
 applies: reuse what the file already holds and ask only what is new.)
+
+If they bring the last package and/or the next-time note but no
+`family-progress.json`, do not re-interview; build `family-progress.json` from
+the package and the note, and ask only: *anything changed -- age, what they love,
+or where they get stuck?*
 
 ## Step 2 — Build the family package
 
@@ -142,15 +147,27 @@ Model it on `templates/EXAMPLE-package.json`. Non-negotiables from the format:
   by at least one choice; leave none unused.
 - **Check every claim about size, not only the sums:** if a line says three levels
   or four questions, count them — the stated count must be true.
-- **Interests in plain words** — never a brand, game, show or character name, and
+- **Interests in plain words** -- never a brand, game, show or character name, and
   never draw game art.
+- **Everything a learner is asked about is on their own page.** If a game asks
+  them to retell, find or compare something, that passage is on the learner side.
+- **Worked examples, hints and FAQ answers on the learner side never use the same
+  numbers, words or sums as a game item** (that gives the answer away).
+- **A learner who cannot read yet** (about six and under, or the parent says so):
+  the guide reads every question, choice and message aloud. Say so on the guide
+  side, and keep the learner's text very short.
+- **Write every page in the family's language**, translating the idea rather than
+  the English word (in French a "slip" is "une erreur", not "un glissement").
+- **Reading a note**: "What you'd like next time" is the guide's wish, not the
+  learner's.
 
-Write the package to `family-package.json`. Then validate it — from the skill's
-folder run:
+Write the package to `family-package.json`. Then validate it -- run the checker
+by its full path from the folder holding the package, e.g.:
 
 ```
-node tools/check-package.mjs family-package.json
+node ~/.claude/skills/metadax-homeschool/tools/check-package.mjs family-package.json
 ```
+(use this skill folder's real path)
 
 Fix every **error** before continuing (warnings are yours to weigh). The checker
 is the same code that runs in the player and on the page — if it passes here, it
@@ -159,9 +176,12 @@ passes everywhere.
 Aim for 15-25 KB (three or four quiz levels of about four items each, short explanations).
 
 **At the end of session 1, also write `family-progress.json`**
-(`templates/FAMILY-PROGRESS.md`): the intake answers in their scopes (house →
-learners[] → tracks[]) plus this first session's record, so the next session is
-built from the file, not a re-interview. Nicknames and rough ages only; nothing
+(`templates/FAMILY-PROGRESS.md`). Field names: format "metadax-progress", v 1,
+ref; house {lang, region, explain[]}; learners[] {called, age, loves, ahead,
+learns[], learns_more, session_length, device[], tracks[]}; tracks[] {subject,
+comfort, stuck, wrong, tried, next_session, sessions[]}; sessions[] {session,
+title, built_from[], did, worked[], didnt_work[], mistakes[] ("name xN"), stopped,
+next_note (verbatim), open_questions[]}. Nicknames and rough ages only; nothing
 identifying. It stays with the guide on their machine.
 
 ## Step 3 — Hand back the package
@@ -221,12 +241,14 @@ nickname as the package, `ref` and `session` from the package, and today's date 
 the guide gives it. Set `generated_by` to `"metadax-homeschool skill"`. **Redact
 any real name, place, named condition, email, handle or link from the free-text and
 quoted fields too** — the learner's own words and the guide's note included (links
-go only in the optional `links` block). Then validate — this is the privacy gate,
-and it runs every time, not only at publish — from the skill's folder run:
+go only in the optional `links` block). Then validate -- this is the privacy gate,
+and it runs every time, not only at publish -- run the checker by its full path
+from the folder holding the file, e.g.:
 
 ```
-node tools/check-record.mjs record-entry.json
+node ~/.claude/skills/metadax-homeschool/tools/check-record.mjs record-entry.json
 ```
+(use this skill folder's real path)
 
 Fix every **error** before handing the file back.
 
@@ -259,7 +281,9 @@ session is recorded.
 Then record the session in `family-progress.json` (`templates/FAMILY-PROGRESS.md`):
 append the session record — the note kept **verbatim** (redacted the same way),
 plus what was done, what worked, what didn't, the slips the game surfaced, how it
-stopped, and any open questions — and bump the track's `next_session`. Build
+stopped, and any open questions -- and bump the track's `next_session`
+(`next_session` is always one more than the highest session number you have built
+a package for: 2 after building session 1; 3 after building session 2). Build
 session N+1 to `templates/PACKAGE-FORMAT.md` exactly as in Step 2, and validate it
 the same way. The progress file stays with the guide on their machine; a
 single-session package is still valid.
