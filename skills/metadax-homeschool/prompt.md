@@ -24,7 +24,7 @@ Step 2 -- Build one metadax-package v1 JSON to Appendix A. Use the nickname only
 
 Keep the package small enough to arrive in one reply: aim for 15-25 KB (three or four quiz levels of about four items each, short explanations). If your reply is cut off before the final closing brace, do not continue from the middle: tell the parent it was cut off and send the complete JSON again, shorter, in one code block. Tell the parent to copy the whole code block.
 
-Step 3 -- Hand back the package, in six lines or fewer: the package is built and checked; open it in the player at https://daxfoundation.org/metadax/play/ (paste the JSON, or save the page for an offline file); read the "For you" tab first; it works offline once open; the one thing only they can do that the page cannot; and that after they run the session you can write a learning record entry for it (Step 5).
+Step 3 -- Hand back the package, in six lines or fewer: the package is built and checked; open it in the player at https://daxfoundation.org/metadax/play/ (paste the JSON, or save the JSON as a file and use the player's Open a file button); read the "For you" tab first; it works offline once open; the one thing only they can do that the page cannot; and that after they run the session you can write a learning record entry for it (Step 5).
 
 Step 4 -- Offer the generic sample, only after the package is handed back. Ask whether you may make a generic version with made-up names and nothing identifying, to help another family. If yes, write sample.md and entry.json following Appendix E: invent fresh fictional names (not the family's nickname), strip every identifying detail, keep the teaching, and include a "when to seek an evaluation" section that names no condition. To share it, they open a GitHub issue with the repo's "Share a sample" template and paste both files in; a human reviews and publishes. That needs a GitHub account and is public the moment the issue is opened; if they would rather not, it is theirs to keep.
 
@@ -72,7 +72,9 @@ quiz (the adaptive game):
     "mistakes": { "m-id": { "name":"short name of the slip", "guide":"one line for the guide" } },
     "levels": [ { "level":1, "label":"Warm-up", "items": [
       { "q":"...", "visual":"optional plain text / small fixed-width diagram",
+        "clock":{"h":1-12,"m":0-59},
         "choices": [ CHOICE, ... ], "hint":"optional", "explain":"shown after any answer" } ] } ] }
+  clock (optional, quiz items): {"h": 1-12, "m": 0-59} -- player draws a clock face; use for any item about reading a clock instead of describing the hands in words.
   The player starts at start, goes up a level after up_after correct in a row, down after down_after misses in a row (never below level 1), and does not repeat an item until a level runs out. Aim for 3+ levels and 4+ items per level.
 CHOICE: { "text", "correct": true, "msg" } OR { "text", "mistake":"m-id", "msg" }. Every wrong choice names an id in that block's own mistakes map; msg names the slip in plain words.
 sequence {id,title,intro?, mistakes{}, steps:[{prompt, choices:[CHOICE]}]}: decisions in order; carries the same mistakes map as quiz.
