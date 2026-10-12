@@ -68,12 +68,14 @@ Inline in any string: `**bold**`, `*italic*`. No HTML, no links, no emoji.
 | `check` | id, title, items[] | guide tick list; ticks feed the next-time note |
 | `quiz` | see below | adaptive game |
 | `sort` | id, title, intro?, bins:[{id,label}], items:[{text,bin,why}] | game: put each item in a bin |
-| `sequence` | id, title, intro?, steps:[{prompt, choices:[CHOICE]}] | game: decisions in order |
-| `build` | id, title, intro?, parts:[{label, options[], best, why}] | game: pick a part per slot, see the why |
+| `sequence` | id, title, intro?, mistakes{}, steps:[{prompt, choices:[CHOICE]}] | game: decisions in order. Carries a block-level `mistakes` map, the **same shape as `quiz`** (`{ "m-id": { "name", "guide" } }`); every wrong choice names one of those ids. |
+| `build` | id, title, intro?, parts:[{label, options[], best, why}] | game: pick a part per slot, see the why. `best` is the **exact text of one of that part's `options`** (a verbatim string match, not an index or a paraphrase). |
 | `spoken-sound` | id, title?, prompt_for_guide, options[], answer, why | game (phonics / early reading): the guide reads `prompt_for_guide` aloud — the page speaks nothing — and the learner taps the matching option among 3-4 (letters, digraphs, or picture-words). `answer` is the matching option; `why` is one line for the guide key. Same streak/miss adaptivity as the other games, and additive: a package without it stays valid. |
 
 CHOICE: `{ "text", "correct": true, "msg" }` **or** `{ "text", "mistake": "m-id", "msg" }`.
-Every wrong choice names a defined mistake.
+Every wrong choice names a defined mistake. In both `quiz` and `sequence`, the
+`mistake` id must be a key in that block's own `mistakes` map. `msg` is the line
+shown when the choice is picked — it names the slip in plain words.
 
 `quiz` (the adaptive game):
 
@@ -102,6 +104,25 @@ an item until a level runs out. Aim for 3+ levels and 4+ items per level.
 The guide reads `prompt_for_guide` aloud; nothing is spoken by the device. The
 learner taps (or, on paper, circles) the matching option. The printed learner page
 shows the options with no answer; the answer and `why` go to the guide key.
+
+`sequence` (decisions in order) — carries its own `mistakes` map, the same shape
+as `quiz`; each step's wrong choices name an id from it:
+
+```json
+{ "type": "sequence", "id": "warm-up-first", "title": "Set up the game",
+  "mistakes": { "skips-warm-up": { "name": "started before warming up", "guide": "Jumped straight to the hard part." } },
+  "steps": [ { "prompt": "What comes first?",
+    "choices": [ { "text": "Warm up", "correct": true, "msg": "Yes — warm up first." },
+                 { "text": "Hardest level", "mistake": "skips-warm-up", "msg": "That skips the warm-up." } ] } ] }
+```
+
+`build` (pick a part per slot) — each part's `best` is the **exact text of one of
+that part's `options`**:
+
+```json
+{ "type": "build", "id": "make-sentence", "title": "Build it",
+  "parts": [ { "label": "Opener", "options": ["Once", "Quickly", "The"], "best": "Once", "why": "An opener sets the scene." } ] }
+```
 
 ## Mixed-age households (optional)
 
@@ -133,6 +154,28 @@ no `who`/`for_age` is validated and rendered exactly as before.
 blocks"); `next.ask` are short open prompts (e.g. "Hardest moment", "Where your
 child led"). The player turns these into a plain "next time" note the parent can
 copy; nothing leaves the device unless they copy it.
+
+## Quality rules (the builder holds these; the checker cannot see all of them)
+
+These came from reviewing real published packages. The checker catches some; the
+rest are on you as the builder, every time.
+
+- **No answer giveaways.** The right answer is **not usually the longest** choice;
+  put **no brackets** or parenthetical glosses on choices (and never on only the
+  correct one); and the right answer is **not always first** — vary its position
+  across items.
+- **Every wrong choice is earned.** A wrong choice is **exactly** what a child
+  gets by making one specific, named mistake — not a random distractor — and its
+  `msg` **names that mistake** in plain words. Each defined `mistake` id is used by
+  at least one choice; do not leave a mistake defined but unused.
+- **Check every claim about size, not only sums.** If a line says a quiz has three
+  levels, count the levels; if it says "four questions", count them. Arithmetic
+  being right is not enough — every stated count and comparison must be true of the
+  thing it describes.
+- **Interests in plain words.** Name the interest in plain nouns — "a
+  block-building game", "a card game about trading", "a show about trains" — and
+  **never a brand, game, show or character name**, and **never draw game art**. The
+  theme is the shape of the interest, not its trademark.
 
 ## What the checker enforces (errors — package does not go out)
 
