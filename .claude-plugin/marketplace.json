@@ -1,0 +1,13 @@
+{
+  "name": "metadax",
+  "owner": { "name": "DAX Foundation" },
+  "plugins": [
+    {
+      "name": "metadax-homeschool",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/metadax-homeschool"],
+      "description": "Interviews a homeschooling parent in plain words and builds a two-page lesson package for a child who is stuck. Runs on your own Claude subscription."
+    }
+  ]
+}
