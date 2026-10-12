@@ -51,7 +51,7 @@ If you are teaching a class, you can design a term plan for any subject in about
 | Piece | Where | Status | What it is |
 |---|---|---|---|
 | Homeschool skill | [`skills/metadax-homeschool/`](skills/metadax-homeschool/) | built | Interviews a guide and builds the two-page package; runs on your own assistant. |
-| Plain prompt | [`skills/metadax-homeschool/prompt.md`](skills/metadax-homeschool/prompt.md) | built | The same job as one prompt for any capable model, with no skill support. |
+| Plain prompt | [`skills/metadax-homeschool/prompt.md`](skills/metadax-homeschool/prompt.md) | built | The same job as one prompt for any capable model, with no skill support. Paste `prompt.md` into a new chat; no attachments needed. |
 | Course factory — curriculum architect | [`prompts/MP-11-curriculum-architect.md`](prompts/MP-11-curriculum-architect.md) | built | Takes a topic and a target audience; builds a structured curriculum outline. |
 | Course factory — batch builder | [`prompts/MP-12-batch-builder.md`](prompts/MP-12-batch-builder.md) | built | Turns a curriculum into a full batch of course nodes. |
 | Guide coach | [`prompts/MP-13-guide-coach.md`](prompts/MP-13-guide-coach.md) | built | Coaches the guide through a session; sits beside, not in front of, the learner. |
