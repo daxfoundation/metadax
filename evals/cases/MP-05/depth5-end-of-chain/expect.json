@@ -6,7 +6,6 @@
     "extend"
   ],
   "node_present": true,
-  "node_id_prefix": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv/",
   "node_depth": 5,
   "allowed_warnings": [
     "low_confidence",

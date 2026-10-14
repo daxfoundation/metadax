@@ -1,6 +1,6 @@
-# Open and print a MetaDAX package
+# Open and print a Meta DAX package
 
-MetaDAX › [Help](index.md) › Open & print
+Meta DAX › [Help](index.md) › Open & print
 
 Once you have a package — the `metadax-package` JSON from the skill or an AI chat
 — the player opens it. One shared player renders every package. Everything runs in

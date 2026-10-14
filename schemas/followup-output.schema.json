@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://metadax.daxfoundation.org/schemas/0.2/followup-output.schema.json",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.3/followup-output.schema.json",
   "title": "metadax MP-05 FOLLOWUP ask output envelope",
   "type": "object",
   "additionalProperties": false,
@@ -35,7 +35,7 @@
     "message": { "type": "string" }
   },
   "$defs": {
-    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^L\\d\\d\\.M\\d\\d\\.O\\d\\d(/[a-z0-9]+(-[a-z0-9]+)*)*$" },
+    "nodeId": { "type": "string", "maxLength": 200, "pattern": "^(L\\d\\d\\.M\\d\\d\\.O\\d\\d|n_[0-9a-hjkmnp-tv-z]{26})$" },
     "warning": { "enum": ["steer_conflict", "audience_conflict", "out_of_scope", "depth_limit", "low_confidence", "source_gap", "wellbeing_flag", "missing_input", "orphans_followups", "budget_unmet", "unstamped"] },
     "option": {
       "type": "object",

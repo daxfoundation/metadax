@@ -1,5 +1,5 @@
 {
-  "schema": "metadax.registry/0.2",
+  "schema": "metadax.registry/0.3",
   "course_id": "cell-biology-obsidian",
   "module_id": "L01.M01",
   "updated_at": "2026-09-27T19:03:28Z",
@@ -41,7 +41,8 @@
       "superseded_by": null
     },
     {
-      "id": "L01.M01.O01/proteins-essential-atp-synthesis",
+      "id": "n_qkx5r9e0psvqpbd631wz7s98vm",
+      "legacy_id": "L01.M01.O01/proteins-essential-atp-synthesis",
       "parent_id": "L01.M01.O01",
       "title": "Proteins essential for ATP synthesis",
       "canonical_question": "Which proteins are essential for ATP synthesis in the mitochondrion?",
@@ -58,8 +59,9 @@
       "superseded_by": null
     },
     {
-      "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
-      "parent_id": "L01.M01.O01/proteins-essential-atp-synthesis",
+      "id": "n_ka7589qwn4z1n2tghxxcv2vzbm",
+      "legacy_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
+      "parent_id": "n_qkx5r9e0psvqpbd631wz7s98vm",
       "title": "Cytochrome c: structure and role",
       "canonical_question": "What does cytochrome c do in the electron transport chain?",
       "intent": "deepen",
@@ -75,8 +77,9 @@
       "superseded_by": null
     },
     {
-      "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
-      "parent_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role",
+      "id": "n_hh1ash4knccqm98y2n9hfn1h5c",
+      "legacy_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
+      "parent_id": "n_ka7589qwn4z1n2tghxxcv2vzbm",
       "title": "Electron donation to Complex IV",
       "canonical_question": "How does cytochrome c donate electrons to Complex IV?",
       "intent": "deepen",
@@ -92,8 +95,9 @@
       "superseded_by": null
     },
     {
-      "id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv/plant-mitochondria-different",
-      "parent_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv",
+      "id": "n_rdgjy7hc9tb7w9s9zske303gn4",
+      "legacy_id": "L01.M01.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role/electron-donation-complex-iv/plant-mitochondria-different",
+      "parent_id": "n_hh1ash4knccqm98y2n9hfn1h5c",
       "title": "Plant mitochondria different from animal",
       "canonical_question": "Are plant mitochondria different from animal mitochondria?",
       "intent": "contrast",
@@ -109,7 +113,8 @@
       "superseded_by": null
     },
     {
-      "id": "L01.M01.O02/building-proton-gradient",
+      "id": "n_zybxq9436j8wxpeh0sxgqyycjr",
+      "legacy_id": "L01.M01.O02/building-proton-gradient",
       "parent_id": "L01.M01.O02",
       "title": "Building the proton gradient",
       "canonical_question": "How is the proton gradient across the inner membrane built?",

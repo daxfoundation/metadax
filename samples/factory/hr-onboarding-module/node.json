@@ -1,0 +1,78 @@
+{
+  "schema": "metadax.node/0.3",
+  "id": "L03.M02.O01",
+  "parent_id": null,
+  "slug": "apply-dayone-datahandling-rules",
+  "kind": "objective",
+  "depth": 1,
+  "anchor": null,
+  "title": "Apply the day-one data-handling rules",
+  "question": "",
+  "canonical_question": "How should a new hire store, share and dispose of company and customer data?",
+  "intent": null,
+  "summary": [
+    "Keep data where it belongs, share it only with people who need it, and dispose of it properly.",
+    "When unsure, ask before you send."
+  ],
+  "concepts": [
+    "data-handling"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Apply",
+  "scope": "in_scope",
+  "reuse": null,
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Store it where it belongs",
+        "body_md": "Company and customer data lives in the approved systems, not on personal drives, personal email, or your desktop. If you create a file with customer details, save it to the shared workspace, not your downloads folder.",
+        "check": {
+          "question": "Where should a file with customer details be saved?",
+          "answer": "In the approved shared workspace, not a personal drive or downloads folder."
+        }
+      },
+      {
+        "id": "s2",
+        "heading": "Share it only with those who need it",
+        "body_md": "Send data to the fewest people who need it to do their job. Use internal tools rather than forwarding to outside addresses. If someone outside the company asks for data, check with your manager first."
+      },
+      {
+        "id": "s3",
+        "heading": "Dispose of it properly",
+        "body_md": "Do not keep data longer than you need it. Delete drafts and downloads once the task is done, and empty them from the trash. Paper with personal details goes in the shredding bin, never the recycling.",
+        "check": {
+          "question": "What do you do with paper that has personal details?",
+          "answer": "Put it in the shredding bin, not the recycling."
+        }
+      }
+    ],
+    "key_points": [
+      "Store data only in approved systems.",
+      "Share with the fewest people who need it.",
+      "Dispose of data and drafts promptly and properly."
+    ],
+    "bridge_to_parent": "These are the day-one rules the policy expects everyone to follow.",
+    "bridge_to_objective": "",
+    "source_refs": [
+      "src:data-policy"
+    ]
+  },
+  "seeds": [
+    "What counts as an approved system here?",
+    "Who do I ask before sharing data outside the company?",
+    "What should I do if I email data to the wrong person?"
+  ],
+  "created_by": "author",
+  "visibility": "pending_review",
+  "created_at": "runtime",
+  "updated_at": "runtime",
+  "content_sha256": "runtime",
+  "superseded_by": null,
+  "model": "runtime",
+  "stats": {
+    "views": 0,
+    "reuse_count": 0
+  }
+}

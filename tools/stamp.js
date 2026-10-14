@@ -267,7 +267,7 @@ function stampIndex(courseDir) {
 function stampReuse(courseDir, nodeId) {
   const now = lib.nowIso();
   const stamped = [];
-  const modulePath = lib.registryFile(courseDir, lib.moduleOf(nodeId));
+  const modulePath = lib.registryFileFor(courseDir, nodeId); // v0.3 opaque ids too
   if (fs.existsSync(modulePath)) {
     const mod = lib.readJson(modulePath);
     for (const e of mod.nodes || []) {

@@ -25,7 +25,7 @@
     "--input",
     "What is the best programming language to learn for a career in 2026?"
   ],
-  "stack_bytes": 29646,
+  "stack_bytes": 30607,
   "blocks": [
     "CONFIG",
     "COURSE",

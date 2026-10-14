@@ -1,0 +1,69 @@
+{
+  "schema": "metadax.node/0.3",
+  "id": "n_dzsdxwfcm36pckj89t5e3a0mt0",
+  "slug": "the-newton-as-a-unit",
+  "legacy_id": "L02.M01.O01/the-newton-as-a-unit",
+  "parent_id": "L02.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "The newton as a unit of force",
+  "question": "",
+  "canonical_question": "What is one newton of force in terms of mass and acceleration?",
+  "intent": "clarify",
+  "summary": [
+    "One newton is the force that gives a one-kilogram mass an acceleration of one metre per second squared.",
+    "Roughly, holding a small apple against gravity takes about one newton."
+  ],
+  "concepts": [
+    "newtons-second-law"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Defined by F = ma",
+        "body_md": "One newton is the force that gives a one-kilogram mass an acceleration of one metre per second squared. It comes straight from F = ma with the numbers set to one. So a newton is a kilogram-metre per second squared."
+      },
+      {
+        "id": "s2",
+        "heading": "A feel for the size",
+        "body_md": "Roughly, holding a small apple against gravity takes about one newton. Everyday pushes are a few to a few hundred newtons. Knowing this keeps your force answers sensible."
+      }
+    ],
+    "key_points": [
+      "One newton accelerates 1 kg at 1 m/s^2.",
+      "It equals kg·m/s^2.",
+      "About the weight of a small apple."
+    ],
+    "bridge_to_parent": "It clarifies the unit implied by the objective’s law.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How many newtons is my weight?",
+    "How does this relate to the kilogram?"
+  ],
+  "path": [
+    {
+      "id": "L02.M01.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "d58971d56911475fff5f70141f98c9bd7629aa98f5aa60d0a8f25ceb23584067"
+}

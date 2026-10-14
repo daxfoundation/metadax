@@ -95,11 +95,9 @@ a workplace trainer or a professor. Adapting a template opens MetaDAX to them.
 
 ## Licence
 
-`docs/`, `README.md` and other prose, including this file, are **CC BY 4.0**
-(https://creativecommons.org/licenses/by/4.0/legalcode). Other paths carry their own licence:
-`prompts/`, `schemas/` and `evals/fixtures` are CC0 1.0; `tools/`, `templates/`, `.github/`,
-`skills/` and `adapters/` are Apache-2.0; generated course content produced with these prompts
-takes the licence the course author chooses (default CC BY 4.0), and raw generated segments are
-marked `generated: true` and declared CC0. The full split is in [`LICENSES.md`](LICENSES.md)
-and `docs/LICENSING.md`. By contributing you agree your contribution is released under the
-licence for its path.
+Prose here, including this file, is **CC BY 4.0** (https://creativecommons.org/licenses/by/4.0/legalcode).
+Other paths carry their own licence -- prompts, schemas and eval fixtures are CC0 1.0; code,
+templates, skills, adapters and `.github/` are Apache-2.0; generated course content takes the
+licence the course author chooses (default CC BY 4.0). The full split is in
+[`LICENSES.md`](LICENSES.md) and `docs/LICENSING.md`. By contributing you agree your
+contribution is released under the licence for its path.

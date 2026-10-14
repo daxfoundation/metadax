@@ -1,5 +1,5 @@
 {
-  "schema": "metadax.registry/0.2",
+  "schema": "metadax.registry/0.3",
   "course_id": "newtons-laws-motion",
   "module_id": "L02.M01",
   "updated_at": "runtime",
@@ -39,7 +39,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/mass-versus-weight",
+      "id": "n_s0c80a34mdd88nqgdt0dr2smsm",
+      "legacy_id": "L02.M01.O01/mass-versus-weight",
       "parent_id": "L02.M01.O01",
       "title": "Mass versus weight",
       "canonical_question": "What is the difference between mass and weight?",
@@ -55,7 +56,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/how-mass-and-weight-differ",
+      "id": "n_9egnjb71fg5p16h13bmgfh9530",
+      "legacy_id": "L02.M01.O01/how-mass-and-weight-differ",
       "parent_id": "L02.M01.O01",
       "title": "How mass and weight differ",
       "canonical_question": "How do mass and weight differ, and why does it matter?",
@@ -71,7 +73,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/distinguishing-mass-from-weight",
+      "id": "n_wth78d5wwjz79n1vj9eyme4ctc",
+      "legacy_id": "L02.M01.O01/distinguishing-mass-from-weight",
       "parent_id": "L02.M01.O01",
       "title": "Distinguishing mass from weight",
       "canonical_question": "How can you tell mass and weight apart in a problem?",
@@ -87,7 +90,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/rearrange-fma-for-acceleration",
+      "id": "n_985ettvbm94dwwam76sgay6ar0",
+      "legacy_id": "L02.M01.O01/rearrange-fma-for-acceleration",
       "parent_id": "L02.M01.O01",
       "title": "Rearranging F = ma for acceleration",
       "canonical_question": "How do you rearrange F = ma to find acceleration from force and mass?",
@@ -103,7 +107,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/solving-fma-for-a",
+      "id": "n_g0m2j96105xvemv1dg91888cer",
+      "legacy_id": "L02.M01.O01/solving-fma-for-a",
       "parent_id": "L02.M01.O01",
       "title": "Solving F = ma for the acceleration",
       "canonical_question": "How do you solve F = ma when you want the acceleration?",
@@ -119,7 +124,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/do-heavier-objects-fall-faster",
+      "id": "n_jkb5ga65w27v650k2y2qs8cq3m",
+      "legacy_id": "L02.M01.O01/do-heavier-objects-fall-faster",
       "parent_id": "L02.M01.O01",
       "title": "Do heavier objects fall faster?",
       "canonical_question": "Do heavier objects fall faster than lighter ones?",
@@ -136,7 +142,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/falling-speed-and-weight",
+      "id": "n_8a6494bs26g9gway25vknr4ft8",
+      "legacy_id": "L02.M01.O01/falling-speed-and-weight",
       "parent_id": "L02.M01.O01",
       "title": "Falling speed and weight",
       "canonical_question": "Does an object’s weight decide how fast it falls?",
@@ -153,7 +160,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/why-mass-resists-acceleration",
+      "id": "n_bpyme6z9ra5zvxk7yxn6ayyt8m",
+      "legacy_id": "L02.M01.O01/why-mass-resists-acceleration",
       "parent_id": "L02.M01.O01",
       "title": "Why mass resists acceleration",
       "canonical_question": "Why does a larger mass need a larger force to reach the same acceleration?",
@@ -170,7 +178,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O02/why-acceleration-follows-net-force",
+      "id": "n_0hj98vjxnwtpzj591xsndz9dsg",
+      "legacy_id": "L02.M01.O02/why-acceleration-follows-net-force",
       "parent_id": "L02.M01.O02",
       "title": "Why acceleration follows the net force",
       "canonical_question": "Why does the acceleration always point in the same direction as the net force?",
@@ -187,7 +196,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/history-of-the-kilogram",
+      "id": "n_zsjxmw0qh1pha4ypexbet28dv0",
+      "legacy_id": "L02.M01.O01/history-of-the-kilogram",
       "parent_id": "L02.M01.O01",
       "title": "A short history of the kilogram",
       "canonical_question": "How was the kilogram historically defined as the unit of mass?",
@@ -203,7 +213,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/fma-with-multiple-forces",
+      "id": "n_8sd7kfxz1cvdeq1b2v01er8rv8",
+      "legacy_id": "L02.M01.O01/fma-with-multiple-forces",
       "parent_id": "L02.M01.O01",
       "title": "Using F = ma with several forces",
       "canonical_question": "How do you apply F = ma when several forces act on the same body?",
@@ -220,7 +231,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O02/acceleration-on-a-frictionless-incline",
+      "id": "n_wyx1fb18w6w85ek7zg3fmyw9fm",
+      "legacy_id": "L02.M01.O02/acceleration-on-a-frictionless-incline",
       "parent_id": "L02.M01.O02",
       "title": "Acceleration on a frictionless incline",
       "canonical_question": "How do you find the acceleration of a block sliding down a frictionless incline?",
@@ -236,7 +248,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O01/the-newton-as-a-unit",
+      "id": "n_dzsdxwfcm36pckj89t5e3a0mt0",
+      "legacy_id": "L02.M01.O01/the-newton-as-a-unit",
       "parent_id": "L02.M01.O01",
       "title": "The newton as a unit of force",
       "canonical_question": "What is one newton of force in terms of mass and acceleration?",
@@ -252,7 +265,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L02.M01.O02/acceleration-of-two-connected-blocks",
+      "id": "n_31xstas5v52ycsw4403ghybh2c",
+      "legacy_id": "L02.M01.O02/acceleration-of-two-connected-blocks",
       "parent_id": "L02.M01.O02",
       "title": "Acceleration of two connected blocks",
       "canonical_question": "How do you calculate the acceleration of two connected blocks pulled by one force?",

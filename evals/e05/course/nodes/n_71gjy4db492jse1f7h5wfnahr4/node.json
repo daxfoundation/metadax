@@ -1,0 +1,70 @@
+{
+  "schema": "metadax.node/0.3",
+  "id": "n_71gjy4db492jse1f7h5wfnahr4",
+  "slug": "first-law-constant-velocity",
+  "legacy_id": "L01.M02.O01/first-law-constant-velocity",
+  "parent_id": "L01.M02.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "The first law at constant velocity",
+  "question": "",
+  "canonical_question": "How does Newton’s first law apply to a car cruising at constant velocity?",
+  "intent": "apply",
+  "summary": [
+    "A car holding a steady speed in a straight line has zero net force, even though its engine is working.",
+    "Press the accelerator and the drive force exceeds resistance, so a net force appears and the car speeds up."
+  ],
+  "concepts": [
+    "newtons-first-law",
+    "net-force"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Steady cruise, zero net force",
+        "body_md": "A car holding a steady speed in a straight line has zero net force, even though its engine is working. The drive force forward is exactly matched by drag and rolling resistance backward. The first law then keeps the velocity constant."
+      },
+      {
+        "id": "s2",
+        "heading": "What changes the state",
+        "body_md": "Press the accelerator and the drive force exceeds resistance, so a net force appears and the car speeds up. Ease off and resistance wins, slowing it down. Only an imbalance changes the cruising state."
+      }
+    ],
+    "key_points": [
+      "Constant velocity means zero net force.",
+      "Drive force balances resistance at cruise.",
+      "An imbalance is needed to change speed."
+    ],
+    "bridge_to_parent": "It applies the objective’s first law to steady motion.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "Why does the engine work if net force is zero?",
+    "How is this different from being parked?"
+  ],
+  "path": [
+    {
+      "id": "L01.M02.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:58Z",
+  "updated_at": "2026-09-28T00:22:58Z",
+  "content_sha256": "69c185050a718a18f6fe6f6a9af57d56226c318f295a8c49062b87aa7636b4ed"
+}

@@ -1,6 +1,6 @@
 # MetaDAX Prompt Suite v0.2 -- Schemas and Artifacts
 
-> Status: v0.2 (2026-09-27): applies the frozen change spec `docs/SPEC-v0.2.md` to v0.1.1 (see `CHANGELOG-v0.2.md`). Normative. Every prompt in this suite reads and writes ONLY the artifacts defined here. Schema ids are `metadax.*/0.2`.
+> Status: v0.2 (2026-09-27): applies the frozen change spec `docs/SPEC-v0.2.md` to v0.1.1 (see `CHANGELOG-v0.2.md`). Normative. Every prompt in this suite reads and writes ONLY the artifacts defined here. Schema ids are `metadax.*/0.2`, except `node`, `registry` and `registry-index`, which are `0.3` (opaque ids; see ID-FORMAT v0.3 and `docs/ID-FORMAT-v0.3.md`).
 > Keywords MUST / MUST NOT / SHOULD / MAY follow RFC 2119.
 > Lineage: each schema names the EdDAX (the earlier prototype) structure it replaces.
 
@@ -11,7 +11,7 @@
 1. **Recursion lives in the data, not in the prompt.** One node schema serves depth 1 and depth 50. The Follow-Up Engine (MP-05) is the same call at every depth; only the PATH block grows.
 2. **Knowledge is shared; presentation is personal.** A node stores an audience-neutral `core` (shared course asset) and zero or more audience `renderings` (personal or cached per audience band). Reuse copies nothing: it re-renders the existing core for the next learner.
 3. **The tree owns; links reuse.** Every node has exactly one parent (tree = ownership + breadcrumb). Cross-branch reuse is a `links[]` edge, never a duplicate node. The structure is a tree with a link overlay (a DAG for reading, a tree for writing).
-4. **Paths are identifiers.** A node id encodes its ancestor chain, so any model (including a 3B on-device model) can reconstruct the breadcrumb from the id alone.
+4. **Ids are opaque; the parent link is the ancestry (v0.3).** A node id is a short opaque token that encodes nothing about depth, parent or slug. A node's ancestry is its `parent_id` chain, rebuilt from the registry; its breadcrumb travels in the node's own `path[]` array, so a node stays self-describing without the id carrying the path. (v0.2 ids were breadcrumb paths capped at 200 chars, which stopped a question thread at depth ~8; v0.3 lifts that cap.)
 5. **Every value an LLM writes is bounded.** Titles, summaries and questions carry hard length limits, because EdDAX stored whole answers in `qnas.title` (17 of 25 follow-up rows in the prototype's saved data).
 6. **Accommodations, not diagnoses.** Learner profiles store what helps (short chunks, frequent checks), never medical labels.
 7. **Learner-authored assets are pending until reviewed** when the author is a minor or the course policy says so.
@@ -27,24 +27,24 @@
 | lesson | `L` + 2 digits | `L03` |
 | module | lesson + `.M` + 2 digits | `L03.M02` |
 | objective node (depth 1) | module + `.O` + 2 digits | `L03.M02.O01` |
-| follow-up node (depth >= 2) | parent id + `/` + slug; whole id <= 200 chars | `L03.M02.O01/proteins-essential-atp-synthesis/cytochrome-c-structure-role` |
+| follow-up node (depth >= 2) | opaque `n_` + 26 Crockford-base32 chars (128 random bits), minted by the client's stamping step; encodes nothing about parent, depth or slug; no length cap | `n_3qr5v8x2k0ydh7m1p4w6t9b2c` |
 | section anchor | `s` + integer, unique within a node's core | `s3` |
 | concept | kebab slug, course-unique | `electron-transport-chain` |
 | practice item | node id + `#p` + 2 digits, counting that node's items in order | `L03.M02.O01#p01` |
 | learner | pseudonym `lrn-` + 6+ lowercase letters or digits; never an email or real name. MP-01 creates it (`lrn-` + 8 random characters) unless CONFIG.learner_id supplies one | `lrn-7qk2x9` |
 
-**Slug rule (follow-up nodes).** The engine (MP-05) computes the slug from the node's **title**. A runtime MAY recompute it with the same rule; if it does, the recomputed slug wins.
+**Slug rule (follow-up nodes).** In v0.3 the slug is a separate, display-only `slug` field (for breadcrumbs and URLs); it is **not** part of the id. The engine (MP-05) computes it from the node's **title**. A runtime MAY recompute it with the same rule; if it does, the recomputed slug wins.
 1. Lowercase the title.
 2. Keep only ASCII letters, digits and spaces. Every other character is removed (`Cytochrome c:` becomes `cytochrome c`; `I-IV` becomes `iiv`).
 3. Drop the stop-words `a, an, the, of, in, on, for, to, and, or, with, how, what, why, which, does, do, is, are, by, from, its, their`.
 4. Keep the first 5 remaining words, in order, and join them with `-`.
 5. If the result is longer than 32 characters, cut it back to the last whole word within 32. (A single word longer than 32 characters is cut at 32. If no word remains, the slug is `node`.)
-6. On collision with an existing sibling id, append `-2`, `-3`, ...
+6. On a display collision with an existing sibling slug, a runtime MAY append `-2`, `-3`, ... -- but this is cosmetic only; node identity is the opaque id, never the slug.
 
 Worked: "Proteins essential for ATP synthesis" -> `proteins-essential-atp-synthesis` (32 chars, kept). "Cytochrome c: structure and role" -> `cytochrome-c-structure-role`. "Plant and animal mitochondria compared" -> `plant-animal-mitochondria-compared` is 34 chars -> `plant-animal-mitochondria`.
 
-**Id length.** A node id MUST NOT exceed 200 characters. If a new id would, drop trailing words of the new slug until it fits (the engine does this; the runtime MUST enforce it).
-Depth = `1 + count("/")` in the id. Objective nodes are depth 1. Engines never count PATH entries, because PATH may be compressed (MP-03).
+**Id length (v0.3).** There is no length cap. A v0.3 follow-up id is the fixed-length opaque token above (`n_` + 26 chars); it encodes nothing, so it cannot overflow a filename or path. (Legacy v0.2 breadcrumb ids kept a 200-char cap; `tools/path.js` still parses them for old data.)
+**Depth is a stored field (v0.3).** `depth` = `parent.depth + 1`, with objective nodes at depth 1. It is stored on the node (section 3) and in the registry (section 4). Engines and runtimes **NEVER** derive depth by counting `/` in the id, and never count PATH entries (PATH may be compressed, MP-03). The registry `parent_id` chain is the source of truth for ancestry and depth.
 Repository path of a node: `nodes/<id>/` for `shared` and `pending_review` nodes (every node is a directory; children are subdirectories). `private` nodes live only at `learners/<learner-id>/nodes/<id>/` (section 3).
 
 **What-if-wrong (identifiers)**
@@ -52,8 +52,8 @@ Repository path of a node: `nodes/<id>/` for `shared` and `pending_review` nodes
 |---|---|---|
 | slug collision ignored | two nodes overwrite each other's directory | engine MUST check sibling ids in REGISTRY; runtime MUST refuse to overwrite |
 | slug computed differently by two devices | the same question gets two ids; duplicates go undetected | fixed rule above; runtime MAY recompute; MP-09 `dedupe` catches the rest |
-| id over 200 chars | flattened filenames pass the 255-byte limit; repo paths pass Windows MAX_PATH | runtime shortens the slug; if not even one word fits, the runtime MUST NOT store the node |
-| id not prefixed by parent id | breadcrumb and depth become unrecoverable | runtime MUST reject `id` whose prefix != `parent_id + "/"` |
+| id not a valid opaque token (nor a legacy breadcrumb) | record unaddressable; dedupe keys collide | schema `nodeId` pattern; the runtime mints ids via `tools/path.js`, never hand-builds them |
+| `parent_id` missing from the registry | ancestry and depth become unrecoverable | runtime MUST reject a node whose `parent_id` is not an existing node id (null only for objectives); depth MUST equal `parent.depth + 1` |
 | learner id is an email | public course repo leaks identity | schema pattern forbids `@`; curator (MP-09) strips on sight |
 
 ---
@@ -129,7 +129,7 @@ Rules:
 - Audience belongs in the **learner profile**, not the steer. `audience` here is the design intent only; a specific learner's age, name or interests never appear in titles, summaries or steers. A steer MAY name an audience only when the subject itself is audience-bound (for example "for family doctors").
 - Narrower focus refines broader focus: the objective `statement` > module steer > lesson steer > course steer, for **content focus**. Objectives have no `steer`; their statement plays that role.
 - Summaries (course, lesson, module) are one or two sentences.
-- Defaults: `scope_policy` "strict" for exam-prep or compliance courses, otherwise "tangents_allowed"; `max_depth` 8; `source_policy` "open" with no sources (MP-02 sets "source_first" or "source_only" when sources exist); `policy.learner_nodes` "pending_review"; `policy.minor_nodes` is always "pending_review".
+- Defaults: `scope_policy` "strict" for exam-prep or compliance courses, otherwise "tangents_allowed"; `max_depth` is optional with no default (absent = no depth limit; v0.3, MP-05); `source_policy` "open" with no sources (MP-02 sets "source_first" or "source_only" when sources exist); `policy.learner_nodes` "pending_review"; `policy.minor_nodes` is always "pending_review".
 - An objective title is a **learning objective** (verb-first, <= 80 chars). EdDAX used `qnas.title` as the objective; this keeps that meaning and makes it explicit.
 - `license` is an SPDX id string, default `CC-BY-4.0`; `generated_segments_license` is the licence of model-generated segments, default `CC0-1.0`. `constraint_decl` is `null` in Phase 1 (reserved for the Constraint Protocol, never described as live). `created_at` and `updated_at` are RFC 3339 UTC strings written `"runtime"` by the model (law 8 / K-15).
 
@@ -141,7 +141,7 @@ Rules:
 | `concepts` missing | tutor falls back to generic questions (EdDAX hardcoded arithmetic) | MP-06 MUST refuse to run with an empty CONCEPTS block and return `missing` |
 | `bloom_target` too low (Remember) for a university course | quizzes stop at that level and mastery is claimed too early (competency is measured up to `bloom_target`, section 6) | MP-02 SHOULD align targets with `steer.depth`; MP-09 `audit_course` flags it |
 | `source_policy` = `open` on a policy/legal course | invented rules taught as fact | MP-02 SHOULD default to `source_first` when sources exist |
-| `max_depth` absent | unbounded recursion (EdDAX had no cap) | default 8; engines treat depth > max_depth as soft limit (offer consolidation) |
+| `max_depth` absent | (v0.3) no hard depth limit -- the engine keeps answering at any depth | optional field, no default; when a course sets it, depth > max_depth is a soft limit (warn + zoom-out seed), never a hard stop (MP-05) |
 
 ---
 
@@ -149,9 +149,10 @@ Rules:
 
 ```json
 {
-  "schema": "metadax.node/0.2",
-  "id": "L03.M02.O01/proteins-essential-atp-synthesis",
+  "schema": "metadax.node/0.3",
+  "id": "n_3qr5v8x2k0ydh7m1p4w6t9b2c",
   "parent_id": "L03.M02.O01",
+  "slug": "proteins-essential-atp-synthesis",
   "kind": "followup",
   "depth": 2,
   "anchor": { "section_id": "s3", "quote": "ATP synthase uses the proton gradient..." },
@@ -200,10 +201,11 @@ Renderings (never in `node.json`):
 **Field contract and what-if-wrong (node)**
 | Field | Constraint | If wrong | Guard |
 |---|---|---|---|
-| `id` | per section 1; prefix = `parent_id + "/"`; <= 200 chars | tree corrupts; paths overflow filesystem limits | runtime validation |
+| `id` | per section 1; opaque `n_` + 26-char token (or a legacy breadcrumb); no length cap | record unaddressable | schema `nodeId` pattern; the runtime mints it, never the model |
+| `slug` | display-only kebab slug (<= 32 chars) from the title; not part of identity | broken breadcrumb/URL label | MP-05 computes it; a runtime MAY recompute |
 | `parent_id` | existing node id, or null only for objectives | orphan branch (EdDAX: parent resolved from a second store with no FK in code) | engine MUST take it from PATH (the last entry), never invent; never `"trail"` |
 | `kind` | `objective` iff depth 1, else `followup` | objectives mistaken for learner content | derived from depth |
-| `depth` | `1 + count("/")` in `id` | runtime rejects the node (Contract 3) | never computed by counting PATH entries |
+| `depth` | stored integer = `parent.depth + 1`; objectives are depth 1 | wrong depth governor / zoom-out behaviour | never derived from the id or by counting PATH entries |
 | `anchor` | object `{section_id, quote}` (section id exists in the parent's `core.sections`; quote <= 200 chars), or `null` when the question is about the whole parent; always `null` for objectives | follow-up loses what it was about (EdDAX dropped the anchor) | engine copies from ANCHOR block; runtime truncates the quote to 200 chars before assembly (MP-03) |
 | `title` | <= 80 chars, plain text, no markdown, no trailing period | UI breadcrumbs become paragraphs (EdDAX defect) | schema maxLength; MP-09 rewrites |
 | `question` | learner's words, verbatim, <= 500 chars; `""` for objectives | lost provenance of what was actually asked | copy, never paraphrase; runtime truncates INPUT to 500 chars before assembly (MP-03) |

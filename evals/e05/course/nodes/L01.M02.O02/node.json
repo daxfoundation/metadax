@@ -1,5 +1,5 @@
 {
-  "schema": "metadax.node/0.2",
+  "schema": "metadax.node/0.3",
   "id": "L01.M02.O02",
   "parent_id": null,
   "kind": "objective",

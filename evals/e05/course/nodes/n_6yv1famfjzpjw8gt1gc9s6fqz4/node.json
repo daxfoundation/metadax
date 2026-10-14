@@ -1,0 +1,69 @@
+{
+  "schema": "metadax.node/0.3",
+  "id": "n_6yv1famfjzpjw8gt1gc9s6fqz4",
+  "slug": "what-makes-a-frame-inertial",
+  "legacy_id": "L01.M02.O02/what-makes-a-frame-inertial",
+  "parent_id": "L01.M02.O02",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "What makes a frame inertial",
+  "question": "",
+  "canonical_question": "What actually makes a reference frame inertial?",
+  "intent": "clarify",
+  "summary": [
+    "A reference frame is inertial if an object with no net force on it moves in a straight line at constant velocity when viewed from that frame.",
+    "A lab bench at rest on the ground is very nearly inertial for everyday purposes."
+  ],
+  "concepts": [
+    "inertial-frame"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "The defining test",
+        "body_md": "A reference frame is inertial if an object with no net force on it moves in a straight line at constant velocity when viewed from that frame. In other words, the first law holds without any extra invented forces. Frames that pass this test are the ones Newton’s laws are stated for."
+      },
+      {
+        "id": "s2",
+        "heading": "Passing and failing",
+        "body_md": "A lab bench at rest on the ground is very nearly inertial for everyday purposes. A frame fixed to an accelerating train is not, because a free puck would appear to slide without any real push. Acceleration of the frame itself is what breaks the property."
+      }
+    ],
+    "key_points": [
+      "Inertial frames make free objects move at constant velocity.",
+      "The first law holds with no invented forces.",
+      "Accelerating frames fail the test."
+    ],
+    "bridge_to_parent": "It clarifies the objective’s definition of an inertial frame.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "What forces appear in a non-inertial frame?",
+    "Is Earth truly inertial?"
+  ],
+  "path": [
+    {
+      "id": "L01.M02.O02",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "f185ac3abbe37affb63d0aa82b073d33dce6c66a4958c27128a59666546ebc7f"
+}

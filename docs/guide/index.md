@@ -1,8 +1,8 @@
-# How to use MetaDAX — a guide for parents
+# How to use Meta DAX — a guide for parents
 
 **Make your first lesson in about ten minutes.**
 
-You teach your own child. MetaDAX helps you build them one lesson for the exact
+You teach your own child. Meta DAX helps you build them one lesson for the exact
 spot where they are stuck, through the thing they love. This is the
 plain-language help: pick a route, run it, open what it builds, and go. It is a
 way in for one child today — a way, never the way.
@@ -38,7 +38,7 @@ way in for one child today — a way, never the way.
 - [Questions and answers](faq.md) — is it free? Does it save anything? Ages? Does
   it replace a curriculum?
 
-See also: [What MetaDAX is, for parents who homeschool](https://daxfoundation.org/metadax/homeschool/)
+See also: [What Meta DAX is, for parents who homeschool](https://daxfoundation.org/metadax/homeschool/)
 · [Browse the sample library](https://daxfoundation.org/metadax/samples/)
 
 ## A few things to know first

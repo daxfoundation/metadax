@@ -361,7 +361,7 @@ function assemble(opts) {
     if (fs.existsSync(pf)) learner = lib.readJson(pf);
   }
 
-  const objectiveId = opts.node ? opts.node.split('/')[0] : null;
+  const objectiveId = opts.node ? lib.objectiveOf(opts.course, opts.node) : null; // v0.3 ids too
   let ctx = { lesson: null, module: null, objective: null };
   if (course && objectiveId) ctx = findContext(course, objectiveId);
 
@@ -404,7 +404,7 @@ function assemble(opts) {
     values.PATH = buildPath(opts.course, opts.node);
     values.ANCHOR = buildAnchor(opts.course, opts.node, opts.anchorQuote, opts.section);
     if (objectiveId) {
-      values.REGISTRY = buildRegistry(opts.course, lib.moduleOf(opts.node), opts.input);
+      values.REGISTRY = buildRegistry(opts.course, lib.registryModuleFor(opts.course, opts.node), opts.input);
     }
     // MP-04 `generate` never injects an existing node as CONTENT; only `render`
     // and `extend_core` do. Other ops (MP-06/07/09) keep their CONTENT.

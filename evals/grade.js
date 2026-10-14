@@ -89,17 +89,51 @@ function loadSchema(ref) {
   return JSON.parse(fs.readFileSync(p, 'utf-8'));
 }
 
+// Operation outputs wrap their persisted file object in an envelope, e.g.
+// {"type":"profile","profile":{…metadax.learner/0.2…}} (SCHEMAS.md section 9).
+// The flat metadax.* schema validates the PERSISTED INNER object, not the
+// envelope; metadax.learner/course/node are listed there as "Persisted file
+// objects (not operation outputs)". Map each operation type to the key that
+// holds its persisted object so we validate the inner object, not the wrapper.
+const ENVELOPE_KEYS = { profile: 'profile', course: 'course', node: 'node' };
+
 function schemaValidate(obj, expect, reasons) {
-  // Prefer the object's own schema id, else the case's expected schema.
-  const ref = (obj && typeof obj.schema === 'string' && loadSchema(obj.schema))
-    ? obj.schema : (expect.schema || null);
+  // Error-object path: an output with "type":"error" is validated against the
+  // error shape (SCHEMAS.md: {"type":"error","missing":[…],"message":"…"}) and
+  // passes when the case's expect allows an error response. If the case does
+  // not allow error, leave schema unjudged here and let expectCheck flag the
+  // type mismatch (don't validate an error object against a non-error schema).
+  if (obj && obj.type === 'error') {
+    const allowsError = expect.type !== undefined && asArray(expect.type).includes('error');
+    if (!allowsError) return null;
+    const errSchema = loadSchema('error.schema.json');
+    if (!errSchema) { reasons.push('schema: no schema found for "error.schema.json"'); return false; }
+    const errErrs = jsl.validate(obj, errSchema);
+    if (errErrs.length) {
+      for (const e of errErrs.slice(0, 6)) reasons.push('schema: ' + e);
+      return false;
+    }
+    return true;
+  }
+
+  // Unwrap the operation-output envelope to the persisted inner object when the
+  // type names a known envelope key whose value is an object.
+  let target = obj;
+  const key = obj && typeof obj.type === 'string' ? ENVELOPE_KEYS[obj.type] : null;
+  if (key && obj[key] && typeof obj[key] === 'object' && !Array.isArray(obj[key])) {
+    target = obj[key];
+  }
+
+  // Prefer the (inner) object's own schema id, else the case's expected schema.
+  const ref = (target && typeof target.schema === 'string' && loadSchema(target.schema))
+    ? target.schema : (expect.schema || null);
   if (!ref) return null; // nothing to validate against
   const schema = loadSchema(ref);
   if (!schema) {
     reasons.push('schema: no schema found for "' + ref + '"');
     return false;
   }
-  const errs = jsl.validate(obj, schema);
+  const errs = jsl.validate(target, schema);
   if (errs.length) {
     for (const e of errs.slice(0, 6)) reasons.push('schema: ' + e);
     if (errs.length > 6) reasons.push('schema: (' + (errs.length - 6) + ' more)');
@@ -167,15 +201,20 @@ function gateCheck(obj, stack, reasons) {
     else if (ids.size && !ids.has(id)) reasons.push('gate: ' + where + ' "' + id + '" not in REGISTRY or PATH');
   }
 
-  // New-node gates.
+  // New-node gates (v0.3). ids are opaque ("n_" + 26 Crockford base32) or an
+  // objective id (L..M..O..); they no longer encode ancestry, so ancestry is
+  // judged by parent_id, not by an id prefix. PATH is root..parent inclusive and
+  // root is depth 1, so the parent's depth == pth.length and a follow-up's depth
+  // must be parent.depth + 1 == pth.length + 1.
   if (node && typeof node.id === 'string') {
-    if (parent && node.id.indexOf(parent + '/') !== 0) {
-      reasons.push('gate: node.id "' + node.id + '" does not start with parent "' + parent + '/"');
+    if (!/^n_[0-9abcdefghjkmnpqrstvwxyz]{26}$/.test(node.id) && !/^L\d\d\.M\d\d\.O\d\d$/.test(node.id)) {
+      reasons.push('gate: node.id "' + node.id + '" is not a v0.3 opaque id ("n_" + 26 Crockford) or objective id');
     }
-    if (node.id.length > 200) reasons.push('gate: node.id longer than 200 chars');
-    const depth = 1 + (node.id.match(/\//g) || []).length;
-    if (typeof node.depth === 'number' && node.depth !== depth) {
-      reasons.push('gate: node.depth ' + node.depth + ' != 1 + slash count (' + depth + ')');
+    if (parent && node.parent_id !== parent) {
+      reasons.push('gate: node.parent_id "' + node.parent_id + '" != PATH parent "' + parent + '"');
+    }
+    if (pth && typeof node.depth === 'number' && node.depth !== pth.length + 1) {
+      reasons.push('gate: node.depth ' + node.depth + ' != parent.depth + 1 (' + (pth.length + 1) + ')');
     }
   }
   if (node && typeof node.title === 'string' && node.title.length > 80) {
@@ -308,9 +347,11 @@ const GOOD_MP05 = JSON.stringify({
   confidence: 0.2,
   resolved: { question: 'How is ATP spent to power work in the cell?', canonical_question: 'How is ATP used to power cellular work?', intent: 'deepen', scope: 'in_scope' },
   node: {
-    schema: 'metadax.node/0.2',
-    id: 'L01.M01.O01/atp-powers-cellular-work',
+    schema: 'metadax.node/0.3',
+    id: 'n_kzhhgkv6p9s4p3n52rsy61z4tm',
     parent_id: 'L01.M01.O01',
+    slug: 'atp-powers-cellular-work',
+    legacy_id: 'L01.M01.O01/atp-powers-cellular-work',
     kind: 'followup', depth: 2, anchor: null,
     path: [{ id: 'L01.M01.O01', title: 'Introduction to energy production in the mitochondria', summary: 'x' }],
     title: 'How ATP powers cellular work',
@@ -367,7 +408,7 @@ const SELFTEST_STACK = [
 
 const SELFTEST_EXPECT_GOOD = {
   schema: 'followup-output.schema.json', type: 'followup', decision: ['new', 'extend'],
-  node_present: true, node_id_prefix: 'L01.M01.O01/', node_depth: 2,
+  node_present: true, node_depth: 2,
   allowed_warnings: ['low_confidence'], must_not_appear: ['"trail"'], max_lengths: { title: 80 },
 };
 const SELFTEST_EXPECT_BAD = SELFTEST_EXPECT_GOOD;

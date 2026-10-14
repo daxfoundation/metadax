@@ -1,0 +1,69 @@
+{
+  "schema": "metadax.node/0.3",
+  "id": "n_s0c80a34mdd88nqgdt0dr2smsm",
+  "slug": "mass-versus-weight",
+  "legacy_id": "L02.M01.O01/mass-versus-weight",
+  "parent_id": "L02.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": null,
+  "title": "Mass versus weight",
+  "question": "",
+  "canonical_question": "What is the difference between mass and weight?",
+  "intent": "clarify",
+  "summary": [
+    "Mass measures how much matter is in a body and how strongly it resists acceleration; it is the same everywhere.",
+    "Mass is measured in kilograms, a measure of inertia, while weight is a force measured in newtons."
+  ],
+  "concepts": [
+    "mass"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "Authored fixture node for the E05 registry."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "Two different quantities",
+        "body_md": "Mass measures how much matter is in a body and how strongly it resists acceleration; it is the same everywhere. Weight is the gravitational force pulling on that mass, so it changes with location. On the Moon your mass is unchanged but your weight is about a sixth of its Earth value."
+      },
+      {
+        "id": "s2",
+        "heading": "Units give it away",
+        "body_md": "Mass is measured in kilograms, a measure of inertia, while weight is a force measured in newtons. Weight equals mass times the local gravitational field strength, so w = mg. Confusing the two is why people wrongly think objects \"lose mass\" in space."
+      }
+    ],
+    "key_points": [
+      "Mass is amount of matter and inertia, in kilograms.",
+      "Weight is a gravitational force, in newtons.",
+      "w = mg links them through local gravity."
+    ],
+    "bridge_to_parent": "It sharpens the meaning of mass used in F = ma.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "Why do I feel weightless in free fall?",
+    "How is g different on other planets?"
+  ],
+  "path": [
+    {
+      "id": "L02.M01.O01",
+      "summary": "Parent objective node."
+    }
+  ],
+  "created_by": "author-e05",
+  "visibility": "shared",
+  "superseded_by": null,
+  "created_at": "2026-09-28T00:22:59Z",
+  "updated_at": "2026-09-28T00:22:59Z",
+  "content_sha256": "3825f56e8ec9f18deabbb9bf82fc8a9fbeb2bb3f861d2ce850b8f7020f7a5c7b"
+}

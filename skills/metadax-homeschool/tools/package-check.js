@@ -40,6 +40,91 @@
     }
   }
 
+  // ── Scene specs (mirror of play/scenes/scenes.js, kept compact) ───────────
+  // The checker is a zero-dependency IIFE that runs in Node and the browser, so
+  // it can't import the ESM registry. This table is the validation contract:
+  // known scene ids, each scene's param schema, the theme enum, and the level
+  // range. Keep it in step with scenes.js when scenes are added.
+  var SCENE_SPECS = {
+    "fraction-bars": {
+      params: {
+        denominators: { type: "int-array", min: 1, max: 12, maxLen: 3 },
+        shaded: { type: "int-array", min: 0, max: 12, maxLen: 3 },
+      },
+    },
+    "clock": {
+      params: {
+        hour: { type: "int", min: 0, max: 12 },
+        minute: { type: "int", min: 0, max: 59 },
+        draggable: { type: "bool" },
+      },
+    },
+    "track": {
+      params: {
+        numerators: { type: "int-array", min: 0, max: 24, maxLen: 2 },
+        denominators: { type: "int-array", min: 1, max: 24, maxLen: 2 },
+      },
+    },
+  };
+  var SCENE_THEMES = { plain: 1, unicorn: 1, hockey: 1, dinosaur: 1, space: 1, football: 1, running: 1 };
+
+  // Validate one { scene, params, theme?, level? } unit; push errors under `p`.
+  function checkSceneUnit(unit, p, errors) {
+    if (!unit || typeof unit !== "object") { errors.push({ path: p, msg: "scene entry must be an object" }); return; }
+    var spec = SCENE_SPECS[unit.scene];
+    if (!spec) { errors.push({ path: p + ".scene", msg: "unknown scene id: " + unit.scene }); return; }
+    var schema = spec.params || {};
+    var params = unit.params || {};
+    Object.keys(schema).forEach(function (k) {
+      if (!(k in params)) return; // params are optional; missing → scene default
+      var s = schema[k], v = params[k], pp = p + ".params." + k;
+      if (s.type === "int") {
+        if (typeof v !== "number" || !isFinite(v) || Math.round(v) !== v) errors.push({ path: pp, msg: "must be an integer" });
+        else if (v < s.min || v > s.max) errors.push({ path: pp, msg: "out of range " + s.min + ".." + s.max + ": " + v });
+      } else if (s.type === "bool") {
+        if (typeof v !== "boolean") errors.push({ path: pp, msg: "must be a boolean" });
+      } else if (s.type === "int-array") {
+        if (!Array.isArray(v)) { errors.push({ path: pp, msg: "must be an array" }); return; }
+        if (v.length > s.maxLen) errors.push({ path: pp, msg: "more than " + s.maxLen + " entries" });
+        for (var i = 0; i < v.length; i++) {
+          var n = v[i];
+          if (typeof n !== "number" || !isFinite(n) || Math.round(n) !== n) errors.push({ path: pp + "[" + i + "]", msg: "must be an integer" });
+          else if (n < s.min || n > s.max) errors.push({ path: pp + "[" + i + "]", msg: "out of range " + s.min + ".." + s.max + ": " + n });
+        }
+      }
+    });
+    if (unit.theme !== undefined && !SCENE_THEMES[unit.theme]) errors.push({ path: p + ".theme", msg: "theme not in enum (plain|unicorn|hockey|dinosaur|space|football|running): " + unit.theme });
+    if (unit.level !== undefined) {
+      if (typeof unit.level !== "number" || Math.round(unit.level) !== unit.level || unit.level < 1 || unit.level > 3)
+        errors.push({ path: p + ".level", msg: "level must be an integer 1..3: " + unit.level });
+    }
+  }
+
+  // Validate every scene / compose block across a side's sections.
+  function checkScenes(sections, errors, sideLabel) {
+    for (var si = 0; si < (sections || []).length; si++) {
+      var sec = sections[si], blks = sec.blocks || [];
+      for (var bi = 0; bi < blks.length; bi++) {
+        var b = blks[bi];
+        if (b.type !== "scene") continue;
+        var bp = sideLabel + ".sections[" + sec.id + "].scene[" + (b.id != null ? b.id : bi) + "]";
+        var hasScene = b.scene !== undefined, hasCompose = b.compose !== undefined;
+        if (hasScene && hasCompose) { errors.push({ path: bp, msg: "block has both scene and compose; use one" }); }
+        if (hasCompose) {
+          if (!Array.isArray(b.compose)) errors.push({ path: bp + ".compose", msg: "compose must be an array" });
+          else {
+            if (b.compose.length > 3) errors.push({ path: bp + ".compose", msg: "compose has more than 3 scenes" });
+            for (var ci = 0; ci < b.compose.length; ci++) checkSceneUnit(b.compose[ci], bp + ".compose[" + ci + "]", errors);
+          }
+        } else if (hasScene) {
+          checkSceneUnit(b, bp, errors);
+        } else {
+          errors.push({ path: bp, msg: "scene block needs a scene id or a compose array" });
+        }
+      }
+    }
+  }
+
   // ── Block / section helpers ───────────────────────────────────────────────
   var GAME_TYPES = { quiz: 1, sort: 1, sequence: 1, build: 1, "spoken-sound": 1 };
   var GUIDE_ORDER = ["upnext", "learned", "steps", "tricky", "tellus"];
@@ -123,9 +208,28 @@
                   errors.push({ path: p, msg: "choice refers to undefined mistake id: " + c.mistake });
                 }
               }
+              var ck = items[ii].clock;
+              if (ck !== undefined) {
+                var cp = sp + ".quiz[" + b.id + "].l" + li + ".i" + ii + ".clock";
+                if (typeof ck !== "object" || ck === null || Array.isArray(ck)) {
+                  errors.push({ path: cp, msg: "clock must be an object {h, m}" });
+                } else {
+                  if (typeof ck.h !== "number" || Math.round(ck.h) !== ck.h || ck.h < 1 || ck.h > 12) {
+                    errors.push({ path: cp + ".h", msg: "h must be an integer 1..12: " + ck.h });
+                  }
+                  if (typeof ck.m !== "number" || Math.round(ck.m) !== ck.m || ck.m < 0 || ck.m > 59) {
+                    errors.push({ path: cp + ".m", msg: "m must be an integer 0..59: " + ck.m });
+                  }
+                }
+              }
             }
           }
         } else if (b.type === "sequence") {
+          var smids = {};
+          if (b.mistakes) {
+            var smk = Object.keys(b.mistakes);
+            for (var smm = 0; smm < smk.length; smm++) smids[smk[smm]] = 1;
+          }
           var steps = b.steps || [];
           for (var sti = 0; sti < steps.length; sti++) {
             var sch = steps[sti].choices || [];
@@ -134,7 +238,22 @@
               var sp2 = sp + ".sequence[" + b.id + "].s" + sti + ".c" + sci;
               if (!sc.correct && !sc.mistake) {
                 errors.push({ path: sp2, msg: "choice has neither correct:true nor a mistake id" });
+              } else if (sc.mistake && !smids[sc.mistake]) {
+                errors.push({ path: sp2, msg: "choice refers to undefined mistake id: " + sc.mistake });
               }
+            }
+          }
+        } else if (b.type === "build") {
+          var bparts = b.parts || [];
+          for (var parti = 0; parti < bparts.length; parti++) {
+            var bpart = bparts[parti];
+            var pp2 = sp + ".build[" + b.id + "].parts[" + parti + "]";
+            if (!Array.isArray(bpart.options) || bpart.options.length === 0) {
+              errors.push({ path: pp2, msg: "build part needs a non-empty options array" });
+            } else if (bpart.best === undefined) {
+              errors.push({ path: pp2, msg: "build part missing best" });
+            } else if (bpart.options.indexOf(bpart.best) === -1) {
+              errors.push({ path: pp2, msg: "best \"" + bpart.best + "\" is not one of the options" });
             }
           }
         } else if (b.type === "spoken-sound") {
@@ -177,7 +296,7 @@
     "|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)\\b",
     "i"
   );
-  var RE_DURATION = /\b\d+\s*(?:minutes?|heures?|hours?|mins?\b|hrs?\b)/i;
+  var RE_DURATION = /\b\d+\s*(?:minutes?|heures?|hours?|mins?|hrs?)\b(?!\s+(?:past|to)\s+\d|\s+(?:apr[eè]s|avant))/i;
   var RE_EMAIL = /\b[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}\b/;
   var RE_PHONE = /(?:\+?1[\s\-.])?\(?\d{3}\)?[\s\-.]\d{3}[\s\-.]\d{4}\b|\b\d{3}[\s\-]\d{4}\b/;
   var RE_INCL_DOT = /\w[·‧]\w/;
@@ -189,12 +308,12 @@
     return RE_HTTP.test(s) || RE_SHORTENER.test(s) || RE_BARE_DOMAIN.test(s);
   }
 
-  function buildWordRe(words) {
+  function buildWordRe(words, flags) {
     if (!words || !words.length) return null;
     var parts = words.map(function (w) {
       return w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     });
-    return new RegExp("(?:^|[^a-zA-ZÀ-ɏ])(?:" + parts.join("|") + ")(?:[^a-zA-ZÀ-ɏ]|$)", "i");
+    return new RegExp("(?:^|[^a-zA-ZÀ-ɏ])(?:" + parts.join("|") + ")(?:[^a-zA-ZÀ-ɏ]|$)", flags || "");
   }
 
   function buildTitleRe(titles) {
@@ -250,6 +369,10 @@
     // game choice validity
     checkChoiceErrors(gs, errors, "guide");
     checkChoiceErrors(ls, errors, "learner");
+
+    // scene / compose blocks (optional; a package with none is untouched)
+    checkScenes(gs, errors, "guide");
+    checkScenes(ls, errors, "learner");
 
     // required block types
     if (!hasType(gs, "human")) errors.push({ path: "guide.sections", msg: "no human block on guide side" });
@@ -391,6 +514,37 @@
       }
     });
 
+    // Answer giveaways and unused mistakes (warnings)
+    function choiceText(c) { var x = c && c.text; return typeof x === "string" ? x : JSON.stringify(x || ""); }
+    function scanGames(sideName, sections) {
+      (sections || []).forEach(function (sec, si) {
+        (sec.blocks || []).forEach(function (blk, bi) {
+          var base = sideName + ".sections[" + si + "].blocks[" + bi + "]";
+          var lists = [];
+          if (blk.type === "quiz") (blk.levels || []).forEach(function (lv) { (lv.items || []).forEach(function (it) { lists.push(it.choices || []); }); });
+          if (blk.type === "sequence") (blk.steps || []).forEach(function (st) { lists.push(st.choices || []); });
+          if (!lists.length) return;
+          var longest = 0, bracket = 0, first = 0, used = {};
+          lists.forEach(function (cs) {
+            var ci = -1;
+            cs.forEach(function (c, i) { if (c.correct) ci = i; if (c.mistake) used[c.mistake] = 1; });
+            if (ci < 0) return;
+            if (ci === 0) first++;
+            var ct = choiceText(cs[ci]);
+            if (cs.every(function (c, i) { return i === ci || choiceText(c).length < ct.length; })) longest++;
+            if (/\(/.test(ct) && cs.every(function (c, i) { return i === ci || !/\(/.test(choiceText(c)); })) bracket++;
+          });
+          var n = lists.length;
+          if (longest * 2 > n) warnings.push({ path: base, msg: "the right answer is the longest choice in " + longest + " of " + n + " items" });
+          if (bracket) warnings.push({ path: base, msg: "only the right answer has words in brackets in " + bracket + " items" });
+          if (n >= 4 && first === n) warnings.push({ path: base, msg: "the right answer is always listed first" });
+          if (blk.mistakes) Object.keys(blk.mistakes).forEach(function (m) { if (!used[m]) warnings.push({ path: base, msg: "mistake '" + m + "' is never offered" }); });
+        });
+      });
+    }
+    scanGames("guide", pkg.guide && pkg.guide.sections);
+    scanGames("learner", pkg.learner && pkg.learner.sections);
+
     return { errors: errors, warnings: warnings };
   }
 
@@ -486,41 +640,14 @@
     throw new Error("No UTF-8 decoder available");
   }
 
-  async function deflateRawBrowser(data) {
-    var cs = new CompressionStream("deflate-raw");
-    var writer = cs.writable.getWriter();
-    await writer.write(data);
-    await writer.close();
-    var chunks = [], reader = cs.readable.getReader();
-    while (true) {
-      var res = await reader.read();
-      if (res.done) break;
-      chunks.push(res.value);
-    }
-    var total = chunks.reduce(function (a, c) { return a + c.length; }, 0);
-    var out = new Uint8Array(total);
-    var off = 0;
-    for (var i = 0; i < chunks.length; i++) { out.set(chunks[i], off); off += chunks[i].length; }
-    return out;
+  async function streamThrough(data, stream) {
+    // Read and write concurrently: awaiting write() before reading deadlocks on backpressure.
+    var bytes = data instanceof Uint8Array ? data : new Uint8Array(data);
+    var out = await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer();
+    return new Uint8Array(out);
   }
-
-  async function inflateRawBrowser(data) {
-    var ds = new DecompressionStream("deflate-raw");
-    var writer = ds.writable.getWriter();
-    await writer.write(data instanceof Uint8Array ? data : new Uint8Array(data));
-    await writer.close();
-    var chunks = [], reader = ds.readable.getReader();
-    while (true) {
-      var res = await reader.read();
-      if (res.done) break;
-      chunks.push(res.value);
-    }
-    var total = chunks.reduce(function (a, c) { return a + c.length; }, 0);
-    var out = new Uint8Array(total);
-    var off = 0;
-    for (var i = 0; i < chunks.length; i++) { out.set(chunks[i], off); off += chunks[i].length; }
-    return out;
-  }
+  function deflateRawBrowser(data) { return streamThrough(data, new CompressionStream("deflate-raw")); }
+  function inflateRawBrowser(data) { return streamThrough(data, new DecompressionStream("deflate-raw")); }
 
   // ── encodePackage / decodePackage ─────────────────────────────────────────
   async function encodePackage(pkg, impl) {

@@ -1,6 +1,6 @@
-# No AI? Use the MetaDAX questionnaire
+# No AI? Use the Meta DAX questionnaire
 
-MetaDAX › [Help](index.md) › No AI
+Meta DAX › [Help](index.md) › No AI
 
 You do not need an AI subscription, or any AI at all. Fill in a short web form,
 copy the note it makes, and send it. A lesson page is built for you and comes
@@ -26,7 +26,7 @@ nickname and a rough age in one go.
 ## 3. Copy the note and send it
 
 Press **Make my note** and the page builds a short, plain note from your answers.
-Copy it and send it back where you found MetaDAX, or to Jason on
+Copy it and send it back where you found Meta DAX, or to Jason on
 [LinkedIn](https://www.linkedin.com/in/jasonjeyanandan). That note is everything
 that gets sent — the page itself saves nothing and sends nothing on its own.
 

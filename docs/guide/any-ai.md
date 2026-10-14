@@ -1,6 +1,6 @@
-# Use MetaDAX with any AI chat
+# Use Meta DAX with any AI chat
 
-MetaDAX › [Help](index.md) › Any AI chat
+Meta DAX › [Help](index.md) › Any AI chat
 
 No special skill needed. Everything the Claude skill does is also written as one
 plain prompt you can paste into any capable AI assistant you already pay for. The

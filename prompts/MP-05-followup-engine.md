@@ -94,9 +94,10 @@ target_id: the matched id for reuse and ancestor; null for new, extend and redir
 
 STEP 4 - Build the node (decisions new and extend only)
 - title: a plain noun phrase of 80 characters or fewer, naming what this node teaches. Not a sentence, not markdown, and never the answer itself.
-- slug, computed from the title: lowercase it; keep only ASCII letters, digits and spaces (remove every other character); drop the stop-words a, an, the, of, in, on, for, to, and, or, with, how, what, why, which, does, do, is, are, by, from, its, their; keep the first 5 remaining words in order; join them with "-". If the result is longer than 32 characters, cut it back to the last whole word within 32. (If no word remains, use "node"; cut a single word longer than 32 characters at 32.) If a sibling in REGISTRY already has that id, append "-2" (or "-3" and so on).
-- id = parent id + "/" + slug. The parent is the last entry in PATH. If the id would be longer than 200 characters, drop trailing words of the slug until it fits.
-- depth = 1 + the number of "/" characters in the new id. Never count PATH entries; PATH may be compressed.
+- slug, a display-only field computed from the title: lowercase it; keep only ASCII letters, digits and spaces (remove every other character); drop the stop-words a, an, the, of, in, on, for, to, and, or, with, how, what, why, which, does, do, is, are, by, from, its, their; keep the first 5 remaining words in order; join them with "-". If the result is longer than 32 characters, cut it back to the last whole word within 32. (If no word remains, use "node"; cut a single word longer than 32 characters at 32.) The slug is no longer part of the id (0.3); a runtime MAY append "-2" to a display collision, but it is not required.
+- id: the client's stamping step mints a short opaque id "n_" + 26 Crockford-base32 characters (128 random bits); write the literal "runtime" if your client stamps ids, or emit the minted id if you have one. The id does not encode the parent, depth or slug, and there is no length cap (SCHEMAS section 1, ID-FORMAT v0.3).
+- parent_id = the id of the last entry in PATH (the node the learner was reading). null only for a depth-1 objective node.
+- depth = parent.depth + 1 (the parent is parent_id; an objective node is depth 1). Never count "/" in the id, and never count PATH entries; PATH may be compressed.
 - kind = "followup". anchor = {section_id, quote} copied from ANCHOR, or null if ANCHOR is "none".
 - core: the shared, audience-neutral answer.
   - 2 to 4 sections for a new node, 1 to 3 for an extend. Give them ids s1, s2 and so on, a heading, and a body of 180 words or fewer each.
@@ -118,13 +119,14 @@ STEP 4 - Build the node (decisions new and extend only)
   - otherwise "pending_review" if LEARNER is "none", or LEARNER.age_band is 4-6, 7-9, 10-12, 13-15, 16-18 or "unknown", or COURSE.policy.learner_nodes is "pending_review";
   - otherwise "shared".
 - created_by = LEARNER.learner_id, or "anonymous" if LEARNER is "none".
-- path: copy the PATH block you received into path, as is, including any "trail" entry. It is empty for a depth-1 node, and it lets a client rebuild the breadcrumb from the node alone.
+- path: copy the PATH block you received into path, as is, including any "trail" entry (a trail entry is bounded: id "trail", summary, covers_count, first_covered, last_covered -- no per-id list). It is empty for a depth-1 node, and it lets a client show the breadcrumb from the node alone; the authoritative full ancestry is the registry parent_id chain.
 - created_at, updated_at and content_sha256: write the literal "runtime" (K-15); the client's stamping step fills them in. superseded_by: null.
 - When the node is saved, its registry entry is appended to the module's registry file (the registry file of the module its id starts with; Schemas section 4), not to a single course-wide index.
 
 STEP 5 - Depth governor
-- If the new depth is greater than COURSE.steer.max_depth (default 8), still answer. Add the warning "depth_limit", and make the third seed exactly "Zoom out: how does this branch serve the objective?".
-- If the new depth is 6 or more, add one line offering a zoom-out (placed as in STEP 6).
+- COURSE.steer.max_depth is optional and has no default: if it is absent there is no depth limit, and the engine keeps answering at any depth.
+- If max_depth is set and the new depth is greater than it, still answer (there is no hard stop). Add the warning "depth_limit", and make the third seed exactly "Zoom out: how does this branch serve the objective?".
+- If the new depth is 6 or more, add one line offering a zoom-out (placed as in STEP 6). This stays a suggestion, not a wall.
 
 STEP 6 - Render for this learner (every decision except a wellbeing redirect)
 rendering_md is what the learner sees now. It is personal and is never stored in the shared core.
@@ -161,7 +163,7 @@ Using PATH (and INPUT if given), write the learner a short map of where they are
   (3) action "quiz_branch", target_id = the last PATH id (the runtime quizzes that node and its ancestors)
 Honour LEARNER.supports and reading level as in STEP 6. Return type "zoom_out", decision null, target_id null, confidence 0, node null, with rendering_md and options.
 
-Output (json mode): exactly one object:
+Output (json mode): return exactly one JSON object and nothing after it -- no prose, no code fence, no trailing text:
 {
   "type": "followup" | "zoom_out" | "error",
   "decision": "new" | "extend" | "reuse" | "ancestor" | "redirect" | null,
@@ -169,8 +171,8 @@ Output (json mode): exactly one object:
   "confidence": number,
   "resolved": { "question", "canonical_question", "intent", "scope" },
   "node": {
-    "schema": "metadax.node/0.2",
-    "id", "parent_id", "kind", "depth", "anchor",
+    "schema": "metadax.node/0.3",
+    "id", "parent_id", "kind", "depth", "slug", "anchor",
     "path": [ { "id", "title", "summary" } ],
     "title", "question", "canonical_question", "intent",
     "summary": [ ... ],
@@ -208,7 +210,7 @@ Output (json mode): exactly one object:
 
 1. The engine **MUST** return exactly one decision per call. It **MUST NOT** create a node for `reuse`, `ancestor` or `redirect`.
 2. `target_id`, `links[]` and `reuse.of` **MUST** be ids present in REGISTRY or PATH, and never `"trail"`. A runtime **MUST** reject any output that violates this. This is the anti-hallucination gate for the knowledge graph.
-3. A new node's `id` **MUST** start with `parent_id + "/"`, **MUST NOT** exceed 200 characters, and `depth` **MUST** equal `1 + count("/")` in the id (which is the parent's depth + 1). The slug follows SCHEMAS section 1; a runtime **MAY** recompute it with the same rule, and the recomputed slug wins.
+3. A new node's `id` **MUST** be a fresh opaque id (`n_` + 26 Crockford-base32 chars) minted by the client's stamping step; it encodes nothing about parent, depth or slug and has no length cap. `parent_id` **MUST** be the id of the last PATH entry (null only for a depth-1 objective), and `depth` **MUST** equal `parent.depth + 1` -- never derived by counting `/` in the id or by counting PATH entries. `slug` is a separate, display-only field computed per SCHEMAS section 1; a runtime **MAY** recompute it, but identity never depends on it.
 4. The parent of a new node **MUST** be the node the learner was reading (the last entry in PATH), even when an `extend` link points elsewhere. The breadcrumb reflects the learner's journey; links reflect the shared knowledge.
 5. `core` **MUST NOT** contain learner-specific content (K-6). `rendering_md` **MAY**.
 6. `summary` **MUST** summarize `core`. A call with an empty core **MUST** return `type: "error"`. This prevents EdDAX's "Please provide the content you would like summarized" rows.

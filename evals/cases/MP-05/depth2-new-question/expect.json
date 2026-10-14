@@ -6,7 +6,6 @@
     "extend"
   ],
   "node_present": true,
-  "node_id_prefix": "L01.M01.O01/",
   "node_depth": 2,
   "allowed_warnings": [
     "low_confidence",

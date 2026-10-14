@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.3/curriculum.schema.json",
+  "title": "metadax.curriculum/0.3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "id", "title", "language", "brief", "nodes"],
+  "properties": {
+    "schema": { "const": "metadax.curriculum/0.3" },
+    "_note": { "type": "string" },
+    "id": { "$ref": "#/$defs/programId" },
+    "title": { "type": "string", "maxLength": 120 },
+    "summary": { "type": "string" },
+    "language": { "type": "string" },
+    "brief": { "$ref": "#/$defs/brief" },
+    "context_profile": { "anyOf": [ { "$ref": "#/$defs/profileId" }, { "type": "null" } ] },
+    "modifiers": { "type": "array", "items": { "$ref": "#/$defs/profileId" } },
+    "nodes": { "type": "array", "items": { "$ref": "#/$defs/node" } },
+    "license": { "type": "string" },
+    "created_at": { "$ref": "#/$defs/rfc3339" },
+    "updated_at": { "$ref": "#/$defs/rfc3339" }
+  },
+  "$defs": {
+    "rfc3339": {
+      "anyOf": [
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$" },
+        { "const": "runtime" }
+      ]
+    },
+    "programId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "courseId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "profileId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "conceptId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "slug": { "type": "string", "maxLength": 32, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "bloom": { "enum": ["Remember", "Understand", "Apply", "Analyze", "Evaluate", "Create"] },
+    "nodeId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*(/L\\d\\d(\\.M\\d\\d(\\.O\\d\\d)?)?)?$"
+    },
+    "ageBand": { "enum": ["4-6", "7-9", "10-12", "13-15", "16-18", "adult", "unknown"] },
+    "brief": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["audience", "duration", "outcomes"],
+      "properties": {
+        "institution": { "type": "string" },
+        "audience": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["intended_bands"],
+          "properties": {
+            "intended_bands": { "type": "array", "items": { "$ref": "#/$defs/ageBand" } },
+            "notes": { "type": "string" }
+          }
+        },
+        "duration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["value", "unit"],
+          "properties": {
+            "value": { "type": "number", "minimum": 0 },
+            "unit": { "enum": ["weeks", "hours", "sessions", "minutes", "days", "months"] }
+          }
+        },
+        "outcomes": { "type": "array", "items": { "type": "string" } },
+        "constraints": { "type": "array", "items": { "type": "string" } },
+        "source_policy": { "enum": ["source_only", "source_first", "open"] }
+      }
+    },
+    "timeBudget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "unit"],
+      "properties": {
+        "value": { "type": "number", "minimum": 0 },
+        "unit": { "enum": ["weeks", "hours", "sessions", "minutes", "days", "months"] }
+      }
+    },
+    "handoff": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["to", "op", "mode", "size", "language", "input", "audience", "source_policy", "outcomes"],
+      "properties": {
+        "to": { "const": "MP-02" },
+        "op": { "const": "ARCHITECT" },
+        "mode": { "enum": ["design", "quick"] },
+        "size": { "enum": ["micro", "short", "standard", "full"] },
+        "language": { "type": "string" },
+        "input": { "type": "string" },
+        "audience": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["intended_bands"],
+          "properties": {
+            "intended_bands": { "type": "array", "items": { "$ref": "#/$defs/ageBand" } },
+            "notes": { "type": "string" }
+          }
+        },
+        "source_policy": { "enum": ["source_only", "source_first", "open"] },
+        "context_profile": { "anyOf": [ { "$ref": "#/$defs/profileId" }, { "type": "null" } ] },
+        "modifiers": { "type": "array", "items": { "$ref": "#/$defs/profileId" } },
+        "outcomes": { "type": "array", "items": { "type": "string" } },
+        "module_plan": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["lesson"],
+            "properties": {
+              "lesson": { "type": "string" },
+              "modules": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "parent_id", "level", "depth", "slug", "title", "summary", "sequence", "prerequisites", "time_budget"],
+      "properties": {
+        "id": { "$ref": "#/$defs/nodeId" },
+        "parent_id": { "anyOf": [ { "$ref": "#/$defs/nodeId" }, { "type": "null" } ] },
+        "level": { "enum": ["program", "course", "lesson", "module", "objective"] },
+        "depth": { "type": "integer", "minimum": 0 },
+        "slug": { "$ref": "#/$defs/slug" },
+        "title": { "type": "string", "maxLength": 120 },
+        "summary": { "type": "string" },
+        "sequence": { "type": "integer", "minimum": 1 },
+        "prerequisites": { "type": "array", "items": { "type": "string" } },
+        "time_budget": { "$ref": "#/$defs/timeBudget" },
+        "outcomes": { "type": "array", "items": { "type": "string" } },
+        "statement": { "type": "string" },
+        "bloom_target": { "$ref": "#/$defs/bloom" },
+        "concepts": { "type": "array", "items": { "$ref": "#/$defs/conceptId" } },
+        "handoff": { "$ref": "#/$defs/handoff" }
+      }
+    }
+  }
+}

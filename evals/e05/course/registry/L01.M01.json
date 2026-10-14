@@ -1,5 +1,5 @@
 {
-  "schema": "metadax.registry/0.2",
+  "schema": "metadax.registry/0.3",
   "course_id": "newtons-laws-motion",
   "module_id": "L01.M01",
   "updated_at": "runtime",
@@ -38,7 +38,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O01/adding-forces-different-directions",
+      "id": "n_e4kpqg7xyzwks2w8thafmmvdkm",
+      "legacy_id": "L01.M01.O01/adding-forces-different-directions",
       "parent_id": "L01.M01.O01",
       "title": "Adding forces that point in different directions",
       "canonical_question": "How do you add two forces that point in different directions to get the net force?",
@@ -54,7 +55,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O01/vector-sum-of-two-forces",
+      "id": "n_y5ct1jgthxyb0bq6k671b7d8e4",
+      "legacy_id": "L01.M01.O01/vector-sum-of-two-forces",
       "parent_id": "L01.M01.O01",
       "title": "Finding the vector sum of two forces",
       "canonical_question": "How do you find the vector sum of two forces acting at an angle?",
@@ -70,7 +72,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O01/combine-forces-with-vectors",
+      "id": "n_bwgqx5js2z3zb2a0d3hpny2sw0",
+      "legacy_id": "L01.M01.O01/combine-forces-with-vectors",
       "parent_id": "L01.M01.O01",
       "title": "Combining forces using vectors",
       "canonical_question": "How do you combine several forces into one using vector methods?",
@@ -86,7 +89,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O01/seatbelt-and-inertia",
+      "id": "n_csq1p3287m0yyh5wv98ssnjjzg",
+      "legacy_id": "L01.M01.O01/seatbelt-and-inertia",
       "parent_id": "L01.M01.O01",
       "title": "Seatbelts and inertia",
       "canonical_question": "Why does a seatbelt protect you when a car stops suddenly?",
@@ -102,7 +106,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O01/why-seatbelts-work",
+      "id": "n_yvd9n13m8nbxmc27wwem9hsz24",
+      "legacy_id": "L01.M01.O01/why-seatbelts-work",
       "parent_id": "L01.M01.O01",
       "title": "Why seatbelts work",
       "canonical_question": "How does inertia explain why seatbelts keep passengers safe?",
@@ -118,7 +123,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O02/acceleration-vs-velocity",
+      "id": "n_m047yb260zk94aewep8zbb80y8",
+      "legacy_id": "L01.M01.O02/acceleration-vs-velocity",
       "parent_id": "L01.M01.O02",
       "title": "Acceleration versus velocity",
       "canonical_question": "How is acceleration different from velocity?",
@@ -134,7 +140,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O02/how-acceleration-differs-from-velocity",
+      "id": "n_qkq7ahkbjm8s3seqs4xsgg65sg",
+      "legacy_id": "L01.M01.O02/how-acceleration-differs-from-velocity",
       "parent_id": "L01.M01.O02",
       "title": "How acceleration differs from velocity",
       "canonical_question": "What makes acceleration a different quantity from velocity?",
@@ -150,7 +157,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O02/why-velocity-is-a-vector",
+      "id": "n_fw4v8cjgdtf21c37gv78aby8n4",
+      "legacy_id": "L01.M01.O02/why-velocity-is-a-vector",
       "parent_id": "L01.M01.O02",
       "title": "Why velocity is a vector",
       "canonical_question": "Why is velocity treated as a vector while speed is only a number?",
@@ -166,7 +174,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O01/why-inertia-is-not-a-force",
+      "id": "n_32f7t9gvy8yh6x9c3s0a8bfg60",
+      "legacy_id": "L01.M01.O01/why-inertia-is-not-a-force",
       "parent_id": "L01.M01.O01",
       "title": "Why inertia is not a force",
       "canonical_question": "Why is inertia not itself a force?",
@@ -182,7 +191,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O01/measuring-force-in-newtons",
+      "id": "n_24rnnx8c02rnqfm33p1vmyxx60",
+      "legacy_id": "L01.M01.O01/measuring-force-in-newtons",
       "parent_id": "L01.M01.O01",
       "title": "Measuring a force in newtons",
       "canonical_question": "How do you measure the size of a force in newtons using a spring scale?",
@@ -198,7 +208,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O02/reading-velocity-time-graphs",
+      "id": "n_qetf02p7j6jhz09mmdd62df9bm",
+      "legacy_id": "L01.M01.O02/reading-velocity-time-graphs",
       "parent_id": "L01.M01.O02",
       "title": "Reading a velocity-time graph",
       "canonical_question": "How do you read acceleration and distance off a velocity-time graph?",
@@ -214,7 +225,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O01/everyday-zero-net-force",
+      "id": "n_1vmk31edgyjjt1gt46v6h1k0qc",
+      "legacy_id": "L01.M01.O01/everyday-zero-net-force",
       "parent_id": "L01.M01.O01",
       "title": "Everyday examples of zero net force",
       "canonical_question": "What are some everyday examples where the net force on an object is zero?",
@@ -230,7 +242,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O02/units-of-acceleration",
+      "id": "n_v1yp8m4t981a6wrtn0632m7atm",
+      "legacy_id": "L01.M01.O02/units-of-acceleration",
       "parent_id": "L01.M01.O02",
       "title": "The units of acceleration",
       "canonical_question": "What units is acceleration measured in and why?",
@@ -246,7 +259,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O01/friction-as-a-force",
+      "id": "n_6tgzj5eaxc83dcv94e5h7d5rf4",
+      "legacy_id": "L01.M01.O01/friction-as-a-force",
       "parent_id": "L01.M01.O01",
       "title": "Friction as one of the forces",
       "canonical_question": "How does friction fit into the net force on a sliding object?",
@@ -262,7 +276,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M01.O02/instantaneous-vs-average-velocity",
+      "id": "n_q36rxbw22q0z9gwrcpy4yf4w28",
+      "legacy_id": "L01.M01.O02/instantaneous-vs-average-velocity",
       "parent_id": "L01.M01.O02",
       "title": "Instantaneous versus average velocity",
       "canonical_question": "What is the difference between instantaneous and average velocity?",

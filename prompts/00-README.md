@@ -14,7 +14,7 @@ the conversation rather than in a database. Schema ids are `metadax.*/0.2`.
 
 ## The prompts
 
-The suite is eleven MP prompt files plus the schema reference and the changelog.
+The suite is fourteen MP prompt files plus the schema reference and the changelog.
 A client pastes MP-00 first, then the operation prompt, then the schema sections
 it needs.
 
@@ -32,6 +32,9 @@ it needs.
 | `MP-08-progress-steward.md` | STEWARD | Learner-side worker: merges progress snapshots, picks next steps, writes the teacher report. |
 | `MP-09-registry-curator.md` | CURATE | Course-side worker: review, global dedupe, promote to curriculum, audit. |
 | `MP-10-session-runner.md` | RUN | The whole system in one chat, with commands and `/export`. |
+| `MP-11-curriculum-architect.md` | CURRICULUM | Program brief to a program -> course -> lesson tree, with one hand-off per course that MP-02 consumes unchanged: design, extend, audit. |
+| `MP-12-batch-builder.md` | BUILD | Conductor that fans MP-02 and MP-04 out over a curriculum in prerequisite order, for one teacher or a fleet, with resume, dedupe and review gates: plan, next, status, stop. |
+| `MP-13-guide-coach.md` | COACH | Guide-side coach: a guide's plain problem to observable hypotheses, checks, strategies and a short session plan, never a diagnosis: coach, review, prepare. |
 | `CHANGELOG-v0.2.md` | - | Every v0.2 spec change and the files it touched. |
 
 `CHANGELOG-v0.1.1.md` keeps the v0.1.1 red-team history.

@@ -1,5 +1,5 @@
 {
-  "schema": "metadax.registry/0.2",
+  "schema": "metadax.registry/0.3",
   "course_id": "newtons-laws-motion",
   "module_id": "L01.M02",
   "updated_at": "runtime",
@@ -38,7 +38,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M02.O01/book-on-table-balanced-forces",
+      "id": "n_r5p1aj6pb0kw5tn90vdpphmfcw",
+      "legacy_id": "L01.M02.O01/book-on-table-balanced-forces",
       "parent_id": "L01.M02.O01",
       "title": "The book on the table: balanced forces",
       "canonical_question": "Why does a book resting on a table not fall through even though gravity pulls it down?",
@@ -55,7 +56,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M02.O01/why-resting-objects-stay-put",
+      "id": "n_cyfmpanyte0615mcjk06f4x4tc",
+      "legacy_id": "L01.M02.O01/why-resting-objects-stay-put",
       "parent_id": "L01.M02.O01",
       "title": "Why resting objects stay put",
       "canonical_question": "Why does an object sitting on a surface stay still if gravity acts on it?",
@@ -72,7 +74,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M02.O02/what-makes-a-frame-inertial",
+      "id": "n_6yv1famfjzpjw8gt1gc9s6fqz4",
+      "legacy_id": "L01.M02.O02/what-makes-a-frame-inertial",
       "parent_id": "L01.M02.O02",
       "title": "What makes a frame inertial",
       "canonical_question": "What actually makes a reference frame inertial?",
@@ -88,7 +91,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M02.O02/recognizing-inertial-frames",
+      "id": "n_2dzpvs5j35pf2z16m1n4dty2pc",
+      "legacy_id": "L01.M02.O02/recognizing-inertial-frames",
       "parent_id": "L01.M02.O02",
       "title": "Recognizing inertial frames",
       "canonical_question": "How can you recognize whether a given reference frame is inertial?",
@@ -104,7 +108,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M02.O01/why-equilibrium-means-zero-net-force",
+      "id": "n_ejk6hyxhxewbcehzcsffte01ww",
+      "legacy_id": "L01.M02.O01/why-equilibrium-means-zero-net-force",
       "parent_id": "L01.M02.O01",
       "title": "Why equilibrium means zero net force",
       "canonical_question": "Why does mechanical equilibrium require the net force to be exactly zero?",
@@ -121,7 +126,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M02.O02/why-earth-is-nearly-inertial",
+      "id": "n_4qmzgfg753et195jtd1k7h3ggm",
+      "legacy_id": "L01.M02.O02/why-earth-is-nearly-inertial",
       "parent_id": "L01.M02.O02",
       "title": "Why Earth is nearly inertial",
       "canonical_question": "Why can Earth’s surface be treated as an approximately inertial frame despite its rotation?",
@@ -137,7 +143,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M02.O01/first-law-constant-velocity",
+      "id": "n_71gjy4db492jse1f7h5wfnahr4",
+      "legacy_id": "L01.M02.O01/first-law-constant-velocity",
       "parent_id": "L01.M02.O01",
       "title": "The first law at constant velocity",
       "canonical_question": "How does Newton’s first law apply to a car cruising at constant velocity?",
@@ -154,7 +161,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M02.O02/fictitious-forces-in-accelerating-frames",
+      "id": "n_qvvh0egfnr4pv3bqqf94trcmh0",
+      "legacy_id": "L01.M02.O02/fictitious-forces-in-accelerating-frames",
       "parent_id": "L01.M02.O02",
       "title": "Fictitious forces in accelerating frames",
       "canonical_question": "What fictitious forces appear in a non-inertial (accelerating) reference frame?",
@@ -170,7 +178,8 @@
       "reuse_count": 0
     },
     {
-      "id": "L01.M02.O01/tension-in-a-rope-at-rest",
+      "id": "n_8zrd1xnznw43d3725b0qs48sbm",
+      "legacy_id": "L01.M02.O01/tension-in-a-rope-at-rest",
       "parent_id": "L01.M02.O01",
       "title": "Tension in a rope at rest",
       "canonical_question": "How do you find the tension in a rope holding a hanging weight at rest?",

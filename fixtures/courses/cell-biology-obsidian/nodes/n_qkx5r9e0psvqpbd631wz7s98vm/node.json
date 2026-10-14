@@ -1,0 +1,79 @@
+{
+  "schema": "metadax.node/0.3",
+  "id": "n_qkx5r9e0psvqpbd631wz7s98vm",
+  "slug": "proteins-essential-atp-synthesis",
+  "legacy_id": "L01.M01.O01/proteins-essential-atp-synthesis",
+  "parent_id": "L01.M01.O01",
+  "kind": "followup",
+  "depth": 2,
+  "anchor": {
+    "section_id": "s4",
+    "quote": "the spent molecule is then recharged in the mitochondrion"
+  },
+  "title": "Proteins essential for ATP synthesis",
+  "question": "what proteins are needed for this??",
+  "canonical_question": "Which proteins are essential for ATP synthesis in the mitochondrion?",
+  "intent": "deepen",
+  "summary": [
+    "ATP synthase has a proton-driven rotor and a catalytic head.",
+    "Complexes I to IV build the proton gradient that drives it."
+  ],
+  "concepts": [
+    "atp-synthesis",
+    "electron-transport-chain"
+  ],
+  "new_concepts": [],
+  "bloom_level": "Understand",
+  "scope": "in_scope",
+  "reuse": {
+    "decision": "new",
+    "of": null,
+    "confidence": 0,
+    "rationale": "No sibling or course-wide node covers the protein inventory."
+  },
+  "links": [],
+  "core": {
+    "sections": [
+      {
+        "id": "s1",
+        "heading": "ATP synthase, the maker",
+        "body_md": "The enzyme that actually produces ATP is called ATP synthase. It has two main parts: a rotor set in the membrane that spins as protons flow through it, and a head that sits in the mitochondrial interior and stitches ATP together. The spinning drives the chemistry."
+      },
+      {
+        "id": "s2",
+        "heading": "The complexes that set it up",
+        "body_md": "ATP synthase cannot work alone. Four upstream complexes, numbered one through four, use energy from food-derived electrons to pump protons across the membrane. That built-up proton supply is what flows back through the rotor."
+      }
+    ],
+    "key_points": [
+      "ATP synthase turns a proton flow into ATP.",
+      "Complexes I to IV build the proton supply it uses."
+    ],
+    "bridge_to_parent": "This names the specific proteins behind the ATP recycling introduced in the objective.",
+    "bridge_to_objective": "",
+    "source_refs": []
+  },
+  "seeds": [
+    "How does the rotor actually spin?",
+    "What does Complex IV do with the electrons?",
+    "How is this arranged differently in bacteria?"
+  ],
+  "path": [
+    {
+      "id": "L01.M01.O01",
+      "title": "Introduction to energy production in the mitochondria",
+      "summary": "Cellular respiration converts nutrients into ATP. Most ATP is made in the mitochondrion."
+    }
+  ],
+  "created_by": "lrn-fixture01",
+  "visibility": "shared",
+  "created_at": "2026-09-27T19:03:28Z",
+  "updated_at": "2026-09-27T19:03:28Z",
+  "content_sha256": "eb547649818eb5571297a0af29e7727d96f70021758bf0361bf9cd79c491d3ac",
+  "superseded_by": null,
+  "model": "author-fixture",
+  "stats": {
+    "views": 0,
+    "reuse_count": 3
+  }
+}
