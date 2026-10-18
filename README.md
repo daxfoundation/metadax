@@ -18,6 +18,23 @@ Five doors. Each one has a site page and a place in this repo.
 | **Trainer** | [daxfoundation.org/metadax/trainer/](https://daxfoundation.org/metadax/trainer/) | [`prompts/`](prompts/) (MP-11, MP-12, MP-13) |
 | **Researcher** | [daxfoundation.org/metadax/research/](https://daxfoundation.org/metadax/research/) | [`docs/`](docs/) and [`experiments/`](experiments/) |
 
+## See it
+
+The same recipe built every one of these; open any of them.
+
+- [One dish, its story](https://daxfoundation.org/metadax/showcases/tamil-chicken-curry/) — Sri Lankan Tamil chicken curry, a 3D kitchen, Tamil and English.
+- [Words into Algebra](https://daxfoundation.org/metadax/showcases/words-into-algebra/) — a tutor's kit, with an Edition remade for one learner.
+- [Systèmes de fichiers imbriqués](https://daxfoundation.org/metadax/showcases/stockage-imbrique/) — a French college module on Proxmox storage.
+- [Le Stade des Fractions](https://daxfoundation.org/metadax/samples/stade-des-fractions/)
+- [First Week at the Bakery](https://daxfoundation.org/metadax/showcases/first-week-at-the-bakery/)
+- [The Proton Mill](https://daxfoundation.org/metadax/showcases/proton-mill/)
+- [The Tutor's Desk](https://daxfoundation.org/metadax/showcases/tutors-desk/)
+- [The Year on the Wall](https://daxfoundation.org/metadax/showcases/grade-6-science-year/)
+
+The whole library: https://daxfoundation.org/metadax/showcases/
+
+The first thing the recipe built, in September: the Newton's laws run report (a 21-page course, a simulated learner, three interactive labs): https://claude.ai/artifact/Nv4j2tpPh9PidXvLiAaP31 ; results in experiments/E01/results and experiments/E03/results.
+
 ---
 
 ## Tutoring? Start here
