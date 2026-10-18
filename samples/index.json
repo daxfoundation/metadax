@@ -135,6 +135,39 @@
       "date": "2026-10-18",
       "licence": "CC BY 4.0",
       "path": "samples/find-the-earliest-gap-stepping-stones.md"
+    },
+    {
+      "id": "spelling-by-sound-counters",
+      "subject": "Writing",
+      "age_band": "4-6",
+      "stuck": "reads a little but writes a string of random letters for a spelling word, because he does not yet hear the separate sounds in it",
+      "loves": "lining up and sorting small things — buttons, bottle tops, counters",
+      "approach": "say a short word, push one counter for each sound heard, then write one letter per counter — CVC words first, then digraphs as a single counter",
+      "date": "2026-10-18",
+      "licence": "CC BY 4.0",
+      "path": "samples/spelling-by-sound-counters.md"
+    },
+    {
+      "id": "retell-it-in-three-fingers",
+      "subject": "Reading",
+      "age_band": "7-9",
+      "stuck": "after a read-aloud or short passage, cannot recall it, or gives a one-sentence summary that misses the point",
+      "loves": "drawing, and telling the story in a picture before saying it in words",
+      "approach": "shorter chunks first, then three fingers — who, what happened, how it ended — said in a row as the summary; a quick three-box sketch for picture-thinkers",
+      "date": "2026-10-18",
+      "licence": "CC BY 4.0",
+      "path": "samples/retell-it-in-three-fingers.md"
+    },
+    {
+      "id": "the-blank-page-frame",
+      "subject": "Writing",
+      "age_band": "10-12",
+      "stuck": "capable and careful, but freezes and writes nothing when asked to write something open-ended",
+      "loves": "getting things exactly right, and building from clear step-by-step instructions",
+      "approach": "remove the choices — a topic-sentence frame with three because-slots filled aloud first, then rewrite a model paragraph with one change and grow from there",
+      "date": "2026-10-18",
+      "licence": "CC BY 4.0",
+      "path": "samples/the-blank-page-frame.md"
     }
   ]
 }
