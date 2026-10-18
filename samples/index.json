@@ -102,6 +102,39 @@
       "licence": "CC BY 4.0",
       "path": "samples/math-fractions-stade-3d.md",
       "link": "https://daxfoundation.org/metadax/samples/stade-des-fractions/"
+    },
+    {
+      "id": "math-facts-fluency-dominoes",
+      "subject": "Math",
+      "age_band": "7-9",
+      "stuck": "can count on to reach a fact but has not made the facts automatic; rebuilds every answer from one",
+      "loves": "dominoes — matching the tiles, standing them up, toppling the runs",
+      "approach": "strategy-first facts (doubles, doubles plus one, make ten) read off domino tiles, five minutes a day, stepping up after a streak",
+      "date": "2026-10-18",
+      "licence": "CC BY 4.0",
+      "path": "samples/math-facts-fluency-dominoes.md"
+    },
+    {
+      "id": "reading-for-meaning-animal-facts",
+      "subject": "Reading",
+      "age_band": "10-12",
+      "stuck": "reads every word aloud accurately but cannot say what a passage was about afterwards",
+      "loves": "animals and surprising true facts about them",
+      "approach": "question first, one short chunk, say it back in one sentence, point to the sentence that proves it — built on short animal-fact passages",
+      "date": "2026-10-18",
+      "licence": "CC BY 4.0",
+      "path": "samples/reading-for-meaning-animal-facts.md"
+    },
+    {
+      "id": "find-the-earliest-gap-stepping-stones",
+      "subject": "Other",
+      "age_band": "7-9",
+      "stuck": "arrived home learning behind in both reading and maths, with scattered gaps, and the guide cannot tell where to restart",
+      "loves": "crossing the creek on stepping stones and finding the safe way across",
+      "approach": "a short, kind check that walks back through the early reading and maths stones — letter sounds, blending, adding within ten, tens and ones — to the earliest wobble, and starts there",
+      "date": "2026-10-18",
+      "licence": "CC BY 4.0",
+      "path": "samples/find-the-earliest-gap-stepping-stones.md"
     }
   ]
 }
