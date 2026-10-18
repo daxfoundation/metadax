@@ -7,10 +7,18 @@ A skill is a small folder Claude reads so it knows one job well. This one,
 use it whenever you like. It runs on your own Claude subscription and costs this
 project nothing.
 
-## 1. Get the skill folder
+## 1. Install the skill
 
-The skill lives in the open repository, in the folder
-`skills/metadax-homeschool`. Download or copy that whole folder to your computer:
+If your Claude takes slash commands, type these two lines:
+
+```
+/plugin marketplace add daxfoundation/metadax
+/plugin install metadax-homeschool@metadax
+```
+
+Otherwise, or if you would rather do it by hand, the skill lives in the open
+repository, in the folder `skills/metadax-homeschool`. Download or copy that whole
+folder to your computer:
 
 [skills/metadax-homeschool on GitHub →](https://github.com/daxfoundation/metadax/tree/main/skills/metadax-homeschool)
 
@@ -18,6 +26,8 @@ Keep the folder together — the `SKILL.md` file and its `templates` and `tools`
 folders all belong with it.
 
 ## 2. Add the skill folder to Claude
+
+If you used the two lines above, you can skip this step.
 
 In Claude, add the skill folder (see Claude's help for Skills). The exact steps
 depend on which Claude you use, and Claude's own help is kept current:
@@ -46,7 +56,7 @@ leaves it out.
 
 ## 4. Open what it built
 
-The package is yours and private; the skill never uploads it. Open it in the
+The package is yours and private; it stays with you unless you choose to share it. Open it in the
 player, paste in the JSON, and press Play — or print it for paper.
 
 [Open it and print it →](play-and-print.md) · [Prefer a different AI? Use the plain prompt](any-ai.md) · [Back to the guide](index.md)
