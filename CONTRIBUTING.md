@@ -48,8 +48,8 @@ A sample is one generic, made-up example of what MetaDAX hands a guide and a lea
    (`.github/ISSUE_TEMPLATE/share-a-sample.yml`). Paste the `sample.md` into the first box
    and the `entry.json` (the nine index fields) into the second, and tick the three
    confirmations.
-4. A reviewer checks it, publishes it into `samples/` and adds the index entry. There is
-   no upload and no account; a person reviews each one before it appears.
+4. A reviewer checks it, publishes it into `samples/` and adds the index entry. A free
+   GitHub account is all it needs; a person reviews each one before it appears.
 
 ### 2. Add a scene mechanic or a theme
 

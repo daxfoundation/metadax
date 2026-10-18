@@ -12,8 +12,8 @@ body:
         **Before you post, please check:** made-up names only, no real name, school,
         town, birth date, email, phone or photo; no diagnosis or condition named
         anywhere (behaviour only); and the "a way, never the way" line is present.
-        A reviewer publishes it into `samples/` and adds the index entry; there is no
-        upload and no account.
+        A reviewer publishes it into `samples/` and adds the index entry; a free
+        GitHub account is all it needs.
   - type: textarea
     id: sample_md
     attributes:

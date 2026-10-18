@@ -2,7 +2,7 @@
 
 **Open infrastructure for universal learning. Every human being. Any subject. Any domain. Any bandwidth. Free, forever.**
 
-MetaDAX is a bet on one benchmark: take a person who can communicate, and bring them to the equivalent of a master's degree from an Ivy League university — on five minutes of connectivity a day. That is audacious on purpose. It does not have to be guaranteed; it only has to have a chance of working greater than zero. Holding that benchmark throws out every design that quietly assumes bandwidth, money, or a teacher in the room. The learning cannot live on the network, so it does not. A bundle is generated, customised to the particular learner and to what they have already done, and it comes down whole. They work through it offline, for as long as they like. What they did goes back up on their next five minutes. Any domain means any domain: a child meeting fractions, a nurse training the next nurse, a company teaching ten thousand of its own people. MetaDAX is being designed from the start to be enterprise grade, and it will stay free — not freemium, not free-for-some, not free-until-funded.
+MetaDAX is a bet on one benchmark: take a person who can communicate, and bring them to the equivalent of a master's degree from an Ivy League university — on five minutes of connectivity a day. We are developing this for all bandwidths! That is audacious on purpose. It does not have to be guaranteed; it only has to have a chance of working greater than zero. Holding that benchmark throws out every design that quietly assumes bandwidth, money, or a teacher in the room. The learning cannot live on the network, so it does not. A bundle is generated, customised to the particular learner and to what they have already done, and it comes down whole. They work through it offline, for as long as they like. What they did goes back up on their next five minutes. Any domain means any domain: a child meeting fractions, a nurse training the next nurse, a company teaching ten thousand of its own people. MetaDAX is being designed from the start to be enterprise grade, and it will stay free — not freemium, not free-for-some, not free-until-funded.
 
 ---
 
@@ -17,6 +17,23 @@ Five doors. Each one has a site page and a place in this repo.
 | **Teacher** | [daxfoundation.org/metadax/teacher/](https://daxfoundation.org/metadax/teacher/) | [`skills/metadax-teacher`](skills/metadax-teacher/) |
 | **Trainer** | [daxfoundation.org/metadax/trainer/](https://daxfoundation.org/metadax/trainer/) | [`prompts/`](prompts/) (MP-11, MP-12, MP-13) |
 | **Researcher** | [daxfoundation.org/metadax/research/](https://daxfoundation.org/metadax/research/) | [`docs/`](docs/) and [`experiments/`](experiments/) |
+
+## See it
+
+The same recipe built every one of these; open any of them.
+
+- [One dish, its story](https://daxfoundation.org/metadax/showcases/tamil-chicken-curry/) — Sri Lankan Tamil chicken curry, a 3D kitchen, Tamil and English.
+- [Words into Algebra](https://daxfoundation.org/metadax/showcases/words-into-algebra/) — a tutor's kit, with an Edition remade for one learner.
+- [Systèmes de fichiers imbriqués](https://daxfoundation.org/metadax/showcases/stockage-imbrique/) — a French college module on Proxmox storage.
+- [Le Stade des Fractions](https://daxfoundation.org/metadax/samples/stade-des-fractions/)
+- [First Week at the Bakery](https://daxfoundation.org/metadax/showcases/first-week-at-the-bakery/)
+- [The Proton Mill](https://daxfoundation.org/metadax/showcases/proton-mill/)
+- [The Tutor's Desk](https://daxfoundation.org/metadax/showcases/tutors-desk/)
+- [The Year on the Wall](https://daxfoundation.org/metadax/showcases/grade-6-science-year/)
+
+The whole library: https://daxfoundation.org/metadax/showcases/
+
+The first thing the recipe built, in September: the Newton's laws run report (a 21-page course, a simulated learner, three interactive labs): https://claude.ai/artifact/Nv4j2tpPh9PidXvLiAaP31 ; results in experiments/E01/results and experiments/E03/results.
 
 ---
 
@@ -58,7 +75,7 @@ If you are teaching a class, you can design a term plan for any subject in about
 | Context profiles (10) | [`profiles/contexts/`](profiles/contexts/) | built | One JSON profile per learning context (primary school, workplace, vocational, and seven more). |
 | Package format | [`skills/metadax-homeschool/templates/PACKAGE-FORMAT.md`](skills/metadax-homeschool/templates/PACKAGE-FORMAT.md) | built | The shared contract both guide and learner pages are built to. |
 | The checker | [`skills/metadax-homeschool/tools/check-package.mjs`](skills/metadax-homeschool/tools/check-package.mjs) | built | The same validation the player runs, in Node, with zero dependencies. |
-| Factory samples (2 deep showcases) | [`samples/factory/`](samples/factory/) ([live](https://daxfoundation.org/metadax/samples/)) | built | Biology 101 university course and HR onboarding module, each with a curriculum, course, and node. |
+| Factory samples (deep showcases; [the whole library](https://daxfoundation.org/metadax/showcases/)) | [`samples/factory/`](samples/factory/) ([live](https://daxfoundation.org/metadax/samples/)) | built | Biology 101 university course and HR onboarding module, each with a curriculum, course, and node. |
 | Homeschool samples | [`samples/`](samples/) ([live](https://daxfoundation.org/metadax/samples/)) | built | Nine generic sample packages, each reviewed by a person before it appears. |
 | Learning record format | [`skills/metadax-homeschool/templates/RECORD-FORMAT.md`](skills/metadax-homeschool/templates/RECORD-FORMAT.md) | built | One dated, append-only entry per session, kept locally and readable by a person or a program. |
 | Companion sidecar | [`companion/companion.schema.json`](companion/companion.schema.json) | experimental | An always-on sidecar schema. |
@@ -70,7 +87,7 @@ If you are teaching a class, you can design a term plan for any subject in about
 
 MetaDAX is free. It is built on paid compute. If it helped, a coffee on Ko-fi or a GitHub sponsorship keeps it going. [Ko-fi](https://ko-fi.com/jeyanandan) — [GitHub Sponsors](https://github.com/sponsors/ObsidianDelta)
 
-- **[Sponsor on GitHub](https://github.com/sponsors/ObsidianDelta)**: $5, $25 or $100 a month, or a one-time amount. Sponsors are listed here.
+- **[Sponsor on GitHub](https://github.com/sponsors/ObsidianDelta)**: $5, $10 or $25 a month, or $10 once. Sponsors are listed here.
 - **[Ko-fi](https://ko-fi.com/jeyanandan)**: a one-off coffee or a monthly one, no GitHub account needed.
 
 Everything built with it is published in this repository. Nothing is paywalled, and nothing will be.
@@ -81,7 +98,7 @@ The next family of packages is **One dish, its story**: a small learning package
 
 | Package | Status |
 |---|---|
-| Sri Lankan Tamil chicken curry, Jaffna style | the showcase, in build |
+| Sri Lankan Tamil chicken curry, Jaffna style | the showcase, [live](https://daxfoundation.org/metadax/showcases/tamil-chicken-curry/) |
 | Filipino | open for sponsorship |
 | Serbian in Canada | open for sponsorship |
 | Sikh / Punjabi | open for sponsorship |
@@ -101,6 +118,7 @@ The full experiment design, every run, and what comes next:
 - **[docs/NEXT-EXPERIMENTS.md](docs/NEXT-EXPERIMENTS.md)** — the twelve experiments we can already picture, as scenes.
 - **[experiments/FINDINGS-20261010.md](experiments/FINDINGS-20261010.md)** — X13 / X14 findings, run 2026-10-10.
 - **[docs/HISTORY.md](docs/HISTORY.md)** — the full account: how it works, the sixteen concepts, every run with its numbers, where it came from.
+- **[daxfoundation.org/writing/](https://daxfoundation.org/writing/)** — Writing: new pieces are the X13 / X14 findings, Human delta value: the measure v2, and Twelve scenes.
 
 ### Experiment status
 
@@ -137,7 +155,7 @@ Under every experiment here sits one measure, and it is close to being the point
 
 [Human delta value](https://daxfoundation.org/definitions/#human-delta-value) is what a human being brings: what only a human can currently do, and what a person and their cognitive companion reach together that neither would alone. The first MetaDAX run showed it uninvited: the teacher's plan arrived defaulted, the outcomes rubric came from a catalogue that grows with every teacher who publishes one, and every decision became a micro-adjustment to something already there. A great deal of cognitive labour had been taken off the teacher. The question that matters is what the teacher does with the cognition they got back. Every time the system takes cognitive labour off a guide, one question is left, and it is the whole point: **what is it that only you can do here, and how do we help you do it as well as you can?**
 
-MetaDAX is built to **invert the ratio of students to teachers**: behind each learner, every tutor's move ever captured, every misconception ever mapped, every dead end anyone found first, offered as one way among many. A learner gets more teaching than any teacher could give. And the teacher is handed their cognition back, on purpose, for the problems they could previously only dream about. We call that **reclaimed cognition**, and it is reported by the person in their own words and recorded as expressed, never inferred and never measured in minutes. A person and their companion are one unit, and the unit is only as strong as the human's best in the moment. The reasoning, the failure modes and the kill line are in [Human delta value: the measure](https://daxfoundation.org/writing/human-delta-value/); where it came from is [on Jason's site](https://jeyanandan.com/blog/human-delta-value/).
+MetaDAX is built to **invert the ratio of learners to guides**: behind each learner, every tutor's move ever captured, every misconception ever mapped, every dead end anyone found first, offered as one way among many. A learner gets more teaching than any teacher could give. And the teacher is handed their cognition back, on purpose, for the problems they could previously only dream about. We call that **reclaimed cognition**, and it is reported by the person in their own words and recorded as expressed, never inferred and never measured in minutes. A person and their companion are one unit, and the unit is only as strong as the human's best in the moment. The reasoning, the failure modes and the kill line are in [Human delta value: the measure](https://daxfoundation.org/writing/human-delta-value/); where it came from is [on Jason's site](https://jeyanandan.com/blog/human-delta-value/).
 
 ---
 
@@ -171,6 +189,8 @@ So, being completely transparent: if you would like to [buy me a coffee](https:/
 Ways to contribute, with exact steps, are in **[CONTRIBUTING.md](CONTRIBUTING.md)**. In short:
 contributions need a DCO sign-off (`git commit -s`), a human must have read and tried anything
 AI helped write, and no real learner's name, photo or identifying detail ever appears.
+
+**Contributors.** First outside contribution: a checker warning by @jay23606 (PR #8), being ported into the player copy with credit.
 
 ## Trademarks and affiliation
 
