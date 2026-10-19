@@ -1,0 +1,15 @@
+SIMULATED — pid=a2-i1, arm=A-rerun, lang=id-x-jv, subject=layang-layang
+
+[GUIDE 1]: Dwi, pertanyaan apik banget! Coba kita pisah dulu — "dua gaya saling cancel" itu syaratnya apa? Syaratnya dua gaya itu harus bekerja pada **benda yang sama**, to? Nah, sekarang cermati: gaya yang narik layangan itu bekerja pada siapa? Dan gaya balik dari layangan itu bekerja pada siapa?
+
+[LEARNER 1]: Hmm... gaya yang narik layangan ya bekerja pada layangan. Terus gaya balik dari layangan... bekerja pada tali — ya berarti pada anak yang pegang tali. Lho, berarti duane beda ya? Satu kena layangan, satu kena anak?
+
+[RESOLVED 1]: NO
+
+[GUIDE 2]: Persis, Dwi! Saiki fokus mung nang layangan wae. Gaya-gaya apa wae sing nyatane bekerja **pada layangan itu sendiri** — dudu tali, dudu anak e, tapi layangan e tok?
+
+[LEARNER 2]: Ooh... yang bekerja pada layangan... ada tarikan tali ke bawah, terus angin dorong layangan ke atas, sama gravitasi narik ke bawah. Gaya balik dari layangan ke tali — itu malah gak bekerja pada layangan, tapi pada tali. Dadi resultante yang menentukan gerak layangan ya cuma gaya-gaya yang kena layangan itu tok! Kalau gaya angin cukup besar, ya layangan bisa munggah, soale gaya baliknya pergi ke tali, bukan ngelawan gerakan layangan langsung. Ngono ta maksude?
+
+[RESOLVED 2]: YES
+
+[SUMMARY]: pid=a2-i1, attempts=2, resolved=YES

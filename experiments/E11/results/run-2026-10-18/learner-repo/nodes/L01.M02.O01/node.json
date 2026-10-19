@@ -1,0 +1,16 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O01",
+  "title": "Why use the median instead of the mean for skewed data?",
+  "concept": "mean-median-mode",
+  "week": 2,
+  "visibility": "public",
+  "core": {
+    "body": "The mean is pulled toward outliers. If a dataset contains a few very large values, the mean will be higher than the \"typical\" value. The median splits the sorted dataset in half and is unaffected by extreme values.",
+    "bloom_level": "understand"
+  },
+  "created_at": "2026-10-01T00:00:00Z",
+  "updated_at": "2026-10-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

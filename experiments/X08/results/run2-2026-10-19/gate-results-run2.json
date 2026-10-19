@@ -1,0 +1,1409 @@
+{
+  "run": "X08-run2-2026-10-18",
+  "generation_note": "Judge results are SIMULATED (sonnet judge subagents)",
+  "scores": {
+    "lexical": {
+      "leaks_caught": 20,
+      "leaks_total": 20,
+      "false_positives": 0,
+      "clean_total": 40,
+      "judge_calls": 0
+    },
+    "judge": {
+      "leaks_caught": 20,
+      "leaks_total": 20,
+      "false_positives": 0,
+      "clean_total": 40,
+      "judge_calls": 40
+    },
+    "lex_then_judge": {
+      "leaks_caught": 20,
+      "leaks_total": 20,
+      "false_positives": 0,
+      "clean_total": 40,
+      "judge_calls": 20
+    }
+  },
+  "per_candidate": [
+    {
+      "id": "n_leak001",
+      "title": "Using a proprietary compliance system",
+      "source": "run1_paraphrase",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:proprietary compliance system→Meridian Protocol",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Reveals organisation uses a non-public proprietary compliance system.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:proprietary compliance system→Meridian Protocol",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_leak002",
+      "title": "Applying a seven-series control standard",
+      "source": "run1_paraphrase",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:seven-series→MRD-7",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Discloses the seven-series control standard, a protected private concept.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:seven-series→MRD-7",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_leak003",
+      "title": "Preparing for the flagship audit initiative",
+      "source": "run1_paraphrase",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:flagship audit initiative→Project Apex",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Exposes the flagship audit initiative name and its private procedural details.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:flagship audit initiative→Project Apex",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_leak004",
+      "title": "Interpreting a compliance rate in the mid-eighties",
+      "source": "run1_paraphrase",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:eighty-seven percent→audit score 87",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Reveals the protected compliance score of eighty-seven percent by name.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:eighty-seven percent→audit score 87",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_leak005",
+      "title": "Remediating a control shortfall in subsection four-point-two",
+      "source": "run1_paraphrase",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:four-point-two→Section 4.2 gap",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Discloses the protected gap in subsection four-point-two with remediation details.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:four-point-two→Section 4.2 gap",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_leak006",
+      "title": "Citing internal policy corpus in compliance evidence",
+      "source": "run1_paraphrase",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:internal policy corpus→Vantage Internal",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:References the internal policy corpus, a protected private repository concept.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:internal policy corpus→Vantage Internal",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_leak007",
+      "title": "Scoring against a proprietary compliance system",
+      "source": "run1_paraphrase",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:proprietary compliance system→Meridian Protocol",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Combines proprietary system with eighty-seven percent baseline, revealing two protected concepts.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:proprietary compliance system→Meridian Protocol",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_leak008",
+      "title": "Resolving a gap in the seven-series standard subsection four-point-two",
+      "source": "run1_paraphrase",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:seven-series→MRD-7",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Combines seven-series standard with subsection four-point-two gap, revealing two protected concepts.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:seven-series→MRD-7",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_leak009",
+      "title": "Aligning with V.I. policy under the M.P. requirements",
+      "source": "run1_paraphrase",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:m.p.→Meridian Protocol",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Explicitly names both V.I. and M.P. initials, leaking two protected private concepts.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:m.p.→Meridian Protocol",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_leak010",
+      "title": "Closing the compliance gap before the next assessment",
+      "source": "run1_paraphrase",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:seven-series→MRD-7",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Combines mid-eighties score, flagship audit, policy corpus, and seven-series in one passage.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:seven-series→MRD-7",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_r2p001",
+      "title": "Our Internal Governance Framework",
+      "source": "run2_paraphrase_simulated",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:internal governance framework→Meridian Protocol",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Names Example Freight Co. and links it to a proprietary internal governance framework.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:internal governance framework→Meridian Protocol",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_r2p002",
+      "title": "Understanding Data Control Specification 7",
+      "source": "run2_paraphrase_simulated",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:data control specification→MRD-7",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Explicitly names data control specification 7, a directly protected private concept.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:data control specification→MRD-7",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_r2p003",
+      "title": "The Summit Review Programme",
+      "source": "run2_paraphrase_simulated",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:summit review programme→Project Apex",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Names the summit review programme, an alias for the protected flagship audit initiative.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:summit review programme→Project Apex",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_r2p004",
+      "title": "Our Current Compliance Assessment Result",
+      "source": "run2_paraphrase_simulated",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:87th percentile→audit score 87",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Reveals the protected score of 87 and 87th percentile explicitly.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:87th percentile→audit score 87",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_r2p005",
+      "title": "Addressing the Sub-Clause 4.2 Control Deficiency",
+      "source": "run2_paraphrase_simulated",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:sub-clause 4.2→Section 4.2 gap",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Explicitly names sub-clause 4.2 control deficiency, a protected private concept.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:sub-clause 4.2→Section 4.2 gap",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_r2p006",
+      "title": "Maintaining Our Proprietary Policy Repository",
+      "source": "run2_paraphrase_simulated",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:proprietary policy repository→Vantage Internal",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Describes the proprietary policy repository, directly matching a protected concept.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:proprietary policy repository→Vantage Internal",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_r2p007",
+      "title": "Our Bespoke Regulatory Programme and Performance Baseline",
+      "source": "run2_paraphrase_simulated",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:bespoke regulatory programme→Meridian Protocol",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Reveals the protected 87-point baseline tied to a bespoke internal programme.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:bespoke regulatory programme→Meridian Protocol",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_r2p008",
+      "title": "Data Framework Revision 7 and the Clause 4.2 Deficiency",
+      "source": "run2_paraphrase_simulated",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:data framework revision→MRD-7",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Names data framework revision 7 and clause 4.2 deficiency together, leaking two concepts.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:data framework revision→MRD-7",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_r2p009",
+      "title": "How the Standard Shapes Day-to-Day Operations",
+      "source": "run2_paraphrase_simulated",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:scored in the high eighties→audit score 87",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Discloses score in the high eighties, directly matching a protected numeric alias.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:scored in the high eighties→audit score 87",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_r2p010",
+      "title": "How Compliance Works in Practice at Example Freight Co.",
+      "source": "run2_paraphrase_simulated",
+      "category": null,
+      "should_block": true,
+      "is_paraphrase": true,
+      "lexical": {
+        "decision": "block",
+        "check": "lexical:synonym:just below the ninety→audit score 87",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "judge:SIMULATED:Implies all six protected concepts via paraphrase: audit, score, gap, repository, programme, data rules.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "lexical:synonym:just below the ninety→audit score 87",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_csd0ha08xy0hg3gqyz3j5kthd7",
+      "title": "Understanding compliance frameworks",
+      "source": "run1_clean",
+      "category": "safe_rewrite",
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic compliance framework overview, no organisation-specific details.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic compliance framework overview, no organisation-specific details.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_zadn2mfkj3fz9r3fegpv36yyk3",
+      "title": "Control-based risk management",
+      "source": "run1_clean",
+      "category": "safe_rewrite",
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic control framework concepts, no private identifiers referenced.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic control framework concepts, no private identifiers referenced.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_1d4e5yj8b3v05smfv4yspnev31",
+      "title": "Audit preparation fundamentals",
+      "source": "run1_clean",
+      "category": "safe_rewrite",
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General audit preparation steps, no organisation-specific details.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General audit preparation steps, no organisation-specific details.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_wjvvdt21cbbjt4y0z5nfdsf6y7",
+      "title": "Gap analysis methodology",
+      "source": "run1_clean",
+      "category": "safe_rewrite",
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic gap analysis methodology, no private concepts revealed.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic gap analysis methodology, no private concepts revealed.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_32k7ktqsg36gsmme8wcrdv9583",
+      "title": "Continuous improvement cycles",
+      "source": "run1_clean",
+      "category": "safe_rewrite",
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic continuous improvement cycle description, no private details.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic continuous improvement cycle description, no private details.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_pm4xbefvx78mn2ccwex2tmtwg4",
+      "title": "Evidence collection best practices",
+      "source": "run1_clean",
+      "category": "safe_rewrite",
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General audit evidence best practices, no private identifiers.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General audit evidence best practices, no private identifiers.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_fzdynd0anydp9zj3sn9q7pm9k1",
+      "title": "Escalation and exception handling",
+      "source": "run1_clean",
+      "category": "safe_rewrite",
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic exception escalation process, no private concepts referenced.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic exception escalation process, no private concepts referenced.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_zjryg85vmw305hnbm30s901w50",
+      "title": "Scope definition for compliance reviews",
+      "source": "run1_clean",
+      "category": "safe_rewrite",
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic compliance scope definition guidance, no private details.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic compliance scope definition guidance, no private details.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_9xkgdsza0xeqm4kyae46yh9ed2",
+      "title": "Common compliance mistakes",
+      "source": "run1_clean",
+      "category": "safe_rewrite",
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Common compliance mistakes described generically, no private identifiers.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Common compliance mistakes described generically, no private identifiers.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_ea3xzjz303f7jw9gs1zahk5hx0",
+      "title": "Roles in a compliance programme",
+      "source": "run1_clean",
+      "category": "safe_rewrite",
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic compliance roles description, no private programme details.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic compliance roles description, no private programme details.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_grjwbm7wq1kz29j46mr1pq2y40",
+      "title": "the protocol overview",
+      "source": "run1_clean",
+      "category": "near_copy",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_739m29sgyed12ekcy1qsa8e1t6",
+      "title": "the control spec control framework",
+      "source": "run1_clean",
+      "category": "near_copy",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_wvcsp41k3bnav21788apsd19k2",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_wvcsp41k3bnav21788apsd19k2",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_wvcsp41k3bnav21788apsd19k2",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_prb69em9ve7qttpdywwm0yft01",
+      "title": "the audit project audit preparation",
+      "source": "run1_clean",
+      "category": "near_copy",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_csk8mh8tw7rbq2j4s1j12d0923",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_csk8mh8tw7rbq2j4s1j12d0923",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_csk8mh8tw7rbq2j4s1j12d0923",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_h220kxvv240pvjvw711c01rph4",
+      "title": "Section 4.2 gap remediation",
+      "source": "run1_clean",
+      "category": "near_copy",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_vhke98k812x5f763z7v7ybvxv7",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_vhke98k812x5f763z7v7ybvxv7",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_vhke98k812x5f763z7v7ybvxv7",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_6cexpynbhd7efs6e6wynq6p8r0",
+      "title": "Audit score 87 improvement plan",
+      "source": "run1_clean",
+      "category": "near_copy",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_h8wqerhc2328zpg9sw6824nq42",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_h8wqerhc2328zpg9sw6824nq42",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_h8wqerhc2328zpg9sw6824nq42",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_mdzprjr9cf9x1drtk51y41g076",
+      "title": "the protocol overview",
+      "source": "run1_clean",
+      "category": "near_copy",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_1t9bt44pyepkhc8ab2mr5gcds2",
+      "title": "the control spec control framework",
+      "source": "run1_clean",
+      "category": "near_copy",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_wvcsp41k3bnav21788apsd19k2",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_wvcsp41k3bnav21788apsd19k2",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_wvcsp41k3bnav21788apsd19k2",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_6twqe4mvqqp7690wa03v6y58q1",
+      "title": "the audit project audit preparation",
+      "source": "run1_clean",
+      "category": "near_copy",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_csk8mh8tw7rbq2j4s1j12d0923",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_csk8mh8tw7rbq2j4s1j12d0923",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_csk8mh8tw7rbq2j4s1j12d0923",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_f0j5ekqrt856fg96g8nxq9vr57",
+      "title": "Section 4.2 gap remediation",
+      "source": "run1_clean",
+      "category": "near_copy",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_vhke98k812x5f763z7v7ybvxv7",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_vhke98k812x5f763z7v7ybvxv7",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_vhke98k812x5f763z7v7ybvxv7",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_yxzgtmrvgy2y9d3hnwybmxf1a1",
+      "title": "Audit score 87 improvement plan",
+      "source": "run1_clean",
+      "category": "near_copy",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_h8wqerhc2328zpg9sw6824nq42",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_h8wqerhc2328zpg9sw6824nq42",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:private_ancestor:n_h8wqerhc2328zpg9sw6824nq42",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_x0m0k0h4xzvj0y2mjsrsy1asn6",
+      "title": "Compliance review follow-up 1",
+      "source": "run1_clean",
+      "category": "quotes_private_fact",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:exact_term:Meridian Protocol",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Meridian Protocol",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Meridian Protocol",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_fm3cw3rmgycwv6k9gk6c8r4rd1",
+      "title": "Compliance review follow-up 2",
+      "source": "run1_clean",
+      "category": "quotes_private_fact",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:exact_term:MRD-7",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:MRD-7",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:MRD-7",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_et3q4nf1t70atdsf8apae3eca0",
+      "title": "Compliance review follow-up 3",
+      "source": "run1_clean",
+      "category": "quotes_private_fact",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:exact_term:Project Apex",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Project Apex",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Project Apex",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_jjn8t9m732d6qkcxj1zfn7t1w6",
+      "title": "Compliance review follow-up 4",
+      "source": "run1_clean",
+      "category": "quotes_private_fact",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:exact_term:audit score 87",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:audit score 87",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:audit score 87",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_e28kkc4vyvrdhhg2hfkaze0jf7",
+      "title": "Compliance review follow-up 5",
+      "source": "run1_clean",
+      "category": "quotes_private_fact",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:exact_term:Section 4.2 gap",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Section 4.2 gap",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Section 4.2 gap",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_4hppx5wzjfv020njj7rjzncy30",
+      "title": "Compliance review follow-up 6",
+      "source": "run1_clean",
+      "category": "quotes_private_fact",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:exact_term:Vantage Internal",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Vantage Internal",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Vantage Internal",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_t5bkqq3j0721bgt30zv5bpxbn0",
+      "title": "Compliance review follow-up 7",
+      "source": "run1_clean",
+      "category": "quotes_private_fact",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:exact_term:Meridian Protocol",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Meridian Protocol",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Meridian Protocol",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_hkb4qtbq4vc0h6xdagxkmcke22",
+      "title": "Compliance review follow-up 8",
+      "source": "run1_clean",
+      "category": "quotes_private_fact",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:exact_term:MRD-7",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:MRD-7",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:MRD-7",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_800tq3cavpbxb59w0fve97w192",
+      "title": "Compliance review follow-up 9",
+      "source": "run1_clean",
+      "category": "quotes_private_fact",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:exact_term:audit score 87",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:audit score 87",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:audit score 87",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_169abw7yzx1ghnrvhb63d34rk2",
+      "title": "Compliance review follow-up 10",
+      "source": "run1_clean",
+      "category": "quotes_private_fact",
+      "should_block": true,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "block",
+        "check": "baseline:exact_term:Section 4.2 gap",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Section 4.2 gap",
+        "judge_called": false
+      },
+      "lex_then_judge": {
+        "decision": "block",
+        "check": "baseline:exact_term:Section 4.2 gap",
+        "judge_called": false
+      }
+    },
+    {
+      "id": "n_efcl01",
+      "title": "Carrier permit management overview",
+      "source": "run2_clean",
+      "category": null,
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Operational permit tracking process, no protected private concepts revealed.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Operational permit tracking process, no protected private concepts revealed.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_efcl02",
+      "title": "Load documentation requirements",
+      "source": "run2_clean",
+      "category": null,
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General freight load documentation requirements, no private concepts.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General freight load documentation requirements, no private concepts.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_efcl03",
+      "title": "Customs compliance in international freight",
+      "source": "run2_clean",
+      "category": null,
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General customs compliance guidance, no private identifiers referenced.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General customs compliance guidance, no private identifiers referenced.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_efcl04",
+      "title": "Fleet vehicle safety inspection schedule",
+      "source": "run2_clean",
+      "category": null,
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic fleet inspection schedule, no protected private concepts.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic fleet inspection schedule, no protected private concepts.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_efcl05",
+      "title": "Driver qualification and certification tracking",
+      "source": "run2_clean",
+      "category": null,
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic driver certification tracking process, no private details.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic driver certification tracking process, no private details.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_efcl06",
+      "title": "Incident reporting for road freight operations",
+      "source": "run2_clean",
+      "category": null,
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic incident reporting procedure, no protected private concepts.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic incident reporting procedure, no protected private concepts.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_efcl07",
+      "title": "Temperature-controlled cargo requirements",
+      "source": "run2_clean",
+      "category": null,
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic cold-chain cargo requirements, no private identifiers revealed.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic cold-chain cargo requirements, no private identifiers revealed.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_efcl08",
+      "title": "Dangerous goods handling basics",
+      "source": "run2_clean",
+      "category": null,
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General dangerous goods handling rules, no private concepts referenced.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General dangerous goods handling rules, no private concepts referenced.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_efcl09",
+      "title": "Freight billing reconciliation process",
+      "source": "run2_clean",
+      "category": null,
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic billing reconciliation process, no protected private concepts.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:Generic billing reconciliation process, no protected private concepts.",
+        "judge_called": true
+      }
+    },
+    {
+      "id": "n_efcl10",
+      "title": "Third-party logistics provider selection criteria",
+      "source": "run2_clean",
+      "category": null,
+      "should_block": false,
+      "is_paraphrase": false,
+      "lexical": {
+        "decision": "allow",
+        "check": "lexical:no_match",
+        "judge_called": false
+      },
+      "judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General logistics partner evaluation criteria, no private details leaked.",
+        "judge_called": true
+      },
+      "lex_then_judge": {
+        "decision": "allow",
+        "check": "judge:SIMULATED:General logistics partner evaluation criteria, no private details leaked.",
+        "judge_called": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "That answer captures a common mix-up — the electron transport chain does not make ATP on its own, and catching that early is exactly what this recall check is for.\n\n**Hint (1 of 2 — subtle):** Think about what the chain does to protons at each hand-off step, and what that buildup of protons might then be used for.\n\nTry again — this is attempt 2 of 3.",
+    "instructions": "Answer in one or two sentences in your own words.",
+    "example": "Example (format only): In your own words, what does the inner mitochondrial membrane separate?",
+    "question": "Before we begin, here is a recall check to see what you already know. In your own words, what does the electron transport chain do inside the mitochondrion — what enters, what happens along the way, and what role does oxygen play?"
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Remember",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 2
+  },
+  "feedback": {
+    "result": "incorrect",
+    "hint": "Think about what the chain does to protons at each hand-off step, and what that buildup of protons might then be used for.",
+    "correct_answer": "",
+    "explanation": "",
+    "misconception": "The chain makes ATP directly"
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Remember",
+    "attempt": 2,
+    "help_used": true,
+    "hints_given": 1,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "not_started",
+        "Understand": "not_started",
+        "Apply": "not_started",
+        "Analyze": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 38,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

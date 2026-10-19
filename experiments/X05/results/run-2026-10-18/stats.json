@@ -1,0 +1,23 @@
+{
+  "planted": 12,
+  "total_turns": 120,
+  "learner": {
+    "true_pos": 12,
+    "false_pos": 6,
+    "false_neg": 0,
+    "precision": 0.667,
+    "recall": 1
+  },
+  "rubric": {
+    "true_pos": 12,
+    "false_pos": 8,
+    "false_neg": 0,
+    "precision": 0.6,
+    "recall": 1
+  },
+  "agreement": {
+    "agree": 114,
+    "disagree": 6,
+    "rate": 0.95
+  }
+}

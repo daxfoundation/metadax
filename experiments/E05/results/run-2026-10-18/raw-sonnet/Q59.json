@@ -1,0 +1,54 @@
+{
+  "id": "Q59",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "new",
+    "target_id": null,
+    "confidence": 0.87,
+    "resolved": false,
+    "node": {
+      "id": "runtime",
+      "parent_id": "L01.M01.O01",
+      "title": "Mitochondrial DNA mutations and maternally inherited disease",
+      "canonical_question": "What mutations in mitochondrial DNA cause maternally inherited diseases?",
+      "intent": "tangent",
+      "summary": "Mitochondrial DNA encodes 13 proteins of the electron transport chain and ATP synthase, plus ribosomal and transfer RNAs. Point mutations and large deletions in mtDNA impair oxidative phosphorylation. Because mitochondria are inherited through the egg, these diseases follow a maternal inheritance pattern. Classic examples include MELAS, MERRF, and Leber hereditary optic neuropathy.",
+      "concepts": [
+        "mitochondrion-structure",
+        "cellular-respiration"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "runtime",
+      "bloom_target": "Understand"
+    },
+    "seeds": [
+      "What is heteroplasmy and how does it affect the severity of mitochondrial disease?",
+      "Why do mitochondrial diseases often affect tissues with high energy demand such as muscle and brain?",
+      "How is MELAS syndrome related to a defect in the electron transport chain?"
+    ],
+    "rendering_md": "Mitochondria carry their own small circular DNA (mtDNA), which encodes 13 proteins — all subunits of the electron transport chain (Complexes I, III, IV) or ATP synthase. It also encodes the ribosomal RNAs and transfer RNAs the mitochondrion needs to translate those proteins. Mutations in any of these genes can disrupt oxidative phosphorylation.\n\n**Why maternal inheritance?**\n\nWhen a sperm fertilises an egg, the father's mitochondria are actively destroyed in the developing embryo. All mitochondria in a new person therefore come from the mother's egg. This means mtDNA mutations are passed from mother to all her children, but a father with a mitochondrial mutation cannot pass it on. This pattern — every child of an affected mother inherits the mutation, but no child of an affected father does — is called **maternal inheritance**.\n\n**Types of mtDNA mutation**\n\n1. **Point mutations** — a single base change in the mtDNA. These can affect a protein-coding gene or, very importantly, a transfer RNA gene. A mutation in a tRNA gene can impair the translation of all 13 mitochondrially-encoded proteins at once, causing broad respiratory chain dysfunction.\n\n2. **Large deletions** — sections of the mtDNA are lost entirely. These typically arise spontaneously rather than being inherited from the mother, and they are associated with diseases such as Kearns-Sayre syndrome and chronic progressive external ophthalmoplegia.\n\n**Well-known mtDNA diseases**\n\n| Disease | Mutation | Primary defect |\n|---|---|---|\n| **MELAS** (mitochondrial encephalomyopathy, lactic acidosis, stroke-like episodes) | m.3243A>G in the tRNA-Leu gene | Impaired Complex I and overall OXPHOS |\n| **MERRF** (myoclonic epilepsy with ragged-red fibres) | m.8344A>G in the tRNA-Lys gene | Impaired Complex I and IV |\n| **LHON** (Leber hereditary optic neuropathy) | Point mutations in genes encoding Complex I subunits (e.g. m.11778G>A in ND4) | Selective loss of retinal ganglion cells |\n| **Leigh syndrome** (some cases) | Various mtDNA or nuclear mutations affecting Complex I, IV, or ATP synthase | Bilateral brainstem lesions, early onset |\n\n**Heteroplasmy**\n\nA cell contains hundreds to thousands of mtDNA copies. If only some copies carry a mutation, the cell is said to be **heteroplasmic**. Disease usually appears only when the proportion of mutant mtDNA crosses a threshold (often around 60-80%). This is one reason why severity varies among family members who carry the same mutation.\n\n**Connection to the electron transport chain**\n\nBecause the affected genes encode respiratory chain subunits or the tRNAs needed to make them, all these diseases ultimately impair the cell's ability to run oxidative phosphorylation. Tissues with the highest energy demand — brain, heart, skeletal muscle, retina — are hit hardest, because they depend most heavily on a continuous ATP supply from mitochondria.",
+    "options": [
+      {
+        "id": "n_gh3np6wz8krvmxs1qt0bc5jyd4e",
+        "title": "Mitochondria as semi-autonomous organelles",
+        "canonical_question": "Why are mitochondria considered semi-autonomous organelles?",
+        "why": "mtDNA diseases arise directly from the fact that mitochondria carry their own genome; understanding semi-autonomy explains why mutations in that genome have such serious consequences."
+      },
+      {
+        "id": "n_tr06qs3jrcxhkdvmybt6fpzwn0",
+        "title": "Mitochondrial DNA replication",
+        "canonical_question": "How is mitochondrial DNA replicated and which polymerase carries out this process?",
+        "why": "Errors introduced by DNA polymerase gamma (POLG) during mtDNA replication are one source of the somatic mutations that accumulate in mtDNA diseases and ageing."
+      },
+      {
+        "id": "n_d2z8pm1sw6ybqren3vt5cx7kh0",
+        "title": "Oxygen as the final electron acceptor",
+        "canonical_question": "Why does the electron transport chain require oxygen?",
+        "why": "mtDNA mutations impair the respiratory chain; revisiting how the chain normally uses oxygen anchors the disease mechanism in the core energy-production process."
+      }
+    ],
+    "warnings": ["out_of_scope"]
+  }
+}

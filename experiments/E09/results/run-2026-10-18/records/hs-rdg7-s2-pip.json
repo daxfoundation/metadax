@@ -1,0 +1,36 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s2-pip",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 2,
+    "title": "Sounds That Stick",
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-15",
+  "attempted": [
+    {
+      "game": "Word Chain Race",
+      "answered": 14,
+      "right": 11
+    }
+  ],
+  "reached": [
+    {
+      "game": "Word Chain Race",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "reversed sounds in short blends",
+      "count": 2
+    }
+  ],
+  "learner_words": "Jo showed me the trick with the slushy sounds. I kept saying them backwards.",
+  "guide_note": "Wednesday, mid-morning. Both kids were at the table at the same time which is always a gamble. Pip was working through Word Chain Race and got stuck on two blends where she was flipping the sound order — saying something like 'lf' instead of 'fl'. Jo, who had already finished their session, leaned over and quietly walked her through it with a little hand motion trick they made up. I let it happen. Pip got 11 of 14 and made it to level 2. She needed more breaks than Jo and I had to remind her twice to focus, but she pushed through. Nice sibling moment.",
+  "generated_by": "parent-filed"
+}

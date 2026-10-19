@@ -1,0 +1,48 @@
+{
+  "session_id": "ses-20261018-w2ab",
+  "wave": 2,
+  "display_name": "Lena",
+  "profile_summary": "Mid-career Spanish adult learner with prior physics exposure and a strong car-mechanics frame of reference; patient, self-directed, rarely lost.",
+  "turns": 4,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "kinematic-quantities",
+    "newtons-second-law"
+  ],
+  "followed_seeds": [
+    "How exactly do we add two forces that point in different directions?",
+    "Why does turning at constant speed still count as acceleration?",
+    "How will acceleration connect to force in Newton's second law?"
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "marker_responses": [
+    {
+      "spot": "adding forces in different directions (vector addition)",
+      "entered": true,
+      "then": "arrived"
+    },
+    {
+      "spot": "why turning at constant speed is still acceleration",
+      "entered": false,
+      "then": null
+    }
+  ],
+  "offer_responses": [
+    {
+      "offer_id": "of-s-02",
+      "seed": "How will acceleration connect to force in Newton's second law?",
+      "response": "took_up",
+      "why_short": "Natural next step after working through the kinematic quantities — Lena wanted to see where it was all heading."
+    },
+    {
+      "offer_id": "of-s-03",
+      "seed": "What if there are three forces instead of two?",
+      "response": "declined",
+      "why_short": "Felt it was a complication she could handle herself once she had the two-force case solid; preferred to move on."
+    }
+  ],
+  "stalls": []
+}

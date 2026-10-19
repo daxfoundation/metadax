@@ -1,0 +1,9 @@
+{
+  "schema": "x04.kanon-aggregate/sim",
+  "k": 5,
+  "holes_total": 11,
+  "holes_published": 0,
+  "holes_suppressed_below_k": 11,
+  "published": [],
+  "note": "k=5: a hole is published only if >= 5 distinct sessions contributed; 11 holes suppressed (reported, never silently dropped). At this cohort size (n<=12) the k-anon view is almost entirely suppressed -- the aggregate only becomes useful at population scale. This is the sketch, not a deployable DP mechanism."
+}

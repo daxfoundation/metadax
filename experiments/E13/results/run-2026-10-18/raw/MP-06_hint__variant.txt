@@ -1,0 +1,55 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "Here is a hint: think about what has built up on one side of the inner membrane, and what happens when it is allowed to flow back through a dedicated channel.",
+    "instructions": "Answer in one or two sentences in your own words.",
+    "example": "Example (format only): In your own words, what does a cell membrane do?",
+    "question": "In your own words, what is the job of ATP synthase?",
+    "options": []
+  },
+  "meta": {
+    "concept": "atp-synthesis",
+    "bloom_level": "Understand",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "feedback": {
+    "result": null,
+    "hint": "Think about what has built up on one side of the inner membrane, and what happens when it is allowed to flow back through a dedicated channel.",
+    "correct_answer": "",
+    "explanation": "",
+    "misconception": ""
+  },
+  "state": {
+    "concept_order": [
+      "atp-synthesis",
+      "electron-transport-chain"
+    ],
+    "concept": "atp-synthesis",
+    "level": "Understand",
+    "attempt": 1,
+    "help_used": true,
+    "hints_given": 1,
+    "phase": "main",
+    "levels": {
+      "atp-synthesis": {
+        "Remember": "passed_first_try"
+      },
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "not_started",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      }
+    },
+    "competency": {
+      "atp-synthesis": 15,
+      "electron-transport-chain": 38
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

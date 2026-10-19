@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.3/marker.schema.json",
+  "title": "metadax.marker/0.3",
+  "_why": "B09/B12 — an atlas marker is attached to a node by its opaque id and carries that id, so it pins to the exact node a learner stands on rather than an approximate (module, concept, depth).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["marker_id", "node_id", "at_depth", "signature_label", "text"],
+  "properties": {
+    "marker_id": { "type": "string", "pattern": "^mk-[0-9]+$" },
+    "node_id": { "type": "string", "pattern": "^(L\\d\\d\\.M\\d\\d\\.O\\d\\d|n_[0-9a-hjkmnp-tv-z]{26})$" },
+    "at_depth": { "anyOf": [ { "type": "integer", "minimum": 1 }, { "type": "null" } ] },
+    "signature_label": {
+      "enum": ["answer_too_abstract", "prerequisite_gap", "patience_exhausted", "lost_the_thread", "depth_without_payoff", "ambiguous_next", "other"],
+      "_why": "B11 — the stuck signature is a LABEL on the marker, never part of the cluster key."
+    },
+    "seen_by_sessions": { "type": "integer", "minimum": 0 },
+    "text": { "type": "string", "maxLength": 500 }
+  }
+}

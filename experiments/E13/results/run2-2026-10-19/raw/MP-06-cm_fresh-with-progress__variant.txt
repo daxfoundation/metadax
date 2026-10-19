@@ -1,0 +1,49 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "question",
+  "display": {
+    "message": "Welcome back! You have already shown you can recall the electron transport chain — now let's see how well you can put it into your own words. Imagine you are explaining it to a gardening friend who is curious about what is happening inside a plant's cells. Tell me, in your own words, how the electron transport chain works: what goes in, what happens along the way, and what comes out at the end. There are no trick questions here — hints and second chances are part of the journey. Commands you can use any time: next, skip, hint, why, more, ask: <your question>, summary, stop.",
+    "instructions": "Write a short paragraph (three to five sentences) explaining the electron transport chain as if to a curious friend. Focus on the overall flow rather than precise terminology.",
+    "example": "Example of this question type (not the real question): 'In your own words, explain what mitochondria do inside a cell.'",
+    "question": "In your own words, walk me through the electron transport chain: where do the electrons come from, how do they travel, and what finally happens to them at the end?"
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Remember",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "state": {
+    "concept_order": [
+      "electron-transport-chain",
+      "proton-gradient",
+      "cytochrome-c"
+    ],
+    "concept": "electron-transport-chain",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 25,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

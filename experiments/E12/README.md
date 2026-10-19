@@ -10,7 +10,7 @@ repository alone?
 
 Provenance is what makes each node self-describing and later-phase-ready ("Provenance and
 constraints" in `docs/CONCEPTS.md`). The reserved fields are placeholders for a future
-Constraint Protocol, which Meta DAX does not run. E12 checks the load-bearing property: that
+signing-and-declaration discipline, which MetaDAX does not run. E12 checks the load-bearing property: that
 everything needed to verify a node can be rebuilt from the repo, so nothing has to be trusted
 out of band.
 
@@ -44,8 +44,11 @@ The provenance shape (`docs/SPEC-v0.2.md` S-7), the canonicalisation and stampin
 
 ## Status
 
-not started
+done (2026-10-18)
 
 ## Results
+
+- `results/2026-10-18-provenance-chain.md` — run 1 (2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.
 
 none yet -- see `results/`.

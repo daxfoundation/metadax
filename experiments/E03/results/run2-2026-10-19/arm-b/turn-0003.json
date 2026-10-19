@@ -1,0 +1,35 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "Good effort, Priya! You're on the right track, but let's sharpen things up.\n\n**What you did well:** You correctly identified the four herbs as the possible outcomes.\n\n**What to develop:** A sample space is usually written as a set: **S = {rosemary, thyme, basil, oregano}**.\n\n---\n\nLet's try once more.\n\n**Question 3 of 3 (attempt 2)**\n\nPriya places 5 seed packets into a bag: carrot, beetroot, courgette, spinach, and kale. She picks one packet at random.\n\n**Write the sample space and explain in one sentence why this counts as a random event.**"
+  },
+  "meta": {
+    "concept": "random-event",
+    "bloom_level": "Understand",
+    "question_type": "open",
+    "attempt": 2
+  },
+  "feedback": {
+    "result": "partial",
+    "hint": "Write the sample space as a set: S = {outcome1, outcome2, ...}.",
+    "correct_answer": "S = {rosemary, thyme, basil, oregano}.",
+    "explanation": "Priya listed the four herbs correctly but did not format them as a sample space.",
+    "misconception": null
+  },
+  "handoff": null,
+  "summary": null,
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 2,
+    "help_used": false,
+    "hints_given": 1,
+    "phase": "question",
+    "levels": ["Remember", "Understand"],
+    "competency": 40
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

@@ -2,7 +2,7 @@
 
 *Unexplored regions shaded and offered — never pushed.*
 
-**Status: designed.**
+**Status: done (simulated, first run 2026-10-18).**
 
 ## Question
 
@@ -79,3 +79,8 @@ whether "never pushed" actually feels better than nudging.
 
 Rides on **v0.3 IDs**. Inverse of **X04**. Shares no-push/refusal with **X10**. Feeds
 **X12**.
+
+## Results
+
+- `results/2026-10-18-negative-space.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.

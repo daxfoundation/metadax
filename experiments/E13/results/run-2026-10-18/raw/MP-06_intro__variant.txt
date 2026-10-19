@@ -1,0 +1,49 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "question",
+  "display": {
+    "message": "Welcome! Before we begin, here is a recall check to see what you already know — a retrieval question to help us find the best starting point. Don't worry if you're unsure; hints and second chances are a normal part of learning here. Commands you can use at any time: next, skip, hint, why, more, ask: <your question>, summary, stop.",
+    "instructions": "In your own words, answer the question below. There is no need to be precise — just share what comes to mind.",
+    "example": "Example (not the real question): In your own words, what is a cell membrane?",
+    "question": "In your own words, what do you already know about the proton gradient in the mitochondrion — what it is, or why it matters?"
+  },
+  "meta": {
+    "concept": "proton-gradient",
+    "bloom_level": "Remember",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "proton-gradient",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "not_started",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 38,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

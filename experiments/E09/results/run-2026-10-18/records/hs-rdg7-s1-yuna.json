@@ -1,0 +1,38 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s1-yuna",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 1,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-13",
+  "attempted": [
+    {
+      "game": "Dino Sound Game",
+      "answered": 11,
+      "right": 8
+    }
+  ],
+  "reached": [
+    {
+      "game": "Dino Sound Game",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "behaviour": "said the sounds but they stayed apart",
+      "count": 2
+    },
+    {
+      "behaviour": "guessed from the first sound",
+      "count": 1
+    }
+  ],
+  "guide_note": "Got through it. Blending is the main sticking point.",
+  "generated_by": "parent-filed"
+}

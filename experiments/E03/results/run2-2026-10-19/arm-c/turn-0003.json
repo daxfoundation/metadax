@@ -1,0 +1,41 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "Good start, Tomás — you're on the right track, but let's sharpen it up.\n\n**What you got right:** You correctly listed the six faces (1 through 6) as the possible outcomes.\n\n**What needs more:** The explanation of *why* each outcome is part of a random event was thin. A random event isn't just about having multiple outcomes — it's that **no single outcome is guaranteed in advance**.\n\n---\n\n**Question 2 — Understand (attempt 2)**\n\nSame scenario: one roll of a six-sided die.\n\nDescribe the sample space **and** explain what makes this a random event — focus on uncertainty *before* the outcome occurs."
+  },
+  "meta": {
+    "concept": "random-event",
+    "bloom_level": "Understand",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 2
+  },
+  "feedback": {
+    "result": "partial",
+    "hint": "Focus on the idea of uncertainty before the outcome occurs, and certainty about the set of what's possible.",
+    "correct_answer": "S = {1, 2, 3, 4, 5, 6}. This is a random event because before the die lands, no outcome is guaranteed — any face could come up.",
+    "explanation": "Partial credit: sample space correctly identified, but the reasoning about randomness and uncertainty was not sufficiently developed."
+  },
+  "handoff": null,
+  "summary": null,
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 2,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "random-event": {
+        "Remember": "passed_first_try",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "random-event": 40
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

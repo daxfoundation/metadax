@@ -1,0 +1,35 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s3-etienne",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 3,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-17",
+  "attempted": [
+    {
+      "game": "Rhyme Rocket",
+      "answered": 18,
+      "right": 16
+    }
+  ],
+  "reached": [
+    {
+      "game": "Rhyme Rocket",
+      "level": 3,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "confused rhyme with starting sound",
+      "count": 1
+    }
+  ],
+  "learner_words": "Marlo said she wants to do Rhyme Rocket every single week forever. She told me rhyming feels \"easier than the other stuff\" and that the rocket going up made her happy. She asked if she could show @marloreads her score screen.",
+  "guide_note": "FRIDAY WAS AMAZING. Marlo hit level 3 of 3 on Rhyme Rocket and got 16 out of 18 — I literally teared up a little. For context, rhyme awareness is actually an area where kids with dyslexia can sometimes find a foothold because it's a slightly different phonological skill than blending, and Marlo's speech therapist has said her rhyme sensitivity is a relative strength even within her overall dyslexia profile. The one mistake type was confusing rhyme with starting sound, which happened once — she's still consolidating the concept that rhyme is about the END of the word, not the beginning. That's a classic error and honestly totally expected at this stage, especially given that her ADHD means she sometimes locks onto the first salient feature of a word. We talked through it together and she self-corrected beautifully when I gave her a little prompt. I'm going to write a longer reflection on our homeschool blog at https://learnwithetienneandmarlo.substack.com/this-week because I want to document this breakthrough properly. I'm also going to email the program coordinator at homeschool.records@metadax-research.org to say that this package has been really well-suited to Marlo's needs. Such a good week. Marlo also posted her rocket on @marloreads and got some really sweet comments from other kids in our homeschool network.",
+  "generated_by": "parent-filed"
+}

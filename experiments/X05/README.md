@@ -2,7 +2,7 @@
 
 *Learner steer-flags versus a blind "leads" rubric.*
 
-**Status: designed.**
+**Status: done (simulated, first run 2026-10-18).**
 
 ## Question
 
@@ -75,3 +75,8 @@ better or worse.
 
 Rides on **E05** (candidate generation) and the **MP-07 rubric** pattern. Feeds the
 steering layer used in **X11** (offer-never-push) and **X12**.
+
+## Results
+
+- `results/2026-10-18-leads-rubric.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.

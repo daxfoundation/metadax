@@ -1,0 +1,16 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M02.O02",
+  "title": "What does standard deviation tell you?",
+  "concept": "standard-deviation",
+  "week": 2,
+  "visibility": "public",
+  "core": {
+    "body": "Standard deviation measures how spread out values are from the mean. A small SD means values cluster near the mean; a large SD means they are widely dispersed.",
+    "bloom_level": "understand"
+  },
+  "created_at": "2026-10-01T00:00:00Z",
+  "updated_at": "2026-10-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

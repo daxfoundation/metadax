@@ -1,0 +1,18 @@
+{
+  "schema": "metadax.refusal/0.2",
+  "learner_id": "lrn-mira01",
+  "entries": [
+    {
+      "id": "r-01",
+      "pattern": "Excel formulas",
+      "reason": "Already proficient; re-covering this topic wastes session time.",
+      "created_at": "2026-09-10T10:00:00Z"
+    },
+    {
+      "id": "r-02",
+      "pattern": "Tableau",
+      "reason": "Not available at her workplace; her employer uses a different BI tool.",
+      "created_at": "2026-09-15T14:00:00Z"
+    }
+  ]
+}

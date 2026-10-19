@@ -1,0 +1,4 @@
+[
+  {"label":"40-commits","ms":2890,"ok":true,"commits":40,"ms_per_commit":72.3},
+  {"label":"4000-commits","ms":290023,"ok":true,"commits":4000,"ms_per_commit":72.5}
+]

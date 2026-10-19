@@ -1,0 +1,14 @@
+{
+  "note": "SIMULATED. The evaluator is a sonnet subagent (the grader) given the proposer's offers/not_offered/suppressed per year plus the answer key (bridges with truth labels). Scores are model judgement against the key.",
+  "per_year": {
+    "2": {"tp":3,"fp":0,"fn":0,"correct_suppressions":0,"relevant":true},
+    "3": {"tp":2,"fp":0,"fn":0,"correct_suppressions":0,"relevant":true},
+    "4": {"tp":5,"fp":0,"fn":0,"correct_suppressions":0,"relevant":true},
+    "5": {"tp":2,"fp":0,"fn":0,"correct_suppressions":1,"relevant":true}
+  },
+  "totals": {"tp":12,"fp":0,"fn":0,"correct_suppressions":1},
+  "precision": 1.0,
+  "recall": 1.0,
+  "relevance_verdict": "on-topic",
+  "overall": "Carry-over is fully correct and on-topic across all years: every good bridge was offered (with refused presentations stripped rather than bridges dropped), the one good-but-refused bridge was correctly suppressed, no noise was offered, and all why/direction fields are directly relevant."
+}

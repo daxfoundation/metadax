@@ -1,0 +1,58 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "That's exactly right! Without oxygen to accept the electrons at the final complex, the whole chain stalls — and because electrons stop moving, no energy is released to pump protons, so the gradient collapses and ATP synthesis halts. Well done.",
+    "instructions": "Read the Assertion and the Reason below. Choose the option that best describes their relationship.\n\n1. Both statements are true, and the Reason explains the Assertion.\n2. Both statements are true, but the Reason does NOT explain the Assertion.\n3. The Assertion is true, but the Reason is false.\n4. The Assertion is false, but the Reason is true.\n5. Both statements are false.",
+    "example": "**Example (not the real question):**\nAssertion: Electrons enter the chain at the first complex.\nReason: High-energy electrons released from nutrients are the chain's starting fuel.\n\nYou would pick option 1 if you think both are true and the Reason explains the Assertion.",
+    "question": "**Assertion:** The electron transport chain can only sustain proton pumping as long as electrons keep moving through the complexes.\n\n**Reason:** Oxygen's role at the final complex is to act as the terminal electron acceptor, and removing it halts electron flow through every upstream complex.\n\nWhich option (1-5) best describes these two statements?",
+    "options": [
+      "1 Both true, and the Reason explains the Assertion",
+      "2 Both true, but the Reason does not explain it",
+      "3 Assertion true, Reason false",
+      "4 Assertion false, Reason true",
+      "5 Both false"
+    ]
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Analyze",
+    "question_type": "Assertion-Reason",
+    "attempt": 1
+  },
+  "feedback": {
+    "result": "correct",
+    "explanation": "Oxygen accepts the electrons at the last complex; without it the chain backs up and stops, so proton pumping — and therefore ATP synthesis — halts. Your answer captured all three links in that chain of cause and effect."
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Analyze",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "passed_first_try",
+        "Analyze": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 69,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

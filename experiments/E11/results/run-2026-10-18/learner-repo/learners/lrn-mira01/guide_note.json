@@ -1,0 +1,6 @@
+{
+  "schema": "metadax.guide-note/0.2",
+  "author": "Carlos",
+  "created_at": "2026-10-05T11:00:00Z",
+  "note": "Mira is progressing steadily and shows strong engagement in weeks 1 through 4. She flagged difficulty with SQL joins in week 5 and would benefit from the SQL-joins follow-up being re-offered at the next session. She is a self-motivated learner who absorbs concepts better when given real-world context before formal definitions. Consider leading with a worked data-cleaning example before the Python introduction in week 6."
+}

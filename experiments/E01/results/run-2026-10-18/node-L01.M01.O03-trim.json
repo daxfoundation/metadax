@@ -1,0 +1,13 @@
+{
+  "id": "L01.M01.O03",
+  "schema": "metadax.node/0.3",
+  "depth": 1,
+  "title": "Calculate classical probability using the ratio formula",
+  "seeds": [
+    "What do you do when not all outcomes in the sample space are equally likely?",
+    "How does the complement rule help when the event you want is complicated?",
+    "Can two different events have the same probability even in very different experiments?"
+  ],
+  "validate": "OK",
+  "content_sha256": "2b8dc954bd162228..."
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M05.O01",
+  "title": "What does SELECT * FROM do?",
+  "concept": "sql-basics",
+  "week": 5,
+  "visibility": "public",
+  "core": {
+    "body": "SELECT * FROM table_name returns every column and every row from the specified table. Add a WHERE clause to filter rows.",
+    "bloom_level": "understand"
+  },
+  "created_at": "2026-13-01T00:00:00Z",
+  "updated_at": "2026-13-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

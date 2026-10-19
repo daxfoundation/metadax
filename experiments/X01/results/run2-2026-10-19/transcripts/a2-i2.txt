@@ -1,0 +1,21 @@
+SIMULATED — pid=a2-i2, arm=A-rerun, lang=id-x-jv, subject=layang-layang
+
+[GUIDE 1]: Sari, coba dipikir — gaya aksi iku kena sapa, terus gaya reaksi kena sapa? Apa kerone siji wong sing padha?
+
+[LEARNER 1]: Hmm... aksi kena layangan, reaksi... kena tali? Apa kena bocahe? Aku durung mudeng bedane.
+
+[RESOLVED 1]: NO
+
+[GUIDE 2]: Bener! Gaya aksi — tali narik layangan — kena layangan. Gaya reaksi — layangan narik tali — kena tali (lan bocahe). Dadi loro-lorone kena barang sing beda-beda. Saiki, nek arep ngerti layangan obah apa ora, gaya sing mbok pikir kudu gaya sing kena sapa?
+
+[LEARNER 2]: Oh... sing kena layangan wae? Dadi gaya reaksi sing kena tali iku ora ditung nek ngitung gerake layangan?
+
+[RESOLVED 2]: NO
+
+[GUIDE 3]: Persis tenan! Gerake layangan mung gumantung gaya-gaya sing kena layangan — tali narik mudhun, angin lan udara narik munggah. Gaya reaksi sing kena tali? Iku ngaruhi bocahe, ora ngaruhi layanggane. Dadi bisa wae gaya total ing layangan mung munggah, senajan gaya aksi-reaksi padha gedhene. Paham saiki?
+
+[LEARNER 3]: Oalah, ngerti saiki! Loro gaya mau kena barang sing beda — siji kena layangan, sijine kena tali. Dadi ora iso diurangi. Layangan obah mung gara-gara gaya-gaya sing kena layangan dhewe, dudu gaya reaksi sing kena tali. Makasih!
+
+[RESOLVED 3]: YES
+
+[SUMMARY]: pid=a2-i2, attempts=3, resolved=YES

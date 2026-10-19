@@ -1,0 +1,9 @@
+SIMULATED — pid=c-i1, arm=C (no technique), lang=id-x-jv, subject=mendayung perahu
+
+[GUIDE 1]: Rina, pertanyaanmu apik banget! Tapi ayo dipikir maneh — gaya sing padha lan ngelawan iku ngenani OBJEK sing beda, lho. Dayung nyurung banyu, iku gaya neng banyu. Banyu nyurung balik, iku gaya neng dayung (lan perahu). Loro gaya iku ora ketemu ing siji objek sing sama — dadi ora iso "cancel" siji karo sijine. Perahu maju amarga gaya sing ngenani perahu saka banyu, dudu amarga gaya sing ngenani banyu. Coba dipikir: apa wae gaya-gaya sing ngenani perahu tok, ora karo banyu?
+
+[LEARNER 1]: Hmm, nek mikirke perahu tok... gaya sing ngenani perahu ya mung saka banyu sing nyurung balik ngarep? Dayung nyurung banyu iku gaya saka perahu menyang banyu, dudu ngenani perahune. Apa ngono maksude?
+
+[RESOLVED 1]: YES
+
+[SUMMARY]: pid=c-i1, attempts=1, resolved=YES

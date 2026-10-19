@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.progress/0.2",
+  "learner_id": "lrn-mira01",
+  "course_id": "data-analysis-fundamentals",
+  "device_id": "dev-alpha",
+  "snapshot_date": "2026-09-21",
+  "week_number": 3,
+  "topics_covered": [
+    "visualization-fundamentals",
+    "chart-types",
+    "when-to-use-which-chart"
+  ],
+  "overall_competency": "developing",
+  "sessions_completed": 3,
+  "nodes_visited": [
+    "L01.M03.O01",
+    "L01.M03.O02",
+    "L01.M03.O03"
+  ],
+  "weekly_summary": "Explored bar charts, line charts and scatter plots. Identified when each is appropriate. Noted confusion around dual-axis charts."
+}

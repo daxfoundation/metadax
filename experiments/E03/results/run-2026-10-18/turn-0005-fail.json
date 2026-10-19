@@ -1,0 +1,58 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "summary",
+  "display": {
+    "message": "Here's your session summary, Marcus.\n\n**Concept: Random Event**\n- Remember: passed on first try\n- Understand: passed on second attempt\n- Competency: **78%**\n\nYou've demonstrated solid understanding of what a random event is and how to describe its outcomes. The one area to sharpen: distinguishing between 'multiple outcomes' and 'uncertain outcome' as two separate, named features — you got there on the second try.\n\n**Recommended next steps:**\n1. Read objective L01.M01.O02 — constructing a sample space — which builds directly on listing outcomes.\n2. Revisit section s2 of L01.M01.O01 to cement the two-feature definition before moving on.\n3. Try the follow-up node on the classical probability formula (1/6) to connect today's work to calculation."
+  },
+  "meta": null,
+  "feedback": null,
+  "handoff": null,
+  "summary": {
+    "concepts": [
+      {
+        "id": "random-event",
+        "name": "Random Event",
+        "competency": 78,
+        "levels": {
+          "Remember": "passed_first_try",
+          "Understand": "passed_after_help"
+        }
+      }
+    ],
+    "strengths": [
+      "random-event"
+    ],
+    "areas_for_improvement": [],
+    "misconceptions": [],
+    "recommendations": [
+      "Proceed to L01.M01.O02: Construct the sample space for a simple experiment.",
+      "Re-read section s2 (What Makes an Event Random) to anchor the two-feature definition firmly.",
+      "Explore the follow-up node on 1/6 to see the formula in action with the outcome list you've practised.",
+      "Try a few more Understand-level questions on random events before moving to Apply."
+    ],
+    "encouragement": "You came back to maths after twenty years and demonstrated genuine understanding today — that's not trivial, and it will make helping your daughter much easier."
+  },
+  "state": {
+    "concept_order": [
+      "random-event"
+    ],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 2,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "random-event": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help"
+      }
+    },
+    "competency": {
+      "random-event": 78
+    }
+  },
+  "next_action": "done",
+  "warnings": [],
+  "ts": "2026-10-18T21:02:58Z"
+}

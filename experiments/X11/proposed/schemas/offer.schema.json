@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.3/offer.schema.json",
+  "title": "metadax.offer/0.3",
+  "_why": "X11 — a negative-space offer is information plus a symmetric choice. B16: wording must carry no scarcity/novelty/pressure framing. The generator asserts a frozen banned-phrase list before shipping any text (see tools/build-offers.js).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["offer_id", "kind", "text"],
+  "properties": {
+    "offer_id": { "type": "string", "pattern": "^of-[a-z]-[a-z0-9-]+$" },
+    "kind": { "enum": ["unreached_concept", "open_question"] },
+    "concept": { "type": "string" },
+    "node_id": { "anyOf": [ { "type": "string", "pattern": "^(L\\d\\d\\.M\\d\\d\\.O\\d\\d|n_[0-9a-hjkmnp-tv-z]{26})$" }, { "type": "null" } ] },
+    "from_node": { "type": "string" },
+    "seed": { "type": "string" },
+    "text": {
+      "type": "string",
+      "maxLength": 400,
+      "_banned": "must not match /few have|no one has|only a handful|be one of the|rare|exclusive|don't miss|last chance|everyone else|popular/i"
+    }
+  }
+}

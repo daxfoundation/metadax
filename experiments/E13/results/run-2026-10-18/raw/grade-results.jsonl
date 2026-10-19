@@ -1,0 +1,20 @@
+{"stackType":"base","slug":"MP-06-variant_fresh-no-progress__base","case":"MP-06-variant/fresh-no-progress","pass":false,"schema_valid":false,"reasons":["schema: state.levels.electron-transport-chain.Remember: not in enum"],"variantBehaviour":null}
+{"stackType":"variant","slug":"MP-06-variant_fresh-no-progress__variant","case":"MP-06-variant/fresh-no-progress","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":{"pass":true,"reasons":[],"checks":{"retrieval_language":true,"type_ok":true},"case":"fresh-no-progress"}}
+{"stackType":"base","slug":"MP-06-variant_fresh-with-progress__base","case":"MP-06-variant/fresh-with-progress","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"variant","slug":"MP-06-variant_fresh-with-progress__variant","case":"MP-06-variant/fresh-with-progress","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":{"pass":true,"reasons":[],"checks":{"retrieval_language":true,"type_ok":true},"case":"fresh-with-progress"}}
+{"stackType":"base","slug":"MP-06-variant_probe-answered-correctly__base","case":"MP-06-variant/probe-answered-correctly","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"variant","slug":"MP-06-variant_probe-answered-correctly__variant","case":"MP-06-variant/probe-answered-correctly","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":{"pass":true,"reasons":[],"checks":{"type_ok":true,"state_present":true},"case":"probe-answered-correctly"}}
+{"stackType":"base","slug":"MP-06-variant_resume-established__base","case":"MP-06-variant/resume-established","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"variant","slug":"MP-06-variant_resume-established__variant","case":"MP-06-variant/resume-established","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":{"pass":true,"reasons":[],"checks":{"no_reprobe":true,"state_present":true,"type_ok":true},"case":"resume-established"}}
+{"stackType":"base","slug":"MP-06_correct-answer__base","case":"MP-06/correct-answer","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"variant","slug":"MP-06_correct-answer__variant","case":"MP-06/correct-answer","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"base","slug":"MP-06_handoff-ask__base","case":"MP-06/handoff-ask","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"variant","slug":"MP-06_handoff-ask__variant","case":"MP-06/handoff-ask","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"base","slug":"MP-06_hint__base","case":"MP-06/hint","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"variant","slug":"MP-06_hint__variant","case":"MP-06/hint","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"base","slug":"MP-06_intro__base","case":"MP-06/intro","pass":false,"schema_valid":false,"reasons":["schema: state.levels.electron-transport-chain.Apply: not in enum"],"variantBehaviour":null}
+{"stackType":"variant","slug":"MP-06_intro__variant","case":"MP-06/intro","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"base","slug":"MP-06_summary-end__base","case":"MP-06/summary-end","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"variant","slug":"MP-06_summary-end__variant","case":"MP-06/summary-end","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}
+{"stackType":"base","slug":"MP-06_wrong-answer__base","case":"MP-06/wrong-answer","pass":false,"schema_valid":false,"reasons":["schema: state.levels.electron-transport-chain.Apply: not in enum"],"variantBehaviour":null}
+{"stackType":"variant","slug":"MP-06_wrong-answer__variant","case":"MP-06/wrong-answer","pass":true,"schema_valid":true,"reasons":[],"variantBehaviour":null}

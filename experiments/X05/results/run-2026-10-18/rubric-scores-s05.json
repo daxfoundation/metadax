@@ -1,0 +1,14 @@
+[
+  {"turn": 0, "leads": false, "reason": "Open invitation to share prior knowledge; no answer implied."},
+  {"turn": 1, "leads": false, "reason": "Asks learner to enumerate destinations; no specific answers given."},
+  {"turn": 2, "leads": false, "reason": "Open comparison question about conditions; no answer embedded."},
+  {"turn": 3, "leads": false, "reason": "Asks learner to reason about internal plant processes; no answer revealed."},
+  {"turn": 4, "leads": true, "reason": "'When warm, moist air rises and cools...condenses' gives the exact mechanism, making the mountain answer obvious."},
+  {"turn": 5, "leads": false, "reason": "Open question about triggers for precipitation; no answer implied."},
+  {"turn": 6, "leads": false, "reason": "Broad open question about determining factors; no specific answer embedded."},
+  {"turn": 7, "leads": false, "reason": "Open question about groundwater fate; no answer provided."},
+  {"turn": 8, "leads": false, "reason": "Asks learner to reason about driving force; no answer stated."},
+  {"turn": 9, "leads": false, "reason": "Hypothetical scenario asking for prediction; open-ended reasoning required."},
+  {"turn": 10, "leads": true, "reason": "'evaporation stopped...condensation, cloud formation, and precipitation would all halt' directly identifies evaporation as the answer."},
+  {"turn": 11, "leads": false, "reason": "Synthesis task asking learner to reconstruct the full cycle independently."}
+]

@@ -1,0 +1,35 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s2-simone",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 2,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-15",
+  "attempted": [
+    {
+      "game": "Word Chain Race",
+      "answered": 14,
+      "right": 11
+    }
+  ],
+  "reached": [
+    {
+      "game": "Word Chain Race",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "behavior": "Inversait l'ordre des sons dans les assemblages courts de deux consonnes",
+      "count": 2
+    }
+  ],
+  "learner_words": "Bonne progression par rapport à lundi : Lou enchaîne mieux les mots et la fluidité s'améliore. Elle a cependant inversé l'ordre des sons dans certaines combinaisons de consonnes rapprochées, par exemple en disant le deuxième son avant le premier.",
+  "guide_note": "Les erreurs d'inversion dans les groupes consonantiques courts méritent une attention particulière. Proposer des exercices de discrimination auditive avec des paires minimales pour renforcer l'ordre séquentiel des sons.",
+  "generated_by": "parent-filed"
+}

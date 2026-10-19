@@ -1,0 +1,117 @@
+{
+  "schema": "x04x11.markers/0.3-sim",
+  "source": "log-built",
+  "marker_count": 11,
+  "markers": [
+    {
+      "marker_id": "mk-01",
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "module_id": "L01.M02",
+      "concept": "inertial-frame",
+      "at_depth": 1,
+      "signature_label": "answer_too_abstract",
+      "seen_by_sessions": 3,
+      "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"inertial-frame\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    },
+    {
+      "marker_id": "mk-02",
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "module_id": "L01.M01",
+      "concept": "net-force",
+      "at_depth": 2,
+      "signature_label": "answer_too_abstract",
+      "seen_by_sessions": 3,
+      "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"net-force\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    },
+    {
+      "marker_id": "mk-03",
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "concept": "newtons-second-law",
+      "at_depth": 2,
+      "signature_label": "answer_too_abstract",
+      "seen_by_sessions": 3,
+      "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"newtons-second-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    },
+    {
+      "marker_id": "mk-04",
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "module_id": "L01.M01",
+      "concept": "kinematic-quantities",
+      "at_depth": 2,
+      "signature_label": "answer_too_abstract",
+      "seen_by_sessions": 2,
+      "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"kinematic-quantities\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    },
+    {
+      "marker_id": "mk-05",
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "module_id": "L02.M02",
+      "concept": "newtons-third-law",
+      "at_depth": 3,
+      "signature_label": "patience_exhausted",
+      "seen_by_sessions": 2,
+      "text": "Heads-up: some learners ran out of steam around here (around \"newtons-third-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    },
+    {
+      "marker_id": "mk-06",
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "module_id": "L01.M02",
+      "concept": "inertial-frame",
+      "at_depth": 2,
+      "signature_label": "prerequisite_gap",
+      "seen_by_sessions": 1,
+      "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"inertial-frame\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    },
+    {
+      "marker_id": "mk-07",
+      "node_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "module_id": "L02.M01",
+      "concept": "newtons-second-law",
+      "at_depth": 2,
+      "signature_label": "prerequisite_gap",
+      "seen_by_sessions": 1,
+      "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"newtons-second-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    },
+    {
+      "marker_id": "mk-08",
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "concept": "newtons-second-law",
+      "at_depth": 1,
+      "signature_label": "prerequisite_gap",
+      "seen_by_sessions": 1,
+      "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"newtons-second-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    },
+    {
+      "marker_id": "mk-09",
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "module_id": "L01.M01",
+      "concept": "kinematic-quantities",
+      "at_depth": 1,
+      "signature_label": "prerequisite_gap",
+      "seen_by_sessions": 1,
+      "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"kinematic-quantities\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    },
+    {
+      "marker_id": "mk-10",
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "module_id": "L01.M01",
+      "concept": "kinematic-quantities",
+      "at_depth": null,
+      "signature_label": "other",
+      "seen_by_sessions": 1,
+      "text": "Heads-up: some learners paused here (around \"kinematic-quantities\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    },
+    {
+      "marker_id": "mk-11",
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "module_id": "L01.M02",
+      "concept": "newtons-first-law",
+      "at_depth": null,
+      "signature_label": "other",
+      "seen_by_sessions": 1,
+      "text": "Heads-up: some learners paused here (around \"newtons-first-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+    }
+  ]
+}

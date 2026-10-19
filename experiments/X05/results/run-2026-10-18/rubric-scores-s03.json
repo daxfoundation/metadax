@@ -1,0 +1,14 @@
+[
+  {"turn": 0, "leads": false, "reason": "Open question asking learner's own thoughts with no answer implied."},
+  {"turn": 1, "leads": false, "reason": "Open hypothetical asking for a specific example from the learner's own reasoning."},
+  {"turn": 2, "leads": false, "reason": "Asks learner to recall or guess; no structural answer revealed."},
+  {"turn": 3, "leads": true, "reason": "'If the membrane is built from lipid molecules' presupposes the answer from T2 and narrows to solubility/polarity."},
+  {"turn": 4, "leads": false, "reason": "Provides the scenario setup but asks learner to reason through the outcome themselves."},
+  {"turn": 5, "leads": false, "reason": "Open guessing question; 'role' is broad and no specific function is suggested."},
+  {"turn": 6, "leads": true, "reason": "'Substances naturally move from high to low concentration' directly implies glucose flows inward, making the answer obvious."},
+  {"turn": 7, "leads": false, "reason": "Open question asking what the cell needs; does not name ATP or active transport."},
+  {"turn": 8, "leads": false, "reason": "Asks what water responds to without revealing the answer; 'what determines' is genuinely open."},
+  {"turn": 9, "leads": false, "reason": "Scenario-based prediction question; outcome not stated, learner must reason from solute concentration."},
+  {"turn": 10, "leads": false, "reason": "Open comparative question about benefit; no answer embedded or implied."},
+  {"turn": 11, "leads": false, "reason": "Synthesis question asking learner to produce their own description; no answers provided."}
+]

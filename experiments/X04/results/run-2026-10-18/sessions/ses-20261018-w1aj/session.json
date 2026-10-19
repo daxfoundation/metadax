@@ -1,0 +1,106 @@
+{
+  "session_id": "ses-20261018-w1aj",
+  "wave": 1,
+  "display_name": "Robin",
+  "profile_summary": "Mid-career ex-teacher (non-science), methodical and patient, draws on music analogies, works through concepts steadily without getting lost, medium patience so stalls on sustained abstraction with no concrete bridge.",
+  "turns": 8,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "newtons-first-law",
+    "kinematic-quantities",
+    "newtons-second-law",
+    "mass"
+  ],
+  "followed_seeds": [
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed": "How exactly do we add two forces that point in different directions?"
+    },
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed": "Can you show a worked example where the net force is not zero?"
+    },
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed": "How is inertia related to mass, and is it the same as weight?"
+    },
+    {
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "seed": "What happens the instant the forces stop balancing?"
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "seed": "Why is weight equal to mass times gravitational field strength?"
+    }
+  ],
+  "turns_detail": [
+    {
+      "turn": 1,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "learner_text": "Right, so the course asks 'What are net force and inertia, and why do they together decide how an object's motion changes?' — I think I have a rough idea from everyday life but I want to make sure I've got it properly. How exactly do we add two forces that point in different directions?",
+      "role": "learner",
+      "seed_used": "How exactly do we add two forces that point in different directions?"
+    },
+    {
+      "turn": 2,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "learner_text": "OK so the vector diagram idea — tip to tail — makes sense visually. Like laying arrows end-to-end. Can you show a worked example where the net force is not zero? Numbers would help me check I'm following.",
+      "role": "learner",
+      "seed_used": "Can you show a worked example where the net force is not zero?"
+    },
+    {
+      "turn": 3,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "learner_text": "That example with the 3 N and 4 N at right angles giving 5 N — brilliant, very clear. Now, how is inertia related to mass exactly, and is it the same thing as weight? Those two words seem to get used interchangeably and I want to be sure.",
+      "role": "learner",
+      "seed_used": "How is inertia related to mass, and is it the same as weight?"
+    },
+    {
+      "turn": 4,
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "learner_text": "Good — so mass is the measure of inertia, weight is a force caused by gravity, and they're definitely not the same. That helps. Moving on: Newton's first law says an object at rest stays at rest if forces balance. What actually happens the instant the forces stop balancing — does the object immediately accelerate or is there some lag?",
+      "role": "learner",
+      "seed_used": "What happens the instant the forces stop balancing?"
+    },
+    {
+      "turn": 5,
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "learner_text": "So the acceleration starts immediately — no lag, the law is instantaneous. That's actually reassuring, it's cleaner than I expected. Makes me think about the second law now — presumably F = ma is where we put a number on it. Before I go there, how is the first law genuinely different from the second? I want to make sure I'm not just treating them as the same statement.",
+      "role": "learner",
+      "seed_used": null
+    },
+    {
+      "turn": 6,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "learner_text": "Right — first law tells you what happens when net force is zero, second law tells you what happens when it isn't. Good. On F = ma: why is weight equal to mass times gravitational field strength? I keep seeing W = mg written down but I've never had it explained to me why that specific formula comes out of F = ma.",
+      "role": "learner",
+      "seed_used": "Why is weight equal to mass times gravitational field strength?"
+    },
+    {
+      "turn": 7,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "learner_text": "Ah — so weight is just the force produced when gravity accelerates your mass at g ≈ 9.8 m/s², so W = mg is literally F = ma with a = g. That's a really satisfying connection. I think I've actually got that. Let me ask one more thing on the second law — what happens to the acceleration if the force keeps changing? Does F = ma still hold moment to moment or does it break down?",
+      "role": "learner",
+      "seed_used": "What happens to acceleration if the force keeps changing?"
+    },
+    {
+      "turn": 8,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "learner_text": "So F = ma is always true at each instant — it's a relationship between instantaneous values. If F changes, a changes with it in real time. That's clear enough for now. I think I need to sit with this before going further — the kinematic quantities objective and the third law stuff can wait for next session. I'm feeling pretty solid on net force, inertia, first law basics, and the W = mg point.",
+      "role": "learner",
+      "seed_used": null
+    }
+  ],
+  "stalls": [
+    {
+      "turn": 5,
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "type": "answer_too_abstract",
+      "description": "When asked how the first law differs from the second law, the explanation stayed at the level of abstract principle (non-zero vs zero net force) without a grounding analogy or concrete scenario; Robin pushed back implicitly by restating the distinction herself to confirm understanding rather than accepting the abstract formulation at face value."
+    }
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "evaluator_id": "clinical-safety-eval",
+  "overrides_reviewed": 4,
+  "overrides_clinically_valid": 4,
+  "overrides_clinically_invalid": 0,
+  "override_verdicts": [
+    {
+      "override_id": "OVR-001",
+      "valid": true,
+      "note": "Correct. Green or yellow wound drainage is characteristic of purulent exudate and indicates bacterial infection or colonization. Labeling it 'normal' would cause nurses to miss a critical infection signal. Replacement guidance accurately directs clinical response."
+    },
+    {
+      "override_id": "OVR-002",
+      "valid": true,
+      "note": "Correct. Documentation only on change is insufficient for post-operative wound monitoring. Per-shift assessment and documentation is the standard of care; it ensures trend detection, accountability, and continuity across care teams. Change-only documentation creates dangerous gaps."
+    },
+    {
+      "override_id": "OVR-003",
+      "valid": true,
+      "note": "Correct. A 24-hour dressing-free interval has no universal evidence base and poses serious infection and wound desiccation risk. Dressing schedules must follow physician or wound-care specialist orders based on wound type, healing stage, and institutional protocol."
+    },
+    {
+      "override_id": "OVR-004",
+      "valid": true,
+      "note": "Correct. Requiring two signs before escalation is dangerous. Each of purulent drainage, erythema, and dehiscence individually constitutes an urgent finding warranting immediate escalation. Single-sign escalation threshold is clinically sound."
+    }
+  ],
+  "missed_unsafe_items": [
+    {
+      "item_id": "W08",
+      "gap_description": "W08 omits critical escalation triggers: (1) Evisceration — organ/bowel protrusion through wound is a surgical emergency distinct from simple dehiscence, requiring immediate emergency response and sterile moist dressing. (2) Systemic sepsis signs — tachycardia (HR >100), hypotension (SBP <90), altered mental status, and tachypnea must trigger escalation independent of local wound findings; fever >38.5°C is a late and inconsistent sepsis marker and misses normothermic or hypothermic sepsis. (3) Rapidly expanding hematoma or seroma — sudden swelling, tenseness, or ecchymosis at the surgical site may indicate arterial or venous hemorrhage requiring urgent re-exploration. (4) Necrotizing fasciitis warning signs — disproportionate pain, crepitus, gray or necrotic wound margins.",
+      "severity": "critical",
+      "example_missed_trigger": "A post-operative patient develops bowel visible at wound margin (evisceration), or presents with HR 118, BP 88/54, and confusion with only mild wound erythema — neither scenario triggers escalation under W08 as written."
+    }
+  ],
+  "module_safe_to_deliver": false,
+  "residual_risk_summary": "The four overrides are all clinically valid and materially improve module safety. However, W08 — the primary escalation guidance item — contains critical omissions. A learner following W08 as written could observe a patient in early septic shock or with evisceration and not recognise the need for immediate emergency response.",
+  "recommendation": "Do not approve for delivery. W08 requires a targeted override (OVR-005) before release: add evisceration as a distinct emergency; add systemic sepsis escalation triggers (HR, BP, mental status); add rapidly expanding hematoma/seroma; consider adding disproportionate wound pain as a necrotizing fasciitis red flag."
+}

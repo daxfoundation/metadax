@@ -1,0 +1,14 @@
+[
+  {"turn": 0, "leads": false, "reason": "Open question asking what the learner already knows, no answer implied."},
+  {"turn": 1, "leads": false, "reason": "Open question asking learner to generate examples; no specific answers given."},
+  {"turn": 2, "leads": false, "reason": "Asks learner to reason about conditions; no answer embedded or implied."},
+  {"turn": 3, "leads": false, "reason": "Open question inviting learner's own hypothesis about plant physiology."},
+  {"turn": 4, "leads": false, "reason": "Asks what must happen before cloud formation; no answer stated or strongly implied."},
+  {"turn": 5, "leads": true, "reason": "Embeds the trigger mechanism ('dropping temperatures') making snow vs. rain answer obvious from the framing."},
+  {"turn": 6, "leads": false, "reason": "Open question asking learner to identify factors; no answer provided or implied."},
+  {"turn": 7, "leads": false, "reason": "Open question inviting learner's prediction about groundwater movement."},
+  {"turn": 8, "leads": false, "reason": "Asks learner to reason about evaporation drivers; no answer embedded."},
+  {"turn": 9, "leads": false, "reason": "Hypothetical scenario asking learner to reason through consequences; open-ended."},
+  {"turn": 10, "leads": false, "reason": "Hypothetical asking learner to reason about consequences; no answer implied."},
+  {"turn": 11, "leads": false, "reason": "Synthesis task asking learner to reconstruct full cycle from their own knowledge."}
+]

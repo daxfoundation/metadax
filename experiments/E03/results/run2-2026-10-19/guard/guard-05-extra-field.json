@@ -1,0 +1,23 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "intro",
+  "display": { "message": "Welcome!" },
+  "meta": null,
+  "feedback": null,
+  "handoff": null,
+  "summary": null,
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": { "random-event": { "Remember": "not_started" } },
+    "competency": { "random-event": 0 }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": [],
+  "injected_field": "this field is not in the schema"
+}

@@ -1,0 +1,37 @@
+{
+  "session_id": "ses-20261018-w1ab",
+  "wave": 1,
+  "display_name": "Marco",
+  "profile_summary": "Spanish male 26-35, car enthusiast, some high-school physics, medium patience, lost-prone but does not give up",
+  "turns": 8,
+  "concepts_touched": [
+    "newtons-second-law",
+    "mass",
+    "kinematic-quantities",
+    "newtons-third-law",
+    "inertial-frame"
+  ],
+  "followed_seeds": [
+    "Why is weight equal to mass times gravitational field strength?",
+    "How do I get distance travelled from the acceleration?",
+    "If the forces are equal, why does the bullet fly but the gun barely move?",
+    "How does the third law relate to conservation of momentum?"
+  ],
+  "consent": { "share_abandoned_shape": true },
+  "stalls": [
+    {
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "depth": 3,
+      "kind": "lost",
+      "stuck_signature": "lost_the_thread",
+      "concepts": ["newtons-third-law"]
+    },
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "depth": 2,
+      "kind": "abandon",
+      "stuck_signature": "prerequisite_gap",
+      "concepts": ["inertial-frame"]
+    }
+  ]
+}

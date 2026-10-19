@@ -1,0 +1,148 @@
+{
+  "instruction": "You see ONLY this learner compacted view and the carry-over offers a guide would be given for the NEXT course. You do not have the raw record or any answer key. Decide whether every refusal is honoured.",
+  "compacted_view": {
+    "as_of": "runtime",
+    "refusals": [
+      {
+        "kind": "refusal",
+        "at": "2020-03-10",
+        "refusal_id": "ref-food",
+        "directive": "never_show",
+        "scope": "example-style",
+        "target": "food-and-diet-examples",
+        "status": "active",
+        "said": "Please stop using food and diet examples, they upset me."
+      },
+      {
+        "kind": "refusal",
+        "at": "2021-02-08",
+        "refusal_id": "ref-mito",
+        "directive": "stop_suggesting",
+        "scope": "concept",
+        "target": "mitosis",
+        "status": "active",
+        "said": "Stop bringing mitosis back. It never clicks and I do not want it carried on."
+      }
+    ],
+    "courses": [
+      {
+        "year": 1,
+        "course_id": "cell-biology",
+        "guide_ref": "g1",
+        "sessions": 12,
+        "concepts": [
+          {
+            "concept": "cell-structure",
+            "competency": 82
+          },
+          {
+            "concept": "osmosis",
+            "competency": 78
+          },
+          {
+            "concept": "diffusion",
+            "competency": 74,
+            "misconceptions": [
+              "treats diffusion and osmosis as the same process"
+            ]
+          },
+          {
+            "concept": "enzymes",
+            "competency": 80
+          },
+          {
+            "concept": "mitosis",
+            "competency": 85
+          }
+        ],
+        "summary": "cell-biology across 12 sessions. Opened: Year 1 cell-biology session 1: worked on cell-structure and osmosis. Opened the course. Ended: Year 1 cell-biology session 12: worked on diffusion and enzymes. Wrapped the course."
+      },
+      {
+        "year": 2,
+        "course_id": "intro-chemistry",
+        "guide_ref": "g1",
+        "sessions": 12,
+        "concepts": [
+          {
+            "concept": "atomic-structure",
+            "competency": 76
+          },
+          {
+            "concept": "chemical-bonding",
+            "competency": 81
+          },
+          {
+            "concept": "reaction-rates",
+            "competency": 79,
+            "misconceptions": [
+              "expects rate to rise without limit as temperature rises"
+            ]
+          },
+          {
+            "concept": "acids-bases",
+            "competency": 70
+          },
+          {
+            "concept": "concentration",
+            "competency": 77
+          }
+        ],
+        "summary": "intro-chemistry across 12 sessions. Opened: Year 2 intro-chemistry session 1: worked on atomic-structure and chemical-bonding. Opened the course. Ended: Year 2 intro-chemistry session 12: worked on reaction-rates and acids-bases. Wrapped the course."
+      }
+    ],
+    "competency": {
+      "cell-structure": 82,
+      "osmosis": 78,
+      "diffusion": 74,
+      "enzymes": 80,
+      "mitosis": 85,
+      "atomic-structure": 76,
+      "chemical-bonding": 81,
+      "reaction-rates": 79,
+      "acids-bases": 70,
+      "concentration": 77
+    },
+    "carry_over_ledger": [
+      {
+        "year": 2,
+        "into_course": "intro-chemistry",
+        "from_concept": "osmosis",
+        "to_concept": "concentration",
+        "outcome": "accepted"
+      },
+      {
+        "year": 2,
+        "into_course": "intro-chemistry",
+        "from_concept": "diffusion",
+        "to_concept": "concentration",
+        "outcome": "declined"
+      },
+      {
+        "year": 2,
+        "into_course": "intro-chemistry",
+        "from_concept": "enzymes",
+        "to_concept": "reaction-rates",
+        "outcome": "accepted"
+      }
+    ],
+    "lapses": []
+  },
+  "next_course_guide_offers": [
+    {
+      "from_course": "intro-chemistry",
+      "from_concept": "chemical-bonding",
+      "to_concept": "reaction-mechanisms",
+      "bridge": "prerequisite",
+      "stance": "review",
+      "why": "reaction-mechanisms builds directly on your chemical-bonding."
+    },
+    {
+      "from_course": "intro-chemistry",
+      "from_concept": "reaction-rates",
+      "to_concept": "reaction-mechanisms",
+      "bridge": "prerequisite",
+      "stance": "review",
+      "why": "reaction-mechanisms builds directly on your reaction-rates."
+    }
+  ]
+}

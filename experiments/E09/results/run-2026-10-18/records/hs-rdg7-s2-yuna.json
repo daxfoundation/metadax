@@ -1,0 +1,35 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s2-yuna",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 2,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-15",
+  "attempted": [
+    {
+      "game": "Word Chain Race",
+      "answered": 14,
+      "right": 11
+    }
+  ],
+  "reached": [
+    {
+      "game": "Word Chain Race",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "behaviour": "reversed sounds in short blends",
+      "count": 2
+    }
+  ],
+  "learner_words": "She said it felt fast.",
+  "guide_note": "Went fine. Sound order still getting mixed up sometimes.",
+  "generated_by": "parent-filed"
+}

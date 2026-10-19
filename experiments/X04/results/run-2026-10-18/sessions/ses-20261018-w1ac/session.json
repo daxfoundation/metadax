@@ -1,0 +1,40 @@
+{
+  "session_id": "ses-20261018-w1ac",
+  "wave": 1,
+  "display_name": "Priya",
+  "profile_summary": "Age 18-25, strong math, weak physics background, low patience, gamer, skips abstract explanations and quits when payoff feels distant",
+  "turns": 7,
+  "concepts_touched": [
+    "newtons-second-law",
+    "mass",
+    "net-force",
+    "kinematic-quantities",
+    "newtons-third-law"
+  ],
+  "followed_seeds": [
+    "How do I find the net force before using F = ma?",
+    "Why is weight equal to mass times gravitational field strength?",
+    "How do I combine forces that act at an angle to each other?",
+    "If the forces are equal, why does the bullet fly but the gun barely move?",
+    "How does the third law relate to conservation of momentum?"
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "stalls": [
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "depth": 2,
+      "kind": "abandon",
+      "stuck_signature": "answer_too_abstract",
+      "concepts": ["mass", "newtons-second-law"]
+    },
+    {
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "depth": 3,
+      "kind": "abandon",
+      "stuck_signature": "patience_exhausted",
+      "concepts": ["newtons-third-law"]
+    }
+  ]
+}

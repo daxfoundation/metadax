@@ -1,0 +1,339 @@
+{
+  "instruction": "You see ONLY this learner compacted view and the carry-over offers a guide would be given for the NEXT course. You do not have the raw record or any answer key. Decide whether every refusal is honoured.",
+  "compacted_view": {
+    "as_of": "runtime",
+    "refusals": [
+      {
+        "kind": "refusal",
+        "at": "2020-03-10",
+        "refusal_id": "ref-food",
+        "directive": "never_show",
+        "scope": "example-style",
+        "target": "food-and-diet-examples",
+        "status": "active",
+        "said": "Please stop using food and diet examples, they upset me."
+      },
+      {
+        "kind": "refusal",
+        "at": "2021-02-08",
+        "refusal_id": "ref-mito",
+        "directive": "stop_suggesting",
+        "scope": "concept",
+        "target": "mitosis",
+        "status": "active",
+        "said": "Stop bringing mitosis back. It never clicks and I do not want it carried on."
+      },
+      {
+        "kind": "refusal",
+        "at": "2022-08-25",
+        "refusal_id": "ref-3d",
+        "directive": "never_show",
+        "scope": "modality",
+        "target": "3d-rotating-molecule-visuals",
+        "status": "active",
+        "said": "The spinning 3-D molecule animations make me dizzy, never show those."
+      },
+      {
+        "kind": "refusal",
+        "at": "2023-11-22",
+        "refusal_id": "ref-cards",
+        "directive": "stop_suggesting",
+        "scope": "technique",
+        "target": "spaced-repetition-flashcards",
+        "status": "active",
+        "said": "Stop suggesting flashcards, I never do them."
+      }
+    ],
+    "courses": [
+      {
+        "year": 1,
+        "course_id": "cell-biology",
+        "guide_ref": "g1",
+        "sessions": 12,
+        "concepts": [
+          {
+            "concept": "cell-structure",
+            "competency": 82
+          },
+          {
+            "concept": "osmosis",
+            "competency": 78
+          },
+          {
+            "concept": "diffusion",
+            "competency": 74,
+            "misconceptions": [
+              "treats diffusion and osmosis as the same process"
+            ]
+          },
+          {
+            "concept": "enzymes",
+            "competency": 80
+          },
+          {
+            "concept": "mitosis",
+            "competency": 85
+          }
+        ],
+        "summary": "cell-biology across 12 sessions. Opened: Year 1 cell-biology session 1: worked on cell-structure and osmosis. Opened the course. Ended: Year 1 cell-biology session 12: worked on diffusion and enzymes. Wrapped the course."
+      },
+      {
+        "year": 2,
+        "course_id": "intro-chemistry",
+        "guide_ref": "g1",
+        "sessions": 12,
+        "concepts": [
+          {
+            "concept": "atomic-structure",
+            "competency": 76
+          },
+          {
+            "concept": "chemical-bonding",
+            "competency": 81
+          },
+          {
+            "concept": "reaction-rates",
+            "competency": 79,
+            "misconceptions": [
+              "expects rate to rise without limit as temperature rises"
+            ]
+          },
+          {
+            "concept": "acids-bases",
+            "competency": 70
+          },
+          {
+            "concept": "concentration",
+            "competency": 77
+          }
+        ],
+        "summary": "intro-chemistry across 12 sessions. Opened: Year 2 intro-chemistry session 1: worked on atomic-structure and chemical-bonding. Opened the course. Ended: Year 2 intro-chemistry session 12: worked on reaction-rates and acids-bases. Wrapped the course."
+      },
+      {
+        "year": 3,
+        "course_id": "organic-chemistry",
+        "guide_ref": "g2",
+        "sessions": 12,
+        "concepts": [
+          {
+            "concept": "functional-groups",
+            "competency": 75
+          },
+          {
+            "concept": "isomers",
+            "competency": 72
+          },
+          {
+            "concept": "reaction-mechanisms",
+            "competency": 74
+          },
+          {
+            "concept": "chemical-bonding",
+            "competency": 84
+          },
+          {
+            "concept": "reaction-rates",
+            "competency": 80
+          }
+        ],
+        "summary": "organic-chemistry across 12 sessions. Opened: Year 3 organic-chemistry session 1: worked on functional-groups and isomers. Opened the course. Ended: Year 3 organic-chemistry session 12: worked on reaction-mechanisms and chemical-bonding. Wrapped the course."
+      },
+      {
+        "year": 4,
+        "course_id": "biochemistry",
+        "guide_ref": "g2",
+        "sessions": 12,
+        "concepts": [
+          {
+            "concept": "enzyme-kinetics",
+            "competency": 73,
+            "misconceptions": [
+              "reads a saturation curve as linear"
+            ]
+          },
+          {
+            "concept": "metabolism",
+            "competency": 71
+          },
+          {
+            "concept": "protein-structure",
+            "competency": 76
+          },
+          {
+            "concept": "functional-groups",
+            "competency": 79
+          },
+          {
+            "concept": "chemical-bonding",
+            "competency": 85
+          }
+        ],
+        "summary": "biochemistry across 12 sessions. Opened: Year 4 biochemistry session 1: worked on enzyme-kinetics and metabolism. Opened the course. Ended: Year 4 biochemistry session 12: worked on protein-structure and functional-groups. Wrapped the course."
+      },
+      {
+        "year": 5,
+        "course_id": "molecular-biology",
+        "guide_ref": "g3",
+        "sessions": 12,
+        "concepts": [
+          {
+            "concept": "dna-structure",
+            "competency": 77
+          },
+          {
+            "concept": "transcription",
+            "competency": 72
+          },
+          {
+            "concept": "translation",
+            "competency": 74
+          },
+          {
+            "concept": "gene-regulation",
+            "competency": 70
+          },
+          {
+            "concept": "cell-division",
+            "competency": 78
+          },
+          {
+            "concept": "protein-structure",
+            "competency": 80
+          }
+        ],
+        "summary": "molecular-biology across 12 sessions. Opened: Year 5 molecular-biology session 1: worked on dna-structure and transcription. Opened the course. Ended: Year 5 molecular-biology session 12: worked on cell-division and protein-structure. Wrapped the course."
+      }
+    ],
+    "competency": {
+      "cell-structure": 82,
+      "osmosis": 78,
+      "diffusion": 74,
+      "enzymes": 80,
+      "mitosis": 85,
+      "atomic-structure": 76,
+      "chemical-bonding": 85,
+      "reaction-rates": 80,
+      "acids-bases": 70,
+      "concentration": 77,
+      "functional-groups": 79,
+      "isomers": 72,
+      "reaction-mechanisms": 74,
+      "enzyme-kinetics": 73,
+      "metabolism": 71,
+      "protein-structure": 80,
+      "dna-structure": 77,
+      "transcription": 72,
+      "translation": 74,
+      "gene-regulation": 70,
+      "cell-division": 78
+    },
+    "carry_over_ledger": [
+      {
+        "year": 2,
+        "into_course": "intro-chemistry",
+        "from_concept": "osmosis",
+        "to_concept": "concentration",
+        "outcome": "accepted"
+      },
+      {
+        "year": 2,
+        "into_course": "intro-chemistry",
+        "from_concept": "diffusion",
+        "to_concept": "concentration",
+        "outcome": "declined"
+      },
+      {
+        "year": 2,
+        "into_course": "intro-chemistry",
+        "from_concept": "enzymes",
+        "to_concept": "reaction-rates",
+        "outcome": "accepted"
+      },
+      {
+        "year": 3,
+        "into_course": "organic-chemistry",
+        "from_concept": "chemical-bonding",
+        "to_concept": "reaction-mechanisms",
+        "outcome": "accepted"
+      },
+      {
+        "year": 3,
+        "into_course": "organic-chemistry",
+        "from_concept": "reaction-rates",
+        "to_concept": "reaction-mechanisms",
+        "outcome": "accepted"
+      },
+      {
+        "year": 4,
+        "into_course": "biochemistry",
+        "from_concept": "enzymes",
+        "to_concept": "enzyme-kinetics",
+        "outcome": "accepted"
+      },
+      {
+        "year": 4,
+        "into_course": "biochemistry",
+        "from_concept": "functional-groups",
+        "to_concept": "protein-structure",
+        "outcome": "accepted"
+      },
+      {
+        "year": 4,
+        "into_course": "biochemistry",
+        "from_concept": "chemical-bonding",
+        "to_concept": "protein-structure",
+        "outcome": "accepted"
+      },
+      {
+        "year": 4,
+        "into_course": "biochemistry",
+        "from_concept": "reaction-rates",
+        "to_concept": "enzyme-kinetics",
+        "outcome": "accepted"
+      },
+      {
+        "year": 4,
+        "into_course": "biochemistry",
+        "from_concept": "enzymes",
+        "to_concept": "metabolism",
+        "outcome": "declined"
+      },
+      {
+        "year": 5,
+        "into_course": "molecular-biology",
+        "from_concept": "protein-structure",
+        "to_concept": "translation",
+        "outcome": "accepted"
+      },
+      {
+        "year": 5,
+        "into_course": "molecular-biology",
+        "from_concept": "chemical-bonding",
+        "to_concept": "dna-structure",
+        "outcome": "accepted"
+      },
+      {
+        "year": 5,
+        "into_course": "molecular-biology",
+        "from_concept": "mitosis",
+        "to_concept": "cell-division",
+        "outcome": "suppressed_by_refusal"
+      }
+    ],
+    "lapses": [
+      {
+        "kind": "lapse",
+        "from": "2021-04-21",
+        "to": "2022-07-11",
+        "days": 184
+      },
+      {
+        "kind": "lapse",
+        "from": "2023-04-25",
+        "to": "2023-11-13",
+        "days": 182
+      }
+    ]
+  },
+  "next_course_guide_offers": []
+}

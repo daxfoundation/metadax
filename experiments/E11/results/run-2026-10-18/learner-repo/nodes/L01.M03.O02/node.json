@@ -1,0 +1,16 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M03.O02",
+  "title": "What is a scatter plot used for?",
+  "concept": "chart-types",
+  "week": 3,
+  "visibility": "public",
+  "core": {
+    "body": "A scatter plot shows the relationship between two numeric variables. If the points form a rising pattern, the variables are positively correlated.",
+    "bloom_level": "understand"
+  },
+  "created_at": "2026-11-01T00:00:00Z",
+  "updated_at": "2026-11-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

@@ -1,0 +1,36 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s3-jo",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 3,
+    "title": "Sounds That Stick",
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-17",
+  "attempted": [
+    {
+      "game": "Rhyme Rocket",
+      "answered": 18,
+      "right": 16
+    }
+  ],
+  "reached": [
+    {
+      "game": "Rhyme Rocket",
+      "level": 3,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "confused rhyme with starting sound",
+      "count": 1
+    }
+  ],
+  "learner_words": "Rhyming is easy. I just had to remember it is the end that has to match, not the beginning.",
+  "guide_note": "Friday morning, Jo went first this week. Rhyme Rocket went well — 16 of 18 and completed level 3. One question tripped Jo up where a word with the same starting sound got picked over a true rhyme, but Jo caught the pattern and said so out loud before I mentioned it. Finished the level with no fuss. Jo seemed genuinely pleased to complete the full level and told me the trick about end sounds versus beginning sounds unprompted, which tells me the concept landed. Good week overall for Jo. Confident pace throughout all three sessions.",
+  "generated_by": "parent-filed"
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "metadax.event/0.2",
+  "session_id": "ses-20261018-armc",
+  "seq": 3,
+  "ts": "runtime",
+  "type": "followup",
+  "node_id": "n_bk7vwxyz3nfp5mqkctxghyhgqm",
+  "parent_node_id": "L01.M01.O01",
+  "question": "Does a random event always have to have equally likely outcomes, or can some outcomes be more likely than others?"
+}

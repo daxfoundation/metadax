@@ -1,0 +1,255 @@
+{
+  "schema": "x04.idmap/sim",
+  "map": {
+    "L01.M01.O01": {
+      "opaque": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root_legacy": "L01.M01.O01"
+    },
+    "L01.M01.O02": {
+      "opaque": "n_fka1p325m2tbp308vs317e8ta7",
+      "canonical_root": "n_fka1p325m2tbp308vs317e8ta7",
+      "canonical_root_legacy": "L01.M01.O02"
+    },
+    "L01.M01.O01/adding-forces-different-directions": {
+      "opaque": "n_hzafa396f3f0cqy7xbjasfyfjv",
+      "canonical_root": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root_legacy": "L01.M01.O01"
+    },
+    "L01.M01.O01/vector-sum-of-two-forces": {
+      "opaque": "n_rmfhyyq2rg960x6381yqfr2rcz",
+      "canonical_root": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root_legacy": "L01.M01.O01"
+    },
+    "L01.M01.O01/combine-forces-with-vectors": {
+      "opaque": "n_zqvaskk8ptd4bgc1w4sx0zyj50",
+      "canonical_root": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root_legacy": "L01.M01.O01"
+    },
+    "L01.M01.O01/seatbelt-and-inertia": {
+      "opaque": "n_b716vz96bpcec2w48cm2v8cq5e",
+      "canonical_root": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root_legacy": "L01.M01.O01"
+    },
+    "L01.M01.O01/why-seatbelts-work": {
+      "opaque": "n_ne5jkapxx7kgt4d8zy9ce2wsm1",
+      "canonical_root": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root_legacy": "L01.M01.O01"
+    },
+    "L01.M01.O02/acceleration-vs-velocity": {
+      "opaque": "n_b319zdq408g5vgxft7w14sr9z4",
+      "canonical_root": "n_fka1p325m2tbp308vs317e8ta7",
+      "canonical_root_legacy": "L01.M01.O02"
+    },
+    "L01.M01.O02/how-acceleration-differs-from-velocity": {
+      "opaque": "n_bt4axgzhkdn1avfsakxj9q4yj1",
+      "canonical_root": "n_fka1p325m2tbp308vs317e8ta7",
+      "canonical_root_legacy": "L01.M01.O02"
+    },
+    "L01.M01.O02/why-velocity-is-a-vector": {
+      "opaque": "n_445z4yk22wsv4p7jw7cvb16pbj",
+      "canonical_root": "n_fka1p325m2tbp308vs317e8ta7",
+      "canonical_root_legacy": "L01.M01.O02"
+    },
+    "L01.M01.O01/why-inertia-is-not-a-force": {
+      "opaque": "n_z2g3kxn8djysqscywrbxdnmtt7",
+      "canonical_root": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root_legacy": "L01.M01.O01"
+    },
+    "L01.M01.O01/measuring-force-in-newtons": {
+      "opaque": "n_dpset1yw9ekaqrxwdz5jyknyan",
+      "canonical_root": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root_legacy": "L01.M01.O01"
+    },
+    "L01.M01.O02/reading-velocity-time-graphs": {
+      "opaque": "n_zqyxvsk0mfqnwwj21ymnvejjpy",
+      "canonical_root": "n_fka1p325m2tbp308vs317e8ta7",
+      "canonical_root_legacy": "L01.M01.O02"
+    },
+    "L01.M01.O01/everyday-zero-net-force": {
+      "opaque": "n_1e0zf7s8ccq4c4hqgjts2z7cxk",
+      "canonical_root": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root_legacy": "L01.M01.O01"
+    },
+    "L01.M01.O02/units-of-acceleration": {
+      "opaque": "n_bc82z5z1sk7vehbwdxft29e83n",
+      "canonical_root": "n_fka1p325m2tbp308vs317e8ta7",
+      "canonical_root_legacy": "L01.M01.O02"
+    },
+    "L01.M01.O01/friction-as-a-force": {
+      "opaque": "n_5rk1mnm3eqyx8agq17rq1nc1bq",
+      "canonical_root": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "canonical_root_legacy": "L01.M01.O01"
+    },
+    "L01.M01.O02/instantaneous-vs-average-velocity": {
+      "opaque": "n_wyz8a7st4x599c1f1eh1npgses",
+      "canonical_root": "n_fka1p325m2tbp308vs317e8ta7",
+      "canonical_root_legacy": "L01.M01.O02"
+    },
+    "L01.M02.O01": {
+      "opaque": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "canonical_root": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "canonical_root_legacy": "L01.M02.O01"
+    },
+    "L01.M02.O02": {
+      "opaque": "n_34em5trdgv13t260h8p3v2pq8p",
+      "canonical_root": "n_34em5trdgv13t260h8p3v2pq8p",
+      "canonical_root_legacy": "L01.M02.O02"
+    },
+    "L01.M02.O01/book-on-table-balanced-forces": {
+      "opaque": "n_jze8b33wyreg9jsvrew727943w",
+      "canonical_root": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "canonical_root_legacy": "L01.M02.O01"
+    },
+    "L01.M02.O01/why-resting-objects-stay-put": {
+      "opaque": "n_sreyjpmkggzx22zbz22chzwdsp",
+      "canonical_root": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "canonical_root_legacy": "L01.M02.O01"
+    },
+    "L01.M02.O02/what-makes-a-frame-inertial": {
+      "opaque": "n_7snyc53wz3be8m4y7a7850xmth",
+      "canonical_root": "n_34em5trdgv13t260h8p3v2pq8p",
+      "canonical_root_legacy": "L01.M02.O02"
+    },
+    "L01.M02.O02/recognizing-inertial-frames": {
+      "opaque": "n_vdxvbbgagg2q1gyx9kdet3z8rs",
+      "canonical_root": "n_34em5trdgv13t260h8p3v2pq8p",
+      "canonical_root_legacy": "L01.M02.O02"
+    },
+    "L01.M02.O01/why-equilibrium-means-zero-net-force": {
+      "opaque": "n_6q0v52jn58pr8fwjksncp285gm",
+      "canonical_root": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "canonical_root_legacy": "L01.M02.O01"
+    },
+    "L01.M02.O02/why-earth-is-nearly-inertial": {
+      "opaque": "n_4besk0tc1sejy9z8c9hs402rr9",
+      "canonical_root": "n_34em5trdgv13t260h8p3v2pq8p",
+      "canonical_root_legacy": "L01.M02.O02"
+    },
+    "L01.M02.O01/first-law-constant-velocity": {
+      "opaque": "n_4zec319zbn7tavcb4f7ed36vw6",
+      "canonical_root": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "canonical_root_legacy": "L01.M02.O01"
+    },
+    "L01.M02.O02/fictitious-forces-in-accelerating-frames": {
+      "opaque": "n_xbvj9qd0ans6k3tjqxyxc74ztb",
+      "canonical_root": "n_34em5trdgv13t260h8p3v2pq8p",
+      "canonical_root_legacy": "L01.M02.O02"
+    },
+    "L01.M02.O01/tension-in-a-rope-at-rest": {
+      "opaque": "n_bsc7p5b6twh6tw35q7609cspha",
+      "canonical_root": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "canonical_root_legacy": "L01.M02.O01"
+    },
+    "L02.M01.O01": {
+      "opaque": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O02": {
+      "opaque": "n_690tws7m76yzezqr9w59kyhy74",
+      "canonical_root": "n_690tws7m76yzezqr9w59kyhy74",
+      "canonical_root_legacy": "L02.M01.O02"
+    },
+    "L02.M01.O01/mass-versus-weight": {
+      "opaque": "n_6axczsbxhrg2rqs0vx5abpwbre",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O01/how-mass-and-weight-differ": {
+      "opaque": "n_trf60jyfd0y474bnrysrmn81eb",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O01/distinguishing-mass-from-weight": {
+      "opaque": "n_ggffh1fvydqrj3qxrbjbth3d5c",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O01/rearrange-fma-for-acceleration": {
+      "opaque": "n_4waqkv81nfesn81t9z38tr2fhk",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O01/solving-fma-for-a": {
+      "opaque": "n_n9spag47169tc6btqy9hb9b2rs",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O01/do-heavier-objects-fall-faster": {
+      "opaque": "n_5v8xn5v23ne5h2ddj2mwhd1s7b",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O01/falling-speed-and-weight": {
+      "opaque": "n_368kp31s4a7cr0zbd378r1aqrg",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O01/why-mass-resists-acceleration": {
+      "opaque": "n_hrf4v7jgpe35gq1wv6p9z5jg5z",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O02/why-acceleration-follows-net-force": {
+      "opaque": "n_1hqegs4h08e8v6db81sq5hh65f",
+      "canonical_root": "n_690tws7m76yzezqr9w59kyhy74",
+      "canonical_root_legacy": "L02.M01.O02"
+    },
+    "L02.M01.O01/history-of-the-kilogram": {
+      "opaque": "n_a9t5jsxy6t2me01kmqxmyky0qv",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O01/fma-with-multiple-forces": {
+      "opaque": "n_2pdwf22epb95qhzwrv222k0z4z",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O02/acceleration-on-a-frictionless-incline": {
+      "opaque": "n_7pfh1m0qjgkzajr6rjh004482v",
+      "canonical_root": "n_690tws7m76yzezqr9w59kyhy74",
+      "canonical_root_legacy": "L02.M01.O02"
+    },
+    "L02.M01.O01/the-newton-as-a-unit": {
+      "opaque": "n_m85eq3pb43j42nj2e3shyrvtec",
+      "canonical_root": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "canonical_root_legacy": "L02.M01.O01"
+    },
+    "L02.M01.O02/acceleration-of-two-connected-blocks": {
+      "opaque": "n_bc3hrf7cp6nv36xey4dvm0tf66",
+      "canonical_root": "n_690tws7m76yzezqr9w59kyhy74",
+      "canonical_root_legacy": "L02.M01.O02"
+    },
+    "L02.M02.O01": {
+      "opaque": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "canonical_root": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "canonical_root_legacy": "L02.M02.O01"
+    },
+    "L02.M02.O01/identifying-action-reaction-pairs": {
+      "opaque": "n_wabw6wgp8ve5bzejqbffr0ngwk",
+      "canonical_root": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "canonical_root_legacy": "L02.M02.O01"
+    },
+    "L02.M02.O01/spotting-third-law-pairs": {
+      "opaque": "n_bva3rtefd24kst0rcq6jgr1fqw",
+      "canonical_root": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "canonical_root_legacy": "L02.M02.O01"
+    },
+    "L02.M02.O01/why-action-reaction-dont-cancel": {
+      "opaque": "n_gwed8er1mt1mqt68kyerrvzdd3",
+      "canonical_root": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "canonical_root_legacy": "L02.M02.O01"
+    },
+    "L02.M02.O01/third-law-and-rocket-propulsion": {
+      "opaque": "n_s3tzns7py0b5x79g18dwwsw1y0",
+      "canonical_root": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "canonical_root_legacy": "L02.M02.O01"
+    },
+    "L02.M02.O01/third-law-and-walking": {
+      "opaque": "n_wmje1dxda4fg61tvt19xppv84d",
+      "canonical_root": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "canonical_root_legacy": "L02.M02.O01"
+    }
+  }
+}

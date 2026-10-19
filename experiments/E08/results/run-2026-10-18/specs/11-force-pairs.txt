@@ -1,0 +1,46 @@
+SPEC: Newton's-Third-Law Force Pair Checker
+
+Export a named ES-module function:
+
+  export function checkForcePairs(forces)
+
+Parameter
+  forces – array of force objects:
+    {
+      id:           string,
+      agent:        string,   // object exerting the force
+      patient:      string,   // object receiving the force
+      magnitude_N:  number,   // force magnitude, Newtons (> 0)
+      direction_deg: number,  // direction, degrees (0–360)
+      type:         string    // force type, e.g. 'gravity', 'normal', 'friction'
+    }
+
+A valid Newton's-third-law pair satisfies ALL of:
+  1. Same type
+  2. Same magnitude (within 0.1 % relative tolerance)
+  3. Directions differ by 180° (±1°)
+  4. F1.agent === F2.patient AND F1.patient === F2.agent
+
+Returns:
+  {
+    pairs:      [ [id1, id2], ... ],  // valid force pairs found
+    unpaired:   [ id, ... ],          // force ids with no valid partner
+    allPaired:  boolean               // true iff unpaired is empty
+  }
+
+Each force should appear in at most one pair.
+
+Examples
+  checkForcePairs([
+    { id:'F1', agent:'Earth', patient:'Moon', magnitude_N:1.98e20,
+      direction_deg:0,   type:'gravity' },
+    { id:'F2', agent:'Moon',  patient:'Earth', magnitude_N:1.98e20,
+      direction_deg:180, type:'gravity' }
+  ])
+  → { pairs:[['F1','F2']], unpaired:[], allPaired:true }
+
+  checkForcePairs([
+    { id:'F1', agent:'A', patient:'B', magnitude_N:10,
+      direction_deg:90, type:'normal' }
+  ])
+  → { pairs:[], unpaired:['F1'], allPaired:false }

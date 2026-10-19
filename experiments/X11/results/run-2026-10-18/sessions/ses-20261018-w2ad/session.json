@@ -1,0 +1,45 @@
+{
+  "session_id": "ses-20261018-w2ad",
+  "wave": 2,
+  "display_name": "Tess",
+  "profile_summary": "Engineering graduate, confident with vectors and algebra, engaged and methodical, works through material steadily without stalling.",
+  "turns": 4,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "newtons-second-law",
+    "kinematic-quantities",
+    "newtons-third-law"
+  ],
+  "followed_seeds": [
+    "How exactly do we add two forces that point in different directions?",
+    "How do I find the net force before using F = ma?",
+    "How do I combine forces that act at an angle to each other?",
+    "If the forces are equal, why does the bullet fly but the gun barely move?"
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "marker_responses": [
+    {
+      "spot": "adding forces at angles (vector addition of net force)",
+      "entered": false,
+      "then": "arrived"
+    }
+  ],
+  "offer_responses": [
+    {
+      "offer_id": "of-s-04",
+      "seed": "How do I split one force into components?",
+      "response": "declined",
+      "why_short": "Already comfortable resolving vectors from engineering mechanics; didn't need the primer."
+    },
+    {
+      "offer_id": "of-s-06",
+      "seed": "What angle does the resultant make?",
+      "response": "took_up",
+      "why_short": "Wanted a quick confirmation of the arctan convention before moving on to the third-law section."
+    }
+  ],
+  "stalls": []
+}

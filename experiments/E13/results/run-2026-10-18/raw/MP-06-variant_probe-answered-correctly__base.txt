@@ -1,0 +1,52 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "That's exactly right, Fixture Learner. The electron transport chain is a series of protein complexes in the inner mitochondrial membrane that pass electrons along, pumping protons at each step to build a gradient that drives ATP synthesis. Well done on the first try.\n\nNow let's go a level deeper — this next question asks you to explain *why* something happens, not just what it is.\n\n**Instructions:** Write one or two sentences in your own words.\n\n**Example:** Example concept — photosynthesis. Example question: why does a leaf need light? Sample answer: light provides the energy to split water molecules and energise electrons.\n\n**Question:** Why does each hand-off of electrons along the chain release energy, and what is that energy immediately used for?",
+    "instructions": "Write one or two sentences in your own words.",
+    "example": "Example concept — photosynthesis. Example question: why does a leaf need light? Sample answer: light provides the energy to split water molecules and energise electrons.",
+    "question": "Why does each hand-off of electrons along the chain release energy, and what is that energy immediately used for?"
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Understand",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "feedback": {
+    "result": "correct",
+    "explanation": "Each successive complex in the chain holds electrons at a slightly lower energy level, so passing electrons from one to the next releases the energy difference. That released energy is immediately used to push protons across the inner membrane, building the gradient."
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Understand",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "not_started",
+        "Apply": "not_started",
+        "Analyze": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 15,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

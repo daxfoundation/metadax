@@ -1,0 +1,35 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s2-etienne",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 2,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-15",
+  "attempted": [
+    {
+      "game": "Word Chain Race",
+      "answered": 14,
+      "right": 11
+    }
+  ],
+  "reached": [
+    {
+      "game": "Word Chain Race",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "reversed sounds in short blends",
+      "count": 2
+    }
+  ],
+  "learner_words": "Marlo said this one felt like a race in her brain too and she liked going fast. She said sometimes the sounds \"get in the wrong seats\" which I thought was adorable and also incredibly accurate.",
+  "guide_note": "Wednesday session! Word Chain Race was a hit in terms of engagement — Marlo loves anything with a timer or a competitive feel, which is very on-brand for her. 11 out of 14 is honestly a solid result. The reversals in short blends are something we've been tracking for a while now. Her educational psychologist flagged this in last year's dyslexia assessment as a sequencing difficulty that often co-occurs with the kind of processing profile Marlo has. It's not just carelessness — she's working SO hard. The ADHD piece also means that once she gets into a rhythm she sometimes rushes and the sequencing errors go up. I mentioned the reversal pattern in a comment on a post by @dyslexia_homeschool_collective which has been a fantastic community for us. I also found a really useful article at https://learningdifferencesdaily.com/blend-reversal-interventions that I'm going to try adapting for our Friday session. Going to email Marlo's reading specialist at dr.fontaine.reads@childliteracyclinic.ca with this week's notes so she has them before our November check-in.",
+  "generated_by": "parent-filed"
+}

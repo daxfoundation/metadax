@@ -1,0 +1,35 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "Well done, Priya! **B is correct.**\n\nRolling a die and getting a 4 is a random event because we can't predict the exact outcome in advance.\n\n---\n\nNow let's go a little deeper.\n\n**Question 2 of 3**\n\nPriya is baking and decides to randomly pick **one** herb sachet from a jar containing: rosemary, thyme, basil, and oregano.\n\nIn your own words, **describe the sample space** — all the possible outcomes of this random event.\n\n*(Type your answer below.)*"
+  },
+  "meta": {
+    "concept": "random-event",
+    "bloom_level": "Understand",
+    "question_type": "open",
+    "attempt": 1
+  },
+  "feedback": {
+    "result": "correct",
+    "hint": null,
+    "correct_answer": "B — Rolling a die and getting a 4",
+    "explanation": "A random event is one where the outcome is uncertain even though the set of all possible outcomes is known.",
+    "misconception": null
+  },
+  "handoff": null,
+  "summary": null,
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "question",
+    "levels": ["Remember", "Understand"],
+    "competency": 40
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

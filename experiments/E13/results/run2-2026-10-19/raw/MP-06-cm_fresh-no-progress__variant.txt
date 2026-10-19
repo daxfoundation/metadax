@@ -1,0 +1,47 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "question",
+  "display": {
+    "message": "Let's start with something you probably already have a feel for. In your own words, tell me what you know about the electron transport chain — imagine you're explaining it to a curious friend over coffee. There's no wrong way to begin, and if you get stuck, hints and second chances are always there for you.\n\nCommands you can use any time: **next** (move on), **skip** (skip this level), **hint** (get a clue), **why** (learn what this is testing), **more** (go deeper), **ask: <your question>** (send a question to a follow-up), **summary** (see your progress), **stop** (end the session).",
+    "instructions": "Write a short paragraph — a few sentences is plenty. Use your own words, as if you're explaining to someone who has never heard of it. There is no need to be technical; what matters is what the idea means to you.",
+    "example": "For example, if the concept were 'photosynthesis', you might say: 'Photosynthesis is how plants use sunlight to make their own food. The leaves capture light energy and use it to turn water and carbon dioxide into sugar.'",
+    "question": "What is the electron transport chain, and what does it do inside the mitochondrion? Describe it in your own words — think of it like narrating a short scene: electrons arrive, something happens at each step, and the chain ends somewhere. What's the story?"
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Remember",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "not_started",
+        "Understand": "not_started",
+        "Apply": "not_started",
+        "Analyze": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 0,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

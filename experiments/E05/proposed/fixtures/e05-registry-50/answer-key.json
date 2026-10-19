@@ -1,0 +1,432 @@
+[
+  {
+    "id": "Q01",
+    "query": "How do cells in the mitochondria make ATP from food molecules?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nl01rq4fv8mt2dxyps7bknc0ej",
+    "category": "near-dup-light"
+  },
+  {
+    "id": "Q02",
+    "query": "How does ATP synthase harness the movement of protons to build ATP?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nl02jz5bw3xmpve0tkfrd8qynh",
+    "category": "near-dup-light"
+  },
+  {
+    "id": "Q03",
+    "query": "Why is the tightness of the inner mitochondrial membrane crucial for making ATP?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nl03dn7cg4qswry2mkve5xbf0zh",
+    "category": "near-dup-light"
+  },
+  {
+    "id": "Q04",
+    "query": "In what way do NADH and FADH2 supply electrons to the mitochondrial respiratory chain?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nl04x8bftm3nvkd5wyjpc6rqhe0",
+    "category": "near-dup-light"
+  },
+  {
+    "id": "Q05",
+    "query": "How many ATP does glycolysis net and how does its product pyruvate reach the mitochondrion?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nl05tp7jgwz2fxbs0qmne8rvck4",
+    "category": "near-dup-light"
+  },
+  {
+    "id": "Q06",
+    "query": "What purpose do the inner membrane folds in mitochondria serve for energy production?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nl06mf4kyz8rqcpnjsdx3wtbvhg",
+    "category": "near-dup-light"
+  },
+  {
+    "id": "Q07",
+    "query": "Why is molecular oxygen necessary for the electron transport chain to keep running?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nl07vr9nze1bqkpsdtxhcw5fjg2",
+    "category": "near-dup-light"
+  },
+  {
+    "id": "Q08",
+    "query": "What high-energy electron carriers does the TCA cycle hand off to the transport chain?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nl08ec2yfxm4kspn9wdrtbhq7g0",
+    "category": "near-dup-light"
+  },
+  {
+    "id": "Q09",
+    "query": "Roughly how many ATP molecules does complete aerobic breakdown of one glucose molecule yield?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nl09zs6vpcxn0bdmkfrtyq4wjh3",
+    "category": "near-dup-light"
+  },
+  {
+    "id": "Q10",
+    "query": "How do the two membranes around a mitochondrion differ in their permeability and purpose?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nl10hk3drp0wzjembnfsxyvtcq5",
+    "category": "near-dup-light"
+  },
+  {
+    "id": "Q11",
+    "query": "Explain how a pH gradient across the inner mitochondrial membrane is converted into chemical energy in the form of ATP.",
+    "expected_decision": "reuse",
+    "expected_target": "n_nh11gw4zfh7cntbsyxjmrpvd9k",
+    "category": "near-dup-heavy"
+  },
+  {
+    "id": "Q12",
+    "query": "What happens when electrons escape from respiratory complexes and why is this dangerous to the cell?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nh12pj5nxe2skbdtfrcmqhzwy0",
+    "category": "near-dup-heavy"
+  },
+  {
+    "id": "Q13",
+    "query": "How do cells spend the energy in ATP to shuttle ions across a membrane against a gradient?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nh13by6wkq3xhefnjdmczvs8tp",
+    "category": "near-dup-heavy"
+  },
+  {
+    "id": "Q14",
+    "query": "Why do mitochondria have two membranes, and what does this tell us about their evolutionary past?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nh14cf0hntbsxmwyjpzdvrgkq8",
+    "category": "near-dup-heavy"
+  },
+  {
+    "id": "Q15",
+    "query": "If a cell runs out of oxygen, why does its total ATP production drop from around 30 down to 2 per glucose?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nh15mw8bfpzkdvcsnhg3qrxjyt",
+    "category": "near-dup-heavy"
+  },
+  {
+    "id": "Q16",
+    "query": "Mitochondria replicate their own DNA and divide, yet still rely on nuclear gene products -- what explains this paradox?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nh16xt4rg5kdpzm9bfhynvsqwe",
+    "category": "near-dup-heavy"
+  },
+  {
+    "id": "Q17",
+    "query": "Walk me through how the large hydrophobic arm of Complex I moves protons every time it accepts electrons from NADH.",
+    "expected_decision": "reuse",
+    "expected_target": "n_nh17jd7qwvbkcnzsxphrtem4fg",
+    "category": "near-dup-heavy"
+  },
+  {
+    "id": "Q18",
+    "query": "What shape transitions do the F1 beta subunits go through to grab ADP and Pi and then push out the finished ATP molecule?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nh18yn3kqrx7hdfmtzvsecbpwg",
+    "category": "near-dup-heavy"
+  },
+  {
+    "id": "Q19",
+    "query": "How does the last complex in the respiratory chain use cytochrome c electrons to turn oxygen into water, and how many protons does it move?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nh19sk9mzb4xrcpfwdjgvhyqnt",
+    "category": "near-dup-heavy"
+  },
+  {
+    "id": "Q20",
+    "query": "What exactly does the small iron-containing protein that ferries electrons between Complex III and IV do, and why can it leave the membrane?",
+    "expected_decision": "reuse",
+    "expected_target": "n_nh20wf2tpvy7rznqkbsjhxmdc9",
+    "category": "near-dup-heavy"
+  },
+  {
+    "id": "Q21",
+    "query": "When mitochondria are first assembled in a cell, how are the ATP synthase subunits put together correctly?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "trap",
+    "trap_node": "n_tr01fp8yvx3mzkqs4rcntdb9hw"
+  },
+  {
+    "id": "Q22",
+    "query": "During cell death, do the cristae folds change shape and what proteins are involved in that change?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "trap",
+    "trap_node": "n_tr02kd5gv4ywrxfmhzpbn7qstj"
+  },
+  {
+    "id": "Q23",
+    "query": "When oxygen is scarce, how does the cell change which ETC genes it turns on?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "trap",
+    "trap_node": "n_tr03hz2qfxs9rmtjpndckvb5wy"
+  },
+  {
+    "id": "Q24",
+    "query": "How does the enzyme PFK slow glycolysis down when there is already plenty of ATP available?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "trap",
+    "trap_node": "n_tr04bv7zydcmkhtfxp2nrgqsw5"
+  },
+  {
+    "id": "Q25",
+    "query": "How does the Krebs cycle provide the building blocks for making amino acids rather than just making energy?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "trap",
+    "trap_node": "n_tr05mn4xbqzpfytskdh8rcwvjg"
+  },
+  {
+    "id": "Q26",
+    "query": "What enzyme copies the mitochondrial DNA when the organelle divides?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "trap",
+    "trap_node": "n_tr06qs3jrcxhkdvmybt6fpzwn0"
+  },
+  {
+    "id": "Q27",
+    "query": "How does the poison DNP work and why does it cause the cell to consume more oxygen while making less ATP?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "trap",
+    "trap_node": "n_tr07dc8nqmrkvfbzxy5hepwgts"
+  },
+  {
+    "id": "Q28",
+    "query": "Since NADH made in glycolysis cannot cross the inner mitochondrial membrane itself, how do its electrons get inside?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "trap",
+    "trap_node": "n_tr08gf5ywx8kpzhvstmrcq3ndb"
+  },
+  {
+    "id": "Q29",
+    "query": "How does the transporter that swaps ATP out of the mitochondria for ADP from the cytoplasm work?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "trap",
+    "trap_node": "n_tr09cz9rpjbd7thwvqxfmgkne0"
+  },
+  {
+    "id": "Q30",
+    "query": "How would a scientist measure how many ATP molecules are synthesised for every oxygen atom consumed in isolated mitochondria?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "trap",
+    "trap_node": "n_tr10wy0bsxn4ztgrjfckmvph3e"
+  },
+  {
+    "id": "Q31",
+    "query": "How does the mitochondrion produce ATP for the cell?",
+    "expected_decision": "reuse",
+    "expected_target": "L01.M01.O01",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q32",
+    "query": "How does proton flow through ATP synthase produce ATP?",
+    "expected_decision": "reuse",
+    "expected_target": "n_hh1ash4knccqm98y2n9hfn1h5c",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q33",
+    "query": "Why is the inner membrane important for making ATP in the mitochondrion?",
+    "expected_decision": "reuse",
+    "expected_target": "n_r5p2w8jv3cxtnm6bq9dk0yf4hs",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q34",
+    "query": "How do NADH and FADH2 feed into the electron transport chain?",
+    "expected_decision": "reuse",
+    "expected_target": "n_b4m7gx1pz6wqdce8nv3sk0rty2",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q35",
+    "query": "How much ATP does glycolysis make and how does pyruvate get into the mitochondrion?",
+    "expected_decision": "reuse",
+    "expected_target": "n_e9c2fv5aq7ytxmrb0kp3dh8wn1",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q36",
+    "query": "Why do mitochondria have cristae?",
+    "expected_decision": "reuse",
+    "expected_target": "n_x7a3ck9qm5vwrpb2dt4nhe0fy6",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q37",
+    "query": "Why does the electron transport chain need oxygen?",
+    "expected_decision": "reuse",
+    "expected_target": "n_d2z8pm1sw6ybqren3vt5cx7kh0",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q38",
+    "query": "How does the Krebs cycle supply the electron transport chain?",
+    "expected_decision": "reuse",
+    "expected_target": "n_y6g3ht5wm8dkrpxq2vb0cz9ns1",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q39",
+    "query": "How many ATP molecules does aerobic respiration yield from one glucose?",
+    "expected_decision": "reuse",
+    "expected_target": "n_s8k1rz4cx7mvpwqb5fy9dn0jte6",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q40",
+    "query": "What is chemiosmosis and how does it make ATP?",
+    "expected_decision": "reuse",
+    "expected_target": "n_f7dv1ks4rb9mcphwzx2qne0yt6b",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q41",
+    "query": "How does the electron transport chain produce harmful oxygen species?",
+    "expected_decision": "reuse",
+    "expected_target": "n_zt4qn7js2xcwbmkr9fv1hp6yde0",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q42",
+    "query": "How do cells use ATP for active transport?",
+    "expected_decision": "reuse",
+    "expected_target": "n_ub6ej0pf4wyrzshx5gm2nk1ctd9",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q43",
+    "query": "What does cytochrome c do in the respiratory chain?",
+    "expected_decision": "reuse",
+    "expected_target": "n_ka7589qwn4z1n2tghxxcv2vzbm",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q44",
+    "query": "How does Complex I pump protons across the inner membrane?",
+    "expected_decision": "reuse",
+    "expected_target": "n_w3j6nt8ld1krscxp5qm0bv7ez4",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q45",
+    "query": "What are the three conformational states of the F1 head in ATP synthase?",
+    "expected_decision": "reuse",
+    "expected_target": "n_p9f0gh2re4mvzywq7kb5cx6uts8",
+    "category": "ordinary-reuse"
+  },
+  {
+    "id": "Q46",
+    "query": "How do mitochondria fuse and divide, and what proteins control this?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q47",
+    "query": "What is mitophagy and how do damaged mitochondria get targeted for degradation?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q48",
+    "query": "How does calcium signalling inside mitochondria affect ATP production?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q49",
+    "query": "Why do heart muscle cells have many more mitochondria than skin cells?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q50",
+    "query": "What is the role of VDAC channels in the outer mitochondrial membrane?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q51",
+    "query": "How do mitochondria respond to cold temperatures to generate body heat in brown fat?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q52",
+    "query": "What is mitochondrial permeability transition and when does it occur?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q53",
+    "query": "How does coenzyme Q (ubiquinone) move between the respiratory complexes?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q54",
+    "query": "What triggers the release of cytochrome c from the mitochondrion during apoptosis?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q55",
+    "query": "How does the cell regulate mitochondrial biogenesis in response to exercise?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q56",
+    "query": "Can cancer cells survive without mitochondrial oxidative phosphorylation?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q57",
+    "query": "What is the role of cardiolipin in stabilising the respiratory supercomplexes?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q58",
+    "query": "How do mitochondria import proteins made in the cytoplasm?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q59",
+    "query": "What mutations in mitochondrial DNA cause maternally inherited diseases?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  },
+  {
+    "id": "Q60",
+    "query": "How does the cell balance NADH production between the cytoplasm and the mitochondrial matrix?",
+    "expected_decision": "new",
+    "expected_target": null,
+    "category": "ordinary-new"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "id": "L01.M01.O02",
+  "schema": "metadax.node/0.3",
+  "depth": 1,
+  "title": "Construct the sample space for a simple experiment",
+  "seeds": [
+    "Does the order of outcomes in a sample space affect the probabilities we calculate?",
+    "How do you write a sample space when outcomes are numbers rather than labels?",
+    "What happens to the sample space if you repeat the experiment three times instead of two?"
+  ],
+  "validate": "OK",
+  "content_sha256": "521846c8ba509df6..."
+}

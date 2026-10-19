@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-19",
+  "run": "run2",
+  "probes": [
+    {
+      "step": "a",
+      "command": "which ollama llama-cli llama-server",
+      "outcome": "none found",
+      "exit_code": 1,
+      "detail": "No llama.cpp binaries or Ollama daemon present in container."
+    },
+    {
+      "step": "b",
+      "command": "python3 -c \"import llama_cpp\"",
+      "outcome": "python3: command not found",
+      "exit_code": 127,
+      "detail": "No Python runtime of any kind in this container. python, python3, pip, pip3 all absent."
+    },
+    {
+      "step": "c",
+      "command": "pip install --break-system-packages --only-binary=:all: llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu",
+      "outcome": "pip: command not found",
+      "exit_code": 127,
+      "detail": "pip absent because there is no Python runtime. Container has Node.js v22 and bash."
+    },
+    {
+      "step": "d",
+      "description": "Download Qwen2.5-3B-Instruct-GGUF Q4_K_M via Node.js built-in https",
+      "model": "Qwen/Qwen2.5-3B-Instruct-GGUF",
+      "quant": "Q4_K_M",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf",
+      "bytes": 2104932768,
+      "bytes_gb": 1.96,
+      "sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+      "licence": "other (Qwen License Agreement — see https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF)",
+      "peak_download_MB_s": 184,
+      "average_download_MB_s": 183,
+      "download_outcome": "SUCCESS — file arrived in full",
+      "inference_outcome": "BLOCKED — no inference engine (no Python, no llama.cpp, no Ollama)",
+      "note": "File deleted after SHA256 computed; not committed per run rules."
+    }
+  ],
+  "environment": {
+    "cpu": "AMD EPYC",
+    "cpu_cores": 2,
+    "ram_total_kb": 8380140,
+    "ram_available_kb": 7885912,
+    "disk_available_gb": 14,
+    "node_version": "v22.23.3",
+    "python": null,
+    "pip": null,
+    "ollama": null,
+    "llama_cli": null,
+    "llama_server": null
+  },
+  "conclusion": "INCONCLUSIVE — inference blocked at step b/c (no Python runtime); step d download completed successfully but no runner exists to load the model"
+}

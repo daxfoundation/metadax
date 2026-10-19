@@ -1,0 +1,63 @@
+{
+  "session_id": "ses-20261018-w1ah",
+  "wave": 1,
+  "display_name": "Theo",
+  "profile_summary": "Age 26-35, English physics hobbyist with strong prior knowledge and keen interest in space and rocketry; high patience, never gives up, engages deeply and ranges widely across the course.",
+  "turns": 8,
+  "concepts_touched": [
+    "inertia",
+    "mass",
+    "net-force",
+    "kinematic-quantities",
+    "newtons-first-law",
+    "inertial-frame",
+    "newtons-second-law",
+    "newtons-third-law"
+  ],
+  "followed_seeds": [
+    {
+      "turn": 1,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed": "How is inertia related to mass, and is it the same as weight?"
+    },
+    {
+      "turn": 2,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed": "How exactly do we add two forces that point in different directions?"
+    },
+    {
+      "turn": 3,
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "seed": "Why does turning at constant speed still count as acceleration?"
+    },
+    {
+      "turn": 4,
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "seed": "What happens the instant the forces stop balancing?"
+    },
+    {
+      "turn": 5,
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "seed": "How large is the error in treating the Earth as inertial?"
+    },
+    {
+      "turn": 6,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "seed": "What happens to acceleration if the force keeps changing?"
+    },
+    {
+      "turn": 7,
+      "node_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "seed": "What changes when the mass itself changes during the motion?"
+    },
+    {
+      "turn": 8,
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "seed": "How does the third law relate to conservation of momentum?"
+    }
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "stalls": []
+}

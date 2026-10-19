@@ -1,0 +1,15 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "prv-08",
+  "title": "Python success — personal milestone",
+  "concept": "personal-note",
+  "week": 6,
+  "visibility": "private",
+  "core": {
+    "body": "Actually ran a real script on my own work data today (anonymised). The pandas read_csv worked. I nearly phoned my mum. Six weeks ago I had never written a single line of code."
+  },
+  "created_at": "2026-014-01T00:00:00Z",
+  "updated_at": "2026-014-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

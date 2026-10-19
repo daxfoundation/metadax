@@ -1,0 +1,98 @@
+{
+  "light_dups": [
+    {
+      "dup_id": "n_nl01rq4fv8mt2dxyps7bknc0ej",
+      "target_id": "L01.M01.O01"
+    },
+    {
+      "dup_id": "n_nl02jz5bw3xmpve0tkfrd8qynh",
+      "target_id": "n_hh1ash4knccqm98y2n9hfn1h5c"
+    },
+    {
+      "dup_id": "n_nl03dn7cg4qswry2mkve5xbf0zh",
+      "target_id": "n_r5p2w8jv3cxtnm6bq9dk0yf4hs"
+    },
+    {
+      "dup_id": "n_nl04x8bftm3nvkd5wyjpc6rqhe0",
+      "target_id": "n_b4m7gx1pz6wqdce8nv3sk0rty2"
+    },
+    {
+      "dup_id": "n_nl05tp7jgwz2fxbs0qmne8rvck4",
+      "target_id": "n_e9c2fv5aq7ytxmrb0kp3dh8wn1"
+    },
+    {
+      "dup_id": "n_nl06mf4kyz8rqcpnjsdx3wtbvhg",
+      "target_id": "n_x7a3ck9qm5vwrpb2dt4nhe0fy6"
+    },
+    {
+      "dup_id": "n_nl07vr9nze1bqkpsdtxhcw5fjg2",
+      "target_id": "n_d2z8pm1sw6ybqren3vt5cx7kh0"
+    },
+    {
+      "dup_id": "n_nl08ec2yfxm4kspn9wdrtbhq7g0",
+      "target_id": "n_y6g3ht5wm8dkrpxq2vb0cz9ns1"
+    },
+    {
+      "dup_id": "n_nl09zs6vpcxn0bdmkfrtyq4wjh3",
+      "target_id": "n_s8k1rz4cx7mvpwqb5fy9dn0jte6"
+    },
+    {
+      "dup_id": "n_nl10hk3drp0wzjembnfsxyvtcq5",
+      "target_id": "n_tn2fp8vd0wzjqxk6bc9mr4esh7y"
+    }
+  ],
+  "heavy_dups": [
+    {
+      "dup_id": "n_nh11gw4zfh7cntbsyxjmrpvd9k",
+      "target_id": "n_f7dv1ks4rb9mcphwzx2qne0yt6b"
+    },
+    {
+      "dup_id": "n_nh12pj5nxe2skbdtfrcmqhzwy0",
+      "target_id": "n_zt4qn7js2xcwbmkr9fv1hp6yde0"
+    },
+    {
+      "dup_id": "n_nh13by6wkq3xhefnjdmczvs8tp",
+      "target_id": "n_ub6ej0pf4wyrzshx5gm2nk1ctd9"
+    },
+    {
+      "dup_id": "n_nh14cf0hntbsxmwyjpzdvrgkq8",
+      "target_id": "n_og9tq2fd6nhwbsrxe0vz4mp1jcy"
+    },
+    {
+      "dup_id": "n_nh15mw8bfpzkdvcsnhg3qrxjyt",
+      "target_id": "n_a5e8bq2jx0yfcvnr4hwd7pmkt3z"
+    },
+    {
+      "dup_id": "n_nh16xt4rg5kdpzm9bfhynvsqwe",
+      "target_id": "n_gh3np6wz8krvmxs1qt0bc5jyd4e"
+    },
+    {
+      "dup_id": "n_nh17jd7qwvbkcnzsxphrtem4fg",
+      "target_id": "n_w3j6nt8ld1krscxp5qm0bv7ez4"
+    },
+    {
+      "dup_id": "n_nh18yn3kqrx7hdfmtzvsecbpwg",
+      "target_id": "n_p9f0gh2re4mvzywq7kb5cx6uts8"
+    },
+    {
+      "dup_id": "n_nh19sk9mzb4xrcpfwdjgvhyqnt",
+      "target_id": "n_v1f4bk7nz0xjgrp9wh8dm5etq2"
+    },
+    {
+      "dup_id": "n_nh20wf2tpvy7rznqkbsjhxmdc9",
+      "target_id": "n_ka7589qwn4z1n2tghxxcv2vzbm"
+    }
+  ],
+  "trap_ids": [
+    "n_tr01fp8yvx3mzkqs4rcntdb9hw",
+    "n_tr02kd5gv4ywrxfmhzpbn7qstj",
+    "n_tr03hz2qfxs9rmtjpndckvb5wy",
+    "n_tr04bv7zydcmkhtfxp2nrgqsw5",
+    "n_tr05mn4xbqzpfytskdh8rcwvjg",
+    "n_tr06qs3jrcxhkdvmybt6fpzwn0",
+    "n_tr07dc8nqmrkvfbzxy5hepwgts",
+    "n_tr08gf5ywx8kpzhvstmrcq3ndb",
+    "n_tr09cz9rpjbd7thwvqxfmgkne0",
+    "n_tr10wy0bsxn4ztgrjfckmvph3e"
+  ]
+}

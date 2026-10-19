@@ -1,0 +1,50 @@
+SPEC: Thin-Pool Allocation Model
+
+Export a named ES-module function:
+
+  export function thinPool(totalGib, ops)
+
+Parameters
+  totalGib – total physical capacity of the thin pool in GiB (number > 0)
+  ops      – array of operation objects to apply in order
+
+Each operation object has:
+  { type: 'promise' | 'write' | 'free' | 'discard' | 'trim', gib: number }
+
+Operation semantics
+  'promise' – a volume is thinly provisioned; adds gib to promised_gib.
+              No physical space is consumed yet.
+  'write'   – data is written; adds gib to written_gib AND physical_used_gib.
+  'free'    – a volume or region is logically deleted; subtracts gib from
+              written_gib. Physical space is NOT immediately reclaimed.
+  'discard' – the guest OS sends a DISCARD command; subtracts gib from
+              physical_used_gib (space is returned to the pool).
+  'trim'    – equivalent to 'discard' for this model; subtracts gib from
+              physical_used_gib.
+
+Returns an object:
+  {
+    promised_gib:     number,   // total promised to volumes
+    written_gib:      number,   // logically written (after frees)
+    freed_gib:        number,   // total freed so far
+    physical_used_gib: number,  // actual physical blocks in use
+    over_committed:   boolean,  // promised_gib > totalGib
+    over_full:        boolean   // physical_used_gib > totalGib
+  }
+
+All values must be ≥ 0 (clamp if needed).
+
+Examples
+  thinPool(100, [{type:'promise',gib:50}])
+    → { promised_gib:50, written_gib:0, freed_gib:0,
+        physical_used_gib:0, over_committed:false, over_full:false }
+
+  thinPool(100, [{type:'promise',gib:120}])
+    → { ..., promised_gib:120, over_committed:true }
+
+  thinPool(100, [
+    {type:'write',gib:40},
+    {type:'free',gib:10},
+    {type:'discard',gib:10}
+  ])
+    → { written_gib:30, freed_gib:10, physical_used_gib:30 }

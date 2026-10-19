@@ -1,0 +1,40 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s1-jo",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 1,
+    "title": "Sounds That Stick",
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-13",
+  "attempted": [
+    {
+      "game": "Dino Sound Game",
+      "answered": 11,
+      "right": 8
+    }
+  ],
+  "reached": [
+    {
+      "game": "Dino Sound Game",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "said the sounds but they stayed apart",
+      "count": 2
+    },
+    {
+      "name": "guessed from the first sound",
+      "count": 1
+    }
+  ],
+  "learner_words": "It is kind of babyish but the games are actually fun.",
+  "guide_note": "Jo did the Dino Sound Game Monday afternoon while Pip was resting. Jo moved through it quickly and seemed a little bored by the presentation at first — made a comment about it being for little kids — but settled in once the levels got harder. Same game stats as Pip since it is the same package, but Jo's pace was noticeably faster and required no encouragement from me. Reached level 2. The errors that did happen were probably speed-related more than anything else. Jo wrapped up in about half the time Pip took.",
+  "generated_by": "parent-filed"
+}

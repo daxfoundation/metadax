@@ -1,0 +1,15 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "prv-01",
+  "title": "Personal note: why am I doing this?",
+  "concept": "personal-note",
+  "week": 1,
+  "visibility": "private",
+  "core": {
+    "body": "Reminder to myself: my manager told me my job might be at risk if I do not upskill. This is not just a hobby — I need to get through this course and prove I can do data work."
+  },
+  "created_at": "2026-09-01T00:00:00Z",
+  "updated_at": "2026-09-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

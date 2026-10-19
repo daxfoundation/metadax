@@ -1,0 +1,54 @@
+{
+  "id": "Q19",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "reuse",
+    "target_id": "n_v1f4bk7nz0xjgrp9wh8dm5etq2",
+    "confidence": 0.91,
+    "resolved": true,
+    "node": {
+      "id": "n_v1f4bk7nz0xjgrp9wh8dm5etq2",
+      "parent_id": "L01.M01.O01",
+      "title": "Complex IV and oxygen reduction",
+      "canonical_question": "How does Complex IV transfer electrons to oxygen and what is the product?",
+      "intent": "deepen",
+      "summary": "Complex IV (cytochrome c oxidase) passes four electrons to one oxygen molecule, producing two water molecules and pumping four protons.",
+      "concepts": ["electron-transport-chain", "cytochrome-c"],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-fixture",
+      "reuse_count": 1,
+      "superseded_by": null
+    },
+    "seeds": [
+      {
+        "id": "n_nh19sk9mzb4xrcpfwdjgvhyqnt",
+        "title": "Cytochrome c oxidase reaction products",
+        "canonical_question": "At the terminus of the respiratory chain, how does cytochrome c oxidase reduce molecular oxygen, how many protons does it translocate, and what metabolite is formed?",
+        "intent": "deepen",
+        "relation": "child"
+      },
+      {
+        "id": "n_ka7589qwn4z1n2tghxxcv2vzbm",
+        "title": "Cytochrome c structure and role",
+        "canonical_question": "What does cytochrome c do in the electron transport chain?",
+        "intent": "deepen",
+        "relation": "sibling"
+      },
+      {
+        "id": "n_hh1ash4knccqm98y2n9hfn1h5c",
+        "title": "ATP synthase mechanism",
+        "canonical_question": "How does ATP synthase use proton flow to make ATP?",
+        "intent": "deepen",
+        "relation": "sibling"
+      }
+    ],
+    "rendering_md": "**Complex IV** (also called cytochrome c oxidase) is the last protein complex in the electron transport chain. Here is what it does step by step.\n\n**Receiving electrons from cytochrome c**\n\nCytochrome c is a small mobile protein that shuttles single electrons from Complex III to Complex IV. Complex IV collects four of these electrons one at a time before it can act on oxygen.\n\n**Reducing oxygen to water**\n\nOnce Complex IV has gathered four electrons, it passes them all to one molecule of oxygen (O2). Oxygen is very electronegative, so it accepts these electrons and combines with protons (H+) drawn from the matrix to form two molecules of water:\n\nO2 + 4 electrons + 4 H+ (matrix) --> 2 H2O\n\nThis is why you exhale water vapour and why cellular respiration requires a continuous supply of oxygen.\n\n**Pumping protons**\n\nAt the same time, Complex IV uses the energy released by that electron transfer to pump four additional protons from the mitochondrial matrix into the intermembrane space. These pumped protons add to the proton gradient that drives ATP synthase.\n\n**Summary**\n- 4 electrons collected from cytochrome c\n- 1 O2 molecule reduced to 2 H2O\n- 4 protons pumped across the inner membrane\n\nWithout oxygen to accept those electrons, Complex IV would stall, the entire electron transport chain would back up, and ATP production via oxidative phosphorylation would stop.",
+    "options": {
+      "show_seeds": true,
+      "allow_zoom_out": true
+    },
+    "warnings": []
+  }
+}

@@ -1,0 +1,41 @@
+SPEC: Nested Storage Layer List for a Backend
+
+Export a named ES-module function:
+
+  export function storageLayers(layers)
+
+Parameter
+  layers – array of layer objects, each with:
+    {
+      name:             string,
+      type:             string,   // e.g. 'NVMe', 'SSD', 'HDD', 'tape', 'cache'
+      latency_us:       number,   // typical read latency, microseconds
+      throughput_mbps:  number,   // sustained read throughput, MB/s
+      capacity_gib:     number    // capacity in GiB
+    }
+
+Returns an array of the same layer objects, each annotated with:
+  {
+    ...original fields...
+    role:  'hot' | 'warm' | 'cold',
+    rank:  number   // 1 = fastest (lowest latency)
+  }
+
+Ordering rules
+  1. Sort ascending by latency_us (fastest first).
+  2. Assign rank starting at 1.
+  3. Assign role:
+       rank 1              → 'hot'
+       rank = total layers → 'cold'
+       all others          → 'warm'
+     (If there are only 2 layers: rank 1 = 'hot', rank 2 = 'cold'.)
+
+Examples
+  storageLayers([
+    { name:'HDD',  type:'HDD',  latency_us:5000, throughput_mbps:150,  capacity_gib:10000 },
+    { name:'NVMe', type:'NVMe', latency_us:100,  throughput_mbps:3000, capacity_gib:1000  }
+  ])
+  → [
+      { name:'NVMe', ..., role:'hot',  rank:1 },
+      { name:'HDD',  ..., role:'cold', rank:2 }
+    ]

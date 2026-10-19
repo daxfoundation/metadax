@@ -1,0 +1,15 @@
+SIMULATED — pid=a2-i3, arm=A-rerun, lang=id-x-jv, subject=layang-layang
+
+[GUIDE 1]: Bayu, coba pikiren ngene: siji — gaya tarikan tali marang layangan, loro — gaya tarikan layangan marang tali. Loro-lorone iki ngenani benda apa? Gaya siji ngenani sapa, gaya loro ngenani sapa?
+
+[LEARNER 1]: Hmm... gaya siji ngenani layangan, gaya loro ngenani... tali? Tapi nek ngono, apa bedane?
+
+[RESOLVED 1]: NO
+
+[GUIDE 2]: Bener banget, Bayu! Saiki coba dipikir: layangan iku mabur apa ora gumantung karo kabeh gaya sing ngenani layangan wae, to? Gaya sing ngenani tali — iku urusane tali, dudu layangan. Dadi, layangan isa mabur apa ora, kuwi kudu delok gaya apa wae sing ngenani layangan — angin saka ngisor, beban layangan, lan tarikan tali. Kabeh iku ngenani siji benda: layangan. Setuju?
+
+[LEARNER 2]: Oh... dadi sing penting kuwi gaya-gaya sing ngenani layangan thok, dudu gaya sing ngenani tali? Nek angin ngangkat layangan luwih kuat tinimbang beban karo tarikan tali, ya layangan bisa mabur?
+
+[RESOLVED 2]: YES
+
+[SUMMARY]: pid=a2-i3, attempts=2, resolved=YES

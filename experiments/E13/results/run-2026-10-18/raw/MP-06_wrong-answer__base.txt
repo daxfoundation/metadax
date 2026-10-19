@@ -1,0 +1,56 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "Not quite — that answer describes a common mix-up. The electron transport chain does not make ATP on its own. Let's work through it.\n\n**Hint (1 of 2 — subtle):** Think about what the chain actually does to protons at each step, and who uses that result to make ATP.\n\nTry again — this is attempt 2 of 3.",
+    "instructions": "Read the scenario and answer in two or three sentences. Explain the mechanism, not just the outcome.",
+    "example": "A researcher blocks Complex I in isolated mitochondria and measures electron flow. Predict what happens to electron flow through the downstream complexes, and explain why. *(Format example only — this is not the real question.)*",
+    "question": "A cell is suddenly deprived of oxygen. Using what you know about the electron transport chain, explain what happens to the movement of electrons along the chain and why the chain cannot simply continue without oxygen."
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Apply",
+    "question_type": "Short Answer (practical use)",
+    "attempt": 2
+  },
+  "feedback": {
+    "result": "incorrect",
+    "hint": "Think about what the chain actually does to protons at each step, and who uses that result to make ATP.",
+    "correct_answer": "",
+    "explanation": "",
+    "misconception": "The chain makes ATP directly"
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Apply",
+    "attempt": 2,
+    "help_used": true,
+    "hints_given": 1,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "in_progress",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 38,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

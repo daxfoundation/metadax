@@ -1,0 +1,40 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "That's exactly right — **B: Drawing a card from a well-shuffled deck**!\n\nWhen you draw from a shuffled deck, you genuinely can't know in advance which card you'll get. That unpredictability is the heart of a random event.\n\n---\n\nNow let's go a level deeper.\n\n**Question 2 — Understand**\n\nYou roll a standard six-sided die once.\n\n*Describe the **sample space** — list all possible outcomes — and explain in your own words why each outcome qualifies as part of a random event.*"
+  },
+  "meta": {
+    "concept": "random-event",
+    "bloom_level": "Understand",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "feedback": {
+    "result": "correct",
+    "correct_answer": "B — Drawing a card from a well-shuffled deck",
+    "explanation": "A random event is one where the outcome is uncertain even though the set of all possible outcomes is known. Drawing from a shuffled deck satisfies both conditions."
+  },
+  "handoff": null,
+  "summary": null,
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "random-event": {
+        "Remember": "passed_first_try",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "random-event": 40
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

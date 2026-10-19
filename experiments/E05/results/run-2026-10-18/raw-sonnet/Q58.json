@@ -1,0 +1,65 @@
+{
+  "id": "Q58",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "create",
+    "target_id": "runtime",
+    "confidence": 0.88,
+    "resolved": false,
+    "node": {
+      "id": "runtime",
+      "parent_id": "L01.M01.O01",
+      "title": "Mitochondrial protein import machinery",
+      "canonical_question": "How do mitochondria import proteins made in the cytoplasm?",
+      "intent": "connect",
+      "summary": "Most mitochondrial proteins are encoded by nuclear genes and made on cytoplasmic ribosomes. They carry targeting sequences recognised by the TOM and TIM translocase complexes, which thread them into the correct mitochondrial compartment.",
+      "concepts": [
+        "mitochondrion-structure"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "runtime",
+      "bloom_target": "Understand"
+    },
+    "seeds": [
+      {
+        "canonical_question": "What happens to the targeting sequence after a protein is imported into the mitochondrial matrix?",
+        "intent": "deepen",
+        "concepts": ["mitochondrion-structure"]
+      },
+      {
+        "canonical_question": "How do chaperone proteins help newly imported mitochondrial proteins fold correctly?",
+        "intent": "deepen",
+        "concepts": ["mitochondrion-structure"]
+      },
+      {
+        "canonical_question": "Why do mitochondria still rely on nuclear-encoded proteins if they have their own DNA?",
+        "intent": "connect",
+        "concepts": ["mitochondrion-structure"]
+      }
+    ],
+    "rendering_md": "**The problem: two genomes, one organelle**\n\nMitochondria have their own small genome, but it encodes only about 13 proteins in humans. The remaining ~1,000 or so mitochondrial proteins are encoded by genes in the cell nucleus, made on ribosomes in the cytoplasm, and then physically moved into the mitochondrion.\n\n**Step 1 – A targeting signal acts as an address label**\n\nMost matrix-destined proteins carry a short stretch of amino acids at their N-terminus called a **mitochondrial targeting sequence (MTS)**. This sequence is typically positively charged and folds into a helix. It is recognised by receptor proteins on the mitochondrial surface.\n\n**Step 2 – Entry through the outer membrane (TOM complex)**\n\nThe **TOM complex** (Translocase of the Outer Membrane) is the main entry gate. Receptor subunits (Tom20, Tom22) bind the MTS, and the protein is threaded through the Tom40 channel into the space between the two membranes.\n\n**Step 3 – Routing through the inner membrane (TIM23 complex)**\n\nFor proteins destined for the matrix, the **TIM23 complex** (Translocase of the Inner Membrane) takes over. It uses the electrical charge difference across the inner membrane (the same proton gradient that drives ATP synthesis) to pull the positively charged targeting sequence through into the matrix.\n\n**Step 4 – Clipping the label and folding**\n\nOnce inside the matrix, the mitochondrial processing peptidase (MPP) cuts off the targeting sequence. Chaperone proteins such as **mtHsp70** (assisted by the PAM motor complex) help pull the protein fully through the channel and then help it fold into its correct shape.\n\n**Other routes for other destinations**\n\n- Proteins heading to the outer membrane use the **SAM complex** (Sorting and Assembly Machinery).\n- Carrier proteins that span the inner membrane (such as the ADP/ATP translocase) bypass TIM23 and instead use the **TIM22 complex**.\n- A small number of proteins are inserted into the inner membrane laterally by TIM23 without ever entering the matrix.\n\n**Connection to energy production**\n\nThis import machinery itself depends on the proton gradient across the inner membrane — the same gradient that powers ATP synthesis. If that gradient collapses, protein import into the matrix slows, showing how tightly the structure and function of the mitochondrion are linked.",
+    "options": [
+      {
+        "id": "n_og9tq2fd6nhwbsrxe0vz4mp1jcy",
+        "title": "Mitochondrial endosymbiotic origin",
+        "canonical_question": "What is the endosymbiotic theory of mitochondrial origin?",
+        "reason": "Explains why most mitochondrial proteins are nuclear-encoded despite the organelle having its own genome"
+      },
+      {
+        "id": "n_gh3np6wz8krvmxs1qt0bc5jyd4e",
+        "title": "Mitochondria as semi-autonomous organelles",
+        "canonical_question": "Why are mitochondria considered semi-autonomous organelles?",
+        "reason": "Directly addresses the dual dependence on mitochondrial and nuclear genomes that makes protein import necessary"
+      },
+      {
+        "id": "n_tn2fp8vd0wzjqxk6bc9mr4esh7y",
+        "title": "Mitochondrial double membrane",
+        "canonical_question": "What is the function of each mitochondrial membrane layer?",
+        "reason": "The TOM and TIM translocases act at the outer and inner membranes respectively"
+      }
+    ],
+    "warnings": ["out_of_scope"]
+  }
+}

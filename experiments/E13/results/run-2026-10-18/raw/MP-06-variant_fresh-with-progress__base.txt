@@ -1,0 +1,47 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "intro",
+  "display": {
+    "message": "Welcome, Fixture Learner! Great to have you here.\n\nIn this session we will work through three concepts:\n\n1. **Electron transport chain** — how membrane complexes pass electrons and pump protons\n2. **Proton gradient** — the stored proton difference across the inner membrane and the energy it holds\n3. **Cytochrome c** — the small mobile carrier that shuttles electrons between complexes\n\nQuestions climb from remembering facts toward understanding (and, for the electron transport chain, all the way to analysis). Hints and second chances are a normal part of learning — use them freely.\n\n**Commands you can type at any time:**\n- `next` — skip to the next concept\n- `skip` — skip to the next level within the same concept\n- `hint` — get a hint (no attempt used)\n- `why` — find out what the question is testing and why it matters\n- `more` — go deeper after completing a concept\n- `ask: <your question>` — send a question to the follow-up tutor\n- `summary` — see your results so far\n- `stop` — end the session\n\nBecause you already passed the **Remember** level for the electron transport chain, we will start one step up at **Understand**.\n\n---\n\n**Instructions:** Write your answer in your own words — one or two sentences is fine.\n\n**Example:** *(Not the real question — just shows the format.)* \"Explain in your own words why each complex in the chain releases energy.\" A good answer might be: \"Each complex releases energy because electrons move to a lower-energy state at every hand-off, like a ball rolling down a staircase.\"\n\n**Question:** In your own words, explain what happens at each hand-off point as electrons travel along the electron transport chain.",
+    "instructions": "Write your answer in your own words — one or two sentences is fine.",
+    "example": "\"Explain in your own words why each complex in the chain releases energy.\" A good answer might be: \"Each complex releases energy because electrons move to a lower-energy state at every hand-off, like a ball rolling down a staircase.\"",
+    "question": "In your own words, explain what happens at each hand-off point as electrons travel along the electron transport chain."
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Understand",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Understand",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "not_started",
+        "Apply": "not_started",
+        "Analyze": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 25,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

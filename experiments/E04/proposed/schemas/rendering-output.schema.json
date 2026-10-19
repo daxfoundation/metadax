@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/rendering-output.schema.json",
+  "title": "metadax MP-04 CONTENT render output",
+  "description": "Output envelope for CONTENT mode=render. Validates the operation output, not a persisted file.",
+  "type": "object",
+  "required": ["type", "node_id", "rendering_md", "personalized_with", "warnings"],
+  "properties": {
+    "type": { "const": "rendering" },
+    "node_id": { "type": "string" },
+    "audience_key": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
+    "rendering_md": { "type": "string" },
+    "personalized_with": { "type": "array", "items": { "type": "string" } },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "missing": { "type": "array", "items": { "type": "string" } },
+    "message": { "type": "string" }
+  }
+}

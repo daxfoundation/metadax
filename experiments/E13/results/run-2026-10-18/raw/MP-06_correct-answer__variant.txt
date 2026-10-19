@@ -1,0 +1,51 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "That is correct. Oxygen is the terminal electron acceptor at the last complex — it combines with protons to form water, and without it the electrons have nowhere to go and the whole chain backs up and stops. Good recall. Now let's move to applying that idea.",
+    "instructions": "Answer in two or three sentences. Describe what would happen and explain why, based on how the chain works.",
+    "example": "Example (format only, not the real question): If you removed the inner membrane, what would happen to proton pumping? Explain why.",
+    "question": "A researcher adds a chemical that completely blocks oxygen from reaching the last complex. Using what you know about how the electron transport chain works, describe what would happen to electron flow and to proton pumping.",
+    "options": []
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Apply",
+    "question_type": "Short Answer (practical use)",
+    "attempt": 1
+  },
+  "feedback": {
+    "result": "correct",
+    "hint": "",
+    "correct_answer": "",
+    "explanation": "Oxygen accepts the final electrons at the last complex and combines with protons to form water. Without oxygen, electrons have nowhere to go and the whole chain stalls, so proton pumping stops too.",
+    "misconception": ""
+  },
+  "state": {
+    "concept_order": [
+      "electron-transport-chain",
+      "proton-gradient",
+      "cytochrome-c"
+    ],
+    "concept": "electron-transport-chain",
+    "level": "Apply",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try"
+      },
+      "proton-gradient": {},
+      "cytochrome-c": {}
+    },
+    "competency": {
+      "electron-transport-chain": 15,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

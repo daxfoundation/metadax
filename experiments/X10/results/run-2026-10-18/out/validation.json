@@ -1,0 +1,12 @@
+[
+  {
+    "name": "companion record (log + view) vs companion.schema.json",
+    "ok": true,
+    "errors": []
+  },
+  {
+    "name": "durable refusal set vs refusal.schema.json",
+    "ok": true,
+    "errors": []
+  }
+]

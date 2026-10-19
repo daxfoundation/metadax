@@ -1,0 +1,229 @@
+{
+  "type": "course",
+  "course": {
+    "schema": "metadax.course/0.2",
+    "id": "probability-adults",
+    "title": "Probability for Adults Returning to Maths",
+    "summary": "Rebuild your confidence with chance and uncertainty using everyday examples. You will move from counting outcomes to calculating real probabilities and understanding expected value.",
+    "language": "en",
+    "audience": {
+      "intended_bands": ["adult"],
+      "notes": "Adults who studied maths years ago and want a confident re-entry. No recent maths background assumed; arithmetic comfort is enough."
+    },
+    "steer": {
+      "focus": "Build fluency with probability from first principles, connecting abstract rules to real-world decisions adults face.",
+      "include": [
+        "concrete everyday scenarios (weather, games, insurance, health statistics)",
+        "step-by-step worked examples before formulas",
+        "common misconceptions addressed directly",
+        "plain-language definitions before symbolic notation"
+      ],
+      "exclude": [
+        "calculus or measure theory",
+        "combinatorics beyond basic counting",
+        "advanced distributions (normal, binomial) in depth"
+      ],
+      "tone": "warm, precise, never condescending",
+      "depth": "introductory",
+      "source_policy": "open",
+      "scope_policy": "tangents_allowed",
+      "max_depth": 8
+    },
+    "concepts": [
+      {
+        "id": "random-event",
+        "name": "Random Event",
+        "description": "An outcome or set of outcomes of a chance process whose result cannot be known in advance.",
+        "bloom_target": "Understand",
+        "prerequisites": [],
+        "misconceptions": [
+          "Random means equally likely — in fact outcomes can have very different probabilities.",
+          "A run of one outcome makes the opposite 'due' next — each trial is independent."
+        ]
+      },
+      {
+        "id": "sample-space",
+        "name": "Sample Space",
+        "description": "The complete set of all possible outcomes of a random experiment.",
+        "bloom_target": "Apply",
+        "prerequisites": ["random-event"],
+        "misconceptions": [
+          "The sample space only includes outcomes you consider likely — it must include all possible outcomes.",
+          "Order never matters when listing outcomes — it matters in some experiments and not others."
+        ]
+      },
+      {
+        "id": "classical-probability",
+        "name": "Classical Probability",
+        "description": "The probability of an event calculated as the ratio of favourable outcomes to total equally-likely outcomes.",
+        "bloom_target": "Apply",
+        "prerequisites": ["sample-space"],
+        "misconceptions": [
+          "Probability can be greater than 1 or negative — it is always between 0 and 1 inclusive.",
+          "If an event has not happened yet, its probability must be zero."
+        ]
+      },
+      {
+        "id": "expected-value",
+        "name": "Expected Value",
+        "description": "The long-run average result of a random process, calculated by weighting each outcome by its probability.",
+        "bloom_target": "Apply",
+        "prerequisites": ["classical-probability"],
+        "misconceptions": [
+          "The expected value must be one of the possible outcomes — it is often a value that never actually occurs.",
+          "A positive expected value guarantees a profit on any single play."
+        ]
+      },
+      {
+        "id": "conditional-probability",
+        "name": "Conditional Probability",
+        "description": "The probability of an event given that another event has already occurred, written P(A | B).",
+        "bloom_target": "Understand",
+        "prerequisites": ["classical-probability"],
+        "misconceptions": [
+          "P(A|B) always equals P(B|A) — this is the base-rate fallacy and is rarely true.",
+          "Conditioning on an event that has already happened changes nothing — it restricts the sample space."
+        ]
+      }
+    ],
+    "lessons": [
+      {
+        "id": "L01",
+        "title": "What Is Probability?",
+        "summary": "You will learn what random events are, how to list all possible outcomes, and how to calculate basic probabilities. This lesson gives you the language and tools every other idea in probability depends on.",
+        "steer": {
+          "focus": "Establish the vocabulary and the fundamental ratio definition of probability so learners can compute P(event) from a complete sample space.",
+          "include": [
+            "physical examples: coins, dice, cards, weather forecasts",
+            "listing sample spaces explicitly before calculating",
+            "the complement rule as a practical shortcut"
+          ],
+          "exclude": [
+            "probability trees (save for conditional probability)",
+            "permutations and combinations",
+            "relative-frequency or subjective interpretations in depth"
+          ]
+        },
+        "modules": [
+          {
+            "id": "L01.M01",
+            "title": "From Random Events to Probability Values",
+            "summary": "Starting from the idea of a random event, you will build a sample space and use it to calculate classical probabilities.",
+            "steer": {
+              "focus": "Guide the learner from recognising randomness to writing and using the P = favourable / total formula correctly.",
+              "include": [
+                "at least two fully worked examples per objective",
+                "explicit listing of sample spaces",
+                "a short self-check question for each objective"
+              ],
+              "exclude": [
+                "tree diagrams",
+                "Venn diagrams",
+                "sigma notation"
+              ]
+            },
+            "objectives": [
+              {
+                "id": "L01.M01.O01",
+                "title": "Identify random events and describe their outcomes",
+                "statement": "The learner can recognise whether a process is random and list its possible outcomes in plain language.",
+                "concepts": ["random-event"],
+                "bloom_target": "Understand",
+                "source_refs": []
+              },
+              {
+                "id": "L01.M01.O02",
+                "title": "Construct the sample space for a simple experiment",
+                "statement": "The learner can write out the complete sample space for a one-stage or two-stage experiment and count its elements.",
+                "concepts": ["sample-space", "random-event"],
+                "bloom_target": "Apply",
+                "source_refs": []
+              },
+              {
+                "id": "L01.M01.O03",
+                "title": "Calculate classical probability using the ratio formula",
+                "statement": "The learner can apply P(event) = favourable outcomes / total outcomes to find probabilities as fractions, decimals and percentages.",
+                "concepts": ["classical-probability", "sample-space"],
+                "bloom_target": "Apply",
+                "source_refs": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "L02",
+        "title": "Using Probability to Make Decisions",
+        "summary": "You will see how probability drives real choices by calculating expected values and reasoning about conditional probability. By the end, you can evaluate offers, risks and statistics you meet in daily life.",
+        "steer": {
+          "focus": "Show how the core probability rules translate into practical decision-making tools: expected value and conditional probability.",
+          "include": [
+            "real-world scenarios: lotteries, insurance, medical tests, weather",
+            "numerical worked examples from start to finish",
+            "the base-rate fallacy as a concrete cautionary example"
+          ],
+          "exclude": [
+            "formal Bayes theorem notation beyond P(A|B)",
+            "continuous probability distributions",
+            "variance and standard deviation"
+          ]
+        },
+        "modules": [
+          {
+            "id": "L02.M01",
+            "title": "Expected Value and Conditional Probability",
+            "summary": "Combine probabilities with outcomes to find expected values, then learn how new information changes probabilities.",
+            "steer": {
+              "focus": "Develop intuition for expected value as a long-run average and conditional probability as probability within a restricted space.",
+              "include": [
+                "a lottery or game-of-chance example for expected value",
+                "a medical-test or weather example for conditional probability",
+                "comparison of P(A|B) and P(B|A) to defuse the base-rate fallacy"
+              ],
+              "exclude": [
+                "moment-generating functions",
+                "Bayesian updating with prior distributions",
+                "independence proofs"
+              ]
+            },
+            "objectives": [
+              {
+                "id": "L02.M01.O01",
+                "title": "Calculate and interpret the expected value of a simple random outcome",
+                "statement": "The learner can compute the expected value of a random variable with a small number of outcomes and explain what it means for long-run decisions.",
+                "concepts": ["expected-value", "classical-probability"],
+                "bloom_target": "Apply",
+                "source_refs": []
+              },
+              {
+                "id": "L02.M01.O02",
+                "title": "Explain and calculate conditional probability P(A given B)",
+                "statement": "The learner can identify when a probability is conditional, calculate P(A|B) from a table or scenario, and avoid the base-rate fallacy.",
+                "concepts": ["conditional-probability", "sample-space"],
+                "bloom_target": "Understand",
+                "source_refs": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sources": [],
+    "policy": {
+      "learner_nodes": "pending_review",
+      "minor_nodes": "pending_review"
+    },
+    "license": "CC-BY-4.0",
+    "generated_segments_license": "CC0-1.0",
+    "constraint_decl": null,
+    "created_at": "runtime",
+    "updated_at": "runtime"
+  },
+  "assumptions": [
+    "Size 'short' normally allows 3 lessons; per experiment E01 spec the target is exactly 2 lessons with 5 objectives total. L01.M01 holds 3 objectives and L02.M01 holds 2.",
+    "Audience is adults returning to maths; arithmetic comfort assumed, no recent maths background required.",
+    "No SOURCE block provided, so source_policy is 'open' and sources list is empty.",
+    "Concepts are limited to 5 to cover the 5 core topic areas specified: random events, sample space, classical probability, expected value, conditional probability."
+  ],
+  "warnings": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "Q04",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "reuse",
+    "target_id": "n_b4m7gx1pz6wqdce8nv3sk0rty2",
+    "confidence": 0.93,
+    "resolved": true,
+    "node": {
+      "id": "n_b4m7gx1pz6wqdce8nv3sk0rty2",
+      "parent_id": "L01.M01.O01",
+      "title": "NADH and FADH2 as electron donors",
+      "canonical_question": "How do NADH and FADH2 feed electrons into the transport chain?",
+      "intent": "deepen",
+      "summary": "NADH donates electrons at Complex I; FADH2 at Complex II. Each donation ultimately pumps protons across the membrane.",
+      "concepts": [
+        "electron-transport-chain",
+        "cellular-respiration"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-fixture",
+      "reuse_count": 0,
+      "superseded_by": null
+    },
+    "seeds": [
+      "Why does FADH2 yield less ATP than NADH?",
+      "What reactions in the Krebs cycle produce NADH and FADH2?",
+      "How does Complex I use the electrons from NADH to pump protons?"
+    ],
+    "rendering_md": "NADH and FADH2 are the main electron donors that feed the mitochondrial respiratory chain.\n\n**NADH** donates its electrons at **Complex I** (NADH dehydrogenase). This is the entry point for electrons coming from glycolysis (via the malate-aspartate shuttle), pyruvate oxidation, and the Krebs cycle. As electrons pass through Complex I, four protons are pumped from the matrix into the intermembrane space.\n\n**FADH2** donates its electrons at **Complex II** (succinate dehydrogenase). Because Complex II does not pump protons directly, the electrons entering here generate less of a proton gradient — and therefore less ATP — than those from NADH.\n\nAfter entering at either complex, the electrons are passed along a chain of protein complexes and mobile carriers (ubiquinone, then cytochrome c) until they finally reduce oxygen to water at Complex IV. Each electron transfer step releases energy that is used to pump more protons, building up the gradient that drives ATP synthase.",
+    "options": [
+      {
+        "id": "n_b4m7gx1pz6wqdce8nv3sk0rty2",
+        "title": "NADH and FADH2 as electron donors",
+        "canonical_question": "How do NADH and FADH2 feed electrons into the transport chain?",
+        "relevance": "direct"
+      }
+    ],
+    "warnings": []
+  }
+}

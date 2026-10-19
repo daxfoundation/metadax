@@ -1,0 +1,29 @@
+{
+  "comment": "SIMULATED. Blind evaluation using the same resolution criterion as run 1: learner must state that the action and reaction forces act on DIFFERENT bodies, not added on the same body, not canceling; acceleration from net force on that body only.",
+  "evaluator_model": "sonnet",
+  "resolution_criterion": "Learner states that the action and reaction forces act on DIFFERENT bodies (one on the kite/subject, one on the string/hand), so they are not added on the same body and do not cancel; each body's acceleration depends only on net force acting ON THAT body.",
+  "run1_reference": {
+    "arm_A": { "n": 6, "resolved": 6, "mean_attempts": 1.50, "attempts": [1,2,2,1,1,2] },
+    "arm_B_technique_reuse": { "n": 6, "resolved": 6, "mean_attempts": 1.83, "attempts": [1,2,2,2,2,2] }
+  },
+  "run2": {
+    "arm_A_rerun": {
+      "n": 6, "resolved": 6, "mean_attempts": 2.17,
+      "attempts": [2,2,2,2,3,2],
+      "resolved_at_attempt_1": 0,
+      "note": "All 5 EN sessions resolved at attempt 2; one id-x-jv session (Sari) needed 3 attempts."
+    },
+    "arm_C_no_technique": {
+      "n": 6, "resolved": 6, "mean_attempts": 1.67,
+      "attempts": [2,1,2,1,2,2],
+      "resolved_at_attempt_1": 2,
+      "note": "Owen (rowing, EN) and Rina (rowing, id-x-jv) resolved at attempt 1 — guide framing was explicit enough to land immediately."
+    }
+  },
+  "comparisons": {
+    "a_run1_vs_a_run2_spread": 0.67,
+    "b_run1_vs_c_run2_gap": 0.16,
+    "gap_vs_spread_ratio": 0.24,
+    "interpretation": "The B vs C gap (technique-reuse 1.83 vs no-technique 1.67, diff=0.16) is well within the A run-to-run spread (1.50 vs 2.17, diff=0.67). Technique reuse does not produce a detectable learner-advance lift over a no-technique guide on this sample."
+  }
+}

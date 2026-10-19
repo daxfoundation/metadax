@@ -1,0 +1,20 @@
+{
+  "schema": "metadax.progress/0.2",
+  "learner_id": "lrn-mira01",
+  "course_id": "data-analysis-fundamentals",
+  "device_id": "dev-alpha",
+  "snapshot_date": "2026-09-07",
+  "week_number": 1,
+  "topics_covered": [
+    "spreadsheet-basics",
+    "data-types"
+  ],
+  "overall_competency": "novice",
+  "sessions_completed": 3,
+  "nodes_visited": [
+    "L01.M01.O01",
+    "L01.M01.O02",
+    "L01.M01.O03"
+  ],
+  "weekly_summary": "Completed spreadsheet basics and data types. Comfortable with rows/columns and cell references."
+}

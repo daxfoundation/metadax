@@ -1,0 +1,386 @@
+{
+  "wave1": [
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1aa",
+      "wave": 1,
+      "display_name": "Dani",
+      "age_band": "18-25",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "no physics since school",
+      "interests": [
+        "skateboarding"
+      ],
+      "patience": "high",
+      "gives_up": false,
+      "lost_prone": false,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1ab",
+      "wave": 1,
+      "display_name": "Marco",
+      "age_band": "26-35",
+      "languages": [
+        "es"
+      ],
+      "prior_knowledge": "some high-school physics",
+      "interests": [
+        "cars",
+        "driving"
+      ],
+      "patience": "medium",
+      "gives_up": false,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1ac",
+      "wave": 1,
+      "display_name": "Priya",
+      "age_band": "18-25",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "strong math, weak physics",
+      "interests": [
+        "video games"
+      ],
+      "patience": "low",
+      "gives_up": true,
+      "lost_prone": false,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1ad",
+      "wave": 1,
+      "display_name": "Chloe",
+      "age_band": "36-55",
+      "languages": [
+        "fr"
+      ],
+      "prior_knowledge": "rusty, long ago",
+      "interests": [
+        "cooking"
+      ],
+      "patience": "medium",
+      "gives_up": false,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1ae",
+      "wave": 1,
+      "display_name": "Sam",
+      "age_band": "26-35",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "engineering background",
+      "interests": [
+        "cycling"
+      ],
+      "patience": "high",
+      "gives_up": false,
+      "lost_prone": false,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1af",
+      "wave": 1,
+      "display_name": "Jordan",
+      "age_band": "18-25",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "just finished school",
+      "interests": [
+        "basketball"
+      ],
+      "patience": "low",
+      "gives_up": true,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1ag",
+      "wave": 1,
+      "display_name": "Ute",
+      "age_band": "36-55",
+      "languages": [
+        "de"
+      ],
+      "prior_knowledge": "no science background",
+      "interests": [
+        "gardening"
+      ],
+      "patience": "medium",
+      "gives_up": false,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1ah",
+      "wave": 1,
+      "display_name": "Theo",
+      "age_band": "26-35",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "physics hobbyist",
+      "interests": [
+        "space",
+        "rockets"
+      ],
+      "patience": "high",
+      "gives_up": false,
+      "lost_prone": false,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1ai",
+      "wave": 1,
+      "display_name": "Bruno",
+      "age_band": "18-25",
+      "languages": [
+        "pt"
+      ],
+      "prior_knowledge": "weak prior",
+      "interests": [
+        "football"
+      ],
+      "patience": "low",
+      "gives_up": true,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1aj",
+      "wave": 1,
+      "display_name": "Robin",
+      "age_band": "36-55",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "teacher, non-science",
+      "interests": [
+        "music"
+      ],
+      "patience": "medium",
+      "gives_up": false,
+      "lost_prone": false,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1ak",
+      "wave": 1,
+      "display_name": "Kai",
+      "age_band": "18-25",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "average",
+      "interests": [
+        "cars"
+      ],
+      "patience": "medium",
+      "gives_up": false,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w1al",
+      "wave": 1,
+      "display_name": "Edie",
+      "age_band": "56+",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "curious retiree",
+      "interests": [
+        "sailing"
+      ],
+      "patience": "high",
+      "gives_up": false,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    }
+  ],
+  "wave2": [
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w2aa",
+      "wave": 2,
+      "display_name": "Noor",
+      "age_band": "26-35",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "no physics since school",
+      "interests": [
+        "climbing"
+      ],
+      "patience": "medium",
+      "gives_up": false,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w2ab",
+      "wave": 2,
+      "display_name": "Lena",
+      "age_band": "36-55",
+      "languages": [
+        "es"
+      ],
+      "prior_knowledge": "some physics",
+      "interests": [
+        "cars"
+      ],
+      "patience": "high",
+      "gives_up": false,
+      "lost_prone": false,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w2ac",
+      "wave": 2,
+      "display_name": "Omar",
+      "age_band": "18-25",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "just finished school",
+      "interests": [
+        "video games"
+      ],
+      "patience": "low",
+      "gives_up": true,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w2ad",
+      "wave": 2,
+      "display_name": "Tess",
+      "age_band": "26-35",
+      "languages": [
+        "en"
+      ],
+      "prior_knowledge": "engineering background",
+      "interests": [
+        "running"
+      ],
+      "patience": "high",
+      "gives_up": false,
+      "lost_prone": false,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w2ae",
+      "wave": 2,
+      "display_name": "Youssef",
+      "age_band": "18-25",
+      "languages": [
+        "fr"
+      ],
+      "prior_knowledge": "weak prior",
+      "interests": [
+        "football"
+      ],
+      "patience": "low",
+      "gives_up": true,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    },
+    {
+      "schema": "metadax.learner-profile/0.3-sim",
+      "session_id": "ses-20261018-w2af",
+      "wave": 2,
+      "display_name": "Greta",
+      "age_band": "36-55",
+      "languages": [
+        "de"
+      ],
+      "prior_knowledge": "no science background",
+      "interests": [
+        "gardening"
+      ],
+      "patience": "medium",
+      "gives_up": false,
+      "lost_prone": true,
+      "consent": {
+        "share_my_questions": true,
+        "share_abandoned_shape": true
+      }
+    }
+  ]
+}

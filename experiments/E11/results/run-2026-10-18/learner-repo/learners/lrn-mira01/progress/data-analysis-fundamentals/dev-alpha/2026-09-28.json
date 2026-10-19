@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.progress/0.2",
+  "learner_id": "lrn-mira01",
+  "course_id": "data-analysis-fundamentals",
+  "device_id": "dev-alpha",
+  "snapshot_date": "2026-09-28",
+  "week_number": 4,
+  "topics_covered": [
+    "data-cleaning",
+    "missing-values",
+    "duplicates"
+  ],
+  "overall_competency": "developing",
+  "sessions_completed": 4,
+  "nodes_visited": [
+    "L01.M04.O01",
+    "L01.M04.O02",
+    "L01.M04.O03"
+  ],
+  "weekly_summary": "Learned strategies for handling missing values and deduplication. Applied techniques to a sample dataset."
+}

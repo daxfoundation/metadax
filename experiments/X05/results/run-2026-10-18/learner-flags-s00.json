@@ -1,0 +1,4 @@
+[
+  {"turn": 3, "reason": "It reveals the key property (hydrophobic interior repels water-soluble substances) before asking the question, making lipid-soluble/nonpolar molecules the only logical answer."},
+  {"turn": 8, "reason": "It states the rule of osmosis (water moves toward higher solute concentration) and then asks a question whose answer follows directly and mechanically from that stated rule."}
+]

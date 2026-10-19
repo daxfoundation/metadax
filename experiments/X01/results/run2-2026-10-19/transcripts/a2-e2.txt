@@ -1,0 +1,15 @@
+SIMULATED — pid=a2-e2, arm=A-rerun, lang=en, subject=kite flying
+
+[GUIDE 1]: Toby, let's slow down and look at exactly which objects are involved. You said "two equal forces fighting each other" — but fighting each other on *what*? List the two forces you have in mind and write down the object each force is acting on.
+
+[LEARNER 1]: Okay... the string pulls the kite upward, and the kite pulls back on the string downward. So one force is on the kite, and one force is on the string. Oh — wait, those are on different things.
+
+[RESOLVED 1]: NO
+
+[GUIDE 2]: Exactly right — keep going with that thought. If those two forces land on two *different* objects, can they cancel each other out on the kite? And then ask yourself: what forces *do* act on the kite, and what do those add up to?
+
+[LEARNER 2]: If they're on different objects they can't cancel on the kite... so I'd need to look at just the kite by itself. The forces on the kite would be the string pulling it, plus the wind pushing it up, minus gravity pulling it down. If the wind and string tension together are bigger than gravity, the kite accelerates upward. The kite pulling back on the string doesn't even touch the kite, so it doesn't matter for the kite's motion.
+
+[RESOLVED 2]: YES
+
+[SUMMARY]: pid=a2-e2, attempts=2, resolved=YES

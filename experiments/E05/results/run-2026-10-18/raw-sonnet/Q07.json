@@ -1,0 +1,61 @@
+{
+  "id": "Q07",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "reuse",
+    "target_id": "n_d2z8pm1sw6ybqren3vt5cx7kh0",
+    "confidence": 0.97,
+    "resolved": true,
+    "node": {
+      "id": "n_d2z8pm1sw6ybqren3vt5cx7kh0",
+      "parent_id": "L01.M01.O01",
+      "title": "Oxygen as the final electron acceptor",
+      "canonical_question": "Why does the electron transport chain require oxygen?",
+      "intent": "clarify",
+      "summary": "Oxygen accepts the final electrons at Complex IV, forming water. Without oxygen the chain stalls and ATP production stops.",
+      "concepts": [
+        "electron-transport-chain",
+        "cellular-respiration"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-fixture",
+      "reuse_count": 0,
+      "superseded_by": null
+    },
+    "seeds": [
+      {
+        "question": "How does Complex IV transfer electrons to oxygen and what is the product?",
+        "intent": "deepen",
+        "target_id": "n_v1f4bk7nz0xjgrp9wh8dm5etq2"
+      },
+      {
+        "question": "Why does anaerobic respiration produce far less ATP than aerobic respiration?",
+        "intent": "contrast",
+        "target_id": "n_a5e8bq2jx0yfcvnr4hwd7pmkt3z"
+      },
+      {
+        "question": "How do NADH and FADH2 feed electrons into the transport chain?",
+        "intent": "deepen",
+        "target_id": "n_b4m7gx1pz6wqdce8nv3sk0rty2"
+      }
+    ],
+    "rendering_md": "Oxygen plays an essential role at the very end of the electron transport chain. As electrons move through Complexes I, II, III, and IV, they progressively lose energy. At Complex IV (also called cytochrome c oxidase), those electrons must be passed to a final acceptor. Molecular oxygen (O2) is that acceptor. It picks up four electrons and combines with protons to form two molecules of water.\n\nIf oxygen is absent, Complex IV has nowhere to send the electrons it receives. The entire chain backs up: electrons can no longer flow, protons can no longer be pumped across the inner mitochondrial membrane, the proton gradient collapses, and ATP synthase stops making ATP. The cell then has to rely on the much less efficient anaerobic pathways, which yield only about 2 ATP per glucose instead of the roughly 30 produced by aerobic respiration.\n\nIn short, oxygen keeps the chain moving by acting as the drain at the end of the electron pipeline.",
+    "options": [
+      {
+        "label": "Go deeper: how exactly does Complex IV reduce oxygen?",
+        "target_id": "n_v1f4bk7nz0xjgrp9wh8dm5etq2"
+      },
+      {
+        "label": "Compare: what happens when cells run without oxygen?",
+        "target_id": "n_a5e8bq2jx0yfcvnr4hwd7pmkt3z"
+      },
+      {
+        "label": "Back up: how do NADH and FADH2 start the electron flow?",
+        "target_id": "n_b4m7gx1pz6wqdce8nv3sk0rty2"
+      }
+    ],
+    "warnings": []
+  }
+}

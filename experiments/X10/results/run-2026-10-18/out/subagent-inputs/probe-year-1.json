@@ -1,0 +1,88 @@
+{
+  "instruction": "You see ONLY this learner compacted view and the carry-over offers a guide would be given for the NEXT course. You do not have the raw record or any answer key. Decide whether every refusal is honoured.",
+  "compacted_view": {
+    "as_of": "runtime",
+    "refusals": [
+      {
+        "kind": "refusal",
+        "at": "2020-03-10",
+        "refusal_id": "ref-food",
+        "directive": "never_show",
+        "scope": "example-style",
+        "target": "food-and-diet-examples",
+        "status": "active",
+        "said": "Please stop using food and diet examples, they upset me."
+      }
+    ],
+    "courses": [
+      {
+        "year": 1,
+        "course_id": "cell-biology",
+        "guide_ref": "g1",
+        "sessions": 12,
+        "concepts": [
+          {
+            "concept": "cell-structure",
+            "competency": 82
+          },
+          {
+            "concept": "osmosis",
+            "competency": 78
+          },
+          {
+            "concept": "diffusion",
+            "competency": 74,
+            "misconceptions": [
+              "treats diffusion and osmosis as the same process"
+            ]
+          },
+          {
+            "concept": "enzymes",
+            "competency": 80
+          },
+          {
+            "concept": "mitosis",
+            "competency": 85
+          }
+        ],
+        "summary": "cell-biology across 12 sessions. Opened: Year 1 cell-biology session 1: worked on cell-structure and osmosis. Opened the course. Ended: Year 1 cell-biology session 12: worked on diffusion and enzymes. Wrapped the course."
+      }
+    ],
+    "competency": {
+      "cell-structure": 82,
+      "osmosis": 78,
+      "diffusion": 74,
+      "enzymes": 80,
+      "mitosis": 85
+    },
+    "carry_over_ledger": [],
+    "lapses": []
+  },
+  "next_course_guide_offers": [
+    {
+      "from_course": "cell-biology",
+      "from_concept": "osmosis",
+      "to_concept": "concentration",
+      "bridge": "prerequisite",
+      "stance": "advance",
+      "why": "concentration builds directly on your osmosis."
+    },
+    {
+      "from_course": "cell-biology",
+      "from_concept": "diffusion",
+      "to_concept": "concentration",
+      "bridge": "prerequisite",
+      "stance": "advance",
+      "why": "concentration builds directly on your diffusion."
+    },
+    {
+      "from_course": "cell-biology",
+      "from_concept": "enzymes",
+      "to_concept": "reaction-rates",
+      "bridge": "shared-technique",
+      "stance": "advance",
+      "why": "reaction-rates uses the same move you learned for your enzymes.",
+      "presentation": "neutral (refused presentation stripped)"
+    }
+  ]
+}

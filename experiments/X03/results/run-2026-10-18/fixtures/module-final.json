@@ -1,0 +1,68 @@
+{
+  "module_id": "post-op-wound-assessment-v1",
+  "title": "Post-Operative Wound Assessment",
+  "audience": "new-graduate nurses",
+  "reviewed_by": "miriam-chen",
+  "reviewed": true,
+  "overrides_applied": ["OVR-001","OVR-002","OVR-003","OVR-004"],
+  "guide_intro": "Welcome to this learning module on post-operative wound assessment. As new graduates, your careful and consistent wound assessment skills are a frontline defence against surgical site complications. Please engage critically with each item — clinical accuracy and timely escalation save lives.",
+  "items": [
+    {
+      "item_id": "W01",
+      "type": "concept",
+      "title": "Types of post-operative wounds",
+      "body": "Post-operative wounds are classified by closure method: primary intention (sutured/stapled closed), secondary intention (left open to heal), and tertiary intention (delayed primary closure). Knowing the intended closure type guides your assessment baseline.",
+      "override_applied": null
+    },
+    {
+      "item_id": "W02",
+      "type": "framework",
+      "title": "WOUND assessment framework",
+      "body": "Use the WOUND mnemonic per shift: Wound bed appearance, Odour, Undermining or tunnelling present, Noted exudate volume, Drainage characteristics. Document each dimension using objective terms.",
+      "override_applied": null
+    },
+    {
+      "item_id": "W03",
+      "type": "fact",
+      "title": "Drainage colour interpretation",
+      "body": "Drainage colour must be interpreted in clinical context. Serous (clear to pale yellow) or serosanguineous (pink-tinged) drainage is expected in the early post-operative period. Sanguineous (frank red blood) drainage may be normal in the first hours but requires monitoring for volume and trend. Purulent (thick, opaque yellow, green, or brown) drainage at any time point is abnormal and is a sign of infection requiring immediate physician notification. Green drainage in particular is never considered normal and should always prompt escalation.",
+      "override_applied": "OVR-001"
+    },
+    {
+      "item_id": "W04",
+      "type": "skill",
+      "title": "Measuring wound dimensions",
+      "body": "Measure wound length (head-to-toe axis), width (perpendicular), and depth at the deepest point using a sterile cotton-tip applicator. Record in centimetres. Consistent measurement axis reduces inter-rater variability.",
+      "override_applied": null
+    },
+    {
+      "item_id": "W05",
+      "type": "practice",
+      "title": "Documentation frequency",
+      "body": "Wound assessment must be documented at every shift assessment, regardless of whether a change has occurred. Consistent per-shift documentation establishes the baseline needed to detect subtle deterioration over time, satisfies medicolegal requirements, and ensures continuity of care across the care team. Absence of documented assessment is not equivalent to a stable wound — it is a documentation gap.",
+      "override_applied": "OVR-002"
+    },
+    {
+      "item_id": "W06",
+      "type": "concept",
+      "title": "Local signs of surgical site infection",
+      "body": "The classic local signs of surgical site infection are erythema (redness extending beyond the wound margin), localised warmth, oedema, and purulent drainage. Pain disproportionate to the expected recovery trajectory is also a significant red flag. The presence of ANY ONE of purulent drainage, rapidly spreading erythema, or wound dehiscence warrants immediate physician notification — do not wait for two signs to be present. When two or more signs co-exist, treat this as urgent and document the time of assessment and notification.",
+      "override_applied": "OVR-004"
+    },
+    {
+      "item_id": "W07",
+      "type": "practice",
+      "title": "Dressing-free intervals",
+      "body": "Dressing management must follow the surgeon's orders and facility wound care protocol. Most closed surgical wounds are covered with a primary dressing for at least 48 hours post-operatively to protect against external contamination during the re-epithelialisation phase. Prolonged dressing-free intervals are not routinely recommended and should never be initiated by nursing staff without a physician order. If a dressing requires replacement, apply a new appropriate dressing promptly. Consult the wound care team or surgeon regarding dressing-free strategies if clinically indicated.",
+      "override_applied": "OVR-003"
+    },
+    {
+      "item_id": "W08",
+      "type": "escalation",
+      "title": "When to escalate to the physician",
+      "body": "Escalate immediately if you observe: purulent drainage, dehiscence (wound edges separating), fever >38.5 °C, or erythema spreading beyond the wound margin. Document your assessment and the time of notification.",
+      "override_applied": null,
+      "_residual_gap": "DVT/circulation escalation triggers not mentioned — missed by guide in review"
+    }
+  ]
+}

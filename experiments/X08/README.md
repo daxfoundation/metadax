@@ -2,7 +2,7 @@
 
 *Private deployment, an organisational declaration, an outward gate.*
 
-**Status: designed.**
+**Status: done (2026-10-18); run 2 2026-10-19.**
 
 ## Question
 
@@ -73,3 +73,9 @@ actual policy, and whether staff trust the wall.
 
 Builds on **E05** (private-branch) and **v0.3**. Feeds **X02** (what crosses the gate
 enters federation) and **X09** (declarations are Constraint-Protocol kin).
+
+## Results
+
+- `results/2026-10-18-outward-gate.md` — run 1 (2026-10-18); raw data in `results/run-2026-10-18/`.
+- `results/2026-10-19-paraphrase-gate-run2.md` — run 2 (2026-10-19); raw data in `results/run2-2026-10-19/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.

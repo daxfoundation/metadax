@@ -1,0 +1,94 @@
+{
+  "session_id": "ses-20261018-w1al",
+  "wave": 1,
+  "display_name": "Edie",
+  "profile_summary": "Curious retired sailor, 56+, English, high patience but loses thread easily; persists through confusion and connects physics to sailing experience.",
+  "turns": 8,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "kinematic-quantities",
+    "newtons-first-law",
+    "newtons-second-law",
+    "mass"
+  ],
+  "followed_seeds": [
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed": "How is inertia related to mass, and is it the same as weight?"
+    },
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed": "Can you show a worked example where the net force is not zero?"
+    },
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "seed": "Why does turning at constant speed still count as acceleration?"
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "seed": "Why is weight equal to mass times gravitational field strength?"
+    }
+  ],
+  "transcript": [
+    {
+      "turn": 1,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "role": "learner",
+      "text": "Hello! I'm excited to get started. I've always wondered about how forces work — I sail, so I suppose I've been living with forces my whole life without really understanding them properly. Can you explain net force and inertia? I want to understand why a boat keeps gliding after you stop the engine."
+    },
+    {
+      "turn": 2,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "role": "learner",
+      "text": "Oh that's interesting — so the boat gliding is inertia! But I'm a bit confused now. Is inertia the same as weight? Because a heavy boat definitely takes longer to slow down than a dinghy. Are mass and weight the same thing, or is there a difference I'm missing?"
+    },
+    {
+      "turn": 3,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "role": "learner",
+      "text": "Right, so mass is the amount of matter and weight is the gravitational pull on that mass — I think I'm following. Could you show me a worked example where the net force isn't zero? Maybe something like my boat being pushed by wind from one side and water drag from the other, so I can see how the forces add up?"
+    },
+    {
+      "turn": 4,
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "role": "learner",
+      "text": "That example really helped, thank you. Now — speed versus velocity. I think I know speed from the boat's knot meter, but someone once told me that turning counts as acceleration even if you don't change speed. That seems very strange to me. If I'm doing 5 knots on a reach and then tack onto the other side at 5 knots, have I really accelerated? I haven't sped up at all!"
+    },
+    {
+      "turn": 5,
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "role": "learner",
+      "text": "Oh! Direction matters because velocity is a vector — so changing direction IS a change in velocity, which means acceleration. I think I see it now. So when I'm sailing in a circle, the sails are constantly pushing me to change direction, which means there's a constant net force? That's rather elegant actually. Though I confess I'm starting to lose track of whether we're still talking about inertia or have moved on to something new — is this still connected to Newton's first law or have we jumped ahead?"
+    },
+    {
+      "turn": 6,
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "role": "learner",
+      "text": "So the first law says if nothing is pushing you, you keep going — but the moment something does push, things change. I keep mixing up the first and second law in my head. Does the first law just cover the 'nothing is happening' case, and the second law covers when something IS happening? Or do they overlap somehow?"
+    },
+    {
+      "turn": 7,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "role": "learner",
+      "text": "F equals ma — that's the famous one! So force equals mass times acceleration. If I push my big heavy cruiser versus a little Laser dinghy with the same force, the dinghy accelerates much faster because its mass is so much smaller. Is that right? And why is weight written as mg — what exactly is g? Is it just the number 9.8?"
+    },
+    {
+      "turn": 8,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "role": "learner",
+      "text": "So g is the gravitational field strength, about 9.8 metres per second squared near the Earth's surface, and weight is just gravity applying F=ma with that acceleration. That actually makes sense now! I've covered quite a lot haven't I — inertia, net force, velocity versus speed, the first law, and now the second law. I do feel I might have got a bit muddled in the middle about vectors and direction, but I feel more solid than I expected. I'd like to come back to reference frames another time — I saw that mentioned and it sounds complicated."
+    }
+  ],
+  "stalls": [
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "turn": 5,
+      "type": "lost_the_thread",
+      "note": "Edie lost track of whether the circular-motion discussion belonged to inertia, velocity, or Newton's first law — she explicitly flagged the confusion mid-turn and needed re-grounding."
+    }
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  }
+}

@@ -2,7 +2,7 @@
 
 *A federated registry across forks: learner-origin share, merge conflicts, contested cores.*
 
-**Status: designed.**
+**Status: done (simulated, first run 2026-10-18).**
 
 ## Question
 
@@ -87,3 +87,8 @@ rather than a schema artifact.
 
 Rides on **E04/E05** and **v0.3 IDs**. Shares the preservation rule with **X09**.
 Carries the technique records from **X01**. Feeds **X12**.
+
+## Results
+
+- `results/2026-10-18-federation-fixes.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.

@@ -1,0 +1,33 @@
+{
+  "schema": "metadax.learner/0.2",
+  "learner_id": "lrn-b4shpjal",
+  "created_at": "2026-10-18T21:06:29Z",
+  "updated_at": "2026-10-18T21:06:29Z",
+  "display_name": "Marcus",
+  "age_band": "adult",
+  "reading_level": "adult",
+  "languages": [
+    "en"
+  ],
+  "goals": [
+    "refresh probability basics before helping daughter with statistics homework"
+  ],
+  "interests": [
+    "cooking",
+    "cycling",
+    "chess"
+  ],
+  "prior_knowledge": {},
+  "supports": [],
+  "avoid": [],
+  "session": {
+    "minutes": 20,
+    "output_mode": "markdown"
+  },
+  "tone": "warm and encouraging",
+  "consent": {
+    "share_my_questions": true,
+    "guardian_managed": false,
+    "share_progress_with_mentor": false
+  }
+}

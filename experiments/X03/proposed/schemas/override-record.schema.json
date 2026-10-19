@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "metadax.override-record",
+  "title": "Override Record",
+  "description": "Immutable record of a guide overriding a system-generated item. Never silently applied.",
+  "type": "object",
+  "required": ["override_id", "timestamp", "guide_id", "stage_id", "item_id", "action", "reason"],
+  "additionalProperties": false,
+  "properties": {
+    "override_id": {
+      "type": "string",
+      "description": "Unique id for this override event."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "guide_id": { "type": "string" },
+    "stage_id": { "type": "string" },
+    "item_id": {
+      "type": "string",
+      "description": "Id of the content item being overridden."
+    },
+    "original_content": {
+      "type": "string",
+      "description": "Exact text of the system-generated content before override."
+    },
+    "replacement_content": {
+      "type": ["string", "null"],
+      "description": "Replacement text. null if action is 'remove'."
+    },
+    "action": {
+      "type": "string",
+      "enum": ["replace", "remove", "flag"],
+      "description": "replace: substitute with replacement_content; remove: delete item; flag: mark for later review without changing."
+    },
+    "reason": {
+      "type": "string",
+      "description": "Free-text reason given by the guide. Required, never empty."
+    },
+    "clinical_safety_flag": {
+      "type": "boolean",
+      "description": "True if the guide explicitly cited a safety concern as the reason."
+    }
+  }
+}

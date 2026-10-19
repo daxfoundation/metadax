@@ -1,0 +1,802 @@
+[
+  {
+    "id": "n_000",
+    "module": "core",
+    "topic": "foundation",
+    "title": "core/foundation (node 0)",
+    "content": "Base content for node 0: covers foundation in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_001",
+    "module": "advanced",
+    "topic": "application",
+    "title": "advanced/application (node 1)",
+    "content": "Base content for node 1: covers application in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_002",
+    "module": "core",
+    "topic": "foundation",
+    "title": "core/foundation (node 2)",
+    "content": "Base content for node 2: covers foundation in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_003",
+    "module": "advanced",
+    "topic": "structure",
+    "title": "advanced/structure (node 3)",
+    "content": "Base content for node 3: covers structure in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_004",
+    "module": "review",
+    "topic": "mastery",
+    "title": "review/mastery (node 4)",
+    "content": "Base content for node 4: covers mastery in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_005",
+    "module": "review",
+    "topic": "integration",
+    "title": "review/integration (node 5)",
+    "content": "Base content for node 5: covers integration in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_006",
+    "module": "practice",
+    "topic": "transfer",
+    "title": "practice/transfer (node 6)",
+    "content": "Base content for node 6: covers transfer in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_007",
+    "module": "advanced",
+    "topic": "foundation",
+    "title": "advanced/foundation (node 7)",
+    "content": "Base content for node 7: covers foundation in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_008",
+    "module": "intro",
+    "topic": "mastery",
+    "title": "intro/mastery (node 8)",
+    "content": "Base content for node 8: covers mastery in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_009",
+    "module": "review",
+    "topic": "transfer",
+    "title": "review/transfer (node 9)",
+    "content": "Base content for node 9: covers transfer in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_010",
+    "module": "advanced",
+    "topic": "structure",
+    "title": "advanced/structure (node 10)",
+    "content": "Base content for node 10: covers structure in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_011",
+    "module": "advanced",
+    "topic": "application",
+    "title": "advanced/application (node 11)",
+    "content": "Base content for node 11: covers application in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_012",
+    "module": "review",
+    "topic": "transfer",
+    "title": "review/transfer (node 12)",
+    "content": "Base content for node 12: covers transfer in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_013",
+    "module": "intro",
+    "topic": "transfer",
+    "title": "intro/transfer (node 13)",
+    "content": "Base content for node 13: covers transfer in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_014",
+    "module": "advanced",
+    "topic": "foundation",
+    "title": "advanced/foundation (node 14)",
+    "content": "Base content for node 14: covers foundation in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_015",
+    "module": "intro",
+    "topic": "synthesis",
+    "title": "intro/synthesis (node 15)",
+    "content": "Base content for node 15: covers synthesis in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_016",
+    "module": "review",
+    "topic": "transfer",
+    "title": "review/transfer (node 16)",
+    "content": "Base content for node 16: covers transfer in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_017",
+    "module": "practice",
+    "topic": "edge-case",
+    "title": "practice/edge-case (node 17)",
+    "content": "Base content for node 17: covers edge-case in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_018",
+    "module": "advanced",
+    "topic": "critique",
+    "title": "advanced/critique (node 18)",
+    "content": "Base content for node 18: covers critique in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_019",
+    "module": "practice",
+    "topic": "extension",
+    "title": "practice/extension (node 19)",
+    "content": "Base content for node 19: covers extension in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_020",
+    "module": "review",
+    "topic": "integration",
+    "title": "review/integration (node 20)",
+    "content": "Base content for node 20: covers integration in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_021",
+    "module": "intro",
+    "topic": "structure",
+    "title": "intro/structure (node 21)",
+    "content": "Base content for node 21: covers structure in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_022",
+    "module": "advanced",
+    "topic": "structure",
+    "title": "advanced/structure (node 22)",
+    "content": "Base content for node 22: covers structure in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_023",
+    "module": "practice",
+    "topic": "synthesis",
+    "title": "practice/synthesis (node 23)",
+    "content": "Base content for node 23: covers synthesis in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_024",
+    "module": "review",
+    "topic": "edge-case",
+    "title": "review/edge-case (node 24)",
+    "content": "Base content for node 24: covers edge-case in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_025",
+    "module": "core",
+    "topic": "application",
+    "title": "core/application (node 25)",
+    "content": "Base content for node 25: covers application in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_026",
+    "module": "intro",
+    "topic": "application",
+    "title": "intro/application (node 26)",
+    "content": "Base content for node 26: covers application in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_027",
+    "module": "core",
+    "topic": "transfer",
+    "title": "core/transfer (node 27)",
+    "content": "Base content for node 27: covers transfer in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_028",
+    "module": "review",
+    "topic": "structure",
+    "title": "review/structure (node 28)",
+    "content": "Base content for node 28: covers structure in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_029",
+    "module": "review",
+    "topic": "synthesis",
+    "title": "review/synthesis (node 29)",
+    "content": "Base content for node 29: covers synthesis in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_030",
+    "module": "core",
+    "topic": "edge-case",
+    "title": "core/edge-case (node 30)",
+    "content": "Base content for node 30: covers edge-case in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_031",
+    "module": "intro",
+    "topic": "mastery",
+    "title": "intro/mastery (node 31)",
+    "content": "Base content for node 31: covers mastery in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_032",
+    "module": "intro",
+    "topic": "mastery",
+    "title": "intro/mastery (node 32)",
+    "content": "Base content for node 32: covers mastery in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_033",
+    "module": "review",
+    "topic": "integration",
+    "title": "review/integration (node 33)",
+    "content": "Base content for node 33: covers integration in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_034",
+    "module": "practice",
+    "topic": "edge-case",
+    "title": "practice/edge-case (node 34)",
+    "content": "Base content for node 34: covers edge-case in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_035",
+    "module": "intro",
+    "topic": "synthesis",
+    "title": "intro/synthesis (node 35)",
+    "content": "Base content for node 35: covers synthesis in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_036",
+    "module": "intro",
+    "topic": "application",
+    "title": "intro/application (node 36)",
+    "content": "Base content for node 36: covers application in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_037",
+    "module": "practice",
+    "topic": "critique",
+    "title": "practice/critique (node 37)",
+    "content": "Base content for node 37: covers critique in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_038",
+    "module": "advanced",
+    "topic": "application",
+    "title": "advanced/application (node 38)",
+    "content": "Base content for node 38: covers application in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_039",
+    "module": "core",
+    "topic": "critique",
+    "title": "core/critique (node 39)",
+    "content": "Base content for node 39: covers critique in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_040",
+    "module": "review",
+    "topic": "transfer",
+    "title": "review/transfer (node 40)",
+    "content": "Base content for node 40: covers transfer in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_041",
+    "module": "practice",
+    "topic": "transfer",
+    "title": "practice/transfer (node 41)",
+    "content": "Base content for node 41: covers transfer in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_042",
+    "module": "advanced",
+    "topic": "structure",
+    "title": "advanced/structure (node 42)",
+    "content": "Base content for node 42: covers structure in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_043",
+    "module": "intro",
+    "topic": "synthesis",
+    "title": "intro/synthesis (node 43)",
+    "content": "Base content for node 43: covers synthesis in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_044",
+    "module": "practice",
+    "topic": "mastery",
+    "title": "practice/mastery (node 44)",
+    "content": "Base content for node 44: covers mastery in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_045",
+    "module": "advanced",
+    "topic": "extension",
+    "title": "advanced/extension (node 45)",
+    "content": "Base content for node 45: covers extension in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_046",
+    "module": "advanced",
+    "topic": "foundation",
+    "title": "advanced/foundation (node 46)",
+    "content": "Base content for node 46: covers foundation in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_047",
+    "module": "intro",
+    "topic": "transfer",
+    "title": "intro/transfer (node 47)",
+    "content": "Base content for node 47: covers transfer in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_048",
+    "module": "review",
+    "topic": "extension",
+    "title": "review/extension (node 48)",
+    "content": "Base content for node 48: covers extension in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_049",
+    "module": "intro",
+    "topic": "edge-case",
+    "title": "intro/edge-case (node 49)",
+    "content": "Base content for node 49: covers edge-case in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_050",
+    "module": "core",
+    "topic": "integration",
+    "title": "core/integration (node 50)",
+    "content": "Base content for node 50: covers integration in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_051",
+    "module": "review",
+    "topic": "mastery",
+    "title": "review/mastery (node 51)",
+    "content": "Base content for node 51: covers mastery in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_052",
+    "module": "intro",
+    "topic": "edge-case",
+    "title": "intro/edge-case (node 52)",
+    "content": "Base content for node 52: covers edge-case in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_053",
+    "module": "advanced",
+    "topic": "application",
+    "title": "advanced/application (node 53)",
+    "content": "Base content for node 53: covers application in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_054",
+    "module": "advanced",
+    "topic": "foundation",
+    "title": "advanced/foundation (node 54)",
+    "content": "Base content for node 54: covers foundation in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_055",
+    "module": "practice",
+    "topic": "edge-case",
+    "title": "practice/edge-case (node 55)",
+    "content": "Base content for node 55: covers edge-case in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_056",
+    "module": "advanced",
+    "topic": "application",
+    "title": "advanced/application (node 56)",
+    "content": "Base content for node 56: covers application in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_057",
+    "module": "advanced",
+    "topic": "extension",
+    "title": "advanced/extension (node 57)",
+    "content": "Base content for node 57: covers extension in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_058",
+    "module": "advanced",
+    "topic": "critique",
+    "title": "advanced/critique (node 58)",
+    "content": "Base content for node 58: covers critique in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_059",
+    "module": "core",
+    "topic": "edge-case",
+    "title": "core/edge-case (node 59)",
+    "content": "Base content for node 59: covers edge-case in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_060",
+    "module": "advanced",
+    "topic": "mastery",
+    "title": "advanced/mastery (node 60)",
+    "content": "Base content for node 60: covers mastery in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_061",
+    "module": "core",
+    "topic": "mastery",
+    "title": "core/mastery (node 61)",
+    "content": "Base content for node 61: covers mastery in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_062",
+    "module": "review",
+    "topic": "synthesis",
+    "title": "review/synthesis (node 62)",
+    "content": "Base content for node 62: covers synthesis in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_063",
+    "module": "review",
+    "topic": "foundation",
+    "title": "review/foundation (node 63)",
+    "content": "Base content for node 63: covers foundation in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_064",
+    "module": "core",
+    "topic": "synthesis",
+    "title": "core/synthesis (node 64)",
+    "content": "Base content for node 64: covers synthesis in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_065",
+    "module": "advanced",
+    "topic": "mastery",
+    "title": "advanced/mastery (node 65)",
+    "content": "Base content for node 65: covers mastery in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_066",
+    "module": "review",
+    "topic": "extension",
+    "title": "review/extension (node 66)",
+    "content": "Base content for node 66: covers extension in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_067",
+    "module": "review",
+    "topic": "edge-case",
+    "title": "review/edge-case (node 67)",
+    "content": "Base content for node 67: covers edge-case in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_068",
+    "module": "advanced",
+    "topic": "critique",
+    "title": "advanced/critique (node 68)",
+    "content": "Base content for node 68: covers critique in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_069",
+    "module": "intro",
+    "topic": "edge-case",
+    "title": "intro/edge-case (node 69)",
+    "content": "Base content for node 69: covers edge-case in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_070",
+    "module": "advanced",
+    "topic": "extension",
+    "title": "advanced/extension (node 70)",
+    "content": "Base content for node 70: covers extension in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_071",
+    "module": "review",
+    "topic": "foundation",
+    "title": "review/foundation (node 71)",
+    "content": "Base content for node 71: covers foundation in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_072",
+    "module": "advanced",
+    "topic": "edge-case",
+    "title": "advanced/edge-case (node 72)",
+    "content": "Base content for node 72: covers edge-case in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_073",
+    "module": "practice",
+    "topic": "critique",
+    "title": "practice/critique (node 73)",
+    "content": "Base content for node 73: covers critique in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_074",
+    "module": "advanced",
+    "topic": "application",
+    "title": "advanced/application (node 74)",
+    "content": "Base content for node 74: covers application in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_075",
+    "module": "practice",
+    "topic": "synthesis",
+    "title": "practice/synthesis (node 75)",
+    "content": "Base content for node 75: covers synthesis in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_076",
+    "module": "intro",
+    "topic": "transfer",
+    "title": "intro/transfer (node 76)",
+    "content": "Base content for node 76: covers transfer in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_077",
+    "module": "practice",
+    "topic": "mastery",
+    "title": "practice/mastery (node 77)",
+    "content": "Base content for node 77: covers mastery in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_078",
+    "module": "practice",
+    "topic": "synthesis",
+    "title": "practice/synthesis (node 78)",
+    "content": "Base content for node 78: covers synthesis in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_079",
+    "module": "review",
+    "topic": "mastery",
+    "title": "review/mastery (node 79)",
+    "content": "Base content for node 79: covers mastery in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_080",
+    "module": "practice",
+    "topic": "extension",
+    "title": "practice/extension (node 80)",
+    "content": "Base content for node 80: covers extension in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_081",
+    "module": "intro",
+    "topic": "synthesis",
+    "title": "intro/synthesis (node 81)",
+    "content": "Base content for node 81: covers synthesis in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_082",
+    "module": "practice",
+    "topic": "application",
+    "title": "practice/application (node 82)",
+    "content": "Base content for node 82: covers application in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_083",
+    "module": "practice",
+    "topic": "foundation",
+    "title": "practice/foundation (node 83)",
+    "content": "Base content for node 83: covers foundation in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_084",
+    "module": "review",
+    "topic": "integration",
+    "title": "review/integration (node 84)",
+    "content": "Base content for node 84: covers integration in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_085",
+    "module": "core",
+    "topic": "synthesis",
+    "title": "core/synthesis (node 85)",
+    "content": "Base content for node 85: covers synthesis in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_086",
+    "module": "advanced",
+    "topic": "foundation",
+    "title": "advanced/foundation (node 86)",
+    "content": "Base content for node 86: covers foundation in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_087",
+    "module": "advanced",
+    "topic": "synthesis",
+    "title": "advanced/synthesis (node 87)",
+    "content": "Base content for node 87: covers synthesis in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_088",
+    "module": "intro",
+    "topic": "structure",
+    "title": "intro/structure (node 88)",
+    "content": "Base content for node 88: covers structure in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_089",
+    "module": "intro",
+    "topic": "application",
+    "title": "intro/application (node 89)",
+    "content": "Base content for node 89: covers application in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_090",
+    "module": "core",
+    "topic": "synthesis",
+    "title": "core/synthesis (node 90)",
+    "content": "Base content for node 90: covers synthesis in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_091",
+    "module": "advanced",
+    "topic": "mastery",
+    "title": "advanced/mastery (node 91)",
+    "content": "Base content for node 91: covers mastery in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_092",
+    "module": "practice",
+    "topic": "synthesis",
+    "title": "practice/synthesis (node 92)",
+    "content": "Base content for node 92: covers synthesis in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_093",
+    "module": "core",
+    "topic": "extension",
+    "title": "core/extension (node 93)",
+    "content": "Base content for node 93: covers extension in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_094",
+    "module": "core",
+    "topic": "mastery",
+    "title": "core/mastery (node 94)",
+    "content": "Base content for node 94: covers mastery in core. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_095",
+    "module": "review",
+    "topic": "synthesis",
+    "title": "review/synthesis (node 95)",
+    "content": "Base content for node 95: covers synthesis in review. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_096",
+    "module": "practice",
+    "topic": "extension",
+    "title": "practice/extension (node 96)",
+    "content": "Base content for node 96: covers extension in practice. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_097",
+    "module": "advanced",
+    "topic": "application",
+    "title": "advanced/application (node 97)",
+    "content": "Base content for node 97: covers application in advanced. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_098",
+    "module": "intro",
+    "topic": "application",
+    "title": "intro/application (node 98)",
+    "content": "Base content for node 98: covers application in intro. Version 1.",
+    "version": 1
+  },
+  {
+    "id": "n_099",
+    "module": "intro",
+    "topic": "edge-case",
+    "title": "intro/edge-case (node 99)",
+    "content": "Base content for node 99: covers edge-case in intro. Version 1.",
+    "version": 1
+  }
+]

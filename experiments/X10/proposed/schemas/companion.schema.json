@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/companion.schema.json",
+  "title": "metadax.companion/0.2",
+  "description": "A learner-owned record that spans courses and years. It is an APPEND LOG (never rewritten in place) plus a COMPACTED VIEW derived from it (shrink the view, keep the source -- same contract as MP-03 PATH compaction). Refusals are a protected section that every compaction MUST carry forward verbatim. The record stays on the learner's device and never centralises.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "learner_id", "device_id", "log", "view"],
+  "properties": {
+    "schema": { "const": "metadax.companion/0.2" },
+    "learner_id": { "type": "string", "pattern": "^lrn-[a-z0-9]{6,}$" },
+    "device_id": { "type": "string", "pattern": "^dev-[a-z0-9]{6}$" },
+    "log": {
+      "description": "The append-only source. Entries are appended in time order and never edited or deleted. Compaction reads this and writes `view`; it never mutates `log`.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/logEntry" }
+    },
+    "view": {
+      "description": "The compacted, in-context view derived from `log`. This is what a guide/engine is handed. It is bounded: course summaries, a concept-competency map, the carry-over ledger, and -- always, verbatim -- every active refusal.",
+      "$ref": "#/$defs/compactedView"
+    }
+  },
+  "$defs": {
+    "rfc3339": {
+      "anyOf": [
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$" },
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        { "const": "runtime" }
+      ]
+    },
+    "courseId": { "type": "string", "maxLength": 200, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "conceptId": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "refusalId": { "type": "string", "pattern": "^ref-[a-z0-9]{2,}$" },
+
+    "logEntry": {
+      "type": "object",
+      "oneOf": [
+        { "$ref": "#/$defs/sessionEntry" },
+        { "$ref": "#/$defs/refusalEntry" },
+        { "$ref": "#/$defs/carryOverEntry" },
+        { "$ref": "#/$defs/lapseEntry" },
+        { "$ref": "#/$defs/compactionEntry" }
+      ]
+    },
+
+    "sessionEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "at", "year", "course_id", "guide_ref", "concepts", "note"],
+      "properties": {
+        "kind": { "const": "session" },
+        "at": { "$ref": "#/$defs/rfc3339" },
+        "year": { "type": "integer", "minimum": 1 },
+        "course_id": { "$ref": "#/$defs/courseId" },
+        "guide_ref": { "type": "string", "description": "opaque handle for the guide, not a real name" },
+        "concepts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["concept", "competency"],
+            "properties": {
+              "concept": { "$ref": "#/$defs/conceptId" },
+              "competency": { "type": "integer", "minimum": 0, "maximum": 100 },
+              "misconception": { "type": "string", "description": "behaviour, never a label" }
+            }
+          }
+        },
+        "note": { "type": "string", "maxLength": 500, "description": "the next-time note, bounded" }
+      }
+    },
+
+    "refusalEntry": {
+      "description": "A durable suppression directive from the learner. PROTECTED: every compaction carries it forward verbatim until it is explicitly withdrawn (by appending a new refusalEntry with status `withdrawn` and the same refusal_id). A refusal is never inferred and never expires on its own.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "at", "refusal_id", "directive", "scope", "target", "status", "said"],
+      "properties": {
+        "kind": { "const": "refusal" },
+        "at": { "$ref": "#/$defs/rfc3339" },
+        "refusal_id": { "$ref": "#/$defs/refusalId" },
+        "directive": { "enum": ["never_show", "stop_suggesting", "never_carry"] },
+        "scope": { "enum": ["concept", "course", "technique", "topic", "modality", "example-style"] },
+        "target": { "type": "string", "description": "a slug for what is refused, e.g. `food-and-diet-examples`, `mitosis`, `3d-rotating-molecule-visuals`" },
+        "status": { "enum": ["active", "withdrawn"] },
+        "said": { "type": "string", "maxLength": 300, "description": "the learner's own words, paraphrased, bounded" }
+      }
+    },
+
+    "carryOverEntry": {
+      "description": "A carry-over that was OFFERED at the start of a course and what the learner did with it. Carry-over is offered, never imposed (X11 offer-never-push).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "at", "year", "into_course", "from", "concept", "outcome"],
+      "properties": {
+        "kind": { "const": "carry_over" },
+        "at": { "$ref": "#/$defs/rfc3339" },
+        "year": { "type": "integer", "minimum": 1 },
+        "into_course": { "$ref": "#/$defs/courseId" },
+        "from": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["course_id", "concept"],
+          "properties": {
+            "course_id": { "$ref": "#/$defs/courseId" },
+            "concept": { "$ref": "#/$defs/conceptId" }
+          }
+        },
+        "concept": { "$ref": "#/$defs/conceptId", "description": "the concept in the new course this bridges to" },
+        "outcome": { "enum": ["offered", "accepted", "declined", "suppressed_by_refusal"] },
+        "why": { "type": "string", "maxLength": 300 }
+      }
+    },
+
+    "lapseEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "from", "to", "days"],
+      "properties": {
+        "kind": { "const": "lapse" },
+        "from": { "$ref": "#/$defs/rfc3339" },
+        "to": { "$ref": "#/$defs/rfc3339" },
+        "days": { "type": "integer", "minimum": 1 }
+      }
+    },
+
+    "compactionEntry": {
+      "description": "A checkpoint written when the log is compacted. Records the byte sizes before/after and what the view dropped, so a bad later answer can be traced to lost context (MP-03 normative contract 2).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "at", "folded_through", "bytes_log", "bytes_view", "dropped"],
+      "properties": {
+        "kind": { "const": "compaction" },
+        "at": { "$ref": "#/$defs/rfc3339" },
+        "folded_through": { "type": "integer", "description": "log index up to which entries were folded into the view" },
+        "bytes_log": { "type": "integer" },
+        "bytes_view": { "type": "integer" },
+        "dropped": { "type": "array", "items": { "type": "string" }, "description": "what the view no longer carries, in a few words each" }
+      }
+    },
+
+    "compactedView": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["as_of", "refusals", "courses", "competency", "carry_over_ledger"],
+      "properties": {
+        "as_of": { "$ref": "#/$defs/rfc3339" },
+        "refusals": {
+          "description": "PROTECTED. Every active refusal from the log, verbatim. A compaction that cannot fit a refusal MUST keep it anyway and warn -- it is never dropped.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/refusalEntry" }
+        },
+        "courses": {
+          "description": "One folded summary per (year, course) -- the many sessions of that course collapsed to one bounded entry.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["year", "course_id", "sessions", "concepts", "summary"],
+            "properties": {
+              "year": { "type": "integer" },
+              "course_id": { "$ref": "#/$defs/courseId" },
+              "guide_ref": { "type": "string" },
+              "sessions": { "type": "integer" },
+              "concepts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["concept", "competency"],
+                  "properties": {
+                    "concept": { "$ref": "#/$defs/conceptId" },
+                    "competency": { "type": "integer", "minimum": 0, "maximum": 100 },
+                    "misconceptions": { "type": "array", "items": { "type": "string" } }
+                  }
+                }
+              },
+              "summary": { "type": "string", "maxLength": 600 }
+            }
+          }
+        },
+        "competency": {
+          "description": "Latest competency per concept across all courses -- the person-level knowledge map.",
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 100 }
+        },
+        "carry_over_ledger": {
+          "description": "Every carry-over offered and its outcome, so refused/declined bridges are visible and never re-proposed.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["year", "into_course", "from_concept", "to_concept", "outcome"],
+            "properties": {
+              "year": { "type": "integer" },
+              "into_course": { "$ref": "#/$defs/courseId" },
+              "from_concept": { "$ref": "#/$defs/conceptId" },
+              "to_concept": { "$ref": "#/$defs/conceptId" },
+              "outcome": { "enum": ["offered", "accepted", "declined", "suppressed_by_refusal"] }
+            }
+          }
+        },
+        "lapses": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/lapseEntry" }
+        }
+      }
+    }
+  }
+}

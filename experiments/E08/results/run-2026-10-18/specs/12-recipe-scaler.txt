@@ -1,0 +1,37 @@
+SPEC: Recipe Scaler with Unit Rounding
+
+Export a named ES-module function:
+
+  export function scaleRecipe(ingredients, factor)
+
+Parameters
+  ingredients – array of objects:
+    { name: string, amount: number, unit: string }
+  factor – scaling multiplier (number > 0, e.g. 0.5 for half recipe, 2 for double)
+
+Returns a new array of scaled ingredients with amounts rounded per unit type:
+
+Rounding rules by unit:
+  'whole' / 'egg' / 'item' / 'piece'  → round to nearest integer (≥ 1)
+  'cup' / 'tbsp' / 'tsp' / 'fl oz'   → round to nearest 0.25
+  'g' / 'ml'                           → round to nearest 5
+  'kg' / 'L'                           → round to nearest 0.1
+  anything else                        → round to nearest 0.25
+
+The unit string is retained unchanged in the output.
+
+Examples
+  scaleRecipe([{ name:'flour', amount:2, unit:'cup' }], 1.5)
+  → [{ name:'flour', amount:3, unit:'cup' }]   (3.0, already a multiple of 0.25)
+
+  scaleRecipe([{ name:'egg', amount:3, unit:'whole' }], 2)
+  → [{ name:'egg', amount:6, unit:'whole' }]
+
+  scaleRecipe([{ name:'milk', amount:1, unit:'cup' }], 0.333)
+  → [{ name:'milk', amount:0.25, unit:'cup' }]   (0.333 → nearest 0.25)
+
+  scaleRecipe([{ name:'butter', amount:100, unit:'g' }], 1.5)
+  → [{ name:'butter', amount:150, unit:'g' }]   (150 already multiple of 5)
+
+  scaleRecipe([{ name:'baking powder', amount:1, unit:'tsp' }], 0.5)
+  → [{ name:'baking powder', amount:0.5, unit:'tsp' }]   (nearest 0.25)

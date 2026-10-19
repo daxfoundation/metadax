@@ -1,0 +1,35 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "Excellent work, Priya — that's exactly right!\n\n**Your answer:** S = {carrot, beetroot, courgette, spinach, kale}. This is a random event because we cannot predict which seed packet will be chosen.\n\nYou've now completed all the questions for this objective. Let's take a look at how you did overall!"
+  },
+  "meta": {
+    "concept": "random-event",
+    "bloom_level": "Understand",
+    "question_type": "open",
+    "attempt": 2
+  },
+  "feedback": {
+    "result": "correct",
+    "hint": null,
+    "correct_answer": "S = {carrot, beetroot, courgette, spinach, kale}.",
+    "explanation": "Priya correctly structured the sample space and articulated the property of a random event.",
+    "misconception": null
+  },
+  "handoff": null,
+  "summary": null,
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 2,
+    "help_used": false,
+    "hints_given": 1,
+    "phase": "complete",
+    "levels": ["Remember", "Understand"],
+    "competency": 78
+  },
+  "next_action": "awaiting_command",
+  "warnings": []
+}

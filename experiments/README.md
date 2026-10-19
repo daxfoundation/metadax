@@ -38,5 +38,11 @@ section reads "none yet".
 | **done** | at least one run completed and was reviewed against the stop rule |
 | **abandoned** | the experiment was stopped without a usable result, with the reason recorded |
 
-E01 and E03 are **done** (first cut, automated runs). E04 and E05 have their harnesses
-built but no model run yet. Every other card is **not started**.
+E01–E14 and X01–X11 have all been run at least once in the 18-19 Oct 2026 round (E01 and
+E03 were first run 2026-09-27; E04 and E05 had harnesses but no model run before this
+round). Most runs had models standing in for the people and are labelled **simulated** in
+the result files. Seven cards — E03, E05, E13, E14, X01, X07, X08 — also have a run-2
+follow-up (2026-10-19). Results and raw data sit in each card`s results/ folder; proposed
+(not merged) changes in proposed/; new bottlenecks in BOTTLENECKS.md (B24–B93) and the
+round`s write-up in FINDINGS-20261019.md. E02, E07, E10 and X12 are not yet run — see
+FINDINGS-20261019.md section Blocked.

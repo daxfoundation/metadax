@@ -1,0 +1,53 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "Here is a gentle nudge: think about what a 'gradient' means — it is a difference from one side to the other. Where in the mitochondrion does that difference in protons build up, and what is doing the building? Give it another go whenever you are ready.",
+    "instructions": "Give a short answer in your own words — a sentence or two is fine. I look at meaning, not exact wording.",
+    "example": "For a different concept, a narration might sound like: 'The electron transport chain is a set of protein complexes in the inner membrane that pass electrons along, releasing energy at each step.'",
+    "question": "In your own words, what is a proton gradient, and why does it matter to the cell?"
+  },
+  "meta": {
+    "concept": "proton-gradient",
+    "bloom_level": "Remember",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "feedback": {
+    "result": null,
+    "hint": "Think about the word 'gradient' — it means a difference from one side to the other. The proton gradient is a difference in proton concentration across the inner mitochondrial membrane, built up by the electron transport chain.",
+    "correct_answer": "",
+    "explanation": "",
+    "misconception": ""
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "proton-gradient",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": true,
+    "hints_given": 1,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 100,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

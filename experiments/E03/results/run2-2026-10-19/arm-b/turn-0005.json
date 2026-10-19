@@ -1,0 +1,49 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "summary",
+  "display": {
+    "message": "**Session Summary — Part 1**\n\n**Objective:** L01.M01.O01 — Identify random events and describe their outcomes\n\n**Competency score:** 78 / 100\n\nWant to see your strengths and next steps? *(Type 'continue'.)*"
+  },
+  "meta": null,
+  "feedback": null,
+  "handoff": null,
+  "summary": {
+    "concepts": [
+      {"id": "random-event", "name": "Random events", "competency": 78,
+       "levels": {"Remember": "passed_first_try", "Understand": "passed_after_help"}}
+    ],
+    "strengths": [
+      "Quickly and correctly recognised random events at the Remember level",
+      "Identified all possible outcomes accurately"
+    ],
+    "areas_for_improvement": [
+      "Structuring outcomes formally as a set (S = { ... })"
+    ],
+    "misconceptions": [],
+    "recommendations": [
+      "Practice writing sample spaces in set notation",
+      "Attempt L01.M01.O02 (Assign and compare simple probabilities)"
+    ],
+    "encouragement": "You made real progress today, Priya! Keep going!"
+  },
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 2,
+    "help_used": false,
+    "hints_given": 1,
+    "phase": "main",
+    "levels": {
+      "random-event": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help"
+      }
+    },
+    "competency": {
+      "random-event": 78
+    }
+  },
+  "next_action": "awaiting_command",
+  "warnings": []
+}

@@ -1,0 +1,3139 @@
+{
+  "generation_note": "Run 2 — 60 test candidates. Company in new fixtures: Example Freight Co. (fictional). Run-1 fixtures retain original labels (Example Freight Co. (fictional)) as they cannot be modified.",
+  "org_declaration": {
+    "schema": "metadax.org-declaration/0.1",
+    "org_id": "example-freight-co",
+    "org_name": "Example Freight Co. (fictional)",
+    "default_visibility": "private",
+    "private_module_ids": [
+      "example-shipping-ltd-protocol"
+    ],
+    "private_node_ids": [
+      "n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+      "n_wvcsp41k3bnav21788apsd19k2",
+      "n_csk8mh8tw7rbq2j4s1j12d0923",
+      "n_vhke98k812x5f763z7v7ybvxv7",
+      "n_h8wqerhc2328zpg9sw6824nq42",
+      "n_wg8z7sp93xv1pd5js6deww5kj0",
+      "n_ecpnd4v8ncxmyenn3hvfp84ar4",
+      "n_bcfjxhah3s5cqbxf3wsknt7f55",
+      "n_3q2zqevb47ngh5fp0z2gwe1ae1",
+      "n_y0eejk1zm1pw6ycrjnr1s8g734",
+      "n_wp3k5kq5wvyn267vjv0e4jxbk7",
+      "n_efqjn9psqrzp3bgn1xahe0tc36",
+      "n_tdgvdzqw7tkjp1jvzkgpvnzmq7",
+      "n_9r767ygmk0h5wnvrxtw4ajyav6",
+      "n_36n5hfmb4b6txtaxzvqg6waq23",
+      "n_x3amwy6rwry3ey8y2tjxk374x2",
+      "n_2h27ttd25cet5cdt4m89r99t42",
+      "n_g205gqdwsj3xzmp3xext1vvgb6",
+      "n_k1f96gz5n7j2x9fgrnffcwe0f3",
+      "n_wa4d18rgwq14mxv6g0vpcyv0r6",
+      "n_vzj5j0c0862gcs29xb74f21gh1",
+      "n_qzpw532wkvn8tmvar9j9q34761",
+      "n_daj6y8dnbrfbam1r7pnkd84r14",
+      "n_j5stckzc4vvae6znbkcdxry7h6",
+      "n_g7tb7vde0fmzx37xaknhsetgc4",
+      "n_djha7fm2yg0hpetye6mbc68eb2",
+      "n_dhphtxcs6aqm6ecaj2bvwn2pg6",
+      "n_kmx46ntqrh9an9q256qjyk25g6",
+      "n_kfbvs5ac31zm34gtwqvgmk6tq1",
+      "n_vdwcfp6013ar5st5b75v2ab5v4"
+    ],
+    "private_terms": [
+      "Example Shipping Ltd Protocol",
+      "MRD-7",
+      "Project Apex",
+      "audit score 87",
+      "Section 4.2 gap",
+      "Example Freight Co. Internal"
+    ],
+    "export_requires_review": true,
+    "reviewers": [
+      "eva.m",
+      "omar.t"
+    ],
+    "declared_at": "2026-10-18T09:00:00Z",
+    "notes": "All example-shipping-ltd-protocol module content is proprietary. Any node quoting Example Freight Co. Internal materials requires re-authoring before export."
+  },
+  "private_nodes": [
+    {
+      "id": "n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+      "parent_id": null,
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Example Shipping Ltd Protocol overview",
+      "question": "What is the Example Shipping Ltd Protocol and why does Example Freight Co. Internal use it?",
+      "canonical_question": "What is the Example Shipping Ltd Protocol and why does Example Freight Co. Internal use it?",
+      "summary": [
+        "This node covers meridian protocol overview."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Example Freight Co. Internal requires compliance with the Example Shipping Ltd Protocol. Example Shipping Ltd Protocol overview is foundational."
+          }
+        ],
+        "key_points": [
+          "The Example Shipping Ltd Protocol mandates meridian protocol overview."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": [
+          "Example Freight Co. Internal policy v2.4"
+        ]
+      }
+    },
+    {
+      "id": "n_wvcsp41k3bnav21788apsd19k2",
+      "parent_id": null,
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "objective",
+      "depth": 1,
+      "title": "MRD-7 control framework",
+      "question": "What controls does MRD-7 specify for data handling?",
+      "canonical_question": "What controls does MRD-7 specify for data handling?",
+      "summary": [
+        "This node covers mrd-7 control framework."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Example Freight Co. Internal requires compliance with the Example Shipping Ltd Protocol. MRD-7 control framework is foundational."
+          }
+        ],
+        "key_points": [
+          "The Example Shipping Ltd Protocol mandates mrd-7 control framework."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": [
+          "Example Freight Co. Internal policy v2.4"
+        ]
+      }
+    },
+    {
+      "id": "n_csk8mh8tw7rbq2j4s1j12d0923",
+      "parent_id": null,
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Project Apex audit preparation",
+      "question": "How should teams prepare for a Project Apex audit?",
+      "canonical_question": "How should teams prepare for a Project Apex audit?",
+      "summary": [
+        "This node covers project apex audit preparation."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Example Freight Co. Internal requires compliance with the Example Shipping Ltd Protocol. Project Apex audit preparation is foundational."
+          }
+        ],
+        "key_points": [
+          "The Example Shipping Ltd Protocol mandates project apex audit preparation."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": [
+          "Example Freight Co. Internal policy v2.4"
+        ]
+      }
+    },
+    {
+      "id": "n_vhke98k812x5f763z7v7ybvxv7",
+      "parent_id": null,
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Section 4.2 gap remediation",
+      "question": "What steps close the Section 4.2 gap identified in the last audit?",
+      "canonical_question": "What steps close the Section 4.2 gap identified in the last audit?",
+      "summary": [
+        "This node covers section 4.2 gap remediation."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Example Freight Co. Internal requires compliance with the Example Shipping Ltd Protocol. Section 4.2 gap remediation is foundational."
+          }
+        ],
+        "key_points": [
+          "The Example Shipping Ltd Protocol mandates section 4.2 gap remediation."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": [
+          "Example Freight Co. Internal policy v2.4"
+        ]
+      }
+    },
+    {
+      "id": "n_h8wqerhc2328zpg9sw6824nq42",
+      "parent_id": null,
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Audit score 87 improvement plan",
+      "question": "What actions will raise our audit score 87 to target 95?",
+      "canonical_question": "What actions will raise our audit score 87 to target 95?",
+      "summary": [
+        "This node covers audit score 87 improvement plan."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Example Freight Co. Internal requires compliance with the Example Shipping Ltd Protocol. Audit score 87 improvement plan is foundational."
+          }
+        ],
+        "key_points": [
+          "The Example Shipping Ltd Protocol mandates audit score 87 improvement plan."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": [
+          "Example Freight Co. Internal policy v2.4"
+        ]
+      }
+    },
+    {
+      "id": "n_wg8z7sp93xv1pd5js6deww5kj0",
+      "parent_id": "n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Scope of Example Shipping Ltd Protocol overview",
+      "question": "What is in scope for Example Shipping Ltd Protocol overview?",
+      "canonical_question": "What is in scope for Example Shipping Ltd Protocol overview?",
+      "summary": [
+        "Covers scope of meridian protocol overview in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, scope of meridian protocol overview is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to scope of meridian protocol overview in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Example Shipping Ltd Protocol overview'.",
+        "bridge_to_objective": "Supports the main objective of meridian protocol overview.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_ecpnd4v8ncxmyenn3hvfp84ar4",
+      "parent_id": "n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Example Shipping Ltd Protocol overview: step-by-step",
+      "question": "What is the step-by-step process for Example Shipping Ltd Protocol overview?",
+      "canonical_question": "What is the step-by-step process for Example Shipping Ltd Protocol overview?",
+      "summary": [
+        "Covers meridian protocol overview: step-by-step in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, meridian protocol overview: step-by-step is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to meridian protocol overview: step-by-step in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Example Shipping Ltd Protocol overview'.",
+        "bridge_to_objective": "Supports the main objective of meridian protocol overview.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_bcfjxhah3s5cqbxf3wsknt7f55",
+      "parent_id": "n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Common mistakes in Example Shipping Ltd Protocol overview",
+      "question": "What mistakes do teams make when addressing Example Shipping Ltd Protocol overview?",
+      "canonical_question": "What mistakes do teams make when addressing Example Shipping Ltd Protocol overview?",
+      "summary": [
+        "Covers common mistakes in meridian protocol overview in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, common mistakes in meridian protocol overview is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to common mistakes in meridian protocol overview in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Example Shipping Ltd Protocol overview'.",
+        "bridge_to_objective": "Supports the main objective of meridian protocol overview.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_3q2zqevb47ngh5fp0z2gwe1ae1",
+      "parent_id": "n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Evidence required for Example Shipping Ltd Protocol overview",
+      "question": "What evidence must be submitted to satisfy Example Shipping Ltd Protocol overview?",
+      "canonical_question": "What evidence must be submitted to satisfy Example Shipping Ltd Protocol overview?",
+      "summary": [
+        "Covers evidence required for meridian protocol overview in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, evidence required for meridian protocol overview is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to evidence required for meridian protocol overview in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Example Shipping Ltd Protocol overview'.",
+        "bridge_to_objective": "Supports the main objective of meridian protocol overview.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_y0eejk1zm1pw6ycrjnr1s8g734",
+      "parent_id": "n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Escalation path for Example Shipping Ltd Protocol overview",
+      "question": "Who approves exceptions to Example Shipping Ltd Protocol overview requirements?",
+      "canonical_question": "Who approves exceptions to Example Shipping Ltd Protocol overview requirements?",
+      "summary": [
+        "Covers escalation path for meridian protocol overview in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, escalation path for meridian protocol overview is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to escalation path for meridian protocol overview in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Example Shipping Ltd Protocol overview'.",
+        "bridge_to_objective": "Supports the main objective of meridian protocol overview.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_wp3k5kq5wvyn267vjv0e4jxbk7",
+      "parent_id": "n_wvcsp41k3bnav21788apsd19k2",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Scope of MRD-7 control framework",
+      "question": "What is in scope for MRD-7 control framework?",
+      "canonical_question": "What is in scope for MRD-7 control framework?",
+      "summary": [
+        "Covers scope of mrd-7 control framework in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, scope of mrd-7 control framework is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to scope of mrd-7 control framework in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'MRD-7 control framework'.",
+        "bridge_to_objective": "Supports the main objective of mrd-7 control framework.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_efqjn9psqrzp3bgn1xahe0tc36",
+      "parent_id": "n_wvcsp41k3bnav21788apsd19k2",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "MRD-7 control framework: step-by-step",
+      "question": "What is the step-by-step process for MRD-7 control framework?",
+      "canonical_question": "What is the step-by-step process for MRD-7 control framework?",
+      "summary": [
+        "Covers mrd-7 control framework: step-by-step in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, mrd-7 control framework: step-by-step is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to mrd-7 control framework: step-by-step in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'MRD-7 control framework'.",
+        "bridge_to_objective": "Supports the main objective of mrd-7 control framework.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_tdgvdzqw7tkjp1jvzkgpvnzmq7",
+      "parent_id": "n_wvcsp41k3bnav21788apsd19k2",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Common mistakes in MRD-7 control framework",
+      "question": "What mistakes do teams make when addressing MRD-7 control framework?",
+      "canonical_question": "What mistakes do teams make when addressing MRD-7 control framework?",
+      "summary": [
+        "Covers common mistakes in mrd-7 control framework in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, common mistakes in mrd-7 control framework is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to common mistakes in mrd-7 control framework in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'MRD-7 control framework'.",
+        "bridge_to_objective": "Supports the main objective of mrd-7 control framework.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_9r767ygmk0h5wnvrxtw4ajyav6",
+      "parent_id": "n_wvcsp41k3bnav21788apsd19k2",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Evidence required for MRD-7 control framework",
+      "question": "What evidence must be submitted to satisfy MRD-7 control framework?",
+      "canonical_question": "What evidence must be submitted to satisfy MRD-7 control framework?",
+      "summary": [
+        "Covers evidence required for mrd-7 control framework in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, evidence required for mrd-7 control framework is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to evidence required for mrd-7 control framework in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'MRD-7 control framework'.",
+        "bridge_to_objective": "Supports the main objective of mrd-7 control framework.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_36n5hfmb4b6txtaxzvqg6waq23",
+      "parent_id": "n_wvcsp41k3bnav21788apsd19k2",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Escalation path for MRD-7 control framework",
+      "question": "Who approves exceptions to MRD-7 control framework requirements?",
+      "canonical_question": "Who approves exceptions to MRD-7 control framework requirements?",
+      "summary": [
+        "Covers escalation path for mrd-7 control framework in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, escalation path for mrd-7 control framework is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to escalation path for mrd-7 control framework in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'MRD-7 control framework'.",
+        "bridge_to_objective": "Supports the main objective of mrd-7 control framework.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_x3amwy6rwry3ey8y2tjxk374x2",
+      "parent_id": "n_csk8mh8tw7rbq2j4s1j12d0923",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Scope of Project Apex audit preparation",
+      "question": "What is in scope for Project Apex audit preparation?",
+      "canonical_question": "What is in scope for Project Apex audit preparation?",
+      "summary": [
+        "Covers scope of project apex audit preparation in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, scope of project apex audit preparation is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to scope of project apex audit preparation in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Project Apex audit preparation'.",
+        "bridge_to_objective": "Supports the main objective of project apex audit preparation.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_2h27ttd25cet5cdt4m89r99t42",
+      "parent_id": "n_csk8mh8tw7rbq2j4s1j12d0923",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Project Apex audit preparation: step-by-step",
+      "question": "What is the step-by-step process for Project Apex audit preparation?",
+      "canonical_question": "What is the step-by-step process for Project Apex audit preparation?",
+      "summary": [
+        "Covers project apex audit preparation: step-by-step in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, project apex audit preparation: step-by-step is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to project apex audit preparation: step-by-step in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Project Apex audit preparation'.",
+        "bridge_to_objective": "Supports the main objective of project apex audit preparation.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_g205gqdwsj3xzmp3xext1vvgb6",
+      "parent_id": "n_csk8mh8tw7rbq2j4s1j12d0923",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Common mistakes in Project Apex audit preparation",
+      "question": "What mistakes do teams make when addressing Project Apex audit preparation?",
+      "canonical_question": "What mistakes do teams make when addressing Project Apex audit preparation?",
+      "summary": [
+        "Covers common mistakes in project apex audit preparation in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, common mistakes in project apex audit preparation is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to common mistakes in project apex audit preparation in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Project Apex audit preparation'.",
+        "bridge_to_objective": "Supports the main objective of project apex audit preparation.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_k1f96gz5n7j2x9fgrnffcwe0f3",
+      "parent_id": "n_csk8mh8tw7rbq2j4s1j12d0923",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Evidence required for Project Apex audit preparation",
+      "question": "What evidence must be submitted to satisfy Project Apex audit preparation?",
+      "canonical_question": "What evidence must be submitted to satisfy Project Apex audit preparation?",
+      "summary": [
+        "Covers evidence required for project apex audit preparation in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, evidence required for project apex audit preparation is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to evidence required for project apex audit preparation in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Project Apex audit preparation'.",
+        "bridge_to_objective": "Supports the main objective of project apex audit preparation.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_wa4d18rgwq14mxv6g0vpcyv0r6",
+      "parent_id": "n_csk8mh8tw7rbq2j4s1j12d0923",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Escalation path for Project Apex audit preparation",
+      "question": "Who approves exceptions to Project Apex audit preparation requirements?",
+      "canonical_question": "Who approves exceptions to Project Apex audit preparation requirements?",
+      "summary": [
+        "Covers escalation path for project apex audit preparation in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, escalation path for project apex audit preparation is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to escalation path for project apex audit preparation in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Project Apex audit preparation'.",
+        "bridge_to_objective": "Supports the main objective of project apex audit preparation.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_vzj5j0c0862gcs29xb74f21gh1",
+      "parent_id": "n_vhke98k812x5f763z7v7ybvxv7",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Scope of Section 4.2 gap remediation",
+      "question": "What is in scope for Section 4.2 gap remediation?",
+      "canonical_question": "What is in scope for Section 4.2 gap remediation?",
+      "summary": [
+        "Covers scope of section 4.2 gap remediation in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, scope of section 4.2 gap remediation is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to scope of section 4.2 gap remediation in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Section 4.2 gap remediation'.",
+        "bridge_to_objective": "Supports the main objective of section 4.2 gap remediation.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_qzpw532wkvn8tmvar9j9q34761",
+      "parent_id": "n_vhke98k812x5f763z7v7ybvxv7",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Section 4.2 gap remediation: step-by-step",
+      "question": "What is the step-by-step process for Section 4.2 gap remediation?",
+      "canonical_question": "What is the step-by-step process for Section 4.2 gap remediation?",
+      "summary": [
+        "Covers section 4.2 gap remediation: step-by-step in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, section 4.2 gap remediation: step-by-step is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to section 4.2 gap remediation: step-by-step in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Section 4.2 gap remediation'.",
+        "bridge_to_objective": "Supports the main objective of section 4.2 gap remediation.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_daj6y8dnbrfbam1r7pnkd84r14",
+      "parent_id": "n_vhke98k812x5f763z7v7ybvxv7",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Common mistakes in Section 4.2 gap remediation",
+      "question": "What mistakes do teams make when addressing Section 4.2 gap remediation?",
+      "canonical_question": "What mistakes do teams make when addressing Section 4.2 gap remediation?",
+      "summary": [
+        "Covers common mistakes in section 4.2 gap remediation in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, common mistakes in section 4.2 gap remediation is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to common mistakes in section 4.2 gap remediation in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Section 4.2 gap remediation'.",
+        "bridge_to_objective": "Supports the main objective of section 4.2 gap remediation.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_j5stckzc4vvae6znbkcdxry7h6",
+      "parent_id": "n_vhke98k812x5f763z7v7ybvxv7",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Evidence required for Section 4.2 gap remediation",
+      "question": "What evidence must be submitted to satisfy Section 4.2 gap remediation?",
+      "canonical_question": "What evidence must be submitted to satisfy Section 4.2 gap remediation?",
+      "summary": [
+        "Covers evidence required for section 4.2 gap remediation in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, evidence required for section 4.2 gap remediation is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to evidence required for section 4.2 gap remediation in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Section 4.2 gap remediation'.",
+        "bridge_to_objective": "Supports the main objective of section 4.2 gap remediation.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_g7tb7vde0fmzx37xaknhsetgc4",
+      "parent_id": "n_vhke98k812x5f763z7v7ybvxv7",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Escalation path for Section 4.2 gap remediation",
+      "question": "Who approves exceptions to Section 4.2 gap remediation requirements?",
+      "canonical_question": "Who approves exceptions to Section 4.2 gap remediation requirements?",
+      "summary": [
+        "Covers escalation path for section 4.2 gap remediation in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, escalation path for section 4.2 gap remediation is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to escalation path for section 4.2 gap remediation in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Section 4.2 gap remediation'.",
+        "bridge_to_objective": "Supports the main objective of section 4.2 gap remediation.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_djha7fm2yg0hpetye6mbc68eb2",
+      "parent_id": "n_h8wqerhc2328zpg9sw6824nq42",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Scope of Audit score 87 improvement plan",
+      "question": "What is in scope for Audit score 87 improvement plan?",
+      "canonical_question": "What is in scope for Audit score 87 improvement plan?",
+      "summary": [
+        "Covers scope of audit score 87 improvement plan in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, scope of audit score 87 improvement plan is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to scope of audit score 87 improvement plan in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Audit score 87 improvement plan'.",
+        "bridge_to_objective": "Supports the main objective of audit score 87 improvement plan.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_dhphtxcs6aqm6ecaj2bvwn2pg6",
+      "parent_id": "n_h8wqerhc2328zpg9sw6824nq42",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Audit score 87 improvement plan: step-by-step",
+      "question": "What is the step-by-step process for Audit score 87 improvement plan?",
+      "canonical_question": "What is the step-by-step process for Audit score 87 improvement plan?",
+      "summary": [
+        "Covers audit score 87 improvement plan: step-by-step in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, audit score 87 improvement plan: step-by-step is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to audit score 87 improvement plan: step-by-step in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Audit score 87 improvement plan'.",
+        "bridge_to_objective": "Supports the main objective of audit score 87 improvement plan.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_kmx46ntqrh9an9q256qjyk25g6",
+      "parent_id": "n_h8wqerhc2328zpg9sw6824nq42",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Common mistakes in Audit score 87 improvement plan",
+      "question": "What mistakes do teams make when addressing Audit score 87 improvement plan?",
+      "canonical_question": "What mistakes do teams make when addressing Audit score 87 improvement plan?",
+      "summary": [
+        "Covers common mistakes in audit score 87 improvement plan in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, common mistakes in audit score 87 improvement plan is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to common mistakes in audit score 87 improvement plan in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Audit score 87 improvement plan'.",
+        "bridge_to_objective": "Supports the main objective of audit score 87 improvement plan.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_kfbvs5ac31zm34gtwqvgmk6tq1",
+      "parent_id": "n_h8wqerhc2328zpg9sw6824nq42",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Evidence required for Audit score 87 improvement plan",
+      "question": "What evidence must be submitted to satisfy Audit score 87 improvement plan?",
+      "canonical_question": "What evidence must be submitted to satisfy Audit score 87 improvement plan?",
+      "summary": [
+        "Covers evidence required for audit score 87 improvement plan in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, evidence required for audit score 87 improvement plan is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to evidence required for audit score 87 improvement plan in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Audit score 87 improvement plan'.",
+        "bridge_to_objective": "Supports the main objective of audit score 87 improvement plan.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    },
+    {
+      "id": "n_vdwcfp6013ar5st5b75v2ab5v4",
+      "parent_id": "n_h8wqerhc2328zpg9sw6824nq42",
+      "module_id": "example-shipping-ltd-protocol",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Escalation path for Audit score 87 improvement plan",
+      "question": "Who approves exceptions to Audit score 87 improvement plan requirements?",
+      "canonical_question": "Who approves exceptions to Audit score 87 improvement plan requirements?",
+      "summary": [
+        "Covers escalation path for audit score 87 improvement plan in the Example Shipping Ltd Protocol context."
+      ],
+      "visibility": "private",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Under Example Freight Co. Internal policy, escalation path for audit score 87 improvement plan is governed by MRD-7."
+          }
+        ],
+        "key_points": [
+          "Section 4.2 gap applies to escalation path for audit score 87 improvement plan in certain modules."
+        ],
+        "bridge_to_parent": "This follows from 'Audit score 87 improvement plan'.",
+        "bridge_to_objective": "Supports the main objective of audit score 87 improvement plan.",
+        "source_refs": [
+          "MRD-7 control spec",
+          "Example Freight Co. Internal audit log 2026"
+        ]
+      }
+    }
+  ],
+  "test_candidates": [
+    {
+      "id": "n_leak001",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Using a proprietary compliance system",
+      "question": "What does it mean to operate under a proprietary internal compliance system?",
+      "canonical_question": "What does it mean to operate under a proprietary internal compliance system?",
+      "summary": [
+        "Covers compliance obligations in node 1 of the paraphrase test set."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Our organisation operates under a proprietary compliance system developed specifically for our risk profile. This system prescribes controls, evidence standards, and escalation paths that differ from generic frameworks."
+          }
+        ],
+        "key_points": [
+          "The proprietary compliance system is not publicly documented."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrase of \"Example Shipping Ltd Protocol\" as \"our proprietary compliance system\"",
+        "generation": "DETERMINISTIC"
+      },
+      "_run2_meta": {
+        "source": "run1_paraphrase",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_leak002",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Applying a seven-series control standard",
+      "question": "How does the seven-series control standard differ from ISO 27001?",
+      "canonical_question": "How does the seven-series control standard differ from ISO 27001?",
+      "summary": [
+        "Covers compliance obligations in node 2 of the paraphrase test set."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "The seven-series control standard specifies data-handling obligations beyond what ISO 27001 mandates. Teams must demonstrate quarterly evidence per control family."
+          }
+        ],
+        "key_points": [
+          "The seven-series standard has stricter data-handling requirements than common public frameworks."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrase of \"MRD-7\" as \"the seven-series control standard\"",
+        "generation": "DETERMINISTIC"
+      },
+      "_run2_meta": {
+        "source": "run1_paraphrase",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_leak003",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Preparing for the flagship audit initiative",
+      "question": "What special preparation does the flagship audit initiative require?",
+      "canonical_question": "What special preparation does the flagship audit initiative require?",
+      "summary": [
+        "Covers compliance obligations in node 3 of the paraphrase test set."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "The flagship audit initiative demands pre-audit dry runs, designated evidence custodians, and a readiness scorecard submitted 30 days before the audit window opens."
+          }
+        ],
+        "key_points": [
+          "The flagship audit initiative has a 30-day pre-submission requirement."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrase of \"Project Apex\" as \"the flagship audit initiative\"",
+        "generation": "DETERMINISTIC"
+      },
+      "_run2_meta": {
+        "source": "run1_paraphrase",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_leak004",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Interpreting a compliance rate in the mid-eighties",
+      "question": "What does a compliance rate near eighty-seven percent indicate about gap exposure?",
+      "canonical_question": "What does a compliance rate near eighty-seven percent indicate about gap exposure?",
+      "summary": [
+        "Covers compliance obligations in node 4 of the paraphrase test set."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "A compliance rate near eighty-seven percent signals material gaps in roughly one in eight controls. Organisations at this level should prioritise gap closure before the next assessment window."
+          }
+        ],
+        "key_points": [
+          "A rate in the mid-eighties corresponds to roughly 13% of controls unmet."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrase of \"audit score 87\" as \"current compliance rate is eighty-seven percent\"",
+        "generation": "DETERMINISTIC"
+      },
+      "_run2_meta": {
+        "source": "run1_paraphrase",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_leak005",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Remediating a control shortfall in subsection four-point-two",
+      "question": "What remediation steps close a control shortfall found in subsection four-point-two?",
+      "canonical_question": "What remediation steps close a control shortfall found in subsection four-point-two?",
+      "summary": [
+        "Covers compliance obligations in node 5 of the paraphrase test set."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "A control shortfall in subsection four-point-two typically involves missing documentation of approval chains. Remediation requires retrospective documentation and a forward process change."
+          }
+        ],
+        "key_points": [
+          "Subsection four-point-two shortfalls are documentation failures, not process failures."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrase of \"Section 4.2 gap\" as \"a control shortfall in subsection four-point-two\"",
+        "generation": "DETERMINISTIC"
+      },
+      "_run2_meta": {
+        "source": "run1_paraphrase",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_leak006",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Citing internal policy corpus in compliance evidence",
+      "question": "When is it appropriate to cite internal policy documents as audit evidence?",
+      "canonical_question": "When is it appropriate to cite internal policy documents as audit evidence?",
+      "summary": [
+        "Covers compliance obligations in node 6 of the paraphrase test set."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Internal policy documents from our organisation's policy corpus are acceptable primary evidence when the control explicitly requires policy alignment. Auditors prefer current-revision documents."
+          }
+        ],
+        "key_points": [
+          "Internal policy corpus documents must be current-revision to count as evidence."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrase of \"Example Freight Co. Internal\" as \"our organisation's internal policy corpus\"",
+        "generation": "DETERMINISTIC"
+      },
+      "_run2_meta": {
+        "source": "run1_paraphrase",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_leak007",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Scoring against a proprietary compliance system",
+      "question": "How is performance measured under a proprietary compliance system when the baseline sits near eighty-seven percent?",
+      "canonical_question": "How is performance measured under a proprietary compliance system when the baseline sits near eighty-seven percent?",
+      "summary": [
+        "Covers compliance obligations in node 7 of the paraphrase test set."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Organisations using a proprietary compliance system often set an internal baseline. When the measured rate sits near eighty-seven percent, the gap-to-target analysis drives the remediation roadmap."
+          }
+        ],
+        "key_points": [
+          "A near-eighty-seven-percent baseline against a proprietary system requires a multi-quarter roadmap."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Combined paraphrase: framework name + score (Example Shipping Ltd Protocol + audit score 87)",
+        "generation": "DETERMINISTIC"
+      },
+      "_run2_meta": {
+        "source": "run1_paraphrase",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_leak008",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Resolving a gap in the seven-series standard subsection four-point-two",
+      "question": "What evidence resolves a documented gap in subsection four-point-two of the seven-series standard?",
+      "canonical_question": "What evidence resolves a documented gap in subsection four-point-two of the seven-series standard?",
+      "summary": [
+        "Covers compliance obligations in node 8 of the paraphrase test set."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "The seven-series standard subsection four-point-two gap is typically resolved by submitting a revised approval-chain record and a signed attestation from the control owner."
+          }
+        ],
+        "key_points": [
+          "Subsection four-point-two of the seven-series standard requires a signed attestation."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Combined paraphrase: control standard + gap (MRD-7 + Section 4.2 gap)",
+        "generation": "DETERMINISTIC"
+      },
+      "_run2_meta": {
+        "source": "run1_paraphrase",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_leak009",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Aligning with V.I. policy under the M.P. requirements",
+      "question": "How do V.I. policy documents align with M.P. requirements?",
+      "canonical_question": "How do V.I. policy documents align with M.P. requirements?",
+      "summary": [
+        "Covers compliance obligations in node 9 of the paraphrase test set."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "V.I. policy documents form the normative layer beneath the M.P. requirements. Where V.I. policy is silent, M.P. requirements take precedence; where they conflict, an escalation to the review board is required."
+          }
+        ],
+        "key_points": [
+          "V.I. policy is subordinate to M.P. requirements; conflicts require review-board escalation."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Initials only: \"V.I.\" for Example Freight Co. Internal, \"M.P.\" for Example Shipping Ltd Protocol",
+        "generation": "DETERMINISTIC"
+      },
+      "_run2_meta": {
+        "source": "run1_paraphrase",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_leak010",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Closing the compliance gap before the next assessment",
+      "question": "What must an organisation do to raise a mid-eighties compliance rate to target before the flagship audit?",
+      "canonical_question": "What must an organisation do to raise a mid-eighties compliance rate to target before the flagship audit?",
+      "summary": [
+        "Covers compliance obligations in node 10 of the paraphrase test set."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "An organisation currently measuring in the mid-eighties under its proprietary framework must close the outstanding subsection shortfall, update its internal policy corpus, and submit the revised evidence package to the seven-series control auditors at least 30 days before the flagship audit window. The review board signs off under the initials of the framework custodian."
+          }
+        ],
+        "key_points": [
+          "Mid-eighties rate + proprietary framework + subsection shortfall + flagship audit = one integrated remediation track.",
+          "The seven-series auditors require 30-day lead time for revised evidence."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Narrative implying all private facts without naming any",
+        "generation": "DETERMINISTIC"
+      },
+      "_run2_meta": {
+        "source": "run1_paraphrase",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_r2p001",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Our Internal Governance Framework",
+      "question": "What standard guides our compliance obligations company-wide?",
+      "canonical_question": "What standard guides compliance obligations company-wide?",
+      "summary": [
+        "Our internal governance framework is the single authoritative standard for compliance across the organisation."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Example Freight Co. (fictional) operates under our internal governance framework, a comprehensive set of rules and expectations that shapes how every team approaches regulatory obligations. This framework was built in-house to reflect the specific operational and legal environment of the freight industry. All staff are expected to understand and apply it in their day-to-day work."
+          }
+        ],
+        "key_points": [
+          "Our internal governance framework is the single authoritative standard for compliance across the organisation."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrases Example Shipping Ltd Protocol",
+        "paraphrase_strategy": "internal governance framework",
+        "generation": "SIMULATED"
+      },
+      "_run2_meta": {
+        "source": "run2_paraphrase_simulated",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_r2p002",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Understanding Data Control Specification 7",
+      "question": "Which specification governs how we handle sensitive operational data?",
+      "canonical_question": "Which specification governs sensitive data handling?",
+      "summary": [
+        "Data control specification 7 is the definitive guide to responsible data handling across our systems."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Data control specification 7 sets out the precise rules for collecting, storing, transmitting, and disposing of sensitive information within our logistics operations. It represents the most current iteration of our data-handling rules, incorporating lessons learned from prior versions. Teams responsible for data pipelines must ensure their processes align with every requirement in this specification."
+          }
+        ],
+        "key_points": [
+          "Data control specification 7 is the definitive guide to responsible data handling across our systems."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrases MRD-7",
+        "paraphrase_strategy": "data control specification 7",
+        "generation": "SIMULATED"
+      },
+      "_run2_meta": {
+        "source": "run2_paraphrase_simulated",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_r2p003",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "The Summit Review Programme",
+      "question": "How does the company conduct its major annual compliance assessment?",
+      "canonical_question": "How is a major annual compliance assessment conducted?",
+      "summary": [
+        "The summit review programme is the company primary annual mechanism for measuring and improving compliance maturity."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Each year, the summit review programme brings together internal auditors, department leads, and external advisors to conduct a thorough evaluation of how well the organisation meets its compliance obligations. The programme is our highest-stakes structured review and drives the compliance roadmap for the following year. Preparation for it begins several months in advance across all business units."
+          }
+        ],
+        "key_points": [
+          "The summit review programme is the primary annual mechanism for measuring compliance maturity."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrases Project Apex",
+        "paraphrase_strategy": "summit review programme",
+        "generation": "SIMULATED"
+      },
+      "_run2_meta": {
+        "source": "run2_paraphrase_simulated",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_r2p004",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Our Current Compliance Assessment Result",
+      "question": "Where does the company currently stand on its compliance score?",
+      "canonical_question": "How is a compliance score interpreted?",
+      "summary": [
+        "Our compliance assessment stands at a score of 87, equivalent to the 87th percentile among industry peers."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "The most recent assessment returned a score of 87, placing us in the 87th percentile of comparable freight operators assessed under equivalent frameworks. This result reflects meaningful progress made over the past two years but also indicates that targeted improvements are still required to reach top-tier status. The score is reviewed and updated following each annual assessment cycle."
+          }
+        ],
+        "key_points": [
+          "Our compliance assessment stands at a score of 87, equivalent to the 87th percentile among industry peers."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrases audit score 87",
+        "paraphrase_strategy": "score of 87 and 87th percentile",
+        "generation": "SIMULATED"
+      },
+      "_run2_meta": {
+        "source": "run2_paraphrase_simulated",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_r2p005",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Addressing the Sub-Clause 4.2 Control Deficiency",
+      "question": "What specific compliance gap has been identified for remediation?",
+      "canonical_question": "What steps close a specific identified compliance gap?",
+      "summary": [
+        "The sub-clause 4.2 control deficiency is the priority remediation item in the current compliance plan."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Auditors identified the sub-clause 4.2 control deficiency as an area where current operational practices fall short of required standards. This gap relates to how certain approval and verification steps are documented during high-volume processing periods. A remediation workstream has been established to close this deficiency before the next assessment cycle."
+          }
+        ],
+        "key_points": [
+          "The sub-clause 4.2 control deficiency is the priority remediation item in the current compliance plan."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrases Section 4.2 gap",
+        "paraphrase_strategy": "sub-clause 4.2 control deficiency",
+        "generation": "SIMULATED"
+      },
+      "_run2_meta": {
+        "source": "run2_paraphrase_simulated",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_r2p006",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Maintaining Our Proprietary Policy Repository",
+      "question": "Where can staff find the authoritative source of internal compliance policies?",
+      "canonical_question": "How is an internal policy repository maintained?",
+      "summary": [
+        "Our proprietary policy repository is the only authoritative location for current internal compliance policies."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Our proprietary policy repository is the single source of truth for all internal compliance documentation, from high-level principles down to step-by-step procedural guidance. Access is managed centrally, and all published policies undergo a formal review cycle to ensure they remain current and accurate. Staff should always consult the repository before relying on older printed or cached copies of any policy."
+          }
+        ],
+        "key_points": [
+          "Our proprietary policy repository is the only authoritative location for current internal compliance policies."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrases Example Freight Co. Internal",
+        "paraphrase_strategy": "proprietary policy repository",
+        "generation": "SIMULATED"
+      },
+      "_run2_meta": {
+        "source": "run2_paraphrase_simulated",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_r2p007",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Our Bespoke Regulatory Programme and Performance Baseline",
+      "question": "How was the compliance programme designed and what baseline does it use?",
+      "canonical_question": "How is programme performance tracked against a baseline?",
+      "summary": [
+        "Our bespoke regulatory programme uses an 87-point baseline as the threshold for acceptable compliance performance."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Our bespoke regulatory programme was designed from the ground up to address the unique requirements of a mid-sized international freight operator, drawing on both sector-specific regulation and broader industry best practice. Performance against the programme is tracked against an 87-point baseline, which represents the minimum acceptable threshold for continued certification. Teams are measured against this baseline quarterly throughout the year."
+          }
+        ],
+        "key_points": [
+          "Our bespoke regulatory programme uses an 87-point baseline as the threshold for acceptable compliance performance."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrases Example Shipping Ltd Protocol + audit score 87",
+        "paraphrase_strategy": "bespoke regulatory programme + 87-point baseline",
+        "generation": "SIMULATED"
+      },
+      "_run2_meta": {
+        "source": "run2_paraphrase_simulated",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_r2p008",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Data Framework Revision 7 and the Clause 4.2 Deficiency",
+      "question": "How do data handling rules connect to the identified compliance gap?",
+      "canonical_question": "How does a data framework revision relate to a compliance gap?",
+      "summary": [
+        "Data framework revision 7 and the clause 4.2 deficiency are closely linked and are being addressed together."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Data framework revision 7 introduced stricter requirements around approval logging and audit trails, which is directly relevant to the clause 4.2 deficiency identified in our latest assessment. Closing that deficiency will require teams to update their workflows to meet the documentation standards now mandated under revision 7. Progress on both workstreams is being tracked jointly by the compliance and technology teams."
+          }
+        ],
+        "key_points": [
+          "Data framework revision 7 and the clause 4.2 deficiency are closely linked and are being addressed together."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrases MRD-7 + Section 4.2 gap",
+        "paraphrase_strategy": "data framework revision 7 + clause 4.2 deficiency",
+        "generation": "SIMULATED"
+      },
+      "_run2_meta": {
+        "source": "run2_paraphrase_simulated",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_r2p009",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "How the Standard Shapes Day-to-Day Operations",
+      "question": "What does it mean in practice to operate according to the standard?",
+      "canonical_question": "How does an internal compliance standard affect operations?",
+      "summary": [
+        "Operating according to the standard is an ongoing operational discipline; our high-eighties score confirms we are on track."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "The standard permeates every aspect of how we run our freight operations, from how we onboard new suppliers to how we close out shipment records. In the most recent assessment cycle, the company scored in the high eighties, which reflects strong overall adherence but highlights that there is still room to reach the highest tier of performance. Department managers are expected to embed the standard into team routines rather than treating it as a periodic compliance exercise."
+          }
+        ],
+        "key_points": [
+          "Operating according to the standard is an ongoing operational discipline, and our high-eighties score confirms we are on the right track."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Paraphrases Example Shipping Ltd Protocol + audit score 87",
+        "paraphrase_strategy": "the standard + scored in the high eighties",
+        "generation": "SIMULATED"
+      },
+      "_run2_meta": {
+        "source": "run2_paraphrase_simulated",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_r2p010",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "How Compliance Works in Practice at Example Freight Co.",
+      "question": "How do all parts of the compliance programme fit together in real operations?",
+      "canonical_question": "How does an integrated compliance programme operate in practice?",
+      "summary": [
+        "Our compliance programme is an integrated annual cycle of preparation, assessment, and remediation, currently performing well but with one targeted area under active improvement."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "Each year, our teams prepare for a major company-wide review that examines how well our operations conform to the detailed internal rules governing everything from data handling to supplier approvals — rules that are catalogued and maintained in a centrally managed document library. The last time we went through that process, the results came back strong but not perfect, with one specific area in our controls framework flagged for improvement; our teams are now working to close that gap before the next review. All of this activity is anchored to a coherent internal programme that sets the expectations, and performance against those expectations is tracked using a numerical score that currently sits just below the ninety-point mark."
+          }
+        ],
+        "key_points": [
+          "Our compliance programme is an integrated annual cycle of preparation, assessment, and remediation."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_test_meta": {
+        "desc": "Narrative paraphrase — all six concepts without naming any",
+        "paraphrase_strategy": "narrative implying all concepts via operational context, score near ninety not 87",
+        "generation": "SIMULATED"
+      },
+      "_run2_meta": {
+        "source": "run2_paraphrase_simulated",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_csd0ha08xy0hg3gqyz3j5kthd7",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Understanding compliance frameworks",
+      "question": "What is a compliance framework and why do organisations use one?",
+      "canonical_question": "What is a compliance framework and why do organisations use one?",
+      "summary": [
+        "Compliance frameworks help organisations manage risk systematically."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "A compliance framework is a structured set of guidelines that helps an organisation align its policies with regulatory requirements."
+          }
+        ],
+        "key_points": [
+          "Compliance frameworks help organisations manage risk systematically."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "safe_rewrite",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_zadn2mfkj3fz9r3fegpv36yyk3",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Control-based risk management",
+      "question": "How do control-based frameworks reduce organisational risk?",
+      "canonical_question": "How do control-based frameworks reduce organisational risk?",
+      "summary": [
+        "Controls reduce risk by limiting exposure at defined points in a process."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Control frameworks enumerate checkpoints at which risk can be measured and mitigated."
+          }
+        ],
+        "key_points": [
+          "Controls reduce risk by limiting exposure at defined points in a process."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "safe_rewrite",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_1d4e5yj8b3v05smfv4yspnev31",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Audit preparation fundamentals",
+      "question": "What general steps should a team take before an external audit?",
+      "canonical_question": "What general steps should a team take before an external audit?",
+      "summary": [
+        "Good audit preparation involves evidence gathering and gap identification."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Teams should collect supporting documentation, map controls to requirements, and run internal pre-checks before an external auditor arrives."
+          }
+        ],
+        "key_points": [
+          "Good audit preparation involves evidence gathering and gap identification."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "safe_rewrite",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_wjvvdt21cbbjt4y0z5nfdsf6y7",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Gap analysis methodology",
+      "question": "How do you perform a gap analysis for a compliance standard?",
+      "canonical_question": "How do you perform a gap analysis for a compliance standard?",
+      "summary": [
+        "Gap analysis compares current state to required state across each control."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "A gap analysis maps each control requirement to current evidence and flags where evidence is missing or insufficient."
+          }
+        ],
+        "key_points": [
+          "Gap analysis compares current state to required state across each control."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "safe_rewrite",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_32k7ktqsg36gsmme8wcrdv9583",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Continuous improvement cycles",
+      "question": "What is a continuous improvement cycle in a compliance context?",
+      "canonical_question": "What is a continuous improvement cycle in a compliance context?",
+      "summary": [
+        "Continuous improvement cycles use audit findings to iteratively close gaps."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "After each audit, identified gaps are prioritised, remediated, and re-tested in the next cycle."
+          }
+        ],
+        "key_points": [
+          "Continuous improvement cycles use audit findings to iteratively close gaps."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "safe_rewrite",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_pm4xbefvx78mn2ccwex2tmtwg4",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Evidence collection best practices",
+      "question": "What makes audit evidence reliable and sufficient?",
+      "canonical_question": "What makes audit evidence reliable and sufficient?",
+      "summary": [
+        "Reliable evidence is contemporaneous, attributable, and complete."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Evidence is strongest when it is collected at the time of the controlled activity, tagged to the person responsible, and covers the full scope of the control."
+          }
+        ],
+        "key_points": [
+          "Reliable evidence is contemporaneous, attributable, and complete."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "safe_rewrite",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_fzdynd0anydp9zj3sn9q7pm9k1",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Escalation and exception handling",
+      "question": "When should a compliance exception be escalated and how?",
+      "canonical_question": "When should a compliance exception be escalated and how?",
+      "summary": [
+        "Exceptions that cannot be remediated in-cycle require formal escalation."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "An exception is raised when a control cannot be met by the required date. It is escalated to the process owner who logs the risk acceptance or requests a waiver."
+          }
+        ],
+        "key_points": [
+          "Exceptions that cannot be remediated in-cycle require formal escalation."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "safe_rewrite",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_zjryg85vmw305hnbm30s901w50",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Scope definition for compliance reviews",
+      "question": "How do you define the scope of a compliance review?",
+      "canonical_question": "How do you define the scope of a compliance review?",
+      "summary": [
+        "Scope definition identifies which systems, processes, and data are in-scope."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Scope is bounded by data classification, system ownership, and the specific standard being assessed."
+          }
+        ],
+        "key_points": [
+          "Scope definition identifies which systems, processes, and data are in-scope."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "safe_rewrite",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_9xkgdsza0xeqm4kyae46yh9ed2",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Common compliance mistakes",
+      "question": "What are the most common mistakes teams make during compliance reviews?",
+      "canonical_question": "What are the most common mistakes teams make during compliance reviews?",
+      "summary": [
+        "Common mistakes include incomplete evidence and undocumented exceptions."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Teams frequently fail to maintain contemporaneous records, leaving auditors with reconstructed evidence that carries less weight."
+          }
+        ],
+        "key_points": [
+          "Common mistakes include incomplete evidence and undocumented exceptions."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "safe_rewrite",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_ea3xzjz303f7jw9gs1zahk5hx0",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Roles in a compliance programme",
+      "question": "Who owns compliance activities in a typical organisation?",
+      "canonical_question": "Who owns compliance activities in a typical organisation?",
+      "summary": [
+        "Compliance ownership is distributed across process owners, a central function, and executive sponsors."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "The central compliance function sets the framework; process owners gather evidence; executive sponsors approve risk acceptance."
+          }
+        ],
+        "key_points": [
+          "Compliance ownership is distributed across process owners, a central function, and executive sponsors."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "safe_rewrite",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_grjwbm7wq1kz29j46mr1pq2y40",
+      "parent_id": "n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "the protocol overview",
+      "question": "What is the the protocol and why does our organisation use it?",
+      "canonical_question": "What is the the protocol and why does our organisation use it?",
+      "summary": [
+        "Paraphrase of 'Example Shipping Ltd Protocol overview' with private parent still attached."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "This rewords content from 'Example Shipping Ltd Protocol overview' but retains the original parent link."
+          }
+        ],
+        "key_points": [
+          "The protocol mandates this practice."
+        ],
+        "bridge_to_parent": "Derived from private node n_6rsg8jfv5yy2x2jxe0dq1rm2d2.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "near_copy",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_739m29sgyed12ekcy1qsa8e1t6",
+      "parent_id": "n_wvcsp41k3bnav21788apsd19k2",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "the control spec control framework",
+      "question": "What controls does MRD-7 specify for data handling?",
+      "canonical_question": "What controls does MRD-7 specify for data handling?",
+      "summary": [
+        "Paraphrase of 'MRD-7 control framework' with private parent still attached."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "This rewords content from 'MRD-7 control framework' but retains the original parent link."
+          }
+        ],
+        "key_points": [
+          "The protocol mandates this practice."
+        ],
+        "bridge_to_parent": "Derived from private node n_wvcsp41k3bnav21788apsd19k2.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "near_copy",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_prb69em9ve7qttpdywwm0yft01",
+      "parent_id": "n_csk8mh8tw7rbq2j4s1j12d0923",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "the audit project audit preparation",
+      "question": "How should teams prepare for a Project Apex audit?",
+      "canonical_question": "How should teams prepare for a Project Apex audit?",
+      "summary": [
+        "Paraphrase of 'Project Apex audit preparation' with private parent still attached."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "This rewords content from 'Project Apex audit preparation' but retains the original parent link."
+          }
+        ],
+        "key_points": [
+          "The protocol mandates this practice."
+        ],
+        "bridge_to_parent": "Derived from private node n_csk8mh8tw7rbq2j4s1j12d0923.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "near_copy",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_h220kxvv240pvjvw711c01rph4",
+      "parent_id": "n_vhke98k812x5f763z7v7ybvxv7",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Section 4.2 gap remediation",
+      "question": "What steps close the Section 4.2 gap identified in the last audit?",
+      "canonical_question": "What steps close the Section 4.2 gap identified in the last audit?",
+      "summary": [
+        "Paraphrase of 'Section 4.2 gap remediation' with private parent still attached."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "This rewords content from 'Section 4.2 gap remediation' but retains the original parent link."
+          }
+        ],
+        "key_points": [
+          "The protocol mandates this practice."
+        ],
+        "bridge_to_parent": "Derived from private node n_vhke98k812x5f763z7v7ybvxv7.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "near_copy",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_6cexpynbhd7efs6e6wynq6p8r0",
+      "parent_id": "n_h8wqerhc2328zpg9sw6824nq42",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Audit score 87 improvement plan",
+      "question": "What actions will raise our audit score 87 to target 95?",
+      "canonical_question": "What actions will raise our audit score 87 to target 95?",
+      "summary": [
+        "Paraphrase of 'Audit score 87 improvement plan' with private parent still attached."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "This rewords content from 'Audit score 87 improvement plan' but retains the original parent link."
+          }
+        ],
+        "key_points": [
+          "The protocol mandates this practice."
+        ],
+        "bridge_to_parent": "Derived from private node n_h8wqerhc2328zpg9sw6824nq42.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "near_copy",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_mdzprjr9cf9x1drtk51y41g076",
+      "parent_id": "n_6rsg8jfv5yy2x2jxe0dq1rm2d2",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "the protocol overview",
+      "question": "What is the the protocol and why does our organisation use it?",
+      "canonical_question": "What is the the protocol and why does our organisation use it?",
+      "summary": [
+        "Paraphrase of 'Example Shipping Ltd Protocol overview' with private parent still attached."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "This rewords content from 'Example Shipping Ltd Protocol overview' but retains the original parent link."
+          }
+        ],
+        "key_points": [
+          "The protocol mandates this practice."
+        ],
+        "bridge_to_parent": "Derived from private node n_6rsg8jfv5yy2x2jxe0dq1rm2d2.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "near_copy",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_1t9bt44pyepkhc8ab2mr5gcds2",
+      "parent_id": "n_wvcsp41k3bnav21788apsd19k2",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "the control spec control framework",
+      "question": "What controls does MRD-7 specify for data handling?",
+      "canonical_question": "What controls does MRD-7 specify for data handling?",
+      "summary": [
+        "Paraphrase of 'MRD-7 control framework' with private parent still attached."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "This rewords content from 'MRD-7 control framework' but retains the original parent link."
+          }
+        ],
+        "key_points": [
+          "The protocol mandates this practice."
+        ],
+        "bridge_to_parent": "Derived from private node n_wvcsp41k3bnav21788apsd19k2.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "near_copy",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_6twqe4mvqqp7690wa03v6y58q1",
+      "parent_id": "n_csk8mh8tw7rbq2j4s1j12d0923",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "the audit project audit preparation",
+      "question": "How should teams prepare for a Project Apex audit?",
+      "canonical_question": "How should teams prepare for a Project Apex audit?",
+      "summary": [
+        "Paraphrase of 'Project Apex audit preparation' with private parent still attached."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "This rewords content from 'Project Apex audit preparation' but retains the original parent link."
+          }
+        ],
+        "key_points": [
+          "The protocol mandates this practice."
+        ],
+        "bridge_to_parent": "Derived from private node n_csk8mh8tw7rbq2j4s1j12d0923.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "near_copy",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_f0j5ekqrt856fg96g8nxq9vr57",
+      "parent_id": "n_vhke98k812x5f763z7v7ybvxv7",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Section 4.2 gap remediation",
+      "question": "What steps close the Section 4.2 gap identified in the last audit?",
+      "canonical_question": "What steps close the Section 4.2 gap identified in the last audit?",
+      "summary": [
+        "Paraphrase of 'Section 4.2 gap remediation' with private parent still attached."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "This rewords content from 'Section 4.2 gap remediation' but retains the original parent link."
+          }
+        ],
+        "key_points": [
+          "The protocol mandates this practice."
+        ],
+        "bridge_to_parent": "Derived from private node n_vhke98k812x5f763z7v7ybvxv7.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "near_copy",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_yxzgtmrvgy2y9d3hnwybmxf1a1",
+      "parent_id": "n_h8wqerhc2328zpg9sw6824nq42",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Audit score 87 improvement plan",
+      "question": "What actions will raise our audit score 87 to target 95?",
+      "canonical_question": "What actions will raise our audit score 87 to target 95?",
+      "summary": [
+        "Paraphrase of 'Audit score 87 improvement plan' with private parent still attached."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "This rewords content from 'Audit score 87 improvement plan' but retains the original parent link."
+          }
+        ],
+        "key_points": [
+          "The protocol mandates this practice."
+        ],
+        "bridge_to_parent": "Derived from private node n_h8wqerhc2328zpg9sw6824nq42.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "near_copy",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_x0m0k0h4xzvj0y2mjsrsy1asn6",
+      "parent_id": "n_csd0ha08xy0hg3gqyz3j5kthd7",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Compliance review follow-up 1",
+      "question": "How does this relate to Example Shipping Ltd Protocol requirements?",
+      "canonical_question": "How does this relate to Example Shipping Ltd Protocol requirements?",
+      "summary": [
+        "Discusses compliance obligations referencing Example Shipping Ltd Protocol."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "As established under Example Shipping Ltd Protocol, teams must document all control activities on a quarterly basis."
+          }
+        ],
+        "key_points": [
+          "Requirement stems from Example Shipping Ltd Protocol."
+        ],
+        "bridge_to_parent": "Extends the parent node's discussion of control frameworks.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "quotes_private_fact",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_fm3cw3rmgycwv6k9gk6c8r4rd1",
+      "parent_id": "n_zadn2mfkj3fz9r3fegpv36yyk3",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Compliance review follow-up 2",
+      "question": "How does this relate to MRD-7 requirements?",
+      "canonical_question": "How does this relate to MRD-7 requirements?",
+      "summary": [
+        "Discusses compliance obligations referencing MRD-7."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "As established under MRD-7, teams must document all control activities on a quarterly basis."
+          }
+        ],
+        "key_points": [
+          "Requirement stems from MRD-7."
+        ],
+        "bridge_to_parent": "Extends the parent node's discussion of control frameworks.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "quotes_private_fact",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_et3q4nf1t70atdsf8apae3eca0",
+      "parent_id": "n_1d4e5yj8b3v05smfv4yspnev31",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Compliance review follow-up 3",
+      "question": "How does this relate to Project Apex requirements?",
+      "canonical_question": "How does this relate to Project Apex requirements?",
+      "summary": [
+        "Discusses compliance obligations referencing Project Apex."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "As established under Project Apex, teams must document all control activities on a quarterly basis."
+          }
+        ],
+        "key_points": [
+          "Requirement stems from Project Apex."
+        ],
+        "bridge_to_parent": "Extends the parent node's discussion of control frameworks.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "quotes_private_fact",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_jjn8t9m732d6qkcxj1zfn7t1w6",
+      "parent_id": "n_wjvvdt21cbbjt4y0z5nfdsf6y7",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Compliance review follow-up 4",
+      "question": "How does this relate to audit score 87 requirements?",
+      "canonical_question": "How does this relate to audit score 87 requirements?",
+      "summary": [
+        "Discusses compliance obligations referencing audit score 87."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "As established under audit score 87, teams must document all control activities on a quarterly basis."
+          }
+        ],
+        "key_points": [
+          "Requirement stems from audit score 87."
+        ],
+        "bridge_to_parent": "Extends the parent node's discussion of control frameworks.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "quotes_private_fact",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_e28kkc4vyvrdhhg2hfkaze0jf7",
+      "parent_id": "n_32k7ktqsg36gsmme8wcrdv9583",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Compliance review follow-up 5",
+      "question": "How does this relate to Section 4.2 gap requirements?",
+      "canonical_question": "How does this relate to Section 4.2 gap requirements?",
+      "summary": [
+        "Discusses compliance obligations referencing Section 4.2 gap."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "As established under Section 4.2 gap, teams must document all control activities on a quarterly basis."
+          }
+        ],
+        "key_points": [
+          "Requirement stems from Section 4.2 gap."
+        ],
+        "bridge_to_parent": "Extends the parent node's discussion of control frameworks.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "quotes_private_fact",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_4hppx5wzjfv020njj7rjzncy30",
+      "parent_id": "n_pm4xbefvx78mn2ccwex2tmtwg4",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Compliance review follow-up 6",
+      "question": "How does this relate to Example Freight Co. Internal requirements?",
+      "canonical_question": "How does this relate to Example Freight Co. Internal requirements?",
+      "summary": [
+        "Discusses compliance obligations referencing Example Freight Co. Internal."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "As established under Example Freight Co. Internal, teams must document all control activities on a quarterly basis."
+          }
+        ],
+        "key_points": [
+          "Requirement stems from Example Freight Co. Internal."
+        ],
+        "bridge_to_parent": "Extends the parent node's discussion of control frameworks.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "quotes_private_fact",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_t5bkqq3j0721bgt30zv5bpxbn0",
+      "parent_id": "n_fzdynd0anydp9zj3sn9q7pm9k1",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Compliance review follow-up 7",
+      "question": "How does this relate to Example Shipping Ltd Protocol requirements?",
+      "canonical_question": "How does this relate to Example Shipping Ltd Protocol requirements?",
+      "summary": [
+        "Discusses compliance obligations referencing Example Shipping Ltd Protocol."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "As established under Example Shipping Ltd Protocol, teams must document all control activities on a quarterly basis."
+          }
+        ],
+        "key_points": [
+          "Requirement stems from Example Shipping Ltd Protocol."
+        ],
+        "bridge_to_parent": "Extends the parent node's discussion of control frameworks.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "quotes_private_fact",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_hkb4qtbq4vc0h6xdagxkmcke22",
+      "parent_id": "n_zjryg85vmw305hnbm30s901w50",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Compliance review follow-up 8",
+      "question": "How does this relate to MRD-7 requirements?",
+      "canonical_question": "How does this relate to MRD-7 requirements?",
+      "summary": [
+        "Discusses compliance obligations referencing MRD-7."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "As established under MRD-7, teams must document all control activities on a quarterly basis."
+          }
+        ],
+        "key_points": [
+          "Requirement stems from MRD-7."
+        ],
+        "bridge_to_parent": "Extends the parent node's discussion of control frameworks.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "quotes_private_fact",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_800tq3cavpbxb59w0fve97w192",
+      "parent_id": "n_9xkgdsza0xeqm4kyae46yh9ed2",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Compliance review follow-up 9",
+      "question": "How does this relate to audit score 87 requirements?",
+      "canonical_question": "How does this relate to audit score 87 requirements?",
+      "summary": [
+        "Discusses compliance obligations referencing audit score 87."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "As established under audit score 87, teams must document all control activities on a quarterly basis."
+          }
+        ],
+        "key_points": [
+          "Requirement stems from audit score 87."
+        ],
+        "bridge_to_parent": "Extends the parent node's discussion of control frameworks.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "quotes_private_fact",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_169abw7yzx1ghnrvhb63d34rk2",
+      "parent_id": "n_ea3xzjz303f7jw9gs1zahk5hx0",
+      "module_id": "general-compliance",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Compliance review follow-up 10",
+      "question": "How does this relate to Section 4.2 gap requirements?",
+      "canonical_question": "How does this relate to Section 4.2 gap requirements?",
+      "summary": [
+        "Discusses compliance obligations referencing Section 4.2 gap."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Detail",
+            "body_md": "As established under Section 4.2 gap, teams must document all control activities on a quarterly basis."
+          }
+        ],
+        "key_points": [
+          "Requirement stems from Section 4.2 gap."
+        ],
+        "bridge_to_parent": "Extends the parent node's discussion of control frameworks.",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "_run2_meta": {
+        "source": "run1_clean",
+        "category": "quotes_private_fact",
+        "should_block": true
+      }
+    },
+    {
+      "id": "n_efcl01",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Carrier permit management overview",
+      "question": "How does Example Freight Co. (fictional) track operating permits for its carrier fleet?",
+      "canonical_question": "How does a freight carrier track operating permits for its fleet?",
+      "summary": [
+        "Permit management ensures every vehicle in the fleet holds current authorisation."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Permits are logged in a central register with expiry dates. Reminders are issued 90 days before expiry and vehicles with lapsed permits are taken off-road automatically."
+          }
+        ],
+        "key_points": [
+          "Automated expiry tracking prevents lapsed-permit operations."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run2_clean",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_efcl02",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Load documentation requirements",
+      "question": "What paperwork must accompany every freight load at Example Freight Co. (fictional)?",
+      "canonical_question": "What documentation is required for every freight load?",
+      "summary": [
+        "Correct load documentation reduces delays at border and inspection points."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Every load requires a consignment note, a weight certificate, and a signed chain-of-custody form. Hazardous loads need an additional manifest. Missing documents trigger a hold before departure."
+          }
+        ],
+        "key_points": [
+          "No load departs without a full documentation set."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run2_clean",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_efcl03",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Customs compliance in international freight",
+      "question": "What customs obligations apply when Example Freight Co. (fictional) moves goods across borders?",
+      "canonical_question": "What customs obligations apply to international freight movements?",
+      "summary": [
+        "Accurate commodity codes and declared values are the foundation of customs compliance."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Shipments crossing a customs border require a declaration with the correct HS commodity code, declared value, and country of origin. The customs broker reviews each declaration before submission."
+          }
+        ],
+        "key_points": [
+          "Incorrect commodity codes are the leading cause of customs delays."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run2_clean",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_efcl04",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Fleet vehicle safety inspection schedule",
+      "question": "How often are fleet vehicles safety-inspected at Example Freight Co. (fictional)?",
+      "canonical_question": "How often should freight vehicles undergo safety inspections?",
+      "summary": [
+        "Regular safety inspections prevent on-road failures and regulatory penalties."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Heavy vehicles are inspected every six months; light vehicles annually. Inspections cover brakes, lights, tyre condition, and load-securing equipment. Failed vehicles are removed from service until cleared."
+          }
+        ],
+        "key_points": [
+          "Six-monthly inspections apply to all vehicles over 3.5 tonnes."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run2_clean",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_efcl05",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Driver qualification and certification tracking",
+      "question": "How are driver certifications monitored at Example Freight Co. (fictional)?",
+      "canonical_question": "How should a freight company track driver qualifications?",
+      "summary": [
+        "Driver qualifications must be current for every class of vehicle operated."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Each driver record includes licence class, medical clearance date, and any endorsements for specialist loads. The system flags upcoming expirations and suspends scheduling for drivers with lapsed qualifications."
+          }
+        ],
+        "key_points": [
+          "Drivers with expired medical clearances cannot be assigned loads."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run2_clean",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_efcl06",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Incident reporting for road freight operations",
+      "question": "What must be reported after a road incident at Example Freight Co. (fictional)?",
+      "canonical_question": "What is the incident reporting requirement for freight operators?",
+      "summary": [
+        "Timely incident reports protect the company and satisfy regulatory obligations."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "All on-road incidents, including near-misses, must be logged within 24 hours. Incidents involving injury or cargo loss are escalated to the safety officer and reported to the regulator within 48 hours."
+          }
+        ],
+        "key_points": [
+          "Near-miss reporting is mandatory — not just injury incidents."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run2_clean",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_efcl07",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Temperature-controlled cargo requirements",
+      "question": "What cold-chain controls apply to perishable freight at Example Freight Co. (fictional)?",
+      "canonical_question": "What cold-chain controls apply to temperature-sensitive freight?",
+      "summary": [
+        "Unbroken temperature records are essential for perishable cargo compliance."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Refrigerated loads require a calibrated temperature logger active from loading to delivery. Logs are retained for two years. Any excursion outside the agreed temperature band is reported to the consignee before delivery."
+          }
+        ],
+        "key_points": [
+          "Temperature excursion records must be disclosed, not concealed."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run2_clean",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_efcl08",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Dangerous goods handling basics",
+      "question": "What packaging and labelling rules apply to dangerous goods at Example Freight Co. (fictional)?",
+      "canonical_question": "What packaging and labelling rules apply to dangerous goods in freight?",
+      "summary": [
+        "Correct classification and labelling of dangerous goods is a legal requirement."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Dangerous goods must be classified under the relevant ADR/IATA table, packed in UN-approved containers, and labelled with the correct hazard diamonds. Drivers must carry emergency information sheets for every dangerous goods line."
+          }
+        ],
+        "key_points": [
+          "ADR/IATA classification determines packaging, labelling, and driver training requirements."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run2_clean",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_efcl09",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Freight billing reconciliation process",
+      "question": "How are billing discrepancies identified and resolved at Example Freight Co. (fictional)?",
+      "canonical_question": "How should a freight operator reconcile billing discrepancies?",
+      "summary": [
+        "Accurate billing reconciliation prevents revenue leakage and customer disputes."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "Invoices are matched against proof-of-delivery records and fuel surcharge rates before dispatch. Discrepancies above a defined threshold are escalated to the accounts team and resolved within five business days."
+          }
+        ],
+        "key_points": [
+          "Automated invoice matching catches most discrepancies before they reach the customer."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run2_clean",
+        "should_block": false
+      }
+    },
+    {
+      "id": "n_efcl10",
+      "parent_id": null,
+      "module_id": "general-compliance",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Third-party logistics provider selection criteria",
+      "question": "How does Example Freight Co. (fictional) evaluate and approve new logistics partners?",
+      "canonical_question": "How should a freight company evaluate third-party logistics providers?",
+      "summary": [
+        "Approved-provider status requires passing a financial, insurance, and safety assessment."
+      ],
+      "visibility": "pending_review",
+      "core": {
+        "sections": [
+          {
+            "id": "s1",
+            "heading": "Overview",
+            "body_md": "New logistics partners are assessed on three dimensions: financial stability, insurance coverage levels, and safety performance history. Providers must pass all three to join the approved list. Annual re-assessment ensures ongoing compliance."
+          }
+        ],
+        "key_points": [
+          "Partners must pass all three criteria — none can offset another."
+        ],
+        "bridge_to_parent": "",
+        "bridge_to_objective": "",
+        "source_refs": []
+      },
+      "reauthored": true,
+      "_run2_meta": {
+        "source": "run2_clean",
+        "should_block": false
+      }
+    }
+  ]
+}

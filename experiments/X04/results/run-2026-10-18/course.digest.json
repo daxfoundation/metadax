@@ -1,0 +1,124 @@
+{
+  "course": "newtons-laws-motion",
+  "concepts": [
+    "inertia",
+    "inertial-frame",
+    "kinematic-quantities",
+    "mass",
+    "net-force",
+    "newtons-first-law",
+    "newtons-second-law",
+    "newtons-third-law"
+  ],
+  "objectives": [
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "legacy": "L01.M01.O01",
+      "module": "L01.M01",
+      "title": "Explain net force and inertia",
+      "q": "What are net force and inertia, and why do they together decide how an object's motion changes?",
+      "concepts": [
+        "net-force",
+        "inertia"
+      ],
+      "seeds": [
+        "How exactly do we add two forces that point in different directions?",
+        "Can you show a worked example where the net force is not zero?",
+        "How is inertia related to mass, and is it the same as weight?"
+      ]
+    },
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "legacy": "L01.M01.O02",
+      "module": "L01.M01",
+      "title": "Distinguish speed, velocity and acceleration",
+      "q": "What is the difference between speed, velocity and acceleration, and how does each describe a body's motion?",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "How do you add or subtract velocities that point in different directions?",
+        "Why does turning at constant speed still count as acceleration?",
+        "How will acceleration connect to force in Newton's second law?"
+      ]
+    },
+    {
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "legacy": "L01.M02.O01",
+      "module": "L01.M02",
+      "title": "Apply Newton's first law to bodies in equilibrium",
+      "q": "How does Newton's first law describe a body at rest or moving at constant velocity when the net force is zero?",
+      "concepts": [
+        "newtons-first-law",
+        "net-force"
+      ],
+      "seeds": [
+        "How do I apply the first law separately to horizontal and vertical forces?",
+        "What happens the instant the forces stop balancing?",
+        "How is the first law different from the second law?"
+      ]
+    },
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "legacy": "L01.M02.O02",
+      "module": "L01.M02",
+      "title": "Identify inertial reference frames",
+      "q": "What is an inertial reference frame, and how can you tell whether Newton's first law holds in a given frame?",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "seeds": [
+        "What exactly is a fictitious force, and why do we sometimes use one?",
+        "How large is the error in treating the Earth as inertial?",
+        "Does the second law also require an inertial frame?"
+      ]
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "legacy": "L02.M01.O01",
+      "module": "L02.M01",
+      "title": "Explain F = ma and the role of mass",
+      "q": "What does Newton's second law F = ma mean, and what role does mass play in it?",
+      "concepts": [
+        "newtons-second-law",
+        "mass"
+      ],
+      "seeds": [
+        "How do I find the net force before using F = ma?",
+        "Why is weight equal to mass times gravitational field strength?",
+        "What happens to acceleration if the force keeps changing?"
+      ]
+    },
+    {
+      "node_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "legacy": "L02.M01.O02",
+      "module": "L02.M01",
+      "title": "Calculate acceleration from net force",
+      "q": "How do you calculate the acceleration of a simple one-body system from its net force and mass?",
+      "concepts": [
+        "newtons-second-law",
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "How do I combine forces that act at an angle to each other?",
+        "How do I get distance travelled from the acceleration?",
+        "What changes when the mass itself changes during the motion?"
+      ]
+    },
+    {
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "legacy": "L02.M02.O01",
+      "module": "L02.M02",
+      "title": "Apply Newton's third law to action-reaction pairs",
+      "q": "How do you use Newton's third law to identify the equal and opposite force pairs in an interaction?",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "seeds": [
+        "If the forces are equal, why does the bullet fly but the gun barely move?",
+        "How does the third law relate to conservation of momentum?",
+        "Why are weight and the normal force not an action-reaction pair?"
+      ]
+    }
+  ]
+}

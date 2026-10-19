@@ -1,0 +1,104 @@
+[
+  {
+    "schema": "metadax.technique/0.1",
+    "id": "t_nrm7a3bhjhxja9q7svqcekx0h6",
+    "slug": "name-each-owner",
+    "stuck_signature": "attribute-to-wrong-owner",
+    "stuck_detail": "Learner assigns two opposed quantities to a single owner and reasons as if one entity receives both.",
+    "chain_role": "model",
+    "core": {
+      "intent": "Surface that the learner is assigning both opposed quantities to one owner, by forcing explicit naming of the distinct owner each quantity acts upon — making the two-owner structure visible before any further reasoning.",
+      "trigger": "Learner claims the two opposed quantities 'act on the same thing' or implicitly treats them as competing claims on a single owner.",
+      "shape": "Ask, for each opposed quantity in turn: 'This quantity — which specific owner does it act upon? Name the owner.' Then ask: 'Are those two owners the same entity or different entities?' The contradiction surfaces in the learner's own answers.",
+      "guards": [
+        "Do not accept a process or interaction as the named owner — require a discrete, identifiable entity.",
+        "Do not move on until both owners are named explicitly and separately; vague answers like 'between them' restart the question.",
+        "Do not supply the owner names yourself; the diagnostic value comes from the learner producing them.",
+        "If the learner names the same owner twice, hold that answer up and re-ask: 'Same entity both times — is that right?'"
+      ]
+    },
+    "rendered_examples": [
+      {
+        "lang": "en",
+        "subject": "kite flying",
+        "example": "OK, we have two forces — one at a time. The string pulls the kite upward: which object does that force act on? Name it. Now the kite pulls the string downward: which object does that force act on? Name it. Are those two objects the same thing or different things?",
+        "minted_from": true
+      },
+      {
+        "lang": "id-x-jv",
+        "subject": "layang-layang",
+        "example": "Oke, iki ana rong gaya — siji-siji. Senar narik layang-layang munggah: gaya iki tumiba ing obyek endi? Jenengna. Saiki layang-layang narik senar mudhun: gaya iki tumiba ing obyek endi? Jenengna. Obyek loro iku padha apa beda?",
+        "back_translation": "OK, two forces, one at a time. The string pulls the kite up: which object does this act on? Name it. Now the kite pulls the string down: which object does this act on? Name it. Same object or different?"
+      }
+    ],
+    "provenance": {
+      "created_by": {
+        "id": "guide-sim-A",
+        "chain_role": "model"
+      },
+      "origin_language": "en",
+      "origin_node_id": null,
+      "status": "accepted",
+      "accepted_by": "curator-sim",
+      "reuse_count": 3,
+      "reused_in": [
+        { "lang": "en", "cohort": "B" },
+        { "lang": "en", "cohort": "B" },
+        { "lang": "id-x-jv", "cohort": "B" }
+      ],
+      "ts": "2026-10-18T00:00:00Z"
+    }
+  },
+  {
+    "schema": "metadax.technique/0.1",
+    "id": "t_g52tf9j5rzdwmp1qyv6edqgaby",
+    "slug": "separate-accounts",
+    "stuck_signature": "cancellation-fallacy",
+    "stuck_detail": "Learner accepts the two owners differ yet still concludes the opposed quantities cancel to zero net effect on each.",
+    "chain_role": "model",
+    "core": {
+      "intent": "Reframe so each opposed quantity is recorded only in the account of the owner it acts upon; establish that two quantities can sum or cancel only within the same account; conclude that quantities in two different owners' accounts never meet and cannot cancel; redirect the learner to read each owner's outcome from that owner's account alone.",
+      "trigger": "Learner accepts that the two owners are different yet still concludes the opposed quantities cancel, yielding zero net effect on each owner.",
+      "shape": "Introduce a 'separate account per owner' register. Place each quantity only in the account of its owner. Ask: 'To decide what happens to owner A, which account do we read?' Then: 'Does owner B's quantity appear anywhere in owner A's account?' The emptiness of the cross-entry refutes cancellation without argument.",
+      "guards": [
+        "Keep the account one-directional: a quantity flows into the account of the entity it acts upon, never the entity it originates from.",
+        "Do not allow a shared or combined account; if the learner proposes one, ask which single owner it belongs to.",
+        "Insist cancellation requires two entries in the same account; if 'cancel' is used across accounts, pause and have them locate both entries in one account first.",
+        "Close one owner's account before opening the other; do not let quantities slide across accounts mid-reading.",
+        "Resolve each owner's motion separately; do not conflate the two outcomes into one combined statement."
+      ]
+    },
+    "rendered_examples": [
+      {
+        "lang": "id-x-jv",
+        "subject": "layang-layang",
+        "example": "Ayo bukak rekening loro — siji kanggo layang-layang, siji kanggo senar. Saben gaya mung dicathet ing rekening sing nampa. Senar narik layang-layang -> rekening layang-layang. Layang-layang narik senar -> rekening senar. Kanggo ngerti layang-layang obah apa ora, aku maca rekening layang-layang wae. Gaya saka layang-layang ora ana ing rekening layang-layang, to? Dadi ora ana sing mbatalake tarikan senar.",
+        "back_translation": "Open two accounts — one for the kite, one for the string. Each force is recorded only in the account of the receiver. String->kite goes in the kite's account; kite->string in the string's. To know if the kite moves, read only the kite's account; the kite's own force isn't there, so nothing cancels the string's pull.",
+        "minted_from": true
+      },
+      {
+        "lang": "en",
+        "subject": "kite flying",
+        "example": "Open two separate accounts — one for the kite, one for the string. Every force goes only into the account of what it acts on. String-pulls-kite goes into the kite's account; kite-pulls-string into the string's. To work out what the kite does, read only the kite's account. Show me the string's own force in the kite's account — it's not there, so nothing cancels the string's pull.",
+        "back_translation": ""
+      }
+    ],
+    "provenance": {
+      "created_by": {
+        "id": "guide-sim-A",
+        "chain_role": "model"
+      },
+      "origin_language": "id-x-jv",
+      "origin_node_id": null,
+      "status": "accepted",
+      "accepted_by": "curator-sim",
+      "reuse_count": 3,
+      "reused_in": [
+        { "lang": "en", "cohort": "B" },
+        { "lang": "id-x-jv", "cohort": "B" },
+        { "lang": "id-x-jv", "cohort": "B" }
+      ],
+      "ts": "2026-10-18T00:00:00Z"
+    }
+  }
+]

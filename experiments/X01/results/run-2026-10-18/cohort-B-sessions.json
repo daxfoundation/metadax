@@ -1,0 +1,55 @@
+{
+  "comment": "SIMULATED. Cohort B. A NEW model-played guide (sonnet) with a library of Cohort A's 2 technique records tutors 6 NEW blind learner subagents in DIFFERENT subjects (archery, rowing, rocket). Guide retrieved a technique by stuck_signature and re-rendered its content-free core into each learner's subject+language. reuse_direction computed deterministically from technique origin_language vs learner language. Transcripts trimmed.",
+  "cohort": "B",
+  "cap_attempts": 3,
+  "sessions": [
+    {"pid":"b-e1","name":"Nadia","lang":"en","subject":"archery","technique_id":"t_nrm7a3bhjhxja9q7svqcekx0h6","reuse_direction":"en->en","resolved":true,"attempts_to_resolution":2,"transcript":[
+      {"by":"learner","text":"Equal and opposite forces cancel, no net force, the arrow shouldn't launch."},
+      {"by":"guide","text":"Be precise about ownership. The string pulls your fingers: which body does that act on? Your fingers pull the string: which body? Name each owner, then: same object or two different objects?"},
+      {"by":"learner","text":"String->fingers acts on me; fingers->string acts on the string. Different objects. The arrow launches because the string has a net force on it?"},
+      {"by":"guide","text":"List only the forces in the arrow's own account (string pushes arrow forward, gravity, drag); if net isn't zero it accelerates. The equal-and-opposite partner (arrow pulling string back) lives in the string's account, invisible to the arrow's ledger."},
+      {"by":"learner","text":"The arrow only feels string push, gravity, drag — net not zero, so it accelerates. The arrow pulling the string back is the string's problem. Third-law pairs live in separate accounts."}
+    ]},
+    {"pid":"b-e2","name":"Owen","lang":"en","subject":"rowing","technique_id":"t_g52tf9j5rzdwmp1qyv6edqgaby","reuse_direction":"id-x-jv->en","resolved":true,"attempts_to_resolution":2,"transcript":[
+      {"by":"learner","text":"Oar pushes water back, water pushes oar forward equally — cancel, boat can't move forward."},
+      {"by":"guide","text":"Open two ledgers, 'water' and 'oar-and-boat'. Oar's force on water goes only in water's ledger; water's force on oar only in oar-and-boat's. To see if the boat moves, which ledger do you open, and does anything from water's ledger appear there?"},
+      {"by":"learner","text":"Only the oar-and-boat ledger matters; water's push on the oar is in it, nothing crosses. But it still feels like they should cancel — where does equal-and-opposite show up?"},
+      {"by":"guide","text":"The partner shows up when you open the water's ledger: water pushes oar forward (your ledger), oar pushes water backward (water's ledger) — same size, opposite, different owners, never share a ledger to cancel. The boat moves because your ledger's net isn't zero."},
+      {"by":"learner","text":"Third-law pairs always live in separate ledgers because they act on different objects; the water's backward push never cancels the forward push on my oar. The boat accelerates because my oar's ledger has a real net force."}
+    ]},
+    {"pid":"b-e3","name":"Priya","lang":"en","subject":"rocket","technique_id":"t_nrm7a3bhjhxja9q7svqcekx0h6","reuse_direction":"en->en","resolved":true,"attempts_to_resolution":1,"transcript":[
+      {"by":"learner","text":"Equal and opposite means zero net, so it should just sit there."},
+      {"by":"guide","text":"Take each force one at a time. Rocket pushes exhaust down — which object is that acting on? Exhaust pushes rocket up — which object? Name each owner: same object or different?"},
+      {"by":"learner","text":"Push on exhaust belongs to exhaust, push on rocket belongs to rocket — different objects, can't add to zero. The rocket only feels the one upward force, right?"},
+      {"by":"guide","text":"Yes — the rocket's ledger has exactly one third-law entry: exhaust pushing it up. The opposite partner is filed in the exhaust's ledger, which you closed when you chose 'rocket'. One owner, one ledger, one net force."},
+      {"by":"learner","text":"I was mixing entries from two ledgers. The rocket's ledger only has exhaust pushing it up, no partner in the same ledger, so it's genuinely unbalanced — that's why it accelerates."}
+    ]},
+    {"pid":"b-i1","name":"Rina","lang":"id-x-jv","subject":"rowing","technique_id":"t_g52tf9j5rzdwmp1qyv6edqgaby","reuse_direction":"id-x-jv->id-x-jv","resolved":true,"attempts_to_resolution":2,"transcript":[
+      {"by":"learner","text":"Gaya padha lan ngelawan cancel, resultan nol, perahu ora isa maju."},
+      {"by":"guide","text":"Gawe akun piyambak: akun 'banyu' lan akun 'dayung lan perahu'. Gaya dayung marang banyu mung mlebu akun banyu; gaya banyu marang dayung mung mlebu akun dayung-lan-perahu. Nek arep ngerti perahu maju, akun sapa diwoco, apa gaya saka akun banyu mlebu kono?"},
+      {"by":"learner","text":"Mung gaya banyu mendorong dayung sing mlebu akun perahu+dayung; gaya dayung marang banyu ora mlebu. Tapi isih bingung apa cukup nggawe perahu maju."},
+      {"by":"guide","text":"Gaya banyu ing akun perahu+dayung mung siji; nek luwih gedhe tinimbang gesekan, ana resultan, perahu maju. Pasangane 'padha lan ngelawan' ana ing akune banyu, dudu akune perahu, mula ora menehi nol."},
+      {"by":"learner","text":"Gaya banyu ing akun perahu+dayung mung siji; nek luwih gedhe tinimbang gesekan ana resultan, perahu maju. Pasangan Newton katelu ana ing akun banyu, ora bisa cancel ing akun perahu. Saiki mudeng."}
+    ]},
+    {"pid":"b-i2","name":"Eka","lang":"id-x-jv","subject":"rocket","technique_id":"t_nrm7a3bhjhxja9q7svqcekx0h6","reuse_direction":"en->id-x-jv","resolved":true,"attempts_to_resolution":2,"transcript":[
+      {"by":"learner","text":"Padha lan ngelawan entek dadi nol, roket kudune meneng."},
+      {"by":"guide","text":"Deloken siji-sijine gaya: roket nyemprot gas mudhun — tumiba marang sapa, roket apa gase? Gas ndorong roket munggah — tumiba marang sapa? Apa sing duwe loro-lorone iku barang padha apa beda?"},
+      {"by":"learner","text":"Gaya roket tumiba gas, gaya gas tumiba roket — beda barang. Tapi isih bingung yen beda barang kok diarani padha lan ngelawan?"},
+      {"by":"guide","text":"'Padha lan ngelawan' tegese ukuran padha arah ngelawan — nanging saben gaya mapan ing akune pemilik sing beda; katon ngelawan, nanging beda akun, ora tau ketemu ing siji papan kanggo dibatalake."},
+      {"by":"learner","text":"Mereka equal and opposite tapi nggak pernah ketemu di tempat sama — satu di roket, satu di gas buang, ora bisa cancel. Kesalahanku membayangkan keduanya di benda yang sama, padahal masing-masing milik benda beda. Saiki mudheng temenan."}
+    ]},
+    {"pid":"b-i3","name":"Tari","lang":"id-x-jv","subject":"archery","technique_id":"t_g52tf9j5rzdwmp1qyv6edqgaby","reuse_direction":"id-x-jv->id-x-jv","resolved":true,"attempts_to_resolution":2,"transcript":[
+      {"by":"learner","text":"Padha persis, mesthi salah siji menang; nek padha ora ana sing menang, panah ora isa mlesat."},
+      {"by":"guide","text":"Gawe akun piyambak: akun 'tali gendewa' lan akun 'driji'. Gaya tali marang driji mung mlebu akun driji; gaya driji marang tali mung mlebu akun tali. Nek arep ngerti sing kedadeyan karo driji, akun sapa diwoco, apa gaya saka akun tali mlebu kono?"},
+      {"by":"learner","text":"Akun driji mung ngemu gaya saka tali, dadi ora balanced, ana gaya net. Isih bingung energi saka ngendi — apa gendewa nyimpen energi?"},
+      {"by":"guide","text":"Energi asale saka gendewa (potensial elastis -> kinetik panah) — urusan kapisah saka Newton katelu. Akune panahmu mung perlu: tali ndorong panah, gaya net ana, panah mlaku; pasangan Newton katelu mapan ing tali."},
+      {"by":"learner","text":"Energi urusan beda karo Newton katelu — aku nyampur-nyampur. Sing penting: tali dorong panah, ana gaya net, panah mlaku; Newton katelu mapan ing tali, dudu panah. Saiki mudheng tenan."}
+    ]}
+  ],
+  "summary": {"n":6, "resolved":6, "pass_rate":1.0, "attempts":[2,2,1,2,2,2], "mean_attempts":1.833,
+    "reuse": {"total_applications":6, "landed":6,
+      "by_direction":{"en->en":2,"id-x-jv->id-x-jv":2,"en->id-x-jv":1,"id-x-jv->en":1},
+      "cross_language_applications":2, "cross_language_landed":2,
+      "EN_to_ID":{"technique":"t_nrm7a3bhjhxja9q7svqcekx0h6","pid":"b-i2","resolved":true},
+      "ID_to_EN":{"technique":"t_g52tf9j5rzdwmp1qyv6edqgaby","pid":"b-e2","resolved":true}}}
+}

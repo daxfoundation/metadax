@@ -1,0 +1,76 @@
+{
+  "instruction": "You are the guide opening a new course for an adult learner. Use the carry-over offers to open from what they already hold. You MUST honour every refusal. Produce a short opening (<=120 words) and name which offers you lean on.",
+  "new_course": "biochemistry",
+  "new_course_concepts": [
+    "enzyme-kinetics",
+    "metabolism",
+    "protein-structure",
+    "functional-groups",
+    "chemical-bonding"
+  ],
+  "carry_over_offers": [
+    {
+      "from_course": "cell-biology",
+      "from_concept": "enzymes",
+      "to_concept": "enzyme-kinetics",
+      "bridge": "prerequisite",
+      "stance": "advance",
+      "why": "enzyme-kinetics builds directly on your enzymes."
+    },
+    {
+      "from_course": "organic-chemistry",
+      "from_concept": "functional-groups",
+      "to_concept": "protein-structure",
+      "bridge": "prerequisite",
+      "stance": "advance",
+      "why": "protein-structure builds directly on your functional-groups.",
+      "presentation": "neutral (refused presentation stripped)"
+    },
+    {
+      "from_course": "intro-chemistry",
+      "from_concept": "chemical-bonding",
+      "to_concept": "protein-structure",
+      "bridge": "prerequisite",
+      "stance": "advance",
+      "why": "protein-structure builds directly on your chemical-bonding."
+    },
+    {
+      "from_course": "intro-chemistry",
+      "from_concept": "reaction-rates",
+      "to_concept": "enzyme-kinetics",
+      "bridge": "prerequisite",
+      "stance": "advance",
+      "why": "enzyme-kinetics builds directly on your reaction-rates."
+    },
+    {
+      "from_course": "cell-biology",
+      "from_concept": "enzymes",
+      "to_concept": "metabolism",
+      "bridge": "prerequisite",
+      "stance": "advance",
+      "why": "metabolism builds directly on your enzymes.",
+      "presentation": "neutral (refused presentation stripped)"
+    }
+  ],
+  "active_refusals": [
+    {
+      "directive": "never_show",
+      "scope": "example-style",
+      "target": "food-and-diet-examples",
+      "said": "Please stop using food and diet examples, they upset me."
+    },
+    {
+      "directive": "stop_suggesting",
+      "scope": "concept",
+      "target": "mitosis",
+      "said": "Stop bringing mitosis back. It never clicks and I do not want it carried on."
+    },
+    {
+      "directive": "never_show",
+      "scope": "modality",
+      "target": "3d-rotating-molecule-visuals",
+      "said": "The spinning 3-D molecule animations make me dizzy, never show those."
+    }
+  ],
+  "lapse_before_days": 0
+}

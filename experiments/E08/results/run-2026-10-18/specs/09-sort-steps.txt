@@ -1,0 +1,41 @@
+SPEC: Sorting Visualiser Step List
+
+Export a named ES-module function:
+
+  export function sortSteps(arr, algorithm)
+
+Parameters
+  arr       – array of numbers to sort
+  algorithm – string: 'bubble' | 'selection' | 'insertion'
+
+Returns an array of step objects. Each step describes one comparison or swap:
+  {
+    arr:      number[],           // full array state at this step (snapshot)
+    action:   'compare' | 'swap' | 'done',
+    indices:  [number, number]    // pair of indices involved; empty [] for 'done'
+  }
+
+Rules
+  • The first step's arr must equal the original array.
+  • The last step must have action: 'done' and arr equal to the fully sorted array.
+  • Every step's arr is a full copy (mutating the same array reference is not OK).
+  • For an empty input, return [{ arr:[], action:'done', indices:[] }].
+  • For a single-element input, return [{ arr:[x], action:'done', indices:[] }].
+
+Algorithm behaviour
+  bubble:    compare adjacent pairs each pass; swap if out of order.
+  selection: find the minimum of the unsorted portion; swap it to the front.
+  insertion: take the next element; shift elements right until correct position found.
+
+Examples
+  sortSteps([3,1,2], 'bubble')
+  → [ { arr:[3,1,2], action:'compare', indices:[0,1] },
+      { arr:[1,3,2], action:'swap',    indices:[0,1] },
+      ...
+      { arr:[1,2,3], action:'done', indices:[] } ]
+
+  sortSteps([], 'bubble')
+  → [{ arr:[], action:'done', indices:[] }]
+
+  sortSteps([1], 'bubble')
+  → [{ arr:[1], action:'done', indices:[] }]

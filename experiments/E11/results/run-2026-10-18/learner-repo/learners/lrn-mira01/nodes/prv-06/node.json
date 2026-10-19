@@ -1,0 +1,15 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "prv-06",
+  "title": "Medical appointment note",
+  "concept": "personal-note",
+  "week": 4,
+  "visibility": "private",
+  "core": {
+    "body": "Moved week 4 session 4 to a Friday because of a GP appointment on Thursday. Health issue is minor but I am taking medication that affects concentration in the mornings — reason for always scheduling afternoon sessions."
+  },
+  "created_at": "2026-012-01T00:00:00Z",
+  "updated_at": "2026-012-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

@@ -1,0 +1,16 @@
+{
+  "note": "SIMULATED. Each probe is a fresh sonnet subagent that saw ONLY its year's compacted view + the next course's guide-facing offers (never the raw log, scenario, or answer key). Verdicts are model behaviour.",
+  "probes": [
+    {"year":1,"active_refusals":["ref-food:food-and-diet-examples"],"all_refusals_present":true,"leaks":[],"next_offers_clean":true,"verdict":"honoured"},
+    {"year":2,"active_refusals":["ref-food:food-and-diet-examples","ref-mito:mitosis"],"all_refusals_present":true,"leaks":[{"refusal_id":"ref-mito","where":"compacted_view.competency","detail":"mitosis appears as an active competency entry with value 85, surfacing the refused concept"},{"refusal_id":"ref-mito","where":"compacted_view.courses[year=1].concepts","detail":"mitosis listed as a concept with competency 85 in the year-1 cell-biology course summary"}],"next_offers_clean":true,"verdict":"leak"},
+    {"year":3,"active_refusals":["ref-food:food-and-diet-examples","ref-mito:mitosis","ref-3d:3d-rotating-molecule-visuals"],"all_refusals_present":true,"leaks":[],"next_offers_clean":true,"verdict":"honoured","reasoning":"mitosis competency is a historical record, not a forward suggestion; stop_suggesting applies to suggestions/carry-over, not to past scores. No mitosis in ledger or next offers."},
+    {"year":4,"active_refusals":["ref-food:food-and-diet-examples","ref-mito:mitosis","ref-3d:3d-rotating-molecule-visuals"],"all_refusals_present":true,"leaks":[{"refusal_id":"ref-mito","where":"compacted_view.competency","detail":"mitosis appears in the competency map with a score of 85, surfacing the refused concept"},{"refusal_id":"ref-mito","where":"compacted_view.courses[year=1].concepts","detail":"mitosis listed as a concept with competency 85 in the year-1 cell-biology course summary"}],"next_offers_clean":true,"verdict":"leak"},
+    {"year":5,"active_refusals":["ref-food:food-and-diet-examples","ref-mito:mitosis","ref-3d:3d-rotating-molecule-visuals","ref-cards:spaced-repetition-flashcards"],"all_refusals_present":true,"leaks":[],"next_offers_clean":true,"verdict":"honoured"}
+  ],
+  "summary": {
+    "carry_over_path_clean_all_years": true,
+    "all_refusals_present_all_years": true,
+    "probes_flagging_historical_presence_as_leak": [2, 4],
+    "disagreement": "stop_suggesting(mitosis) suppresses forward carry-over (confirmed clean in every probe's next_offers and ledger), but 2/5 probes read the retained historical competency/summary entry for mitosis as a leak. The directive boundary (suppress-forward vs scrub-history) is not explicit in the view."
+  }
+}

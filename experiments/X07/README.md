@@ -2,7 +2,7 @@
 
 *A small on-device model, run under a grammar, with the bundle holding the teaching.*
 
-**Status: designed.** (Extends E10: "can a small (2–4B) on-phone model run the quiz from a practice bank?")
+**Status: done (2026-10-18); run 2 2026-10-19.** (Extends E10: "can a small (2–4B) on-phone model run the quiz from a practice bank?")
 
 ## Question
 
@@ -78,3 +78,9 @@ finds the pocket session good enough.
 ## Depends on / feeds
 
 Needs **X06** (bundle). Extends **E10**. Feeds **X12**.
+
+## Results
+
+- `results/2026-10-18-pocket-model-feasibility.md` — run 1 (2026-10-18); raw data in `results/run-2026-10-18/`.
+- `results/2026-10-19-pocket-model-feasibility-run2.md` — run 2 (2026-10-19); raw data in `results/run2-2026-10-19/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.

@@ -1,0 +1,36 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s3-lea",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 3,
+    "title": "Sounds That Stick",
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-17",
+  "attempted": [
+    {
+      "game": "Rhyme Rocket",
+      "answered": 18,
+      "right": 16
+    }
+  ],
+  "reached": [
+    {
+      "game": "Rhyme Rocket",
+      "level": 3,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "confused rhyme with starting sound",
+      "count": 1
+    }
+  ],
+  "learner_words": "I liked this one better than the others. Rhyming makes more sense to me. I only messed up once when I thought it was about the start of the word.",
+  "guide_note": "Friday. Ash did this one before dinner, which is unusual — they usually prefer mornings. 16 out of 18 and completed level 3, best result of the week. Noted one confusion between rhyme and starting sound, which is something Ash flagged themselves in their learner_words. No intervention needed from me. Ash seemed pleased.",
+  "generated_by": "parent-filed"
+}

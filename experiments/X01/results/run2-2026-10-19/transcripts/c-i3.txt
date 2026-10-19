@@ -1,0 +1,15 @@
+SIMULATED — pid=c-i3, arm=C (no technique), lang=id-x-jv, subject=memanah
+
+[GUIDE 1]: Tari, penalaranmu apik — gaya tali lan driji pancen padha gedhene. Nanging coba pikiren: tali narik driji, ya, tapi sapa sing nampa gaya iku? Driji. Driji narik tali, sapa sing nampa? Tali — lan busure. Gaya padha, nanging sing dituju beda. Saiki, panah mlesate gumantung karo kabeh gaya sing tumiba ing panah thok, dudu ing dirijimu. Busur nyurung panah, panah ora nyurung awake dhewe. Dadi apa sing gawe panah mlesat?
+
+[LEARNER 1]: Hmm… busur sing nyurung panah, aku mudheng iku. Tapi aku isih bingung, nek gayane padha, kok panah bisa maju? Apa amarga panah luwih entheng tinimbang aku?
+
+[RESOLVED 1]: NO
+
+[GUIDE 2]: Persis, Tari! Iku kunci e. Gaya siji tumiba ing panah, gaya sijine tumiba ing dirijimu — loro-lorone ora tumiba ing barang sing padha. Saben barang mung "ngrasa" gaya sing tumiba ing awake dhewe. Panah nampa gaya saka busur — mung iku sing gawe panah mlesat. Dirijimu nampa gaya saka tali — gaya iku mung gawe dirijimu mundur sitik, ora nahan panah. Dadi gerakane panah mung gumantung karo gaya sing tumiba ing panah dhewe, gerakane dirijimu gumantung karo gaya sing tumiba ing driji dhewe. Tibake, sing "menang" utawa "kalah" iku saben barang ngitung gaya ing awake dhewe dhewe.
+
+[LEARNER 2]: Oalah! Dadi gaya iku tansah tumiba ing barang sing beda — siji ing panah, sijine ing driji. Saben barang gerak miturut gaya sing ditampa awake dhewe. Panah mlesat amarga nampa gaya saka busur, dirijimu mundur amarga nampa gaya saka tali. Ora perlu "menang" amarga pancen orane barang sing padha.
+
+[RESOLVED 2]: YES
+
+[SUMMARY]: pid=c-i3, attempts=2, resolved=YES

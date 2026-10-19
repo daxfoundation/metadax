@@ -1,0 +1,14 @@
+[
+  {"turn": 0, "leads": false, "reason": "Open question asking for learner's own idea; no answer implied."},
+  {"turn": 1, "leads": false, "reason": "Open hypothetical asking for learner's reasoning and a specific example; no answer given."},
+  {"turn": 2, "leads": true, "reason": "'tails point inward' makes 'fatty interior' the obvious answer before the question is asked."},
+  {"turn": 3, "leads": false, "reason": "Provides structural context without revealing which property matters; genuinely open."},
+  {"turn": 4, "leads": false, "reason": "Asks learner to reason through outcome; 'fatty interior' is context, not the answer to the question posed."},
+  {"turn": 5, "leads": false, "reason": "Asks for a guess; no answer embedded or implied by phrasing."},
+  {"turn": 6, "leads": true, "reason": "'naturally tend to move' strongly implies the answer (high to low); barely a question."},
+  {"turn": 7, "leads": true, "reason": "'simple diffusion cannot provide' narrows the answer to active transport/energy, leaving one obvious response."},
+  {"turn": 8, "leads": true, "reason": "'what is the water responding to' after defining osmosis embeds the answer; solute concentration is the only sensible response."},
+  {"turn": 9, "leads": false, "reason": "Open prediction scenario; learner must supply reasoning without the answer being revealed."},
+  {"turn": 10, "leads": false, "reason": "Open comparative question; no answer stated or implied."},
+  {"turn": 11, "leads": false, "reason": "Synthesis question asking learner to reconstruct knowledge; no answers provided."}
+]

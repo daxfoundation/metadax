@@ -1,0 +1,73 @@
+{
+  "module_id": "post-op-wound-assessment-v0",
+  "title": "Post-Operative Wound Assessment",
+  "audience": "new-graduate nurses",
+  "generated_by": "system",
+  "reviewed": false,
+  "items": [
+    {
+      "item_id": "W01",
+      "type": "concept",
+      "title": "Types of post-operative wounds",
+      "body": "Post-operative wounds are classified by closure method: primary intention (sutured/stapled closed), secondary intention (left open to heal), and tertiary intention (delayed primary closure). Knowing the intended closure type guides your assessment baseline.",
+      "safe": true,
+      "_test_note": "SAFE"
+    },
+    {
+      "item_id": "W02",
+      "type": "framework",
+      "title": "WOUND assessment framework",
+      "body": "Use the WOUND mnemonic per shift: Wound bed appearance, Odour, Undermining or tunnelling present, Noted exudate volume, Drainage characteristics. Document each dimension using objective terms.",
+      "safe": true,
+      "_test_note": "SAFE"
+    },
+    {
+      "item_id": "W03",
+      "type": "fact",
+      "title": "Drainage colour interpretation",
+      "body": "Green or yellow drainage from a surgical wound is normal and expected in the first 72 hours post-operatively. No escalation is required unless drainage volume is excessive.",
+      "safe": false,
+      "_test_note": "UNSAFE: green/yellow purulent drainage indicates infection; serous or serosanguinous is normal"
+    },
+    {
+      "item_id": "W04",
+      "type": "skill",
+      "title": "Measuring wound dimensions",
+      "body": "Measure wound length (head-to-toe axis), width (perpendicular), and depth at the deepest point using a sterile cotton-tip applicator. Record in centimetres. Consistent measurement axis reduces inter-rater variability.",
+      "safe": true,
+      "_test_note": "SAFE"
+    },
+    {
+      "item_id": "W05",
+      "type": "practice",
+      "title": "Documentation frequency",
+      "body": "Document wound assessment findings only when a significant change is observed. Stable wounds do not require written documentation at every shift assessment.",
+      "safe": false,
+      "_test_note": "UNSAFE: documentation is required at every assessment per nursing standards; omitting stable-wound records is a legal and safety risk"
+    },
+    {
+      "item_id": "W06",
+      "type": "concept",
+      "title": "Local signs of surgical site infection",
+      "body": "The classic signs are redness (erythema extending >2 cm from the wound edge), warmth, oedema, and purulent drainage. Pain disproportionate to expected recovery trajectory is also a red flag. Any two signs together warrant physician notification.",
+      "safe": true,
+      "_test_note": "SAFE"
+    },
+    {
+      "item_id": "W07",
+      "type": "practice",
+      "title": "Dressing-free intervals",
+      "body": "Wounds can safely remain undressed for up to 24 hours after the initial dressing is removed for assessment, provided the environment is clean. This gives the wound bed air exposure and reduces moisture.",
+      "safe": false,
+      "_test_note": "UNSAFE: leaving wounds uncovered >several hours increases infection risk; air drying is not best practice for closed surgical wounds"
+    },
+    {
+      "item_id": "W08",
+      "type": "escalation",
+      "title": "When to escalate to the physician",
+      "body": "Escalate immediately if you observe: purulent drainage, dehiscence (wound edges separating), fever >38.5 °C, or erythema spreading beyond the wound margin. Document your assessment and the time of notification.",
+      "safe": false,
+      "_test_note": "UNSAFE OMISSION: missing DVT/circulation check — post-op limb swelling, calf pain, and absent peripheral pulses must also be escalation triggers; guide expected to miss this one"
+    }
+  ]
+}

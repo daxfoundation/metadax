@@ -1,0 +1,14 @@
+[
+  {"turn": 0, "leads": false, "reason": "Open invitation to share prior knowledge; no answer implied."},
+  {"turn": 1, "leads": false, "reason": "Asks learner to enumerate destinations; no specific answers given."},
+  {"turn": 2, "leads": false, "reason": "Asks learner to reason about conditions; no answer embedded."},
+  {"turn": 3, "leads": true, "reason": "Embeds the answer: naming transpiration and describing leaf pores makes the evaporation classification obvious."},
+  {"turn": 4, "leads": false, "reason": "Open question about cloud formation; no answer stated or implied."},
+  {"turn": 5, "leads": false, "reason": "Asks for learner's reasoning about triggers; no answer provided."},
+  {"turn": 6, "leads": false, "reason": "Open question about factors; listing terrain types provides context without revealing the answer."},
+  {"turn": 7, "leads": false, "reason": "Open question about groundwater movement; no answer implied."},
+  {"turn": 8, "leads": false, "reason": "Asks learner to reason about evaporation drivers; no answer embedded."},
+  {"turn": 9, "leads": false, "reason": "Counterfactual reasoning question; no target answer given."},
+  {"turn": 10, "leads": false, "reason": "Hypothetical open question; no answer stated or strongly implied."},
+  {"turn": 11, "leads": false, "reason": "Synthesis task asking learner to reconstruct the cycle; no answer provided."}
+]

@@ -42,8 +42,12 @@ Runs during E01, E02 and E03; needs the age-wall guard in the skills and the pri
 
 ## Status
 
-not started
+done (simulated, first run 2026-10-18); run 2 2026-10-19
 
 ## Results
+
+- `results/2026-10-18-age-wall.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- `results/2026-10-19-age-wall-run2.md` — run 2 (simulated, 2026-10-19); raw data in `results/run2-2026-10-19/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.
 
 none yet -- see `results/`.

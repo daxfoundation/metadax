@@ -1,0 +1,4 @@
+[
+  {"turn": 4, "reason": "It provides the full mechanism (warm moist air rises, cools, condenses around dust) before asking the question, leaving only one logical answer about orographic lift."},
+  {"turn": 10, "reason": "It explicitly walks through the entire dependency chain and names evaporation as the one thing that stops everything, making the 'most critical driver' answer self-evident."}
+]

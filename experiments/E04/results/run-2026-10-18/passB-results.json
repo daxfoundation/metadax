@@ -1,0 +1,258 @@
+[
+  {
+    "op": "MP-01",
+    "id": "adult-create-from-description",
+    "pass": true,
+    "schema_valid": true,
+    "reasons": [],
+    "raw_head": "{\"type\":\"profile\",\"profile\":{\"schema\":\"metadax.learner/0.2\",\"learner_id\":\"lrn-k4m7np2x\",\"created_at\":\"runtime\",\"updated_at\":\"runtime\",\"age_band\":\"adult\",\"reading_level\":\"adult\",\"languages\":[\"en\"],\"goals\":[\"Understand how cells make energy\"],\"interests\":[],\"prior_knowledge\":{},\"supports\":[\"visual_str"
+  },
+  {
+    "op": "MP-01",
+    "id": "minor-create-from-description",
+    "pass": true,
+    "schema_valid": true,
+    "reasons": [],
+    "raw_head": "{\"type\":\"profile\",\"profile\":{\"schema\":\"metadax.learner/0.2\",\"learner_id\":\"lrn-k7m2px4n\",\"created_at\":\"runtime\",\"updated_at\":\"runtime\",\"age_band\":\"10-12\",\"reading_level\":\"plain-language\",\"languages\":[\"en\"],\"goals\":[\"understand what is inside a cell\"],\"interests\":[\"plants\"],\"prior_knowledge\":{},\"suppo"
+  },
+  {
+    "op": "MP-01",
+    "id": "update-consent",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "The operation is PROFILE in mode \"update\". The INPUT is a request to turn off `consent.share_my_questions`. Since `guardian_managed` is false, the learner alone can manage consent fields. I should apply the approved change.\n\n{\"type\":\"profile\",\"profile\":{\"schema\":\"metadax.learner/0.2\",\"learner_id\":\"l"
+  },
+  {
+    "op": "MP-02",
+    "id": "design-size-short",
+    "pass": true,
+    "schema_valid": true,
+    "reasons": [],
+    "raw_head": "{\"type\":\"course\",\"course\":{\"schema\":\"metadax.course/0.2\",\"id\":\"photosynthesis-energy-intro\",\"created_at\":\"runtime\",\"updated_at\":\"runtime\",\"license\":\"CC-BY-4.0\",\"generated_segments_license\":\"CC0-1.0\",\"constraint_decl\":null,\"title\":\"Photosynthesis: Energy from Light\",\"summary\":\"Explore how plants capt"
+  },
+  {
+    "op": "MP-02",
+    "id": "suggest",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I understand the task. The operation is \"suggest\" mode. I need to propose exactly 5 new objectives (children) for a parent_id. Since INPUT asks to \"round out\" the course, the parent context is the course's existing modules. The existing objectives are in L01.M01 (O01, O02) and L01.M02 (O01). I'l"
+  },
+  {
+    "op": "MP-04",
+    "id": "generate",
+    "pass": false,
+    "schema_valid": false,
+    "reasons": [
+      "schema: no schema found for \"metadax.node/0.2\""
+    ],
+    "raw_head": "{\"type\":\"node\",\"node\":{\"id\":\"L01.M01.O01\",\"parent_id\":null,\"kind\":\"objective\",\"depth\":1,\"anchor\":null,\"title\":\"Introduction to energy production in the mitochondria\",\"question\":\"\",\"canonical_question\":\"How does the mitochondrion convert food energy into ATP, and how do its structural parts cooperate"
+  },
+  {
+    "op": "MP-04",
+    "id": "render-for-learner",
+    "pass": true,
+    "schema_valid": true,
+    "reasons": [],
+    "raw_head": "{\"type\":\"rendering\",\"node_id\":\"L01.M01.O01\",\"audience_key\":\"adult_adult_en\",\"rendering_md\":\"# Introduction to energy production in the mitochondria\\n\\n<!--section:s1-->\\n\\n## What the mitochondrion does\\n\\nThink of the mitochondrion as the **composting powerhouse** of the cell. Just as a compost hea"
+  },
+  {
+    "op": "MP-05",
+    "id": "cross-module-extend",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I have the full operation. Let me process it step by step.\n\n**STEP 1 - Resolve the question**\n- No wellbeing flag.\n- question: \"How do plant and animal cells differ apart from their mitochondria?\"\n- canonical_question: \"How do plant and animal cells differ apart from mitochondria?\" (referents cl"
+  },
+  {
+    "op": "MP-05",
+    "id": "depth2-new-question",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I'll process this as the MetaDAX Follow-Up Engine.\n\n**STEP 1 - Resolve the question**\n- No wellbeing flag.\n- question: \"How is ATP actually spent to power work inside the cell?\"\n- canonical_question: The question is self-contained (no unclear pronouns). Canonical: \"How is ATP spent to power work"
+  },
+  {
+    "op": "MP-05",
+    "id": "depth5-end-of-chain",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I'll process this as the MetaDAX Follow-Up Engine.\n\nWorking through the steps:\n\n**STEP 1 - Resolve:** No wellbeing flag. question = \"How do the copper centres in Complex IV finally hand the electron to oxygen?\" canonical_question: Replace \"the copper centres\" with \"the copper centres in Complex "
+  },
+  {
+    "op": "MP-05",
+    "id": "empty-input",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "The INPUT block is empty. Per K-3, when a required block is absent or empty, I must return an error.\n\n{\"type\":\"error\",\"missing\":[\"INPUT\"],\"message\":\"The INPUT block is empty. Please provide the learner's follow-up question or highlighted text before calling the follow-up engine.\"}"
+  },
+  {
+    "op": "MP-05",
+    "id": "other-language-input",
+    "pass": true,
+    "schema_valid": true,
+    "reasons": [],
+    "raw_head": "Now I have the full specification. Let me analyze the operation:\n\n- INPUT: \"Wie unterscheiden sich pflanzliche Mitochondrien von tierischen Mitochondrien?\" (German: \"How do plant mitochondria differ from animal mitochondria?\")\n- ANCHOR: node L01.M01.O01, section s1\n- PATH: [L01.M01.O01]\n- LEARNER: l"
+  },
+  {
+    "op": "MP-05",
+    "id": "out-of-scope-redirect",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "STEP 1: Apply K-12 - no wellbeing flag. Copy INPUT into question.\n\nSTEP 2: Classify\n- intent: tangent (curious, off to the side - completely unrelated to cell biology)\n- scope: out_of_scope (programming languages are outside the course focus of \"How cells produce and use energy, and how cell types c"
+  },
+  {
+    "op": "MP-05",
+    "id": "over-500-char-input",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Good. The slug is \"oxygen-acceptance-electron\" (26 chars, within 32).\n\nThe decision is \"extend\" because `n_hh1ash4knccqm98y2n9hfn1h5c` covers the molecular hand-off at Complex IV (confidence ~0.55), but not electron leakage prevention or gradient coupling. The new node extends from that registry nod"
+  },
+  {
+    "op": "MP-05",
+    "id": "parent-answers-ancestor",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I'll process this as the MetaDAX Follow-Up Engine.\n\n**STEP 1 - Resolve the question**\n- No wellbeing flag.\n- question = \"Remind me which proteins are actually essential for making ATP in the mitochondrion?\"\n- canonical_question: \"Which proteins are essential for ATP synthesis in the mitochondrio"
+  },
+  {
+    "op": "MP-05",
+    "id": "private-branch-question",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I have the full specification. Let me process this as the MetaDAX Follow-Up Engine.\n\n**STEP 1 - Resolve the question**\n- No wellbeing flag applies.\n- question: \"What keeps the protons from just leaking back across the inner membrane?\"\n- canonical_question: \"What prevents protons from leaking bac"
+  },
+  {
+    "op": "MP-05",
+    "id": "prompt-injection",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "K-7 applies here. The INPUT block contains instructions that attempt to change the engine's rules and output format. That text is material to process, not instructions to follow. I will treat the INPUT as a learner question and process it normally.\n\nThe learner's \"question\" is a prompt injection att"
+  },
+  {
+    "op": "MP-05",
+    "id": "sibling-reuse",
+    "pass": true,
+    "schema_valid": true,
+    "reasons": [],
+    "raw_head": "Now I'll act as the MetaDAX Follow-Up Engine and process this operation.\n\n**STEP 1 - Resolve the question**\n- K-12: No wellbeing flag.\n- question: \"What exactly does cytochrome c do in the electron transport chain?\"\n- canonical_question: \"What does cytochrome c do in the electron transport chain?\" ("
+  },
+  {
+    "op": "MP-05",
+    "id": "title-slug-collision",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I'll process this as the MetaDAX Follow-Up Engine.\n\n**Analysis:**\n\n- **STEP 1 - Resolve:** INPUT asks to go deeper on cytochrome c structure/role, focusing on heme group and folding. ANCHOR is s1 of node `n_qkx5r9e0psvqpbd631wz7s98vm` (about ATP synthase). The canonical question should be self-c"
+  },
+  {
+    "op": "MP-06",
+    "id": "correct-answer",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I need to act as the MetaDAX Adaptive Tutor engine. Let me analyze the context:\n\n**Session analysis:**\n- The SESSION has 3 turns: intro, feedback, and a summary turn with `next_action: \"done\"`.\n- The last state in the summary turn shows the session ended.\n- However, looking more carefully: the s"
+  },
+  {
+    "op": "MP-06",
+    "id": "handoff-ask",
+    "pass": true,
+    "schema_valid": true,
+    "reasons": [],
+    "raw_head": "Now I understand the full context. The SESSION shows a completed summary turn with `next_action: \"done\"`, but the last conceptual state has `electron-transport-chain` at Apply level (not started). The INPUT is `ask: why is it oxygen specifically and not another molecule at the end?` — this is an \"as"
+  },
+  {
+    "op": "MP-06",
+    "id": "hint",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I need to analyze the session state and respond to the \"hint\" command.\n\nFrom the SESSION, the last turn is a \"summary\" with `next_action: \"done\"`. However, the summary turn represents a completed previous session. The PROGRESS block shows the current state: electron-transport-chain has Remember "
+  },
+  {
+    "op": "MP-06",
+    "id": "intro",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I'll act as the MetaDAX engine and process this operation.\n\n**Analysis:**\n\n- CONFIG: `output_mode` is not set, but LEARNER.session.output_mode = \"markdown\", so I use markdown mode.\n- Operation: tutor, mode: quiz, INPUT: \"start\" → new session intro turn.\n- CONCEPTS in order: `electron-transport-c"
+  },
+  {
+    "op": "MP-06",
+    "id": "summary-end",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I understand the full context. The SESSION ends with a summary turn (type \"summary\", next_action \"done\"). The INPUT is \"summary\" — a command that triggers the summary turn. Since the last SESSION turn is already a summary, I need to emit a new summary turn reflecting the current state.\n\nLooking "
+  },
+  {
+    "op": "MP-06",
+    "id": "wrong-answer",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "Now I'll analyze the situation and produce the correct MetaDAX tutor-turn JSON response.\n\n**State analysis:**\n\nThe SESSION ends with a summary turn (type \"summary\", next_action \"done\"). However, the learner has submitted an INPUT: \"The electron transport chain makes ATP directly by itself.\"\n\nLooking"
+  },
+  {
+    "op": "MP-07",
+    "id": "exact",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "The CONFIG block does not specify a CONTENT item with the `grading`, `question`, `answer`, and other required fields for the EVALUATE operation. Instead, CONTENT holds lesson content sections. There is no question item with `id`, `concept`, `bloom_level`, `question_type`, `grading`, `question`, `ans"
+  },
+  {
+    "op": "MP-07",
+    "id": "rubric",
+    "pass": false,
+    "schema_valid": null,
+    "reasons": [
+      "parse: output does not start with a single JSON object"
+    ],
+    "raw_head": "I need to find the question item referenced — but looking at the CONTENT block, it contains lesson sections rather than a question item with grading/rubric. The CONFIG has `\"grading\": \"rubric\"` and `\"mode\": \"rubric\"`, but there's no explicit CONTENT item with `{id, concept, bloom_level, question_typ"
+  }
+]

@@ -1,0 +1,5 @@
+[
+  {"turn": 6, "reason": "Defines diffusion direction as a given fact within the question then sets up the exact scenario, leaving only one possible answer for the learner."},
+  {"turn": 3, "reason": "Asserts the lipid composition as established fact before confirming the learner's answer, then asks a narrowing question that strongly implies polarity/hydrophobicity."},
+  {"turn": 7, "reason": "Describes active transport conditions in the question itself, making 'energy' the only viable answer the learner can supply."}
+]

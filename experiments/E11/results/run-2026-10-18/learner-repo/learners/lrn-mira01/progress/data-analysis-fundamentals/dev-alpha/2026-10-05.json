@@ -1,0 +1,21 @@
+{
+  "schema": "metadax.progress/0.2",
+  "learner_id": "lrn-mira01",
+  "course_id": "data-analysis-fundamentals",
+  "device_id": "dev-alpha",
+  "snapshot_date": "2026-10-05",
+  "week_number": 5,
+  "topics_covered": [
+    "sql-basics",
+    "select-where",
+    "sql-joins"
+  ],
+  "overall_competency": "developing",
+  "sessions_completed": 3,
+  "nodes_visited": [
+    "L01.M05.O01",
+    "L01.M05.O02",
+    "L01.M05.O03"
+  ],
+  "weekly_summary": "Introduced to SQL SELECT and WHERE clauses. Struggled with JOIN syntax; guide flagged this for re-offer."
+}

@@ -1,0 +1,35 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s3-simone",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 3,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-17",
+  "attempted": [
+    {
+      "game": "Rhyme Rocket",
+      "answered": 18,
+      "right": 16
+    }
+  ],
+  "reached": [
+    {
+      "game": "Rhyme Rocket",
+      "level": 3,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "behavior": "A confondu la rime avec le son initial du mot, répondant à partir du début du mot plutôt que de la terminaison",
+      "count": 1
+    }
+  ],
+  "learner_words": "Très belle séance pour terminer la semaine ! Lou a complété le niveau 3 avec seulement une erreur. Elle comprend bien le concept de rime dans l'ensemble, bien qu'elle ait une fois répondu en se basant sur le son de départ plutôt que sur la terminaison sonore commune.",
+  "guide_note": "Niveau complété avec succès. La distinction entre rime et son initial est presque acquise. Un rappel occasionnel suffit. Lou est prête pour la prochaine unité du forfait.",
+  "generated_by": "parent-filed"
+}

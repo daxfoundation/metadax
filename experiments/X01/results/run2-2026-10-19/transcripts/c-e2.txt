@@ -1,0 +1,9 @@
+SIMULATED — pid=c-e2, arm=C (no technique), lang=en, subject=rowing a boat
+
+[GUIDE 1]: Good thinking to notice the forces are equal and opposite — that part is exactly right. But here's the key question: those two forces act on *different objects*. The water pushes the oar (and through it, the boat) forward. The oar pushes the water backward. So when you're asking whether the boat moves, you only look at the forces acting *on the boat*. The backward force on the water doesn't affect the boat at all — it affects the water. Does that help clarify things?
+
+[LEARNER 1]: Hmm, I think I see what you mean — the two forces are on different things. So the water pushing the oar forward is the only force acting on the boat's side, and that's what makes it move? The backward force on the water just moves the water, not the boat?
+
+[RESOLVED 1]: YES
+
+[SUMMARY]: pid=c-e2, attempts=1, resolved=YES

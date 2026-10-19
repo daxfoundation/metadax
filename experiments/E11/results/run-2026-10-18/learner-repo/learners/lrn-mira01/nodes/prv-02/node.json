@@ -1,0 +1,15 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "prv-02",
+  "title": "Emotional check-in after week 2",
+  "concept": "personal-note",
+  "week": 2,
+  "visibility": "private",
+  "core": {
+    "body": "Felt stupid during the standard deviation session. Had to replay it four times. Almost cried. I know this is normal but it is really hard when you feel like everyone else gets it straight away."
+  },
+  "created_at": "2026-010-01T00:00:00Z",
+  "updated_at": "2026-010-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

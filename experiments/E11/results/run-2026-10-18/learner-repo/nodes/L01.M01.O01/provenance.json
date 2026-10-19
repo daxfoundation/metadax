@@ -1,0 +1,16 @@
+{
+  "schema": "metadax.provenance/0.2",
+  "node_id": "L01.M01.O01",
+  "content_hash": "runtime",
+  "created_by": {
+    "id": "lrn-mira01",
+    "key_id": null,
+    "chain_role": "learner"
+  },
+  "lineage": [],
+  "constraints": {
+    "constraint_decl_ref": null
+  },
+  "spec_version": "0.2",
+  "ts": "runtime"
+}

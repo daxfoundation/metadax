@@ -1,0 +1,368 @@
+{
+  "run_date": "2026-10-18",
+  "clean_repo": {
+    "ok": true,
+    "total_commits": 40,
+    "pinned_root": "b21afccb67d8dcb13a24f4eb81266e78ad7119b5",
+    "actual_root": "b21afccb67d8dcb13a24f4eb81266e78ad7119b5",
+    "errors": [],
+    "commits": [
+      {
+        "sha": "b21afccb67d8",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "2f99e026bb1d",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "91a6b3b609bd",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "a4ce520e3152",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "1eeab4bbe530",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "f4170c43c19f",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "3a2cc1ca610c",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "f5979b474036",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "eb10c0cc8686",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "a20b31297bc7",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "23f206887abf",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "4e179debb38e",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "8b2d150b67d5",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "81d4c5b813ae",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "4d8244b25555",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "2df39d06ecde",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "690d65118f53",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "e6d37d07eed1",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "f22c1a76bc04",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "7ac42de3bcb1",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "c6a23290fea8",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "ebbc034c78ac",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "f165da9619d2",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "10edbd29d4cb",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "c1e5af2338d3",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "760dc6b55fda",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "7df96f423730",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "5c2de5d75452",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "c5a3d77baf76",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "cf09fabdf781",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "66fa29348e19",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "c122b0e50463",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "948a10b42ab4",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "6e665aa090ce",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "4dea57b4fcae",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "084a4596fc15",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "fc16fa3c9b70",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "8c408283fff8",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "b71a5f53386b",
+        "ok": true,
+        "errors": []
+      },
+      {
+        "sha": "db28a6fe2ead",
+        "ok": true,
+        "errors": []
+      }
+    ]
+  },
+  "false_alarms_on_clean": 0,
+  "cases": [
+    {
+      "id": "T01",
+      "label": "tip commit appended without signing",
+      "expectedError": "bad_signature",
+      "detected": true,
+      "errorTypes": [
+        "bad_signature"
+      ],
+      "correct": true,
+      "totalErrors": 1,
+      "totalCommits": 40
+    },
+    {
+      "id": "T02",
+      "label": "unsigned commit inserted",
+      "expectedError": "bad_signature",
+      "detected": true,
+      "errorTypes": [
+        "bad_signature",
+        "provenance_author_mismatch",
+        "duplicate_node_id"
+      ],
+      "correct": true,
+      "totalErrors": 3,
+      "totalCommits": 41
+    },
+    {
+      "id": "T03",
+      "label": "signature from unknown key",
+      "expectedError": "bad_signature",
+      "detected": true,
+      "errorTypes": [
+        "bad_signature",
+        "provenance_author_mismatch",
+        "duplicate_node_id"
+      ],
+      "correct": true,
+      "totalErrors": 3,
+      "totalCommits": 41
+    },
+    {
+      "id": "T04",
+      "label": "allowed_signers key swapped retroactively",
+      "expectedError": "bad_signature",
+      "detected": true,
+      "errorTypes": [
+        "bad_signature"
+      ],
+      "correct": true,
+      "totalErrors": 14,
+      "totalCommits": 40
+    },
+    {
+      "id": "T05",
+      "label": "working-tree provenance.json tampered (should not be detected)",
+      "expectedError": null,
+      "detected": false,
+      "errorTypes": [],
+      "correct": true,
+      "totalErrors": 0,
+      "totalCommits": 40
+    },
+    {
+      "id": "T06",
+      "label": "forged author line (author≠signer)",
+      "expectedError": "provenance_author_mismatch",
+      "detected": true,
+      "errorTypes": [
+        "provenance_signer_mismatch"
+      ],
+      "correct": true,
+      "totalErrors": 1,
+      "totalCommits": 41
+    },
+    {
+      "id": "T07",
+      "label": "full chain rewritten + re-signed (root-pin catches it)",
+      "expectedError": "root_mismatch",
+      "detected": true,
+      "errorTypes": [
+        "root_mismatch"
+      ],
+      "correct": true,
+      "totalErrors": 1,
+      "totalCommits": 1
+    },
+    {
+      "id": "T08",
+      "label": "merge commit (non-linear)",
+      "expectedError": "merge_commit",
+      "detected": true,
+      "errorTypes": [
+        "root_mismatch",
+        "non_linear",
+        "merge_commit",
+        "provenance_signer_mismatch",
+        "provenance_author_mismatch",
+        "duplicate_node_id",
+        "bad_signature"
+      ],
+      "correct": true,
+      "totalErrors": 41,
+      "totalCommits": 42
+    },
+    {
+      "id": "T09",
+      "label": "missing provenance.json in one commit",
+      "expectedError": "missing_provenance",
+      "detected": true,
+      "errorTypes": [
+        "missing_provenance"
+      ],
+      "correct": true,
+      "totalErrors": 1,
+      "totalCommits": 41
+    },
+    {
+      "id": "T10",
+      "label": "provenance guide_email mismatch",
+      "expectedError": "provenance_signer_mismatch",
+      "detected": true,
+      "errorTypes": [
+        "provenance_signer_mismatch",
+        "provenance_author_mismatch"
+      ],
+      "correct": true,
+      "totalErrors": 2,
+      "totalCommits": 41
+    },
+    {
+      "id": "T11",
+      "label": "invalid JSON in provenance.json",
+      "expectedError": "invalid_provenance_json",
+      "detected": true,
+      "errorTypes": [
+        "invalid_provenance_json"
+      ],
+      "correct": true,
+      "totalErrors": 1,
+      "totalCommits": 41
+    },
+    {
+      "id": "T12",
+      "label": "duplicate node_id",
+      "expectedError": "duplicate_node_id",
+      "detected": true,
+      "errorTypes": [
+        "duplicate_node_id"
+      ],
+      "correct": true,
+      "totalErrors": 1,
+      "totalCommits": 41
+    }
+  ]
+}
