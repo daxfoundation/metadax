@@ -120,8 +120,8 @@ Existing: B01–B23 unchanged (E08 does not overlap with the core certification 
 ## Reproduce commands
 
 ```bash
-# From repo root, on branch xp-1018-e08:
-cd state/metadax/public-staging/experiments/E08/run-2026-10-18
+# From the repository root:
+cd experiments/E08/results/run-2026-10-18
 node runner.mjs --model sonnet --round 1
 node runner.mjs --model haiku  --round 1
 # Raw output: raw/sonnet-r1.json, raw/haiku-r1.json

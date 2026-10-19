@@ -2,7 +2,7 @@
 
 *Abandoned-path shapes shared by consent, clustered into holes, used to re-teach.*
 
-**Status: done (simulated, first run 2026-10-18).**
+**Status: done (simulated; runs 2026-10-09 and 2026-10-18).**
 
 ## Question
 

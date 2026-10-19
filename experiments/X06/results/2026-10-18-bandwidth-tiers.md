@@ -129,7 +129,7 @@ See `bottlenecks-2026-10-18.md`.
 ## Reproduce
 
 ```
-cd state/metadax/public-staging/experiments/X06
+cd experiments/X06
 node run-2026-10-18/simulate.cjs
 # writes run-2026-10-18/results.json
 ```

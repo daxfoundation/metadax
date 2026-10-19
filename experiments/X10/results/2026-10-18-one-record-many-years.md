@@ -8,7 +8,7 @@
 > grader) saw the answer key. This file surfaces **bottlenecks in the architecture**,
 > not learning outcomes. "Lift" for a real person is explicitly out of scope.
 
-Date: 2026-10-18 · Branch: `xp-1018-x10`
+Date: 2026-10-18
 
 ## Question
 

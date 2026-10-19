@@ -20,6 +20,6 @@ Proposed by the runs of 18-19 Oct 2026; not merged into the canonical files.
 
 ## proposed/tools/verify-chain.cjs
 
-**Copied from E12 (branch xp-1018-e12)** without modification. Verifies SSH-signed
+**Copied from E12 (experiments/E12/proposed/tools/verify-chain.cjs)** without modification. Verifies SSH-signed
 git commit chains and provenance.json files. X09 reuses it as the git-level signing
 layer that complements append-log's event-level hash chain.

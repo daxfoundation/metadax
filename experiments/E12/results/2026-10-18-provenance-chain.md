@@ -113,7 +113,7 @@ See `bottlenecks-2026-10-18.md`.
 ## Reproduce
 
 ```bash
-cd state/metadax/public-staging/experiments/E12/run-2026-10-18
+cd experiments/E12/results/run-2026-10-18
 
 # 1. Generate keys
 node gen-keys.js .

@@ -89,14 +89,14 @@ See `bottlenecks-2026-10-19-run2.md`.
 git clone --depth 1 https://github.com/daxfoundation/metadax /tmp/metadax
 
 # 2. Build CM stacks
-node state/metadax/public-staging/experiments/E13/run2-2026-10-19/build-cm-stacks.cjs
+node experiments/E13/results/run2-2026-10-19/build-cm-stacks.cjs
 
 # 3. Grade existing raw outputs (all 10 .txt files already committed)
-node state/metadax/public-staging/experiments/E13/run2-2026-10-19/grade-all-cm.cjs
+node experiments/E13/results/run2-2026-10-19/grade-all-cm.cjs
 
 # 4. To re-run a single case (e.g. fresh-no-progress), give a fresh sonnet agent
 #    the full content of:
-#    state/metadax/public-staging/experiments/E13/run2-2026-10-19/evals/cases/MP-06-cm/fresh-no-progress/variant-stack.txt
+#    experiments/E13/results/run2-2026-10-19/evals/cases/MP-06-cm/fresh-no-progress/variant-stack.txt
 #    as its sole prompt. It must reply with exactly one JSON object.
 #    Write the output to run2-2026-10-19/raw/MP-06-cm_fresh-no-progress__variant.txt
 ```

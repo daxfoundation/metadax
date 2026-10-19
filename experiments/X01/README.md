@@ -2,7 +2,7 @@
 
 *A guide's move, captured once as a technique record, reused across two languages.*
 
-**Status: done (simulated, first run 2026-10-18); run 2 2026-10-19.** (Not built, not run. A way to test compounding, never the way.)
+**Status: done (simulated; runs 2026-10-09 and 2026-10-18); run 2 2026-10-19.** (A way to test compounding, never the way.)
 
 ## Question
 

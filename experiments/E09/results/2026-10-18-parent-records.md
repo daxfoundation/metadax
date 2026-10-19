@@ -109,9 +109,9 @@ git clone --depth 1 https://github.com/daxfoundation/metadax /tmp/metadax
 git clone --depth 1 https://github.com/daxfoundation/metadax-learner-record /tmp/metadax-learner-record
 
 # The simulation script documents what ran; re-running requires Claude subagents
-node state/metadax/public-staging/experiments/E09/run-2026-10-18/simulate-parents.js
+node experiments/E09/results/run-2026-10-18/simulate-parents.js
 
 # Validate committed entries against the official validator
 node /tmp/metadax-learner-record/tools/validate-record.mjs \
-  state/metadax/public-staging/experiments/E09/run-2026-10-18/records/*.json
+  experiments/E09/results/run-2026-10-18/records/*.json
 ```

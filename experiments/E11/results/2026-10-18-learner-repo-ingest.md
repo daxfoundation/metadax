@@ -104,12 +104,12 @@ See bottlenecks-2026-10-18.md.
 # From the repository root:
 
 # 1. Generate the synthetic learner repo
-node state/metadax/public-staging/experiments/E11/run-2026-10-18/setup-repo.cjs
+node experiments/E11/results/run-2026-10-18/setup-repo.cjs
 
 # 2. Inspect the repo text fed to the companion
-node state/metadax/public-staging/experiments/E11/run-2026-10-18/read-repo.cjs --cap 4096
-node state/metadax/public-staging/experiments/E11/run-2026-10-18/read-repo.cjs --cap 16384
-node state/metadax/public-staging/experiments/E11/run-2026-10-18/read-repo.cjs --cap 16384 --without-week3
+node experiments/E11/results/run-2026-10-18/read-repo.cjs --cap 4096
+node experiments/E11/results/run-2026-10-18/read-repo.cjs --cap 16384
+node experiments/E11/results/run-2026-10-18/read-repo.cjs --cap 16384 --without-week3
 
 # 3. Memory files are at:
 #    run-2026-10-18/memory-4kb.json     (3798 bytes, 3 nodes)

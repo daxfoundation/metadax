@@ -99,11 +99,11 @@ See bottlenecks-2026-10-18.md.
 
 # Fixture is pre-built (stacks/ dir contains all prompts)
 # Regenerate fixture from scratch:
-node state/metadax/public-staging/experiments/E05/run-2026-10-18/build-fixture.cjs
+node experiments/E05/results/run-2026-10-18/build-fixture.cjs
 
 # Score a completed run:
-node state/metadax/public-staging/experiments/E05/run-2026-10-18/scorer.cjs --model sonnet
-node state/metadax/public-staging/experiments/E05/run-2026-10-18/scorer.cjs --model haiku
+node experiments/E05/results/run-2026-10-18/scorer.cjs --model sonnet
+node experiments/E05/results/run-2026-10-18/scorer.cjs --model haiku
 
 # Raw outputs:
 #   run-2026-10-18/raw-sonnet/Q01.json … Q60.json

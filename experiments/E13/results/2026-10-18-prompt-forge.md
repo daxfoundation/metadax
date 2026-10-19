@@ -60,7 +60,7 @@ See `bottlenecks-2026-10-18.md`. New: B46 (no FORGE operation), B47 (narrow new-
 git clone --depth 1 https://github.com/daxfoundation/metadax /tmp/metadax
 
 # 2. Grade existing raw outputs (all 20 .txt files already committed)
-cd state/metadax/public-staging/experiments/E13/run-2026-10-18
+cd experiments/E13/results/run-2026-10-18
 node grade-all.cjs
 
 # 3. To re-run a single case (e.g. intro/base), send the stack to a fresh model:

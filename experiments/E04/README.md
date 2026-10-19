@@ -45,7 +45,7 @@ key for cross-vendor certification (`docs/DECISIONS.md`).
 
 ## Status
 
-done (2026-10-18)
+done (model runs, no personas, 2026-10-18)
 
 ## Results
 

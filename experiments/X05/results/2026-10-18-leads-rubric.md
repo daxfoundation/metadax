@@ -99,7 +99,7 @@ Existing bottlenecks not touched by this run: B01–B23 all remain open/unchange
 ## Reproduce
 
 ```sh
-cd state/metadax/public-staging/experiments/X05/run-2026-10-18
+cd experiments/X05/results/run-2026-10-18
 node run_x05.cjs --generate           # writes sessions.json, key.json
 node run_x05.cjs --learner-prompt N   # print learner prompt for session N
 node run_x05.cjs --eval-prompt N      # print evaluator prompt for session N

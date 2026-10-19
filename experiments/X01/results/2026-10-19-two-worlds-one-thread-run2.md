@@ -106,7 +106,7 @@ New: **B87** (ceiling effect), **B88** (run-to-run noise), **B89**
 
 ```bash
 # All scripts and fixtures under:
-cd state/metadax/public-staging/experiments/X01/run2-2026-10-19
+cd experiments/X01/results/run2-2026-10-19
 
 # Session fixtures:
 cat fixtures/sessions.json

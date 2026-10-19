@@ -116,17 +116,16 @@ B03, B21).
 ## Reproduce
 
 ```bash
-git checkout xp-1018-x09
-node state/metadax/public-staging/experiments/X09/run-2026-10-18/run-experiment.cjs
+node experiments/X09/results/run-2026-10-18/run-experiment.cjs
 # outputs: course.json, experiment-results.json
 ```
 
 Verify append-log tool independently:
 
 ```bash
-node state/metadax/public-staging/experiments/X09/proposed/tools/append-log.cjs init /tmp/test.jsonl
-node state/metadax/public-staging/experiments/X09/proposed/tools/append-log.cjs append /tmp/test.jsonl \
+node experiments/X09/proposed/tools/append-log.cjs init /tmp/test.jsonl
+node experiments/X09/proposed/tools/append-log.cjs append /tmp/test.jsonl \
   '{"node_id":"n_001","event_type":"create","data":{"title":"test"},"declaration":{"asserts":"v1","changes":"init","must_not_break":"none"}}'
-node state/metadax/public-staging/experiments/X09/proposed/tools/append-log.cjs verify /tmp/test.jsonl
-node state/metadax/public-staging/experiments/X09/proposed/tools/append-log.cjs stats /tmp/test.jsonl
+node experiments/X09/proposed/tools/append-log.cjs verify /tmp/test.jsonl
+node experiments/X09/proposed/tools/append-log.cjs stats /tmp/test.jsonl
 ```

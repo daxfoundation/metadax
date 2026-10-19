@@ -2,7 +2,7 @@
 
 *A federated registry across forks: learner-origin share, merge conflicts, contested cores.*
 
-**Status: done (simulated, first run 2026-10-18).**
+**Status: done (simulated; runs 2026-10-09 and 2026-10-18).**
 
 ## Question
 

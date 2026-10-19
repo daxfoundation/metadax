@@ -122,7 +122,7 @@ Addressed from run 1:
 ## Reproduce
 
 ```sh
-cd state/metadax/public-staging/experiments/X08/run2-2026-10-19
+cd experiments/X08/results/run2-2026-10-19
 node run-gates-r2.js    # requires ANTHROPIC_API_KEY for live judge calls
                         # outputs gate-results-run2.json, transcripts/judge-run2-trimmed.jsonl
 # Judge results in this file are SIMULATED (sonnet judge subagents, not live API calls)

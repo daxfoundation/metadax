@@ -75,7 +75,7 @@ Fallback: deterministic paraphrase nodes (above). Model-played result: **not obt
 ## Reproduce
 
 ```sh
-cd state/metadax/public-staging/experiments/X08/run-2026-10-18
+cd experiments/X08/results/run-2026-10-18
 node make-fixtures.js        # generates fixtures.json (30 private nodes + 30 candidates)
 node run-gate.js             # deterministic gate test → gate-results.json
 node make-leak-attempts.js   # 10 paraphrase nodes → leak-attempts.json

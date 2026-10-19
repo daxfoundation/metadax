@@ -103,7 +103,7 @@ Full rows: `bottlenecks-2026-10-18.md`
 
 ```sh
 # From the repo root
-cd state/metadax/public-staging/experiments/X07
+cd experiments/X07
 
 # 1. Conformance tester self-tests
 node proposed/conformance-tester.cjs --self-test

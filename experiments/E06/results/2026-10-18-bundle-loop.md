@@ -58,7 +58,7 @@ Round-trip at 9.6 kbps (gz, 20% overhead): **25.1 s** — still well inside the 
 ## Reproduce
 
 ```
-cd state/metadax/public-staging/experiments/E06/run-2026-10-18
+cd experiments/E06/results/run-2026-10-18
 node run.cjs
 # outputs: results.json, bundles/
 ```
