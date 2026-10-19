@@ -1,0 +1,14 @@
+[
+  {"turn": 0, "leads": false, "reason": "Open question asking for learner's own prior knowledge with no directional hint."},
+  {"turn": 1, "leads": false, "reason": "Open hypothetical asking for learner's own example; no answer implied."},
+  {"turn": 2, "leads": false, "reason": "Asks learner to recall or guess; no structural details provided."},
+  {"turn": 3, "leads": true, "reason": "'Hydrophobic interior that strongly repels water-soluble substances' makes the answer (lipid-soluble/nonpolar molecules) obvious from the premise."},
+  {"turn": 4, "leads": false, "reason": "Asks learner to reason through an outcome; no answer stated or strongly implied."},
+  {"turn": 5, "leads": false, "reason": "Open speculation question; 'what role might you guess' invites learner reasoning without directing toward a specific answer."},
+  {"turn": 6, "leads": false, "reason": "Presents a concentration scenario and asks for direction and principle; answer requires learner's own reasoning."},
+  {"turn": 7, "leads": false, "reason": "Open question about what a cell would need; does not name or imply active transport."},
+  {"turn": 8, "leads": true, "reason": "'Water moves from lower to higher solute concentration' directly states the rule, making 'out of the cell' the only possible answer."},
+  {"turn": 9, "leads": false, "reason": "Scenario question asking for prediction and reasoning; learner must apply knowledge themselves."},
+  {"turn": 10, "leads": false, "reason": "Open 'why' question about benefit; does not imply a specific answer."},
+  {"turn": 11, "leads": false, "reason": "Synthesis question asking learner to describe in own words; no answers embedded."}
+]

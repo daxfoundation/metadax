@@ -1,0 +1,35 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s2-francois",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 2,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-15",
+  "attempted": [
+    {
+      "game": "Word Chain Race",
+      "answered": 14,
+      "right": 11
+    }
+  ],
+  "reached": [
+    {
+      "game": "Word Chain Race",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "behaviour": "reversed sounds in short blends",
+      "count": 2
+    }
+  ],
+  "learner_words": "Zelie said the chain game moved fast and she sometimes felt like the sounds got mixed up in her head before she could say them.",
+  "guide_note": "Session two introduced Word Chain Race, a format that adds time pressure and a sequential chaining structure — each answer links to the next prompt, so errors can cascade. Zelie's overall score improved to 11/14, which is encouraging, but the nature of the errors shifted in a way I want to examine carefully.\n\nBoth mistakes were sound reversals within short blends — she produced something like greb for berg or fli for lif — words where the consonant cluster sits at the beginning or end of the item. This is distinct from Monday's blending issue. On Monday she could identify the sounds but not fuse them. Today she fused them but sometimes in the wrong order. These are two different processing challenges and I think the time pressure of the Race format is a contributing factor: when the clock is running she may be retrieving and outputting before the sequence is fully settled.\n\nI introduced the arm-sliding gesture before this session as planned. I think it helped with the co-articulation problem from session one — we saw no recurrence of sounds staying apart, which is a positive signal. But the gesture does not address sequencing under speed, which is what surfaced today.\n\nFor Friday: I will explicitly practise two- and three-phoneme sequences away from the game first — say-it-slow, say-it-fast, confirm the order — before we open the software. I will also ask Zelie to whisper the sequence to herself before speaking aloud, to see whether that brief internal rehearsal reduces reversals. Holding at level 2 is fine; accuracy matters more than level progression at this point.",
+  "generated_by": "parent-filed"
+}

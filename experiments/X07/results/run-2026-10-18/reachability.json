@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-18",
+  "checks": [
+    {
+      "registry": "huggingface.co",
+      "url": "https://huggingface.co/api/models?search=phi-2&limit=1",
+      "timeout_s": 10,
+      "retries": 0,
+      "result": {
+        "reachable": true,
+        "http_status": 200,
+        "bytes_received": 446
+      },
+      "model_runnable": false,
+      "reason_not_runnable": "API is reachable but no llama.cpp, GGUF loader, or GPU runtime present in container. Model download would require wget/curl and >2 GB disk write; inference would require a C++ or Python runtime with llama.cpp bindings."
+    },
+    {
+      "registry": "ollama (localhost:11434)",
+      "url": "http://localhost:11434/api/tags",
+      "timeout_s": 10,
+      "retries": 0,
+      "result": {
+        "reachable": false,
+        "error": "connection refused (ECONNREFUSED)"
+      },
+      "model_runnable": false,
+      "reason_not_runnable": "Ollama daemon is not running in this container."
+    }
+  ],
+  "conclusion": "BLOCKED — no model runner available",
+  "what_is_needed": {
+    "model": "Qwen-2.5-3B-Instruct Q4_K_M (GGUF) or Phi-3-mini-4K-instruct Q4_K_M",
+    "model_size_gb": "~2.0–2.2",
+    "runner": "llama.cpp b3+ with --grammar-file support, or Ollama >= 0.1.26",
+    "where": "same container or a sidecar accessible via localhost",
+    "grammar_file": "experiments/X07/proposed/grammars/quiz-turn.gbnf"
+  }
+}

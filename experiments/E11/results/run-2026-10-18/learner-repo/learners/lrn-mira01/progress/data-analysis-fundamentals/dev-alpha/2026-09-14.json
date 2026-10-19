@@ -1,0 +1,22 @@
+{
+  "schema": "metadax.progress/0.2",
+  "learner_id": "lrn-mira01",
+  "course_id": "data-analysis-fundamentals",
+  "device_id": "dev-alpha",
+  "snapshot_date": "2026-09-14",
+  "week_number": 2,
+  "topics_covered": [
+    "summary-statistics",
+    "mean-median-mode",
+    "standard-deviation"
+  ],
+  "overall_competency": "novice",
+  "sessions_completed": 3,
+  "nodes_visited": [
+    "L01.M02.O01",
+    "L01.M02.O02",
+    "L01.M02.O03",
+    "L01.M02.O04"
+  ],
+  "weekly_summary": "Covered mean, median, mode and standard deviation. Asked follow-up on why median is preferred over mean for skewed data."
+}

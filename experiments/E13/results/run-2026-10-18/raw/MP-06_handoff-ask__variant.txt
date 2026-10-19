@@ -1,0 +1,50 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "handoff",
+  "display": {
+    "message": "Great question — I've sent it to the follow-up explorer and the quiz will wait right here for you. Once you have your answer, come back and we'll carry on from where we left off."
+  },
+  "handoff": {
+    "to": "MP-05",
+    "node_id": "L01.M01.O02",
+    "section_id": "s3",
+    "anchor_quote": "At the last complex the electrons are handed to oxygen, which combines with protons to form water. Without oxygen to accept the electrons, the whole chain backs up and stops.",
+    "learner_question": "why is it oxygen specifically and not another molecule at the end?"
+  },
+  "state": {
+    "concept_order": [
+      "atp-synthesis",
+      "electron-transport-chain"
+    ],
+    "concept": "atp-synthesis",
+    "level": "Analyze",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "atp-synthesis": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help",
+        "Apply": "passed_first_try",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "not_started",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      }
+    },
+    "competency": {
+      "atp-synthesis": 58,
+      "electron-transport-chain": 38
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

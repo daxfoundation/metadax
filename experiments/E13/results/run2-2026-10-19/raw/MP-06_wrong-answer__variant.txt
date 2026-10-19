@@ -1,0 +1,50 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "That's not quite right — the electron transport chain doesn't make ATP on its own. It does something that sets up ATP production, but the making of ATP is a separate step. Here is a gentle nudge: think about what the chain is actually doing to protons as electrons pass along. You have two more attempts, and hints are here to help. (Commands: next, skip, hint, why, more, ask: <your question>, summary, stop.)",
+    "instructions": "Answer in one or two sentences in your own words.",
+    "example": "Example (format only): In your own words, what does a cell membrane do?",
+    "question": "Imagine explaining the electron transport chain to a friend — in your own words, what does it do inside the mitochondrion?",
+    "options": []
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Remember",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 2
+  },
+  "feedback": {
+    "result": "incorrect",
+    "hint": "Think about what happens to electrons as they move from one protein complex to the next — and what that movement causes on the other side of the membrane.",
+    "correct_answer": "",
+    "explanation": "",
+    "misconception": "The chain makes ATP directly"
+  },
+  "state": {
+    "concept_order": [
+      "electron-transport-chain",
+      "proton-gradient",
+      "cytochrome-c"
+    ],
+    "concept": "electron-transport-chain",
+    "level": "Remember",
+    "attempt": 2,
+    "help_used": true,
+    "hints_given": 1,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "not_started"
+      },
+      "proton-gradient": {},
+      "cytochrome-c": {}
+    },
+    "competency": {
+      "electron-transport-chain": 0,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

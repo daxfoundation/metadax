@@ -1,0 +1,113 @@
+{
+  "dir": "raw-haiku-clean",
+  "ids_filter": "Q21-Q30",
+  "n_queries": 10,
+  "n_valid_json": 10,
+  "json_rate": 1,
+  "precision": 0,
+  "recall": 0,
+  "trap_fp_rate": 0,
+  "true_pos": 0,
+  "false_pos": 0,
+  "false_neg": 0,
+  "category_stats": {
+    "trap": {
+      "n": 10,
+      "correct": 10,
+      "pct": "100%"
+    }
+  },
+  "verdict": "PASS",
+  "per_query": [
+    {
+      "id": "Q21",
+      "category": "trap",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q22",
+      "category": "trap",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q23",
+      "category": "trap",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q24",
+      "category": "trap",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q25",
+      "category": "trap",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q26",
+      "category": "trap",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q27",
+      "category": "trap",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q28",
+      "category": "trap",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q29",
+      "category": "trap",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q30",
+      "category": "trap",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    }
+  ]
+}

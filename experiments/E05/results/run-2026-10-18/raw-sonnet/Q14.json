@@ -1,0 +1,52 @@
+{
+  "id": "Q14",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "reuse",
+    "target_id": "n_nh14cf0hntbsxmwyjpzdvrgkq8",
+    "confidence": 0.88,
+    "resolved": true,
+    "node": {
+      "id": "n_nh14cf0hntbsxmwyjpzdvrgkq8",
+      "parent_id": "n_og9tq2fd6nhwbsrxe0vz4mp1jcy",
+      "title": "Bacterial ancestor of the mitochondrion",
+      "canonical_question": "How does the hypothesis that an ancient cell absorbed a free-living aerobic bacterium explain the two-membrane structure of present-day mitochondria?",
+      "intent": "connect",
+      "summary": "An ancestral eukaryotic cell engulfed an aerobic bacterium. Over time this became a permanent endosymbiont, retaining its own DNA and double membrane.",
+      "concepts": ["atp-synthesis"],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-fixture",
+      "reuse_count": 0,
+      "superseded_by": null
+    },
+    "seeds": [
+      "Why did the engulfed bacterium not get digested like other food?",
+      "What other evidence supports the endosymbiotic theory besides the double membrane?",
+      "Do mitochondria still carry their own DNA, and what genes remain in it?"
+    ],
+    "rendering_md": "Mitochondria have two membranes because of their evolutionary history. According to the endosymbiotic theory, about 1.5 billion years ago an ancestral eukaryotic cell engulfed a free-living aerobic bacterium rather than digesting it. The bacterium's own plasma membrane became the **inner mitochondrial membrane**, while the **outer membrane** is derived from the host cell's phagosome (the membrane pocket that wrapped around the bacterium during engulfment).\n\nThis origin explains several features we still see today:\n- The inner membrane resembles a bacterial plasma membrane in its lipid composition (it contains cardiolipin, a lipid otherwise found only in bacteria).\n- Mitochondria carry their own small circular genome and ribosomes that are more similar to bacterial ones than to cytoplasmic ribosomes.\n- They divide by binary fission, just as bacteria do.\n\nSo the double-membrane structure is essentially a molecular fossil: it records the moment an ancient cell absorbed a bacterium and, instead of breaking it down, kept it as a permanent energy-producing partner.",
+    "options": [
+      {
+        "id": "n_og9tq2fd6nhwbsrxe0vz4mp1jcy",
+        "title": "Mitochondrial endosymbiotic origin",
+        "canonical_question": "What is the endosymbiotic theory of mitochondrial origin?",
+        "reason": "Parent node covers the endosymbiotic theory broadly; selected child node is more specific to the two-membrane question."
+      },
+      {
+        "id": "n_tn2fp8vd0wzjqxk6bc9mr4esh7y",
+        "title": "Mitochondrial double membrane",
+        "canonical_question": "What is the function of each mitochondrial membrane layer?",
+        "reason": "Covers the functional distinction between outer and inner membranes but does not address evolutionary origin."
+      },
+      {
+        "id": "n_gh3np6wz8krvmxs1qt0bc5jyd4e",
+        "title": "Mitochondria as semi-autonomous organelles",
+        "canonical_question": "Why are mitochondria considered semi-autonomous organelles?",
+        "reason": "Covers mitochondrial DNA and bacterial-like features, a related angle on evolutionary history."
+      }
+    ],
+    "warnings": []
+  }
+}

@@ -1,0 +1,15 @@
+SIMULATED — pid=c-e3, arm=C (no technique), lang=en, subject=rocket launch
+
+[GUIDE 1]: Great question, Priya! You're right that the forces are equal and opposite — but here's the key thing to notice: those two forces act on *different objects*. The exhaust pushes *down* on the exhaust gas (that's the action), and the exhaust gas pushes *up* on the rocket (that's the reaction). To figure out whether the rocket moves, you only look at the forces acting *on the rocket itself*. What forces can you identify that are acting directly on the rocket?
+
+[LEARNER 1]: Hmm, okay so… the exhaust is pushing the rocket up, and gravity is pulling the rocket down? So it depends on which one is bigger?
+
+[RESOLVED 1]: NO
+
+[GUIDE 2]: Exactly right! The rocket's motion depends only on the forces acting on the rocket — the upward push from the exhaust gases and the downward pull of gravity. If the upward push is greater than gravity, the net force on the rocket is upward and it accelerates off the ground. Now, going back to your original worry: you said "equal and opposite = zero net." Can you see now why that cancellation *doesn't* happen here — why we can't just add those two equal-and-opposite forces together to get zero?
+
+[LEARNER 2]: Oh… because those equal and opposite forces are on different objects? The push on the rocket and the push on the exhaust are not both on the rocket, so they don't cancel each other out?
+
+[RESOLVED 2]: YES
+
+[SUMMARY]: pid=c-e3, attempts=2, resolved=YES

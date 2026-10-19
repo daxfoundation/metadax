@@ -1,0 +1,49 @@
+{
+  "session_id": "ses-20261018-w1ai",
+  "wave": 1,
+  "display_name": "Bruno",
+  "profile_summary": "18-22yo Portuguese football fan, weak physics prior, low patience, drops out when explanations pile up too many unfamiliar terms at once",
+  "turns": 8,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "mass",
+    "newtons-second-law",
+    "kinematic-quantities"
+  ],
+  "followed_seeds": [
+    "Can you show a worked example where the net force is not zero?",
+    "How is inertia related to mass, and is it the same as weight?",
+    "How do I find the net force before using F = ma?",
+    "Why does turning at constant speed still count as acceleration?"
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "stalls": [
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "depth": 2,
+      "kind": "abandon",
+      "stuck_signature": "answer_too_abstract",
+      "concepts": ["net-force", "inertia", "mass"],
+      "notes": "Bruno engaged with the worked-example seed and got a concrete push/pull scenario, but when the follow-up explanation introduced both vector addition and the distinction between inertial mass and gravitational mass simultaneously, he lost the thread. Asked about inertia vs weight (seed 3) and the answer doubled down on abstract terminology. Patience exhausted; he stopped responding mid-objective."
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "depth_without_payoff",
+      "concepts": ["newtons-second-law", "mass", "net-force"],
+      "notes": "Bruno self-redirected to F=ma hoping for a simpler foothold. The seed 'How do I find the net force before using F=ma?' felt approachable, but the multi-step breakdown (identify all forces, resolve components, sum vectors, then apply formula) felt like four lessons in one. He tried one follow-up clarification then went quiet — classic lost_the_thread pattern before the payoff arrived."
+    },
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "depth": 1,
+      "kind": "abandon",
+      "stuck_signature": "prerequisite_gap",
+      "concepts": ["kinematic-quantities"],
+      "notes": "Final attempt using a football framing ('a player turning at constant speed'). The seed resonated briefly but the answer required understanding that velocity is a vector — a prerequisite Bruno had not consolidated. When the concept of centripetal acceleration appeared without anchoring to anything familiar, patience was fully exhausted and Bruno dropped out."
+    }
+  ]
+}

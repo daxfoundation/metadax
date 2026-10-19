@@ -1,0 +1,15 @@
+SIMULATED — pid=c-i2, arm=C (no technique), lang=id-x-jv, subject=roket
+
+[GUIDE 1]: Eka, pertanyaanmu apik banget. Saiki coba dipisah sik — gas karo roket iku objek sing beda, to? Gaya sing nyerang gas karo gaya sing nyerang roket iku ora cancel siji karo sijine, amarga sing nampa gaya beda-beda. Sing gawe roket munggah iku gaya sing GAS dorong menyang ROKET — gaya iku dhewe, ora ana sing mbatalke. Apa kowe mudheng maksude?
+
+[LEARNER 1]: Hmm, maksude gaya saka gas menyang roket karo gaya saka roket menyang gas iku ora bisa saling mbatalke amarga ngenani benda sing beda? Tapi aku isih bingung, yen padha gedhene lan ngelawan, apa bedane nek gaya iku ngenani benda sing beda?
+
+[RESOLVED 1]: NO
+
+[GUIDE 2]: Iya, bener arahmu! Saiki bayangna: kowe ngidak lantai, lantai njengkang awakmu munggah — iku gaya pasangan Newton III. Tapi awakmu mung "ngrasa" gaya saka lantai, lan lantai mung "ngrasa" gaya saka awakmu — ora saling mbatalke amarga ngenani benda sing beda. Dadi nek njitung gerake roket, sing dilirik mung gaya-gaya sing ngenani ROKET thok. Gaya siji-sijine sing ngenani roket iku gas nyemprot mudhun → gas ndorong roket munggah. Iku gaya net roket, dadi roket munggah. Mudheng saiki?
+
+[LEARNER 2]: Ooo, dadi sing penting iku aku kudu delok gaya-gaya sing ngenani SIJI benda thok. Gaya aksi lan reaksi iku ngenani benda sing beda-beda, dadi ora iso diitung bareng kanggo siji benda. Roket mung ngrasa gaya saka gas, mula roket munggah. Gas mung ngrasa gaya saka roket, mula gas mudhun. Ngono ta?
+
+[RESOLVED 2]: YES
+
+[SUMMARY]: pid=c-i2, attempts=2, resolved=YES

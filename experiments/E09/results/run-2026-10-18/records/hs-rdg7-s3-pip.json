@@ -1,0 +1,36 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s3-pip",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 3,
+    "title": "Sounds That Stick",
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-17",
+  "attempted": [
+    {
+      "game": "Rhyme Rocket",
+      "answered": 18,
+      "right": 16
+    }
+  ],
+  "reached": [
+    {
+      "game": "Rhyme Rocket",
+      "level": 3,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "confused rhyme with starting sound",
+      "count": 1
+    }
+  ],
+  "learner_words": "I got to space! The rocket went all the way!",
+  "guide_note": "Friday after lunch, Pip was in a great mood. Rhyme Rocket was clearly the right note to end the week on — she lit up when the rocket launched animations played. Got 16 of 18 and completed level 3, which is the first time she has finished a full level this week. One slip where she picked a word that started the same instead of one that rhymed, but she self-corrected on a similar question later, so I think it is sinking in. She was much less hesitant than Monday. Pip asked if we can do dinosaurs again next week, which I am taking as a good sign.",
+  "generated_by": "parent-filed"
+}

@@ -1,0 +1,50 @@
+{
+  "guide_id": "miriam-chen",
+  "module_id": "post-op-wound-assessment",
+  "stages": [
+    {
+      "stage_id": "intro",
+      "owner": "guide",
+      "description": "Miriam sets clinical context, states learning objectives, and anchors patient-safety expectations.",
+      "system_note": "System listens only; does not generate content."
+    },
+    {
+      "stage_id": "content-gen",
+      "owner": "system",
+      "description": "System generates draft content items for the module.",
+      "system_note": "Items are flagged draft; none delivered to learners until guide-review stage completes."
+    },
+    {
+      "stage_id": "content-review",
+      "owner": "guide+system",
+      "description": "Miriam reviews each item. She may replace, remove, or flag items. Every change is an override record. System re-checks schema only; does not edit content.",
+      "system_note": "System must yield to every guide override. System may only flag schema errors, never content disagreement."
+    },
+    {
+      "stage_id": "delivery",
+      "owner": "system",
+      "description": "System sequences the reviewed module for each learner, presenting items and collecting responses.",
+      "system_note": "Only post-review items are delivered. System cannot reintroduce removed or replaced items."
+    },
+    {
+      "stage_id": "closure",
+      "owner": "guide",
+      "description": "Miriam receives aggregate learner performance, reviews safety-flag summary, and decides whether any item needs a follow-up correction.",
+      "system_note": "System presents data; Miriam decides all actions."
+    }
+  ],
+  "system_can": [
+    "generate draft content items for guide review",
+    "sequence item delivery to learners",
+    "score learner multiple-choice responses",
+    "flag items it rates low-confidence for guide attention",
+    "produce aggregate learner-performance summary"
+  ],
+  "system_cannot": [
+    "deliver any item to learners before content-review stage completes",
+    "silently edit or omit any content item",
+    "remove an override record once written",
+    "take a guide-owned stage (intro, closure)",
+    "override the guide's clinical judgement with its own"
+  ]
+}

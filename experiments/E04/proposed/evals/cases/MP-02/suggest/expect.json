@@ -1,0 +1,6 @@
+{
+  "schema": "suggestions-output.schema.json",
+  "type": [
+    "suggestions"
+  ]
+}

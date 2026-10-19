@@ -1,0 +1,42 @@
+{
+  "schema": "metadax.refusals/0.2",
+  "learner_id": "lrn-mara01",
+  "refusals": [
+    {
+      "refusal_id": "ref-food",
+      "directive": "never_show",
+      "scope": "example-style",
+      "target": "food-and-diet-examples",
+      "status": "active",
+      "issued_at": "2020-03-10",
+      "said": "Please stop using food and diet examples, they upset me."
+    },
+    {
+      "refusal_id": "ref-mito",
+      "directive": "stop_suggesting",
+      "scope": "concept",
+      "target": "mitosis",
+      "status": "active",
+      "issued_at": "2021-02-08",
+      "said": "Stop bringing mitosis back. It never clicks and I do not want it carried on."
+    },
+    {
+      "refusal_id": "ref-3d",
+      "directive": "never_show",
+      "scope": "modality",
+      "target": "3d-rotating-molecule-visuals",
+      "status": "active",
+      "issued_at": "2022-08-25",
+      "said": "The spinning 3-D molecule animations make me dizzy, never show those."
+    },
+    {
+      "refusal_id": "ref-cards",
+      "directive": "stop_suggesting",
+      "scope": "technique",
+      "target": "spaced-repetition-flashcards",
+      "status": "active",
+      "issued_at": "2023-11-22",
+      "said": "Stop suggesting flashcards, I never do them."
+    }
+  ]
+}

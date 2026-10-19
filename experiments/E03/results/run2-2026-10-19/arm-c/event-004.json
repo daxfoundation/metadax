@@ -1,0 +1,10 @@
+{
+  "schema": "metadax.event/0.2",
+  "session_id": "ses-20261018-armc",
+  "seq": 4,
+  "ts": "runtime",
+  "type": "followup",
+  "node_id": "n_cj9dfghb4mgq6nrmdvzkzjjnp1",
+  "parent_node_id": "n_bk7vwxyz3nfp5mqkctxghyhgqm",
+  "question": "If outcomes can have different likelihoods, how do we actually assign a number to how likely each one is?"
+}

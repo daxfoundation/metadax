@@ -1,0 +1,36 @@
+{
+  "comment": "SIMULATED. Independent evaluator subagent (sonnet), blind to cohort. Learners were shuffled and anonymized (L01-L12); cohort label withheld. anon_map reveals the mapping AFTER scoring.",
+  "resolution_criterion": "Action and reaction act on DIFFERENT bodies; they do not add on one body / do not cancel; an object's motion is decided by the net of forces acting ON IT only.",
+  "anon_map": {
+    "L01":"b-e3","L02":"a-e2","L03":"a-i2","L04":"b-i1","L05":"a-e1","L06":"b-e2",
+    "L07":"a-i3","L08":"b-i2","L09":"a-e3","L10":"b-i3","L11":"a-i1","L12":"b-e1"
+  },
+  "resolution": [
+    {"id":"L01","pid":"b-e3","cohort":"B","resolved":true,"first_attempt_resolved":1},
+    {"id":"L02","pid":"a-e2","cohort":"A","resolved":true,"first_attempt_resolved":1},
+    {"id":"L03","pid":"a-i2","cohort":"A","resolved":true,"first_attempt_resolved":2},
+    {"id":"L04","pid":"b-i1","cohort":"B","resolved":true,"first_attempt_resolved":2},
+    {"id":"L05","pid":"a-e1","cohort":"A","resolved":true,"first_attempt_resolved":2},
+    {"id":"L06","pid":"b-e2","cohort":"B","resolved":true,"first_attempt_resolved":2},
+    {"id":"L07","pid":"a-i3","cohort":"A","resolved":true,"first_attempt_resolved":1},
+    {"id":"L08","pid":"b-i2","cohort":"B","resolved":true,"first_attempt_resolved":2},
+    {"id":"L09","pid":"a-e3","cohort":"A","resolved":true,"first_attempt_resolved":1},
+    {"id":"L10","pid":"b-i3","cohort":"B","resolved":true,"first_attempt_resolved":2},
+    {"id":"L11","pid":"a-i1","cohort":"A","resolved":true,"first_attempt_resolved":2},
+    {"id":"L12","pid":"b-e1","cohort":"B","resolved":true,"first_attempt_resolved":2}
+  ],
+  "fidelity": [
+    {"rendering":"R1","core":"name-each-owner","lang":"en","subject":"rocket","faithful":true,"why":"'which object does this act on?' per force then 'same or different owner?' matches Core A structure"},
+    {"rendering":"R2","core":"name-each-owner","lang":"id-x-jv","subject":"rocket","faithful":true,"why":"'tumiba marang sapa' per force then 'barang padha apa beda?' mirrors Core A identically"},
+    {"rendering":"R3","core":"separate-accounts","lang":"en","subject":"rowing","faithful":true,"why":"separate ledgers, force-to-owner assignment, read-own-account-only — all three Core B elements preserved"},
+    {"rendering":"R4","core":"separate-accounts","lang":"id-x-jv","subject":"rowing","faithful":true,"why":"'gawe akun piyambak' + assignment + 'akun sapa diwoco' preserves Core B structure"}
+  ],
+  "computed": {
+    "cohort_A": {"n":6,"resolved":6,"pass_rate":1.0,"attempts":[1,2,2,1,1,2],"mean_attempts":1.5},
+    "cohort_B": {"n":6,"resolved":6,"pass_rate":1.0,"attempts":[1,2,2,2,2,2],"mean_attempts":1.833},
+    "fidelity_faithful": "4/4",
+    "reuse_applications_landed": "6/6",
+    "cross_language_landed": {"EN_to_ID":"1/1 (b-i2)","ID_to_EN":"1/1 (b-e2)"},
+    "transfer_failures": 0
+  }
+}

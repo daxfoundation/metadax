@@ -1,0 +1,181 @@
+# GBNF grammar — quiz-turn output
+# Covers the subset of tutor-turn/0.2 (MP-06) and evaluation (MP-07)
+# that a quiz session requires: question turns, feedback turns, and evaluation.
+#
+# Usage: pass to llama.cpp --grammar-file or equivalent constrained-decoding API.
+# A conforming output MUST satisfy both this grammar AND tutor-turn.schema.json.
+# The grammar enforces shape; the schema adds semantic constraints
+# (e.g. pattern on conceptId) that GBNF cannot express.
+
+# ── Top-level: one of the two quiz-session output types ──────────────────────
+root ::= tutor-turn | evaluation
+
+# ─────────────────────────────────────────────────────────────────────────────
+# TUTOR-TURN  (MP-06 quiz turns: question, feedback, intro, summary)
+# Required: schema, type, state, next_action
+# Optional fields included only for quiz-relevant types.
+# ─────────────────────────────────────────────────────────────────────────────
+tutor-turn ::= "{" ws
+  "\"schema\"" ws ":" ws "\"metadax.tutor-turn/0.2\"" ws "," ws
+  "\"type\"" ws ":" ws turn-type ws "," ws
+  turn-optional-fields
+  "\"state\"" ws ":" ws state ws "," ws
+  "\"next_action\"" ws ":" ws next-action
+  ws-opt-trailing
+  "}"
+
+turn-type ::= "\"intro\"" | "\"question\"" | "\"feedback\"" | "\"summary\"" | "\"handoff\"" | "\"error\""
+
+next-action ::= "\"awaiting_answer\"" | "\"awaiting_command\"" | "\"done\""
+
+# Optional fields that appear before state; each is a complete "key": value, block
+turn-optional-fields ::=
+  ( display-field ws "," ws )?
+  ( meta-field ws "," ws )?
+  ( feedback-field ws "," ws )?
+  ( warnings-field ws "," ws )?
+
+# ── display ────────────────────────────────────────────────────────────────
+display-field ::= "\"display\"" ws ":" ws display-obj
+
+display-obj ::= "{" ws
+  "\"message\"" ws ":" ws string
+  ( ws "," ws "\"instructions\"" ws ":" ws string )?
+  ( ws "," ws "\"example\""     ws ":" ws string )?
+  ( ws "," ws "\"question\""    ws ":" ws string )?
+  ( ws "," ws "\"options\""     ws ":" ws string-array )?
+  ws "}"
+
+# ── meta ───────────────────────────────────────────────────────────────────
+meta-field ::= "\"meta\"" ws ":" ws meta-obj
+
+meta-obj ::= "{" ws
+  "\"concept\""      ws ":" ws concept-id  ws "," ws
+  "\"bloom_level\""  ws ":" ws bloom-level ws "," ws
+  "\"question_type\""ws ":" ws question-type ws "," ws
+  "\"attempt\""      ws ":" ws pos-integer
+  ws "}"
+
+# ── feedback ───────────────────────────────────────────────────────────────
+feedback-field ::= "\"feedback\"" ws ":" ws feedback-obj
+
+feedback-obj ::= "{" ws
+  "\"result\"" ws ":" ws feedback-result
+  ( ws "," ws "\"hint\""           ws ":" ws string )?
+  ( ws "," ws "\"correct_answer\"" ws ":" ws string )?
+  ( ws "," ws "\"explanation\""    ws ":" ws string )?
+  ( ws "," ws "\"misconception\""  ws ":" ws string )?
+  ws "}"
+
+feedback-result ::= "\"correct\"" | "\"partial\"" | "\"incorrect\"" | "null"
+
+# ── warnings ───────────────────────────────────────────────────────────────
+warnings-field ::= "\"warnings\"" ws ":" ws warnings-array
+
+warnings-array ::= "[]" | ( "[" ws warning-code ( ws "," ws warning-code )* ws "]" )
+
+warning-code ::= "\"steer_conflict\""    | "\"audience_conflict\"" |
+                 "\"out_of_scope\""      | "\"depth_limit\""       |
+                 "\"low_confidence\""    | "\"source_gap\""        |
+                 "\"wellbeing_flag\""    | "\"missing_input\""     |
+                 "\"orphans_followups\"" | "\"budget_unmet\""      |
+                 "\"unstamped\""
+
+# ── state ──────────────────────────────────────────────────────────────────
+state ::= "{" ws
+  "\"concept_order\"" ws ":" ws string-array       ws "," ws
+  "\"concept\""       ws ":" ws concept-id         ws "," ws
+  "\"level\""         ws ":" ws bloom-level        ws "," ws
+  "\"attempt\""       ws ":" ws pos-integer        ws "," ws
+  "\"help_used\""     ws ":" ws boolean            ws "," ws
+  "\"hints_given\""   ws ":" ws hints-count        ws "," ws
+  "\"phase\""         ws ":" ws phase              ws "," ws
+  "\"levels\""        ws ":" ws levels-map         ws "," ws
+  "\"competency\""    ws ":" ws competency-map
+  ws "}"
+
+hints-count ::= "0" | "1" | "2"
+phase       ::= "\"main\"" | "\"remedial\""
+
+# levels: { "<concept>": { "<bloom>": level-status, ... }, ... }
+levels-map ::= "{" ws ( string ws ":" ws per-concept-levels ( ws "," ws string ws ":" ws per-concept-levels )* )? ws "}"
+
+per-concept-levels ::= "{" ws ( string ws ":" ws level-status ( ws "," ws string ws ":" ws level-status )* )? ws "}"
+
+level-status ::= "\"not_started\"" | "\"passed_first_try\"" | "\"passed_after_help\"" | "\"failed\"" | "\"skipped\""
+
+# competency: { "<concept>": integer 0-100, ... }
+competency-map ::= "{" ws ( string ws ":" ws integer-0-100 ( ws "," ws string ws ":" ws integer-0-100 )* )? ws "}"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# EVALUATION  (MP-07 answer evaluator output)
+# ─────────────────────────────────────────────────────────────────────────────
+evaluation ::= "{" ws
+  "\"type\""         ws ":" ws "\"evaluation\""  ws "," ws
+  "\"score\""        ws ":" ws integer-0-100     ws "," ws
+  "\"result\""       ws ":" ws eval-result       ws "," ws
+  "\"criteria\""     ws ":" ws criteria-array    ws "," ws
+  "\"bonus_points\"" ws ":" ws bonus-points      ws "," ws
+  "\"misconception\""ws ":" ws string            ws "," ws
+  "\"feedback_md\""  ws ":" ws string            ws "," ws
+  "\"next_hint\""    ws ":" ws string            ws "," ws
+  "\"warnings\""     ws ":" ws warnings-array
+  ws "}"
+
+eval-result ::= "\"correct\"" | "\"partial\"" | "\"incorrect\""
+
+criteria-array ::= "[]" | ( "[" ws criterion ( ws "," ws criterion )* ws "]" )
+
+criterion ::= "{" ws
+  "\"criterion\"" ws ":" ws string ws "," ws
+  "\"status\""    ws ":" ws criterion-status
+  ws "}"
+
+criterion-status ::= "\"met\"" | "\"partly\"" | "\"not_met\""
+
+bonus-points ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Shared primitives
+# ─────────────────────────────────────────────────────────────────────────────
+concept-id ::= "\"" [a-z0-9] ( [a-z0-9-] )* "\""
+
+bloom-level ::= "\"Remember\"" | "\"Understand\"" | "\"Apply\"" | "\"Analyze\"" | "\"Evaluate\"" | "\"Create\""
+
+question-type ::= "\"True/False\""                        |
+                  "\"Multiple Choice\""                    |
+                  "\"Matching\""                           |
+                  "\"Fill-in-the-Blanks\""                 |
+                  "\"Binary Choice\""                      |
+                  "\"Short Answer (explain in own words)\""|
+                  "\"Categorization\""                     |
+                  "\"Cloze\""                              |
+                  "\"Numeric/Calculation\""                |
+                  "\"Short Answer (practical use)\""       |
+                  "\"Completion\""                         |
+                  "\"Short Problem-Solving\""              |
+                  "\"Ordering/Sequencing\""                |
+                  "\"Assertion-Reason\""                   |
+                  "\"Ranking\""                            |
+                  "\"Short Answer (analytical)\""          |
+                  "\"Short Answer (critical judgement)\""  |
+                  "\"Short Essay (1 paragraph)\""          |
+                  "\"Ranking with justification\""         |
+                  "\"Essay or Design\""                    |
+                  "\"Open-Ended Completion\""
+
+# JSON string: double-quoted, escape sequences allowed, no bare control chars
+string ::= "\"" ( [^"\\] | "\\" ( "\"" | "\\" | "/" | "b" | "f" | "n" | "r" | "t" | "u" [0-9a-fA-F] [0-9a-fA-F] [0-9a-fA-F] [0-9a-fA-F] ) )* "\""
+
+string-array ::= "[]" | ( "[" ws string ( ws "," ws string )* ws "]" )
+
+boolean ::= "true" | "false"
+
+pos-integer ::= [1-9] [0-9]*
+
+integer-0-100 ::= "100" | ( [1-9] [0-9]? ) | "0"
+
+# Whitespace
+ws     ::= ( " " | "\t" | "\n" | "\r" )*
+# Trailing comma-free ws before closing brace
+ws-opt-trailing ::= ws

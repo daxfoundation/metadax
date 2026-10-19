@@ -1,0 +1,95 @@
+{
+  "session_id": "ses-20261018-w1ad",
+  "wave": 1,
+  "display_name": "Chloe",
+  "profile_summary": "French woman 40s, rusty physics from school, engaged but easily loses the thread when abstractions pile up without concrete grounding.",
+  "turns": 7,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "kinematic-quantities",
+    "newtons-first-law",
+    "newtons-second-law",
+    "mass"
+  ],
+  "followed_seeds": [
+    "How is inertia related to mass, and is it the same as weight?",
+    "Can you show a worked example where the net force is not zero?",
+    "Why does turning at constant speed still count as acceleration?",
+    "How do I apply the first law separately to horizontal and vertical forces?",
+    "How do I find the net force before using F = ma?",
+    "Why is weight equal to mass times gravitational field strength?"
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "stalls": [
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "answer_too_abstract",
+      "concepts": ["kinematic-quantities"],
+      "note": "Chloe followed the seed about turning at constant speed counting as acceleration. The vector-direction explanation landed poorly — she understood the words but couldn't picture why changing direction without speeding up is still called acceleration. She re-asked the same question rephrased, then went quiet and moved on without resolution."
+    },
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "depth": 1,
+      "kind": "abandon",
+      "stuck_signature": "prerequisite_gap",
+      "concepts": ["inertial-frame"],
+      "note": "When the course moved to inertial reference frames, Chloe hit a wall immediately. The concept of a 'frame' itself was unfamiliar and the opening question assumed she knew what it meant to 'test' a law in a frame. She typed 'I don't really know what a frame means here' and, after a two-sentence explanation that mentioned fictitious forces, she said 'OK maybe I'll come back to this' and did not engage further with this node."
+    }
+  ],
+  "turn_log": [
+    {
+      "turn": 1,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed_used": null,
+      "learner_input": "OK, so we are starting. Net force and inertia — I remember a little from school, like things keep moving? But I'm not sure of the details anymore.",
+      "outcome": "engaged"
+    },
+    {
+      "turn": 2,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed_used": "How is inertia related to mass, and is it the same as weight?",
+      "learner_input": "Wait, inertia and weight — are these the same thing? In French we say 'poids' for weight and I always thought it was basically the same as mass.",
+      "outcome": "engaged, partial clarity"
+    },
+    {
+      "turn": 3,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed_used": "Can you show a worked example where the net force is not zero?",
+      "learner_input": "Can you give me a concrete example? Like with a pot on a stove or something moving in the kitchen — something real.",
+      "outcome": "engaged, good grounding via analogy"
+    },
+    {
+      "turn": 4,
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "seed_used": "Why does turning at constant speed still count as acceleration?",
+      "learner_input": "Speed, velocity, acceleration — OK but why is turning at constant speed still an acceleration? That seems strange to me.",
+      "outcome": "stall — answer used vector direction change, Chloe re-asked same question differently, moved on unresolved"
+    },
+    {
+      "turn": 5,
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "seed_used": "How do I apply the first law separately to horizontal and vertical forces?",
+      "learner_input": "OK, first law — things at rest stay at rest. I think I remember that. But how do the horizontal and vertical forces work separately? Like on a table?",
+      "outcome": "engaged, table/normal-force example landed well"
+    },
+    {
+      "turn": 6,
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "seed_used": null,
+      "learner_input": "What is an inertial reference frame exactly? I don't understand what a 'frame' means here.",
+      "outcome": "abandon — prerequisite gap on 'frame' concept, fictitious forces introduced too quickly, Chloe deferred the node"
+    },
+    {
+      "turn": 7,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "seed_used": "How do I find the net force before using F = ma?",
+      "learner_input": "Let's skip that for now. F equals ma — I've heard this before. How do I actually find the net force before I can use this formula?",
+      "outcome": "engaged, reconnected with worked-example style, session ended here on positive note"
+    }
+  ]
+}

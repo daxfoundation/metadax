@@ -1,0 +1,48 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "intro",
+  "display": {
+    "message": "Welcome back, Marcus! Good to see you here.\n\nIn this quiz we'll check your understanding of **random events** — the core concept from the objective you just read. We'll work through two levels: first *Remember* (can you recall the key ideas?), then *Understand* (can you explain them in your own words?).\n\nHere's how it works:\n- I'll ask one question at a time.\n- You have up to 3 attempts per question.\n- Commands you can use at any time: `next`, `skip`, `hint`, `why`, `more`, `ask: <your question>`, `summary`, `stop`.\n- Hints and second chances are part of learning — they're not a penalty.\n\n**First question:**\n\nWhich of the following is a **random event**?\n\nA) The sum of the angles in a triangle \nB) Drawing a card from a well-shuffled deck \nC) The distance from London to Paris \nD) The result of 7 × 8",
+    "instructions": "Choose one option: A, B, C, or D.",
+    "example": "Example type — Multiple Choice: 'Which of the following is an example of [concept]? A) ... B) ... C) ... D) ...'",
+    "question": "Which of the following is a **random event**?\n\nA) The sum of the angles in a triangle \nB) Drawing a card from a well-shuffled deck \nC) The distance from London to Paris \nD) The result of 7 × 8",
+    "options": [
+      "A) The sum of the angles in a triangle",
+      "B) Drawing a card from a well-shuffled deck",
+      "C) The distance from London to Paris",
+      "D) The result of 7 × 8"
+    ]
+  },
+  "meta": {
+    "concept": "random-event",
+    "bloom_level": "Remember",
+    "question_type": "Multiple Choice",
+    "attempt": 1
+  },
+  "feedback": null,
+  "handoff": null,
+  "summary": null,
+  "state": {
+    "concept_order": [
+      "random-event"
+    ],
+    "concept": "random-event",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "random-event": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "random-event": 0
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": [],
+  "ts": "2026-10-18T21:01:39Z"
+}

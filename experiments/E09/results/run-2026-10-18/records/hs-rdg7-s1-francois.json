@@ -1,0 +1,39 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s1-francois",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 1,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-13",
+  "attempted": [
+    {
+      "game": "Dino Sound Game",
+      "answered": 11,
+      "right": 8
+    }
+  ],
+  "reached": [
+    {
+      "game": "Dino Sound Game",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "behaviour": "said the sounds but they stayed apart",
+      "count": 2
+    },
+    {
+      "behaviour": "guessed from the first sound",
+      "count": 1
+    }
+  ],
+  "learner_words": "The dinosaur game was fun but some words were tricky. Zelie said she could hear the sounds but they felt like separate pieces rather than one word.",
+  "guide_note": "This was our first session with HS-RDG7 and I wanted to observe without intervening too much, to get a clean baseline. Zelie approached the Dino Sound Game with enthusiasm — the visual framing of dinosaurs collecting sounds was immediately engaging for her, which is consistent with what I have noticed across other game-based literacy work: she enters more willingly when there is a narrative hook.\n\nThe most telling pattern was what I am noting as sounds staying apart. On two occasions she articulated each phoneme correctly and in the right sequence, but could not execute the blend — she produced something like /k/…/æ/…/t/ with distinct pauses rather than a smooth /kæt/. This tells me her phoneme awareness at the level of isolation is solid, but the co-articulation step — the physical and cognitive act of running sounds together into a syllable — is where she is losing ground. This is a well-documented sticking point in phonics instruction: children learn to segment before they learn to blend fluidly, and the transition requires practice that is specifically targeted at the blending gesture rather than at sound identification.\n\nThe single instance of guessing from the first sound is worth watching. It is a reasonable strategy — initial sounds carry high predictive weight in short words — but it can become a crutch that substitutes for full decoding. I do not want to over-interpret one occurrence, but I will track whether this appears again under time pressure or when items get harder.\n\nNext steps: I plan to introduce a physical gesture for blending — sliding a finger along the arm from elbow to wrist while producing the blend, a technique I used in my classroom years with good results for children who were treating phonemes as discrete rather than continuous. I will also try slowing the target rate of the game down if the software allows it, to reduce the pressure that may be driving the first-sound guessing. Score of 8/11 at level 2 is a reasonable opening; I expect improvement once we address co-articulation directly.",
+  "generated_by": "parent-filed"
+}

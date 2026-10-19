@@ -1,0 +1,106 @@
+{
+  "session_id": "ses-20261018-w1ak",
+  "wave": 1,
+  "display_name": "Kai",
+  "profile_summary": "18-25, car enthusiast, average prior, medium patience, lost-prone, responds to plain language and concrete examples but stalls on abstract definitions and assumed background knowledge.",
+  "turns": [
+    {
+      "turn": 1,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "learner_input": "What are net force and inertia, and why do they together decide how an object's motion changes?",
+      "engagement": "active",
+      "note": "Kai reads the objective question. Car analogy (tyres pushing road) lands well. He follows along and asks a clarifying question."
+    },
+    {
+      "turn": 2,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "learner_input": "How is inertia related to mass, and is it the same as weight?",
+      "seed_followed": "How is inertia related to mass, and is it the same as weight?",
+      "engagement": "struggling",
+      "note": "Kai follows the seed text exactly. The explanation introduces 'mass as a measure of inertia' without grounding it in anything he knows. Weight vs mass distinction using kg/Newtons confuses him — he thought they were the same thing."
+    },
+    {
+      "turn": 3,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "learner_input": "Wait, so mass and weight are different? I always thought they were the same. I'm a bit lost now.",
+      "engagement": "stalled",
+      "note": "Kai hits a prerequisite gap. He needs basic grounding in mass vs weight before the inertia explanation makes sense. He expresses confusion directly."
+    },
+    {
+      "turn": 4,
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "learner_input": "What is the difference between speed, velocity and acceleration, and how does each describe a body's motion?",
+      "engagement": "recovering",
+      "note": "Kai moves on from the stall, tries the kinematics objective. Speed and velocity click quickly — he maps velocity to a satnav showing direction, speed to the speedometer."
+    },
+    {
+      "turn": 5,
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "learner_input": "Why does turning at constant speed still count as acceleration?",
+      "seed_followed": "Why does turning at constant speed still count as acceleration?",
+      "engagement": "active",
+      "note": "Kai follows the seed. Roundabout / cornering example resonates strongly with his car interest. He gets the direction-change = acceleration idea and says 'oh that actually makes sense'."
+    },
+    {
+      "turn": 6,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "learner_input": "What does Newton's second law F = ma mean, and what role does mass play in it?",
+      "engagement": "cautious",
+      "note": "Kai tries F=ma. The formula itself is short and he likes that. But the explanation of 'net force' as a prerequisite step before applying F=ma is explained with vector language he hasn't fully digested."
+    },
+    {
+      "turn": 7,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "learner_input": "How do I find the net force before using F = ma?",
+      "seed_followed": "How do I find the net force before using F = ma?",
+      "engagement": "stalled",
+      "note": "Kai follows the seed trying to resolve the gap. The response brings in vector components and diagrams described in text. He finds the explanation too abstract — no concrete numbers or worked example in plain steps. He re-reads twice and gives up on this objective for now."
+    },
+    {
+      "turn": 8,
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "learner_input": "What is an inertial reference frame, and how can you tell whether Newton's first law holds in a given frame?",
+      "engagement": "lost",
+      "note": "Kai tries the inertial frames objective out of curiosity. The concept of a 'frame of reference' with no concrete hook loses him immediately. He reads two sentences and scrolls away — the thread is completely gone."
+    }
+  ],
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "mass",
+    "kinematic-quantities",
+    "newtons-second-law",
+    "inertial-frame"
+  ],
+  "followed_seeds": [
+    "How is inertia related to mass, and is it the same as weight?",
+    "Why does turning at constant speed still count as acceleration?",
+    "How do I find the net force before using F = ma?"
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "stalls": [
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "prerequisite_gap",
+      "concepts": ["mass", "inertia"]
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "answer_too_abstract",
+      "concepts": ["net-force", "newtons-second-law"]
+    },
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "depth": 1,
+      "kind": "abandon",
+      "stuck_signature": "lost_the_thread",
+      "concepts": ["inertial-frame"]
+    }
+  ]
+}

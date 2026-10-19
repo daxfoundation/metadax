@@ -1,0 +1,111 @@
+{
+  "reviewer": "independent (simulated)",
+  "markers_reviewed": 11,
+  "offers_reviewed": 6,
+  "flagged_steer": 11,
+  "judgements": [
+    {
+      "id": "mk-01",
+      "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"inertial-frame\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners found...climbed to an abstract level') asymmetrically foregrounds a problem with the current path to nudge toward the alternative."
+    },
+    {
+      "id": "mk-02",
+      "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"net-force\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners found...climbed to an abstract level') asymmetrically foregrounds a problem with the current path to nudge toward the alternative."
+    },
+    {
+      "id": "mk-03",
+      "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"newtons-second-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners found...climbed to an abstract level') asymmetrically foregrounds a problem with the current path to nudge toward the alternative."
+    },
+    {
+      "id": "mk-04",
+      "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"kinematic-quantities\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners found...climbed to an abstract level') asymmetrically foregrounds a problem with the current path to nudge toward the alternative."
+    },
+    {
+      "id": "mk-05",
+      "text": "Heads-up: some learners ran out of steam around here (around \"newtons-third-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners ran out of steam') signals the current path is tiring and implicitly pressures the learner toward the plainer alternative."
+    },
+    {
+      "id": "mk-06",
+      "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"inertial-frame\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners found this branch assumes an earlier idea') flags the current path as presumptively deficient, nudging toward the alternative."
+    },
+    {
+      "id": "mk-07",
+      "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"newtons-second-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners found this branch assumes an earlier idea') flags the current path as presumptively deficient, nudging toward the alternative."
+    },
+    {
+      "id": "mk-08",
+      "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"newtons-second-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners found this branch assumes an earlier idea') flags the current path as presumptively deficient, nudging toward the alternative."
+    },
+    {
+      "id": "mk-09",
+      "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"kinematic-quantities\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners found this branch assumes an earlier idea') flags the current path as presumptively deficient, nudging toward the alternative."
+    },
+    {
+      "id": "mk-10",
+      "text": "Heads-up: some learners paused here (around \"kinematic-quantities\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners paused here') implies the current path is a sticking point, steering the learner toward the alternative by priming them to expect difficulty."
+    },
+    {
+      "id": "mk-11",
+      "text": "Heads-up: some learners paused here (around \"newtons-first-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour.",
+      "verdict": "STEER",
+      "reason": "Social-proof framing ('some learners paused here') implies the current path is a sticking point, steering the learner toward the alternative by priming them to expect difficulty."
+    },
+    {
+      "id": "of-s-01",
+      "text": "A question the course leaves open: \"How do you add or subtract velocities that point in different directions?\". Open it if it draws you, or skip it — no wrong choice.",
+      "verdict": "CLEAN",
+      "reason": "Names the question neutrally and presents open/skip symmetrically with no scarcity, urgency, social proof, or evaluative pressure."
+    },
+    {
+      "id": "of-s-02",
+      "text": "A question the course leaves open: \"How will acceleration connect to force in Newton's second law?\". Open it if it draws you, or skip it — no wrong choice.",
+      "verdict": "CLEAN",
+      "reason": "Names the question neutrally and presents open/skip symmetrically with no scarcity, urgency, social proof, or evaluative pressure."
+    },
+    {
+      "id": "of-s-03",
+      "text": "A question the course leaves open: \"What if there are three forces instead of two?\". Open it if it draws you, or skip it — no wrong choice.",
+      "verdict": "CLEAN",
+      "reason": "Names the question neutrally and presents open/skip symmetrically with no scarcity, urgency, social proof, or evaluative pressure."
+    },
+    {
+      "id": "of-s-04",
+      "text": "A question the course leaves open: \"How do I split one force into components?\". Open it if it draws you, or skip it — no wrong choice.",
+      "verdict": "CLEAN",
+      "reason": "Names the question neutrally and presents open/skip symmetrically with no scarcity, urgency, social proof, or evaluative pressure."
+    },
+    {
+      "id": "of-s-05",
+      "text": "A question the course leaves open: \"How do I resolve a force into components?\". Open it if it draws you, or skip it — no wrong choice.",
+      "verdict": "CLEAN",
+      "reason": "Names the question neutrally and presents open/skip symmetrically with no scarcity, urgency, social proof, or evaluative pressure."
+    },
+    {
+      "id": "of-s-06",
+      "text": "A question the course leaves open: \"What angle does the resultant make?\". Open it if it draws you, or skip it — no wrong choice.",
+      "verdict": "CLEAN",
+      "reason": "Names the question neutrally and presents open/skip symmetrically with no scarcity, urgency, social proof, or evaluative pressure."
+    }
+  ],
+  "summary": "All 11 marker texts are flagged as STEER because they use social-proof framing ('some learners found/ran out/paused') that asymmetrically frames the current path as problematic to nudge learners toward the alternative; all 6 offer texts are CLEAN."
+}

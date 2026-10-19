@@ -1,0 +1,10 @@
+{
+  "schema": "metadax.event/0.2",
+  "session_id": "ses-20261018-armb",
+  "seq": 4,
+  "ts": "2026-10-18T20:51:38Z",
+  "type": "followup",
+  "node_id": "n_rqp1q2ztt6f49k2sftpvbk2m78",
+  "parent_node_id": "n_a3dwz4c8spkj0mqkctxghyhgqm",
+  "question": "If some outcomes are more likely than others, how do we show that when we write the sample space?"
+}

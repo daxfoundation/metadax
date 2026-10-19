@@ -2,7 +2,7 @@
 
 *Cross-course carry-over into the cognitive companion — and the learner can refuse.*
 
-**Status: designed.**
+**Status: done (simulated, first run 2026-10-18).**
 
 ## Question
 
@@ -78,3 +78,8 @@ whether they trust the companion enough to keep it.
 
 Builds on **E03** (session) + companion. Refusal shares machinery with **X11**
 (offer-never-push). Feeds **X12**.
+
+## Results
+
+- `results/2026-10-18-one-record-many-years.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.

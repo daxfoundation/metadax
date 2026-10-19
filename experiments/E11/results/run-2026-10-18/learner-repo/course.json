@@ -1,0 +1,11 @@
+{
+  "schema": "metadax.course/0.2",
+  "course_id": "data-analysis-fundamentals",
+  "title": "Data Analysis Fundamentals",
+  "description": "A six-week introduction to data analysis for working adults with no prior coding experience.",
+  "created_at": "2026-09-01T00:00:00Z",
+  "updated_at": "2026-10-01T00:00:00Z",
+  "license": "CC-BY-4.0",
+  "generated_segments_license": "CC0-1.0",
+  "constraint_decl": null
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/refusal.schema.json",
+  "title": "metadax.refusals/0.2",
+  "description": "The durable refusal set -- the standing 'never show me X / stop suggesting Y' directives a learner has issued. It is the protected projection of the companion log's refusal entries. Any engine handed a learner record MUST read this set and suppress matching content BEFORE it reaches the guide or learner (offer-never-push). A refusal is never inferred, never expires on its own, and is only ever removed by an explicit withdrawal carrying the same refusal_id.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "learner_id", "refusals"],
+  "properties": {
+    "schema": { "const": "metadax.refusals/0.2" },
+    "learner_id": { "type": "string", "pattern": "^lrn-[a-z0-9]{6,}$" },
+    "refusals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["refusal_id", "directive", "scope", "target", "status"],
+        "properties": {
+          "refusal_id": { "type": "string", "pattern": "^ref-[a-z0-9]{2,}$" },
+          "directive": {
+            "enum": ["never_show", "stop_suggesting", "never_carry"],
+            "description": "never_show: content matching target is never surfaced. stop_suggesting: it is never proposed/offered, though the learner may still ask. never_carry: it is never carried across courses as a carry-over."
+          },
+          "scope": { "enum": ["concept", "course", "technique", "topic", "modality", "example-style"] },
+          "target": { "type": "string", "maxLength": 120, "description": "a slug for what is refused" },
+          "status": { "enum": ["active", "withdrawn"] },
+          "issued_at": {
+            "anyOf": [
+              { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}" },
+              { "const": "runtime" }
+            ]
+          },
+          "said": { "type": "string", "maxLength": 300 }
+        }
+      }
+    }
+  }
+}

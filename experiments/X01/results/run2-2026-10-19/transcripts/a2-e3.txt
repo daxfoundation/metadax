@@ -1,0 +1,15 @@
+SIMULATED — pid=a2-e3, arm=A-rerun, lang=en, subject=kite flying
+
+[GUIDE 1]: Grace, let's look at exactly which forces act on the kite itself. You mentioned the string pulls the kite and the kite pulls back on the string — those are a Newton's third law pair. But when we ask "will the kite accelerate?", Newton's second law says we only add up forces acting ON the kite. So: what forces can you list that are acting directly on the kite?
+
+[LEARNER 1]: Um… the string pulls the kite downward (or at an angle), and… gravity pulls it down too? And maybe the wind pushes up on it?
+
+[RESOLVED 1]: NO
+
+[GUIDE 2]: Exactly right — string tension (pulling down/back along the string), gravity (pulling down), and aerodynamic lift from the wind (pushing up). Now, notice what is NOT on that list: the force the kite pulls on the string. That force acts on the string, not on the kite. So when you calculate the net force on the kite, you never include it. Does that change how you see the balance?
+
+[LEARNER 2]: Oh… so the kite pulling the string doesn't count when I'm figuring out whether the kite moves? So the kite can accelerate upward if the lift from the wind is bigger than gravity plus the string tension — and the equal-and-opposite pull on the string just doesn't enter into it at all?
+
+[RESOLVED 2]: YES
+
+[SUMMARY]: pid=a2-e3, attempts=2, resolved=YES

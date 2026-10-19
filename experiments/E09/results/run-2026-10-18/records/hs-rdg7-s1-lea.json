@@ -1,0 +1,40 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s1-lea",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 1,
+    "title": "Sounds That Stick",
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-13",
+  "attempted": [
+    {
+      "game": "Dino Sound Game",
+      "answered": 11,
+      "right": 8
+    }
+  ],
+  "reached": [
+    {
+      "game": "Dino Sound Game",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "said the sounds but they stayed apart",
+      "count": 2
+    },
+    {
+      "name": "guessed from the first sound",
+      "count": 1
+    }
+  ],
+  "learner_words": "It was okay. The dinosaur ones were kind of funny. I kept saying the sounds right but I couldn't make them stick together into a word. Like I knew the sounds but my brain wouldn't blend them.",
+  "guide_note": "Wasn't in the room for this one. Ash did it independently after lunch — seemed in an okay mood when I checked in after. Looked at the stats: 8 out of 11, made it to level 2. The game flagged that the sounds weren't blending. Ash's own description actually matched that pretty well.",
+  "generated_by": "parent-filed"
+}

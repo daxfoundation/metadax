@@ -1,0 +1,13 @@
+{
+  "id": "L02.M01.O01",
+  "schema": "metadax.node/0.3",
+  "depth": 1,
+  "title": "Calculate and interpret the expected value of a simple random outcome",
+  "seeds": [
+    "If a game has a negative expected value, should you ever play it?",
+    "How does expected value apply to insurance premiums and what makes them fair?",
+    "What is the difference between expected value and the most likely outcome?"
+  ],
+  "validate": "OK",
+  "content_sha256": "3bc982c3daa1ff11..."
+}

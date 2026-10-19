@@ -1,0 +1,47 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "question",
+  "display": {
+    "message": "Before we begin, here is a recall check to see what you already know about the electron transport chain. Commands you can use at any time: next, skip, hint, why, more, ask: <your question>, summary, stop. Hints and second chances are a normal part of learning here.",
+    "instructions": "Write a short answer in your own words — one or two sentences is plenty. Just share what comes to mind.",
+    "example": "For example, if the concept were 'photosynthesis', you might write: 'Photosynthesis is how plants use sunlight to turn carbon dioxide and water into sugar.'",
+    "question": "In your own words, what is the electron transport chain and what role does it play inside the mitochondrion?"
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Remember",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "not_started",
+        "Apply": "not_started",
+        "Analyze": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 25,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

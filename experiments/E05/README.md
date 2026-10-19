@@ -43,9 +43,13 @@ MP-05 as certified by E04, and a registry fixture in the per-module layout
 
 ## Status
 
-not started
+done (simulated, first run 2026-10-18); run 2 2026-10-19
 
 ## Results
+
+- `results/2026-10-18-reuse-decisions.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- `results/2026-10-19-reuse-decisions-run2.md` — run 2 (simulated, 2026-10-19); raw data in `results/run2-2026-10-19/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.
 
 not yet run -- see `results/2026-09-27-first-run.md`. The 12 MP-05 cases, the
 grader (reuse/extend/new/ancestor/redirect gates) and the runner are built and

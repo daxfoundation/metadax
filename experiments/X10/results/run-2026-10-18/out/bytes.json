@@ -1,0 +1,51 @@
+{
+  "measure": "record bytes per year, raw append-log vs compacted view",
+  "note": "raw = full JSONL append log so far; compacted = the derived view handed to a guide/engine",
+  "per_year": [
+    {
+      "year": 1,
+      "course": "cell-biology",
+      "log_entries": 13,
+      "bytes_log_raw": 3661,
+      "bytes_view_compacted": 980,
+      "ratio": 3.74,
+      "dropped": 3
+    },
+    {
+      "year": 2,
+      "course": "intro-chemistry",
+      "log_entries": 29,
+      "bytes_log_raw": 8400,
+      "bytes_view_compacted": 2317,
+      "ratio": 3.63,
+      "dropped": 4
+    },
+    {
+      "year": 3,
+      "course": "organic-chemistry",
+      "log_entries": 45,
+      "bytes_log_raw": 12946,
+      "bytes_view_compacted": 3536,
+      "ratio": 3.66,
+      "dropped": 5
+    },
+    {
+      "year": 4,
+      "course": "biochemistry",
+      "log_entries": 62,
+      "bytes_log_raw": 17958,
+      "bytes_view_compacted": 4829,
+      "ratio": 3.72,
+      "dropped": 6
+    },
+    {
+      "year": 5,
+      "course": "molecular-biology",
+      "log_entries": 79,
+      "bytes_log_raw": 22649,
+      "bytes_view_compacted": 6226,
+      "ratio": 3.64,
+      "dropped": 7
+    }
+  ]
+}

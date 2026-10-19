@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.2/suggestions-output.schema.json",
+  "title": "metadax MP-02 ARCHITECT suggest output",
+  "description": "Output envelope for ARCHITECT mode=suggest. Validates the operation output, not a persisted file.",
+  "type": "object",
+  "required": ["type", "level", "parent_id", "items", "new_concepts"],
+  "properties": {
+    "type": { "const": "suggestions" },
+    "level": { "enum": ["lesson", "module", "objective"] },
+    "parent_id": { "type": "string" },
+    "items": { "type": "array", "minItems": 1 },
+    "new_concepts": { "type": "array" },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "missing": { "type": "array", "items": { "type": "string" } },
+    "message": { "type": "string" }
+  }
+}

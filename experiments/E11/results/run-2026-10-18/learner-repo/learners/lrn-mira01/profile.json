@@ -1,0 +1,14 @@
+{
+  "schema": "metadax.profile/0.2",
+  "learner_id": "lrn-mira01",
+  "age_band": "adult",
+  "display_name": "Mira",
+  "preferred_language": "en",
+  "goals": [
+    "understand data workflows",
+    "prepare for a data analyst role at her company"
+  ],
+  "background": "Office administrator with ten years of experience, comfortable with spreadsheets but no prior coding or statistics background.",
+  "created_at": "2026-09-01T09:00:00Z",
+  "updated_at": "2026-10-12T18:00:00Z"
+}

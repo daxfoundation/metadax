@@ -2,7 +2,7 @@
 
 *Bundles, delta sync, and a deferred-question queue over a thin link.*
 
-**Status: designed.** (Extends E06: "does a week's round-trip fit through a 50 kbps link?")
+**Status: done (simulated, first run 2026-10-18).** (Extends E06: "does a week's round-trip fit through a 50 kbps link?")
 
 ## Question
 
@@ -72,3 +72,8 @@ like the model, and whether a week offline is enough for a real learner.
 ## Depends on / feeds
 
 Extends **E06**. Feeds **X07** (pocket model consumes the bundle) → **X12**.
+
+## Results
+
+- `results/2026-10-18-bandwidth-tiers.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.

@@ -1,0 +1,48 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "intro",
+  "display": {
+    "message": "Welcome, Fixture Learner! Today we are working through three concepts that explain how the mitochondrion's electron transport chain does its job:\n\n1. **Electron transport chain** — the membrane complexes that pass electrons and pump protons\n2. **Proton gradient** — the stored energy built up as a proton difference across the inner membrane\n3. **Cytochrome c** — the small mobile carrier that shuttles electrons between complexes\n\nQuestions start at the Remember level and climb toward each concept's target level, one step at a time. Hints and second chances are a normal part of learning — they are here to help, not penalise.\n\n**Commands you can use at any time:**\n- `next` — skip the current concept and move on\n- `skip` — skip the current level and move to the next one\n- `hint` — get a hint (does not use an attempt)\n- `why` — find out what the question is testing and why it matters\n- `more` — go deeper on a concept you have already completed\n- `ask: <your question>` — send a question to the follow-up tutor; the quiz waits here\n- `summary` — see your progress so far\n- `stop` — end the session and see your summary\n\nLet's get started with the first question.",
+    "instructions": "Read the statement below and decide whether it is **True** or **False**. Type your answer.",
+    "example": "Example (format only — not the real question): \"Cellular respiration takes place in the nucleus.\" — True or False?",
+    "question": "True or False: The electron transport chain is a series of protein complexes set in the inner membrane of the mitochondrion.",
+    "options": ["True", "False"]
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Remember",
+    "question_type": "True/False",
+    "attempt": 1
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "in_progress",
+        "Understand": "not_started",
+        "Apply": "not_started",
+        "Analyze": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 0,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

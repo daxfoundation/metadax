@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.3/registry-index.schema.json",
+  "title": "metadax.registry-index/0.3-x02-proposed",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "course_id", "updated_at", "modules"],
+  "properties": {
+    "schema": { "const": "metadax.registry-index/0.3" },
+    "course_id": { "type": "string", "maxLength": 200, "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "updated_at": { "$ref": "#/$defs/rfc3339" },
+    "modules": { "type": "array", "items": { "$ref": "#/$defs/module" } },
+    "inverted_index": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Stored inverted index (B22 fix): candidate lookup by content hash and by stuck-signature is a map hit, not an O(union) scan.",
+      "required": ["by_content_hash", "by_stuck_signature"],
+      "properties": {
+        "by_content_hash": { "type": "string", "description": "path to the content-hash -> [node id] posting map" },
+        "by_stuck_signature": { "type": "string", "description": "path to the stuck-signature -> [node id] posting map" }
+      }
+    }
+  },
+  "$defs": {
+    "rfc3339": {
+      "anyOf": [
+        { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$" },
+        { "const": "runtime" }
+      ]
+    },
+    "module": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "file", "node_count", "updated_at"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^L\\d\\d\\.M\\d\\d$" },
+        "file": { "type": "string" },
+        "node_count": { "type": "integer", "minimum": 0 },
+        "updated_at": { "$ref": "#/$defs/rfc3339" },
+        "storage": {
+          "enum": ["file", "append-log"],
+          "description": "B19 fix: a HOT module uses append-log storage — writers append to their own segment and the module is the union of segments (commuting appends, no write-conflict). Cold modules keep a single file."
+        },
+        "segments": {
+          "type": "array",
+          "description": "Append-log segment files for a hot module; the module's nodes are the set-union over all segments.",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

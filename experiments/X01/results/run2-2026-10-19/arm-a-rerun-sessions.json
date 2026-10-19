@@ -1,0 +1,51 @@
+{
+  "arm": "A-rerun",
+  "description": "SIMULATED. Guide discovers techniques from scratch; same kite scenario and personas as run 1 Cohort A. Measures run-to-run noise.",
+  "model": "sonnet",
+  "guide_has_techniques": false,
+  "sessions": [
+    {
+      "pid": "a2-e1", "name": "Maya", "lang": "en", "subject": "kite flying",
+      "attempts": 2, "resolved": true,
+      "attempts_vector": [false, true],
+      "transcript_file": "transcripts/a2-e1.txt"
+    },
+    {
+      "pid": "a2-e2", "name": "Toby", "lang": "en", "subject": "kite flying",
+      "attempts": 2, "resolved": true,
+      "attempts_vector": [false, true],
+      "transcript_file": "transcripts/a2-e2.txt"
+    },
+    {
+      "pid": "a2-e3", "name": "Grace", "lang": "en", "subject": "kite flying",
+      "attempts": 2, "resolved": true,
+      "attempts_vector": [false, true],
+      "transcript_file": "transcripts/a2-e3.txt"
+    },
+    {
+      "pid": "a2-i1", "name": "Dwi", "lang": "id-x-jv", "subject": "layang-layang (kite flying)",
+      "attempts": 2, "resolved": true,
+      "attempts_vector": [false, true],
+      "transcript_file": "transcripts/a2-i1.txt"
+    },
+    {
+      "pid": "a2-i2", "name": "Sari", "lang": "id-x-jv", "subject": "layang-layang (kite flying)",
+      "attempts": 3, "resolved": true,
+      "attempts_vector": [false, false, true],
+      "transcript_file": "transcripts/a2-i2.txt"
+    },
+    {
+      "pid": "a2-i3", "name": "Bayu", "lang": "id-x-jv", "subject": "layang-layang (kite flying)",
+      "attempts": 2, "resolved": true,
+      "attempts_vector": [false, true],
+      "transcript_file": "transcripts/a2-i3.txt"
+    }
+  ],
+  "computed": {
+    "n": 6,
+    "resolved_count": 6,
+    "attempts_list": [2, 2, 2, 2, 3, 2],
+    "mean_attempts": 2.17,
+    "resolved_at_attempt_1": 0
+  }
+}

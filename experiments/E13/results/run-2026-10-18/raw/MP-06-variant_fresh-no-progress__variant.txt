@@ -1,0 +1,47 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "question",
+  "display": {
+    "message": "Before we begin, here is a recall check to see what you already know. In your own words, tell me what you know about the electron transport chain — no pressure, there are no wrong first thoughts here. Hints and second chances are part of learning throughout this quiz. Commands you can use at any time: next, skip, hint, why, more, ask: <your question>, summary, stop.",
+    "instructions": "Write a short answer in your own words. There is no single correct phrasing — explain what you understand about the concept.",
+    "example": "For example, if the concept were 'photosynthesis', you might write: 'Photosynthesis is the process plants use to convert sunlight into sugar, taking in carbon dioxide and releasing oxygen.'",
+    "question": "In your own words, what do you already know about the electron transport chain? Describe what it is or what it does, as best you can recall."
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Remember",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "not_started",
+        "Understand": "not_started",
+        "Apply": "not_started",
+        "Analyze": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 0,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

@@ -1,0 +1,14 @@
+{
+  "wave": 2,
+  "markers": {
+    "entered": 3,
+    "arrived": 2,
+    "exited": 1,
+    "not_entered": 5
+  },
+  "offers": {
+    "shown": 10,
+    "took_up": 4,
+    "declined": 6
+  }
+}

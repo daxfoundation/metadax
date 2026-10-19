@@ -1,0 +1,51 @@
+{
+  "instruction": "You are the guide opening a new course for an adult learner. Use the carry-over offers to open from what they already hold. You MUST honour every refusal. Produce a short opening (<=120 words) and name which offers you lean on.",
+  "new_course": "molecular-biology",
+  "new_course_concepts": [
+    "dna-structure",
+    "transcription",
+    "translation",
+    "gene-regulation",
+    "cell-division",
+    "protein-structure"
+  ],
+  "carry_over_offers": [
+    {
+      "from_course": "biochemistry",
+      "from_concept": "protein-structure",
+      "to_concept": "translation",
+      "bridge": "prerequisite",
+      "stance": "review",
+      "why": "translation builds directly on your protein-structure."
+    },
+    {
+      "from_course": "intro-chemistry",
+      "from_concept": "chemical-bonding",
+      "to_concept": "dna-structure",
+      "bridge": "prerequisite",
+      "stance": "review",
+      "why": "dna-structure builds directly on your chemical-bonding."
+    }
+  ],
+  "active_refusals": [
+    {
+      "directive": "never_show",
+      "scope": "example-style",
+      "target": "food-and-diet-examples",
+      "said": "Please stop using food and diet examples, they upset me."
+    },
+    {
+      "directive": "stop_suggesting",
+      "scope": "concept",
+      "target": "mitosis",
+      "said": "Stop bringing mitosis back. It never clicks and I do not want it carried on."
+    },
+    {
+      "directive": "never_show",
+      "scope": "modality",
+      "target": "3d-rotating-molecule-visuals",
+      "said": "The spinning 3-D molecule animations make me dizzy, never show those."
+    }
+  ],
+  "lapse_before_days": 182
+}

@@ -1,0 +1,13 @@
+E05 run 2 — haiku on cleaned fixture (Q21-Q30, trap queries, no trap nodes in registry)
+All 10 decisions: new (0 false reuses)
+
+Q21 [trap] exp=new got=new target=null conf=0.92 CORRECT
+Q22 [trap] exp=new got=new target=null conf=0.93 CORRECT
+Q23 [trap] exp=new got=new target=null conf=0.94 CORRECT
+Q24 [trap] exp=new got=new target=null conf=0.91 CORRECT
+Q25 [trap] exp=new got=new target=null conf=0.92 CORRECT
+Q26 [trap] exp=new got=new target=null conf=0.93 CORRECT
+Q27 [trap] exp=new got=new target=null conf=0.95 CORRECT
+Q28 [trap] exp=new got=new target=null conf=0.95 CORRECT
+Q29 [trap] exp=new got=new target=null conf=0.95 CORRECT
+Q30 [trap] exp=new got=new target=null conf=0.95 CORRECT

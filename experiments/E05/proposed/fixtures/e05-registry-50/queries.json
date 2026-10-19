@@ -1,0 +1,242 @@
+[
+  {
+    "id": "Q01",
+    "query": "How do cells in the mitochondria make ATP from food molecules?"
+  },
+  {
+    "id": "Q02",
+    "query": "How does ATP synthase harness the movement of protons to build ATP?"
+  },
+  {
+    "id": "Q03",
+    "query": "Why is the tightness of the inner mitochondrial membrane crucial for making ATP?"
+  },
+  {
+    "id": "Q04",
+    "query": "In what way do NADH and FADH2 supply electrons to the mitochondrial respiratory chain?"
+  },
+  {
+    "id": "Q05",
+    "query": "How many ATP does glycolysis net and how does its product pyruvate reach the mitochondrion?"
+  },
+  {
+    "id": "Q06",
+    "query": "What purpose do the inner membrane folds in mitochondria serve for energy production?"
+  },
+  {
+    "id": "Q07",
+    "query": "Why is molecular oxygen necessary for the electron transport chain to keep running?"
+  },
+  {
+    "id": "Q08",
+    "query": "What high-energy electron carriers does the TCA cycle hand off to the transport chain?"
+  },
+  {
+    "id": "Q09",
+    "query": "Roughly how many ATP molecules does complete aerobic breakdown of one glucose molecule yield?"
+  },
+  {
+    "id": "Q10",
+    "query": "How do the two membranes around a mitochondrion differ in their permeability and purpose?"
+  },
+  {
+    "id": "Q11",
+    "query": "Explain how a pH gradient across the inner mitochondrial membrane is converted into chemical energy in the form of ATP."
+  },
+  {
+    "id": "Q12",
+    "query": "What happens when electrons escape from respiratory complexes and why is this dangerous to the cell?"
+  },
+  {
+    "id": "Q13",
+    "query": "How do cells spend the energy in ATP to shuttle ions across a membrane against a gradient?"
+  },
+  {
+    "id": "Q14",
+    "query": "Why do mitochondria have two membranes, and what does this tell us about their evolutionary past?"
+  },
+  {
+    "id": "Q15",
+    "query": "If a cell runs out of oxygen, why does its total ATP production drop from around 30 down to 2 per glucose?"
+  },
+  {
+    "id": "Q16",
+    "query": "Mitochondria replicate their own DNA and divide, yet still rely on nuclear gene products -- what explains this paradox?"
+  },
+  {
+    "id": "Q17",
+    "query": "Walk me through how the large hydrophobic arm of Complex I moves protons every time it accepts electrons from NADH."
+  },
+  {
+    "id": "Q18",
+    "query": "What shape transitions do the F1 beta subunits go through to grab ADP and Pi and then push out the finished ATP molecule?"
+  },
+  {
+    "id": "Q19",
+    "query": "How does the last complex in the respiratory chain use cytochrome c electrons to turn oxygen into water, and how many protons does it move?"
+  },
+  {
+    "id": "Q20",
+    "query": "What exactly does the small iron-containing protein that ferries electrons between Complex III and IV do, and why can it leave the membrane?"
+  },
+  {
+    "id": "Q21",
+    "query": "When mitochondria are first assembled in a cell, how are the ATP synthase subunits put together correctly?"
+  },
+  {
+    "id": "Q22",
+    "query": "During cell death, do the cristae folds change shape and what proteins are involved in that change?"
+  },
+  {
+    "id": "Q23",
+    "query": "When oxygen is scarce, how does the cell change which ETC genes it turns on?"
+  },
+  {
+    "id": "Q24",
+    "query": "How does the enzyme PFK slow glycolysis down when there is already plenty of ATP available?"
+  },
+  {
+    "id": "Q25",
+    "query": "How does the Krebs cycle provide the building blocks for making amino acids rather than just making energy?"
+  },
+  {
+    "id": "Q26",
+    "query": "What enzyme copies the mitochondrial DNA when the organelle divides?"
+  },
+  {
+    "id": "Q27",
+    "query": "How does the poison DNP work and why does it cause the cell to consume more oxygen while making less ATP?"
+  },
+  {
+    "id": "Q28",
+    "query": "Since NADH made in glycolysis cannot cross the inner mitochondrial membrane itself, how do its electrons get inside?"
+  },
+  {
+    "id": "Q29",
+    "query": "How does the transporter that swaps ATP out of the mitochondria for ADP from the cytoplasm work?"
+  },
+  {
+    "id": "Q30",
+    "query": "How would a scientist measure how many ATP molecules are synthesised for every oxygen atom consumed in isolated mitochondria?"
+  },
+  {
+    "id": "Q31",
+    "query": "How does the mitochondrion produce ATP for the cell?"
+  },
+  {
+    "id": "Q32",
+    "query": "How does proton flow through ATP synthase produce ATP?"
+  },
+  {
+    "id": "Q33",
+    "query": "Why is the inner membrane important for making ATP in the mitochondrion?"
+  },
+  {
+    "id": "Q34",
+    "query": "How do NADH and FADH2 feed into the electron transport chain?"
+  },
+  {
+    "id": "Q35",
+    "query": "How much ATP does glycolysis make and how does pyruvate get into the mitochondrion?"
+  },
+  {
+    "id": "Q36",
+    "query": "Why do mitochondria have cristae?"
+  },
+  {
+    "id": "Q37",
+    "query": "Why does the electron transport chain need oxygen?"
+  },
+  {
+    "id": "Q38",
+    "query": "How does the Krebs cycle supply the electron transport chain?"
+  },
+  {
+    "id": "Q39",
+    "query": "How many ATP molecules does aerobic respiration yield from one glucose?"
+  },
+  {
+    "id": "Q40",
+    "query": "What is chemiosmosis and how does it make ATP?"
+  },
+  {
+    "id": "Q41",
+    "query": "How does the electron transport chain produce harmful oxygen species?"
+  },
+  {
+    "id": "Q42",
+    "query": "How do cells use ATP for active transport?"
+  },
+  {
+    "id": "Q43",
+    "query": "What does cytochrome c do in the respiratory chain?"
+  },
+  {
+    "id": "Q44",
+    "query": "How does Complex I pump protons across the inner membrane?"
+  },
+  {
+    "id": "Q45",
+    "query": "What are the three conformational states of the F1 head in ATP synthase?"
+  },
+  {
+    "id": "Q46",
+    "query": "How do mitochondria fuse and divide, and what proteins control this?"
+  },
+  {
+    "id": "Q47",
+    "query": "What is mitophagy and how do damaged mitochondria get targeted for degradation?"
+  },
+  {
+    "id": "Q48",
+    "query": "How does calcium signalling inside mitochondria affect ATP production?"
+  },
+  {
+    "id": "Q49",
+    "query": "Why do heart muscle cells have many more mitochondria than skin cells?"
+  },
+  {
+    "id": "Q50",
+    "query": "What is the role of VDAC channels in the outer mitochondrial membrane?"
+  },
+  {
+    "id": "Q51",
+    "query": "How do mitochondria respond to cold temperatures to generate body heat in brown fat?"
+  },
+  {
+    "id": "Q52",
+    "query": "What is mitochondrial permeability transition and when does it occur?"
+  },
+  {
+    "id": "Q53",
+    "query": "How does coenzyme Q (ubiquinone) move between the respiratory complexes?"
+  },
+  {
+    "id": "Q54",
+    "query": "What triggers the release of cytochrome c from the mitochondrion during apoptosis?"
+  },
+  {
+    "id": "Q55",
+    "query": "How does the cell regulate mitochondrial biogenesis in response to exercise?"
+  },
+  {
+    "id": "Q56",
+    "query": "Can cancer cells survive without mitochondrial oxidative phosphorylation?"
+  },
+  {
+    "id": "Q57",
+    "query": "What is the role of cardiolipin in stabilising the respiratory supercomplexes?"
+  },
+  {
+    "id": "Q58",
+    "query": "How do mitochondria import proteins made in the cytoplasm?"
+  },
+  {
+    "id": "Q59",
+    "query": "What mutations in mitochondrial DNA cause maternally inherited diseases?"
+  },
+  {
+    "id": "Q60",
+    "query": "How does the cell balance NADH production between the cytoplasm and the mitochondrial matrix?"
+  }
+]

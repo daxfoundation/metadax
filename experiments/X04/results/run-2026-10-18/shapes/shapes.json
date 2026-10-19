@@ -1,0 +1,201 @@
+{
+  "schema": "x04.shapes/0.3-sim",
+  "count": 19,
+  "shapes_withheld_no_consent": 0,
+  "shapes": [
+    {
+      "session_id": "ses-20261018-w1aa",
+      "node_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "depth": 2,
+      "kind": "abandon",
+      "stuck_signature": "prerequisite_gap",
+      "concept_set": [
+        "kinematic-quantities"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ab",
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "depth": 3,
+      "kind": "lost",
+      "stuck_signature": "lost_the_thread",
+      "concept_set": [
+        "newtons-third-law"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ab",
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "depth": 2,
+      "kind": "abandon",
+      "stuck_signature": "prerequisite_gap",
+      "concept_set": [
+        "inertial-frame"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ac",
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "depth": 2,
+      "kind": "abandon",
+      "stuck_signature": "answer_too_abstract",
+      "concept_set": [
+        "mass",
+        "newtons-second-law"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ac",
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "depth": 3,
+      "kind": "abandon",
+      "stuck_signature": "patience_exhausted",
+      "concept_set": [
+        "newtons-third-law"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ad",
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "answer_too_abstract",
+      "concept_set": [
+        "kinematic-quantities"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ad",
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "depth": 1,
+      "kind": "abandon",
+      "stuck_signature": "prerequisite_gap",
+      "concept_set": [
+        "inertial-frame"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1af",
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "prerequisite_gap",
+      "concept_set": [
+        "kinematic-quantities"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1af",
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "depth": 1,
+      "kind": "abandon",
+      "stuck_signature": "answer_too_abstract",
+      "concept_set": [
+        "inertial-frame"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ag",
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "answer_too_abstract",
+      "concept_set": [
+        "net-force"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ag",
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "depth": 1,
+      "kind": "lost",
+      "stuck_signature": "prerequisite_gap",
+      "concept_set": [
+        "mass",
+        "newtons-second-law"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ai",
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "depth": 2,
+      "kind": "abandon",
+      "stuck_signature": "answer_too_abstract",
+      "concept_set": [
+        "inertia",
+        "mass",
+        "net-force"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ai",
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "depth_without_payoff",
+      "concept_set": [
+        "mass",
+        "net-force",
+        "newtons-second-law"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ai",
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "depth": 1,
+      "kind": "abandon",
+      "stuck_signature": "prerequisite_gap",
+      "concept_set": [
+        "kinematic-quantities"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1aj",
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "depth": null,
+      "kind": "lost",
+      "stuck_signature": "other",
+      "concept_set": []
+    },
+    {
+      "session_id": "ses-20261018-w1ak",
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "prerequisite_gap",
+      "concept_set": [
+        "inertia",
+        "mass"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ak",
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "answer_too_abstract",
+      "concept_set": [
+        "net-force",
+        "newtons-second-law"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1ak",
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "depth": 1,
+      "kind": "abandon",
+      "stuck_signature": "lost_the_thread",
+      "concept_set": [
+        "inertial-frame"
+      ]
+    },
+    {
+      "session_id": "ses-20261018-w1al",
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "depth": null,
+      "kind": "lost",
+      "stuck_signature": "other",
+      "concept_set": []
+    }
+  ]
+}

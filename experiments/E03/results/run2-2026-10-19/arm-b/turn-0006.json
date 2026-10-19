@@ -1,0 +1,49 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "summary",
+  "display": {
+    "message": "**Session Summary — Final**\n\nThanks for a great session, Priya!\n\n**Final Competency Score:** 78 / 100\n\n**Strengths:** Identified random events quickly; listed outcomes correctly.\n\n**To develop:** Use formal set notation S = {a, b, c}.\n\n**Next:** L01.M01.O02 — Assign and compare simple probabilities.\n\n*You approached every question thoughtfully. See you next time!*"
+  },
+  "meta": null,
+  "feedback": null,
+  "handoff": null,
+  "summary": {
+    "concepts": [
+      {"id": "random-event", "name": "Random events", "competency": 78,
+       "levels": {"Remember": "passed_first_try", "Understand": "passed_after_help"}}
+    ],
+    "strengths": [
+      "Correctly identified a random event at first attempt",
+      "Accurately enumerated all possible outcomes"
+    ],
+    "areas_for_improvement": [
+      "Using formal set notation for sample spaces"
+    ],
+    "misconceptions": [],
+    "recommendations": [
+      "Self-practice: write sample spaces before next session",
+      "Proceed to L01.M01.O02"
+    ],
+    "encouragement": "You approached every question thoughtfully. See you next time, Priya!"
+  },
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 2,
+    "help_used": false,
+    "hints_given": 1,
+    "phase": "main",
+    "levels": {
+      "random-event": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help"
+      }
+    },
+    "competency": {
+      "random-event": 78
+    }
+  },
+  "next_action": "done",
+  "warnings": []
+}

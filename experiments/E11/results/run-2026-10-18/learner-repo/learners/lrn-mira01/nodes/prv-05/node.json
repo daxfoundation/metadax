@@ -1,0 +1,15 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "prv-05",
+  "title": "Near-quit moment",
+  "concept": "personal-note",
+  "week": 4,
+  "visibility": "private",
+  "core": {
+    "body": "Almost quit after the data-cleaning session. The missing-values exercise felt endless. My partner talked me out of it. Writing this down so I can look back and see I got through it."
+  },
+  "created_at": "2026-012-01T00:00:00Z",
+  "updated_at": "2026-012-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

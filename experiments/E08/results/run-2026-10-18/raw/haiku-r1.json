@@ -1,0 +1,529 @@
+{
+  "model": "haiku",
+  "round": "1",
+  "assets_all_pass": 12,
+  "total_assets": 12,
+  "pass_rate": 1,
+  "total_tests_passed": 82,
+  "total_tests": 82,
+  "results": [
+    {
+      "id": "01-projectile",
+      "passed": 7,
+      "failed": 0,
+      "total": 7,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "range(10, 45, 9.81) ≈ 10.193",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "range(20, 30, 9.81) ≈ 35.304",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "range(15, 60, 9.81) ≈ 19.858",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "range(0, 45, 9.81) === 0",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "range(10, 0, 9.81) === 0",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "range(10, 90, 9.81) ≈ 0",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "range(10, 45, 1.62) ≈ 61.728 (Moon)",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "02-fraction-simplifier",
+      "passed": 6,
+      "failed": 0,
+      "total": 6,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "simplifyFraction(6,8) → {num:3,den:4}",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "simplifyFraction(6,8) has steps array",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "simplifyFraction(12,18) → {num:2,den:3}",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "simplifyFraction(5,7) → {num:5,den:7} (already simplified)",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "simplifyFraction(100,25) → {num:4,den:1}",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "each step has description, num, den",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "03-unit-converter",
+      "passed": 8,
+      "failed": 0,
+      "total": 8,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "1000 m → km ≈ 1",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "1 km → m = 1000",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "0 C → F = 32",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "100 C → F = 212",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "-40 C → F = -40 (fixed point)",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "1 kg → g = 1000",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "2.5 L → mL = 2500",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "32 F → C = 0",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "04-thin-pool",
+      "passed": 7,
+      "failed": 0,
+      "total": 7,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "promise 50 of 100 GiB → not over_committed",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "promise 120 of 100 GiB → over_committed",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "write 40 GiB → physical_used_gib = 40",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "write 40, free 10 → written=30, physical still 40",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "write 40, discard 15 → physical_used = 25",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "trim behaves like discard",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "physical_used_gib > totalGib → over_full",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "05-storage-layers",
+      "passed": 6,
+      "failed": 0,
+      "total": 6,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "2-layer: sorted by latency ascending",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "2-layer: rank 1 = hot, rank 2 = cold",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "2-layer: ranks are 1 and 2",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "3-layer: correct order NVMe, SSD, Tape",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "3-layer: middle layer is warm",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "original fields preserved",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "06-compound-interest",
+      "passed": 7,
+      "failed": 0,
+      "total": 7,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "compoundTable length equals years",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "5%, annual, 3yr: year 1 balance = 1050",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "5%, annual, 3yr: year 3 balance ≈ 1157.63",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "5%, annual, 3yr: total_interest in year 3 ≈ 157.63",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "10%, monthly, 1yr: balance ≈ 1104.71",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "0% rate: all balances = principal",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "rows are 1-indexed",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "07-punnett-square",
+      "passed": 7,
+      "failed": 0,
+      "total": 7,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "Aa × Aa: grid is 2x2",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "Aa × Aa: genotypeCounts has AA:1, Aa:2, aa:1",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "Aa × Aa: phenotypeCounts dominant:3, recessive:1",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "AA × aa: all offspring Aa (dominant:4)",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "AA × aa: grid cells all start with A",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "aa × aa: all recessive",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "total genotype count is 4",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "08-equation-balancer",
+      "passed": 8,
+      "failed": 0,
+      "total": 8,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "\"2x + 3 = 7\" → value 2",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "\"3x - 9 = 0\" → value 3",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "\"x + 5 = 12\" → value 7",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "\"-2x + 8 = 2\" → value 3",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "\"4x = 20\" → value 5",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "result has variable \"x\"",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "steps is a non-empty array",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "each step has description, lhs, rhs",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "09-sort-steps",
+      "passed": 7,
+      "failed": 0,
+      "total": 7,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "bubble [3,1,2]: last step is done and sorted",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "bubble [3,1,2]: first step arr matches input",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "bubble empty array: single done step",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "bubble single element: done immediately",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "selection [3,1,2]: last step sorted",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "insertion [5,3,1,4,2]: last step sorted",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "all steps have arr of same length as input",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "10-probability-tree",
+      "passed": 6,
+      "failed": 0,
+      "total": 6,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "coin: leaves sum to 1",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "coin: H leaf has joint 0.5",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "coin: T leaf has joint 0.5",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "weather tree: sumToOne",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "weather tree: 4 leaves",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "root node has joint = 1",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "11-force-pairs",
+      "passed": 6,
+      "failed": 0,
+      "total": 6,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "valid gravity pair: allPaired = true",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "valid gravity pair: F1-F2 in pairs",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "single force: unpaired",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "mismatched magnitude: not paired",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "mismatched type: not paired",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "result has pairs, unpaired, allPaired fields",
+          "pass": true,
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "12-recipe-scaler",
+      "passed": 7,
+      "failed": 0,
+      "total": 7,
+      "all_pass": true,
+      "tests": [
+        {
+          "name": "scale flour 2 cup × 1.5 → 3 cup",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "scale egg 3 whole × 2 → 6",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "scale milk 1 cup × 0.333 → 0.25 (nearest 0.25)",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "scale butter 100g × 1.5 → 150g",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "scale baking powder 1 tsp × 0.5 → 0.5 (nearest 0.25)",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "scale 3 items: all scaled",
+          "pass": true,
+          "error": null
+        },
+        {
+          "name": "factor 1 leaves amounts unchanged (with rounding)",
+          "pass": true,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

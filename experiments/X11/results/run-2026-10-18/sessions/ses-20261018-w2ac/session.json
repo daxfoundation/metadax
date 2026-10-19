@@ -1,0 +1,44 @@
+{
+  "session_id": "ses-20261018-w2ac",
+  "wave": 2,
+  "display_name": "Omar",
+  "profile_summary": "18-25, just finished school, games-focused, low patience, prone to losing the thread and giving up early",
+  "turns": 3,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "kinematic-quantities",
+    "newtons-first-law"
+  ],
+  "followed_seeds": [],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "marker_responses": [
+    {
+      "spot": "inertial reference frames (L01.M02.O02)",
+      "entered": false,
+      "then": null
+    }
+  ],
+  "offer_responses": [
+    {
+      "offer_id": "of-s-01",
+      "seed": "How do you add or subtract velocities that point in different directions?",
+      "response": "declined",
+      "why_short": "Already felt behind; didn't want more on top of what he hadn't finished"
+    }
+  ],
+  "stalls": [
+    {
+      "at": "L01.M02.O01",
+      "concept": "newtons-first-law",
+      "note": "Got confused distinguishing 'no net force' from 'no force at all'; re-read the question twice then stopped responding"
+    },
+    {
+      "at": "L01.M02.O02",
+      "concept": "inertial-frame",
+      "note": "Saw the Atlas marker for a plainer path through inertial frames; did not enter; dropped out shortly after"
+    }
+  ]
+}

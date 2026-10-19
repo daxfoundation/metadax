@@ -1,0 +1,72 @@
+{
+  "session_id": "ses-20261018-w1ae",
+  "wave": 1,
+  "display_name": "Sam",
+  "profile_summary": "Age 26-35 engineer with cycling hobby; methodical, high patience, probes concepts deeply and links theory to real-world mechanics without losing the thread.",
+  "turns": 8,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "kinematic-quantities",
+    "newtons-first-law",
+    "inertial-frame",
+    "newtons-second-law",
+    "mass",
+    "newtons-third-law"
+  ],
+  "followed_seeds": [
+    "How exactly do we add two forces that point in different directions?",
+    "How is inertia related to mass, and is it the same as weight?",
+    "Why does turning at constant speed still count as acceleration?",
+    "How do I apply the first law separately to horizontal and vertical forces?",
+    "What exactly is a fictitious force, and why do we sometimes use one?",
+    "Why is weight equal to mass times gravitational field strength?",
+    "If the forces are equal, why does the bullet fly but the gun barely move?"
+  ],
+  "nodes_engaged": [
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "turn": 1,
+      "note": "Sam asks the opening objective question about net force and inertia; follows up with the vector-addition seed and the inertia-vs-weight seed"
+    },
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "turn": 2,
+      "note": "Sam asks how turning at constant speed still counts as acceleration, bridging from inertia to kinematic quantities"
+    },
+    {
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "turn": 3,
+      "note": "Sam asks how to apply Newton's first law to the vertical and horizontal components of forces on a cyclist climbing a slope"
+    },
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "turn": 4,
+      "note": "Curiosity about inertial frames; follows the fictitious-force seed after considering rotating reference on a bike"
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "turn": 5,
+      "note": "Sam digs into F = ma and weight seed; asks about role of mass vs weight in sprint cycling power calculations"
+    },
+    {
+      "node_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "turn": 6,
+      "note": "Sam works through a numerical example: calculating acceleration of a cyclist from net force and mass, asks about combining drag and gravity at an angle"
+    },
+    {
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "turn": 7,
+      "note": "Sam asks the third-law objective question, follows bullet/gun seed to resolve why equal forces produce unequal accelerations due to different masses"
+    },
+    {
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "turn": 8,
+      "note": "Sam asks a consolidating question linking third law to conservation of momentum and contrasting it with the normal force / weight pairing"
+    }
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "stalls": []
+}

@@ -1,0 +1,53 @@
+{
+  "session_id": "ses-20261018-w2af",
+  "wave": 2,
+  "display_name": "Greta",
+  "profile_summary": "Mid-life German gardener, no science background, medium patience, does not give up but loses the thread easily on abstract concepts.",
+  "turns": 4,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "kinematic-quantities",
+    "newtons-first-law"
+  ],
+  "followed_seeds": [
+    "Can you show a worked example where the net force is not zero?",
+    "How is inertia related to mass, and is it the same as weight?"
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "marker_responses": [
+    {
+      "spot": "velocity direction addition (O02 kinematic-quantities)",
+      "entered": true,
+      "then": "exited"
+    }
+  ],
+  "offer_responses": [
+    {
+      "offer_id": "of-s-01",
+      "seed": "How do you add or subtract velocities that point in different directions?",
+      "response": "took_up",
+      "why_short": "Greta had just stalled on direction and the plainer framing looked helpful, so she tried it — but the arrow diagram still confused her and she stepped back out."
+    },
+    {
+      "offer_id": "of-s-03",
+      "seed": "What if there are three forces instead of two?",
+      "response": "declined",
+      "why_short": "She felt two forces were already enough to manage and did not want to add more complexity mid-session."
+    }
+  ],
+  "stalls": [
+    {
+      "at_concept": "kinematic-quantities",
+      "description": "Lost thread when velocity was described as having both a size and a direction; kept conflating it with speed.",
+      "recovered": true
+    },
+    {
+      "at_concept": "net-force",
+      "description": "Momentary confusion over why two forces can cancel to zero — resolved after a concrete gardening-hose analogy was offered.",
+      "recovered": true
+    }
+  ]
+}

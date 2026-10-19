@@ -1,0 +1,1751 @@
+{
+  "schema": "metadax.course-snapshot/0.3-sim",
+  "course_id": "newtons-laws-motion",
+  "built_at": "runtime",
+  "node_count": 50,
+  "concepts": [
+    "inertia",
+    "inertial-frame",
+    "kinematic-quantities",
+    "mass",
+    "net-force",
+    "newtons-first-law",
+    "newtons-second-law",
+    "newtons-third-law"
+  ],
+  "concept_count": 8,
+  "seed_count": 107,
+  "nodes": [
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "legacy_id": "L01.M01.O01",
+      "parent_id": null,
+      "module_id": "L01.M01",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Explain net force and inertia",
+      "canonical_question": "What are net force and inertia, and why do they together decide how an object's motion changes?",
+      "concepts": [
+        "net-force",
+        "inertia"
+      ],
+      "seeds": [
+        "How exactly do we add two forces that point in different directions?",
+        "Can you show a worked example where the net force is not zero?",
+        "How is inertia related to mass, and is it the same as weight?"
+      ],
+      "status": "has_abandonments",
+      "abandoned_count": 1,
+      "lost_count": 2,
+      "markers": [
+        {
+          "marker_id": "mk-02",
+          "at_depth": 2,
+          "signature_label": "answer_too_abstract",
+          "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"net-force\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        }
+      ]
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_fka1p325m2tbp308vs317e8ta7",
+      "legacy_id": "L01.M01.O02",
+      "parent_id": null,
+      "module_id": "L01.M01",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Distinguish speed, velocity and acceleration",
+      "canonical_question": "What is the difference between speed, velocity and acceleration, and how does each describe a body's motion?",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "How do you add or subtract velocities that point in different directions?",
+        "Why does turning at constant speed still count as acceleration?",
+        "How will acceleration connect to force in Newton's second law?"
+      ],
+      "status": "has_abandonments",
+      "abandoned_count": 1,
+      "lost_count": 3,
+      "markers": [
+        {
+          "marker_id": "mk-04",
+          "at_depth": 2,
+          "signature_label": "answer_too_abstract",
+          "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"kinematic-quantities\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        },
+        {
+          "marker_id": "mk-09",
+          "at_depth": 1,
+          "signature_label": "prerequisite_gap",
+          "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"kinematic-quantities\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        },
+        {
+          "marker_id": "mk-10",
+          "at_depth": null,
+          "signature_label": "other",
+          "text": "Heads-up: some learners paused here (around \"kinematic-quantities\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        }
+      ]
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_hzafa396f3f0cqy7xbjasfyfjv",
+      "legacy_id": "L01.M01.O01/adding-forces-different-directions",
+      "parent_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Adding forces that point in different directions",
+      "canonical_question": "How do you add two forces that point in different directions to get the net force?",
+      "concepts": [
+        "net-force"
+      ],
+      "seeds": [
+        "What if there are three forces instead of two?",
+        "How do I split one force into components?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_rmfhyyq2rg960x6381yqfr2rcz",
+      "legacy_id": "L01.M01.O01/vector-sum-of-two-forces",
+      "parent_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Finding the vector sum of two forces",
+      "canonical_question": "How do you find the vector sum of two forces acting at an angle?",
+      "concepts": [
+        "net-force"
+      ],
+      "seeds": [
+        "How do I resolve a force into components?",
+        "What angle does the resultant make?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_zqvaskk8ptd4bgc1w4sx0zyj50",
+      "legacy_id": "L01.M01.O01/combine-forces-with-vectors",
+      "parent_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Combining forces using vectors",
+      "canonical_question": "How do you combine several forces into one using vector methods?",
+      "concepts": [
+        "net-force"
+      ],
+      "seeds": [
+        "Can the combined force be zero?",
+        "How does this connect to equilibrium?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_b716vz96bpcec2w48cm2v8cq5e",
+      "legacy_id": "L01.M01.O01/seatbelt-and-inertia",
+      "parent_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Seatbelts and inertia",
+      "canonical_question": "Why does a seatbelt protect you when a car stops suddenly?",
+      "concepts": [
+        "inertia"
+      ],
+      "seeds": [
+        "How do airbags add to this?",
+        "Why does stopping over a longer time help?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_ne5jkapxx7kgt4d8zy9ce2wsm1",
+      "legacy_id": "L01.M01.O01/why-seatbelts-work",
+      "parent_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Why seatbelts work",
+      "canonical_question": "How does inertia explain why seatbelts keep passengers safe?",
+      "concepts": [
+        "inertia"
+      ],
+      "seeds": [
+        "What is momentum, exactly?",
+        "Why do crumple zones help?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_b319zdq408g5vgxft7w14sr9z4",
+      "legacy_id": "L01.M01.O02/acceleration-vs-velocity",
+      "parent_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Acceleration versus velocity",
+      "canonical_question": "How is acceleration different from velocity?",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "Can something at rest be accelerating?",
+        "How does turning count as acceleration?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_bt4axgzhkdn1avfsakxj9q4yj1",
+      "legacy_id": "L01.M01.O02/how-acceleration-differs-from-velocity",
+      "parent_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "How acceleration differs from velocity",
+      "canonical_question": "What makes acceleration a different quantity from velocity?",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "Is deceleration just negative acceleration?",
+        "How is each one measured?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_445z4yk22wsv4p7jw7cvb16pbj",
+      "legacy_id": "L01.M01.O02/why-velocity-is-a-vector",
+      "parent_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Why velocity is a vector",
+      "canonical_question": "Why is velocity treated as a vector while speed is only a number?",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "How do I convert a speed into a velocity?",
+        "What units does velocity use?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_z2g3kxn8djysqscywrbxdnmtt7",
+      "legacy_id": "L01.M01.O01/why-inertia-is-not-a-force",
+      "parent_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Why inertia is not a force",
+      "canonical_question": "Why is inertia not itself a force?",
+      "concepts": [
+        "inertia"
+      ],
+      "seeds": [
+        "How is inertia measured?",
+        "Why does a seatbelt help then?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_dpset1yw9ekaqrxwdz5jyknyan",
+      "legacy_id": "L01.M01.O01/measuring-force-in-newtons",
+      "parent_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Measuring a force in newtons",
+      "canonical_question": "How do you measure the size of a force in newtons using a spring scale?",
+      "concepts": [
+        "net-force"
+      ],
+      "seeds": [
+        "How would I combine two such forces?",
+        "What is one newton?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_zqyxvsk0mfqnwwj21ymnvejjpy",
+      "legacy_id": "L01.M01.O02/reading-velocity-time-graphs",
+      "parent_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Reading a velocity-time graph",
+      "canonical_question": "How do you read acceleration and distance off a velocity-time graph?",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "How does this differ from a position-time graph?",
+        "What does a curved line mean?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_1e0zf7s8ccq4c4hqgjts2z7cxk",
+      "legacy_id": "L01.M01.O01/everyday-zero-net-force",
+      "parent_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Everyday examples of zero net force",
+      "canonical_question": "What are some everyday examples where the net force on an object is zero?",
+      "concepts": [
+        "net-force"
+      ],
+      "seeds": [
+        "Can a moving object have zero net force?",
+        "What breaks the balance?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_bc82z5z1sk7vehbwdxft29e83n",
+      "legacy_id": "L01.M01.O02/units-of-acceleration",
+      "parent_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "The units of acceleration",
+      "canonical_question": "What units is acceleration measured in and why?",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "How does this relate to g?",
+        "What are the units of force then?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_5rk1mnm3eqyx8agq17rq1nc1bq",
+      "legacy_id": "L01.M01.O01/friction-as-a-force",
+      "parent_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Friction as one of the forces",
+      "canonical_question": "How does friction fit into the net force on a sliding object?",
+      "concepts": [
+        "net-force"
+      ],
+      "seeds": [
+        "What is the difference between static and kinetic friction?",
+        "How does surface roughness matter?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_wyz8a7st4x599c1f1eh1npgses",
+      "legacy_id": "L01.M01.O02/instantaneous-vs-average-velocity",
+      "parent_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "module_id": "L01.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Instantaneous versus average velocity",
+      "canonical_question": "What is the difference between instantaneous and average velocity?",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "How do I compute an average over several legs?",
+        "Which does a speedometer show?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "legacy_id": "L01.M02.O01",
+      "parent_id": null,
+      "module_id": "L01.M02",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Apply Newton's first law to bodies in equilibrium",
+      "canonical_question": "How does Newton's first law describe a body at rest or moving at constant velocity when the net force is zero?",
+      "concepts": [
+        "newtons-first-law",
+        "net-force"
+      ],
+      "seeds": [
+        "How do I apply the first law separately to horizontal and vertical forces?",
+        "What happens the instant the forces stop balancing?",
+        "How is the first law different from the second law?"
+      ],
+      "status": "has_abandonments",
+      "abandoned_count": 0,
+      "lost_count": 1,
+      "markers": [
+        {
+          "marker_id": "mk-11",
+          "at_depth": null,
+          "signature_label": "other",
+          "text": "Heads-up: some learners paused here (around \"newtons-first-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        }
+      ]
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "legacy_id": "L01.M02.O02",
+      "parent_id": null,
+      "module_id": "L01.M02",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Identify inertial reference frames",
+      "canonical_question": "What is an inertial reference frame, and how can you tell whether Newton's first law holds in a given frame?",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "seeds": [
+        "What exactly is a fictitious force, and why do we sometimes use one?",
+        "How large is the error in treating the Earth as inertial?",
+        "Does the second law also require an inertial frame?"
+      ],
+      "status": "has_abandonments",
+      "abandoned_count": 4,
+      "lost_count": 0,
+      "markers": [
+        {
+          "marker_id": "mk-01",
+          "at_depth": 1,
+          "signature_label": "answer_too_abstract",
+          "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"inertial-frame\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        },
+        {
+          "marker_id": "mk-06",
+          "at_depth": 2,
+          "signature_label": "prerequisite_gap",
+          "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"inertial-frame\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        }
+      ]
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_jze8b33wyreg9jsvrew727943w",
+      "legacy_id": "L01.M02.O01/book-on-table-balanced-forces",
+      "parent_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "module_id": "L01.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "The book on the table: balanced forces",
+      "canonical_question": "Why does a book resting on a table not fall through even though gravity pulls it down?",
+      "concepts": [
+        "net-force",
+        "newtons-first-law"
+      ],
+      "seeds": [
+        "What happens the instant the table breaks?",
+        "How big can the normal force get?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_sreyjpmkggzx22zbz22chzwdsp",
+      "legacy_id": "L01.M02.O01/why-resting-objects-stay-put",
+      "parent_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "module_id": "L01.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Why resting objects stay put",
+      "canonical_question": "Why does an object sitting on a surface stay still if gravity acts on it?",
+      "concepts": [
+        "net-force",
+        "newtons-first-law"
+      ],
+      "seeds": [
+        "When does the surface stop being able to support?",
+        "Is the normal force always vertical?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_7snyc53wz3be8m4y7a7850xmth",
+      "legacy_id": "L01.M02.O02/what-makes-a-frame-inertial",
+      "parent_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "module_id": "L01.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "What makes a frame inertial",
+      "canonical_question": "What actually makes a reference frame inertial?",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "seeds": [
+        "What forces appear in a non-inertial frame?",
+        "Is Earth truly inertial?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_vdxvbbgagg2q1gyx9kdet3z8rs",
+      "legacy_id": "L01.M02.O02/recognizing-inertial-frames",
+      "parent_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "module_id": "L01.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Recognizing inertial frames",
+      "canonical_question": "How can you recognize whether a given reference frame is inertial?",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "seeds": [
+        "Why does the ground count as inertial?",
+        "What are fictitious forces?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_6q0v52jn58pr8fwjksncp285gm",
+      "legacy_id": "L01.M02.O01/why-equilibrium-means-zero-net-force",
+      "parent_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "module_id": "L01.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Why equilibrium means zero net force",
+      "canonical_question": "Why does mechanical equilibrium require the net force to be exactly zero?",
+      "concepts": [
+        "net-force",
+        "newtons-first-law"
+      ],
+      "seeds": [
+        "How do I show a specific object is in equilibrium?",
+        "Does constant velocity count as equilibrium?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_4besk0tc1sejy9z8c9hs402rr9",
+      "legacy_id": "L01.M02.O02/why-earth-is-nearly-inertial",
+      "parent_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "module_id": "L01.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Why Earth is nearly inertial",
+      "canonical_question": "Why can Earth’s surface be treated as an approximately inertial frame despite its rotation?",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "seeds": [
+        "How do I decide if a frame is inertial at all?",
+        "What is a Foucault pendulum?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_4zec319zbn7tavcb4f7ed36vw6",
+      "legacy_id": "L01.M02.O01/first-law-constant-velocity",
+      "parent_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "module_id": "L01.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "The first law at constant velocity",
+      "canonical_question": "How does Newton’s first law apply to a car cruising at constant velocity?",
+      "concepts": [
+        "newtons-first-law",
+        "net-force"
+      ],
+      "seeds": [
+        "Why does the engine work if net force is zero?",
+        "How is this different from being parked?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_xbvj9qd0ans6k3tjqxyxc74ztb",
+      "legacy_id": "L01.M02.O02/fictitious-forces-in-accelerating-frames",
+      "parent_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "module_id": "L01.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Fictitious forces in accelerating frames",
+      "canonical_question": "What fictitious forces appear in a non-inertial (accelerating) reference frame?",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "seeds": [
+        "Is centrifugal force real?",
+        "How do I switch back to an inertial frame?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_bsc7p5b6twh6tw35q7609cspha",
+      "legacy_id": "L01.M02.O01/tension-in-a-rope-at-rest",
+      "parent_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "module_id": "L01.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Tension in a rope at rest",
+      "canonical_question": "How do you find the tension in a rope holding a hanging weight at rest?",
+      "concepts": [
+        "net-force",
+        "newtons-first-law"
+      ],
+      "seeds": [
+        "What if the weight is accelerating?",
+        "How do two ropes share a load?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "legacy_id": "L02.M01.O01",
+      "parent_id": null,
+      "module_id": "L02.M01",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Explain F = ma and the role of mass",
+      "canonical_question": "What does Newton's second law F = ma mean, and what role does mass play in it?",
+      "concepts": [
+        "newtons-second-law",
+        "mass"
+      ],
+      "seeds": [
+        "How do I find the net force before using F = ma?",
+        "Why is weight equal to mass times gravitational field strength?",
+        "What happens to acceleration if the force keeps changing?"
+      ],
+      "status": "has_abandonments",
+      "abandoned_count": 1,
+      "lost_count": 3,
+      "markers": [
+        {
+          "marker_id": "mk-03",
+          "at_depth": 2,
+          "signature_label": "answer_too_abstract",
+          "text": "Heads-up: some learners found the explanation here climbed to an abstract level quickly (around \"newtons-second-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        },
+        {
+          "marker_id": "mk-08",
+          "at_depth": 1,
+          "signature_label": "prerequisite_gap",
+          "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"newtons-second-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        }
+      ]
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_690tws7m76yzezqr9w59kyhy74",
+      "legacy_id": "L02.M01.O02",
+      "parent_id": null,
+      "module_id": "L02.M01",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Calculate acceleration from net force",
+      "canonical_question": "How do you calculate the acceleration of a simple one-body system from its net force and mass?",
+      "concepts": [
+        "newtons-second-law",
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "How do I combine forces that act at an angle to each other?",
+        "How do I get distance travelled from the acceleration?",
+        "What changes when the mass itself changes during the motion?"
+      ],
+      "status": "has_abandonments",
+      "abandoned_count": 1,
+      "lost_count": 0,
+      "markers": [
+        {
+          "marker_id": "mk-07",
+          "at_depth": 2,
+          "signature_label": "prerequisite_gap",
+          "text": "Heads-up: some learners found this branch assumes an earlier idea (around \"newtons-second-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        }
+      ]
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_6axczsbxhrg2rqs0vx5abpwbre",
+      "legacy_id": "L02.M01.O01/mass-versus-weight",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Mass versus weight",
+      "canonical_question": "What is the difference between mass and weight?",
+      "concepts": [
+        "mass"
+      ],
+      "seeds": [
+        "Why do I feel weightless in free fall?",
+        "How is g different on other planets?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_trf60jyfd0y474bnrysrmn81eb",
+      "legacy_id": "L02.M01.O01/how-mass-and-weight-differ",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "How mass and weight differ",
+      "canonical_question": "How do mass and weight differ, and why does it matter?",
+      "concepts": [
+        "mass"
+      ],
+      "seeds": [
+        "What is my weight on Mars?",
+        "Does a balance measure mass or weight?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_ggffh1fvydqrj3qxrbjbth3d5c",
+      "legacy_id": "L02.M01.O01/distinguishing-mass-from-weight",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Distinguishing mass from weight",
+      "canonical_question": "How can you tell mass and weight apart in a problem?",
+      "concepts": [
+        "mass"
+      ],
+      "seeds": [
+        "Why does a lift change my apparent weight?",
+        "How do astronauts measure mass in orbit?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_4waqkv81nfesn81t9z38tr2fhk",
+      "legacy_id": "L02.M01.O01/rearrange-fma-for-acceleration",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Rearranging F = ma for acceleration",
+      "canonical_question": "How do you rearrange F = ma to find acceleration from force and mass?",
+      "concepts": [
+        "newtons-second-law"
+      ],
+      "seeds": [
+        "What if several forces act at once?",
+        "How do units work out to m/s^2?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_n9spag47169tc6btqy9hb9b2rs",
+      "legacy_id": "L02.M01.O01/solving-fma-for-a",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Solving F = ma for the acceleration",
+      "canonical_question": "How do you solve F = ma when you want the acceleration?",
+      "concepts": [
+        "newtons-second-law"
+      ],
+      "seeds": [
+        "Where does friction enter this?",
+        "How would I find the force instead?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_5v8xn5v23ne5h2ddj2mwhd1s7b",
+      "legacy_id": "L02.M01.O01/do-heavier-objects-fall-faster",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Do heavier objects fall faster?",
+      "canonical_question": "Do heavier objects fall faster than lighter ones?",
+      "concepts": [
+        "mass",
+        "newtons-second-law"
+      ],
+      "seeds": [
+        "What changes once air resistance matters?",
+        "Why did this fool people for centuries?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_368kp31s4a7cr0zbd378r1aqrg",
+      "legacy_id": "L02.M01.O01/falling-speed-and-weight",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Falling speed and weight",
+      "canonical_question": "Does an object’s weight decide how fast it falls?",
+      "concepts": [
+        "mass",
+        "newtons-second-law"
+      ],
+      "seeds": [
+        "How does a parachute change the balance?",
+        "What is terminal velocity?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_hrf4v7jgpe35gq1wv6p9z5jg5z",
+      "legacy_id": "L02.M01.O01/why-mass-resists-acceleration",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Why mass resists acceleration",
+      "canonical_question": "Why does a larger mass need a larger force to reach the same acceleration?",
+      "concepts": [
+        "mass",
+        "newtons-second-law"
+      ],
+      "seeds": [
+        "How would I actually calculate the acceleration?",
+        "Is inertia the same as mass?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_1hqegs4h08e8v6db81sq5hh65f",
+      "legacy_id": "L02.M01.O02/why-acceleration-follows-net-force",
+      "parent_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Why acceleration follows the net force",
+      "canonical_question": "Why does the acceleration always point in the same direction as the net force?",
+      "concepts": [
+        "newtons-second-law",
+        "kinematic-quantities"
+      ],
+      "seeds": [
+        "How would I calculate that acceleration’s size?",
+        "What if the force direction changes over time?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_a9t5jsxy6t2me01kmqxmyky0qv",
+      "legacy_id": "L02.M01.O01/history-of-the-kilogram",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "A short history of the kilogram",
+      "canonical_question": "How was the kilogram historically defined as the unit of mass?",
+      "concepts": [
+        "mass"
+      ],
+      "seeds": [
+        "How does this connect to weight?",
+        "Why does a stable standard matter?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_2pdwf22epb95qhzwrv222k0z4z",
+      "legacy_id": "L02.M01.O01/fma-with-multiple-forces",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Using F = ma with several forces",
+      "canonical_question": "How do you apply F = ma when several forces act on the same body?",
+      "concepts": [
+        "newtons-second-law",
+        "net-force"
+      ],
+      "seeds": [
+        "How do I handle forces at an angle?",
+        "What if friction is unknown?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_7pfh1m0qjgkzajr6rjh004482v",
+      "legacy_id": "L02.M01.O02/acceleration-on-a-frictionless-incline",
+      "parent_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Acceleration on a frictionless incline",
+      "canonical_question": "How do you find the acceleration of a block sliding down a frictionless incline?",
+      "concepts": [
+        "newtons-second-law"
+      ],
+      "seeds": [
+        "What changes when friction is present?",
+        "How steep to get half of g?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_m85eq3pb43j42nj2e3shyrvtec",
+      "legacy_id": "L02.M01.O01/the-newton-as-a-unit",
+      "parent_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "The newton as a unit of force",
+      "canonical_question": "What is one newton of force in terms of mass and acceleration?",
+      "concepts": [
+        "newtons-second-law"
+      ],
+      "seeds": [
+        "How many newtons is my weight?",
+        "How does this relate to the kilogram?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_bc3hrf7cp6nv36xey4dvm0tf66",
+      "legacy_id": "L02.M01.O02/acceleration-of-two-connected-blocks",
+      "parent_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "module_id": "L02.M01",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Acceleration of two connected blocks",
+      "canonical_question": "How do you calculate the acceleration of two connected blocks pulled by one force?",
+      "concepts": [
+        "newtons-second-law"
+      ],
+      "seeds": [
+        "What if there is friction under a block?",
+        "How does a hanging block change it?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "legacy_id": "L02.M02.O01",
+      "parent_id": null,
+      "module_id": "L02.M02",
+      "kind": "objective",
+      "depth": 1,
+      "title": "Apply Newton's third law to action-reaction pairs",
+      "canonical_question": "How do you use Newton's third law to identify the equal and opposite force pairs in an interaction?",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "seeds": [
+        "If the forces are equal, why does the bullet fly but the gun barely move?",
+        "How does the third law relate to conservation of momentum?",
+        "Why are weight and the normal force not an action-reaction pair?"
+      ],
+      "status": "has_abandonments",
+      "abandoned_count": 1,
+      "lost_count": 1,
+      "markers": [
+        {
+          "marker_id": "mk-05",
+          "at_depth": 3,
+          "signature_label": "patience_exhausted",
+          "text": "Heads-up: some learners ran out of steam around here (around \"newtons-third-law\"). There's a plainer way through if you'd like it — and you can keep going exactly as you are. This is a note, not a detour."
+        }
+      ]
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_wabw6wgp8ve5bzejqbffr0ngwk",
+      "legacy_id": "L02.M02.O01/identifying-action-reaction-pairs",
+      "parent_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "module_id": "L02.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Identifying action-reaction pairs",
+      "canonical_question": "How do you identify the action-reaction force pair in an interaction?",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "seeds": [
+        "Why don’t the paired forces cancel?",
+        "How does this explain walking?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_bva3rtefd24kst0rcq6jgr1fqw",
+      "legacy_id": "L02.M02.O01/spotting-third-law-pairs",
+      "parent_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "module_id": "L02.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Spotting third-law pairs",
+      "canonical_question": "How can you spot which two forces form a Newton third-law pair?",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "seeds": [
+        "If forces are equal, why do outcomes differ?",
+        "What about gravity between Earth and Moon?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_gwed8er1mt1mqt68kyerrvzdd3",
+      "legacy_id": "L02.M02.O01/why-action-reaction-dont-cancel",
+      "parent_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "module_id": "L02.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "Why action-reaction forces don’t cancel",
+      "canonical_question": "Why don’t the equal and opposite forces of a third-law pair cancel each other out?",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "seeds": [
+        "How do I identify which two forces are the pair?",
+        "What if the masses are very different?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_s3tzns7py0b5x79g18dwwsw1y0",
+      "legacy_id": "L02.M02.O01/third-law-and-rocket-propulsion",
+      "parent_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "module_id": "L02.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "The third law and rocket propulsion",
+      "canonical_question": "How does Newton’s third law explain how a rocket accelerates?",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "seeds": [
+        "Does it still work in space?",
+        "How does exhaust speed affect thrust?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    },
+    {
+      "schema": "metadax.node/0.3-sim",
+      "id": "n_wmje1dxda4fg61tvt19xppv84d",
+      "legacy_id": "L02.M02.O01/third-law-and-walking",
+      "parent_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "module_id": "L02.M02",
+      "kind": "followup",
+      "depth": 2,
+      "title": "The third law and walking",
+      "canonical_question": "How does Newton’s third law explain how we walk forward?",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "seeds": [
+        "Why is walking on ice hard?",
+        "How is running different?"
+      ],
+      "status": "active",
+      "abandoned_count": 0,
+      "lost_count": 0,
+      "markers": []
+    }
+  ],
+  "seeds": [
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "legacy_node_id": "L01.M01.O01",
+      "seed": "How exactly do we add two forces that point in different directions?"
+    },
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "legacy_node_id": "L01.M01.O01",
+      "seed": "Can you show a worked example where the net force is not zero?"
+    },
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "legacy_node_id": "L01.M01.O01",
+      "seed": "How is inertia related to mass, and is it the same as weight?"
+    },
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "legacy_node_id": "L01.M01.O02",
+      "seed": "How do you add or subtract velocities that point in different directions?"
+    },
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "legacy_node_id": "L01.M01.O02",
+      "seed": "Why does turning at constant speed still count as acceleration?"
+    },
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "legacy_node_id": "L01.M01.O02",
+      "seed": "How will acceleration connect to force in Newton's second law?"
+    },
+    {
+      "node_id": "n_hzafa396f3f0cqy7xbjasfyfjv",
+      "legacy_node_id": "L01.M01.O01/adding-forces-different-directions",
+      "seed": "What if there are three forces instead of two?"
+    },
+    {
+      "node_id": "n_hzafa396f3f0cqy7xbjasfyfjv",
+      "legacy_node_id": "L01.M01.O01/adding-forces-different-directions",
+      "seed": "How do I split one force into components?"
+    },
+    {
+      "node_id": "n_rmfhyyq2rg960x6381yqfr2rcz",
+      "legacy_node_id": "L01.M01.O01/vector-sum-of-two-forces",
+      "seed": "How do I resolve a force into components?"
+    },
+    {
+      "node_id": "n_rmfhyyq2rg960x6381yqfr2rcz",
+      "legacy_node_id": "L01.M01.O01/vector-sum-of-two-forces",
+      "seed": "What angle does the resultant make?"
+    },
+    {
+      "node_id": "n_zqvaskk8ptd4bgc1w4sx0zyj50",
+      "legacy_node_id": "L01.M01.O01/combine-forces-with-vectors",
+      "seed": "Can the combined force be zero?"
+    },
+    {
+      "node_id": "n_zqvaskk8ptd4bgc1w4sx0zyj50",
+      "legacy_node_id": "L01.M01.O01/combine-forces-with-vectors",
+      "seed": "How does this connect to equilibrium?"
+    },
+    {
+      "node_id": "n_b716vz96bpcec2w48cm2v8cq5e",
+      "legacy_node_id": "L01.M01.O01/seatbelt-and-inertia",
+      "seed": "How do airbags add to this?"
+    },
+    {
+      "node_id": "n_b716vz96bpcec2w48cm2v8cq5e",
+      "legacy_node_id": "L01.M01.O01/seatbelt-and-inertia",
+      "seed": "Why does stopping over a longer time help?"
+    },
+    {
+      "node_id": "n_ne5jkapxx7kgt4d8zy9ce2wsm1",
+      "legacy_node_id": "L01.M01.O01/why-seatbelts-work",
+      "seed": "What is momentum, exactly?"
+    },
+    {
+      "node_id": "n_ne5jkapxx7kgt4d8zy9ce2wsm1",
+      "legacy_node_id": "L01.M01.O01/why-seatbelts-work",
+      "seed": "Why do crumple zones help?"
+    },
+    {
+      "node_id": "n_b319zdq408g5vgxft7w14sr9z4",
+      "legacy_node_id": "L01.M01.O02/acceleration-vs-velocity",
+      "seed": "Can something at rest be accelerating?"
+    },
+    {
+      "node_id": "n_b319zdq408g5vgxft7w14sr9z4",
+      "legacy_node_id": "L01.M01.O02/acceleration-vs-velocity",
+      "seed": "How does turning count as acceleration?"
+    },
+    {
+      "node_id": "n_bt4axgzhkdn1avfsakxj9q4yj1",
+      "legacy_node_id": "L01.M01.O02/how-acceleration-differs-from-velocity",
+      "seed": "Is deceleration just negative acceleration?"
+    },
+    {
+      "node_id": "n_bt4axgzhkdn1avfsakxj9q4yj1",
+      "legacy_node_id": "L01.M01.O02/how-acceleration-differs-from-velocity",
+      "seed": "How is each one measured?"
+    },
+    {
+      "node_id": "n_445z4yk22wsv4p7jw7cvb16pbj",
+      "legacy_node_id": "L01.M01.O02/why-velocity-is-a-vector",
+      "seed": "How do I convert a speed into a velocity?"
+    },
+    {
+      "node_id": "n_445z4yk22wsv4p7jw7cvb16pbj",
+      "legacy_node_id": "L01.M01.O02/why-velocity-is-a-vector",
+      "seed": "What units does velocity use?"
+    },
+    {
+      "node_id": "n_z2g3kxn8djysqscywrbxdnmtt7",
+      "legacy_node_id": "L01.M01.O01/why-inertia-is-not-a-force",
+      "seed": "How is inertia measured?"
+    },
+    {
+      "node_id": "n_z2g3kxn8djysqscywrbxdnmtt7",
+      "legacy_node_id": "L01.M01.O01/why-inertia-is-not-a-force",
+      "seed": "Why does a seatbelt help then?"
+    },
+    {
+      "node_id": "n_dpset1yw9ekaqrxwdz5jyknyan",
+      "legacy_node_id": "L01.M01.O01/measuring-force-in-newtons",
+      "seed": "How would I combine two such forces?"
+    },
+    {
+      "node_id": "n_dpset1yw9ekaqrxwdz5jyknyan",
+      "legacy_node_id": "L01.M01.O01/measuring-force-in-newtons",
+      "seed": "What is one newton?"
+    },
+    {
+      "node_id": "n_zqyxvsk0mfqnwwj21ymnvejjpy",
+      "legacy_node_id": "L01.M01.O02/reading-velocity-time-graphs",
+      "seed": "How does this differ from a position-time graph?"
+    },
+    {
+      "node_id": "n_zqyxvsk0mfqnwwj21ymnvejjpy",
+      "legacy_node_id": "L01.M01.O02/reading-velocity-time-graphs",
+      "seed": "What does a curved line mean?"
+    },
+    {
+      "node_id": "n_1e0zf7s8ccq4c4hqgjts2z7cxk",
+      "legacy_node_id": "L01.M01.O01/everyday-zero-net-force",
+      "seed": "Can a moving object have zero net force?"
+    },
+    {
+      "node_id": "n_1e0zf7s8ccq4c4hqgjts2z7cxk",
+      "legacy_node_id": "L01.M01.O01/everyday-zero-net-force",
+      "seed": "What breaks the balance?"
+    },
+    {
+      "node_id": "n_bc82z5z1sk7vehbwdxft29e83n",
+      "legacy_node_id": "L01.M01.O02/units-of-acceleration",
+      "seed": "How does this relate to g?"
+    },
+    {
+      "node_id": "n_bc82z5z1sk7vehbwdxft29e83n",
+      "legacy_node_id": "L01.M01.O02/units-of-acceleration",
+      "seed": "What are the units of force then?"
+    },
+    {
+      "node_id": "n_5rk1mnm3eqyx8agq17rq1nc1bq",
+      "legacy_node_id": "L01.M01.O01/friction-as-a-force",
+      "seed": "What is the difference between static and kinetic friction?"
+    },
+    {
+      "node_id": "n_5rk1mnm3eqyx8agq17rq1nc1bq",
+      "legacy_node_id": "L01.M01.O01/friction-as-a-force",
+      "seed": "How does surface roughness matter?"
+    },
+    {
+      "node_id": "n_wyz8a7st4x599c1f1eh1npgses",
+      "legacy_node_id": "L01.M01.O02/instantaneous-vs-average-velocity",
+      "seed": "How do I compute an average over several legs?"
+    },
+    {
+      "node_id": "n_wyz8a7st4x599c1f1eh1npgses",
+      "legacy_node_id": "L01.M01.O02/instantaneous-vs-average-velocity",
+      "seed": "Which does a speedometer show?"
+    },
+    {
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "legacy_node_id": "L01.M02.O01",
+      "seed": "How do I apply the first law separately to horizontal and vertical forces?"
+    },
+    {
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "legacy_node_id": "L01.M02.O01",
+      "seed": "What happens the instant the forces stop balancing?"
+    },
+    {
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "legacy_node_id": "L01.M02.O01",
+      "seed": "How is the first law different from the second law?"
+    },
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "legacy_node_id": "L01.M02.O02",
+      "seed": "What exactly is a fictitious force, and why do we sometimes use one?"
+    },
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "legacy_node_id": "L01.M02.O02",
+      "seed": "How large is the error in treating the Earth as inertial?"
+    },
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "legacy_node_id": "L01.M02.O02",
+      "seed": "Does the second law also require an inertial frame?"
+    },
+    {
+      "node_id": "n_jze8b33wyreg9jsvrew727943w",
+      "legacy_node_id": "L01.M02.O01/book-on-table-balanced-forces",
+      "seed": "What happens the instant the table breaks?"
+    },
+    {
+      "node_id": "n_jze8b33wyreg9jsvrew727943w",
+      "legacy_node_id": "L01.M02.O01/book-on-table-balanced-forces",
+      "seed": "How big can the normal force get?"
+    },
+    {
+      "node_id": "n_sreyjpmkggzx22zbz22chzwdsp",
+      "legacy_node_id": "L01.M02.O01/why-resting-objects-stay-put",
+      "seed": "When does the surface stop being able to support?"
+    },
+    {
+      "node_id": "n_sreyjpmkggzx22zbz22chzwdsp",
+      "legacy_node_id": "L01.M02.O01/why-resting-objects-stay-put",
+      "seed": "Is the normal force always vertical?"
+    },
+    {
+      "node_id": "n_7snyc53wz3be8m4y7a7850xmth",
+      "legacy_node_id": "L01.M02.O02/what-makes-a-frame-inertial",
+      "seed": "What forces appear in a non-inertial frame?"
+    },
+    {
+      "node_id": "n_7snyc53wz3be8m4y7a7850xmth",
+      "legacy_node_id": "L01.M02.O02/what-makes-a-frame-inertial",
+      "seed": "Is Earth truly inertial?"
+    },
+    {
+      "node_id": "n_vdxvbbgagg2q1gyx9kdet3z8rs",
+      "legacy_node_id": "L01.M02.O02/recognizing-inertial-frames",
+      "seed": "Why does the ground count as inertial?"
+    },
+    {
+      "node_id": "n_vdxvbbgagg2q1gyx9kdet3z8rs",
+      "legacy_node_id": "L01.M02.O02/recognizing-inertial-frames",
+      "seed": "What are fictitious forces?"
+    },
+    {
+      "node_id": "n_6q0v52jn58pr8fwjksncp285gm",
+      "legacy_node_id": "L01.M02.O01/why-equilibrium-means-zero-net-force",
+      "seed": "How do I show a specific object is in equilibrium?"
+    },
+    {
+      "node_id": "n_6q0v52jn58pr8fwjksncp285gm",
+      "legacy_node_id": "L01.M02.O01/why-equilibrium-means-zero-net-force",
+      "seed": "Does constant velocity count as equilibrium?"
+    },
+    {
+      "node_id": "n_4besk0tc1sejy9z8c9hs402rr9",
+      "legacy_node_id": "L01.M02.O02/why-earth-is-nearly-inertial",
+      "seed": "How do I decide if a frame is inertial at all?"
+    },
+    {
+      "node_id": "n_4besk0tc1sejy9z8c9hs402rr9",
+      "legacy_node_id": "L01.M02.O02/why-earth-is-nearly-inertial",
+      "seed": "What is a Foucault pendulum?"
+    },
+    {
+      "node_id": "n_4zec319zbn7tavcb4f7ed36vw6",
+      "legacy_node_id": "L01.M02.O01/first-law-constant-velocity",
+      "seed": "Why does the engine work if net force is zero?"
+    },
+    {
+      "node_id": "n_4zec319zbn7tavcb4f7ed36vw6",
+      "legacy_node_id": "L01.M02.O01/first-law-constant-velocity",
+      "seed": "How is this different from being parked?"
+    },
+    {
+      "node_id": "n_xbvj9qd0ans6k3tjqxyxc74ztb",
+      "legacy_node_id": "L01.M02.O02/fictitious-forces-in-accelerating-frames",
+      "seed": "Is centrifugal force real?"
+    },
+    {
+      "node_id": "n_xbvj9qd0ans6k3tjqxyxc74ztb",
+      "legacy_node_id": "L01.M02.O02/fictitious-forces-in-accelerating-frames",
+      "seed": "How do I switch back to an inertial frame?"
+    },
+    {
+      "node_id": "n_bsc7p5b6twh6tw35q7609cspha",
+      "legacy_node_id": "L01.M02.O01/tension-in-a-rope-at-rest",
+      "seed": "What if the weight is accelerating?"
+    },
+    {
+      "node_id": "n_bsc7p5b6twh6tw35q7609cspha",
+      "legacy_node_id": "L01.M02.O01/tension-in-a-rope-at-rest",
+      "seed": "How do two ropes share a load?"
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "legacy_node_id": "L02.M01.O01",
+      "seed": "How do I find the net force before using F = ma?"
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "legacy_node_id": "L02.M01.O01",
+      "seed": "Why is weight equal to mass times gravitational field strength?"
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "legacy_node_id": "L02.M01.O01",
+      "seed": "What happens to acceleration if the force keeps changing?"
+    },
+    {
+      "node_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "legacy_node_id": "L02.M01.O02",
+      "seed": "How do I combine forces that act at an angle to each other?"
+    },
+    {
+      "node_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "legacy_node_id": "L02.M01.O02",
+      "seed": "How do I get distance travelled from the acceleration?"
+    },
+    {
+      "node_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "legacy_node_id": "L02.M01.O02",
+      "seed": "What changes when the mass itself changes during the motion?"
+    },
+    {
+      "node_id": "n_6axczsbxhrg2rqs0vx5abpwbre",
+      "legacy_node_id": "L02.M01.O01/mass-versus-weight",
+      "seed": "Why do I feel weightless in free fall?"
+    },
+    {
+      "node_id": "n_6axczsbxhrg2rqs0vx5abpwbre",
+      "legacy_node_id": "L02.M01.O01/mass-versus-weight",
+      "seed": "How is g different on other planets?"
+    },
+    {
+      "node_id": "n_trf60jyfd0y474bnrysrmn81eb",
+      "legacy_node_id": "L02.M01.O01/how-mass-and-weight-differ",
+      "seed": "What is my weight on Mars?"
+    },
+    {
+      "node_id": "n_trf60jyfd0y474bnrysrmn81eb",
+      "legacy_node_id": "L02.M01.O01/how-mass-and-weight-differ",
+      "seed": "Does a balance measure mass or weight?"
+    },
+    {
+      "node_id": "n_ggffh1fvydqrj3qxrbjbth3d5c",
+      "legacy_node_id": "L02.M01.O01/distinguishing-mass-from-weight",
+      "seed": "Why does a lift change my apparent weight?"
+    },
+    {
+      "node_id": "n_ggffh1fvydqrj3qxrbjbth3d5c",
+      "legacy_node_id": "L02.M01.O01/distinguishing-mass-from-weight",
+      "seed": "How do astronauts measure mass in orbit?"
+    },
+    {
+      "node_id": "n_4waqkv81nfesn81t9z38tr2fhk",
+      "legacy_node_id": "L02.M01.O01/rearrange-fma-for-acceleration",
+      "seed": "What if several forces act at once?"
+    },
+    {
+      "node_id": "n_4waqkv81nfesn81t9z38tr2fhk",
+      "legacy_node_id": "L02.M01.O01/rearrange-fma-for-acceleration",
+      "seed": "How do units work out to m/s^2?"
+    },
+    {
+      "node_id": "n_n9spag47169tc6btqy9hb9b2rs",
+      "legacy_node_id": "L02.M01.O01/solving-fma-for-a",
+      "seed": "Where does friction enter this?"
+    },
+    {
+      "node_id": "n_n9spag47169tc6btqy9hb9b2rs",
+      "legacy_node_id": "L02.M01.O01/solving-fma-for-a",
+      "seed": "How would I find the force instead?"
+    },
+    {
+      "node_id": "n_5v8xn5v23ne5h2ddj2mwhd1s7b",
+      "legacy_node_id": "L02.M01.O01/do-heavier-objects-fall-faster",
+      "seed": "What changes once air resistance matters?"
+    },
+    {
+      "node_id": "n_5v8xn5v23ne5h2ddj2mwhd1s7b",
+      "legacy_node_id": "L02.M01.O01/do-heavier-objects-fall-faster",
+      "seed": "Why did this fool people for centuries?"
+    },
+    {
+      "node_id": "n_368kp31s4a7cr0zbd378r1aqrg",
+      "legacy_node_id": "L02.M01.O01/falling-speed-and-weight",
+      "seed": "How does a parachute change the balance?"
+    },
+    {
+      "node_id": "n_368kp31s4a7cr0zbd378r1aqrg",
+      "legacy_node_id": "L02.M01.O01/falling-speed-and-weight",
+      "seed": "What is terminal velocity?"
+    },
+    {
+      "node_id": "n_hrf4v7jgpe35gq1wv6p9z5jg5z",
+      "legacy_node_id": "L02.M01.O01/why-mass-resists-acceleration",
+      "seed": "How would I actually calculate the acceleration?"
+    },
+    {
+      "node_id": "n_hrf4v7jgpe35gq1wv6p9z5jg5z",
+      "legacy_node_id": "L02.M01.O01/why-mass-resists-acceleration",
+      "seed": "Is inertia the same as mass?"
+    },
+    {
+      "node_id": "n_1hqegs4h08e8v6db81sq5hh65f",
+      "legacy_node_id": "L02.M01.O02/why-acceleration-follows-net-force",
+      "seed": "How would I calculate that acceleration’s size?"
+    },
+    {
+      "node_id": "n_1hqegs4h08e8v6db81sq5hh65f",
+      "legacy_node_id": "L02.M01.O02/why-acceleration-follows-net-force",
+      "seed": "What if the force direction changes over time?"
+    },
+    {
+      "node_id": "n_a9t5jsxy6t2me01kmqxmyky0qv",
+      "legacy_node_id": "L02.M01.O01/history-of-the-kilogram",
+      "seed": "How does this connect to weight?"
+    },
+    {
+      "node_id": "n_a9t5jsxy6t2me01kmqxmyky0qv",
+      "legacy_node_id": "L02.M01.O01/history-of-the-kilogram",
+      "seed": "Why does a stable standard matter?"
+    },
+    {
+      "node_id": "n_2pdwf22epb95qhzwrv222k0z4z",
+      "legacy_node_id": "L02.M01.O01/fma-with-multiple-forces",
+      "seed": "How do I handle forces at an angle?"
+    },
+    {
+      "node_id": "n_2pdwf22epb95qhzwrv222k0z4z",
+      "legacy_node_id": "L02.M01.O01/fma-with-multiple-forces",
+      "seed": "What if friction is unknown?"
+    },
+    {
+      "node_id": "n_7pfh1m0qjgkzajr6rjh004482v",
+      "legacy_node_id": "L02.M01.O02/acceleration-on-a-frictionless-incline",
+      "seed": "What changes when friction is present?"
+    },
+    {
+      "node_id": "n_7pfh1m0qjgkzajr6rjh004482v",
+      "legacy_node_id": "L02.M01.O02/acceleration-on-a-frictionless-incline",
+      "seed": "How steep to get half of g?"
+    },
+    {
+      "node_id": "n_m85eq3pb43j42nj2e3shyrvtec",
+      "legacy_node_id": "L02.M01.O01/the-newton-as-a-unit",
+      "seed": "How many newtons is my weight?"
+    },
+    {
+      "node_id": "n_m85eq3pb43j42nj2e3shyrvtec",
+      "legacy_node_id": "L02.M01.O01/the-newton-as-a-unit",
+      "seed": "How does this relate to the kilogram?"
+    },
+    {
+      "node_id": "n_bc3hrf7cp6nv36xey4dvm0tf66",
+      "legacy_node_id": "L02.M01.O02/acceleration-of-two-connected-blocks",
+      "seed": "What if there is friction under a block?"
+    },
+    {
+      "node_id": "n_bc3hrf7cp6nv36xey4dvm0tf66",
+      "legacy_node_id": "L02.M01.O02/acceleration-of-two-connected-blocks",
+      "seed": "How does a hanging block change it?"
+    },
+    {
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "legacy_node_id": "L02.M02.O01",
+      "seed": "If the forces are equal, why does the bullet fly but the gun barely move?"
+    },
+    {
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "legacy_node_id": "L02.M02.O01",
+      "seed": "How does the third law relate to conservation of momentum?"
+    },
+    {
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "legacy_node_id": "L02.M02.O01",
+      "seed": "Why are weight and the normal force not an action-reaction pair?"
+    },
+    {
+      "node_id": "n_wabw6wgp8ve5bzejqbffr0ngwk",
+      "legacy_node_id": "L02.M02.O01/identifying-action-reaction-pairs",
+      "seed": "Why don’t the paired forces cancel?"
+    },
+    {
+      "node_id": "n_wabw6wgp8ve5bzejqbffr0ngwk",
+      "legacy_node_id": "L02.M02.O01/identifying-action-reaction-pairs",
+      "seed": "How does this explain walking?"
+    },
+    {
+      "node_id": "n_bva3rtefd24kst0rcq6jgr1fqw",
+      "legacy_node_id": "L02.M02.O01/spotting-third-law-pairs",
+      "seed": "If forces are equal, why do outcomes differ?"
+    },
+    {
+      "node_id": "n_bva3rtefd24kst0rcq6jgr1fqw",
+      "legacy_node_id": "L02.M02.O01/spotting-third-law-pairs",
+      "seed": "What about gravity between Earth and Moon?"
+    },
+    {
+      "node_id": "n_gwed8er1mt1mqt68kyerrvzdd3",
+      "legacy_node_id": "L02.M02.O01/why-action-reaction-dont-cancel",
+      "seed": "How do I identify which two forces are the pair?"
+    },
+    {
+      "node_id": "n_gwed8er1mt1mqt68kyerrvzdd3",
+      "legacy_node_id": "L02.M02.O01/why-action-reaction-dont-cancel",
+      "seed": "What if the masses are very different?"
+    },
+    {
+      "node_id": "n_s3tzns7py0b5x79g18dwwsw1y0",
+      "legacy_node_id": "L02.M02.O01/third-law-and-rocket-propulsion",
+      "seed": "Does it still work in space?"
+    },
+    {
+      "node_id": "n_s3tzns7py0b5x79g18dwwsw1y0",
+      "legacy_node_id": "L02.M02.O01/third-law-and-rocket-propulsion",
+      "seed": "How does exhaust speed affect thrust?"
+    },
+    {
+      "node_id": "n_wmje1dxda4fg61tvt19xppv84d",
+      "legacy_node_id": "L02.M02.O01/third-law-and-walking",
+      "seed": "Why is walking on ice hard?"
+    },
+    {
+      "node_id": "n_wmje1dxda4fg61tvt19xppv84d",
+      "legacy_node_id": "L02.M02.O01/third-law-and-walking",
+      "seed": "How is running different?"
+    }
+  ]
+}

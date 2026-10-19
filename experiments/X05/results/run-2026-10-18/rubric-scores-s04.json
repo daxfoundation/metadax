@@ -1,0 +1,14 @@
+[
+  {"turn": 0, "leads": false, "reason": "Open question asking learner's own prediction with no answer implied."},
+  {"turn": 1, "leads": false, "reason": "Open hypothetical asking for consequences; no answer embedded or implied."},
+  {"turn": 2, "leads": false, "reason": "Asks learner to recall or guess; no structural details revealed."},
+  {"turn": 3, "leads": true, "reason": "'what property of a substance might determine whether it can slip through' narrows to solubility/polarity as the one obvious answer."},
+  {"turn": 4, "leads": true, "reason": "'fatty interior' strongly implies hydrophobic barrier blocks charged particles — answer is embedded in the question."},
+  {"turn": 5, "leads": false, "reason": "Open guess question; 'moving substances' is broad and doesn't reveal the specific answer."},
+  {"turn": 6, "leads": true, "reason": "Sets up high-outside/low-inside scenario, making 'inward movement' the only obvious answer; diffusion principle essentially stated."},
+  {"turn": 7, "leads": true, "reason": "'cannot provide' frames active transport as the obvious answer by eliminating diffusion explicitly."},
+  {"turn": 8, "leads": false, "reason": "Asks what water responds to without revealing the answer; open reasoning question."},
+  {"turn": 9, "leads": true, "reason": "'water leaves the cell' states the mechanism; predicting shrinkage is trivially obvious from that given information."},
+  {"turn": 10, "leads": false, "reason": "Open comparison question asking learner to reason about advantage; no answer implied."},
+  {"turn": 11, "leads": false, "reason": "Synthesis question asking learner to articulate their own understanding; no answers provided."}
+]

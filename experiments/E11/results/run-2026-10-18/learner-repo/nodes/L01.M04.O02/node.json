@@ -1,0 +1,16 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M04.O02",
+  "title": "What is deduplication?",
+  "concept": "duplicates",
+  "week": 4,
+  "visibility": "public",
+  "core": {
+    "body": "Deduplication identifies and removes exact or near-identical rows. Always confirm why duplicates exist before deleting; sometimes they are legitimate repeated events.",
+    "bloom_level": "understand"
+  },
+  "created_at": "2026-12-01T00:00:00Z",
+  "updated_at": "2026-12-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

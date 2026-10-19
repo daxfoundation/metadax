@@ -1,0 +1,15 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "prv-07",
+  "title": "Salary negotiation context",
+  "concept": "personal-note",
+  "week": 5,
+  "visibility": "private",
+  "core": {
+    "body": "If I can demonstrate SQL competency I am planning to ask for a pay rise in January. This is why the SQL week matters so much to me personally. Do not want this context shared with anyone."
+  },
+  "created_at": "2026-013-01T00:00:00Z",
+  "updated_at": "2026-013-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

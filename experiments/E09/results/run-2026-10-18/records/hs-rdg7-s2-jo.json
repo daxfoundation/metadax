@@ -1,0 +1,36 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s2-jo",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 2,
+    "title": "Sounds That Stick",
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-15",
+  "attempted": [
+    {
+      "game": "Word Chain Race",
+      "answered": 14,
+      "right": 11
+    }
+  ],
+  "reached": [
+    {
+      "game": "Word Chain Race",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "reversed sounds in short blends",
+      "count": 2
+    }
+  ],
+  "learner_words": "I told Pip you have to slide the sounds together not just say them next to each other.",
+  "guide_note": "Wednesday. Jo finished the Word Chain Race session before I had even finished making tea. Got 11 of 14 and hit level 2. The two blend reversals are worth noting — Jo does not always slow down enough on the short blends and rushes the order. After finishing, Jo spontaneously helped Pip with the same issue, which was good to see. I did not ask Jo to do that. Jo explained it clearly and invented a little gesture for it. I will mention the blend-order thing again next week as a gentle focus point, since it showed up for both kids.",
+  "generated_by": "parent-filed"
+}

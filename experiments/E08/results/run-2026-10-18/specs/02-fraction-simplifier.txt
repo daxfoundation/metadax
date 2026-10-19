@@ -1,0 +1,33 @@
+SPEC: Fraction Simplifier with Steps
+
+Export a named ES-module function:
+
+  export function simplifyFraction(numerator, denominator)
+
+Parameters
+  numerator   – integer (may be 0 or negative)
+  denominator – positive integer
+
+Returns an object:
+  {
+    num:   <simplified numerator>,
+    den:   <simplified denominator>,
+    steps: [ { description: string, num: number, den: number }, ... ]
+  }
+
+Algorithm
+  Use the Euclidean algorithm to find GCD(numerator, denominator).
+  Divide both by GCD to get the simplified fraction.
+
+The steps array must contain at least:
+  1. A step showing the original fraction
+  2. A step showing the GCD found
+  3. A step showing the result after dividing by GCD
+
+If already in simplest form (GCD = 1), steps may note "already simplified."
+
+Examples
+  simplifyFraction(6,  8)  → { num: 3, den: 4, steps: [...] }
+  simplifyFraction(5,  7)  → { num: 5, den: 7, steps: [...] }
+  simplifyFraction(12, 18) → { num: 2, den: 3, steps: [...] }
+  simplifyFraction(100, 25) → { num: 4, den: 1, steps: [...] }

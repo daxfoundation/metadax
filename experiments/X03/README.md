@@ -2,7 +2,7 @@
 
 *A teacher-mode profile: stages owned by the teacher, the teacher with a companion, or the system — with override records.*
 
-**Status: designed.**
+**Status: done (simulated, first run 2026-10-18).**
 
 ## Question
 
@@ -79,3 +79,8 @@ the system is genuinely weak, and whether teachers feel in control.
 
 Rides on **E03** + **E04 MP-06**. Override records feed **BOTTLENECKS.md**. Related to
 **X10** (companion carries the record across years).
+
+## Results
+
+- `results/2026-10-18-nurses-walkthrough.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.

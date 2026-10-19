@@ -55,9 +55,12 @@ Ideally after E04 has certified the prompts.
 
 ## Status
 
-done (first cut, 2026-09-27; automated runs with Claude, not yet a human pilot)
+done (simulated, first run 2026-09-27; further automated run 2026-10-18)
 
 ## Results
+
+- `results/2026-10-18-probability-guide-run.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.
 
 - `results/2026-09-27-teacher-run-newtons-laws.md` -- run 1: the Claude Code client in
   this repository generated a seven-objective Newton's laws course into a private sandbox

@@ -1,0 +1,26 @@
+{
+  "id": "Q60",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "reuse",
+    "target_id": "n_tr08gf5ywx8kpzhvstmrcq3ndb",
+    "confidence": 0.82,
+    "resolved": {
+      "question": "How does the cell balance NADH production between the cytoplasm and the mitochondrial matrix?",
+      "canonical_question": "How does the cell balance NADH production between the cytoplasm and the mitochondrial matrix?",
+      "intent": "connect",
+      "scope": "adjacent"
+    },
+    "node": null,
+    "seeds": [
+      "How does the glycerol-3-phosphate shuttle differ from the malate-aspartate shuttle?",
+      "Why can't NADH cross the inner mitochondrial membrane directly?",
+      "How does cytoplasmic NADH transfer affect the total ATP yield from one glucose?"
+    ],
+    "rendering_md": "The node **Malate-aspartate shuttle** answers your question directly. Glycolysis in the cytoplasm generates NADH that cannot cross the inner mitochondrial membrane on its own. The malate-aspartate shuttle solves this: malate carries the reducing equivalents into the matrix, and aspartate carries the carbon skeleton back out. The net result is that cytoplasmic NADH is effectively oxidised inside the mitochondrion, keeping the cytoplasmic and matrix NADH pools balanced for continuous ATP production.\n\nKeep exploring:\n1. How does the glycerol-3-phosphate shuttle differ from the malate-aspartate shuttle?\n2. Why can't NADH cross the inner mitochondrial membrane directly?\n3. How does cytoplasmic NADH transfer affect the total ATP yield from one glucose?",
+    "options": [],
+    "warnings": [],
+    "missing": []
+  }
+}

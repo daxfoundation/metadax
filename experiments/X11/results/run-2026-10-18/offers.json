@@ -1,0 +1,49 @@
+{
+  "schema": "x11.offers/0.3-sim",
+  "wording": "neutral (B16): no scarcity/novelty; banned-phrase gate passed",
+  "offer_count": 6,
+  "offers": [
+    {
+      "offer_id": "of-s-01",
+      "kind": "open_question",
+      "from_node": "n_fka1p325m2tbp308vs317e8ta7",
+      "seed": "How do you add or subtract velocities that point in different directions?",
+      "text": "A question the course leaves open: \"How do you add or subtract velocities that point in different directions?\". Open it if it draws you, or skip it — no wrong choice."
+    },
+    {
+      "offer_id": "of-s-02",
+      "kind": "open_question",
+      "from_node": "n_fka1p325m2tbp308vs317e8ta7",
+      "seed": "How will acceleration connect to force in Newton's second law?",
+      "text": "A question the course leaves open: \"How will acceleration connect to force in Newton's second law?\". Open it if it draws you, or skip it — no wrong choice."
+    },
+    {
+      "offer_id": "of-s-03",
+      "kind": "open_question",
+      "from_node": "n_hzafa396f3f0cqy7xbjasfyfjv",
+      "seed": "What if there are three forces instead of two?",
+      "text": "A question the course leaves open: \"What if there are three forces instead of two?\". Open it if it draws you, or skip it — no wrong choice."
+    },
+    {
+      "offer_id": "of-s-04",
+      "kind": "open_question",
+      "from_node": "n_hzafa396f3f0cqy7xbjasfyfjv",
+      "seed": "How do I split one force into components?",
+      "text": "A question the course leaves open: \"How do I split one force into components?\". Open it if it draws you, or skip it — no wrong choice."
+    },
+    {
+      "offer_id": "of-s-05",
+      "kind": "open_question",
+      "from_node": "n_rmfhyyq2rg960x6381yqfr2rcz",
+      "seed": "How do I resolve a force into components?",
+      "text": "A question the course leaves open: \"How do I resolve a force into components?\". Open it if it draws you, or skip it — no wrong choice."
+    },
+    {
+      "offer_id": "of-s-06",
+      "kind": "open_question",
+      "from_node": "n_rmfhyyq2rg960x6381yqfr2rcz",
+      "seed": "What angle does the resultant make?",
+      "text": "A question the course leaves open: \"What angle does the resultant make?\". Open it if it draws you, or skip it — no wrong choice."
+    }
+  ]
+}

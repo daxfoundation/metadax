@@ -1,0 +1,39 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s1-etienne",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 1,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-13",
+  "attempted": [
+    {
+      "game": "Dino Sound Game",
+      "answered": 11,
+      "right": 8
+    }
+  ],
+  "reached": [
+    {
+      "game": "Dino Sound Game",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "said the sounds but they stayed apart",
+      "count": 2
+    },
+    {
+      "name": "guessed from the first sound",
+      "count": 1
+    }
+  ],
+  "learner_words": "Marlo said the dinosaur one was her favourite because the pictures were funny. She told me she knew the sounds but \"they just wouldn't stick together\" — which honestly felt like such a perfect way to describe exactly what her dyslexia does to her blending.",
+  "guide_note": "OK so Monday was a big day. We did the Dino Sound Game and I have to say Marlo handled it really well considering how rough last week was. She got 8 out of 11 which I was genuinely proud of. Her main issue — and her speech-language therapist has talked about this a LOT — is that she can produce each phoneme correctly in isolation but the blending step just doesn't happen automatically the way it does for neurotypical kids. Her ADHD means she also sometimes just grabs the first sound and runs with it rather than waiting to process the whole thing, which is what happened once today. We didn't push for level 3 because I could see she was getting tired and a little dysregulated. I'm going to email her OT at marlo.support@familytherapy.org to mention how the blending is going because I think there's a connection to her auditory processing piece. Also Marlo wanted me to tell everyone that she played this — she already posted about it on @marloreads if anyone wants to follow her progress! I found a great breakdown of phonemic awareness stages at https://www.readingresourceshub.net/phoneme-blending-stages that I've been using to understand where she is developmentally. Keeping sessions to about 20 minutes on days like this.",
+  "generated_by": "parent-filed"
+}

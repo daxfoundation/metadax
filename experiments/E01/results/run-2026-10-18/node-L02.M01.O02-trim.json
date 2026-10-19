@@ -1,0 +1,13 @@
+{
+  "id": "L02.M01.O02",
+  "schema": "metadax.node/0.3",
+  "depth": 1,
+  "title": "Explain and calculate conditional probability P(A given B)",
+  "seeds": [
+    "How does conditional probability connect to the idea of independent events?",
+    "Can you use a frequency table instead of the formula to find P(A given B)?",
+    "Why does the base-rate fallacy cause problems in medical diagnosis and legal reasoning?"
+  ],
+  "validate": "OK",
+  "content_sha256": "414695f4d97c3779..."
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.3/dead-end-shape.schema.json",
+  "title": "metadax.dead-end-shape/0.3",
+  "_why": "X04 — the content-free SHAPE of a stall. B12: resolves to a STABLE opaque objective node_id (the canonical spot), not a per-learner minted id, so co-located stalls share one id. Consent-gated.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["session_id", "node_id", "depth", "kind", "stuck_signature", "concept_set"],
+  "properties": {
+    "session_id": { "type": "string" },
+    "node_id": { "type": "string", "pattern": "^(L\\d\\d\\.M\\d\\d\\.O\\d\\d|n_[0-9a-hjkmnp-tv-z]{26})$" },
+    "depth": { "anyOf": [ { "type": "integer", "minimum": 1 }, { "type": "null" } ] },
+    "kind": { "enum": ["lost", "abandon"] },
+    "stuck_signature": {
+      "enum": ["answer_too_abstract", "prerequisite_gap", "patience_exhausted", "lost_the_thread", "depth_without_payoff", "ambiguous_next", "other"],
+      "_why": "B11 — canonical vocabulary; an out-of-vocab value is coerced to 'other', never allowed to fork a new named hole."
+    },
+    "concept_set": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" } }
+  }
+}

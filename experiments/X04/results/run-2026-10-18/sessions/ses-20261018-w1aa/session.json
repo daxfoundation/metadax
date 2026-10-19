@@ -1,0 +1,31 @@
+{
+  "session_id": "ses-20261018-w1aa",
+  "wave": 1,
+  "display_name": "Dani",
+  "profile_summary": "18-25, skateboarder, no physics since school, high patience, not loss-prone, completes tasks",
+  "turns": 8,
+  "concepts_touched": [
+    "newtons-third-law",
+    "newtons-second-law",
+    "mass",
+    "net-force",
+    "inertia",
+    "kinematic-quantities"
+  ],
+  "followed_seeds": [
+    "If the forces are equal, why does the bullet fly but the gun barely move?",
+    "Why is weight equal to mass times gravitational field strength?",
+    "How is inertia related to mass, and is it the same as weight?",
+    "How do I get distance travelled from the acceleration?"
+  ],
+  "consent": { "share_abandoned_shape": true },
+  "stalls": [
+    {
+      "node_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "depth": 2,
+      "kind": "abandon",
+      "stuck_signature": "prerequisite_gap",
+      "concepts": ["kinematic-quantities"]
+    }
+  ]
+}

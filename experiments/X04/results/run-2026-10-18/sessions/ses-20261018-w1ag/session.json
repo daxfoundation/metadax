@@ -1,0 +1,113 @@
+{
+  "session_id": "ses-20261018-w1ag",
+  "wave": 1,
+  "display_name": "Ute",
+  "profile_summary": "German adult learner, 36-55, no science background, gardening hobbyist, medium patience, lost-prone but persistent — engages through concrete everyday analogies, stalls on abstract notation and unexplained prerequisites.",
+  "turns": [
+    {
+      "turn": 1,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed_followed": "How is inertia related to mass, and is it the same as weight?",
+      "learner_input": "Okay, so I want to understand — inertia and mass, are they the same thing? And is weight also the same? I always thought heavy things are harder to move, but I'm not sure if that's inertia or weight or what.",
+      "concepts_touched": ["inertia", "mass"],
+      "notes": "Engages naturally; connects to everyday experience of moving heavy garden pots."
+    },
+    {
+      "turn": 2,
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "seed_followed": "How exactly do we add two forces that point in different directions?",
+      "learner_input": "Hmm, you mentioned 'vector addition' and 'resultant' — I don't know what a vector is. Can you explain net force without those words? Like, what actually happens when I push a plant pot from one side and the wind pushes from another side?",
+      "concepts_touched": ["net-force"],
+      "notes": "Stall triggered here — explanation used vector terminology without grounding it. Ute re-asks using her own context.",
+      "stall": true
+    },
+    {
+      "turn": 3,
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "seed_followed": "Why does turning at constant speed still count as acceleration?",
+      "learner_input": "Wait, this is strange — you're telling me that if I'm cycling around a roundabout at the same speed, I'm still accelerating? That doesn't feel right. Can you explain that again?",
+      "concepts_touched": ["kinematic-quantities"],
+      "notes": "Surprised but curious; the counterintuitive hook holds her attention."
+    },
+    {
+      "turn": 4,
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "seed_followed": "What happens the instant the forces stop balancing?",
+      "learner_input": "So if a book is sitting on a table, the forces are balanced and it stays still — I think I get that. But what exactly happens the moment the table breaks? Does it fly up or fall?",
+      "concepts_touched": ["newtons-first-law", "net-force"],
+      "notes": "Concrete scenario works well for her; she is following the logic here."
+    },
+    {
+      "turn": 5,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "seed_followed": null,
+      "learner_input": "Okay now it says F equals m times a. I really don't understand what this means. What even is a 'unit of force'? Kilogram-meter per second squared sounds completely made up to me. I feel lost again.",
+      "concepts_touched": ["newtons-second-law", "mass"],
+      "notes": "Hard stall — prerequisite gap around SI units and dimensional reasoning. Ute disengages momentarily.",
+      "stall": true
+    },
+    {
+      "turn": 6,
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "seed_followed": "Why is weight equal to mass times gravitational field strength?",
+      "learner_input": "Alright, let me try this one — why does my weight change if I go to the moon, but my mass stays the same? I've heard this before but I don't really understand it.",
+      "concepts_touched": ["mass", "newtons-second-law"],
+      "notes": "Partial recovery — the moon/weight distinction is memorable. Still shaky on F=ma formula itself."
+    },
+    {
+      "turn": 7,
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "seed_followed": "If the forces are equal, why does the bullet fly but the gun barely move?",
+      "learner_input": "Okay, this one I actually want to understand — so the gun pushes the bullet, and the bullet pushes back on the gun with the same force? But the bullet goes flying and the gun just kicks a little. How can the force be the same?",
+      "concepts_touched": ["newtons-third-law", "mass"],
+      "notes": "Concrete example re-engages Ute. She is asking a genuine conceptual question."
+    },
+    {
+      "turn": 8,
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "seed_followed": "Why are weight and the normal force not an action-reaction pair?",
+      "learner_input": "So the normal force and gravity are not an action-reaction pair? I thought they were because they're both on the book and they're equal. I'm a bit confused again but I'll try to follow.",
+      "concepts_touched": ["newtons-third-law", "net-force"],
+      "notes": "Mild confusion resurfacing at end of session; patience holding but thread is getting thin."
+    }
+  ],
+  "concepts_touched": [
+    "inertia",
+    "mass",
+    "net-force",
+    "kinematic-quantities",
+    "newtons-first-law",
+    "newtons-second-law",
+    "newtons-third-law"
+  ],
+  "followed_seeds": [
+    "How is inertia related to mass, and is it the same as weight?",
+    "How exactly do we add two forces that point in different directions?",
+    "Why does turning at constant speed still count as acceleration?",
+    "What happens the instant the forces stop balancing?",
+    "Why is weight equal to mass times gravitational field strength?",
+    "If the forces are equal, why does the bullet fly but the gun barely move?",
+    "Why are weight and the normal force not an action-reaction pair?"
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "stalls": [
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "answer_too_abstract",
+      "concepts": ["net-force"],
+      "detail": "Explanation of net force introduced 'vector addition' and 'resultant' without grounding the terms. Learner has no prior geometry or physics vocabulary to anchor these. She re-asked using a concrete gardening scenario (pot + wind) to try to recover."
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "depth": 1,
+      "kind": "lost",
+      "stuck_signature": "prerequisite_gap",
+      "concepts": ["newtons-second-law", "mass"],
+      "detail": "F=ma introduced SI units (kg·m/s²) and dimensional analysis without bridging from everyday quantities. Learner has no prior exposure to scientific notation or unit reasoning. She explicitly said the units 'sound completely made up' and expressed feeling lost."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+SIMULATED — pid=c-e1, arm=C (no technique), lang=en, subject=archery bow
+
+[GUIDE 1]: Great observation, Nadia. You've correctly identified Newton's Third Law — equal and opposite forces. But here's a question to think about: when the string pulls your fingers and your fingers pull the string, which object is each force acting *on*? The force on your fingers acts on *you*. The force on the string acts on *the string*. Are those two forces acting on the same object, or different objects?
+
+[LEARNER 1]: Hmm... I guess they're on different objects — one on me, one on the string. But I still don't see why that matters. If they're equal and opposite, don't they still cancel?
+
+[RESOLVED 1]: NO
+
+[GUIDE 2]: They would cancel if they were both acting on the same object — then yes, net force on that object would be zero. But cancellation only happens when forces share the same object. Your fingers feel a pull from the string — that affects *your* acceleration. The string feels a pull from your fingers — that affects *the string's* acceleration. Now think about the arrow: what forces are acting directly on the arrow when you release? Is your hand one of them?
+
+[LEARNER 2]: Oh... when I release, my hand isn't really touching the arrow — the string is. So the force on the arrow comes from the string, not from my fingers. And the reaction force goes back to my fingers, not to the arrow. So the arrow only feels the string pushing it, and there's no opposing force canceling that out on the arrow itself?
+
+[RESOLVED 2]: YES
+
+[SUMMARY]: pid=c-e1, attempts=2, resolved=YES

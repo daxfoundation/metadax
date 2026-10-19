@@ -1,0 +1,59 @@
+{
+  "schema": "metadax.progress/0.2",
+  "learner_id": "lrn-b4shpjal",
+  "course_id": "probability-adults",
+  "device_id": "dev-e03rn3",
+  "snapshot_date": "2026-10-18",
+  "updated_at": "2026-10-18T21:04:02Z",
+  "concepts": {
+    "random-event": {
+      "competency": 78,
+      "levels": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help"
+      },
+      "misconceptions_seen": [],
+      "last_seen": "2026-10-18T21:03:38Z"
+    }
+  },
+  "objectives": {
+    "L01.M01.O01": "in_progress",
+    "L01.M01.O02": "not_started",
+    "L01.M01.O03": "not_started",
+    "L02.M01.O01": "not_started",
+    "L02.M01.O02": "not_started"
+  },
+  "followups_asked": [
+    "n_a3dwz4c8spkj0mqkctxghyhgqm",
+    "n_s6n2dy8rhtsj5dpbfttpg77mhc",
+    "n_rqp1q2tzt6f49k2sftpvbk2m78"
+  ],
+  "next_steps": [
+    {
+      "type": "continue",
+      "id": "random-event",
+      "level": "Apply",
+      "node_id": "L01.M01.O01",
+      "section_ids": [
+        "s3"
+      ],
+      "why": "Both Remember and Understand levels are passed; next is Apply — practising the formula on new examples."
+    },
+    {
+      "type": "advance",
+      "id": "L01.M01.O02",
+      "why": "Random-event concept is solid at Understand level; the next objective (sample space) builds directly on it."
+    },
+    {
+      "type": "consolidate",
+      "id": "n_rqp1q2tzt6f49k2sftpvbk2m78",
+      "why": "Follow-up tree reached depth 3 (circularity of probability) with no quiz; a consolidation quiz would anchor that exploration."
+    },
+    {
+      "type": "explore",
+      "id": "L01.M01.O03",
+      "node_id": "L01.M01.O03",
+      "why": "The follow-up on 1/6 shows strong interest in the classical formula; O03 covers the ratio formula directly."
+    }
+  ]
+}

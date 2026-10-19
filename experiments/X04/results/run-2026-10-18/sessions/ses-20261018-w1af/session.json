@@ -1,0 +1,39 @@
+{
+  "session_id": "ses-20261018-w1af",
+  "wave": 1,
+  "display_name": "Jordan",
+  "profile_summary": "18-25, just finished school, basketball fan, low patience, gives up when content gets abstract or assumes unfamiliar background knowledge",
+  "turns": 4,
+  "concepts_touched": [
+    "inertia",
+    "mass",
+    "net-force",
+    "kinematic-quantities",
+    "inertial-frame"
+  ],
+  "followed_seeds": [
+    "How is inertia related to mass, and is it the same as weight?",
+    "Can you show a worked example where the net force is not zero?",
+    "Why does turning at constant speed still count as acceleration?",
+    "What exactly is a fictitious force, and why do we sometimes use one?"
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "stalls": [
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "depth": 2,
+      "kind": "lost",
+      "stuck_signature": "prerequisite_gap",
+      "concepts": ["kinematic-quantities"]
+    },
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "depth": 1,
+      "kind": "abandon",
+      "stuck_signature": "answer_too_abstract",
+      "concepts": ["inertial-frame"]
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 # X09 — Nothing quietly edited
 
-*Constraint Protocol declarations on every contribution — do knowledge and intelligence compound when nothing is erased?*
+*signed declarations on every contribution — do knowledge and intelligence compound when nothing is erased?*
 
-**Status: designed.**
+**Status: done (simulated, first run 2026-10-18).**
 
 ## Question
 
-If every contribution carries a **Constraint Protocol declaration** (what it asserts,
+If every contribution carries a **signed declaration** (what it asserts,
 what it changes, what it must not break) and **nothing is ever silently edited or
 erased** — corrections are new records that supersede, never overwrites — do knowledge
 and intelligence actually compound *faster*, or does an append-only, nothing-erased
@@ -15,7 +15,7 @@ as a measurable question.
 
 ## Method
 
-1. Run a course's evolution two ways: (a) append-only with Constraint Protocol
+1. Run a course's evolution two ways: (a) append-only with signed declarations
    declarations and supersede-not-overwrite; (b) a conventional edit-in-place control.
 2. Inject corrections, contradictions, and improvements over many rounds.
 3. Measure retained-knowledge, contradiction-detection, and whether the append-only
@@ -57,7 +57,7 @@ substrate for compounding. X09 is where that stops being a slogan and becomes a 
 | Provenance schema | `schemas/provenance.schema.json` |
 | Contribution guidance / declaration surface | `CONTRIBUTING.md` (staged) |
 | Compaction precedent (shrink view, keep source) | PATH/record compaction — `prompts/MP-03`; append-log + compaction design from scale run |
-| **Constraint Protocol declaration schema** | **missing** |
+| **signed declaration schema** | **missing** |
 | **Supersede-chain / append-log store** | **missing** |
 
 ## Simulation-first
@@ -76,3 +76,8 @@ and whether a nothing-erased history earns the trust that drives real compoundin
 
 **Needs E12.** Shares the preservation rule with **X02** (contested cores) and the raw
 material of **X04** (dead ends are never erased). The capstone question behind **X12**.
+
+## Results
+
+- `results/2026-10-18-append-log-vs-edit.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.

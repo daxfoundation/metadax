@@ -1,0 +1,52 @@
+{
+  "run": "2026-10-18",
+  "experiment": "E06",
+  "bundles": [
+    {
+      "label": "course-week1-full",
+      "raw": 17825,
+      "gz": 17694,
+      "t50raw": 3.4224,
+      "t96raw": 17.825,
+      "t50gz": 3.397248,
+      "t96gz": 17.694,
+      "fits50": true
+    },
+    {
+      "label": "learner-return",
+      "raw": 7094,
+      "gz": 5940,
+      "t50raw": 1.362048,
+      "t96raw": 7.093999999999999,
+      "t50gz": 1.14048,
+      "t96gz": 5.94,
+      "fits50": true
+    },
+    {
+      "label": "course-week2-incremental",
+      "raw": 1400,
+      "gz": 1423,
+      "t50raw": 0.2688,
+      "t96raw": 1.4,
+      "t50gz": 0.27321599999999996,
+      "t96gz": 1.4229999999999998,
+      "fits50": true
+    }
+  ],
+  "roundTripSec_50kbps_gz": 4.810943999999999,
+  "roundTripSec_96bps_gz": 25.057,
+  "treeHashMatch": {
+    "courseWeek1": true,
+    "learnerReturn": true,
+    "courseWeek2": true
+  },
+  "fsck": {
+    "courseWeek1": "(clean)",
+    "learnerReturn": "(clean)",
+    "courseWeek2": "(clean)"
+  },
+  "textualConflicts": 0,
+  "verdict": "PASS",
+  "killLineTriggered": false,
+  "killReason": "none"
+}

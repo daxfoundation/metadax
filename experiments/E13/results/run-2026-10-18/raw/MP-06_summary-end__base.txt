@@ -1,0 +1,92 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "summary",
+  "display": {
+    "message": "Here is a summary of where things stand across this session."
+  },
+  "summary": {
+    "concepts": [
+      {
+        "id": "electron-transport-chain",
+        "name": "Electron transport chain",
+        "competency": 38,
+        "levels": {
+          "Remember": "passed_first_try",
+          "Understand": "passed_first_try",
+          "Apply": "not_started",
+          "Analyze": "not_started",
+          "Evaluate": "not_started",
+          "Create": "not_started"
+        }
+      },
+      {
+        "id": "proton-gradient",
+        "name": "Proton gradient",
+        "competency": 0,
+        "levels": {
+          "Remember": "not_started",
+          "Understand": "not_started"
+        }
+      },
+      {
+        "id": "cytochrome-c",
+        "name": "Cytochrome c",
+        "competency": 0,
+        "levels": {
+          "Remember": "not_started",
+          "Understand": "not_started"
+        }
+      }
+    ],
+    "strengths": [],
+    "areas_for_improvement": [
+      "electron-transport-chain",
+      "proton-gradient",
+      "cytochrome-c"
+    ],
+    "misconceptions": [],
+    "recommendations": [
+      "Continue the electron transport chain from Apply (section s1) to reach the Analyze bloom target.",
+      "Start the proton-gradient concept at Remember using section s2, then work up to Understand.",
+      "Start the cytochrome-c concept at Remember using section s1, then work up to Understand.",
+      "Once proton-gradient and cytochrome-c reach Understand, revisit the electron transport chain Analyze level with all three concepts in mind."
+    ],
+    "encouragement": "You have the first two levels of the electron transport chain solid — that is a real foundation to build on."
+  },
+  "state": {
+    "concept_order": [
+      "atp-synthesis",
+      "electron-transport-chain"
+    ],
+    "concept": "electron-transport-chain",
+    "level": "Apply",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "atp-synthesis": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help",
+        "Apply": "passed_first_try",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "not_started",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      }
+    },
+    "competency": {
+      "atp-synthesis": 58,
+      "electron-transport-chain": 38
+    }
+  },
+  "next_action": "done",
+  "warnings": []
+}

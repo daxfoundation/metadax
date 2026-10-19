@@ -1,0 +1,24 @@
+{
+  "schema": "metadax.progress/0.2",
+  "learner_id": "lrn-mira01",
+  "course_id": "data-analysis-fundamentals",
+  "device_id": "dev-alpha",
+  "snapshot_date": "2026-10-12",
+  "week_number": 6,
+  "topics_covered": [
+    "python-for-data",
+    "pandas-basics",
+    "reading-csv-python",
+    "basic-plotting"
+  ],
+  "overall_competency": "developing",
+  "sessions_completed": 3,
+  "nodes_visited": [
+    "L01.M06.O01",
+    "L01.M06.O02",
+    "L01.M06.O03",
+    "L01.M06.O04",
+    "L01.M06.O05"
+  ],
+  "weekly_summary": "First Python sessions. Successfully ran a pandas script to load and inspect a CSV. Eager to apply to own work data."
+}

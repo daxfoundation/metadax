@@ -44,8 +44,11 @@ learner repo in the v0.2 layout.
 
 ## Status
 
-not started
+done (simulated, first run 2026-10-18)
 
 ## Results
+
+- `results/2026-10-18-parent-records.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.
 
 none yet -- see `results/`.

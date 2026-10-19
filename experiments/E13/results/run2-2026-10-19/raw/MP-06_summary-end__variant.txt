@@ -1,0 +1,87 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "summary",
+  "display": {
+    "message": "Here is where things stand and what to try next."
+  },
+  "summary": {
+    "concepts": [
+      {
+        "id": "atp-synthesis",
+        "name": "ATP synthesis",
+        "competency": 58,
+        "levels": {
+          "Remember": "passed_first_try",
+          "Understand": "passed_after_help",
+          "Apply": "passed_first_try",
+          "Analyze": "not_started",
+          "Evaluate": "not_started",
+          "Create": "not_started"
+        }
+      },
+      {
+        "id": "electron-transport-chain",
+        "name": "Electron transport chain",
+        "competency": 38,
+        "levels": {
+          "Remember": "passed_first_try",
+          "Understand": "passed_first_try",
+          "Apply": "not_started",
+          "Analyze": "not_started",
+          "Evaluate": "not_started",
+          "Create": "not_started"
+        }
+      }
+    ],
+    "strengths": [],
+    "areas_for_improvement": [
+      "electron-transport-chain"
+    ],
+    "misconceptions": [
+      "ATP is stored in large amounts for later"
+    ],
+    "recommendations": [
+      "Return to the electron transport chain and attempt an Apply question — the chain section of CONTENT (s1, s2, s3) has enough detail to practise applying the sequence of hand-offs.",
+      "Then push atp-synthesis to Analyze: the competency is at 58, and one good Analyze pass would lift it past 70.",
+      "Work proton-gradient and cytochrome-c up to Understand, as both are still not started for objective L01.M01.O02.",
+      "If any answer feels shaky, use the hint ladder rather than guessing — half weight still counts and keeps momentum."
+    ],
+    "encouragement": "You have solid footing on the basics; a few more focused passes will turn that partial picture into genuine mastery."
+  },
+  "state": {
+    "concept_order": [
+      "atp-synthesis",
+      "electron-transport-chain"
+    ],
+    "concept": "atp-synthesis",
+    "level": "Analyze",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "atp-synthesis": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help",
+        "Apply": "passed_first_try",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "not_started",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      }
+    },
+    "competency": {
+      "atp-synthesis": 58,
+      "electron-transport-chain": 38
+    }
+  },
+  "next_action": "done",
+  "warnings": []
+}

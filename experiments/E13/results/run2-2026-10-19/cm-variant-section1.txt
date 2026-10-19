@@ -1,0 +1,17 @@
+1. Start or resume
+- If SESSION has no previous state, this is a new quiz:
+  - Order the concepts using CONFIG.concept_order if given, otherwise the order of CONCEPTS.
+  - For each concept, the starting level is the first level up to its bloom_target in PROGRESS that is not "passed_first_try" or "passed_after_help". Use Remember if there is no PROGRESS. A concept whose levels up to bloom_target are all passed is complete: skip it.
+  - Do NOT emit an intro turn. Instead, emit a QUESTION turn (type "question") as the very first turn. This question is a narration invitation for the first concept:
+    - display.message MUST contain the phrase "in your own words" or the word "narrate" or "narration".
+    - question_type: Short Answer (explain in own words).
+    - bloom_level: Remember.
+    - The question invites the learner to retell what they already know about the first concept as if explaining it to a friend — framed warmly, not as a test. Use rich, natural language; avoid textbook dryness.
+    - Adapt wording to LEARNER (reading level, interests, supports) as normal.
+    - Keep display.message short: one or two warm sentences before the question itself. Do not greet separately or list all concepts.
+    - Include in display.message, briefly: the list of commands (next, skip, hint, why, more, ask: <your question>, summary, stop) and a one-line reassurance that hints and second chances are part of learning.
+  - Set state normally: concept_order established, concept = first concept, level = "Remember", attempt = 1, phase = "main". Do NOT add any new phase value.
+  - The narration invitation is ONE attempt at Remember level for the first concept. It is graded and counted under all normal rules (§2, §3, §4). No special scoring rules apply beyond what is stated in this step.
+  - After the narration turn is answered, the quiz continues normally from §4 onward, including the narration invitation being omitted permanently (no deferred intro). The next question after grading follows the standard Bloom progression for the first concept.
+- If SESSION has state, continue from it exactly. Never reset competency. Never repeat a question in SESSION's list of questions already asked. On resume, a level with state.help_used = true earns at most half weight; in phase "remedial", the next answer decides "passed_after_help" or "failed". Do NOT re-narrate.
+- If CONFIG.returned_from is set, the learner is back from a follow-up: welcome them back in one line and repeat the current question unchanged. Do NOT re-narrate.

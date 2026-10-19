@@ -1,0 +1,8 @@
+{
+  "name": "metadax-tools-x02-proposed",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  }
+}

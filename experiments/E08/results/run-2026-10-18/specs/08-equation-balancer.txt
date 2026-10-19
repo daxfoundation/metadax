@@ -1,0 +1,45 @@
+SPEC: Step-by-Step Linear Equation Balancer
+
+Export a named ES-module function:
+
+  export function balanceEquation(equationStr)
+
+Parameter
+  equationStr – a string representing a linear equation with one variable, e.g.
+                "2x + 3 = 7", "3x - 9 = 0", "-2x + 8 = 2", "x + 5 = 12"
+                Format: optional coefficient, variable 'x', optional constant term,
+                equals sign, right-hand side constant. Spaces are optional.
+
+Returns an object:
+  {
+    variable: 'x',
+    value:    number,        // solution
+    steps: [
+      { description: string, lhs: string, rhs: string },
+      ...
+    ]
+  }
+
+The steps array must show each algebraic operation applied to both sides,
+ending with "x = <value>". Each step has a human-readable description and the
+resulting left-hand side and right-hand side as strings.
+
+Required steps (as needed):
+  1. Move constant term from left to right (add/subtract)
+  2. Divide both sides by the coefficient of x
+
+Examples
+  balanceEquation("2x + 3 = 7")
+  → { variable:'x', value:2, steps:[
+      { description:"subtract 3 from both sides", lhs:"2x", rhs:"4" },
+      { description:"divide both sides by 2",     lhs:"x",  rhs:"2" }
+    ]}
+
+  balanceEquation("3x - 9 = 0")
+  → { variable:'x', value:3, ... }
+
+  balanceEquation("x + 5 = 12")
+  → { variable:'x', value:7, ... }
+
+  balanceEquation("-2x + 8 = 2")
+  → { variable:'x', value:3, ... }

@@ -1,0 +1,43 @@
+{
+  "run_date": "2026-10-18",
+  "label": "SIMULATED",
+  "course_nodes": 100,
+  "total_ops": 1000,
+  "mode_a": {
+    "mode": "a_edit_inplace",
+    "ops_total": 1000,
+    "ops_normal": 930,
+    "ops_contested": 50,
+    "ops_silent_attempted": 20,
+    "silent_rewrites_detected": 0,
+    "contested_versions_preserved": 0,
+    "bytes_init": 18819,
+    "bytes_final": 19635,
+    "storage_growth_factor": 1.043,
+    "compaction_ratio": 1,
+    "rebuild_view_ms": 0
+  },
+  "mode_b": {
+    "mode": "b_append_log",
+    "ops_total": 1000,
+    "ops_normal": 930,
+    "ops_contested": 50,
+    "ops_silent_attempted": 20,
+    "total_events": 1080,
+    "create_events": 100,
+    "update_events": 930,
+    "contested_events": 50,
+    "clean_verify_ok": true,
+    "silent_tampers_applied": 20,
+    "silent_rewrites_detected": 18,
+    "detection_rate": "18/20",
+    "contested_versions_preserved": 42,
+    "bytes_init": 48908,
+    "bytes_after_edits": 523191,
+    "storage_growth_factor": 10.697,
+    "events_per_node_avg": 10.8,
+    "compaction_ratio": 10.8,
+    "rebuild_view_ms": 1,
+    "declaration_coverage_pct": 100
+  }
+}

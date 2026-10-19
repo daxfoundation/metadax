@@ -1,0 +1,16 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M01.O03",
+  "title": "What is a pivot table?",
+  "concept": "spreadsheet-basics",
+  "week": 1,
+  "visibility": "public",
+  "core": {
+    "body": "A pivot table summarises rows by grouping and aggregating (sum, count, average). It lets you quickly explore large datasets without writing formulas.",
+    "bloom_level": "understand"
+  },
+  "created_at": "2026-09-01T00:00:00Z",
+  "updated_at": "2026-09-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

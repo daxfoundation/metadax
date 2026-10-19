@@ -1,0 +1,40 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "That's a really strong answer — well done, Tomás!\n\n**What you nailed:**\n- The sample space is {1, 2, 3, 4, 5, 6} — all six faces, each equally possible.\n- You correctly captured that *before* the roll, no outcome is predetermined.\n- You made a clean contrast with non-random situations.\n\nYou've covered both levels — Remember and Understand — for this objective. Let's take stock."
+  },
+  "meta": {
+    "concept": "random-event",
+    "bloom_level": "Understand",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 2
+  },
+  "feedback": {
+    "result": "correct",
+    "correct_answer": "S = {1, 2, 3, 4, 5, 6}. This is a random event because before the die lands, no outcome is predetermined even though all six faces are known possibilities.",
+    "explanation": "Full marks: complete and well-reasoned response covering sample space, pre-outcome uncertainty, and contrast with determined events."
+  },
+  "handoff": null,
+  "summary": null,
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 2,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "random-event": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help"
+      }
+    },
+    "competency": {
+      "random-event": 78
+    }
+  },
+  "next_action": "awaiting_command",
+  "warnings": []
+}

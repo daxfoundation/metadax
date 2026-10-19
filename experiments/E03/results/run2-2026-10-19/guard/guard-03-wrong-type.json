@@ -1,0 +1,10 @@
+{
+  "schema": "metadax.event/0.2",
+  "session_id": "ses-20261018-test",
+  "seq": "three",
+  "ts": "2026-10-18T21:00:00Z",
+  "type": "followup",
+  "node_id": "n_a3dwz4c8spkj0mqkctxghyhgqm",
+  "parent_node_id": "L01.M01.O01",
+  "question": "What is a sample space?"
+}

@@ -1,0 +1,51 @@
+{
+  "arm": "C",
+  "description": "SIMULATED. Guide has NO technique records; same learner personas and problems as run 1 Cohort B (archery/rowing/rocket). True no-technique control arm (fixes B52).",
+  "model": "sonnet",
+  "guide_has_techniques": false,
+  "sessions": [
+    {
+      "pid": "c-e1", "name": "Nadia", "lang": "en", "subject": "archery bow",
+      "attempts": 2, "resolved": true,
+      "attempts_vector": [false, true],
+      "transcript_file": "transcripts/c-e1.txt"
+    },
+    {
+      "pid": "c-e2", "name": "Owen", "lang": "en", "subject": "rowing a boat",
+      "attempts": 1, "resolved": true,
+      "attempts_vector": [true],
+      "transcript_file": "transcripts/c-e2.txt"
+    },
+    {
+      "pid": "c-e3", "name": "Priya", "lang": "en", "subject": "rocket launch",
+      "attempts": 2, "resolved": true,
+      "attempts_vector": [false, true],
+      "transcript_file": "transcripts/c-e3.txt"
+    },
+    {
+      "pid": "c-i1", "name": "Rina", "lang": "id-x-jv", "subject": "mendayung perahu (rowing)",
+      "attempts": 1, "resolved": true,
+      "attempts_vector": [true],
+      "transcript_file": "transcripts/c-i1.txt"
+    },
+    {
+      "pid": "c-i2", "name": "Eka", "lang": "id-x-jv", "subject": "roket (rocket)",
+      "attempts": 2, "resolved": true,
+      "attempts_vector": [false, true],
+      "transcript_file": "transcripts/c-i2.txt"
+    },
+    {
+      "pid": "c-i3", "name": "Tari", "lang": "id-x-jv", "subject": "memanah (archery)",
+      "attempts": 2, "resolved": true,
+      "attempts_vector": [false, true],
+      "transcript_file": "transcripts/c-i3.txt"
+    }
+  ],
+  "computed": {
+    "n": 6,
+    "resolved_count": 6,
+    "attempts_list": [2, 1, 2, 1, 2, 2],
+    "mean_attempts": 1.67,
+    "resolved_at_attempt_1": 2
+  }
+}

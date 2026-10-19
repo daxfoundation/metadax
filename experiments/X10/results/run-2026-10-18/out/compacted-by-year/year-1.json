@@ -1,0 +1,75 @@
+{
+  "year": 1,
+  "into_next": null,
+  "view": {
+    "as_of": "runtime",
+    "refusals": [
+      {
+        "kind": "refusal",
+        "at": "2020-03-10",
+        "refusal_id": "ref-food",
+        "directive": "never_show",
+        "scope": "example-style",
+        "target": "food-and-diet-examples",
+        "status": "active",
+        "said": "Please stop using food and diet examples, they upset me."
+      }
+    ],
+    "courses": [
+      {
+        "year": 1,
+        "course_id": "cell-biology",
+        "guide_ref": "g1",
+        "sessions": 12,
+        "concepts": [
+          {
+            "concept": "cell-structure",
+            "competency": 82
+          },
+          {
+            "concept": "osmosis",
+            "competency": 78
+          },
+          {
+            "concept": "diffusion",
+            "competency": 74,
+            "misconceptions": [
+              "treats diffusion and osmosis as the same process"
+            ]
+          },
+          {
+            "concept": "enzymes",
+            "competency": 80
+          },
+          {
+            "concept": "mitosis",
+            "competency": 85
+          }
+        ],
+        "summary": "cell-biology across 12 sessions. Opened: Year 1 cell-biology session 1: worked on cell-structure and osmosis. Opened the course. Ended: Year 1 cell-biology session 12: worked on diffusion and enzymes. Wrapped the course."
+      }
+    ],
+    "competency": {
+      "cell-structure": 82,
+      "osmosis": 78,
+      "diffusion": 74,
+      "enzymes": 80,
+      "mitosis": 85
+    },
+    "carry_over_ledger": [],
+    "lapses": []
+  },
+  "compaction": {
+    "kind": "compaction",
+    "at": "runtime",
+    "folded_through": 13,
+    "bytes_log": 3661,
+    "bytes_view": 980,
+    "dropped": [
+      "12 per-session notes for cell-biology (year 1) folded to one summary",
+      "per-session competency trajectory (only latest/best per concept kept)",
+      "timing of when each misconception appeared within a course"
+    ],
+    "warnings": []
+  }
+}

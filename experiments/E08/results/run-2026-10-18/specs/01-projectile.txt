@@ -1,0 +1,27 @@
+SPEC: Projectile Range Calculator (no drag)
+
+Export a named ES-module function:
+
+  export function range(v0, angleDeg, g = 9.81)
+
+Parameters
+  v0       – initial speed, metres per second (number)
+  angleDeg – launch angle, degrees above horizontal (number, 0–90)
+  g        – gravitational acceleration, m/s² (number, default 9.81)
+
+Returns: horizontal range in metres (number).
+
+Physics
+  R = (v0² × sin(2θ)) / g
+  where θ = angleDeg converted to radians.
+
+Edge cases
+  • v0 = 0   → return 0
+  • angleDeg = 0 → return 0
+  • angleDeg = 90 → return 0 (sin 180° = 0)
+
+Examples
+  range(10, 45, 9.81) → 10.193   (100 / 9.81)
+  range(20, 30, 9.81) → 35.304   (400 × sin 60° / 9.81)
+  range(0,  45, 9.81) → 0
+  range(10, 45, 1.62) → 61.728   (Moon gravity)

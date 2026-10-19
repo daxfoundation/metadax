@@ -1,0 +1,49 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "intro",
+  "display": {
+    "message": "Welcome, Fixture Learner! Today we are working through three concepts that explain how the mitochondrion extracts energy from electrons:\n\n1. **Electron transport chain** — the membrane complexes that pass electrons and pump protons\n2. **Proton gradient** — the stored energy held as a proton concentration difference across the inner membrane\n3. **Cytochrome c** — the small mobile carrier that shuttles electrons between complexes\n\nQuestions start at the level your progress records show and climb step by step toward each concept's target level (Analyze for the electron transport chain, Understand for proton gradient and cytochrome c). Think of the levels like rungs on a trellis: each rung builds on the one below.\n\nHints and second chances are a normal part of learning — use them freely. Here are the commands you can type at any time:\n\n- **next** — mark this level done and jump to the next concept\n- **skip** — move to the next level within the same concept\n- **hint** — get a nudge without using an attempt\n- **why** — find out what this question is really testing\n- **more** — go beyond the target level once a concept is complete\n- **ask: your question** — send a question to a follow-up tutor; the quiz waits here\n- **summary** — see your results so far\n- **stop** — end the session and see your summary\n\nReady? Let's start with the electron transport chain, where you already have a solid foundation through Understand — so we pick up at the Apply level.\n\n---\n\n**Instructions:** Read the scenario below and answer the short problem. Write two or three sentences.\n\n**Example:** *(This is a format example, not the real question.)* A researcher blocks Complex I in isolated mitochondria and measures electron flow. Predict what happens to electron flow through the downstream complexes, and explain why.\n\n**Question:** A cell is suddenly deprived of oxygen. Using what you know about the electron transport chain, explain what happens to the movement of electrons along the chain and why the chain cannot simply continue without oxygen.",
+    "instructions": "Read the scenario and answer in two or three sentences. Explain the mechanism, not just the outcome.",
+    "example": "A researcher blocks Complex I in isolated mitochondria and measures electron flow. Predict what happens to electron flow through the downstream complexes, and explain why. *(Format example only — this is not the real question.)*",
+    "question": "A cell is suddenly deprived of oxygen. Using what you know about the electron transport chain, explain what happens to the movement of electrons along the chain and why the chain cannot simply continue without oxygen."
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Apply",
+    "question_type": "Short Answer (practical use)",
+    "attempt": 1
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Apply",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "in_progress",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 38,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

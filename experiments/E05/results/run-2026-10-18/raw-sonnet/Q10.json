@@ -1,0 +1,43 @@
+{
+  "id": "Q10",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "reuse",
+    "target_id": "n_nl10hk3drp0wzjembnfsxyvtcq5",
+    "confidence": 0.91,
+    "resolved": true,
+    "node": {
+      "id": "n_nl10hk3drp0wzjembnfsxyvtcq5",
+      "parent_id": "n_tn2fp8vd0wzjqxk6bc9mr4esh7y",
+      "title": "Outer versus inner mitochondrial membrane",
+      "canonical_question": "How do the outer and inner mitochondrial membranes differ in structure and function?",
+      "intent": "clarify",
+      "summary": "The outer membrane is permeable via porins. The inner membrane is tight, creating the intermembrane space where protons accumulate.",
+      "concepts": ["mitochondrion-structure", "proton-gradient"],
+      "depth": 3,
+      "visibility": "shared",
+      "created_by": "author-fixture"
+    },
+    "seeds": [
+      {
+        "question": "Why must the inner membrane be so impermeable to protons?",
+        "intent": "deepen",
+        "concept_ids": ["proton-gradient", "atp-synthesis"]
+      },
+      {
+        "question": "What are porins and how do they make the outer membrane permeable?",
+        "intent": "clarify",
+        "concept_ids": ["mitochondrion-structure"]
+      },
+      {
+        "question": "What is the intermembrane space and what happens to protons that accumulate there?",
+        "intent": "connect",
+        "concept_ids": ["proton-gradient", "atp-synthesis"]
+      }
+    ],
+    "rendering_md": "A mitochondrion is wrapped in two separate membranes, and they work very differently.\n\n**Outer membrane** \nThe outer membrane acts like a general fence. It contains proteins called porins, which are channel-forming proteins that punch large enough holes to let small molecules—ions, sugars, ATP, and ADP—pass through freely. Because of the porins, the space between the two membranes (the intermembrane space) has a similar small-molecule composition to the cell's cytoplasm.\n\n**Inner membrane** \nThe inner membrane is the critical one for energy production. It is completely tight—it does not allow protons (hydrogen ions) or most other charged molecules to cross except through specific protein channels. This impermeability is essential: the electron transport chain pumps protons from the matrix (the inside of the mitochondrion) across the inner membrane into the intermembrane space, building up a large concentration difference. Because protons cannot leak back freely, they are forced to re-enter the matrix only through ATP synthase, and that controlled flow is what drives ATP production.\n\nIn short: the outer membrane is a loose boundary, while the inner membrane is a tight seal that makes the proton gradient—and therefore most of your ATP—possible.",
+    "options": [],
+    "warnings": []
+  }
+}

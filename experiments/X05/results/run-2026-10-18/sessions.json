@@ -1,0 +1,662 @@
+[
+  {
+    "session": 0,
+    "concept": "cell-membrane",
+    "turns": [
+      {
+        "turn": 0,
+        "text": "Welcome! Today we're exploring how cells control what enters and exits. To start: what do you think the main job of a cell membrane is? There's no wrong answer — just tell me what comes to mind.",
+        "is_planted": false
+      },
+      {
+        "turn": 1,
+        "text": "Interesting. If molecules could freely cross the membrane in any direction without any control, what might go wrong for the cell? Try to think of a specific example.",
+        "is_planted": false
+      },
+      {
+        "turn": 2,
+        "text": "Let's look at the membrane's structure. What do you already know — or what can you guess — about what a cell membrane is physically made of?",
+        "is_planted": false
+      },
+      {
+        "turn": 3,
+        "text": "The phospholipid bilayer has a hydrophobic interior that strongly repels water-soluble substances. Given that property, what category of molecule would you predict can cross the membrane freely without any help?",
+        "is_planted": true
+      },
+      {
+        "turn": 4,
+        "text": "What would happen to a charged particle — like a sodium ion — if it tried to cross through the fatty interior of the membrane without any help? Walk me through your reasoning.",
+        "is_planted": false
+      },
+      {
+        "turn": 5,
+        "text": "Now let's consider protein channels. Without looking anything up, what role might you guess membrane proteins play in moving substances across the membrane?",
+        "is_planted": false
+      },
+      {
+        "turn": 6,
+        "text": "If there is a high concentration of glucose outside a cell and a low concentration inside, in which direction would glucose naturally tend to move? What principle drives that?",
+        "is_planted": false
+      },
+      {
+        "turn": 7,
+        "text": "A cell sometimes needs to pull ions in even when the concentration is already higher inside. What would it need that simple diffusion cannot provide?",
+        "is_planted": false
+      },
+      {
+        "turn": 8,
+        "text": "In osmosis, water moves from a region of lower solute concentration toward higher solute concentration — toward where there are more dissolved particles. So if a cell sits in a very salty solution, which way would water flow?",
+        "is_planted": true
+      },
+      {
+        "turn": 9,
+        "text": "Scenario: a red blood cell is placed in a solution with much more salt than the cell's interior. What do you predict will happen, and why?",
+        "is_planted": false
+      },
+      {
+        "turn": 10,
+        "text": "Why does the cell benefit from having selective control over what gets in and out? What's the advantage over just letting things flow freely?",
+        "is_planted": false
+      },
+      {
+        "turn": 11,
+        "text": "Let's pull it all together. Describe in your own words the three main ways a substance can get from outside a cell to inside. Include the key conditions for each.",
+        "is_planted": false
+      }
+    ]
+  },
+  {
+    "session": 1,
+    "concept": "cell-membrane",
+    "turns": [
+      {
+        "turn": 0,
+        "text": "Welcome! Today we're exploring how cells control what enters and exits. To start: what do you think the main job of a cell membrane is? There's no wrong answer — just tell me what comes to mind.",
+        "is_planted": false
+      },
+      {
+        "turn": 1,
+        "text": "Interesting. If molecules could freely cross the membrane in any direction without any control, what might go wrong for the cell? Try to think of a specific example.",
+        "is_planted": false
+      },
+      {
+        "turn": 2,
+        "text": "Let's look at the membrane's structure. What do you already know — or what can you guess — about what a cell membrane is physically made of?",
+        "is_planted": false
+      },
+      {
+        "turn": 3,
+        "text": "If the membrane is built from lipid molecules, what property of a substance might determine whether it can slip through easily or gets blocked?",
+        "is_planted": false
+      },
+      {
+        "turn": 4,
+        "text": "What would happen to a charged particle — like a sodium ion — if it tried to cross through the fatty interior of the membrane without any help? Walk me through your reasoning.",
+        "is_planted": false
+      },
+      {
+        "turn": 5,
+        "text": "Membrane proteins form hydrophilic channels that allow charged and polar molecules to pass through a barrier that would otherwise block them completely. Knowing that function, what problem do you think these protein channels exist to solve?",
+        "is_planted": true
+      },
+      {
+        "turn": 6,
+        "text": "If there is a high concentration of glucose outside a cell and a low concentration inside, in which direction would glucose naturally tend to move? What principle drives that?",
+        "is_planted": false
+      },
+      {
+        "turn": 7,
+        "text": "A cell sometimes needs to pull ions in even when the concentration is already higher inside. What would it need that simple diffusion cannot provide?",
+        "is_planted": false
+      },
+      {
+        "turn": 8,
+        "text": "Osmosis involves water moving across a membrane. What determines the direction water will move — what is the water responding to?",
+        "is_planted": false
+      },
+      {
+        "turn": 9,
+        "text": "Scenario: a red blood cell is placed in a solution with much more salt than the cell's interior. What do you predict will happen, and why?",
+        "is_planted": false
+      },
+      {
+        "turn": 10,
+        "text": "Why does the cell benefit from having selective control over what gets in and out? What's the advantage over just letting things flow freely?",
+        "is_planted": false
+      },
+      {
+        "turn": 11,
+        "text": "Let's pull it all together. Describe in your own words the three main ways a substance can get from outside a cell to inside. Include the key conditions for each.",
+        "is_planted": false
+      }
+    ]
+  },
+  {
+    "session": 2,
+    "concept": "cell-membrane",
+    "turns": [
+      {
+        "turn": 0,
+        "text": "Welcome! Today we're exploring how cells control what enters and exits. To start: what do you think the main job of a cell membrane is? There's no wrong answer — just tell me what comes to mind.",
+        "is_planted": false
+      },
+      {
+        "turn": 1,
+        "text": "Interesting. If molecules could freely cross the membrane in any direction without any control, what might go wrong for the cell? Try to think of a specific example.",
+        "is_planted": false
+      },
+      {
+        "turn": 2,
+        "text": "The cell membrane is a phospholipid bilayer — two layers of molecules, each with a water-loving head and a water-fearing tail, arranged so the tails point inward. With that structure in mind, which part of the membrane would repel water-based substances?",
+        "is_planted": true
+      },
+      {
+        "turn": 3,
+        "text": "If the membrane is built from lipid molecules, what property of a substance might determine whether it can slip through easily or gets blocked?",
+        "is_planted": false
+      },
+      {
+        "turn": 4,
+        "text": "What would happen to a charged particle — like a sodium ion — if it tried to cross through the fatty interior of the membrane without any help? Walk me through your reasoning.",
+        "is_planted": false
+      },
+      {
+        "turn": 5,
+        "text": "Now let's consider protein channels. Without looking anything up, what role might you guess membrane proteins play in moving substances across the membrane?",
+        "is_planted": false
+      },
+      {
+        "turn": 6,
+        "text": "If there is a high concentration of glucose outside a cell and a low concentration inside, in which direction would glucose naturally tend to move? What principle drives that?",
+        "is_planted": false
+      },
+      {
+        "turn": 7,
+        "text": "A cell sometimes needs to pull ions in even when the concentration is already higher inside. What would it need that simple diffusion cannot provide?",
+        "is_planted": false
+      },
+      {
+        "turn": 8,
+        "text": "Osmosis involves water moving across a membrane. What determines the direction water will move — what is the water responding to?",
+        "is_planted": false
+      },
+      {
+        "turn": 9,
+        "text": "Scenario: a red blood cell is placed in a solution with much more salt than the cell's interior. What do you predict will happen, and why?",
+        "is_planted": false
+      },
+      {
+        "turn": 10,
+        "text": "Why does the cell benefit from having selective control over what gets in and out? What's the advantage over just letting things flow freely?",
+        "is_planted": false
+      },
+      {
+        "turn": 11,
+        "text": "Let's pull it all together. Describe in your own words the three main ways a substance can get from outside a cell to inside. Include the key conditions for each.",
+        "is_planted": false
+      }
+    ]
+  },
+  {
+    "session": 3,
+    "concept": "cell-membrane",
+    "turns": [
+      {
+        "turn": 0,
+        "text": "Welcome! Today we're exploring how cells control what enters and exits. To start: what do you think the main job of a cell membrane is? There's no wrong answer — just tell me what comes to mind.",
+        "is_planted": false
+      },
+      {
+        "turn": 1,
+        "text": "Interesting. If molecules could freely cross the membrane in any direction without any control, what might go wrong for the cell? Try to think of a specific example.",
+        "is_planted": false
+      },
+      {
+        "turn": 2,
+        "text": "Let's look at the membrane's structure. What do you already know — or what can you guess — about what a cell membrane is physically made of?",
+        "is_planted": false
+      },
+      {
+        "turn": 3,
+        "text": "If the membrane is built from lipid molecules, what property of a substance might determine whether it can slip through easily or gets blocked?",
+        "is_planted": false
+      },
+      {
+        "turn": 4,
+        "text": "What would happen to a charged particle — like a sodium ion — if it tried to cross through the fatty interior of the membrane without any help? Walk me through your reasoning.",
+        "is_planted": false
+      },
+      {
+        "turn": 5,
+        "text": "Now let's consider protein channels. Without looking anything up, what role might you guess membrane proteins play in moving substances across the membrane?",
+        "is_planted": false
+      },
+      {
+        "turn": 6,
+        "text": "Substances naturally move from areas of high concentration to areas of low concentration — this tendency is called diffusion. Knowing this, in which direction would glucose flow if there is more of it outside the cell than inside?",
+        "is_planted": true
+      },
+      {
+        "turn": 7,
+        "text": "A cell sometimes needs to pull ions in even when the concentration is already higher inside. What would it need that simple diffusion cannot provide?",
+        "is_planted": false
+      },
+      {
+        "turn": 8,
+        "text": "Osmosis involves water moving across a membrane. What determines the direction water will move — what is the water responding to?",
+        "is_planted": false
+      },
+      {
+        "turn": 9,
+        "text": "Scenario: a red blood cell is placed in a solution with much more salt than the cell's interior. What do you predict will happen, and why?",
+        "is_planted": false
+      },
+      {
+        "turn": 10,
+        "text": "Why does the cell benefit from having selective control over what gets in and out? What's the advantage over just letting things flow freely?",
+        "is_planted": false
+      },
+      {
+        "turn": 11,
+        "text": "Let's pull it all together. Describe in your own words the three main ways a substance can get from outside a cell to inside. Include the key conditions for each.",
+        "is_planted": false
+      }
+    ]
+  },
+  {
+    "session": 4,
+    "concept": "cell-membrane",
+    "turns": [
+      {
+        "turn": 0,
+        "text": "Welcome! Today we're exploring how cells control what enters and exits. To start: what do you think the main job of a cell membrane is? There's no wrong answer — just tell me what comes to mind.",
+        "is_planted": false
+      },
+      {
+        "turn": 1,
+        "text": "Interesting. If molecules could freely cross the membrane in any direction without any control, what might go wrong for the cell? Try to think of a specific example.",
+        "is_planted": false
+      },
+      {
+        "turn": 2,
+        "text": "Let's look at the membrane's structure. What do you already know — or what can you guess — about what a cell membrane is physically made of?",
+        "is_planted": false
+      },
+      {
+        "turn": 3,
+        "text": "If the membrane is built from lipid molecules, what property of a substance might determine whether it can slip through easily or gets blocked?",
+        "is_planted": false
+      },
+      {
+        "turn": 4,
+        "text": "What would happen to a charged particle — like a sodium ion — if it tried to cross through the fatty interior of the membrane without any help? Walk me through your reasoning.",
+        "is_planted": false
+      },
+      {
+        "turn": 5,
+        "text": "Now let's consider protein channels. Without looking anything up, what role might you guess membrane proteins play in moving substances across the membrane?",
+        "is_planted": false
+      },
+      {
+        "turn": 6,
+        "text": "If there is a high concentration of glucose outside a cell and a low concentration inside, in which direction would glucose naturally tend to move? What principle drives that?",
+        "is_planted": false
+      },
+      {
+        "turn": 7,
+        "text": "A cell sometimes needs to pull ions in even when the concentration is already higher inside. What would it need that simple diffusion cannot provide?",
+        "is_planted": false
+      },
+      {
+        "turn": 8,
+        "text": "Osmosis involves water moving across a membrane. What determines the direction water will move — what is the water responding to?",
+        "is_planted": false
+      },
+      {
+        "turn": 9,
+        "text": "When a cell is placed in a hypertonic solution — one with more solutes than the cell's interior — water leaves the cell by osmosis. Given that, what do you predict will happen to the cell's size and shape?",
+        "is_planted": true
+      },
+      {
+        "turn": 10,
+        "text": "Why does the cell benefit from having selective control over what gets in and out? What's the advantage over just letting things flow freely?",
+        "is_planted": false
+      },
+      {
+        "turn": 11,
+        "text": "Let's pull it all together. Describe in your own words the three main ways a substance can get from outside a cell to inside. Include the key conditions for each.",
+        "is_planted": false
+      }
+    ]
+  },
+  {
+    "session": 5,
+    "concept": "water-cycle",
+    "turns": [
+      {
+        "turn": 0,
+        "text": "Let's think about water moving around our planet. It's constantly cycling. What do you already know about where water goes after it falls as rain? Start wherever makes sense to you.",
+        "is_planted": false
+      },
+      {
+        "turn": 1,
+        "text": "So rain doesn't just stay where it falls. Where are some different places water might end up after a rainstorm? Try to name at least three.",
+        "is_planted": false
+      },
+      {
+        "turn": 2,
+        "text": "One major way water leaves the surface is by turning into vapor. What conditions do you think cause water to evaporate more quickly versus more slowly?",
+        "is_planted": false
+      },
+      {
+        "turn": 3,
+        "text": "Plants also release water vapor into the air. What do you think might be happening inside a plant that causes it to release water?",
+        "is_planted": false
+      },
+      {
+        "turn": 4,
+        "text": "When warm, moist air rises and cools, the water vapor condenses around tiny dust particles to form clouds. Given that mechanism, what do you predict happens when a moist air mass is forced upward over a mountain range?",
+        "is_planted": true
+      },
+      {
+        "turn": 5,
+        "text": "Under what conditions do you think clouds finally release water as precipitation? What triggers that release?",
+        "is_planted": false
+      },
+      {
+        "turn": 6,
+        "text": "If you think about all the places rain can fall — city streets, forests, mountains, deserts — what determines where that water goes next? What factors matter?",
+        "is_planted": false
+      },
+      {
+        "turn": 7,
+        "text": "Some rainwater soaks into the ground instead of running off. What do you think happens to it underground? Where might it go?",
+        "is_planted": false
+      },
+      {
+        "turn": 8,
+        "text": "Oceans and lakes collect most of the water that flows from land. What do you think drives the water back into the air rather than staying in the ocean forever?",
+        "is_planted": false
+      },
+      {
+        "turn": 9,
+        "text": "Think about what would happen if global temperatures dropped sharply. How would that change different stages of the water cycle?",
+        "is_planted": false
+      },
+      {
+        "turn": 10,
+        "text": "If evaporation stopped completely, no water vapor would enter the atmosphere — which means condensation, cloud formation, and precipitation would all halt. Given that chain, which stage of the water cycle do you think is the single most critical driver?",
+        "is_planted": true
+      },
+      {
+        "turn": 11,
+        "text": "Let's wrap up: trace the full journey of a water molecule from the ocean surface to falling as rain on a mountain and back again. Include every stage you can name.",
+        "is_planted": false
+      }
+    ]
+  },
+  {
+    "session": 6,
+    "concept": "water-cycle",
+    "turns": [
+      {
+        "turn": 0,
+        "text": "Let's think about water moving around our planet. It's constantly cycling. What do you already know about where water goes after it falls as rain? Start wherever makes sense to you.",
+        "is_planted": false
+      },
+      {
+        "turn": 1,
+        "text": "So rain doesn't just stay where it falls. Where are some different places water might end up after a rainstorm? Try to name at least three.",
+        "is_planted": false
+      },
+      {
+        "turn": 2,
+        "text": "One major way water leaves the surface is by turning into vapor. What conditions do you think cause water to evaporate more quickly versus more slowly?",
+        "is_planted": false
+      },
+      {
+        "turn": 3,
+        "text": "Plants draw water up from their roots and release it through tiny pores in their leaves — a process called transpiration. Knowing this, where in the water cycle would you place transpiration: is it more similar to evaporation or to precipitation?",
+        "is_planted": true
+      },
+      {
+        "turn": 4,
+        "text": "Water vapor rises into the atmosphere. What do you think has to happen before it can form clouds?",
+        "is_planted": false
+      },
+      {
+        "turn": 5,
+        "text": "Under what conditions do you think clouds finally release water as precipitation? What triggers that release?",
+        "is_planted": false
+      },
+      {
+        "turn": 6,
+        "text": "If you think about all the places rain can fall — city streets, forests, mountains, deserts — what determines where that water goes next? What factors matter?",
+        "is_planted": false
+      },
+      {
+        "turn": 7,
+        "text": "Some rainwater soaks into the ground instead of running off. What do you think happens to it underground? Where might it go?",
+        "is_planted": false
+      },
+      {
+        "turn": 8,
+        "text": "Oceans and lakes collect most of the water that flows from land. What do you think drives the water back into the air rather than staying in the ocean forever?",
+        "is_planted": false
+      },
+      {
+        "turn": 9,
+        "text": "Think about what would happen if global temperatures dropped sharply. How would that change different stages of the water cycle?",
+        "is_planted": false
+      },
+      {
+        "turn": 10,
+        "text": "The water cycle connects land, air, and ocean. What do you think would happen to life on land if evaporation were to stop completely?",
+        "is_planted": false
+      },
+      {
+        "turn": 11,
+        "text": "Let's wrap up: trace the full journey of a water molecule from the ocean surface to falling as rain on a mountain and back again. Include every stage you can name.",
+        "is_planted": false
+      }
+    ]
+  },
+  {
+    "session": 7,
+    "concept": "water-cycle",
+    "turns": [
+      {
+        "turn": 0,
+        "text": "Let's think about water moving around our planet. It's constantly cycling. What do you already know about where water goes after it falls as rain? Start wherever makes sense to you.",
+        "is_planted": false
+      },
+      {
+        "turn": 1,
+        "text": "So rain doesn't just stay where it falls. Where are some different places water might end up after a rainstorm? Try to name at least three.",
+        "is_planted": false
+      },
+      {
+        "turn": 2,
+        "text": "One major way water leaves the surface is by turning into vapor. What conditions do you think cause water to evaporate more quickly versus more slowly?",
+        "is_planted": false
+      },
+      {
+        "turn": 3,
+        "text": "Plants also release water vapor into the air. What do you think might be happening inside a plant that causes it to release water?",
+        "is_planted": false
+      },
+      {
+        "turn": 4,
+        "text": "Water vapor rises into the atmosphere. What do you think has to happen before it can form clouds?",
+        "is_planted": false
+      },
+      {
+        "turn": 5,
+        "text": "Under what conditions do you think clouds finally release water as precipitation? What triggers that release?",
+        "is_planted": false
+      },
+      {
+        "turn": 6,
+        "text": "If you think about all the places rain can fall — city streets, forests, mountains, deserts — what determines where that water goes next? What factors matter?",
+        "is_planted": false
+      },
+      {
+        "turn": 7,
+        "text": "Water that soaks into the ground becomes groundwater, stored in porous rock formations called aquifers that can supply wells and springs. Given that storage system, what human activity do you think poses the greatest threat to groundwater quality?",
+        "is_planted": true
+      },
+      {
+        "turn": 8,
+        "text": "Oceans and lakes collect most of the water that flows from land. What do you think drives the water back into the air rather than staying in the ocean forever?",
+        "is_planted": false
+      },
+      {
+        "turn": 9,
+        "text": "Think about what would happen if global temperatures dropped sharply. How would that change different stages of the water cycle?",
+        "is_planted": false
+      },
+      {
+        "turn": 10,
+        "text": "The water cycle connects land, air, and ocean. What do you think would happen to life on land if evaporation were to stop completely?",
+        "is_planted": false
+      },
+      {
+        "turn": 11,
+        "text": "Let's wrap up: trace the full journey of a water molecule from the ocean surface to falling as rain on a mountain and back again. Include every stage you can name.",
+        "is_planted": false
+      }
+    ]
+  },
+  {
+    "session": 8,
+    "concept": "water-cycle",
+    "turns": [
+      {
+        "turn": 0,
+        "text": "Let's think about water moving around our planet. It's constantly cycling. What do you already know about where water goes after it falls as rain? Start wherever makes sense to you.",
+        "is_planted": false
+      },
+      {
+        "turn": 1,
+        "text": "So rain doesn't just stay where it falls. Where are some different places water might end up after a rainstorm? Try to name at least three.",
+        "is_planted": false
+      },
+      {
+        "turn": 2,
+        "text": "Evaporation is driven by heat energy — warm temperatures break the bonds holding liquid water together and allow molecules to escape into the air as vapor. Given that, when during the day would you expect evaporation to be highest?",
+        "is_planted": true
+      },
+      {
+        "turn": 3,
+        "text": "Plants also release water vapor into the air. What do you think might be happening inside a plant that causes it to release water?",
+        "is_planted": false
+      },
+      {
+        "turn": 4,
+        "text": "Water vapor rises into the atmosphere. What do you think has to happen before it can form clouds?",
+        "is_planted": false
+      },
+      {
+        "turn": 5,
+        "text": "Under what conditions do you think clouds finally release water as precipitation? What triggers that release?",
+        "is_planted": false
+      },
+      {
+        "turn": 6,
+        "text": "If you think about all the places rain can fall — city streets, forests, mountains, deserts — what determines where that water goes next? What factors matter?",
+        "is_planted": false
+      },
+      {
+        "turn": 7,
+        "text": "Some rainwater soaks into the ground instead of running off. What do you think happens to it underground? Where might it go?",
+        "is_planted": false
+      },
+      {
+        "turn": 8,
+        "text": "Oceans and lakes collect most of the water that flows from land. What do you think drives the water back into the air rather than staying in the ocean forever?",
+        "is_planted": false
+      },
+      {
+        "turn": 9,
+        "text": "Think about what would happen if global temperatures dropped sharply. How would that change different stages of the water cycle?",
+        "is_planted": false
+      },
+      {
+        "turn": 10,
+        "text": "The water cycle connects land, air, and ocean. What do you think would happen to life on land if evaporation were to stop completely?",
+        "is_planted": false
+      },
+      {
+        "turn": 11,
+        "text": "Let's wrap up: trace the full journey of a water molecule from the ocean surface to falling as rain on a mountain and back again. Include every stage you can name.",
+        "is_planted": false
+      }
+    ]
+  },
+  {
+    "session": 9,
+    "concept": "water-cycle",
+    "turns": [
+      {
+        "turn": 0,
+        "text": "Let's think about water moving around our planet. It's constantly cycling. What do you already know about where water goes after it falls as rain? Start wherever makes sense to you.",
+        "is_planted": false
+      },
+      {
+        "turn": 1,
+        "text": "So rain doesn't just stay where it falls. Where are some different places water might end up after a rainstorm? Try to name at least three.",
+        "is_planted": false
+      },
+      {
+        "turn": 2,
+        "text": "One major way water leaves the surface is by turning into vapor. What conditions do you think cause water to evaporate more quickly versus more slowly?",
+        "is_planted": false
+      },
+      {
+        "turn": 3,
+        "text": "Plants also release water vapor into the air. What do you think might be happening inside a plant that causes it to release water?",
+        "is_planted": false
+      },
+      {
+        "turn": 4,
+        "text": "Water vapor rises into the atmosphere. What do you think has to happen before it can form clouds?",
+        "is_planted": false
+      },
+      {
+        "turn": 5,
+        "text": "Precipitation falls when water droplets in a cloud grow too heavy to stay suspended — triggered by dropping temperatures or too much water accumulating. Given that trigger, what type of precipitation would you expect when air temperatures are well below freezing versus above freezing?",
+        "is_planted": true
+      },
+      {
+        "turn": 6,
+        "text": "If you think about all the places rain can fall — city streets, forests, mountains, deserts — what determines where that water goes next? What factors matter?",
+        "is_planted": false
+      },
+      {
+        "turn": 7,
+        "text": "Some rainwater soaks into the ground instead of running off. What do you think happens to it underground? Where might it go?",
+        "is_planted": false
+      },
+      {
+        "turn": 8,
+        "text": "Oceans and lakes collect most of the water that flows from land. What do you think drives the water back into the air rather than staying in the ocean forever?",
+        "is_planted": false
+      },
+      {
+        "turn": 9,
+        "text": "Think about what would happen if global temperatures dropped sharply. How would that change different stages of the water cycle?",
+        "is_planted": false
+      },
+      {
+        "turn": 10,
+        "text": "The water cycle connects land, air, and ocean. What do you think would happen to life on land if evaporation were to stop completely?",
+        "is_planted": false
+      },
+      {
+        "turn": 11,
+        "text": "Let's wrap up: trace the full journey of a water molecule from the ocean surface to falling as rain on a mountain and back again. Include every stage you can name.",
+        "is_planted": false
+      }
+    ]
+  }
+]

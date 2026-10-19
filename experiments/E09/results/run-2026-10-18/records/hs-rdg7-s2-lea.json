@@ -1,0 +1,36 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s2-lea",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 2,
+    "title": "Sounds That Stick",
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-15",
+  "attempted": [
+    {
+      "game": "Word Chain Race",
+      "answered": 14,
+      "right": 11
+    }
+  ],
+  "reached": [
+    {
+      "game": "Word Chain Race",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "name": "reversed sounds in short blends",
+      "count": 2
+    }
+  ],
+  "learner_words": "The chain race was faster. I got a lot of them. Sometimes I said the blend backwards — like I'd say the wrong one first. I knew it was wrong after I said it.",
+  "guide_note": "Wednesday session, Ash did this mid-afternoon. I was working. Checked the results later — 11 out of 14, level 2 again. Game noted reversals in blends twice. Ash seemed a bit tired when I saw them after but not frustrated. Good improvement on the score from Monday.",
+  "generated_by": "parent-filed"
+}

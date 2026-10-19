@@ -1,0 +1,238 @@
+{
+  "schema": "x04.holes/0.3-sim",
+  "count": 11,
+  "cluster_key": "(node_id, depth)",
+  "holes": [
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "node_legacy": "L01.M02.O02",
+      "module_id": "L01.M02",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "depth": 1,
+      "distinct_sessions": 3,
+      "hits": 3,
+      "kinds": {
+        "lost": 0,
+        "abandon": 3
+      },
+      "signature_label": "answer_too_abstract",
+      "signature_distribution": {
+        "prerequisite_gap": 1,
+        "answer_too_abstract": 1,
+        "lost_the_thread": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L01.M02.O02 (\"Identify inertial reference frames\") depth ~1: a plainer intermediate step before the abstract explanation"
+    },
+    {
+      "node_id": "n_5rtvh31aqdhp2mrqne1yg1swcr",
+      "node_legacy": "L01.M01.O01",
+      "module_id": "L01.M01",
+      "concepts": [
+        "net-force",
+        "inertia"
+      ],
+      "depth": 2,
+      "distinct_sessions": 3,
+      "hits": 3,
+      "kinds": {
+        "lost": 2,
+        "abandon": 1
+      },
+      "signature_label": "answer_too_abstract",
+      "signature_distribution": {
+        "answer_too_abstract": 2,
+        "prerequisite_gap": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L01.M01.O01 (\"Explain net force and inertia\") depth ~2: a plainer intermediate step before the abstract explanation"
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "node_legacy": "L02.M01.O01",
+      "module_id": "L02.M01",
+      "concepts": [
+        "newtons-second-law",
+        "mass"
+      ],
+      "depth": 2,
+      "distinct_sessions": 3,
+      "hits": 3,
+      "kinds": {
+        "lost": 2,
+        "abandon": 1
+      },
+      "signature_label": "answer_too_abstract",
+      "signature_distribution": {
+        "answer_too_abstract": 2,
+        "depth_without_payoff": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L02.M01.O01 (\"Explain F = ma and the role of mass\") depth ~2: a plainer intermediate step before the abstract explanation"
+    },
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "node_legacy": "L01.M01.O02",
+      "module_id": "L01.M01",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "depth": 2,
+      "distinct_sessions": 2,
+      "hits": 2,
+      "kinds": {
+        "lost": 2,
+        "abandon": 0
+      },
+      "signature_label": "answer_too_abstract",
+      "signature_distribution": {
+        "answer_too_abstract": 1,
+        "prerequisite_gap": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L01.M01.O02 (\"Distinguish speed, velocity and acceleration\") depth ~2: a plainer intermediate step before the abstract explanation"
+    },
+    {
+      "node_id": "n_z46b8dtwm8b6t8mf47sx4p677g",
+      "node_legacy": "L02.M02.O01",
+      "module_id": "L02.M02",
+      "concepts": [
+        "newtons-third-law"
+      ],
+      "depth": 3,
+      "distinct_sessions": 2,
+      "hits": 2,
+      "kinds": {
+        "lost": 1,
+        "abandon": 1
+      },
+      "signature_label": "patience_exhausted",
+      "signature_distribution": {
+        "lost_the_thread": 1,
+        "patience_exhausted": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L02.M02.O01 (\"Apply Newton's third law to action-reaction pairs\") depth ~3: a shorter path or an earlier payoff"
+    },
+    {
+      "node_id": "n_34em5trdgv13t260h8p3v2pq8p",
+      "node_legacy": "L01.M02.O02",
+      "module_id": "L01.M02",
+      "concepts": [
+        "inertial-frame"
+      ],
+      "depth": 2,
+      "distinct_sessions": 1,
+      "hits": 1,
+      "kinds": {
+        "lost": 0,
+        "abandon": 1
+      },
+      "signature_label": "prerequisite_gap",
+      "signature_distribution": {
+        "prerequisite_gap": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L01.M02.O02 (\"Identify inertial reference frames\") depth ~2: a short prerequisite recap the branch assumes"
+    },
+    {
+      "node_id": "n_690tws7m76yzezqr9w59kyhy74",
+      "node_legacy": "L02.M01.O02",
+      "module_id": "L02.M01",
+      "concepts": [
+        "newtons-second-law",
+        "kinematic-quantities"
+      ],
+      "depth": 2,
+      "distinct_sessions": 1,
+      "hits": 1,
+      "kinds": {
+        "lost": 0,
+        "abandon": 1
+      },
+      "signature_label": "prerequisite_gap",
+      "signature_distribution": {
+        "prerequisite_gap": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L02.M01.O02 (\"Calculate acceleration from net force\") depth ~2: a short prerequisite recap the branch assumes"
+    },
+    {
+      "node_id": "n_7dq3f22kfq1nf3px1hnzgxsz43",
+      "node_legacy": "L02.M01.O01",
+      "module_id": "L02.M01",
+      "concepts": [
+        "newtons-second-law",
+        "mass"
+      ],
+      "depth": 1,
+      "distinct_sessions": 1,
+      "hits": 1,
+      "kinds": {
+        "lost": 1,
+        "abandon": 0
+      },
+      "signature_label": "prerequisite_gap",
+      "signature_distribution": {
+        "prerequisite_gap": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L02.M01.O01 (\"Explain F = ma and the role of mass\") depth ~1: a short prerequisite recap the branch assumes"
+    },
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "node_legacy": "L01.M01.O02",
+      "module_id": "L01.M01",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "depth": 1,
+      "distinct_sessions": 1,
+      "hits": 1,
+      "kinds": {
+        "lost": 0,
+        "abandon": 1
+      },
+      "signature_label": "prerequisite_gap",
+      "signature_distribution": {
+        "prerequisite_gap": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L01.M01.O02 (\"Distinguish speed, velocity and acceleration\") depth ~1: a short prerequisite recap the branch assumes"
+    },
+    {
+      "node_id": "n_fka1p325m2tbp308vs317e8ta7",
+      "node_legacy": "L01.M01.O02",
+      "module_id": "L01.M01",
+      "concepts": [
+        "kinematic-quantities"
+      ],
+      "depth": null,
+      "distinct_sessions": 1,
+      "hits": 1,
+      "kinds": {
+        "lost": 1,
+        "abandon": 0
+      },
+      "signature_label": "other",
+      "signature_distribution": {
+        "other": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L01.M01.O02 (\"Distinguish speed, velocity and acceleration\") depth ~null: a re-teaching aid"
+    },
+    {
+      "node_id": "n_sggckec5r2pm32v4tgkpja0pfc",
+      "node_legacy": "L01.M02.O01",
+      "module_id": "L01.M02",
+      "concepts": [
+        "newtons-first-law",
+        "net-force"
+      ],
+      "depth": null,
+      "distinct_sessions": 1,
+      "hits": 1,
+      "kinds": {
+        "lost": 1,
+        "abandon": 0
+      },
+      "signature_label": "other",
+      "signature_distribution": {
+        "other": 1
+      },
+      "proposed_reteach_spot": "Add a bridge at L01.M02.O01 (\"Apply Newton's first law to bodies in equilibrium\") depth ~null: a re-teaching aid"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "seed": 20261009,
+    "forks": [
+      "en",
+      "es",
+      "de",
+      "fr"
+    ],
+    "learners": 200,
+    "followups": 2000,
+    "weeks": 12,
+    "ticks": 60,
+    "families": 10,
+    "hot_modules": [
+      "L01.M01",
+      "L03.M01"
+    ],
+    "model": "deterministic",
+    "simulated": true
+  },
+  "run1_documented": {
+    "fed_permodule": {
+      "conflictsPer100": 86.49,
+      "nodes": 327,
+      "nearDups": 0,
+      "crossForkLinks": 791,
+      "learnerShare": 0.388,
+      "decisions": {
+        "reuse": 1649,
+        "extend": 117,
+        "new": 10,
+        "ancestor": 224
+      }
+    },
+    "noindex_permodule": {
+      "conflictsPer100": 86.46,
+      "nodes": 552,
+      "nearDups": 228,
+      "crossForkLinks": 0,
+      "learnerShare": 0.638,
+      "decisions": {
+        "reuse": 1420,
+        "extend": 320,
+        "new": 32,
+        "ancestor": 228
+      }
+    },
+    "fed_single": {
+      "conflictsPer100": 97.3
+    },
+    "noindex_single": {
+      "conflictsPer100": 97.29
+    }
+  },
+  "arms": {
+    "fed_single_baseline": {
+      "opts": {
+        "federated": true,
+        "singleFile": true,
+        "appendOnly": false,
+        "lifecycle": "baseline"
+      },
+      "decisions": {
+        "reuse": 1686,
+        "extend": 110,
+        "new": 10,
+        "ancestor": 194
+      },
+      "conflicts": 1940,
+      "conflictsPer100": 97,
+      "nearDups": 0,
+      "crossForkLinks": 1269,
+      "unreviewedCrossFork": 841,
+      "totalNodes": 170,
+      "learnerShare": 0.8583333333333333,
+      "lookupCost": {
+        "avgUnionScanComparisons": 155.13621262458472,
+        "avgIndexComparisons": 1.9335548172757475,
+        "lookups": 1806
+      }
+    },
+    "fed_permodule_baseline": {
+      "opts": {
+        "federated": true,
+        "singleFile": false,
+        "appendOnly": false,
+        "lifecycle": "baseline"
+      },
+      "decisions": {
+        "reuse": 1674,
+        "extend": 110,
+        "new": 10,
+        "ancestor": 206
+      },
+      "conflicts": 1616,
+      "conflictsPer100": 80.8,
+      "nearDups": 0,
+      "crossForkLinks": 1255,
+      "unreviewedCrossFork": 854,
+      "totalNodes": 170,
+      "learnerShare": 0.8666666666666667,
+      "lookupCost": {
+        "avgUnionScanComparisons": 155.2541806020067,
+        "avgIndexComparisons": 1.9331103678929766,
+        "lookups": 1794
+      }
+    },
+    "noindex_permodule": {
+      "opts": {
+        "federated": false,
+        "singleFile": false,
+        "appendOnly": false,
+        "lifecycle": "baseline"
+      },
+      "decisions": {
+        "reuse": 1365,
+        "extend": 365,
+        "new": 40,
+        "ancestor": 230
+      },
+      "conflicts": 1612,
+      "conflictsPer100": 80.6,
+      "nearDups": 286,
+      "crossForkLinks": 0,
+      "unreviewedCrossFork": 0,
+      "totalNodes": 455,
+      "learnerShare": 0.8518518518518519,
+      "lookupCost": {
+        "avgUnionScanComparisons": 122.92937853107344,
+        "avgIndexComparisons": 1.771186440677966,
+        "lookups": 1770
+      }
+    },
+    "fed_appendonly_fixed": {
+      "opts": {
+        "federated": true,
+        "singleFile": false,
+        "appendOnly": true,
+        "lifecycle": "accepted"
+      },
+      "decisions": {
+        "reuse": 1629,
+        "extend": 126,
+        "new": 10,
+        "ancestor": 235
+      },
+      "conflicts": 271,
+      "conflictsPer100": 13.55,
+      "nearDups": 16,
+      "crossForkLinks": 1190,
+      "unreviewedCrossFork": 0,
+      "totalNodes": 186,
+      "learnerShare": 0.8308823529411765,
+      "lookupCost": {
+        "avgUnionScanComparisons": 157.26118980169971,
+        "avgIndexComparisons": 1.9359773371104816,
+        "lookups": 1765
+      }
+    },
+    "fed_permodule_fixed": {
+      "opts": {
+        "federated": true,
+        "singleFile": false,
+        "appendOnly": false,
+        "lifecycle": "accepted"
+      },
+      "decisions": {
+        "reuse": 1651,
+        "extend": 118,
+        "new": 11,
+        "ancestor": 220
+      },
+      "conflicts": 1619,
+      "conflictsPer100": 80.95,
+      "nearDups": 9,
+      "crossForkLinks": 1201,
+      "unreviewedCrossFork": 0,
+      "totalNodes": 179,
+      "learnerShare": 0.8449612403100775,
+      "lookupCost": {
+        "avgUnionScanComparisons": 155.56629213483146,
+        "avgIndexComparisons": 1.947191011235955,
+        "lookups": 1780
+      }
+    }
+  },
+  "contested_core": {
+    "kept_side_by_side": true,
+    "dropped": 0,
+    "detail": [
+      {
+        "contest_id": "contest-third-law-core",
+        "nodes": [
+          {
+            "id": "n_z7f5j2hnm87x0cfbd4c39ys85z",
+            "fork": "en"
+          },
+          {
+            "id": "n_ws05197vwg2k14wc6bvy9rmbf1",
+            "fork": "de"
+          }
+        ]
+      }
+    ]
+  },
+  "inverted_index_check": {
+    "union_comparisons": 400,
+    "index_comparisons": 4,
+    "agrees": true,
+    "union_size": 400
+  }
+}

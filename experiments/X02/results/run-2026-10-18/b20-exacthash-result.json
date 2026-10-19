@@ -1,0 +1,294 @@
+{
+  "method": "exact content-hash (sha256 of normalized text)",
+  "n": 40,
+  "n_same": 30,
+  "n_different": 10,
+  "caught_same": 0,
+  "missed_same": 30,
+  "correct_different": 10,
+  "false_same": 0,
+  "recall_on_same": 0,
+  "accuracy": 0.25,
+  "rows": [
+    {
+      "id": 1,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 2,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 3,
+      "truth": "same",
+      "kind": "translation-es",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 4,
+      "truth": "same",
+      "kind": "translation-de",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 5,
+      "truth": "same",
+      "kind": "translation-fr",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 6,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 7,
+      "truth": "same",
+      "kind": "translation-es",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 8,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 9,
+      "truth": "same",
+      "kind": "translation-de",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 10,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 11,
+      "truth": "same",
+      "kind": "translation-fr",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 12,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 13,
+      "truth": "same",
+      "kind": "translation-es",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 14,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 15,
+      "truth": "same",
+      "kind": "translation-de",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 16,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 17,
+      "truth": "same",
+      "kind": "translation-fr",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 18,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 19,
+      "truth": "same",
+      "kind": "translation-es",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 20,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 21,
+      "truth": "same",
+      "kind": "translation-de",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 22,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 23,
+      "truth": "same",
+      "kind": "translation-fr",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 24,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 25,
+      "truth": "same",
+      "kind": "translation-es",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 26,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 27,
+      "truth": "same",
+      "kind": "translation-de",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 28,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 29,
+      "truth": "different",
+      "kind": "control",
+      "exact_hash": "different",
+      "correct": true
+    },
+    {
+      "id": 30,
+      "truth": "different",
+      "kind": "control",
+      "exact_hash": "different",
+      "correct": true
+    },
+    {
+      "id": 31,
+      "truth": "different",
+      "kind": "control",
+      "exact_hash": "different",
+      "correct": true
+    },
+    {
+      "id": 32,
+      "truth": "different",
+      "kind": "control",
+      "exact_hash": "different",
+      "correct": true
+    },
+    {
+      "id": 33,
+      "truth": "different",
+      "kind": "near-miss",
+      "exact_hash": "different",
+      "correct": true
+    },
+    {
+      "id": 34,
+      "truth": "different",
+      "kind": "near-miss",
+      "exact_hash": "different",
+      "correct": true
+    },
+    {
+      "id": 35,
+      "truth": "different",
+      "kind": "near-miss",
+      "exact_hash": "different",
+      "correct": true
+    },
+    {
+      "id": 36,
+      "truth": "different",
+      "kind": "control",
+      "exact_hash": "different",
+      "correct": true
+    },
+    {
+      "id": 37,
+      "truth": "different",
+      "kind": "near-miss",
+      "exact_hash": "different",
+      "correct": true
+    },
+    {
+      "id": 38,
+      "truth": "different",
+      "kind": "control",
+      "exact_hash": "different",
+      "correct": true
+    },
+    {
+      "id": 39,
+      "truth": "same",
+      "kind": "translation-fr",
+      "exact_hash": "different",
+      "correct": false
+    },
+    {
+      "id": 40,
+      "truth": "same",
+      "kind": "paraphrase",
+      "exact_hash": "different",
+      "correct": false
+    }
+  ]
+}

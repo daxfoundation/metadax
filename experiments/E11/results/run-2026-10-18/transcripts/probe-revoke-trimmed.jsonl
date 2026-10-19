@@ -1,0 +1,3 @@
+{"role":"system","content":"Revocation probe agent, sees memory after week 3 deleted."}
+{"role":"revoke","REV01":"week3_present=false. No week 3 entry in weeks array. ingest_notes references the deletion but contains no week 3 learning content.","REV02":"earliest_week=1","REV03":"no visualization-fundamentals topics by name; basic-plotting (week 6) present but no bar/line/scatter/dual-axis topics","REV04":"week3_nodes_present=false — L01.M03.O01, O02, O03 absent from public_nodes"}
+{"summary":"revocation_success=true, week3_absent=true, week3_nodes_absent=true"}

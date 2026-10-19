@@ -1,0 +1,36 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "intro",
+  "display": {
+    "message": "Hey Tomás! Great to have you here. We're going to explore **Probability** together — starting with the very foundation: what makes something a *random event*, and how we can describe what might happen.\n\nNo pressure, no rush. Think of it like shuffling a deck of cards before a game — sometimes you just have to see what comes up!\n\nLet's warm up with a quick question to see where you're at:\n\n---\n\n**Question 1 of 6 — Remember**\n\nWhich of the following is an example of a **random event**?\n\nA) The sun rising tomorrow morning \nB) Drawing a card from a well-shuffled standard deck \nC) Water boiling at 100°C at sea level \nD) A bicycle wheel turning when you pedal\n\nTake your time and pick the one that fits best."
+  },
+  "meta": {
+    "concept": "random-event",
+    "bloom_level": "Remember",
+    "question_type": "Multiple Choice",
+    "attempt": 1
+  },
+  "feedback": null,
+  "handoff": null,
+  "summary": null,
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "random-event": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "random-event": 0
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

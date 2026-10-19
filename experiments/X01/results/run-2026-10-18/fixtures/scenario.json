@@ -1,0 +1,28 @@
+{
+  "comment": "SIMULATED fixture for X01. The Newton third-law 'kite line' stuck spot. Public-safe: made-up learner first names, 'guide'/'learner' only.",
+  "concept": "newtons-third-law",
+  "stuck_spot": "kite-line",
+  "canonical_stuck_signature": "cancellation-fallacy",
+  "stuck_detail": "Learner places both the action and the reaction force on one body and concludes the pair cancels (nothing moves) or that the larger force wins.",
+  "question": "A child holds the string of a kite. The string pulls the kite, and the kite pulls back on the string with an equal and opposite force (Newton's third law). If the two forces are equal and opposite, how can the kite ever accelerate upward? Explain.",
+  "resolution_criterion": "Learner states that the action and reaction forces act on DIFFERENT bodies (one on the kite, one on the string/hand), so they are not added on the same body and do not cancel; the kite's own acceleration depends only on the net force acting ON THE KITE (string tension + wind + gravity).",
+  "cap_attempts": 3,
+  "cohorts": {
+    "A": [
+      { "pid": "a-e1", "name": "Maya",  "lang": "en",     "subject": "kite flying",        "initial": "The string pulls the kite up and the kite pulls the string down with the same force, so they're equal and opposite — they cancel out. If they cancel, the net force is zero, so the kite just can't accelerate. Nothing should move." },
+      { "pid": "a-e2", "name": "Toby",  "lang": "en",     "subject": "kite flying",        "initial": "Equal and opposite means a tie. Two equal forces fighting each other cancel to zero, so there's no leftover force on the kite. It stays put." },
+      { "pid": "a-e3", "name": "Grace", "lang": "en",     "subject": "kite flying",        "initial": "If the forces are exactly equal, whichever one is 'really' bigger must win, but Newton says they're equal, so neither wins and the kite can't go up." },
+      { "pid": "a-i1", "name": "Dwi",   "lang": "id-x-jv", "subject": "layang-layang (kite flying)", "initial": "Lha tali narik layangan, layangan narik tali, gayane padha lan ngelawan — dadi ya saling cancel ta? Kalau sama besar dan berlawanan, resultannya nol, mosok layangan isa munggah? Harusnya diam." },
+      { "pid": "a-i2", "name": "Sari",  "lang": "id-x-jv", "subject": "layang-layang (kite flying)", "initial": "Gaya aksi lan reaksi iku padha gedhene. Nek padha, ya tabrakan terus entek, nol. Jadi nggak ada sisa gaya buat narik layangan ke atas. Meneng wae." },
+      { "pid": "a-i3", "name": "Bayu",  "lang": "id-x-jv", "subject": "layang-layang (kite flying)", "initial": "Nek loro gayane padha persis, mesthi salah siji sing menang tenan. Tapi jare Newton padha, dadi ora ana sing menang, layangan ora isa mabur." }
+    ],
+    "B": [
+      { "pid": "b-e1", "name": "Nadia", "lang": "en",     "subject": "archery bow",        "initial": "When I draw a bow, the string pulls my fingers and my fingers pull the string back equally. Equal and opposite — so they cancel and there's no net force; the arrow shouldn't launch." },
+      { "pid": "b-e2", "name": "Owen",  "lang": "en",     "subject": "rowing a boat",       "initial": "The oar pushes the water back and the water pushes the oar forward with an equal force. If they're equal and opposite they cancel, so the boat can't actually move forward." },
+      { "pid": "b-e3", "name": "Priya", "lang": "en",     "subject": "rocket launch",       "initial": "The rocket pushes the exhaust down and the exhaust pushes the rocket up with equal force. Equal and opposite = zero net, so how does it ever lift off? It should just sit there." },
+      { "pid": "b-i1", "name": "Rina",  "lang": "id-x-jv", "subject": "mendayung perahu (rowing)", "initial": "Dayung nyurung banyu mburi, banyu nyurung dayung ngarep, gayane padha lan ngelawan. Nek cancel, resultan nol — mosok perahu isa maju? Kudune meneng." },
+      { "pid": "b-i2", "name": "Eka",   "lang": "id-x-jv", "subject": "roket (rocket)",      "initial": "Roket nyemprot gas mudhun, gas ndorong roket munggah, padha gedhene lan ngelawan. Nek padha terus entek dadi nol, piye roket isa mabur? Harusnya diam." },
+      { "pid": "b-i3", "name": "Tari",  "lang": "id-x-jv", "subject": "memanah (archery)",   "initial": "Tali gendewa narik driji, driji narik tali, gayane padha persis. Mesthi salah siji menang, tapi nek padha ya ora ana sing menang, panah ora isa mlesat." }
+    ]
+  }
+}

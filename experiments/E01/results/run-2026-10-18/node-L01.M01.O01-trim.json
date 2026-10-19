@@ -1,0 +1,13 @@
+{
+  "id": "L01.M01.O01",
+  "schema": "metadax.node/0.3",
+  "depth": 1,
+  "title": "Identify random events and describe their outcomes",
+  "seeds": [
+    "Are some real-world events truly random, or do they just feel unpredictable?",
+    "Can an event have infinitely many possible outcomes?",
+    "How is listing outcomes different for a two-stage experiment like rolling two dice?"
+  ],
+  "validate": "OK",
+  "content_sha256": "e52ac09a83d24655..."
+}

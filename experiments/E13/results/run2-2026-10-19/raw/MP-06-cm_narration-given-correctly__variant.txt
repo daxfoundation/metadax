@@ -1,0 +1,50 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "That's exactly right — well done. You've captured the core of it: electrons hand off through the membrane complexes, protons get pumped, and a gradient builds up that drives ATP synthesis. A solid foundation to build on.\n\nNow let's go one level deeper. Here's an Understand-level question about the electron transport chain.",
+    "instructions": "Explain in your own words — two or three sentences is ideal. Focus on the relationship or process the question asks about.",
+    "example": "Example: 'The proton gradient stores energy because there are more protons on one side of the membrane than the other, and protons tend to flow back to equalize the difference.'",
+    "question": "Explain why each electron hand-off in the chain causes protons to be pumped across the inner mitochondrial membrane. What is the connection between the electron movement and the proton movement?"
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Understand",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "feedback": {
+    "result": "correct",
+    "explanation": "The electron transport chain is indeed a series of protein complexes in the inner mitochondrial membrane. Electrons pass from complex to complex, releasing energy at each step, and that energy is used to pump protons across the membrane — building the gradient that ultimately powers ATP synthesis."
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Understand",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 40,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

@@ -1,0 +1,42 @@
+SPEC: Probability Tree
+
+Export a named ES-module function:
+
+  export function probTree(root)
+
+Parameter
+  root – a tree node object:
+    {
+      name:     string,
+      prob:     number,       // probability of this branch, 0–1 (root = 1)
+      children: [ ...nodes ]  // empty array for leaf nodes
+    }
+
+Returns an object:
+  {
+    root:      node,      // same tree, each node annotated with joint probability
+    leaves:    [ { name:string, joint:number }, ... ],  // all leaf nodes
+    sumToOne:  boolean    // true if leaves' joint values sum to 1.0 (±0.0001)
+  }
+
+Annotation rule
+  Each node gains a field: joint = product of all prob values from root down to
+  and including that node. The root's joint = root.prob = 1.
+
+Examples
+  probTree({ name:'flip', prob:1, children:[
+    { name:'H', prob:0.5, children:[] },
+    { name:'T', prob:0.5, children:[] }
+  ]})
+  → { root:{ name:'flip', prob:1, joint:1, children:[
+               { name:'H', prob:0.5, joint:0.5, children:[] },
+               { name:'T', prob:0.5, joint:0.5, children:[] } ] },
+      leaves: [{ name:'H', joint:0.5 }, { name:'T', joint:0.5 }],
+      sumToOne: true }
+
+  Two-level tree (sunny/rainy × car/bus):
+    sunny (0.7) → car (0.8) → joint 0.56
+                → bus (0.2) → joint 0.14
+    rainy (0.3) → car (0.4) → joint 0.12
+                → bus (0.6) → joint 0.18
+  leaves sum = 1.0 → sumToOne: true

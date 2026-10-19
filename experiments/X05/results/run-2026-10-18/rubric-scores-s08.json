@@ -1,0 +1,14 @@
+[
+  {"turn": 0, "leads": false, "reason": "Open invitation to share prior knowledge; no answer implied."},
+  {"turn": 1, "leads": false, "reason": "Asks learner to generate examples; no specific destinations given."},
+  {"turn": 2, "leads": true, "reason": "'warm temperatures…allow molecules to escape' directly implies midday/afternoon, making the answer obvious."},
+  {"turn": 3, "leads": false, "reason": "Open question about plant physiology; no mechanism revealed."},
+  {"turn": 4, "leads": false, "reason": "Asks what must happen before clouds form; no process stated."},
+  {"turn": 5, "leads": false, "reason": "Open question about precipitation triggers; no conditions provided."},
+  {"turn": 6, "leads": false, "reason": "Lists varied surfaces as context without revealing which factors matter."},
+  {"turn": 7, "leads": false, "reason": "Open question about groundwater behavior; no answer embedded."},
+  {"turn": 8, "leads": false, "reason": "Asks learner to reason about driving force; no mechanism supplied."},
+  {"turn": 9, "leads": false, "reason": "Hypothetical scenario; multiple stages open to learner's reasoning."},
+  {"turn": 10, "leads": false, "reason": "Asks for prediction without hinting at consequences."},
+  {"turn": 11, "leads": false, "reason": "Synthesis task asking learner to reconstruct full cycle independently."}
+]

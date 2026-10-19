@@ -1,0 +1,46 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "question",
+  "display": {
+    "message": "Let's explore how the mitochondrion pulls off one of its neatest tricks — the proton gradient. Before we dig into the details, I'd love to hear what you already know: imagine you're explaining the proton gradient to a friend over the garden fence — what would you tell them, in your own words? No pressure; hints and second chances are part of how this works. (Commands you can use any time: next, skip, hint, why, more, ask: <your question>, summary, stop.)",
+    "instructions": "Give a short answer in your own words — a sentence or two is fine. There is no single right phrasing; I'll look at the meaning, not the wording.",
+    "example": "For a different concept, a narration might sound like: 'The electron transport chain is a set of protein complexes in the inner membrane that pass electrons along, releasing energy at each step.'",
+    "question": "In your own words, what is a proton gradient, and why does it matter to the cell?"
+  },
+  "meta": {
+    "concept": "proton-gradient",
+    "bloom_level": "Remember",
+    "question_type": "Short Answer (explain in own words)",
+    "attempt": 1
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "proton-gradient",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 100,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

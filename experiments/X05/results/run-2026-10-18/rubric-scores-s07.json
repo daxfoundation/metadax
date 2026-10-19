@@ -1,0 +1,14 @@
+[
+  {"turn": 0, "leads": false, "reason": "Open question asking what the learner already knows; no answer implied."},
+  {"turn": 1, "leads": false, "reason": "Asks learner to generate examples; no specific destinations given."},
+  {"turn": 2, "leads": false, "reason": "Open comparison question; no conditions named or hinted at."},
+  {"turn": 3, "leads": false, "reason": "Asks learner to reason about plant internals; no mechanism stated or implied."},
+  {"turn": 4, "leads": false, "reason": "Open question about atmospheric process; no answer embedded or implied."},
+  {"turn": 5, "leads": false, "reason": "Open question about precipitation triggers; no specific conditions provided."},
+  {"turn": 6, "leads": false, "reason": "Provides context (varied surfaces) without revealing what factors matter; genuinely open."},
+  {"turn": 7, "leads": true, "reason": "'stored in porous rock formations called aquifers that can supply wells and springs' frames the system so narrowly that contamination becomes obvious."},
+  {"turn": 8, "leads": false, "reason": "Open question asking learner to reason about evaporation drivers; no answer stated."},
+  {"turn": 9, "leads": false, "reason": "Hypothetical scenario; learner must supply the reasoning about cycle changes."},
+  {"turn": 10, "leads": false, "reason": "Hypothetical with open-ended consequences; no answer embedded or implied."},
+  {"turn": 11, "leads": false, "reason": "Synthesis/recall task; asks learner to construct the answer themselves."}
+]

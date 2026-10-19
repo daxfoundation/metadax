@@ -1,0 +1,6 @@
+[
+  {"turn": 3, "reason": "Presupposes the answer to T2 (lipids) and narrows the relevant property to one logical answer (polarity/hydrophobicity)."},
+  {"turn": 4, "reason": "Embeds the T3 answer ('fatty interior') before the learner confirmed it, leaving only one possible conclusion about charged ions."},
+  {"turn": 7, "reason": "Describes the exact condition that defines active transport, making 'energy' the only answer that fits 'what simple diffusion cannot provide'."},
+  {"turn": 9, "reason": "States that water leaves the cell by osmosis before asking the question, so the learner only needs to name the trivially obvious physical result (shrinking)."}
+]

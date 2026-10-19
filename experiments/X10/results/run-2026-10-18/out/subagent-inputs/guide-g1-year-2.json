@@ -1,0 +1,47 @@
+{
+  "instruction": "You are the guide opening a new course for an adult learner. Use the carry-over offers to open from what they already hold. You MUST honour every refusal. Produce a short opening (<=120 words) and name which offers you lean on.",
+  "new_course": "intro-chemistry",
+  "new_course_concepts": [
+    "atomic-structure",
+    "chemical-bonding",
+    "reaction-rates",
+    "acids-bases",
+    "concentration"
+  ],
+  "carry_over_offers": [
+    {
+      "from_course": "cell-biology",
+      "from_concept": "osmosis",
+      "to_concept": "concentration",
+      "bridge": "prerequisite",
+      "stance": "advance",
+      "why": "concentration builds directly on your osmosis."
+    },
+    {
+      "from_course": "cell-biology",
+      "from_concept": "diffusion",
+      "to_concept": "concentration",
+      "bridge": "prerequisite",
+      "stance": "advance",
+      "why": "concentration builds directly on your diffusion."
+    },
+    {
+      "from_course": "cell-biology",
+      "from_concept": "enzymes",
+      "to_concept": "reaction-rates",
+      "bridge": "shared-technique",
+      "stance": "advance",
+      "why": "reaction-rates uses the same move you learned for your enzymes.",
+      "presentation": "neutral (refused presentation stripped)"
+    }
+  ],
+  "active_refusals": [
+    {
+      "directive": "never_show",
+      "scope": "example-style",
+      "target": "food-and-diet-examples",
+      "said": "Please stop using food and diet examples, they upset me."
+    }
+  ],
+  "lapse_before_days": 0
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "metadax.event/0.2",
+  "session_id": "ses-20261018-test",
+  "seq": 1,
+  "ts": "2026-10-18T21:00:00Z",
+  "type": "teleport",
+  "course_id": "probability-adults",
+  "node_id": "L01.M01.O01",
+  "concept": "random-event",
+  "bloom_level": "Remember",
+  "result": null,
+  "data": {}
+}

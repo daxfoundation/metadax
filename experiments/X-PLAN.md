@@ -1,6 +1,6 @@
 # X-experiments — plan, dependencies, run order
 
-**Status: X01–X12 designed.** Cards live in `experiments/X01/ … X12/`, written in the
+**Status: X01–X11 run (18-19 Oct 2026); X12 designed.** Cards live in `experiments/X01/ … X12/`, written in the
 same shape as the public E-cards (question / method / measures / kill line / what
 compounds / dead ends / what has to exist / simulation-first). Nothing here has been
 built or run; each is **designed**. This is a way to find the bottlenecks, never *the*
@@ -98,3 +98,7 @@ simulated.
   file quoted.
 - Honesty rule: a result is written only when an actual run produces it — never from a
   plan or an expectation.
+
+## Runs on 18-19 Oct 2026
+
+X01–X11 were each run on 2026-10-18 (most with models standing in for the people — labelled simulated in the result files). X01, X07 and X08 also have a run-2 follow-up on 2026-10-19. The runs produced new bottleneck rows B24–B93 in BOTTLENECKS.md and are written up in FINDINGS-20261019.md. X12 (the capstone) is deliberately last and has not been run; it depends on the earlier fixes landing. See FINDINGS-20261019.md section Blocked for X12 and the other gaps.

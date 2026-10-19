@@ -1,0 +1,28 @@
+{
+  "_comment": "Proposed additions to schemas/node.schema.json (metadax.node/0.3) to fix B09 and B10. These keys are added under properties (additionalProperties is false, so they must be declared). None are required, so existing nodes stay valid.",
+  "properties_to_add": {
+    "status": {
+      "enum": ["active", "has_abandonments", "superseded"],
+      "default": "active",
+      "_why": "B10 — the registry can represent 'abandoned' without replaying session logs."
+    },
+    "abandoned_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "_why": "B10 — count of sessions that abandoned a path rooted at this node."
+    },
+    "lost_count": {
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "_why": "B10 — count of sessions that reported being lost here."
+    },
+    "markers": {
+      "type": "array",
+      "default": [],
+      "items": { "$ref": "marker.schema.json" },
+      "_why": "B09 — markers attach to the node by its opaque id, not a side-file keyed by (module,concept,depth)."
+    }
+  }
+}

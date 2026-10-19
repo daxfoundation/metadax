@@ -1,0 +1,39 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s1-simone",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 1,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-13",
+  "attempted": [
+    {
+      "game": "Dino Sound Game",
+      "answered": 11,
+      "right": 8
+    }
+  ],
+  "reached": [
+    {
+      "game": "Dino Sound Game",
+      "level": 2,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "behavior": "Prononçait les sons correctement mais les gardait séparés sans les fusionner",
+      "count": 2
+    },
+    {
+      "behavior": "Devinait le mot à partir du premier son sans traiter la suite",
+      "count": 1
+    }
+  ],
+  "learner_words": "Lou a bien identifié les sons individuels aujourd'hui. La difficulté se situe dans l'étape de fusion : elle prononce chaque son distinctement mais n'arrive pas encore à les assembler en un mot fluide. Elle a aussi tendance à anticiper le mot dès le premier son entendu.",
+  "guide_note": "Encourager des exercices de fusion orale lente avant la prochaine séance. Travailler la patience dans l'écoute complète de la séquence sonore avant de répondre.",
+  "generated_by": "parent-filed"
+}

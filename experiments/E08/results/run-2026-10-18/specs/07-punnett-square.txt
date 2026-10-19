@@ -1,0 +1,41 @@
+SPEC: Punnett Square
+
+Export a named ES-module function:
+
+  export function punnettSquare(parent1, parent2)
+
+Parameters
+  parent1, parent2 – each is a 2-character string of alleles, uppercase dominant,
+                     lowercase recessive. Examples: "Aa", "AA", "aa".
+
+Scope: one gene (two alleles per parent) only. Each parent contributes one
+gamete per column/row of a 2 × 2 grid.
+
+Returns an object:
+  {
+    grid:            string[][],  // 2 × 2 array of offspring genotypes
+    genotypeCounts:  object,      // e.g. { "AA":1, "Aa":2, "aa":1 }
+    phenotypeCounts: {
+      dominant:  number,          // offspring with at least one dominant allele
+      recessive: number           // offspring with two recessive alleles
+    }
+  }
+
+Grid construction
+  Row 0 → parent1[0] allele crossed with parent2 gametes
+  Row 1 → parent1[1] allele crossed with parent2 gametes
+  Columns correspond to parent2[0] and parent2[1] gametes.
+  Each cell = parent1-row-allele + parent2-col-allele, uppercase-first.
+
+Examples
+  punnettSquare("Aa", "Aa")
+  → { grid: [["AA","Aa"],["Aa","aa"]], genotypeCounts: {AA:1,Aa:2,aa:1},
+      phenotypeCounts: {dominant:3, recessive:1} }
+
+  punnettSquare("AA", "aa")
+  → { grid: [["Aa","Aa"],["Aa","Aa"]], genotypeCounts: {Aa:4},
+      phenotypeCounts: {dominant:4, recessive:0} }
+
+  punnettSquare("aa", "aa")
+  → { grid: [["aa","aa"],["aa","aa"]], genotypeCounts: {aa:4},
+      phenotypeCounts: {dominant:0, recessive:4} }

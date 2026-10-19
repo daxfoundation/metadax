@@ -1,0 +1,29 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "intro",
+  "display": {
+    "message": "Hi Priya! Welcome to your maths session. Today we're exploring **Probability** — specifically, what makes an event 'random' and how we describe its possible outcomes.\n\nThink of it like scattering seeds in your garden: you never know exactly which ones will sprout, but you can describe what *might* happen. That's the heart of probability!\n\nLet's start with a quick question to see what you already know.\n\n---\n\n**Question 1 of 3**\n\nWhich of the following is an example of a **random event**?\n\nA) The sun rising tomorrow morning\nB) Rolling a standard six-sided die and getting a 4\nC) Water boiling at 100°C at sea level\nD) A triangle having three sides\n\n*(Type A, B, C, or D to answer.)*"
+  },
+  "meta": {
+    "concept": "random-event",
+    "bloom_level": "Remember",
+    "question_type": "mcq",
+    "attempt": 1
+  },
+  "feedback": null,
+  "handoff": null,
+  "summary": null,
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Remember",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "question",
+    "levels": ["Remember", "Understand"],
+    "competency": 0
+  },
+  "next_action": "awaiting_answer",
+  "warnings": []
+}

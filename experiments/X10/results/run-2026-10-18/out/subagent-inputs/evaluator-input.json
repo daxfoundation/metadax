@@ -1,0 +1,282 @@
+{
+  "instruction": "You are the carry-over correctness evaluator (grader). For each year, judge the proposer against the answer key.",
+  "per_year": {
+    "2": {
+      "offers": [
+        {
+          "from_course": "cell-biology",
+          "from_concept": "osmosis",
+          "to_concept": "concentration",
+          "bridge": "prerequisite",
+          "stance": "advance",
+          "why": "concentration builds directly on your osmosis."
+        },
+        {
+          "from_course": "cell-biology",
+          "from_concept": "diffusion",
+          "to_concept": "concentration",
+          "bridge": "prerequisite",
+          "stance": "advance",
+          "why": "concentration builds directly on your diffusion."
+        },
+        {
+          "from_course": "cell-biology",
+          "from_concept": "enzymes",
+          "to_concept": "reaction-rates",
+          "bridge": "shared-technique",
+          "stance": "advance",
+          "why": "reaction-rates uses the same move you learned for your enzymes.",
+          "presentation": "neutral (refused presentation stripped)"
+        }
+      ],
+      "not_offered": [],
+      "suppressed": [
+        {
+          "from": "enzymes",
+          "to": "reaction-rates",
+          "refusal_id": "ref-food",
+          "kind": "presentation",
+          "reason": "stripped {\"example_style\":\"food-and-diet-examples\"}"
+        }
+      ]
+    },
+    "3": {
+      "offers": [
+        {
+          "from_course": "intro-chemistry",
+          "from_concept": "chemical-bonding",
+          "to_concept": "reaction-mechanisms",
+          "bridge": "prerequisite",
+          "stance": "review",
+          "why": "reaction-mechanisms builds directly on your chemical-bonding."
+        },
+        {
+          "from_course": "intro-chemistry",
+          "from_concept": "reaction-rates",
+          "to_concept": "reaction-mechanisms",
+          "bridge": "prerequisite",
+          "stance": "review",
+          "why": "reaction-mechanisms builds directly on your reaction-rates."
+        }
+      ],
+      "not_offered": [],
+      "suppressed": []
+    },
+    "4": {
+      "offers": [
+        {
+          "from_course": "cell-biology",
+          "from_concept": "enzymes",
+          "to_concept": "enzyme-kinetics",
+          "bridge": "prerequisite",
+          "stance": "advance",
+          "why": "enzyme-kinetics builds directly on your enzymes."
+        },
+        {
+          "from_course": "organic-chemistry",
+          "from_concept": "functional-groups",
+          "to_concept": "protein-structure",
+          "bridge": "prerequisite",
+          "stance": "advance",
+          "why": "protein-structure builds directly on your functional-groups.",
+          "presentation": "neutral (refused presentation stripped)"
+        },
+        {
+          "from_course": "intro-chemistry",
+          "from_concept": "chemical-bonding",
+          "to_concept": "protein-structure",
+          "bridge": "prerequisite",
+          "stance": "advance",
+          "why": "protein-structure builds directly on your chemical-bonding."
+        },
+        {
+          "from_course": "intro-chemistry",
+          "from_concept": "reaction-rates",
+          "to_concept": "enzyme-kinetics",
+          "bridge": "prerequisite",
+          "stance": "advance",
+          "why": "enzyme-kinetics builds directly on your reaction-rates."
+        },
+        {
+          "from_course": "cell-biology",
+          "from_concept": "enzymes",
+          "to_concept": "metabolism",
+          "bridge": "prerequisite",
+          "stance": "advance",
+          "why": "metabolism builds directly on your enzymes.",
+          "presentation": "neutral (refused presentation stripped)"
+        }
+      ],
+      "not_offered": [],
+      "suppressed": [
+        {
+          "from": "functional-groups",
+          "to": "protein-structure",
+          "refusal_id": "ref-3d",
+          "kind": "presentation",
+          "reason": "stripped {\"modality\":\"3d-rotating-molecule-visuals\"}"
+        },
+        {
+          "from": "enzymes",
+          "to": "metabolism",
+          "refusal_id": "ref-food",
+          "kind": "presentation",
+          "reason": "stripped {\"example_style\":\"food-and-diet-examples\"}"
+        }
+      ]
+    },
+    "5": {
+      "offers": [
+        {
+          "from_course": "biochemistry",
+          "from_concept": "protein-structure",
+          "to_concept": "translation",
+          "bridge": "prerequisite",
+          "stance": "review",
+          "why": "translation builds directly on your protein-structure."
+        },
+        {
+          "from_course": "intro-chemistry",
+          "from_concept": "chemical-bonding",
+          "to_concept": "dna-structure",
+          "bridge": "prerequisite",
+          "stance": "review",
+          "why": "dna-structure builds directly on your chemical-bonding."
+        }
+      ],
+      "not_offered": [
+        {
+          "concept": "enzyme-kinetics",
+          "to": "gene-regulation",
+          "reason": "bridge too weak (noise)"
+        }
+      ],
+      "suppressed": [
+        {
+          "from": "mitosis",
+          "to": "cell-division",
+          "refusal_id": "ref-mito",
+          "kind": "offer",
+          "reason": "stop_suggesting concept mitosis"
+        }
+      ]
+    }
+  },
+  "answer_key": {
+    "2": [
+      {
+        "from_course": "cell-biology",
+        "from": "enzymes",
+        "to": "reaction-rates",
+        "bridge": "shared-technique",
+        "present": {
+          "example_style": "food-and-diet-examples"
+        },
+        "truth": "good"
+      },
+      {
+        "from_course": "cell-biology",
+        "from": "osmosis",
+        "to": "concentration",
+        "bridge": "prerequisite",
+        "truth": "good"
+      },
+      {
+        "from_course": "cell-biology",
+        "from": "diffusion",
+        "to": "concentration",
+        "bridge": "prerequisite",
+        "truth": "good"
+      }
+    ],
+    "3": [
+      {
+        "from_course": "intro-chemistry",
+        "from": "chemical-bonding",
+        "to": "reaction-mechanisms",
+        "bridge": "prerequisite",
+        "truth": "good"
+      },
+      {
+        "from_course": "intro-chemistry",
+        "from": "reaction-rates",
+        "to": "reaction-mechanisms",
+        "bridge": "prerequisite",
+        "truth": "good"
+      }
+    ],
+    "4": [
+      {
+        "from_course": "cell-biology",
+        "from": "enzymes",
+        "to": "enzyme-kinetics",
+        "bridge": "prerequisite",
+        "truth": "good"
+      },
+      {
+        "from_course": "organic-chemistry",
+        "from": "functional-groups",
+        "to": "protein-structure",
+        "bridge": "prerequisite",
+        "present": {
+          "modality": "3d-rotating-molecule-visuals"
+        },
+        "truth": "good"
+      },
+      {
+        "from_course": "intro-chemistry",
+        "from": "chemical-bonding",
+        "to": "protein-structure",
+        "bridge": "prerequisite",
+        "truth": "good"
+      },
+      {
+        "from_course": "intro-chemistry",
+        "from": "reaction-rates",
+        "to": "enzyme-kinetics",
+        "bridge": "prerequisite",
+        "truth": "good"
+      },
+      {
+        "from_course": "cell-biology",
+        "from": "enzymes",
+        "to": "metabolism",
+        "bridge": "prerequisite",
+        "present": {
+          "example_style": "food-and-diet-examples"
+        },
+        "truth": "good"
+      }
+    ],
+    "5": [
+      {
+        "from_course": "biochemistry",
+        "from": "protein-structure",
+        "to": "translation",
+        "bridge": "prerequisite",
+        "truth": "good"
+      },
+      {
+        "from_course": "intro-chemistry",
+        "from": "chemical-bonding",
+        "to": "dna-structure",
+        "bridge": "prerequisite",
+        "truth": "good"
+      },
+      {
+        "from_course": "cell-biology",
+        "from": "mitosis",
+        "to": "cell-division",
+        "bridge": "prerequisite",
+        "truth": "good-but-refused"
+      },
+      {
+        "from_course": "biochemistry",
+        "from": "enzyme-kinetics",
+        "to": "gene-regulation",
+        "bridge": "weak",
+        "truth": "noise"
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "Q11",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "reuse",
+    "target_id": "n_f7dv1ks4rb9mcphwzx2qne0yt6b",
+    "confidence": 0.92,
+    "resolved": true,
+    "node": {
+      "id": "n_f7dv1ks4rb9mcphwzx2qne0yt6b",
+      "parent_id": "L01.M01.O01",
+      "title": "Chemiosmosis definition",
+      "canonical_question": "What is chemiosmosis and how does it generate ATP?",
+      "intent": "clarify",
+      "summary": "Chemiosmosis is the use of an electrochemical gradient across a membrane to drive ATP synthesis. Proton flow through ATP synthase releases energy.",
+      "concepts": ["proton-gradient", "atp-synthesis"],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-fixture",
+      "reuse_count": 0,
+      "superseded_by": null
+    },
+    "seeds": [
+      "What exactly is the proton gradient and how does it form across the inner mitochondrial membrane?",
+      "How does ATP synthase physically use the flow of protons to produce ATP?",
+      "What would happen to ATP production if the inner membrane became leaky to protons?"
+    ],
+    "rendering_md": "## How a pH gradient across the inner mitochondrial membrane is converted into ATP\n\nThe process is called **chemiosmosis**, and it is one of the most elegant energy-conversion mechanisms in biology.\n\n### Building the gradient\n\nThe electron transport chain (Complexes I, III, and IV) uses the energy released by electron transfer to pump hydrogen ions (protons, H+) from the mitochondrial matrix into the intermembrane space. Because protons are positively charged, this creates two overlapping gradients across the inner membrane:\n\n- A **pH gradient** (the intermembrane space becomes more acidic than the matrix).\n- An **electrical potential** (the matrix becomes negatively charged relative to the intermembrane space).\n\nTogether these two components form the **proton-motive force**.\n\n### Converting the gradient into ATP\n\nThe inner mitochondrial membrane is normally impermeable to protons, so they cannot simply diffuse back. The only easy route back into the matrix is through the enzyme **ATP synthase** (also called Complex V), which acts like a molecular turbine embedded in the membrane.\n\nAs protons flow down their electrochemical gradient through the F0 portion of ATP synthase, they cause a rotor to spin. This rotation is transmitted to the F1 head, where it drives the catalytic beta subunits through three conformational states:\n\n1. **Open** - the site is empty and accessible.\n2. **Loose** - ADP and inorganic phosphate (Pi) bind.\n3. **Tight** - the substrates are squeezed together, and ATP is formed and then released.\n\nEach full rotation of the rotor produces approximately three ATP molecules.\n\n### Why the membrane impermeability matters\n\nIf the inner membrane were leaky to protons, they would bypass ATP synthase entirely. The gradient would dissipate as heat rather than driving ATP synthesis. This is exactly what chemical uncouplers such as 2,4-dinitrophenol do: they carry protons across the membrane without passing through ATP synthase.\n\n### Summary\n\nA pH gradient stores potential energy. The impermeability of the inner membrane forces protons to re-enter the matrix only through ATP synthase. The flow of protons spins a molecular motor, and the mechanical energy is used to condense ADP and Pi into ATP.",
+    "options": [
+      {
+        "id": "n_hh1ash4knccqm98y2n9hfn1h5c",
+        "title": "ATP synthase mechanism",
+        "canonical_question": "How does ATP synthase use proton flow to make ATP?",
+        "intent": "deepen",
+        "reason": "Digs deeper into the rotary mechanism of ATP synthase that was described in the answer."
+      },
+      {
+        "id": "n_r5p2w8jv3cxtnm6bq9dk0yf4hs",
+        "title": "Inner mitochondrial membrane role",
+        "canonical_question": "Why is the inner mitochondrial membrane important for ATP production?",
+        "intent": "clarify",
+        "reason": "Explores why membrane impermeability is essential for the gradient to work."
+      },
+      {
+        "id": "n_d2z8pm1sw6ybqren3vt5cx7kh0",
+        "title": "Oxygen as the final electron acceptor",
+        "canonical_question": "Why does the electron transport chain require oxygen?",
+        "intent": "clarify",
+        "reason": "Connects how oxygen consumption relates to the proton pumping that creates the gradient."
+      }
+    ],
+    "warnings": []
+  }
+}

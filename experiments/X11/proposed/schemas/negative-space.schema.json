@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.3/negative-space.schema.json",
+  "title": "metadax.negative-space/0.3",
+  "_why": "X11/B14 — a raw unfollowed share is meaningless because a seed counts unfollowed even if no one ever saw it. This record forces the exposure split so only choice-bearing figures are reported.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["concepts_unreached", "seeds_total_distinct", "exposure", "exposure_normalised_decline_rate"],
+  "properties": {
+    "concepts_unreached": { "type": "array", "items": { "type": "string" } },
+    "seeds_total_distinct": { "type": "integer", "minimum": 0 },
+    "raw_unfollowed_share": { "type": "number", "minimum": 0, "maximum": 1, "_note": "kept for comparison only; exposure-blind (B14)." },
+    "exposure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["followed", "declined", "unseen"],
+      "properties": {
+        "followed": { "type": "integer", "minimum": 0 },
+        "declined": { "type": "integer", "minimum": 0, "_why": "declined counts ONLY if the seed was offered." },
+        "unseen": { "type": "integer", "minimum": 0, "_why": "never surfaced to anyone — not a learner choice." }
+      }
+    },
+    "exposure_normalised_decline_rate": {
+      "anyOf": [ { "type": "number", "minimum": 0, "maximum": 1 }, { "type": "null" } ],
+      "_def": "declined / (followed + declined) — the only choice-bearing figure."
+    }
+  }
+}

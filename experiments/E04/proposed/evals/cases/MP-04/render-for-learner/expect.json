@@ -1,0 +1,6 @@
+{
+  "schema": "rendering-output.schema.json",
+  "type": [
+    "rendering"
+  ]
+}

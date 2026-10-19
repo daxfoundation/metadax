@@ -1,0 +1,58 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "feedback",
+  "display": {
+    "message": "That's exactly right. When oxygen is absent there is no final acceptor for the electrons, so the chain stalls, proton pumping stops, and ATP synthesis halts with it.\n\nNext up: an Analyze question on the same concept.\n\nCommands: next, skip, hint, why, more, ask: <your question>, summary, stop. Hints and second chances are part of learning.",
+    "instructions": "Read the assertion and reason below. Choose the option that best describes their relationship.\n\n1. Both statements are true, and the Reason explains the Assertion.\n2. Both statements are true, but the Reason does NOT explain the Assertion.\n3. The Assertion is true, but the Reason is false.\n4. The Assertion is false, but the Reason is true.\n5. Both statements are false.",
+    "example": "Assertion: Protons accumulate on one side of the inner membrane during the electron transport chain. Reason: Each electron hand-off releases energy that is used to pump protons across the membrane. (This uses content from the same topic but is not the real question.)",
+    "question": "Assertion: Removing cytochrome c from the inner membrane would halt electron flow between the middle complexes of the chain.\nReason: Cytochrome c is a fixed, immobile subunit embedded inside one of the large protein complexes.",
+    "options": [
+      "1 — Both true, and the Reason explains the Assertion",
+      "2 — Both true, but the Reason does not explain it",
+      "3 — Assertion true, Reason false",
+      "4 — Assertion false, Reason true",
+      "5 — Both false"
+    ]
+  },
+  "meta": {
+    "concept": "electron-transport-chain",
+    "bloom_level": "Analyze",
+    "question_type": "Assertion-Reason",
+    "attempt": 1
+  },
+  "feedback": {
+    "result": "correct",
+    "explanation": "Without oxygen as the terminal electron acceptor at Complex IV, electrons have nowhere to go. The chain backs up, proton pumping across the inner membrane stops, the proton gradient collapses, and ATP synthase can no longer run — precisely what you described."
+  },
+  "state": {
+    "concept_order": ["electron-transport-chain", "proton-gradient", "cytochrome-c"],
+    "concept": "electron-transport-chain",
+    "level": "Analyze",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "passed_first_try",
+        "Analyze": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 69,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "awaiting_answer"
+}

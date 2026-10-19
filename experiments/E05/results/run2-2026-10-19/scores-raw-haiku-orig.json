@@ -1,0 +1,583 @@
+{
+  "dir": "raw-haiku-orig",
+  "ids_filter": null,
+  "n_queries": 60,
+  "n_valid_json": 60,
+  "json_rate": 1,
+  "precision": 0.7391304347826086,
+  "recall": 0.9714285714285714,
+  "trap_fp_rate": 1,
+  "true_pos": 34,
+  "false_pos": 12,
+  "false_neg": 1,
+  "category_stats": {
+    "near-dup-light": {
+      "n": 10,
+      "correct": 10,
+      "pct": "100%"
+    },
+    "near-dup-heavy": {
+      "n": 10,
+      "correct": 9,
+      "pct": "90%"
+    },
+    "trap": {
+      "n": 10,
+      "correct": 0,
+      "pct": "0%"
+    },
+    "ordinary-reuse": {
+      "n": 15,
+      "correct": 15,
+      "pct": "100%"
+    },
+    "ordinary-new": {
+      "n": 15,
+      "correct": 13,
+      "pct": "87%"
+    }
+  },
+  "verdict": "FAIL",
+  "per_query": [
+    {
+      "id": "Q01",
+      "category": "near-dup-light",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nl01rq4fv8mt2dxyps7bknc0ej",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q02",
+      "category": "near-dup-light",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_hh1ash4knccqm98y2n9hfn1h5c",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q03",
+      "category": "near-dup-light",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_r5p2w8jv3cxtnm6bq9dk0yf4hs",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q04",
+      "category": "near-dup-light",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_b4m7gx1pz6wqdce8nv3sk0rty2",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q05",
+      "category": "near-dup-light",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_e9c2fv5aq7ytxmrb0kp3dh8wn1",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q06",
+      "category": "near-dup-light",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_x7a3ck9qm5vwrpb2dt4nhe0fy6",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q07",
+      "category": "near-dup-light",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_d2z8pm1sw6ybqren3vt5cx7kh0",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q08",
+      "category": "near-dup-light",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nl08ec2yfxm4kspn9wdrtbhq7g0",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q09",
+      "category": "near-dup-light",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_s8k1rz4cx7mvpwqb5fy9dn0jte6",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q10",
+      "category": "near-dup-light",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nl10hk3drp0wzjembnfsxyvtcq5",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q11",
+      "category": "near-dup-heavy",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nh11gw4zfh7cntbsyxjmrpvd9k",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q12",
+      "category": "near-dup-heavy",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_zt4qn7js2xcwbmkr9fv1hp6yde0",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q13",
+      "category": "near-dup-heavy",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_ub6ej0pf4wyrzshx5gm2nk1ctd9",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q14",
+      "category": "near-dup-heavy",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nh14cf0hntbsxmwyjpzdvrgkq8",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q15",
+      "category": "near-dup-heavy",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nh15mw8bfpzkdvcsnhg3qrxjyt",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q16",
+      "category": "near-dup-heavy",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nh16xt4rg5kdpzm9bfhynvsqwe",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q17",
+      "category": "near-dup-heavy",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nh17jd7qwvbkcnzsxphrtem4fg",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q18",
+      "category": "near-dup-heavy",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nh18yn3kqrx7hdfmtzvsecbpwg",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q19",
+      "category": "near-dup-heavy",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_v1f4bk7nz0xjgrp9wh8dm5etq2",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q20",
+      "category": "near-dup-heavy",
+      "expected": "reuse",
+      "actual": "extend",
+      "target": "n_ka7589qwn4z1n2tghxxcv2vzbm",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q21",
+      "category": "trap",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr01fp8yvx3mzkqs4rcntdb9hw",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q22",
+      "category": "trap",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr02kd5gv4ywrxfmhzpbn7qstj",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q23",
+      "category": "trap",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr03hz2qfxs9rmtjpndckvb5wy",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q24",
+      "category": "trap",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr04bv7zydcmkhtfxp2nrgqsw5",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q25",
+      "category": "trap",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr05mn4xbqzpfytskdh8rcwvjg",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q26",
+      "category": "trap",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr06qs3jrcxhkdvmybt6fpzwn0",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q27",
+      "category": "trap",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr07dc8nqmrkvfbzxy5hepwgts",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q28",
+      "category": "trap",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr08gf5ywx8kpzhvstmrcq3ndb",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q29",
+      "category": "trap",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr09cz9rpjbd7thwvqxfmgkne0",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q30",
+      "category": "trap",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr10wy0bsxn4ztgrjfckmvph3e",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q31",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nl01rq4fv8mt2dxyps7bknc0ej",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q32",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_nl02jz5bw3xmpve0tkfrd8qynh",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q33",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_r5p2w8jv3cxtnm6bq9dk0yf4hs",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q34",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_b4m7gx1pz6wqdce8nv3sk0rty2",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q35",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_e9c2fv5aq7ytxmrb0kp3dh8wn1",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q36",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_x7a3ck9qm5vwrpb2dt4nhe0fy6",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q37",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_d2z8pm1sw6ybqren3vt5cx7kh0",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q38",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_y6g3ht5wm8dkrpxq2vb0cz9ns1",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q39",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_s8k1rz4cx7mvpwqb5fy9dn0jte6",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q40",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_f7dv1ks4rb9mcphwzx2qne0yt6b",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q41",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_zt4qn7js2xcwbmkr9fv1hp6yde0",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q42",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_ub6ej0pf4wyrzshx5gm2nk1ctd9",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q43",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_ka7589qwn4z1n2tghxxcv2vzbm",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q44",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_w3j6nt8ld1krscxp5qm0bv7ez4",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q45",
+      "category": "ordinary-reuse",
+      "expected": "reuse",
+      "actual": "reuse",
+      "target": "n_p9f0gh2re4mvzywq7kb5cx6uts8",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q46",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q47",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q48",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q49",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q50",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "extend",
+      "target": "n_tn2fp8vd0wzjqxk6bc9mr4esh7y",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q51",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "extend",
+      "target": "n_tr07dc8nqmrkvfbzxy5hepwgts",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q52",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q53",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "extend",
+      "target": "n_b4m7gx1pz6wqdce8nv3sk0rty2",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q54",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr02kd5gv4ywrxfmhzpbn7qstj",
+      "conf_absent": false,
+      "correct": false
+    },
+    {
+      "id": "Q55",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q56",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q57",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q58",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "extend",
+      "target": "n_gh3np6wz8krvmxs1qt0bc5jyd4e",
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q59",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "new",
+      "target": null,
+      "conf_absent": false,
+      "correct": true
+    },
+    {
+      "id": "Q60",
+      "category": "ordinary-new",
+      "expected": "new",
+      "actual": "reuse",
+      "target": "n_tr08gf5ywx8kpzhvstmrcq3ndb",
+      "conf_absent": false,
+      "correct": false
+    }
+  ]
+}

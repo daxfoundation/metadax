@@ -1,0 +1,44 @@
+{
+  "comment": "SIMULATED. Cohort A. One model-played guide (sonnet) tutors 6 blind learner subagents (sonnet) on the kite / Newton-3rd-law stuck spot. Guide had NO prior techniques; it discovered the moves and minted technique records. Transcripts trimmed.",
+  "cohort": "A",
+  "cap_attempts": 3,
+  "sessions": [
+    {"pid":"a-e1","name":"Maya","lang":"en","resolved":true,"attempts_to_resolution":2,"stuck_signature":"attribute-to-wrong-owner->cancellation-fallacy","transcript":[
+      {"by":"learner","text":"String pulls kite up, kite pulls string down, same force, equal and opposite so they cancel, net zero, kite can't accelerate."},
+      {"by":"guide","text":"Which object does each force act on? 'Force A acts on ___, Force B acts on ___.' Does the same object feel both?"},
+      {"by":"learner","text":"Force A string->kite acts on the kite; Force B kite->string acts on the string. Different objects, but I still don't see why that stops them cancelling."},
+      {"by":"guide","text":"Two accounting books, one per object. A force is written only in the book of the object it acts on. 'Cancelling' means two entries in the SAME book sum to zero; A and B are in different books, so they can never cancel. Open only the kite's book — what's there?"},
+      {"by":"learner","text":"The kite's book has only forces ON the kite: string pulling down, gravity, wind pushing. kite->string never gets written there. Third-law pairs are structurally in different books, so they can't cancel. I get it."}
+    ]},
+    {"pid":"a-e2","name":"Toby","lang":"en","resolved":true,"attempts_to_resolution":1,"stuck_signature":"cancellation-fallacy","transcript":[
+      {"by":"learner","text":"Equal and opposite means a tie; two equal forces cancel to zero, so the kite stays put."},
+      {"by":"guide","text":"Are these two forces actually pulling on the same thing? List each force's target object, then ask: can forces on different objects cancel?"},
+      {"by":"learner","text":"They're on different things; the pull on the string doesn't affect the kite. To find if the kite accelerates I only look at forces ON the kite (tension down, wind up, gravity). Third-law pairs never cancel because they're always on separate objects."}
+    ]},
+    {"pid":"a-e3","name":"Grace","lang":"en","resolved":true,"attempts_to_resolution":1,"stuck_signature":"magnitude-over-rule->cancellation-fallacy","transcript":[
+      {"by":"learner","text":"If exactly equal, whichever is really bigger wins; Newton says equal so neither wins, kite can't go up."},
+      {"by":"guide","text":"Whose forces do you add up: all forces in the universe, or only the forces acting directly on the kite? List every force that touches the kite."},
+      {"by":"learner","text":"Only forces on the kite: string down, gravity down, wind up — I wasn't counting wind. The string-on-kite force just adds to the kite's side, it doesn't cancel with the kite-on-string force (that's on the string)."}
+    ]},
+    {"pid":"a-i1","name":"Dwi","lang":"id-x-jv","resolved":true,"attempts_to_resolution":2,"stuck_signature":"attribute-to-wrong-owner->cancellation-fallacy","transcript":[
+      {"by":"learner","text":"Tali narik layangan, layangan narik tali, gayane padha lan ngelawan, dadi saling cancel, resultan nol, ora isa munggah."},
+      {"by":"guide","text":"Gaya seko tali tumrap marang sopo, gaya seko layangan tumrap marang sopo? Tali lan layangan iku obyek padha apa beda?"},
+      {"by":"learner","text":"Gaya seko tali tumrap layangan, gaya seko layangan tumrap tali — dua benda beda! Tapi isih bingung kok tetep isa munggah."},
+      {"by":"guide","text":"'Buku rekening': layangan duwe buku dhewe, tali duwe buku dhewe. Saben gaya dicathet mung ing buku benda sing nampa. 'Cancel' tegese rong cathetan ing buku sing PADHA jumlahe nol. Buka buku layangan wae — opo wae sing kecathet?"},
+      {"by":"learner","text":"Ngerti saiki — buku layangan mung ngemu gaya sing tumrap layangan: angin (munggah), gravitasi (mudhun), tali (mudhun). Nek angin ngalahno gravitasi+tali, resultan munggah — makane isa munggah! Konsep buku rekening iki langsung klik."}
+    ]},
+    {"pid":"a-i2","name":"Sari","lang":"id-x-jv","resolved":true,"attempts_to_resolution":2,"stuck_signature":"cancellation-fallacy","transcript":[
+      {"by":"learner","text":"Gaya aksi lan reaksi padha gedhene, tabrakan terus entek dadi nol, ora ana sisa gaya."},
+      {"by":"guide","text":"Supaya rong gaya isa saling cancel, apa syarate — kudu tumrap benda sing padha apa ora? Gaya tali ngenani endi, gaya layangan ngenani endi?"},
+      {"by":"learner","text":"Gaya tali ngenani layangan, gaya layangan ngenani tangan/tali — dudu benda padha. Tapi gaya sisa sing ngarahke munggah seko endi? Durung paham hubungane karo aksi-reaksi."},
+      {"by":"guide","text":"Gambar 'nota layangan': cathet kabeh gaya sing LANGSUNG ngenani layangan (angin, gravitasi, tali). Pasangan aksi-reaksi tali<->layangan ora bisa mlebu nota sing padha, mula ora bisa cancel. Gaya sisa apa sing ana?"},
+      {"by":"learner","text":"Saiki mudheng! Nota layangan: angin munggah, gravitasi mudhun, tali mudhun — kabeh langsung ngenani layangan. Reaksi (layangan narik tali) ngenani tali, ora mlebu nota padha. Dadi ora cancel; ana resultan munggah nek angin+sudut cocok. Kuncine 'langsung ngenani benda sing dianalisis'."}
+    ]},
+    {"pid":"a-i3","name":"Bayu","lang":"id-x-jv","resolved":true,"attempts_to_resolution":1,"stuck_signature":"magnitude-over-rule->cancellation-fallacy","transcript":[
+      {"by":"learner","text":"Nek loro gayane padha persis mesthi salah siji menang; jare Newton padha dadi ora ana sing menang, ora isa mabur."},
+      {"by":"guide","text":"Kanggo nemtokne layangan mabur apa ora, delok gaya sing tumrap marang layangan wae, dudu kabeh gaya. Apa wae gaya sing langsung ngenani layangan, seko ngendi asale?"},
+      {"by":"learner","text":"Nek delok layangane wae: angin nyurung munggah (lift), gravitasi mudhun, tali narik mudhun-miring. Sing penting total gaya ing layangan seimbang apa ora — dudu gaya tali lawan gaya tali. Reaksine ngenani tali, dudu layangan."}
+    ]}
+  ],
+  "summary": {"n":6, "resolved":6, "pass_rate":1.0, "attempts":[2,1,1,2,2,1], "mean_attempts":1.5}
+}

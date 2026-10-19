@@ -1,0 +1,48 @@
+{
+  "id": "Q36",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "reuse",
+    "target_id": "n_x7a3ck9qm5vwrpb2dt4nhe0fy6",
+    "confidence": 0.97,
+    "resolved": true,
+    "node": {
+      "id": "n_x7a3ck9qm5vwrpb2dt4nhe0fy6",
+      "parent_id": "L01.M01.O01",
+      "title": "Mitochondrial cristae surface area",
+      "canonical_question": "Why do mitochondria have inner membrane folds called cristae?",
+      "intent": "clarify",
+      "summary": "Cristae dramatically increase inner membrane surface area. More surface means more ATP synthase complexes and higher ATP output.",
+      "concepts": [
+        "mitochondrion-structure",
+        "atp-synthesis"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "author-fixture",
+      "reuse_count": 0,
+      "superseded_by": null
+    },
+    "seeds": [
+      {
+        "question": "How much does cristae surface area increase compared to a smooth inner membrane?",
+        "intent": "deepen"
+      },
+      {
+        "question": "How do cristae shape and density vary between different cell types with different energy demands?",
+        "intent": "connect"
+      },
+      {
+        "question": "What happens to ATP output if cristae are flattened or damaged?",
+        "intent": "apply"
+      }
+    ],
+    "rendering_md": "## Why do mitochondria have cristae?\n\nThe inner mitochondrial membrane is folded into structures called **cristae**. These folds dramatically increase the total surface area of the inner membrane.\n\nThis matters because ATP synthase — the molecular machine that makes ATP — is embedded in the inner membrane. The more surface area there is, the more ATP synthase complexes can fit, and the more ATP the mitochondrion can produce.\n\nThink of it like this: a flat membrane could only hold a limited number of ATP synthase units, but folding that same membrane repeatedly lets you pack far more of them into the same space. High-energy-demand cells (like heart muscle cells) tend to have especially dense, tightly packed cristae for exactly this reason.\n\nThe electron transport chain complexes that build the proton gradient are also embedded in the inner membrane, so cristae increase their density too — boosting the gradient that drives ATP synthesis.",
+    "options": {
+      "show_node_id": true,
+      "show_depth": true
+    },
+    "warnings": []
+  }
+}

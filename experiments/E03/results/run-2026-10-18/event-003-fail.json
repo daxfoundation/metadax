@@ -1,0 +1,10 @@
+{
+  "schema": "metadax.event/0.2",
+  "session_id": "ses-20261018-nfjp",
+  "seq": 3,
+  "type": "followup",
+  "ts": "2026-10-18T21:00:02Z",
+  "node_id": "n_s6n2dy8rhtsj5dpbfttpg77mhc",
+  "parent_node_id": "L01.M01.O01",
+  "question": "What if the die is not fair — can I still use the classical formula?"
+}

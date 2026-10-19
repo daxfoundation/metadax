@@ -1,0 +1,47 @@
+{
+  "session_id": "ses-20261018-w2aa",
+  "wave": 2,
+  "display_name": "Noor",
+  "profile_summary": "Adult returner, no physics since school, practical-minded climber, medium patience, genuinely tries but drifts when abstraction piles up without a concrete hook.",
+  "turns": 4,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "kinematic-quantities",
+    "newtons-first-law"
+  ],
+  "followed_seeds": [
+    "Can you show a worked example where the net force is not zero?",
+    "How do you add or subtract velocities that point in different directions?"
+  ],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "marker_responses": [
+    {
+      "spot": "adding forces in different directions (net-force / vectors)",
+      "entered": true,
+      "then": "arrived"
+    },
+    {
+      "spot": "inertial reference frame (abstract definition)",
+      "entered": false,
+      "then": null
+    }
+  ],
+  "offer_responses": [
+    {
+      "offer_id": "of-s-01",
+      "seed": "How do you add or subtract velocities that point in different directions?",
+      "response": "took_up",
+      "why_short": "Noor had just hit this exact snag picturing a diagonal abseil and wanted it resolved before moving on."
+    },
+    {
+      "offer_id": "of-s-02",
+      "seed": "How will acceleration connect to force in Newton's second law?",
+      "response": "declined",
+      "why_short": "Still processing velocity/direction; jumping ahead felt like too much to hold at once, so Noor waved it off for now."
+    }
+  ],
+  "stalls": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "summary",
+  "display": {
+    "message": "Here's a quick snapshot of this session, Tomás.\n\n**Objective:** L01.M01.O01 — Identify random events and describe their outcomes\n\n**Levels practised:**\n- Remember: Recognising a random event ✓\n- Understand: Describing a sample space and explaining randomness ✓\n\n**Competency score:** 78 / 100\n\nYou picked up the core idea solidly on the second attempt."
+  },
+  "meta": null,
+  "feedback": null,
+  "handoff": null,
+  "summary": {
+    "concepts": [
+      {"id": "random-event", "name": "Random events", "competency": 78,
+       "levels": {"Remember": "passed_first_try", "Understand": "passed_after_help"}}
+    ],
+    "strengths": [
+      "Correctly identified a random event on first attempt",
+      "Accurately listed all possible outcomes in the sample space",
+      "Connected abstract probability to concrete contexts (card games, cooking)"
+    ],
+    "areas_for_improvement": [
+      "Developing the written explanation of what makes an event random on first attempt"
+    ],
+    "misconceptions": [],
+    "recommendations": [
+      "Try writing sample spaces for 2-3 everyday scenarios",
+      "Proceed to L01.M01.O02 (Assign and compare simple probabilities)"
+    ],
+    "encouragement": "You approached every question thoughtfully and didn't give up — that's the right mindset for maths. See you next session, Tomás!"
+  },
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 2,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "random-event": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help"
+      }
+    },
+    "competency": {
+      "random-event": 78
+    }
+  },
+  "next_action": "awaiting_command",
+  "warnings": []
+}

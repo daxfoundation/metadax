@@ -46,8 +46,11 @@ tutor turns, and the weekly manifest.
 
 ## Status
 
-not started
+done (2026-10-18)
 
 ## Results
+
+- `results/2026-10-18-bundle-loop.md` — run 1 (2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.
 
 none yet -- see `results/`.

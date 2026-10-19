@@ -1,0 +1,95 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "summary",
+  "display": {
+    "message": "Here is a summary of where things stand for this objective on the electron transport chain."
+  },
+  "summary": {
+    "concepts": [
+      {
+        "id": "electron-transport-chain",
+        "name": "Electron transport chain",
+        "competency": 100,
+        "levels": {
+          "Remember": "passed_first_try",
+          "Understand": "passed_first_try",
+          "Apply": "not_started",
+          "Analyze": "not_started",
+          "Evaluate": "not_started",
+          "Create": "not_started"
+        }
+      },
+      {
+        "id": "proton-gradient",
+        "name": "Proton gradient",
+        "competency": 0,
+        "levels": {
+          "Remember": "not_started",
+          "Understand": "not_started"
+        }
+      },
+      {
+        "id": "cytochrome-c",
+        "name": "Cytochrome c",
+        "competency": 0,
+        "levels": {
+          "Remember": "not_started",
+          "Understand": "not_started"
+        }
+      }
+    ],
+    "strengths": [
+      "electron-transport-chain"
+    ],
+    "areas_for_improvement": [
+      "proton-gradient",
+      "cytochrome-c"
+    ],
+    "misconceptions": [],
+    "recommendations": [
+      "Start proton-gradient at the Remember level using section s2 (Pumping protons) to build the foundation.",
+      "Then move to cytochrome-c at the Remember level using section s1 (A chain of hand-offs) to understand the mobile carrier role.",
+      "Once both are at Understand, revisit electron-transport-chain at the Apply level to see how all three work together.",
+      "Keep an eye on the misconception that protons cross the inner membrane freely — section s2 directly addresses this."
+    ],
+    "encouragement": "You have a solid grasp of the electron transport chain itself — now the pieces around it, the proton gradient and cytochrome c, are ready to click into place."
+  },
+  "state": {
+    "concept_order": [
+      "electron-transport-chain",
+      "proton-gradient",
+      "cytochrome-c"
+    ],
+    "concept": "electron-transport-chain",
+    "level": "Understand",
+    "attempt": 1,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "electron-transport-chain": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_first_try",
+        "Apply": "not_started",
+        "Analyze": "not_started",
+        "Evaluate": "not_started",
+        "Create": "not_started"
+      },
+      "proton-gradient": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      },
+      "cytochrome-c": {
+        "Remember": "not_started",
+        "Understand": "not_started"
+      }
+    },
+    "competency": {
+      "electron-transport-chain": 100,
+      "proton-gradient": 0,
+      "cytochrome-c": 0
+    }
+  },
+  "next_action": "done",
+  "warnings": []
+}

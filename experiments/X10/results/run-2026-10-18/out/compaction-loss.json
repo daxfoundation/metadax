@@ -1,0 +1,55 @@
+{
+  "lost": [
+    {
+      "question": "on which session/date did each misconception first appear",
+      "answerable_from_log": true,
+      "answerable_from_view": false,
+      "example": [
+        "diffusion|treats diffusion and osmosis as the same process",
+        {
+          "course": "cell-biology",
+          "at": "2020-01-16",
+          "note": "Year 1 cell-biology session 2: worked on"
+        }
+      ]
+    },
+    {
+      "question": "the per-session competency trajectory within a course (the ramp)",
+      "answerable_from_log": true,
+      "answerable_from_view": false,
+      "note": "view keeps only latest/best per concept"
+    },
+    {
+      "question": "the verbatim per-session notes (only first+last survive in the folded summary)",
+      "answerable_from_log": true,
+      "answerable_from_view": false,
+      "folded_count": 60
+    }
+  ],
+  "kept": [
+    {
+      "question": "every active refusal, verbatim",
+      "answerable_from_view": true,
+      "count": 4
+    },
+    {
+      "question": "latest competency per concept (person-level map)",
+      "answerable_from_view": true,
+      "count": 21
+    },
+    {
+      "question": "every carry-over offered and its outcome",
+      "answerable_from_view": true,
+      "count": 13
+    },
+    {
+      "question": "course-level misconceptions (which, not when)",
+      "answerable_from_view": true
+    },
+    {
+      "question": "the six-month lapses",
+      "answerable_from_view": true,
+      "count": 2
+    }
+  ]
+}

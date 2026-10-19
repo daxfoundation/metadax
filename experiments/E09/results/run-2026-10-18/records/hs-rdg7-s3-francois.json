@@ -1,0 +1,35 @@
+{
+  "format": "metadax-record",
+  "v": 1,
+  "entry_id": "hs-rdg7-s3-francois",
+  "package": {
+    "ref": "HS-RDG7",
+    "session": 3,
+    "subject": "Reading",
+    "age_band": "7-9"
+  },
+  "date": "2026-10-17",
+  "attempted": [
+    {
+      "game": "Rhyme Rocket",
+      "answered": 18,
+      "right": 16
+    }
+  ],
+  "reached": [
+    {
+      "game": "Rhyme Rocket",
+      "level": 3,
+      "of": 3
+    }
+  ],
+  "mistakes": [
+    {
+      "behaviour": "confused rhyme with starting sound",
+      "count": 1
+    }
+  ],
+  "learner_words": "Zelie said she really liked the rocket and felt proud that she got to the top. She said some words sounded the same at the start but that was not the same as rhyming, and she understood the difference by the end.",
+  "guide_note": "An excellent session to close the week. Zelie completed level 3 of Rhyme Rocket — the first time she has reached the top level of any HS-RDG7 game so far — and her accuracy at 16/18 is the strongest we have seen across all three sessions. The mood in the room was noticeably different: she was settled, focused, and did not ask how much longer we had, which for Zelie is a reliable indicator of genuine engagement rather than compliance.\n\nThe single error was a confusion between rhyme and alliteration — she selected a word that shared the onset sound with the target rather than the rime. This is a conceptually interesting mistake because it shows she is actively listening for sound relationships; she simply reached for the wrong category of relationship. In phonological awareness theory, rhyme and alliteration are both sub-skills that develop in early childhood, and they can interfere with each other because both involve noticing that two words share something at the sound level. The distinction — shared ending versus shared beginning — is more subtle than it looks, and one such confusion in eighteen attempts suggests she has a solid grasp of rhyme with an occasional category-slip rather than a fundamental misunderstanding.\n\nI paused briefly when this error occurred and asked her to say both words aloud slowly. She self-corrected immediately once she heard the endings, which tells me the concept is available to her — she just needs the metacognitive habit of checking the right part of the word before committing.\n\nLooking across the week as a whole: session one revealed co-articulation difficulty in blending; session two revealed sequencing difficulty under time pressure; session three showed strong performance on a rhyme task with only minor category-confusion. The arc is clearly positive.",
+  "generated_by": "parent-filed"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "Q57",
+  "ok": true,
+  "parsed": {
+    "type": "followup",
+    "decision": "create",
+    "target_id": "runtime",
+    "confidence": 0.91,
+    "resolved": false,
+    "node": {
+      "id": "runtime",
+      "parent_id": "L01.M01.O01",
+      "title": "Cardiolipin and respiratory supercomplex stability",
+      "canonical_question": "What is the role of cardiolipin in stabilising the respiratory supercomplexes?",
+      "intent": "deepen",
+      "summary": "Cardiolipin is a mitochondria-specific phospholipid that anchors and stabilises respiratory supercomplexes (respirasomes) in the inner membrane. It acts as a molecular glue between Complexes I, III, and IV, improving electron channelling efficiency.",
+      "concepts": [
+        "electron-transport-chain",
+        "mitochondrion-structure"
+      ],
+      "depth": 2,
+      "visibility": "shared",
+      "created_by": "runtime",
+      "bloom_target": "Understand"
+    },
+    "seeds": [
+      {
+        "canonical_question": "How does loss of cardiolipin affect mitochondrial function in Barth syndrome?",
+        "intent": "apply",
+        "concepts": ["electron-transport-chain", "mitochondrion-structure"]
+      },
+      {
+        "canonical_question": "What are respiratory supercomplexes and why do cells form them?",
+        "intent": "clarify",
+        "concepts": ["electron-transport-chain"]
+      },
+      {
+        "canonical_question": "How is cardiolipin synthesised inside the mitochondrion?",
+        "intent": "deepen",
+        "concepts": ["mitochondrion-structure"]
+      }
+    ],
+    "rendering_md": "**Cardiolipin** is a unique phospholipid found almost exclusively in the inner mitochondrial membrane. Unlike most phospholipids, it has four fatty acid tails instead of two, giving it a distinctive cone shape.\n\n**What are respiratory supercomplexes?**\nThe individual protein complexes of the electron transport chain (Complexes I, III, and IV) do not always float freely in the membrane. They can associate into large assemblies called **supercomplexes** (sometimes called the **respirasome**). The most studied arrangement is Complex I + Complex III₂ + Complex IV.\n\n**How does cardiolipin help?**\n- Cardiolipin molecules sit at the interfaces between the individual complexes, acting as a kind of molecular glue that holds them together.\n- By keeping electron carriers such as coenzyme Q and cytochrome c in close proximity, cardiolipin helps channel electrons efficiently from one complex to the next, reducing the chance of electrons leaking to oxygen and forming reactive oxygen species.\n- Cardiolipin also stabilises the membrane curvature at cristae tips, which is where supercomplexes tend to concentrate.\n\n**When cardiolipin is depleted**\nIn Barth syndrome, a genetic disorder, the enzyme tafazzin (which remodels cardiolipin) is defective. Supercomplex assembly is disrupted, Complex I activity falls, and cells — especially in the heart and muscles — cannot meet their energy demands.\n\n**Key take-away:** Cardiolipin is not just a structural lipid; it is an active participant in organising the electron transport chain into efficient, stable supercomplexes.",
+    "options": [
+      {
+        "id": "n_hh1ash4knccqm98y2n9hfn1h5c",
+        "title": "ATP synthase mechanism",
+        "canonical_question": "How does ATP synthase use proton flow to make ATP?",
+        "reason": "Related to proton gradient and inner membrane organisation"
+      },
+      {
+        "id": "n_d2z8pm1sw6ybqren3vt5cx7kh0",
+        "title": "Oxygen as the final electron acceptor",
+        "canonical_question": "Why does the electron transport chain require oxygen?",
+        "reason": "Directly involves Complex IV, a key supercomplex component"
+      },
+      {
+        "id": "n_zt4qn7js2xcwbmkr9fv1hp6yde0",
+        "title": "Reactive oxygen species from the transport chain",
+        "canonical_question": "How does the electron transport chain generate reactive oxygen species?",
+        "reason": "Supercomplex formation reduces electron leakage and ROS production"
+      }
+    ],
+    "warnings": []
+  }
+}

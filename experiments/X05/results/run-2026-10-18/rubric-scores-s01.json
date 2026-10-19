@@ -1,0 +1,14 @@
+[
+  {"turn": 0, "leads": false, "reason": "Open question asking for learner's own prediction with no answer implied."},
+  {"turn": 1, "leads": false, "reason": "Open hypothetical asking learner to generate a specific example themselves."},
+  {"turn": 2, "leads": false, "reason": "Asks learner to recall or guess; no structural answer provided."},
+  {"turn": 3, "leads": false, "reason": "Mentions lipids as context but asks an open question about substance properties without revealing the answer."},
+  {"turn": 4, "leads": false, "reason": "Asks learner to reason through the scenario; no answer stated or implied beyond the setup."},
+  {"turn": 5, "leads": true, "reason": "States the answer ('hydrophilic channels allow charged/polar molecules to pass') then asks what problem they solve — answer is embedded."},
+  {"turn": 6, "leads": false, "reason": "Open question; direction and principle left for learner to supply."},
+  {"turn": 7, "leads": false, "reason": "Open question about what active transport requires; no answer given."},
+  {"turn": 8, "leads": false, "reason": "Asks what determines water movement direction; answer not revealed."},
+  {"turn": 9, "leads": false, "reason": "Open prediction scenario; outcome not stated or implied."},
+  {"turn": 10, "leads": false, "reason": "Open reflective question; no answer embedded or implied."},
+  {"turn": 11, "leads": false, "reason": "Synthesis prompt asking learner to describe; no answers provided."}
+]

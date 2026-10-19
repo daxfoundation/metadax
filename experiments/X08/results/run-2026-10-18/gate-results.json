@@ -1,0 +1,345 @@
+{
+  "run_type": "deterministic",
+  "summary": {
+    "safe_rewrites": {
+      "total": 10,
+      "allowed": 10,
+      "wrongly_blocked": 0
+    },
+    "near_copies": {
+      "total": 10,
+      "blocked": 10,
+      "leaked": 0
+    },
+    "quoting_private_fact": {
+      "total": 10,
+      "blocked": 10,
+      "leaked": 0
+    },
+    "leaks_total": 0,
+    "safe_wrongly_blocked": 0,
+    "all_decisions_explained": true
+  },
+  "results": [
+    {
+      "category": "safe_rewrite",
+      "node_id": "n_csd0ha08xy0hg3gqyz3j5kthd7",
+      "title": "Understanding compliance frameworks",
+      "gate_decision": "allow",
+      "reasons": [
+        "No private markers or ancestry found.",
+        "export_requires_review is set — human review needed before publishing."
+      ],
+      "review_required": true
+    },
+    {
+      "category": "safe_rewrite",
+      "node_id": "n_zadn2mfkj3fz9r3fegpv36yyk3",
+      "title": "Control-based risk management",
+      "gate_decision": "allow",
+      "reasons": [
+        "No private markers or ancestry found.",
+        "export_requires_review is set — human review needed before publishing."
+      ],
+      "review_required": true
+    },
+    {
+      "category": "safe_rewrite",
+      "node_id": "n_1d4e5yj8b3v05smfv4yspnev31",
+      "title": "Audit preparation fundamentals",
+      "gate_decision": "allow",
+      "reasons": [
+        "No private markers or ancestry found.",
+        "export_requires_review is set — human review needed before publishing."
+      ],
+      "review_required": true
+    },
+    {
+      "category": "safe_rewrite",
+      "node_id": "n_wjvvdt21cbbjt4y0z5nfdsf6y7",
+      "title": "Gap analysis methodology",
+      "gate_decision": "allow",
+      "reasons": [
+        "No private markers or ancestry found.",
+        "export_requires_review is set — human review needed before publishing."
+      ],
+      "review_required": true
+    },
+    {
+      "category": "safe_rewrite",
+      "node_id": "n_32k7ktqsg36gsmme8wcrdv9583",
+      "title": "Continuous improvement cycles",
+      "gate_decision": "allow",
+      "reasons": [
+        "No private markers or ancestry found.",
+        "export_requires_review is set — human review needed before publishing."
+      ],
+      "review_required": true
+    },
+    {
+      "category": "safe_rewrite",
+      "node_id": "n_pm4xbefvx78mn2ccwex2tmtwg4",
+      "title": "Evidence collection best practices",
+      "gate_decision": "allow",
+      "reasons": [
+        "No private markers or ancestry found.",
+        "export_requires_review is set — human review needed before publishing."
+      ],
+      "review_required": true
+    },
+    {
+      "category": "safe_rewrite",
+      "node_id": "n_fzdynd0anydp9zj3sn9q7pm9k1",
+      "title": "Escalation and exception handling",
+      "gate_decision": "allow",
+      "reasons": [
+        "No private markers or ancestry found.",
+        "export_requires_review is set — human review needed before publishing."
+      ],
+      "review_required": true
+    },
+    {
+      "category": "safe_rewrite",
+      "node_id": "n_zjryg85vmw305hnbm30s901w50",
+      "title": "Scope definition for compliance reviews",
+      "gate_decision": "allow",
+      "reasons": [
+        "No private markers or ancestry found.",
+        "export_requires_review is set — human review needed before publishing."
+      ],
+      "review_required": true
+    },
+    {
+      "category": "safe_rewrite",
+      "node_id": "n_9xkgdsza0xeqm4kyae46yh9ed2",
+      "title": "Common compliance mistakes",
+      "gate_decision": "allow",
+      "reasons": [
+        "No private markers or ancestry found.",
+        "export_requires_review is set — human review needed before publishing."
+      ],
+      "review_required": true
+    },
+    {
+      "category": "safe_rewrite",
+      "node_id": "n_ea3xzjz303f7jw9gs1zahk5hx0",
+      "title": "Roles in a compliance programme",
+      "gate_decision": "allow",
+      "reasons": [
+        "No private markers or ancestry found.",
+        "export_requires_review is set — human review needed before publishing."
+      ],
+      "review_required": true
+    },
+    {
+      "category": "near_copy",
+      "node_id": "n_grjwbm7wq1kz29j46mr1pq2y40",
+      "title": "the protocol overview",
+      "gate_decision": "block",
+      "reasons": [
+        "Ancestor n_6rsg8jfv5yy2x2jxe0dq1rm2d2 has visibility 'private' — re-author required.",
+        "Content contains private term 'Meridian Protocol'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "near_copy",
+      "node_id": "n_739m29sgyed12ekcy1qsa8e1t6",
+      "title": "the control spec control framework",
+      "gate_decision": "block",
+      "reasons": [
+        "Ancestor n_wvcsp41k3bnav21788apsd19k2 has visibility 'private' — re-author required.",
+        "Content contains private term 'MRD-7'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "near_copy",
+      "node_id": "n_prb69em9ve7qttpdywwm0yft01",
+      "title": "the audit project audit preparation",
+      "gate_decision": "block",
+      "reasons": [
+        "Ancestor n_csk8mh8tw7rbq2j4s1j12d0923 has visibility 'private' — re-author required.",
+        "Content contains private term 'Project Apex'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "near_copy",
+      "node_id": "n_h220kxvv240pvjvw711c01rph4",
+      "title": "Section 4.2 gap remediation",
+      "gate_decision": "block",
+      "reasons": [
+        "Ancestor n_vhke98k812x5f763z7v7ybvxv7 has visibility 'private' — re-author required.",
+        "Content contains private term 'Section 4.2 gap'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "near_copy",
+      "node_id": "n_6cexpynbhd7efs6e6wynq6p8r0",
+      "title": "Audit score 87 improvement plan",
+      "gate_decision": "block",
+      "reasons": [
+        "Ancestor n_h8wqerhc2328zpg9sw6824nq42 has visibility 'private' — re-author required.",
+        "Content contains private term 'audit score 87'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "near_copy",
+      "node_id": "n_mdzprjr9cf9x1drtk51y41g076",
+      "title": "the protocol overview",
+      "gate_decision": "block",
+      "reasons": [
+        "Ancestor n_6rsg8jfv5yy2x2jxe0dq1rm2d2 has visibility 'private' — re-author required.",
+        "Content contains private term 'Meridian Protocol'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "near_copy",
+      "node_id": "n_1t9bt44pyepkhc8ab2mr5gcds2",
+      "title": "the control spec control framework",
+      "gate_decision": "block",
+      "reasons": [
+        "Ancestor n_wvcsp41k3bnav21788apsd19k2 has visibility 'private' — re-author required.",
+        "Content contains private term 'MRD-7'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "near_copy",
+      "node_id": "n_6twqe4mvqqp7690wa03v6y58q1",
+      "title": "the audit project audit preparation",
+      "gate_decision": "block",
+      "reasons": [
+        "Ancestor n_csk8mh8tw7rbq2j4s1j12d0923 has visibility 'private' — re-author required.",
+        "Content contains private term 'Project Apex'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "near_copy",
+      "node_id": "n_f0j5ekqrt856fg96g8nxq9vr57",
+      "title": "Section 4.2 gap remediation",
+      "gate_decision": "block",
+      "reasons": [
+        "Ancestor n_vhke98k812x5f763z7v7ybvxv7 has visibility 'private' — re-author required.",
+        "Content contains private term 'Section 4.2 gap'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "near_copy",
+      "node_id": "n_yxzgtmrvgy2y9d3hnwybmxf1a1",
+      "title": "Audit score 87 improvement plan",
+      "gate_decision": "block",
+      "reasons": [
+        "Ancestor n_h8wqerhc2328zpg9sw6824nq42 has visibility 'private' — re-author required.",
+        "Content contains private term 'audit score 87'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "quotes_private_fact",
+      "node_id": "n_x0m0k0h4xzvj0y2mjsrsy1asn6",
+      "title": "Compliance review follow-up 1",
+      "gate_decision": "block",
+      "reasons": [
+        "Content contains private term 'Meridian Protocol'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "quotes_private_fact",
+      "node_id": "n_fm3cw3rmgycwv6k9gk6c8r4rd1",
+      "title": "Compliance review follow-up 2",
+      "gate_decision": "block",
+      "reasons": [
+        "Content contains private term 'MRD-7'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "quotes_private_fact",
+      "node_id": "n_et3q4nf1t70atdsf8apae3eca0",
+      "title": "Compliance review follow-up 3",
+      "gate_decision": "block",
+      "reasons": [
+        "Content contains private term 'Project Apex'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "quotes_private_fact",
+      "node_id": "n_jjn8t9m732d6qkcxj1zfn7t1w6",
+      "title": "Compliance review follow-up 4",
+      "gate_decision": "block",
+      "reasons": [
+        "Content contains private term 'audit score 87'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "quotes_private_fact",
+      "node_id": "n_e28kkc4vyvrdhhg2hfkaze0jf7",
+      "title": "Compliance review follow-up 5",
+      "gate_decision": "block",
+      "reasons": [
+        "Content contains private term 'Section 4.2 gap'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "quotes_private_fact",
+      "node_id": "n_4hppx5wzjfv020njj7rjzncy30",
+      "title": "Compliance review follow-up 6",
+      "gate_decision": "block",
+      "reasons": [
+        "Content contains private term 'Example Freight Co. Internal'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "quotes_private_fact",
+      "node_id": "n_t5bkqq3j0721bgt30zv5bpxbn0",
+      "title": "Compliance review follow-up 7",
+      "gate_decision": "block",
+      "reasons": [
+        "Content contains private term 'Meridian Protocol'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "quotes_private_fact",
+      "node_id": "n_hkb4qtbq4vc0h6xdagxkmcke22",
+      "title": "Compliance review follow-up 8",
+      "gate_decision": "block",
+      "reasons": [
+        "Content contains private term 'MRD-7'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "quotes_private_fact",
+      "node_id": "n_800tq3cavpbxb59w0fve97w192",
+      "title": "Compliance review follow-up 9",
+      "gate_decision": "block",
+      "reasons": [
+        "Content contains private term 'audit score 87'."
+      ],
+      "review_required": false
+    },
+    {
+      "category": "quotes_private_fact",
+      "node_id": "n_169abw7yzx1ghnrvhb63d34rk2",
+      "title": "Compliance review follow-up 10",
+      "gate_decision": "block",
+      "reasons": [
+        "Content contains private term 'Section 4.2 gap'."
+      ],
+      "review_required": false
+    }
+  ]
+}

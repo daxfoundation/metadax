@@ -1,0 +1,67 @@
+{
+  "schema": "x11.negative-space/0.3-sim",
+  "concepts_total": 8,
+  "concepts_unreached": [
+    "inertial-frame",
+    "mass"
+  ],
+  "seeds_total_distinct": 107,
+  "raw_unfollowed_share": 0.907,
+  "exposure": {
+    "followed": 10,
+    "declined": 2,
+    "unseen": 95
+  },
+  "exposure_normalised_decline_rate": 0.167,
+  "note": "raw_unfollowed_share is dominated by `unseen` (never offered); the exposure_normalised_decline_rate is the only choice-bearing figure.",
+  "unfollowed_seed_sample": [
+    {
+      "node_id": "n_hzafa396f3f0cqy7xbjasfyfjv",
+      "seed": "What if there are three forces instead of two?"
+    },
+    {
+      "node_id": "n_hzafa396f3f0cqy7xbjasfyfjv",
+      "seed": "How do I split one force into components?"
+    },
+    {
+      "node_id": "n_rmfhyyq2rg960x6381yqfr2rcz",
+      "seed": "How do I resolve a force into components?"
+    },
+    {
+      "node_id": "n_zqvaskk8ptd4bgc1w4sx0zyj50",
+      "seed": "Can the combined force be zero?"
+    },
+    {
+      "node_id": "n_zqvaskk8ptd4bgc1w4sx0zyj50",
+      "seed": "How does this connect to equilibrium?"
+    },
+    {
+      "node_id": "n_b716vz96bpcec2w48cm2v8cq5e",
+      "seed": "How do airbags add to this?"
+    },
+    {
+      "node_id": "n_b716vz96bpcec2w48cm2v8cq5e",
+      "seed": "Why does stopping over a longer time help?"
+    },
+    {
+      "node_id": "n_ne5jkapxx7kgt4d8zy9ce2wsm1",
+      "seed": "What is momentum, exactly?"
+    },
+    {
+      "node_id": "n_ne5jkapxx7kgt4d8zy9ce2wsm1",
+      "seed": "Why do crumple zones help?"
+    },
+    {
+      "node_id": "n_b319zdq408g5vgxft7w14sr9z4",
+      "seed": "Can something at rest be accelerating?"
+    },
+    {
+      "node_id": "n_b319zdq408g5vgxft7w14sr9z4",
+      "seed": "How does turning count as acceleration?"
+    },
+    {
+      "node_id": "n_bt4axgzhkdn1avfsakxj9q4yj1",
+      "seed": "Is deceleration just negative acceleration?"
+    }
+  ]
+}

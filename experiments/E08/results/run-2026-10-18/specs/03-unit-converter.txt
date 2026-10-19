@@ -1,0 +1,38 @@
+SPEC: Unit Converter with Significant Figures
+
+Export a named ES-module function:
+
+  export function convert(value, fromUnit, toUnit, sigFigs = 3)
+
+Parameters
+  value    – numeric value to convert (number)
+  fromUnit – source unit string (see supported units below)
+  toUnit   – target unit string
+  sigFigs  – number of significant figures for rounding (integer ≥ 1, default 3)
+
+Returns: converted value rounded to sigFigs significant figures (number).
+Throw or return NaN for unsupported unit pairs.
+
+Supported conversions (both directions):
+  Length:      'm'  ↔ 'km'
+  Mass:        'g'  ↔ 'kg'
+  Temperature: 'C'  ↔ 'F'   (Celsius / Fahrenheit)
+  Volume:      'mL' ↔ 'L'
+
+Formulas
+  m  → km : ÷ 1000      km  → m  : × 1000
+  g  → kg : ÷ 1000      kg  → g  : × 1000
+  C  → F  : × 9/5 + 32  F   → C  : (value − 32) × 5/9
+  mL → L  : ÷ 1000      L   → mL : × 1000
+
+Significant figures rounding: round the result so it has exactly sigFigs
+significant digits (not decimal places).
+
+Examples
+  convert(1000, 'm',  'km', 4) → 1.000
+  convert(1,    'km', 'm',  4) → 1000
+  convert(0,    'C',  'F',  3) → 32.0
+  convert(100,  'C',  'F',  3) → 212
+  convert(-40,  'C',  'F',  3) → -40.0
+  convert(1,    'kg', 'g',  3) → 1000
+  convert(2.5,  'L',  'mL', 3) → 2500

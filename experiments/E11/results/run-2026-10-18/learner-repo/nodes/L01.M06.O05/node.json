@@ -1,0 +1,16 @@
+{
+  "schema": "metadax.node/0.2",
+  "id": "L01.M06.O05",
+  "title": "What is the difference between Python lists and pandas Series?",
+  "concept": "pandas-basics",
+  "week": 6,
+  "visibility": "public",
+  "core": {
+    "body": "A list is a general-purpose Python container with no type constraint. A Series is a labelled, single-type array optimised for vectorised operations and alignment.",
+    "bloom_level": "understand"
+  },
+  "created_at": "2026-14-01T00:00:00Z",
+  "updated_at": "2026-14-01T00:00:00Z",
+  "content_sha256": "runtime",
+  "superseded_by": null
+}

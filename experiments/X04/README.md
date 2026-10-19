@@ -2,7 +2,7 @@
 
 *Abandoned-path shapes shared by consent, clustered into holes, used to re-teach.*
 
-**Status: designed.**
+**Status: done (simulated; runs 2026-10-09 and 2026-10-18).**
 
 ## Question
 
@@ -82,3 +82,8 @@ model learners do, and whether a real cohort consents to share shape at a useful
 Rides on **v0.3 IDs**. The inverse of **X11** (dead-end = entered-then-abandoned;
 negative space = never entered). Feeds **BOTTLENECKS.md** (holes are course-level
 bottlenecks) and **X12**.
+
+## Results
+
+- `results/2026-10-18-dead-end-atlas.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.

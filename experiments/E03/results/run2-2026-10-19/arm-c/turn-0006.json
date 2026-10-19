@@ -1,0 +1,49 @@
+{
+  "schema": "metadax.tutor-turn/0.2",
+  "type": "summary",
+  "display": {
+    "message": "**Session Summary — Final**\n\nThanks for a great session, Tomás!\n\n**The one thing to remember:** A random event has a known set of possible outcomes (the sample space), but the actual outcome is uncertain until it occurs.\n\n**In your world:**\n- Card games: every deal is a random event — the deck defines the sample space, the shuffle provides the randomness.\n- Cycling: whether you'll catch every green light is uncertain within a known set of states.\n\n**Your competency on L01.M01.O01:** 78 / 100\n\nGreat work today. See you next session!"
+  },
+  "meta": null,
+  "feedback": null,
+  "handoff": null,
+  "summary": {
+    "concepts": [
+      {"id": "random-event", "name": "Random events", "competency": 78,
+       "levels": {"Remember": "passed_first_try", "Understand": "passed_after_help"}}
+    ],
+    "strengths": [
+      "Correctly identified a random event at first attempt",
+      "Accurately enumerated all possible outcomes"
+    ],
+    "areas_for_improvement": [
+      "Explaining the uncertainty property of random events on first attempt"
+    ],
+    "misconceptions": [],
+    "recommendations": [
+      "Self-practice: write sample spaces for 2-3 personal scenarios",
+      "Proceed to L01.M01.O02"
+    ],
+    "encouragement": "You approached every question thoughtfully. See you next time, Tomás!"
+  },
+  "state": {
+    "concept_order": ["random-event"],
+    "concept": "random-event",
+    "level": "Understand",
+    "attempt": 2,
+    "help_used": false,
+    "hints_given": 0,
+    "phase": "main",
+    "levels": {
+      "random-event": {
+        "Remember": "passed_first_try",
+        "Understand": "passed_after_help"
+      }
+    },
+    "competency": {
+      "random-event": 78
+    }
+  },
+  "next_action": "done",
+  "warnings": []
+}

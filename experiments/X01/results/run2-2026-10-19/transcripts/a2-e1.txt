@@ -1,0 +1,15 @@
+SIMULATED — pid=a2-e1, arm=A-rerun, lang=en, subject=kite flying
+
+[GUIDE 1]: You're on the right track about Newton's third law — those two forces are indeed equal and opposite. But before we conclude they cancel, let's ask a careful question: when we say two forces "cancel out," what does that require? Think about a tug-of-war: one team pulls a rope left with 100 N, the other pulls right with 100 N. Those forces are equal and opposite too — do they cancel? Now here's the key: who or what are those two forces actually pulling *on*?
+
+[LEARNER 1]: Hmm, okay... in the tug-of-war both teams are pulling on the rope, so... both forces are on the rope? So they cancel on the rope. But wait — in the kite situation, you said "who are the forces pulling on" — the string pulls the kite up, so that force is on the kite. And the kite pulls the string down, so that force is on the string. Those are different things. But I'm not sure why that matters — the forces are still equal and opposite, so shouldn't they still cancel somehow?
+
+[RESOLVED 1]: NO
+
+[GUIDE 2]: You've spotted something really important — the forces act on *different* objects. That's the crucial piece. Forces only cancel when they act on the *same* object. Imagine you're standing on ice and I push you right with 10 N — you accelerate right. Now imagine someone else pushes me left with 10 N at the same moment. Are those forces canceling? No — they're on two different people. You still accelerate right, and I accelerate left. Now apply that to the kite: the string's upward pull acts on the kite, and the kite's downward pull acts on the string. When you want to figure out whether the kite accelerates, you only add up the forces acting directly on the kite itself. What forces can you think of that act directly on the kite?
+
+[LEARNER 2]: Oh okay... so for the kite, the forces on it would be... the string pulling it up, and gravity pulling it down. And the kite pulling the string down — that force isn't on the kite at all, it's on the string. So I shouldn't even include that one when I'm figuring out what the kite does. So if the upward pull from the string is bigger than gravity, the net force on the kite is upward, and it accelerates up. Is that right? The Newton's third law pair just never enters the kite's own force calculation?
+
+[RESOLVED 2]: YES
+
+[SUMMARY]: pid=a2-e1, attempts=2, resolved=YES

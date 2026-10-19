@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metadax.daxfoundation.org/schemas/0.3/org-declaration.schema.json",
+  "title": "metadax.org-declaration/0.1",
+  "description": "An organisation's declaration of what stays inside its wall and what may leave via the outward gate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "org_id", "org_name", "default_visibility",
+    "private_module_ids", "private_terms", "export_requires_review", "declared_at"
+  ],
+  "properties": {
+    "schema": { "const": "metadax.org-declaration/0.1" },
+    "org_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Unique identifier for the organisation."
+    },
+    "org_name": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "Human-readable organisation name."
+    },
+    "default_visibility": {
+      "enum": ["private", "pending_review"],
+      "description": "What new nodes default to inside this org. 'private' = stays in; 'pending_review' = queued for export review."
+    },
+    "private_module_ids": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "description": "Module IDs that are wholly private. Any node whose module_id matches is blocked."
+    },
+    "private_node_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(L\\d\\d\\.M\\d\\d\\.O\\d\\d|n_[0-9a-hjkmnp-tv-z]{26})$"
+      },
+      "description": "Specific node IDs that are private, even if they live in an otherwise public module."
+    },
+    "private_terms": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 2 },
+      "description": "Exact terms (case-sensitive substrings) that mark content as private. A node containing any of these in its text fields is blocked."
+    },
+    "export_requires_review": {
+      "type": "boolean",
+      "description": "If true, a node that otherwise passes the gate still needs an explicit review flag before export."
+    },
+    "reviewers": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[A-Za-z0-9._-]+$" },
+      "description": "Creator IDs authorised to approve nodes for export."
+    },
+    "declared_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})$"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 1000
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "session_id": "ses-20261018-w2ae",
+  "wave": 2,
+  "display_name": "Youssef",
+  "profile_summary": "18–25, French, weak prior, football-interested, low patience, gives up when lost",
+  "turns": 3,
+  "concepts_touched": [
+    "net-force",
+    "inertia",
+    "kinematic-quantities",
+    "newtons-first-law"
+  ],
+  "followed_seeds": [],
+  "consent": {
+    "share_abandoned_shape": true
+  },
+  "marker_responses": [
+    {
+      "spot": "net-force / inertia section — plainer-path offer",
+      "entered": false,
+      "then": "exited"
+    }
+  ],
+  "offer_responses": [
+    {
+      "offer_id": "of-s-01",
+      "seed": "How do you add or subtract velocities that point in different directions?",
+      "response": "declined",
+      "why_short": "Felt too abstract and mathy; Youssef just wanted to push forward and not get more confused"
+    }
+  ],
+  "stalls": [
+    {
+      "at_concept": "newtons-first-law",
+      "objective": "L01.M02.O01",
+      "detail": "Lost the thread distinguishing 'net force zero' from 'no force at all'; stopped engaging after turn 3"
+    }
+  ]
+}
