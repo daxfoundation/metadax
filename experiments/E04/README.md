@@ -45,13 +45,16 @@ key for cross-vendor certification (`docs/DECISIONS.md`).
 
 ## Status
 
-done (model runs, no personas, 2026-10-18)
+done (model runs, no personas): first run 2026-10-09 (two runs, one vendor's model), again 2026-10-18;
+the two-vendor question is not answered
 
 ## Results
 
+- `results/2026-10-09-run.md` — runs 1 and 2 (2026-10-09, one vendor's model); raw data in `results/2026-10-09-raw/`.
 - `results/2026-10-18-cert3.md` — run 1 (2026-10-18); raw data in `results/run-2026-10-18/`.
 - Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.
 
+Historical note from 2026-09-27, kept as written (the first model runs were on 2026-10-09):
 not yet run -- see `results/2026-09-27-first-run.md`. The eval harness, the 27
 cases, the grader, the runner and the promptfoo config are built and committed,
 but no model has executed the suite: a nested `claude -p` is unavailable in the
