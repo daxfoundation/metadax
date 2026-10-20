@@ -223,6 +223,17 @@
       "date": "2026-10-20",
       "licence": "CC BY 4.0",
       "path": "samples/one-question-a-week.md"
+    },
+    {
+      "id": "science-words-that-stick",
+      "subject": "Science",
+      "age_band": "10-12",
+      "stuck": "learns a science word for the quiz and loses it a week later — the definition was memorised, never attached to anything real",
+      "loves": "making things, drawing, and doing rather than being told",
+      "approach": "each word gets an object or action, the learner's own definition, a drawing, and a sentence about something he actually did that week; a running word wall reviewed two minutes a day; at most three new words a week",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/science-words-that-stick.md"
     }
   ]
 }
