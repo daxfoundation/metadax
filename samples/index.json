@@ -179,6 +179,17 @@
       "date": "2026-10-20",
       "licence": "CC BY 4.0",
       "path": "samples/mistakes-are-safe-catch-my-mistake.md"
+    },
+    {
+      "id": "from-tracing-to-own-words",
+      "subject": "Writing",
+      "age_band": "4-6",
+      "stuck": "traces letters and short sentences neatly, and the parent wonders whether tracing is enough writing or whether something more should be happening",
+      "loves": "telling you about her day, and drawing pictures of what she did",
+      "approach": "the child says one sentence about her day and the guide writes it down for her to copy a word or two of; the child labels her own drawings by writing the sounds she hears",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/from-tracing-to-own-words.md"
     }
   ]
 }
