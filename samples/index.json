@@ -212,6 +212,17 @@
       "date": "2026-10-20",
       "licence": "CC BY 4.0",
       "path": "samples/counting-with-what-she-already-plays-with.md"
+    },
+    {
+      "id": "one-question-a-week",
+      "subject": "Science",
+      "age_band": "10-12",
+      "stuck": "treats science as facts to be told and has stopped wondering out loud — never asks why things happen, and waits to be given the answer",
+      "loves": "noticing odd little things around the house and garden, and being proved right",
+      "approach": "a family habit: one question on the fridge on Monday, a written guess, one small at-home test or look-up midweek, a two-sentence answer on Friday in the learner's own words — the guide asks, never lectures",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/one-question-a-week.md"
     }
   ]
 }
