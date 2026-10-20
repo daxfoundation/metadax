@@ -245,6 +245,28 @@
       "date": "2026-10-20",
       "licence": "CC BY 4.0",
       "path": "samples/grammar-from-your-own-book.md"
+    },
+    {
+      "id": "first-grade-around-a-work-day",
+      "subject": "Reading",
+      "age_band": "4-6",
+      "stuck": "the parent works from home and cannot see how lessons fit a working day, and the learner drifts when a lesson runs long",
+      "loves": "trains, and knowing the order things come in — lining the day up like cars on a track",
+      "approach": "about ninety minutes of guided work in short, predictable blocks around the parent's calls — reading about twenty minutes, maths about fifteen, writing about ten, in two or three sittings — with one visible picture schedule the learner ticks, and the rest of the day play, chores, outside time and a read-aloud; stop on a win",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/first-grade-around-a-work-day.md"
+    },
+    {
+      "id": "check-the-facts-before-you-switch",
+      "subject": "Math",
+      "age_band": "7-9",
+      "stuck": "multi-digit multiplication and long division keep falling apart, and the parent is about to switch maths programmes to fix it",
+      "loves": "the coin jar — sorting it, and trading ten pennies for a dime",
+      "approach": "before switching anything, a five-minute check to find the one topic: which times-table facts are automatic and which are counted out, then place value with base-ten blocks or coins, then a single two-digit-by-one-digit problem talked through — fix the earliest wobble first with five minutes a day of facts, and only then judge the programme",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/check-the-facts-before-you-switch.md"
     }
   ]
 }
