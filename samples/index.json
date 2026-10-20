@@ -201,6 +201,50 @@
       "date": "2026-10-20",
       "licence": "CC BY 4.0",
       "path": "samples/decodables-to-real-books-take-turns.md"
+    },
+    {
+      "id": "counting-with-what-she-already-plays-with",
+      "subject": "Math",
+      "age_band": "4-6",
+      "stuck": "counts out loud to ten by rote but cannot say how many are in a small pile — the words are a song, not yet a count of things",
+      "loves": "lining up the small things she already plays with — toy cars, pasta shapes, blocks",
+      "approach": "count real things she lines up: touch and move one at a time, answer 'how many?' with the last number said, then 'one more', then subitise small groups on a plate — no worksheets",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/counting-with-what-she-already-plays-with.md"
+    },
+    {
+      "id": "one-question-a-week",
+      "subject": "Science",
+      "age_band": "10-12",
+      "stuck": "treats science as facts to be told and has stopped wondering out loud — never asks why things happen, and waits to be given the answer",
+      "loves": "noticing odd little things around the house and garden, and being proved right",
+      "approach": "a family habit: one question on the fridge on Monday, a written guess, one small at-home test or look-up midweek, a two-sentence answer on Friday in the learner's own words — the guide asks, never lectures",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/one-question-a-week.md"
+    },
+    {
+      "id": "science-words-that-stick",
+      "subject": "Science",
+      "age_band": "10-12",
+      "stuck": "learns a science word for the quiz and loses it a week later — the definition was memorised, never attached to anything real",
+      "loves": "making things, drawing, and doing rather than being told",
+      "approach": "each word gets an object or action, the learner's own definition, a drawing, and a sentence about something he actually did that week; a running word wall reviewed two minutes a day; at most three new words a week",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/science-words-that-stick.md"
+    },
+    {
+      "id": "grammar-from-your-own-book",
+      "subject": "Writing",
+      "age_band": "7-9",
+      "stuck": "can do a grammar worksheet but cannot find the same thing in a real sentence, or use it in his own writing — the rule and the reading live in separate boxes",
+      "loves": "the adventure book he is reading at bedtime, and being the expert on its story",
+      "approach": "grammar from tonight's chapter: pick three sentences from the book he is already reading; one move per session — find the doer and the doing, join two short sentences, change the time of a sentence — his own sentence last; no workbook",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/grammar-from-your-own-book.md"
     }
   ]
 }
