@@ -43,14 +43,16 @@ MP-05 as certified by E04, and a registry fixture in the per-module layout
 
 ## Status
 
-done (simulated, first run 2026-10-18); run 2 2026-10-19
+done (one vendor's models): 2026-10-09, model replies scored by a deterministic grader (12 cases, no precision or recall); 2026-10-18 and 2026-10-19, simulated (60 queries): the larger model a narrow PASS, precision 0.810 against a 0.80 line, the smaller model INCONCLUSIVE
 
 ## Results
 
-- `results/2026-10-18-reuse-decisions.md` — run 1 (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
-- `results/2026-10-19-reuse-decisions-run2.md` — run 2 (simulated, 2026-10-19); raw data in `results/run2-2026-10-19/`.
+- `results/2026-10-09-run.md` — runs 1 and 2 (2026-10-09; the 12 MP-05 cases, no precision or recall); raw data in `results/2026-10-09-raw/`.
+- `results/2026-10-18-reuse-decisions.md` — first run of the 18-19 Oct round (simulated, 2026-10-18); raw data in `results/run-2026-10-18/`.
+- `results/2026-10-19-reuse-decisions-run2.md` — second run of the round (simulated, 2026-10-19; the larger model's figures are a re-score of the 18 Oct outputs); raw data in `results/run2-2026-10-19/`.
 - Proposed (not merged) changes in `proposed/`; new bottleneck rows are in `experiments/BOTTLENECKS.md`.
 
+Historical note from 2026-09-27, kept as written (the first model runs were on 2026-10-09):
 not yet run -- see `results/2026-09-27-first-run.md`. The 12 MP-05 cases, the
 grader (reuse/extend/new/ancestor/redirect gates) and the runner are built and
 committed, but no model has executed them: a nested `claude -p` is unavailable in

@@ -1,0 +1,1 @@
+{"type":"error","missing":["INPUT"],"message":"The INPUT block is required for the follow-up operation but is absent or empty. Please provide the learner's question."}
