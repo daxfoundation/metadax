@@ -201,6 +201,17 @@
       "date": "2026-10-20",
       "licence": "CC BY 4.0",
       "path": "samples/decodables-to-real-books-take-turns.md"
+    },
+    {
+      "id": "counting-with-what-she-already-plays-with",
+      "subject": "Math",
+      "age_band": "4-6",
+      "stuck": "counts out loud to ten by rote but cannot say how many are in a small pile — the words are a song, not yet a count of things",
+      "loves": "lining up the small things she already plays with — toy cars, pasta shapes, blocks",
+      "approach": "count real things she lines up: touch and move one at a time, answer 'how many?' with the last number said, then 'one more', then subitise small groups on a plate — no worksheets",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/counting-with-what-she-already-plays-with.md"
     }
   ]
 }
