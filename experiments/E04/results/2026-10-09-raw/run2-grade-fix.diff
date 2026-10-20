@@ -53,7 +53,7 @@ index b6f20ab..240372b 100644
      reasons.push('schema: no schema found for "' + ref + '"');
      return false;
    }
--  const errs = jsl.validate(target, schema);
+-  const errs = jsl.validate(obj, schema);
 +  const errs = jsl.validate(target, schema);
    if (errs.length) {
      for (const e of errs.slice(0, 6)) reasons.push('schema: ' + e);
