@@ -168,6 +168,17 @@
       "date": "2026-10-18",
       "licence": "CC BY 4.0",
       "path": "samples/the-blank-page-frame.md"
+    },
+    {
+      "id": "mistakes-are-safe-catch-my-mistake",
+      "subject": "Math",
+      "age_band": "4-6",
+      "stuck": "gets upset and walks away whenever he gets something wrong — a count, a puzzle piece, a letter — so being wrong ends the work before it starts",
+      "loves": "catching a grown-up out, and being the one who knows better",
+      "approach": "do it together first, then the guide makes deliberate mistakes for the child to catch, so being wrong becomes funny and safe; five to ten minutes, stop while he is winning",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/mistakes-are-safe-catch-my-mistake.md"
     }
   ]
 }
