@@ -190,6 +190,17 @@
       "date": "2026-10-20",
       "licence": "CC BY 4.0",
       "path": "samples/from-tracing-to-own-words.md"
+    },
+    {
+      "id": "decodables-to-real-books-take-turns",
+      "subject": "Reading",
+      "age_band": "7-9",
+      "stuck": "reads decodable readers fine in lessons but will not try a real book on his own — closes it, or asks to be read to instead",
+      "loves": "being read to, and animals; reading a page out loud to the cat",
+      "approach": "take turns reading, the guide a page and the child a line, growing the child's share slowly; real books a notch easier than lesson level; read to a pet to take the pressure off",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/decodables-to-real-books-take-turns.md"
     }
   ]
 }
