@@ -1,0 +1,60 @@
+diff --git a/evals/grade.js b/evals/grade.js
+index b6f20ab..240372b 100644
+--- a/evals/grade.js
++++ b/evals/grade.js
+@@ -89,17 +89,51 @@ function loadSchema(ref) {
+   return JSON.parse(fs.readFileSync(p, 'utf-8'));
+ }
+
++// Operation outputs wrap their persisted file object in an envelope, e.g.
++// {"type":"profile","profile":{…metadax.learner/0.2…}} (SCHEMAS.md section 9).
++// The flat metadax.* schema validates the PERSISTED INNER object, not the
++// envelope; metadax.learner/course/node are listed there as "Persisted file
++// objects (not operation outputs)". Map each operation type to the key that
++// holds its persisted object so we validate the inner object, not the wrapper.
++const ENVELOPE_KEYS = { profile: 'profile', course: 'course', node: 'node' };
++
+ function schemaValidate(obj, expect, reasons) {
+-  // Prefer the object's own schema id, else the case's expected schema.
+-  const ref = (obj && typeof obj.schema === 'string' && loadSchema(obj.schema))
+-    ? obj.schema : (expect.schema || null);
++  // Error-object path: an output with "type":"error" is validated against the
++  // error shape (SCHEMAS.md: {"type":"error","missing":[…],"message":"…"}) and
++  // passes when the case's expect allows an error response. If the case does
++  // not allow error, leave schema unjudged here and let expectCheck flag the
++  // type mismatch (don't validate an error object against a non-error schema).
++  if (obj && obj.type === 'error') {
++    const allowsError = expect.type !== undefined && asArray(expect.type).includes('error');
++    if (!allowsError) return null;
++    const errSchema = loadSchema('error.schema.json');
++    if (!errSchema) { reasons.push('schema: no schema found for "error.schema.json"'); return false; }
++    const errErrs = jsl.validate(obj, errSchema);
++    if (errErrs.length) {
++      for (const e of errErrs.slice(0, 6)) reasons.push('schema: ' + e);
++      return false;
++    }
++    return true;
++  }
++
++  // Unwrap the operation-output envelope to the persisted inner object when the
++  // type names a known envelope key whose value is an object.
++  let target = obj;
++  const key = obj && typeof obj.type === 'string' ? ENVELOPE_KEYS[obj.type] : null;
++  if (key && obj[key] && typeof obj[key] === 'object' && !Array.isArray(obj[key])) {
++    target = obj[key];
++  }
++
++  // Prefer the (inner) object's own schema id, else the case's expected schema.
++  const ref = (target && typeof target.schema === 'string' && loadSchema(target.schema))
++    ? target.schema : (expect.schema || null);
+   if (!ref) return null; // nothing to validate against
+   const schema = loadSchema(ref);
+   if (!schema) {
+     reasons.push('schema: no schema found for "' + ref + '"');
+     return false;
+   }
+-  const errs = jsl.validate(target, schema);
++  const errs = jsl.validate(target, schema);
+   if (errs.length) {
+     for (const e of errs.slice(0, 6)) reasons.push('schema: ' + e);
+     if (errs.length > 6) reasons.push('schema: (' + (errs.length - 6) + ' more)');
