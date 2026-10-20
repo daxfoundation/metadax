@@ -234,6 +234,17 @@
       "date": "2026-10-20",
       "licence": "CC BY 4.0",
       "path": "samples/science-words-that-stick.md"
+    },
+    {
+      "id": "grammar-from-your-own-book",
+      "subject": "Writing",
+      "age_band": "7-9",
+      "stuck": "can do a grammar worksheet but cannot find the same thing in a real sentence, or use it in his own writing — the rule and the reading live in separate boxes",
+      "loves": "the adventure book he is reading at bedtime, and being the expert on its story",
+      "approach": "grammar from tonight's chapter: pick three sentences from the book he is already reading; one move per session — find the doer and the doing, join two short sentences, change the time of a sentence — his own sentence last; no workbook",
+      "date": "2026-10-20",
+      "licence": "CC BY 4.0",
+      "path": "samples/grammar-from-your-own-book.md"
     }
   ]
 }
