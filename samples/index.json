@@ -267,6 +267,17 @@
       "date": "2026-10-20",
       "licence": "CC BY 4.0",
       "path": "samples/check-the-facts-before-you-switch.md"
+    },
+    {
+      "id": "letters-on-the-move",
+      "subject": "Reading",
+      "age_band": "4-6",
+      "stuck": "programme's seated lessons have stopped being fun for either of them; the learner will not sit through them",
+      "loves": "running, jumping, being on the move all day",
+      "approach": "keep the programme; move it off the table — letters chalked on the path to hop to, magnetic letters built standing at the fridge, writing big on the wall or with chalk; five-minute rounds, stop while it is still fun",
+      "date": "2026-10-21",
+      "licence": "CC BY 4.0",
+      "path": "samples/letters-on-the-move.md"
     }
   ]
 }
